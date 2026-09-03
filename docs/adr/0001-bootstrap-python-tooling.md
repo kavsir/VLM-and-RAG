@@ -20,7 +20,7 @@ Key constraints:
 
 1. **Python Version**: Standardize on Python >= 3.12 for modern typing, performance, and standard library improvements.
 2. **Package & Environment Manager**: Adopt `uv` as the unified project and package manager.
-3. **Build Backend**: Use `hatchling` with version constraints (`hatchling>=1.25.0,<2.0.0`) adhering to PEP 517 / PEP 621.
+3. **Build Backend**: Use `hatchling` pinned to exact version (`hatchling==1.32.0`) adhering to PEP 517 / PEP 621.
 4. **Code Quality**:
    * `ruff` for both high-speed linting and formatting.
    * `mypy` for static type checking in strict mode (`strict = true`).
