@@ -19,7 +19,7 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Prerequisites
 
-* **Python**: >= 3.12 (tested on Python 3.12 and 3.13)
+* **Python**: >= 3.12 (tested on Python 3.12 and 3.14)
 * **Package Manager**: [uv](https://docs.astral.sh/uv/) (pinned to version `0.11.14` in CI)
 * **Git**
 
