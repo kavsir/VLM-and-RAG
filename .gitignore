@@ -44,8 +44,12 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Data directories (preserve golden & manifests structure, ignore untracked local data)
+# Data directories (commit manifests and small fixtures, not downloaded source artifacts)
 data/*
 !data/golden/
 !data/manifests/
-!data/**/.gitkeep
+!data/golden/**/
+!data/golden/**/.gitkeep
+!data/manifests/**
+data/golden/**/*.pdf
+data/golden/**/*.part
