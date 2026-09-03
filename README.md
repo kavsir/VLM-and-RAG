@@ -14,8 +14,8 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Current Project Status
 
-- **Phase**: Bootstrap & Foundation (Issue #001)
-- **Status**: Repository layout, environment management, static tooling, and CI configured. Application, RAG, and retrieval features are not yet implemented.
+- **Phase**: Golden Document Registry (Issue #002)
+- **Status**: The engineering foundation and first versioned source-document manifest are implemented. Parsing, RAG, and retrieval features are not yet implemented.
 
 ## Prerequisites
 
@@ -119,6 +119,27 @@ Build source distribution (sdist) and binary wheel:
 ```bash
 uv build
 ```
+
+## Golden Document Registry
+
+The committed manifest records official metadata and the exact expected PDF bytes separately. Its
+validation is deterministic and offline:
+
+```bash
+uv run python -m vlm_rag.registry validate
+```
+
+Fetch the official PDF, follow redirects, and publish it locally only after its byte size and
+SHA-256 match the manifest:
+
+```bash
+uv run python -m vlm_rag.registry fetch
+```
+
+The verified artifact is written to
+`data/golden/hanoi_master_plan_100y/v1/source.pdf`. Downloaded source artifacts are ignored by Git;
+the versioned YAML manifest under `data/manifests/` is committed. A checksum mismatch fails without
+replacing an existing local artifact.
 
 ## Branch & PR Workflow
 
