@@ -33,7 +33,7 @@ jobs:
       - name: Set up Python 3.12
         run: uv python install 3.12
 
-      - name: Diagnostic: Verify Python environment
+      - name: Diagnostic - Verify Python environment
         run: uv run python -c "import sys; print(sys.version); print(sys.executable)"
 
       - name: Install project dependencies (locked)
@@ -72,7 +72,7 @@ jobs:
       - name: Set up Python ${{ matrix.python-version }}
         run: uv python install ${{ matrix.python-version }}
 
-      - name: Diagnostic: Verify Python environment
+      - name: Diagnostic - Verify Python environment
         run: uv run python -c "import sys; print(sys.version); print(sys.executable)"
 
       - name: Install project dependencies (locked)
