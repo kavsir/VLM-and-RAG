@@ -1,0 +1,25 @@
+manifest_schema_version: 1
+document:
+  id: hanoi-master-plan-100y
+  document_number: "2512/QĐ-UBND"
+  normalized_document_number: 2512/QD-UBND
+  title: Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm
+  document_type: Quyết định
+  issuer: Ủy ban nhân dân thành phố Hà Nội
+version:
+  id: v1
+  document_id: hanoi-master-plan-100y
+  issued_on: 2026-05-13
+  effective_on: 2026-05-13
+source:
+  source_type: official_government_portal
+  publisher: Cổng thông tin điện tử Văn bản pháp luật thành phố Hà Nội
+  signer: Vũ Đại Thắng
+  landing_page_url: https://vanban.hanoi.gov.vn/chi-tiet-van-ban/phe-duyet-quy-hoach-tong-the-thu-do-ha-noi-tam-nhin-100-nam-246238
+  asset_url: https://datafiles.hanoi.gov.vn/gov-hni/6244/VanBan/2026/5/14/QD-2512-2026.pdf
+  retrieved_at: 2026-09-03T15:35:40.278Z
+artifact:
+  filename: QD-2512-2026.pdf
+  media_type: application/pdf
+  byte_size: 2218758
+  sha256: ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028
