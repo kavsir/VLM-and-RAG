@@ -14,8 +14,8 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Current Project Status
 
-- **Phase**: Golden Document Registry (Issue #002)
-- **Status**: The engineering foundation and first versioned source-document manifest are implemented. Parsing, RAG, and retrieval features are not yet implemented.
+- **Phase**: External Parser Baseline (Issue #003)
+- **Status**: The engineering foundation, golden-document registry, and an external MinerU adapter are implemented. Physical document IR, RAG, and retrieval features are not yet implemented.
 
 ## Prerequisites
 
@@ -140,6 +140,53 @@ The verified artifact is written to
 `data/golden/hanoi_master_plan_100y/v1/source.pdf`. Downloaded source artifacts are ignored by Git;
 the versioned YAML manifest under `data/manifests/` is committed. A checksum mismatch fails without
 replacing an existing local artifact.
+
+## Optional MinerU Parser Environment
+
+MinerU is an optional external parser runtime. It is deliberately absent from the main project
+dependencies because MinerU 3.4.5 requires Python `<3.14`, while this project supports and tests
+Python 3.14. The adapter invokes only the public `mineru` executable and does not import MinerU
+internals.
+
+Keep the two environments separate. The normal `.venv` remains the project environment. On
+Windows, create a dedicated Python 3.12 parser environment and install only the pinned pipeline
+extra:
+
+```powershell
+uv venv .venv-mineru --python 3.12
+uv pip install --python .venv-mineru\Scripts\python.exe "mineru[pipeline]==3.4.5" "six==1.17.0"
+```
+
+`six==1.17.0` is an explicit workaround for MinerU 3.4.5 pipeline code that imports `six` without
+declaring it in the published pipeline dependencies.
+
+On Windows hosts where the current account cannot create Hugging Face cache symlinks, select
+MinerU's documented ModelScope source before the first model download:
+
+```powershell
+$env:MINERU_MODEL_SOURCE = "modelscope"
+```
+
+On POSIX systems, the equivalent executable is `.venv-mineru/bin/mineru`. Probe the actual external
+runtime from the main project environment:
+
+```powershell
+uv run python -m vlm_rag.parsers --executable .venv-mineru\Scripts\mineru.exe probe
+```
+
+After obtaining the verified golden PDF with the registry fetch command, run the Hanoi pipeline
+baseline explicitly:
+
+```powershell
+uv run python -m vlm_rag.parsers --executable .venv-mineru\Scripts\mineru.exe --timeout 14400 run
+```
+
+The adapter verifies `source.pdf` against the Issue #002 manifest before starting MinerU. Successful
+run metadata is written to
+`data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/run.json`; untouched MinerU
+outputs are retained below its `raw/` directory. The entire generated `parser_runs/` tree is ignored
+by Git. The measured structure, artifact hashes, and runtime from the first real Hanoi parse are
+recorded in [`docs/research/mineru-hanoi-baseline.md`](docs/research/mineru-hanoi-baseline.md).
 
 ## Branch & PR Workflow
 
