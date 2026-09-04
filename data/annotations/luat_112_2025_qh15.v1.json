@@ -1,4 +1,11 @@
 {
+  "annotation_schema_version": 1,
+  "annotation_version": "v2",
+  "annotator": "antigravity",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "independent_visual_pdf_audit",
+  "created_at": "2026-09-05T00:00:00Z",
+  "parser_output_used_as_ground_truth": false,
   "document_id": "luat-112-2025-qh15",
   "version_id": "v1",
   "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
@@ -124,7 +131,8 @@
           "text": "Điều 3. Giải thích từ ngữ ể dư i đây đư c hi u như sau: t này, các từ từ ớ ậ Trong Lu ữ ợ ng ể ắp ế ố Quy ho ch là đ ị nh hư ớng phát tri p, phân b không gian các ớn 1. n, s ắp x ạ ế ố ắn ể n kết cấu hạ tầng, ho t đ ng kinh t , xã hội, qu c phòng, an ninh g i phát tri ớ ộ ạ ắn v ổ ấ sử dụng tài nguyên, b môi trư t ph m vi lãnh th cho th i kỳ nh ờn ờ kỳ ệ ờng trên m ộ ả t o v ạ ằ ồ ấ ể đ ị nh nh d ng hi n l a đ c đ th c hi c tiêu các ngu ớ ệ ệ ử ả ủ t nư ự ự m s u qu c c n mụ ụ mụ ể ề ầ ể ố ổ ể phát tri n b ững và b o đ m nhìn phát tri c gia mang tính t ng th ả ả ữn m t n v n qu , dài h ạn ạn. ổn ể ốc ấp ố Quy ho ch t ổng th là quy ho ch c c gia, đ ị nh hư ớng phát ớn 2. ốc gia ạ ấp qu ạ qu ể ắp ế ố ế , xã hội, quốc phòng, an tri p, phân b không gian các ho t đ ng kinh t ộ n, s ắp x ạ ố ế ấu ần ninh, h th ng đô th ị , k ấu h d ng tài nguyên, bảo vệ môi trường, ệ ử t c t ạ ầng, s ụ ố ế ổ ầ ấ ố phòng, ch ng thiên tai, ng phó v i bi n đ i khí h ứ ớ ậu có t ậu m quan tr ọ ng c p qu c ố ế ế ổ bao gồm đ ấ gia, qu và có tính liên vùng mang tính chi n lư c trên lãnh th c t t ợ ề ể li n, h i đ o, vùng bi ả ả n.",
           "heading_level": 3
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 1,
@@ -161,7 +169,8 @@
           "text": "ển ốc ch cấp quốc gia, c ể Quy ho ch không gian bi là quy ho th 3. ốc gia ạ ụ ạ ển qu ổ ể ố ề ể ể ố hóa quy ho ch t ng th c gia v đ ị nh hư ớng phát tri n không gian bi ớn ạ qu n qu c ồ ắp ế ố ế , xã hội, quốc gia bao g p, phân b không gian cho các ho t đ ng kinh t ộ m s ắp x ạ ấ ể ể ề ề phòng, an ninh trên vùng đ t ven bi n, h i đ o, vùng bi n thu c ch ộ ả ả ủ quy n, quy n ề ề ố ch n tài phán qu c gia c a Vi ệ ủ ủ t Nam. quy n, quy đấ ố ch cấp quốc gia, c ể Quy ho ch s dụ ng đấ là quy ho th hóa ử 4. c gia t qu ạ ụ ạ dụ ổ ể ố ề ấ ố quy ho ch t ng th c gia v đ ị nh hư d ng đ c gia cho các m c tiêu ớn ử t qu ạ qu ớng s ụ ụ ể ế ố ố phát tri n kinh t , xã h i, qu c phòng, an ninh, b môi trư ng, phòng, ch ờ ộ ệ ả o v ng ế ổ ề ấ ầu thiên tai, ứng phó v i bi n đ i khí h ti m năng đ t đai và nhu c ứn ớ ậu ậu trên cơ s ở ử ầu s ấ ố d ng đ a các ngành, lĩnh v c đ i v i từ ớ từ ng vùng. ủ t c ự ụ ch cấp quốc gia, c ể ổ Quy ho ch ngành là quy ho th hóa quy ho ch t 5. ạ ạ ng ụ ạ ể ố ề ể ắp ế ố ồ th c gia v đ ị nh hư ớng phát tri p, phân b không gian, ngu n l ớn ự qu n, s ắp x c cho các ngành kết cấu hạ tầng, sử dụng tài nguyên, b ồ môi trư ờng, b n đa ờn ệ ả ả o t o v ầ ố d ạng sinh h c gia, mang tính liên vùng, liên t nh. c có t ủ ỉ m quan tr ạn ọ ọ ng c a qu ổ ố ồ ố là m t b ph a lãnh th c gia bao g nh, thành Vùng 6. ộ ộ ậ ộ ủ ỉ t s t n c qu m m ố ề ề ế ề ế ph li n k đư c hình thành trên cơ s liên k đ ị a lý, kinh t , xã h i, môi ộ ở t v ợ ế ấu ần ể ờng, văn hóa và k ấu h ầng đư c xác đ ị nh đ l ập quy ho ch vùng. ờn ập trư t c t ợ ạ ạ ể ổ ể ố ố Quy ho ch vùng là quy ho ch c th hóa quy ho ch t ng th c gia đ i 7. ạ ạ qu ụ ạ ề ể ắ ế ố i vùng v đ ị nh hư ớng phát tri p, phân b không gian các ho t đ ớ ớn ộ n, s p x ạ ng v ế , xã hội, quốc phòng, an ninh, h ố ế ấ ầ ế ố kinh t th ng đô th ị , k u h ng k i liên ệ t c t t n ạ ố nh, s dụ ng tài nguyên, bảo vệ môi trường, phòng, ch ng thiên tai, ng phó v i ứ ớ ỉ ử t dụ ế ổ ầ ể ề ế bi n đ i khí h ậu, đáp ứ u phát tri n b ững và liên k t gi a các ngành, ứ ậu ng yêu c ữn ữ n v ổ các đ ị a phương trên ph m vi lãnh th vùng. ạ ể ổ ể ố Quy ho ch t ỉnh là quy ho ch c th hóa quy ho ch t ng th c gia, quy ỉn 8. ạ ạ qu ụ ạ ề ể ắ ế ố ho ch vùng đ ị a bàn t nh v phương hư ớng phát tri p, phân b không ớn ở ỉ ạ n, s p x ế ố ể gian các ho t đ ng kinh t , xã h i, qu c phòng, an ninh, phát tri n đô th ị và nông ộ ộ ạ ế ấu ần ố thôn, k ấu h d ng tài nguyên, b môi trư ờng, phòng, ch ng thiên ờn ệ ử ả t c t ạ ầng, s o v ụ ế ổ tai, ứ ng phó v i bi n đ i khí h ứ ớ ậu ậu. ết ể Quy ho ch chi ti ết ngành là quy ho ch c th hóa quy ho ch đư 9. ợ ạ ạ c quy ụ ạ ề ể đ ị nh t i m c 2 Ph l c ban hành kèm theo Lu phương án phát tri t này v ậ ạ n, ụ ụ ụ ắ ế ố ể ế ấ ầ p, phân b không gian phát tri n cho các ngành k u h d ử t c t s p x ạ ng, s ng ụ tài nguyên. ế ổ ố ồ Tích h ợp quy ho ch là phương pháp ti ng h ợp và ph i h ợp đ 10. ận ận t ợp ợp ợp p c ng ạ ấ ề nh có liên quan đến kết cấu b khi x lý các v n đ liên ngành, liên vùng, liên t ộ ử ỉ hạ tầng, sử dụng tài nguyên, bảo vệ môi trường, b ồ n đa d ng sinh h b ả ả o t ạ ọ c o , ế ồ ố ằ ể đ liên k t, tính đ ng b , h th ng nh m đ t đư c tiêu phát tri ộ ệ n cân ả ự ợ m s ạ c m ụ ố ề đ i, hài hòa, hi và b ệ ả ữ u qu n v ng. ồ ổ ẩ nh, quyết t độ ng quy ho ch bao g m vi ch c l p, th m đ ị ứ độ 11. ệ ậ Ho c t ạ ạ ố ấ ề định hoặc phê duyệt, công b p thông tin, th c hi n, đánh giá, đi ệ ự , cung c u ch nh quy ho ch. ỉ ạ",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 5,
@@ -212,7 +221,8 @@
           "text": "Điều 6. Nguyên tắc xác định quy hoạch phải điều chỉnh và quy hoạch được thực hiện khi có mâu thuẫn giữa các quy hoạch ể ố ấ ờng h ợp quy ho ch không gian bi c gia, quy ho ch s d ng đ ờn 1. Trư ử t ợp ạ n qu ạ ụ ố ổ ể ố ẫ c gia mâu thu i quy ho ch t ng th c gia thì quy ho ch không gian ớ qu n v ạ qu ạ ể ố ấ ố ề bi c gia, quy ho ch s dụ ng đ c gia ph i đi u ch nh và th c hi n theo ệ ử ả ỉ t qu ự n qu ạ dụ ổ ể ố quy ho ch t ng th c gia. ạ qu ể ẫ ờng h ợp quy ho ch ngành mâu thu i quy ho ch không gian bi ờn ớ 2. Trư ợp ạ n v ạ n ố ấ ố ề c gia, quy ho ch s d ng đ c gia thì quy ho ch ngành ph i đi u ch nh ử ả ỉ t qu qu ạ ạ ụ ể ố ấ và th c hi n theo quy ho ch không gian bi c gia, quy ho ch s d ng đ ệ ử t ự ạ n qu ạ ụ ố c gia. qu ẫn ờng h ợp quy ho ch vùng mâu thu i quy ho ch ngành, Th ờn ớ ớn 3. Trư ủ tư ợp ạ ẫn v ạ ớng ế ề Chính ph t đ ị nh quy ho ch ph i đi u ch nh và quy ho ch đư c th c hi ệ ủ ả ỉ ợ ự quy ạ ạ n. ế ẫn ờng h ợp quy ho ch chi ti t ngành mâu thu i quy ho ch mà quy ờn ớ 4. Trư ợp ạ ẫn v ạ ể ế ề ho ch đó c th hóa thì quy ho ch chi ti t ngành ph i đi u ch nh và th c hi n theo ệ ả ỉ ự ạ ạ ụ ể quy ho ch mà quy ho ch đó c th hóa. ạ ạ ụ ế ẫ ờng h ợp quy ho ch ngành mâu thu i nhau, quy ho ch chi ti ờn ớ 5. Trư t ợp ạ n v ạ ế ẫn ẫ ngành mâu thu i nhau, quy ho ch chi ti t ngành mâu thu i quy ho ch ớ ớ ẫn v ạ n v ạ ể ngành không ph i là quy ho ch đư th hóa thì th c hi n như sau: ệ ả ợ ự ạ c c ụ ổ ế a) Trư ờng h ợp các quy ho ch do m ch c l t đ ị nh ờn ứ ộ ộ ập ộ ởn B ập, B t t trư ợp ạ ởng quy ề quy ho ch ph i đi u ch nh và quy ho ch đư c th c hi ệ ả ỉ ợ ự n; ạ ạ ổ b) Trư ờng h ợp các quy ho ch do các B khác nhau t ch c l ập ho c do B ờn ứ ộ ập ộ ặ ợp ạ , Ủ ấ ổ ổ ban nhân dân c nh t ch c l ch c phát hi i dung mâu ứ ứ ậ ệ ộ ỉ p t , cơ quan, t p n n y ế ổ ẫn thu ẫn ki n ngh ị ch c l ập quy ho ch có liên quan xem xét, x lý theo ứ ập ử cơ quan t ạ ẩ ề ế ổ ố ấ th ch c l p quy ho ch không đ t đư th ng nh u các cơ quan t ứ ậ t, ợ ự ; n m quy n ạ ạ c s ế ề Th ớng Chính ph t đ ị nh quy ho ch ph i đi u ch nh và quy ho ch ớn xem xét, quy ủ ủ ả ỉ tư ạ ạ đư c th c hi ệ ợ ự n; ẩ ề Ủ c) Trư ờng h quy ho ch thu c th n phê duy a Ch ị ch Ủ ờn các ộ ệ ủ ủ t c t ợp ợp ạ m quy y ấp Ủ ấ ế ban nhân dân c nh, Ch ị ch y ban nhân dân c nh quy t đ ị nh quy ho ch ỉ ủ ỉ ấp t t p t ạ ề ph i đi u ch nh và quy ho ch đư c th c hi ệ ả ỉ ợ ự ạ n.",
           "heading_level": 3
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 12,
@@ -277,7 +287,8 @@
           "text": "Điều 20. Đề cương lập quy hoạch ề ồ ế cương l ập quy ho ch bao g m nh i dung ch đây 1 ập ộ ủ . Đ ữn : ạ ững n u sau y ầ ế ầu a) S n thi t l p quy ho ch; căn c l ập quy ho ch; đ ị nh hư ứ ớn ậ ập ớng, yêu c ự c ạ ạ ầu ể ố ầ a quy ho ch có liên quan, quy ho ch đư th hóa đ i v i quy ho ch c n l ớ ậ ủ ợ c ạ ạ c c ạ p ụ ế (n u có); ầ b) Ph m vi, ranh gi i l p quy ho ch; th i kỳ m nhìn c a quy ho ch; ớ ờ kỳ ậ ủ , t ạ ạ ạ ầu ề ồ c) Yêu c i dung quy ho ch; h sơ quy ho ch; ộ n ạ ạ ầu v ế d) Th i gian, ti n đ l p quy ho ch; ờ ộ ậ ạ ổ đ) Trách nhi ch c, cá nhân có liên quan trong vi a các cơ quan, t ứ ệ ệ ủ m c c l p quy ho ch. ậ ạ ẩ ề ổ ề 2. Th ch c l ập, phê duy t đ cương l ập quy ho ch như sau: ứ ập ệ ập n t m quy ạ ổ ể ố ể a) Cơ quan l ập quy ho ch t ng th c gia, quy ho ch không gian bi ập ạ qu ạ n ố ấ ố ề c gia, quy ho ch s d ng đ c gia xây d ựng đ cương l ập quy ho ch, trình ập ử t qu ựn qu ạ ạ ụ ế Chính ph t đ ị nh; ủ quy ổ ề b) Cơ quan t ch c l ập quy ho ch vùng xây d ng đ cương l ập quy ho ch, ứ ập ập ự ạ ạ trình Th ớng Chính ph phê duy ớn ệ ủ ủ tư t; ề c) Cơ quan l p quy ho ch ngành xây d ng đ cương l ập quy ho ch ngành, ậ ập ự ạ ạ ổ ẩ ề báo cáo cơ quan t ch c l p quy ho ch, trình i có th n phê ứ ờ ậ cơ quan, ngư ạ m quy ề duy t quy ho ch xem xét, phê duy t đ cương l ập quy ho ch ngành; ệ ệ ập ạ ạ ổ ổ ề d) Cơ quan t ch c l p quy ho ch t nh t ch c l p và phê duy t đ ứ ứ ậ ậ ệ ỉ cương ạ l p quy ho ch t nh. ậ ỉ ạ",
           "heading_level": 3
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 20,
@@ -328,7 +339,8 @@
           "text": "Điều 30. Nội dung quy hoạch tỉnh ể ể i dung quy ho ch t nh th hi n các đ ị nh hư ớng phát tri n đã đư ớn c xác 1. N ộ ệ ỉ ợ ạ ấp ố ể đ ị nh quy ho ch c c gia; phương hư ớng phát tri n đã đư c xác đ ị nh ớn ở ở ợ ạ ấp qu quy ể ắp ế p không gian và phân bổ ngu ồ ho ch vùng; phương hư ớng phát tri n l ớn ự ạ n, s ắp x c ể ế ố ế ấu cho phát tri kinh t xã h i, qu c phòng, an ninh, đô th ị và nông thôn, k ộ t c n ấu - ầ ấ h dụ ng tài nguyên, bảo vệ môi trư nh, liên xã. ờn ử ở ỉ t p t ạ ng, s ờng c dụ ồ ế 2. Quy ho ch t nh bao g m nh i dung ch u sau đây: ộ ỉ ủ ữn ạ ững n y ề ề ể a) Phân tích, đánh giá đi u ki nhiên, đi u ki n phát tri n đ c thù c ệ ệ ủ ặ n t ự a ể ế nh; phân tích, đánh giá th ạng phát tri n kinh t xã h i, hi dụ ộ ệ ỉ ử t c tr n tr ự ạn ạn ạng s ng dụ - ấ ố ần ầ đ t, hi ạng h th ng đô th ị và nông thôn; hi ạng h ầng k thu t, h ệ ệ ệ ậ ỹ n tr n tr t t ạn ạn ạ ạ ng ầ xã h i, không gian ng m; hi ạng môi trư ờng, khai thác, s d ng, b tài ờn ộ ệ ệ ử ả n tr ạn o v ụ nguyên và đa dạng sinh học; ể ể b) Xây d ng các k ị ch b n phát tri n và l a ch n k ị ch b ản phát tri ả ản ự ự n; ọ ể ầ ể c) Quan đi m nhìn, mụ c tiêu phát tri m, t n; mụ ể d) Các nhi ng tâm, đ t phá phát tri n trong th i kỳ quy ho ch; ờ kỳ ệ ộ tr m v ọ ạ ụ ổ ể ế đ) Phương hư ch c không gian phát tri n kinh t xã h i; phương ớn ứ ộ ớng t - ể hư ớng phát tri n các ngành, lĩnh v ớn ự c; ể e) Phương h hư ớng phát tri n đô th ị và nông thôn; ớn ể ể g) Phương hư ớng phát tri n các khu ch c năng; phương hư ớng phát tri ớn ứ ớn n ấ m công nghi t nông nghi ập trung; phương hư ớng phát p, các vùng s ớn ệ ệ ập ả p t c n xu ụ ể ề ồ ể ố ề tri n khu v c mi n núi, h i đ o, vùng đ ng bào dân t c thi , đ ị a bàn có đi ộ ả ả ự u s u ế ề ế ki n kinh t xã h i khó khăn, đ ị a bàn có đi u ki n kinh t xã h i đ c bi t khó ệ ộ ệ ộ ệ ặ - - ế khăn (n u có); ể ần ấp h) Phương hư ớng phát tri n h ầng k thu nh, liên xã; ớn ậ ỉ ỹ t t c ấp t ạ ể ần ấ i) Phương hư ớng phát tri n h ầng xã h i c nh, liên xã; ớn ộ ỉ t p t ạ ể ầ ế k) Phương hư ớng phát tri n không gian ng m (n u có); ớn ấ l) Đ ị nh hư d ng đ t trên đ ị a bàn t nh; ớn ử ỉ ớng s ụ ồ m) Phương hư ớng b môi ờng và b n đa d ạng sinh h khai ớn ờn ệ ả ả trư o t c; o v ạn ọ phòng, chống thiên tai và ế thác, s d b tài ứng phó v i bi ng và ứn ớ ệ nguyên; ử ả o v n ụ ổ đ i khí h ậu trên đ ị a bàn nh ậu ỉ t ; ế n nguồn lực th n) Gi i pháp, d ki c hi n quy ho ch. ệ ả ự ự ạ",
           "heading_level": 3
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 28,
@@ -407,7 +419,8 @@
           "text": "Điều 48. Đánh giá sự phù hợp của dự án với quy hoạch trong chấp thuận hoặc phê duyệt chủ trương đầu tư, quyết định đầu tư 1. Quy ho ch đư d ng làm căn c đánh giá s phù h a d ứ án trong ử ủ ợ ự ợp ự ạ c s ợp c ụ ấp ầu ề ầ ch ấp thu n ho c phê duy t ch trương đ theo quy đ ị nh c a pháp lu đ ậ ệ ậ ủ ủ ặ ầu tư t v u",
           "heading_level": 3
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 35,
@@ -444,7 +457,8 @@
           "text": "ế ể ằ h ) Thay th “quy ho ch phát tri n lưu v c sông” b ừ ừ “ m t m t ự c ạ ng c q ụ ụ uy ổ ầ ho ch t ng h ợp tài nguyên nư c và h ng th y l i lưu v c sông liên t nh” t i ớ ủ ỉ t ợp ợ ự ạ ạ ạ ề kho ản 6 Đi u 99. ản ế ố ằn 3. Thay th “quy ho ch ngành qu c gia” b “quy ho ch ừ ừ m t m t c ạ ằng c ạ ụ ụ ề ế ố ngành” t i kho n 2 Đi d ng năng lư ợng ti t ki m và hi t S u 6 c ậ ệ ệ ả ủ ử ả a Lu ợn ạ u qu s ụ ổ ổ ố ề ố 50/2010/QH12 đã đư a đ i, b đi u theo Lu 28/2018/QH14 ộ ậ ử t s t s ợ c s sung m ố 77/2025/QH15. và Lu ậ t s ế 4. Thay th “quy ho ch m ạng lư i cơ s giáo dụ c đ i h ừ ớ c và sư ở m t c ạ ạn ạ ọ ụ dụ ằ ph m” b “quy ho ch m ng lư i cơ s giáo dụ c đ i h c và giáo d ừ ớ ở m t ạ ng c ạ ạ ạ ọ c ụ dụ ụ ề ề ố ngh nghi p công l i kho ản 3 Đi t Giáo d c phòng và an p” t ệ ậ u 8 c ậ ản ủ a Lu ạ c qu ụ ố ổ ổ ố ề ố ninh s 30/2013/QH13 đã đư a đ i, b đi u theo Lu ộ ậ ử t s t s ợ c s sung m ố 35/2018/QH14 và Lu 98/2025/QH15. ậ t s ổ ổ ố ề ố ễ a đ i, b đi t Vi n thông s 24/2023/QH15 đã 5. S ộ ậ ử ủ a Lu t s sung m u c ổ ổ ố ề ố đư a đ i, b đi u theo Lu 47/2024/QH15 như sau: ộ ậ ử t s t s ợ c s sung m ế ầ ằn ễ a) Thay th “quy ho ch h ng k thu t vi n thông th đ ng” b ừ ậ ộ ỹ m t t c ạ ạ ằng ụ ụ ể ần ễ “phương hư ớng phát tri n h ầng k thu t vi n thông th đ ừ ớn ậ ộ ỹ m t t ng trong quy c ạ ụ ụ ể ề ề ề ho ch t nh” t i đi m b kho ản 4 Đi kho ản 1 Đi u 64, kho ản 1 Đi và u 13, u 65 ỉ ản ản ản ạ ạ ể ề đi m a kho ản 2 Đi u 67 ản ; ế ố ằn ễ b) T Thay th “quy ho ch kho s vi n thông” b “quy ho ch ừ ừ m t m t c ạ ằng c ạ ụ ụ ố ề ễ kho s vi n thông và tài nguyên Internet” t i kho n 2 Đi u 25; ả ạ ế ố ễ ) Thay th uy ho ch kho s vi n thông, quy ho ch tài nguyên ừ “ m t c c q ạ ạ ụ ằn ố ễ Internet” b uy ho ch kho s vi n thông và tài nguyên Internet” t i từ “ m từ ằng c q ạ ạ ụ ề ề ể ề ể ề kho ản 3 Đi u 34, Đi đi m a kho ản 1 Đi đi m b kho ản 2 Đi và u 49, u 50 u 53; ản ản ản ổ ổ ề d ) S a đ i, b sung Đi u 63 như sau: ử ề ể ầ ễ ậ n thông th ớ phát tri Đi t vi “ u 63. Phương ỹ hư n h ng k thu t ng ạ ụ ộ ỉ đ ng trong quy ho ch t nh ạ ể ầ ễ 1. Phương h hư phát tri n h ng kỹ thu t vi n thông th đ ớn ậ ộ kỹ t ng trong quy ớng ạ ụ ầ ề ho ch t nh ph i phù h i quy ho ch h ng thông tin và truy n thông. ớ ỉ ả t ợp ạ ợp v ạ ạ ề ố 2. Quy ho ch theo pháp lu quy ho ch đô th ị và nông thôn đ i v i khu ớ ậ t v ạ ạ ố đô th ị , khu dân cư, khu ch m công nghi p ph i b o đ m tính th ứ ệ ả ả ả c năng, c ng ụ ấ ồ ể ần ễ nh t, đ ng b i phương hư phát tri n h ầng kỹ thu t vi n thông th đ ớ ớn ộ ậ ộ kỹ t ớng ạ ng v ụ ể ế ầ ễ trong quy ho ch t nh đ thu ận ti n cho vi c thi t l h ng vi n thông, ận ệ ệ ập ỉ ở t ập cơ s ạ ạ ấp ễ d ng d ị ch v vi n thông.” ử ; cung c ấp, s ụ ụ ề đ ) Bãi b Đi u 8. ỏ ổ ổ ố ều ố a đ i, b đi ật Bưu chính s 49/2010/QH12 như sau: 6. S ộ ật ử ủ a Lu t s sung m ều c ế ể ằn a) Thay th “quy ho ch phát tri ng bưu chính công c ng” b ừ ộ m t c ạ n m ạ ằng ụ ề “quy ho ch t nh” t i kho n 2 Đi ừ u 34; ỉ ả m t c ạ ạ ụ ề b) Bãi b kho n 11 Đi u 44. ỏ ả",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 42,
@@ -481,7 +495,8 @@
           "text": "ẩ ề ồ ẩ ề 9. Th n thành l i đ ng th m đ ị nh đi u ch nh quy ho ch th ậ ộ ỉ p H ự m quy ạ c hi n như sau: ệ ồ ẩm ề a) Thủ ớng Chính phủ thành l i đ ng th ẩm đ ị nh đi u ch nh quy ho ch ớn ập ộ hủ hủ ỉ ập H tư ạ ể ố ất ố không gian bi c gia, quy ho ch s dụ ụng đ c gia và quy ho ch vùng; ử ất qu n qu ạ ạ dụn ồ ẩ ề b) B ng thành l i đ ng th m đ ị nh đi u ch nh quy ho ch ngành ộ ậ ộ ở ỉ p H trư ạ ố c gia; qu Ủ ấ ồ ẩ ề c) Ch ị ch y ban nhân dân c nh thành l i đ ng th m đ ị nh đi ậ ộ ủ ỉ p H t p t u ch nh quy ho ch t nh. ỉ ỉ ạ ầ ồ ẩ ề 10. Thành ph i đ ng th m đ ị nh đi u ch nh quy ho ch đư ộ ỉ n H ợ ạ c quy đ ị nh như sau: ầ ồ ẩ ề ể a) Thành ph i đ ng th m đ ị nh đi u ch nh quy ho ch không gian bi ộ ỉ n H ạ n ố ấ ố ồ c gia, quy ho ch s d ng đ c gia và quy ho ch vùng bao g m Ch ị ch ử ủ t qu t qu ạ ạ ụ ồ ồ ồ ẩ i đ ng và các thành viên c i đ Ch ị ch H i đ ng th m đ ị nh là Th ộ ộ ộ ủ ủ ủ H a H t ng. ồ ẩ ớng Chính ph ho c Phó Th ớng Chính ph ; thành viên c i đ ng th ớn ớn ộ ủ ủ ủ ủ ặ a H tư tư m ồ ố đ ị nh bao g m đ i di đ i di n lãnh đ nh, thành ệ ộ ộ ệ ộ ỉ n B , cơ quan ngang B t s t ạ ạ ạ o m , đ ố ph và các chuyên gia là y viên ph ản bi ệ ủ ản ; n ầ ồ ẩ ề ố b) Thành ph i đ ng th m đ ị nh đi u ch nh quy ho ch ngành qu c gia ộ ỉ n H ạ ồ ồ ồ ồ bao g m Ch ị ch H i đ ng và các thành viên c i đ ng. Ch ị ch H i đ ộ ộ ộ ủ ủ ủ a H t t ng ổ ố là l ãnh đ ch l quy ho ch ngành qu c gia thành viên c i ứ ậ ộ ủ a H o cơ quan t ; ạ c p ạ ồ ẩ ồ đ ng th m đ ị nh bao g m đ i di đ i di n lãnh đ ệ ộ ộ ệ ộ n B , cơ quan ngang B t ạ ạ ạ o m , ố ố nh, thành ph và các chuyên gia là ủ y viên ph ản bi ệ ỉ ủ ản t ; s n ầ ồ ẩ ề ồ c) T Thành ph i đ ng th m đ ị nh đ đi u ch nh quy ho ch t nh b bao g m Ch ộ ỉ ỉ ủ n H ạ ồ ồ ồ Ủ ị ch H i đ ng và các thành viên c i đ ng. Ch ị ch H i đ ng là l ãnh đ ộ ộ ộ ủ ủ a H t t ạ o y ấp ồ ẩ ồ ban nhân dân c nh, thành viên c i đ ng th m đ ị nh bao g m đ i di ộ ệ ộ ỉ ủ a H n B ấp t ạ , Ủ đ i di n lãnh đ ơ quan chuyên môn thu y ban nhân dân ộ ệ ộ cơ quan ngang B ạ ạ o c c Ủ , đ ấ nh và các chuyên gia là y viên ph n bi ệ ỉ ủ ả p t ; c n ồ ẩ ề d) Cơ quan thư i đ ng th m đ ị nh đi u ch nh quy ho ch do Ch ờn ộ ỉ ủ c H ờng trự rự ạ ồ ẩ ế ị ch H i đ ng th m đ ị nh quy t đ ị nh. ộ t ế ế ồ ẩ ề 11. Cơ ch ho t đ t đ ị nh i đ ng th m đ ị nh đi u ch nh quy ộ ộ ủ ỉ a H ạ ng, r ra quy c ho ch th c hi n như sau: ệ ự ạ ồ ẩ ế ể a) H i đ ng th m đ ị nh làm vi c theo ch đ ập th và ch ị u trách nhi ộ ệ ộ ập ệ t m ẩ ề th m đ ị nh đi u ch nh quy ho ch theo nhi đư c giao; ệ ỉ ợ ạ m v ụ ẩ ế ấ ầ ố b) Phiên h p th m đ ị nh đư c ti n hành khi có ít nh t ba ph n tư (3/4) s ợ ọ ồ ẩ ồ ẩ thành viên H i đ ng th m đ ị nh tham d , trong đó có Ch ị ch H i đ ng th ộ ộ ủ t ự m ầ ố đ ị nh, hai ph n ba (2/3) s y viên ph n bi n và đ i di n cơ quan thư i ờn ệ ệ ộ ủ ả c H ờng trự rự ạ ồ ẩ ề đ ng th m đ ị nh d h p; đ i di n cơ quan đư c giao l p đi u ch nh quy ho ch và ệ ậ ỉ ự ợ ọ ạ ạ ổ ấn ề đ i di ch ấn l ập đi u ch nh quy ho ch ứ ệ ập ỉ n t c tư v ; ạ ạ",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 50,
@@ -532,7 +547,8 @@
           "text": "ế Tên quy ho Tên quy ho ả Văn b ch chi ti TT ch t ạ ạ n ể ị ngành hóa quy đ được nh th c ụ Ế Ấ Ầ Ạ NG T C I K U H T ế ấu ng lư Quy ho ch k ấu h Quy ho ch m i ớ ờng b ờn ậ ộ 1. t Đư Lu t c ạ ạ ạ ạ ầ ng đư đư ờng b ng b ờn ờ ộ ộ t ế ắ đư ng lư Quy ho ch tuy Quy ho ch m i ờn ờn ớ ậ 2. t Đư Lu t ạ ạ ạ n ờng ờng s ắ ắ ắ , ga đư đư ờn ờ t t t s ờng s ng s ế ế ổ ể ế Quy ho ch chi ti t k Quy ho ch t ng th k lu t Hàng h i Vi ộ ậ ệ ả 3. B t Nam t t ạ ạ ấ ần ấ ần u h ầng hàng h i u h ầng hàng h i ả ả t t ạ ạ c c ể ổ ể ế Quy ho ch phát tri n h lu t Hàng h i Vi Quy ho ch t ng th k ệ ộ ậ ệ ả 4. B t Nam t ạ ạ ố ấ ần th u h ầng hàng h i ản ả t ạ ạ ng c ảng c n c ng lư Quy ho ch m i ớ ạ ạ ắ đư ờ t ng s Quy ho ch m ng lư i ớ ạ ạ đư ng b ờ ộ ố Quy ho ch h th ệ ả ạ ng c ng ố hàng không toàn qu c ổ ể ế Quy ho ch t ng th k t ạ ấ ần ầng đư u h ờng th ờn ủ t ạ c y i đ ị ộ n a ế ố Quy ho ch chi ti t Hàng không dân d Quy ho ch h th ậ ệ ản ả Lu 5. t c ạ ạ ảng ng ng c ng ụ ố hàng không Vi hàng không toàn qu ệ t Nam c ế ế ổ ể ế Quy ho ch chi ti t k t Giao thông Quy ho ch t ng th k ậ 6. Lu t t ạ ạ ấ ầ ấ ần ng đư ầng đư u h ờng th u h ờng th ờn ờn ủ ủ t t đư i đ ị ờng th ạ ạ ờn ộ ủ c c y y y n a i đ ị i đ ị ộ ộ n a n a ề ề ch đê đi t Đê đi Quy ho Quy ho ch tài nguyên ậ u và 7. Lu ạ ạ u; ố ng lũ c phòng, ch c, th y l i và phòng, ố ớ ủ ủ nư ợ ật Phòng, ch ng thiên tai ật a Lu ế ố n sông có đê ch ng thiên tai tuy văn hóa Quy hoạch tỉnh Quy ho ch b t Di s ậ ả ả ản 8. Lu n, tu ạ o qu ản ổ ồ b , ph c h i di tích ủ c a ụ ế di s ản th gi i, di tích ớ ản ố c gia đ c bi ệ ặ t; qu quy ổ ho ch b ản, tu b ả ản ạ o qu , ồ ph c h i di tích ủ c a c m ụ ụ",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 51,
@@ -569,7 +585,8 @@
           "text": "ố di tích qu c gia ho ặ c ố m di tích qu c gia v i ớ c ụ ấp di tích c nh ỉ ấp t Quy hoạch khảo cổ Luật Di sản văn hóa Quy hoạch tỉnh 9. ẩ ố ổ ể ố 0.Quy ho ch c a kh t Biên gi i qu c gia Quy ho ch t ng th ớ ậ ử 10.Q Lu ạ ạ qu c u gia ng lư môi trư uy ho ch m i Quy ho ch b môi ớ ệ ả ờn ậ ệ 1.Q ả 11.Q Lu t B ạ ạ ạ o v ờng; o v ắ ảnh báo ờ ản c và c trư quan tr ăng lư ậ ợng nguyên ng Lu N t N ợn môi trư phóng x ờn ử ạ ờng t Ử NG TÀI S Ụ II D NGUYÊN ấ ấ ất ng đ t đai ụng đ 2.Quy ho ch s dụ Quy ho ch s dụ ậ ử ử 12.Q t Đ Lu t ất ạ ạ dụ dụn ấ ố nh c gia ỉ p t c qu ấ ng đ Quy ho ch s d ử t ạ ụ ố c phòng qu ấ ng đ Quy ho ch s dụ ử t an ạ dụ ninh Quy ho ch tỉ nh tỉ ạ ố ần ễ ễ uy ho ch kho s vi t Vi n thông Quy ho ch h ầng thông ậ 3.Q 13.Q Lu t ạ ạ ạ n ề thông tài nguyên tin và truy n thông và Internet ần ố ần ố ần 4.Quy ho ch t Quy ho ch h ầng thông ậ 14.Q vô Lu t T t ạ ạ ạ ần s ần s ế ế ề đi n đi tin và truy n thông ệ ệ vô tuy tuy n n n TỔNG HỢP III 5.Quy hoạch tổng hợp Luật Tài nguyên nước; Quy hoạch tài nguyên tài 15.Q nguyên nước và hạ tầng Luật Thủy lợi nước, th ủy lợi và phòng, chống thiên tai thủy lợi lưu vực sông liên tỉnh",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     }
   ]
 }

@@ -3,40 +3,100 @@
   "metrics": {
     "by_category": [
       {
-        "category": "heading",
-        "f1": 0.375,
+        "category": "header",
+        "f1": 0.0,
         "false_negatives": 0,
-        "false_positives": 10,
-        "precision": 0.2308,
-        "recall": 1.0,
-        "true_positives": 3
+        "false_positives": 18,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
+        "category": "heading",
+        "f1": 0.0,
+        "false_negatives": 3,
+        "false_positives": 13,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       },
       {
         "category": "table",
-        "f1": 0.6667,
-        "false_negatives": 1,
+        "f1": 0.0,
+        "false_negatives": 2,
         "false_positives": 0,
-        "precision": 1.0,
-        "recall": 0.5,
-        "true_positives": 1
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       },
       {
         "category": "text",
-        "f1": 0.3409,
-        "false_negatives": 7,
+        "f1": 0.027,
+        "false_negatives": 21,
         "false_positives": 51,
-        "precision": 0.2273,
-        "recall": 0.6818,
-        "true_positives": 15
+        "precision": 0.0192,
+        "recall": 0.0455,
+        "true_positives": 1
+      },
+      {
+        "category": "unknown",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 18,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       }
     ],
+    "classification_accuracy_on_matched": 0.0526,
+    "confusion_matrix": {
+      "header": {
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "heading": {
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 3
+      },
+      "table": {
+        "header": 1,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "text": {
+        "header": 7,
+        "heading": 3,
+        "table": 0,
+        "text": 1,
+        "unknown": 4
+      },
+      "unknown": {
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      }
+    },
     "f1": 0.2969,
     "false_negatives": 8,
     "false_positives": 82,
     "mean_iou": 0.7849,
+    "pairwise_order_accuracy": 0.7544,
     "precision": 0.1881,
-    "reading_order_concordance": 0.8889,
+    "reading_order_concordance": 0.7544,
     "recall": 0.7037,
+    "spatial_f1": 0.2969,
+    "spatial_precision": 0.1881,
+    "spatial_recall": 0.7037,
     "total_ground_truth": 27,
     "total_predicted": 101,
     "true_positives": 19
@@ -116,7 +176,10 @@
     }
   ],
   "pages_audited": 8,
+  "pages_per_second": 1.1061,
   "parser": "marker",
   "parser_backend": "fast-no-ocr",
-  "parser_version": "2.0.0"
+  "parser_version": "2.0.0",
+  "total_document_pages": 48,
+  "wall_clock_seconds": 43.3946
 }

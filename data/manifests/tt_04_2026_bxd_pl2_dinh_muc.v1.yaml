@@ -9,12 +9,12 @@ document:
 version:
   id: v1
   document_id: tt-04-2026-bxd-pl2-dinh-muc
-  issued_on: 2026-01-22
-  effective_on: 2026-03-15
+  issued_on: 2026-01-30
+  effective_on: 2026-02-01
 source:
   source_type: official_government_portal
   publisher: Cổng Thông tin điện tử Chính phủ - Cơ sở dữ liệu Văn bản quy phạm pháp luật
-  signer: Nguyễn Thanh Nghị
+  signer: Nguyễn Danh Huy
   landing_page_url: https://vanban.chinhphu.vn/?pageid=27160&docid=216894
   asset_url: https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/01/phulucii-inhmuccauthanglong22.01.pdf
   retrieved_at: 2026-09-04T15:00:00.000Z

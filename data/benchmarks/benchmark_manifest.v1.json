@@ -1,1119 +1,246 @@
 {
   "benchmark_schema_version": 1,
-  "benchmark_name": "Vietnamese Legal & Planning Multimodal Parser Benchmark v1",
-  "environment": {
-    "os": "Windows 11",
-    "cpu_device": "Intel Core x86_64",
-    "python_version": "3.12.10",
-    "torch_device": "cpu",
-    "isolation_policy": "Strict subprocess + JSON boundary, no ML dependencies in main CI"
+  "corpus_total_pages": 250,
+  "corpus_documents_count": 6,
+  "total_audited_pages": 46,
+  "total_reference_regions": 112,
+  "annotation_version": "v2",
+  "annotation_provenance": {
+    "annotator": "antigravity",
+    "annotator_type": "ai_visual_audit",
+    "annotation_method": "independent_visual_pdf_audit",
+    "parser_output_used_as_ground_truth": false
   },
-  "evaluated_parsers": [
-    {
-      "name": "mineru",
-      "version": "3.4.5",
-      "backend": "pipeline",
-      "device": "cpu"
-    },
-    {
-      "name": "marker",
+  "evaluation_configuration": {
+    "iou_threshold": 0.5,
+    "matching_objective": "maximum_cardinality_bipartite_matching_with_secondary_max_iou",
+    "metric_names": [
+      "spatial_precision",
+      "spatial_recall",
+      "spatial_f1",
+      "mean_iou",
+      "pairwise_order_accuracy",
+      "classification_accuracy_on_matched"
+    ]
+  },
+  "parser_coverage_matrix": {
+    "marker": {
+      "parser": "marker",
       "version": "2.0.0",
-      "mode": "fast-no-ocr",
+      "mode": "fast",
+      "backend": "fast-no-ocr",
+      "disable_ocr": true,
+      "evaluated_documents": 6,
+      "evaluated_pages": 250,
+      "coverage": "6/6 (250/250 pages)"
+    },
+    "mineru": {
+      "parser": "mineru",
+      "version": "3.4.5",
+      "mode": "pipeline",
       "backend": "pipeline",
-      "device": "cpu"
+      "device": "cpu",
+      "evaluated_documents": 4,
+      "evaluated_pages": 150,
+      "coverage": "4/6 (150/250 pages)",
+      "omitted_documents": [
+        "luat-112-2025-qh15 (52 pages, CPU budget boundary)",
+        "vbhn-103-2026-quy-hoach-tong-the (48 pages, CPU budget boundary)"
+      ]
     }
-  ],
-  "corpus_summary": {
-    "total_documents": 6,
-    "total_pages": 249,
-    "audited_pages": 46,
-    "coordinate_system": "normalized_1000"
   },
-  "reports": [
+  "documents": [
     {
       "document_id": "hanoi-master-plan-100y",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "table",
-            "f1": 0.0,
-            "false_negatives": 3,
-            "false_positives": 0,
-            "precision": 0.0,
-            "recall": 0.0,
-            "true_positives": 0
-          },
-          {
-            "category": "text",
-            "f1": 0.0625,
-            "false_negatives": 9,
-            "false_positives": 111,
-            "precision": 0.0348,
-            "recall": 0.3077,
-            "true_positives": 4
-          }
-        ],
-        "f1": 0.0497,
-        "false_negatives": 12,
-        "false_positives": 141,
-        "mean_iou": 0.7862,
-        "precision": 0.0276,
-        "reading_order_concordance": 1.0,
-        "recall": 0.25,
-        "total_ground_truth": 16,
-        "total_predicted": 145,
-        "true_positives": 4
-      },
-      "pages": [
-        {
-          "ground_truth_count": 5,
-          "matched_count": 4,
+      "document_number": "2512/QĐ-UBND",
+      "title": "Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm",
+      "pages": 80,
+      "byte_size": 2218758,
+      "sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "manifest_path": "data/manifests/hanoi_master_plan_100y.v1.yaml",
+      "annotation_path": "data/annotations/hanoi_master_plan_100y.v1.json",
+      "runs": {
+        "marker": {
+          "wall_clock_seconds": 159.44924349999928,
+          "pages_per_second": 0.5017,
+          "spatial_precision": 0.0276,
+          "spatial_recall": 0.25,
+          "spatial_f1": 0.0497,
           "mean_iou": 0.7862,
-          "page_index": 0,
-          "predicted_count": 13,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 9
+          "pairwise_order_accuracy": 1.0,
+          "run_json_path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "physical_ir_path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
+          "benchmark_result_path": "data/benchmarks/marker_hanoi_master_plan_100y.v1.json"
         },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 1,
-          "predicted_count": 14,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 14
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 2,
-          "predicted_count": 22,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 22
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 3,
-          "predicted_count": 13,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 13
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 15,
-          "predicted_count": 17,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 17
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 30,
-          "predicted_count": 19,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 19
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 45,
-          "predicted_count": 8,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 8
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 60,
-          "predicted_count": 17,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 17
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 78,
-          "predicted_count": 12,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 12
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 79,
-          "predicted_count": 10,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 10
+        "mineru": {
+          "wall_clock_seconds": 1607.9058961000005,
+          "pages_per_second": 0.0498,
+          "spatial_precision": 0.0195,
+          "spatial_recall": 0.1875,
+          "spatial_f1": 0.0353,
+          "mean_iou": 0.7136,
+          "pairwise_order_accuracy": 0.3333,
+          "run_json_path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/run.json",
+          "physical_ir_path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json",
+          "benchmark_result_path": "data/benchmarks/mineru_hanoi_master_plan_100y.v1.json"
         }
-      ],
-      "pages_audited": 10,
-      "parser": "marker",
-      "parser_backend": "fast-no-ocr",
-      "parser_version": "2.0.0"
+      }
     },
     {
       "document_id": "luat-112-2025-qh15",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "heading",
-            "f1": 0.4828,
-            "false_negatives": 5,
-            "false_positives": 10,
-            "precision": 0.4118,
-            "recall": 0.5833,
-            "true_positives": 7
-          },
-          {
-            "category": "text",
-            "f1": 0.2174,
-            "false_negatives": 7,
-            "false_positives": 101,
-            "precision": 0.1293,
-            "recall": 0.6818,
-            "true_positives": 15
-          }
-        ],
-        "f1": 0.2444,
-        "false_negatives": 12,
-        "false_positives": 124,
-        "mean_iou": 0.7604,
-        "precision": 0.1507,
-        "reading_order_concordance": 0.9221,
-        "recall": 0.6471,
-        "total_ground_truth": 34,
-        "total_predicted": 146,
-        "true_positives": 22
-      },
-      "pages": [
-        {
-          "ground_truth_count": 8,
-          "matched_count": 6,
-          "mean_iou": 0.7486,
-          "page_index": 0,
-          "predicted_count": 19,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 13
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.8049,
-          "page_index": 1,
-          "predicted_count": 11,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 10
-        },
-        {
-          "ground_truth_count": 3,
-          "matched_count": 2,
-          "mean_iou": 0.6643,
-          "page_index": 5,
-          "predicted_count": 13,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 11
-        },
-        {
-          "ground_truth_count": 4,
-          "matched_count": 3,
-          "mean_iou": 0.7552,
-          "page_index": 12,
-          "predicted_count": 23,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 20
-        },
-        {
-          "ground_truth_count": 3,
-          "matched_count": 1,
-          "mean_iou": 0.7871,
-          "page_index": 20,
-          "predicted_count": 23,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 22
-        },
-        {
-          "ground_truth_count": 5,
-          "matched_count": 3,
-          "mean_iou": 0.7065,
-          "page_index": 28,
-          "predicted_count": 19,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 16
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.8005,
-          "page_index": 35,
-          "predicted_count": 18,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 17
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.8037,
-          "page_index": 42,
-          "predicted_count": 14,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 13
-        },
-        {
-          "ground_truth_count": 3,
-          "matched_count": 2,
-          "mean_iou": 0.8114,
-          "page_index": 50,
-          "predicted_count": 3,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 1
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 2,
-          "mean_iou": 0.8521,
-          "page_index": 51,
-          "predicted_count": 3,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 1
+      "document_number": "112/2025/QH15",
+      "title": "Luật Quy hoạch",
+      "pages": 52,
+      "byte_size": 1523362,
+      "sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "manifest_path": "data/manifests/luat_112_2025_qh15.v1.yaml",
+      "annotation_path": "data/annotations/luat_112_2025_qh15.v1.json",
+      "runs": {
+        "marker": {
+          "wall_clock_seconds": 49.947127600000385,
+          "pages_per_second": 1.0411,
+          "spatial_precision": 0.1507,
+          "spatial_recall": 0.6471,
+          "spatial_f1": 0.2444,
+          "mean_iou": 0.7604,
+          "pairwise_order_accuracy": 0.7446,
+          "run_json_path": "data/golden/luat_112_2025_qh15/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "physical_ir_path": "data/golden/luat_112_2025_qh15/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
+          "benchmark_result_path": "data/benchmarks/marker_luat_112_2025_qh15.v1.json"
         }
-      ],
-      "pages_audited": 10,
-      "parser": "marker",
-      "parser_backend": "fast-no-ocr",
-      "parser_version": "2.0.0"
-    },
-    {
-      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "scanned_block",
-            "f1": 0.0,
-            "false_negatives": 4,
-            "false_positives": 0,
-            "precision": 0.0,
-            "recall": 0.0,
-            "true_positives": 0
-          }
-        ],
-        "f1": 0.0,
-        "false_negatives": 4,
-        "false_positives": 74,
-        "mean_iou": 0.0,
-        "precision": 0.0,
-        "reading_order_concordance": 1.0,
-        "recall": 0.0,
-        "total_ground_truth": 4,
-        "total_predicted": 74,
-        "true_positives": 0
-      },
-      "pages": [
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 0,
-          "predicted_count": 21,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 21
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 1,
-          "predicted_count": 15,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 15
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 2,
-          "predicted_count": 20,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 20
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 3,
-          "predicted_count": 18,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 18
-        }
-      ],
-      "pages_audited": 4,
-      "parser": "marker",
-      "parser_backend": "fast-no-ocr",
-      "parser_version": "2.0.0"
-    },
-    {
-      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "figure",
-            "f1": 0.8571,
-            "false_negatives": 1,
-            "false_positives": 0,
-            "precision": 1.0,
-            "recall": 0.75,
-            "true_positives": 3
-          },
-          {
-            "category": "table",
-            "f1": 0.6667,
-            "false_negatives": 2,
-            "false_positives": 0,
-            "precision": 1.0,
-            "recall": 0.5,
-            "true_positives": 2
-          },
-          {
-            "category": "text",
-            "f1": 0.3548,
-            "false_negatives": 5,
-            "false_positives": 35,
-            "precision": 0.2391,
-            "recall": 0.6875,
-            "true_positives": 11
-          }
-        ],
-        "f1": 0.3636,
-        "false_negatives": 8,
-        "false_positives": 48,
-        "mean_iou": 0.8354,
-        "precision": 0.25,
-        "reading_order_concordance": 0.625,
-        "recall": 0.6667,
-        "total_ground_truth": 24,
-        "total_predicted": 64,
-        "true_positives": 16
-      },
-      "pages": [
-        {
-          "ground_truth_count": 8,
-          "matched_count": 7,
-          "mean_iou": 0.823,
-          "page_index": 0,
-          "predicted_count": 21,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 14
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.8442,
-          "page_index": 5,
-          "predicted_count": 10,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 9
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.8409,
-          "page_index": 15,
-          "predicted_count": 9,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 8
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.8451,
-          "page_index": 20,
-          "predicted_count": 6,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 5
-        },
-        {
-          "ground_truth_count": 4,
-          "matched_count": 2,
-          "mean_iou": 0.8719,
-          "page_index": 21,
-          "predicted_count": 9,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 7
-        },
-        {
-          "ground_truth_count": 4,
-          "matched_count": 2,
-          "mean_iou": 0.7809,
-          "page_index": 26,
-          "predicted_count": 4,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 2
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 2,
-          "mean_iou": 0.8846,
-          "page_index": 27,
-          "predicted_count": 3,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 1
-        },
-        {
-          "ground_truth_count": 0,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 46,
-          "predicted_count": 2,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 2
-        }
-      ],
-      "pages_audited": 8,
-      "parser": "marker",
-      "parser_backend": "fast-no-ocr",
-      "parser_version": "2.0.0"
-    },
-    {
-      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "table",
-            "f1": 0.8571,
-            "false_negatives": 2,
-            "false_positives": 0,
-            "precision": 1.0,
-            "recall": 0.75,
-            "true_positives": 6
-          },
-          {
-            "category": "text",
-            "f1": 0.1176,
-            "false_negatives": 2,
-            "false_positives": 13,
-            "precision": 0.0714,
-            "recall": 0.3333,
-            "true_positives": 1
-          }
-        ],
-        "f1": 0.3333,
-        "false_negatives": 4,
-        "false_positives": 24,
-        "mean_iou": 0.7871,
-        "precision": 0.2258,
-        "reading_order_concordance": 0.4286,
-        "recall": 0.6364,
-        "total_ground_truth": 11,
-        "total_predicted": 31,
-        "true_positives": 7
-      },
-      "pages": [
-        {
-          "ground_truth_count": 3,
-          "matched_count": 1,
-          "mean_iou": 0.8885,
-          "page_index": 0,
-          "predicted_count": 3,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 2
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 1,
-          "mean_iou": 0.9747,
-          "page_index": 1,
-          "predicted_count": 2,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 1
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 1,
-          "mean_iou": 0.9503,
-          "page_index": 5,
-          "predicted_count": 1,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 0
-        },
-        {
-          "ground_truth_count": 3,
-          "matched_count": 2,
-          "mean_iou": 0.7376,
-          "page_index": 10,
-          "predicted_count": 10,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 8
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.6561,
-          "page_index": 15,
-          "predicted_count": 10,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 9
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 1,
-          "mean_iou": 0.5649,
-          "page_index": 18,
-          "predicted_count": 5,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 4
-        }
-      ],
-      "pages_audited": 6,
-      "parser": "marker",
-      "parser_backend": "fast-no-ocr",
-      "parser_version": "2.0.0"
+      }
     },
     {
       "document_id": "vbhn-103-2026-quy-hoach-tong-the",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "heading",
-            "f1": 0.375,
-            "false_negatives": 0,
-            "false_positives": 10,
-            "precision": 0.2308,
-            "recall": 1.0,
-            "true_positives": 3
-          },
-          {
-            "category": "table",
-            "f1": 0.6667,
-            "false_negatives": 1,
-            "false_positives": 0,
-            "precision": 1.0,
-            "recall": 0.5,
-            "true_positives": 1
-          },
-          {
-            "category": "text",
-            "f1": 0.3409,
-            "false_negatives": 7,
-            "false_positives": 51,
-            "precision": 0.2273,
-            "recall": 0.6818,
-            "true_positives": 15
-          }
-        ],
-        "f1": 0.2969,
-        "false_negatives": 8,
-        "false_positives": 82,
-        "mean_iou": 0.7849,
-        "precision": 0.1881,
-        "reading_order_concordance": 0.8889,
-        "recall": 0.7037,
-        "total_ground_truth": 27,
-        "total_predicted": 101,
-        "true_positives": 19
-      },
-      "pages": [
-        {
-          "ground_truth_count": 6,
-          "matched_count": 4,
-          "mean_iou": 0.7677,
-          "page_index": 0,
-          "predicted_count": 19,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 15
-        },
-        {
-          "ground_truth_count": 4,
-          "matched_count": 2,
-          "mean_iou": 0.8302,
-          "page_index": 1,
-          "predicted_count": 21,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 19
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.7597,
-          "page_index": 5,
-          "predicted_count": 12,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 11
-        },
-        {
-          "ground_truth_count": 3,
-          "matched_count": 3,
-          "mean_iou": 0.7427,
-          "page_index": 12,
-          "predicted_count": 8,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 5
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.7526,
-          "page_index": 20,
-          "predicted_count": 12,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 11
-        },
-        {
-          "ground_truth_count": 3,
-          "matched_count": 2,
-          "mean_iou": 0.8328,
-          "page_index": 30,
-          "predicted_count": 10,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 8
-        },
-        {
-          "ground_truth_count": 3,
-          "matched_count": 2,
-          "mean_iou": 0.8364,
-          "page_index": 40,
-          "predicted_count": 13,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 11
-        },
-        {
-          "ground_truth_count": 4,
-          "matched_count": 4,
-          "mean_iou": 0.7757,
-          "page_index": 47,
-          "predicted_count": 6,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 2
+      "document_number": "103/VBHN-VPQH",
+      "title": "Văn bản hợp nhất Nghị quyết về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050",
+      "pages": 48,
+      "byte_size": 1169934,
+      "sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "manifest_path": "data/manifests/vbhn_103_2026_quy_hoach_tong_the.v1.yaml",
+      "annotation_path": "data/annotations/vbhn_103_2026_quy_hoach_tong_the.v1.json",
+      "runs": {
+        "marker": {
+          "wall_clock_seconds": 43.394605699999374,
+          "pages_per_second": 1.1061,
+          "spatial_precision": 0.1881,
+          "spatial_recall": 0.7037,
+          "spatial_f1": 0.2969,
+          "mean_iou": 0.7849,
+          "pairwise_order_accuracy": 0.7544,
+          "run_json_path": "data/golden/vbhn_103_2026_quy_hoach_tong_the/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "physical_ir_path": "data/golden/vbhn_103_2026_quy_hoach_tong_the/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
+          "benchmark_result_path": "data/benchmarks/marker_vbhn_103_2026_quy_hoach_tong_the.v1.json"
         }
-      ],
-      "pages_audited": 8,
-      "parser": "marker",
-      "parser_backend": "fast-no-ocr",
-      "parser_version": "2.0.0"
-    },
-    {
-      "document_id": "hanoi-master-plan-100y",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "table",
-            "f1": 0.0,
-            "false_negatives": 3,
-            "false_positives": 0,
-            "precision": 0.0,
-            "recall": 0.0,
-            "true_positives": 0
-          },
-          {
-            "category": "text",
-            "f1": 0.042,
-            "false_negatives": 10,
-            "false_positives": 127,
-            "precision": 0.0231,
-            "recall": 0.2308,
-            "true_positives": 3
-          }
-        ],
-        "f1": 0.0353,
-        "false_negatives": 13,
-        "false_positives": 151,
-        "mean_iou": 0.7136,
-        "precision": 0.0195,
-        "reading_order_concordance": 0.3333,
-        "recall": 0.1875,
-        "total_ground_truth": 16,
-        "total_predicted": 154,
-        "true_positives": 3
-      },
-      "pages": [
-        {
-          "ground_truth_count": 5,
-          "matched_count": 3,
-          "mean_iou": 0.7136,
-          "page_index": 0,
-          "predicted_count": 12,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 9
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 1,
-          "predicted_count": 14,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 14
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 2,
-          "predicted_count": 21,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 21
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 3,
-          "predicted_count": 13,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 13
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 15,
-          "predicted_count": 17,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 17
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 30,
-          "predicted_count": 19,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 19
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 45,
-          "predicted_count": 8,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 8
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 60,
-          "predicted_count": 17,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 17
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 78,
-          "predicted_count": 11,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 11
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 79,
-          "predicted_count": 22,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 22
-        }
-      ],
-      "pages_audited": 10,
-      "parser": "mineru",
-      "parser_backend": "pipeline",
-      "parser_version": "3.4.5"
-    },
-    {
-      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "scanned_block",
-            "f1": 0.0,
-            "false_negatives": 4,
-            "false_positives": 0,
-            "precision": 0.0,
-            "recall": 0.0,
-            "true_positives": 0
-          }
-        ],
-        "f1": 0.0,
-        "false_negatives": 4,
-        "false_positives": 82,
-        "mean_iou": 0.0,
-        "precision": 0.0,
-        "reading_order_concordance": 1.0,
-        "recall": 0.0,
-        "total_ground_truth": 4,
-        "total_predicted": 82,
-        "true_positives": 0
-      },
-      "pages": [
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 0,
-          "predicted_count": 18,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 18
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 1,
-          "predicted_count": 15,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 15
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 2,
-          "predicted_count": 19,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 19
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 3,
-          "predicted_count": 30,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 30
-        }
-      ],
-      "pages_audited": 4,
-      "parser": "mineru",
-      "parser_backend": "pipeline",
-      "parser_version": "3.4.5"
-    },
-    {
-      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "figure",
-            "f1": 0.8571,
-            "false_negatives": 1,
-            "false_positives": 0,
-            "precision": 1.0,
-            "recall": 0.75,
-            "true_positives": 3
-          },
-          {
-            "category": "table",
-            "f1": 0.6667,
-            "false_negatives": 2,
-            "false_positives": 0,
-            "precision": 1.0,
-            "recall": 0.5,
-            "true_positives": 2
-          },
-          {
-            "category": "text",
-            "f1": 0.3385,
-            "false_negatives": 5,
-            "false_positives": 38,
-            "precision": 0.2245,
-            "recall": 0.6875,
-            "true_positives": 11
-          }
-        ],
-        "f1": 0.3636,
-        "false_negatives": 8,
-        "false_positives": 48,
-        "mean_iou": 0.7262,
-        "precision": 0.25,
-        "reading_order_concordance": 0.4083,
-        "recall": 0.6667,
-        "total_ground_truth": 24,
-        "total_predicted": 64,
-        "true_positives": 16
-      },
-      "pages": [
-        {
-          "ground_truth_count": 8,
-          "matched_count": 6,
-          "mean_iou": 0.744,
-          "page_index": 0,
-          "predicted_count": 18,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 12
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.6102,
-          "page_index": 5,
-          "predicted_count": 18,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 17
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.5913,
-          "page_index": 15,
-          "predicted_count": 9,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 8
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.5986,
-          "page_index": 20,
-          "predicted_count": 5,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 4
-        },
-        {
-          "ground_truth_count": 4,
-          "matched_count": 3,
-          "mean_iou": 0.8139,
-          "page_index": 21,
-          "predicted_count": 7,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 4
-        },
-        {
-          "ground_truth_count": 4,
-          "matched_count": 2,
-          "mean_iou": 0.67,
-          "page_index": 26,
-          "predicted_count": 3,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 1
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 2,
-          "mean_iou": 0.7862,
-          "page_index": 27,
-          "predicted_count": 3,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 1
-        },
-        {
-          "ground_truth_count": 0,
-          "matched_count": 0,
-          "mean_iou": 0.0,
-          "page_index": 46,
-          "predicted_count": 1,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 1
-        }
-      ],
-      "pages_audited": 8,
-      "parser": "mineru",
-      "parser_backend": "pipeline",
-      "parser_version": "3.4.5"
+      }
     },
     {
       "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
-      "metrics": {
-        "by_category": [
-          {
-            "category": "table",
-            "f1": 0.8571,
-            "false_negatives": 2,
-            "false_positives": 0,
-            "precision": 1.0,
-            "recall": 0.75,
-            "true_positives": 6
-          },
-          {
-            "category": "text",
-            "f1": 0.1053,
-            "false_negatives": 2,
-            "false_positives": 15,
-            "precision": 0.0625,
-            "recall": 0.3333,
-            "true_positives": 1
-          }
-        ],
-        "f1": 0.3111,
-        "false_negatives": 4,
-        "false_positives": 27,
-        "mean_iou": 0.7311,
-        "precision": 0.2059,
-        "reading_order_concordance": 0.5238,
-        "recall": 0.6364,
-        "total_ground_truth": 11,
-        "total_predicted": 34,
-        "true_positives": 7
-      },
-      "pages": [
-        {
-          "ground_truth_count": 3,
-          "matched_count": 1,
-          "mean_iou": 0.6594,
-          "page_index": 0,
-          "predicted_count": 5,
-          "unmatched_ground_truth": 2,
-          "unmatched_predicted": 4
+      "document_number": "04/2026/TT-BXD/PL2",
+      "title": "Định mức dự toán bảo dưỡng công trình đường sắt cầu Thăng Long và tuyến Bắc Hồng - Văn Điển",
+      "pages": 19,
+      "byte_size": 345504,
+      "sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "manifest_path": "data/manifests/tt_04_2026_bxd_pl2_dinh_muc.v1.yaml",
+      "annotation_path": "data/annotations/tt_04_2026_bxd_pl2_dinh_muc.v1.json",
+      "runs": {
+        "marker": {
+          "wall_clock_seconds": 22.01520090000122,
+          "pages_per_second": 0.863,
+          "spatial_precision": 0.2258,
+          "spatial_recall": 0.6364,
+          "spatial_f1": 0.3333,
+          "mean_iou": 0.7871,
+          "pairwise_order_accuracy": 0.7143,
+          "run_json_path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "physical_ir_path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
+          "benchmark_result_path": "data/benchmarks/marker_tt_04_2026_bxd_pl2_dinh_muc.v1.json"
         },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 1,
-          "mean_iou": 0.9842,
-          "page_index": 1,
-          "predicted_count": 1,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 0
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 1,
-          "mean_iou": 0.9546,
-          "page_index": 5,
-          "predicted_count": 1,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 0
-        },
-        {
-          "ground_truth_count": 3,
-          "matched_count": 2,
-          "mean_iou": 0.6861,
-          "page_index": 10,
-          "predicted_count": 12,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 10
-        },
-        {
-          "ground_truth_count": 2,
-          "matched_count": 1,
-          "mean_iou": 0.6354,
-          "page_index": 15,
-          "predicted_count": 10,
-          "unmatched_ground_truth": 1,
-          "unmatched_predicted": 9
-        },
-        {
-          "ground_truth_count": 1,
-          "matched_count": 1,
-          "mean_iou": 0.5116,
-          "page_index": 18,
-          "predicted_count": 5,
-          "unmatched_ground_truth": 0,
-          "unmatched_predicted": 4
+        "mineru": {
+          "wall_clock_seconds": 125.24927839999873,
+          "pages_per_second": 0.1517,
+          "spatial_precision": 0.2059,
+          "spatial_recall": 0.6364,
+          "spatial_f1": 0.3111,
+          "mean_iou": 0.7311,
+          "pairwise_order_accuracy": 0.7619,
+          "run_json_path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/run.json",
+          "physical_ir_path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json",
+          "benchmark_result_path": "data/benchmarks/mineru_tt_04_2026_bxd_pl2_dinh_muc.v1.json"
         }
-      ],
-      "pages_audited": 6,
-      "parser": "mineru",
-      "parser_backend": "pipeline",
-      "parser_version": "3.4.5"
+      }
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "document_number": "04/2023/TT-BKHĐT",
+      "title": "Hướng dẫn yêu cầu nội dung và kỹ thuật cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "pages": 47,
+      "byte_size": 2024373,
+      "sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "manifest_path": "data/manifests/tt_04_2023_bkhdt_so_do_ban_do.v1.yaml",
+      "annotation_path": "data/annotations/tt_04_2023_bkhdt_so_do_ban_do.v1.json",
+      "runs": {
+        "marker": {
+          "wall_clock_seconds": 40.2256578000015,
+          "pages_per_second": 1.1684,
+          "spatial_precision": 0.25,
+          "spatial_recall": 0.6667,
+          "spatial_f1": 0.3636,
+          "mean_iou": 0.8354,
+          "pairwise_order_accuracy": 0.6667,
+          "run_json_path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "physical_ir_path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
+          "benchmark_result_path": "data/benchmarks/marker_tt_04_2023_bkhdt_so_do_ban_do.v1.json"
+        },
+        "mineru": {
+          "wall_clock_seconds": 418.11074550000194,
+          "pages_per_second": 0.1124,
+          "spatial_precision": 0.25,
+          "spatial_recall": 0.6667,
+          "spatial_f1": 0.3636,
+          "mean_iou": 0.7262,
+          "pairwise_order_accuracy": 0.425,
+          "run_json_path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/run.json",
+          "physical_ir_path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json",
+          "benchmark_result_path": "data/benchmarks/mineru_tt_04_2023_bkhdt_so_do_ban_do.v1.json"
+        }
+      }
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "document_number": "23/2008/QĐ-UBND",
+      "title": "Thành lập Viện Quy hoạch Xây dựng Hà Nội",
+      "pages": 4,
+      "byte_size": 140726,
+      "sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+      "manifest_path": "data/manifests/qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.yaml",
+      "annotation_path": "data/annotations/qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json",
+      "runs": {
+        "marker": {
+          "wall_clock_seconds": 16.49949750000087,
+          "pages_per_second": 0.2424,
+          "spatial_precision": 0.0,
+          "spatial_recall": 0.0,
+          "spatial_f1": 0.0,
+          "mean_iou": 0.0,
+          "pairwise_order_accuracy": null,
+          "run_json_path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "physical_ir_path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
+          "benchmark_result_path": "data/benchmarks/marker_qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json"
+        },
+        "mineru": {
+          "wall_clock_seconds": 82.49464600000283,
+          "pages_per_second": 0.0485,
+          "spatial_precision": 0.0,
+          "spatial_recall": 0.0,
+          "spatial_f1": 0.0,
+          "mean_iou": 0.0,
+          "pairwise_order_accuracy": null,
+          "run_json_path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/run.json",
+          "physical_ir_path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json",
+          "benchmark_result_path": "data/benchmarks/mineru_qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json"
+        }
+      }
     }
   ]
 }

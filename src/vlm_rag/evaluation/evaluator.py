@@ -65,6 +65,29 @@ def evaluate_physical_document(
     iou_threshold: float = 0.5,
 ) -> DocumentEvaluationReport:
     """Evaluate a parsed PhysicalDocument against ground-truth annotations."""
+    # Cross-artifact integrity validation
+    if annotation.document_id != document.document_id:
+        raise ValueError(
+            f"Document ID mismatch: annotation has '{annotation.document_id}', "
+            f"document has '{document.document_id}'"
+        )
+    if annotation.version_id != document.version_id:
+        raise ValueError(
+            f"Version ID mismatch: annotation has '{annotation.version_id}', "
+            f"document has '{document.version_id}'"
+        )
+    if annotation.source_sha256 != document.source_artifact_sha256:
+        raise ValueError(
+            f"Source SHA-256 mismatch: annotation has '{annotation.source_sha256}', "
+            f"document has '{document.source_artifact_sha256}'"
+        )
+    for audited_page in annotation.audited_pages:
+        if audited_page.page_index >= document.page_count:
+            raise ValueError(
+                f"Audited page index {audited_page.page_index} is out of bounds for "
+                f"document with {document.page_count} pages (valid 0..{document.page_count - 1})"
+            )
+
     page_lookup = {page.page_index: page for page in document.pages}
 
     match_results = []
@@ -104,3 +127,10 @@ def evaluate_physical_document(
         metrics=overall_metrics,
         page_reports=tuple(page_reports),
     )
+
+
+__all__ = [
+    "DocumentEvaluationReport",
+    "PageEvaluationReport",
+    "evaluate_physical_document",
+]

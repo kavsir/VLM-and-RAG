@@ -1,4 +1,11 @@
 {
+  "annotation_schema_version": 1,
+  "annotation_version": "v2",
+  "annotator": "antigravity",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "independent_visual_pdf_audit",
+  "created_at": "2026-09-05T00:00:00Z",
+  "parser_output_used_as_ground_truth": false,
   "document_id": "vbhn-103-2026-quy-hoach-tong-the",
   "version_id": "v1",
   "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
@@ -95,7 +102,8 @@
           "text": "Luật Công nghiệp công nghệ số số 71/2025/QH15 có căn cứ ban hành như sau: 1 Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam; “ Quốc hội ban hành Luật Công nghiệp công nghệ số. ”. Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời 2030, tầm nhìn đến năm 2050 có căn cứ ban hành như sau: kỳ 2021 -",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 1,
@@ -160,7 +168,8 @@
           "text": "Điều này được sửa đổi, bổ sung theo quy định tại khoản 1 Điều 1 của Nghị quyết số 2 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 2030, tầm nhìn đến - năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
           "heading_level": 3
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 5,
@@ -197,7 +206,8 @@
           "text": "ắ ắn đ ng l c phía B c và phía Nam g i 2 c ởng là Hà N i và Thành ớ ộ ộ ởn c tăng trư ự ự ắn v ố ồ ế ắ ế ph Chí Minh, hành lang kinh t Nam, hành lang kinh t Lào Cai Hà H B c - - ế ố ồ i i Phòng ảng Ninh, hành lang kinh t c Bài Thành ph Chí ộ ộ ả ản Qu N H M H - - - ế ấu ầ ồ ố ng đ n đ c đ Minh Biên Hòa i k ấu h ng b , hi i, có t Vũng Tàu v ớ ộ ệ ộ tăng t c t ạ ạ - - ể ấ ởng cao, đóng góp l a đ ớn vào phát tri n chung c ớn ớ ởn ủ trư t nư c. ể ề ấn n đô th ị ạng lư đô th ị hóa đ Phát tri b ng theo m i; t l t trên 50%; ph ớ ệ ỷ ữ ạn ạ n v ấn ấu ầ ố ế đ 5 đô th ị m khu v . Xây d ựng nông thôn m i phát ừ ớ c và qu 3 ấu t ngang t c t ự ựn - ể ề ắ i đô th ị tri n toàn di n, b hoá. ớ ệ ng và g ữ n v n v ể ần ố ần ề ể ổ ố ố n đ Phát tri nh h , h ầng d li ảng chuy i s ệ ản ữ t t u t n t ạ ạ ạ ạ n m ầng s o n qu c ể ố ế ố ố ế ố đ gia, phát tri n Chính ph , kinh t , xã h i s ng kinh t t kho ộ ủ ỷ ản ; t tr ọ ạ s s s ảng 30% GDP. ề xã h i ộ V - ắ ế ổ ỗ trong đ ng ch c sinh thay th , bình quân m i ph i mứ ộ Duy trì v ữ ữ tu c mứ n ụ ố ố ể sinh đ đ có 2,1 con; quy mô dân s t kho ng 105 tri i. Ch phát tri ờ ệ ẻ ả ỉ u ngư ạ s n ổ ổ i (HDI) đ bình quân đ t kho i th t kho i, trong ờ ản ản ảng 0,78. Tu ảng 75,5 tu con ngư ạ ọ ạ ố ố ể đó th nh đ lao đ i gian s ng kh i thi l ng nông nghi ờ u 68 năm. T ệ ộ ệ ỏ ỷ t t ạ ạ e m p ổ ố ấ ng lao đ ng dư t lư ng xã h i gi i 20%. Nâng cao ch ợng vi c làm, ớ ộ ộ ệ ả trong t ợn m xu ấ gi l th t nghi c h ợp lý. ứ ệ ệ ỷ ở ữ t ợp p m ể ề ế t Nam đ t trình đ Phát tri n giáo dụ c Vi tiên ti n trong khu v c; thu ệ ộ ộ ự ạ n n c dụ ố ố ố ấ ấn ấ ấ c đ ấn đ nhóm 10 qu c gia có h th ng giáo d i h t nh t châu A. Ph u ít nh ệ c t t ạ ọ ụ ầu ấ ầu châu Á, ít nh c đ c nhóm 200 đ c hàng đ giáo d i h c thu i h 8 cơ s ộ t 1 cơ s ở ở ạ ọ ạ ọ ụ ầu ế ố c đ c nhóm 100 đ c hàng đ lĩnh v giáo d i h c thu i h ầu th gi i trong m ớ ộ ộ t s ự ạ ọ ạ ọ c ụ ế ố ế sinh viên đ c đ theo các b p h l i h ệ ản ỷ uy tín. T t 260 trên 1 v c t ạn ạ ọ ạ ạn ảng x ạng qu ạn ằn ấp lao đ ng qua đào t đ dân. T l o có b ấp, ch ứng ch ứn ệ ộ ỷ ỉ 40%. t 35 ạ ạ ằng c - ấ ế ầ ế t lư ị Nâng cao ch ợng d ch v c tiên ti n trong khu m các nư ớ y t ngang t ợn ụ ể ế ố ầu ng lư i cơ s c gia đáp ầu chăm sóc, b c. Phát tri ớ ứ ệ ở ả ng yêu c y t ự ạ n m qu o v v , ằ ấ e toàn dân, hư t lư c kh i m c tiêu công b ng, ch ợng, hi ứ ớn ớ ệ ỏ ả nâng cao s ớng t ợn u qu ụ ố ế ế n năm 2030, đ t 35 giư nh và 19 bác sĩ trên 1 v và h i nh ờng b ờn ộ ập ệ . Đ c t ạ ạn ập qu ạn giư nh tư nhân đ dân; t l ờng b ờn ệ ệ ỷ t 15%. ạ ố ựng môi trư ờng văn hóa lành m ạnh trong các lĩnh v c đ Xây d i s ng xã h i. ờn ờ ộ ựn ự ạn ể ố ố ng lư i cơ s văn hóa qu o đ Phát tri c gia b m th c hi t nhi b ớ ệ ệ ở ả ả ả n t ự ạ n m m v o ụ ồ ắ ẩy ể ị c văn hóa dân t c, thúc đ n và phát huy giá tr b ẩy phát tri n công nghi ộ ệ ả t n s p ấ ấ ấp ế ế văn hóa. Ph n đ u 100% đơn v ị nh có đ hành chính c 3 lo i hình thi t ch ỉ ủ ấp t ạ ồ văn hóa, g m: trung tâm văn hóa ho c trung tâm văn hóa ngh thu t, b ệ ậ ả o tàng ặ - và thư vi ệ n. ề môi trư ờn V ờng - ổ ấ n đ ị t lư ng, tăng di l che ph nh c 42%; nâng cao ch rừ ứ rừ ệ ệ ỷ ủ ở T ợn rừ ng m ợng rừ n ồ ồ tích các khu b n thiên nhiên; b , ph c h i các h sinh thái t nhiên quan ệ ệ ả ả o t ự o v ụ ấ ồ ể t lư ợng đa d ng, nâng cao ch ạng sinh h c; di n tích các khu b n bi ệ ả tr o t ợn ọ ạn ọ n, ven",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 12,
@@ -248,7 +258,8 @@
           "text": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 2 Điều 1 của 4 Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 2030, tầm - nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 20,
@@ -285,7 +296,8 @@
           "text": "ể ố ẵn ởng, đ Phát tri n thành ph ẵng là c ng l ng thúc Đà N ộ ởn c tăng trư c quan tr ự ự ọ ẩy ể ế đ ẩy phát tri n kinh t xã h i vùng Duyên h i Nam Trung B ộ ộ ả và Tây Nguyên, cùng - ế ẩy ể ắ i đô th ị thúc đ ẩy phát tri n khu v c phía Nam c ớ ộ ủ ở a vùng B Hu c Trung B , tr ự v ề ỗ i đô th ị đ thành chu ng l a khu v c mi ớ ộ ủ ả n Trung và c c quan tr ự ự nư ọ ng c c. ần ố ồ d) Vùng đô th ị ần Thơ: xây d ng đô th ị m đô th ị ng h th trung tâm là ệ C ự g ố ầ ể lõi đô th ị n Thơ và các đô th ị a Thành ph lân c ận; phát tri thành trung ận ủ ở C n tr c ế ế ị thương m ị tâm d ch v i, du l ch, logistics, công nghi p ch bi n, nông nghi ứ ệ ệ ạ p ứ ng ụ ế c, đào t d ng công ngh cao, giáo d chuyên sâu, khoa h c, công ngh ệ ệ , văn o, y t ạ ọ ụ ụ ể ế ố ầ n Thơ hóa, th thao c vùng. Khai thác các tr c giao thông k i C ủ ả ỹ M t n a c ụ - ố ồ ố ầ Chí Minh, Châu Đ n Thơ Thu Thành ph ận Sóc C Trung Lương H ận c - - - - ắn ể ầ ề ể ể đ n đô th ị i c ảng bi phát tri lan t i ớ ớ ập ản ỏ Trăng g n Đ n Tr t ập trung , t a t ự ạ ắn v o s các khu v c khác trong vùng. ự ể ố ầ n Thơ là c ởng, đóng vai trò đô th ị Phát tri n thành ph h t nhân, ởn C c tăng trư ự ạ ẩ ể ồ ằn đ c thúc đ ng l y phát tri ng b n toàn vùng Đ ộ ửu ằng sông C ửu Long. ự ể ị nh hư ớng phát tri n nông thôn ớn 3. Đ ể ề n đ Xây d ng nông thôn m i phát tri n toàn di n, hi i, b ững, xanh, s ch, ớ ệ ệ ữn ự ạ ạ n v ắn ầ ồ đ i quá trình đô th ị hóa; có cơ s ị i đ h ng, d ch v xã h ng b và ti ớ ộ ộ ệ ở t ẹ ạ p g ắn v m ụ ầu ế ế ề c đô th ị o đ i khu v ; b m nhu c ầu thi ch c i dân và ớ ớ ờ ậ ả ả ủ t y ự nư a ngư ạ c n v c s u v ắ ể ổ môi trư c văn hóa dân t n đ i cơ b ờng; gi gìn và phát huy b c; chuy ờn ệ ộ ả ản ữ o v ản s ấ ế ổ ấ ế u kinh t nông thôn và t ch t h ợp lý, ti ứ ộ ản ở ng và nâng cao p tụ ợp c c s ản xu c m r tụ ẩ ể ỗ chương trình m thành đ hi i xã m n ph m (OCOP) tr ng l c phát tri ệ ộ ộ ả ả ở t s ự u qu n ế ề ổ ản đ ị n đ ị b o sinh k b ng cho ng i dân; xã h i nông thôn nh, dân trí ờ ộ ản ữ a, t ư ạ n v ầu đư đư o đ c nâng cao; an ninh, tr c b ứ ng vào tăng cư ờn ậ ả ả m. Đ ầu tư tương x t t ợ ự ợ ờng ề ố ể năng l ị công đ o đ m đáp a chính quy hóa d ch v b ứ ủ ả ả n các xã, s ng yêu ự c c ụ ầ ố ấp ề ấp u đ n đ ị a phương 2 c i v i c trong chính quy ớ ở ấp cơ s c ấp. ố dân cư phù h Xây d ng các mô hình phân b i t ng vùng sinh thái t ớ ừ ự ợp ự ợp v ể ề ế nhiên và đ c đi m văn hóa, dân t c, đi đ u ki n kinh t xã h i. Ch ng di d i, ờ ộ ệ ộ ộ ủ ặ - ố ắp ế ể ố i các đi m dân cư đ b p l i v i khu v ảy ra thiên ớ c có nguy cơ cao x ảy trí, s ự ạ ắp x tai, s t l ở ạ . ố ẩy ể i nông thôn ven đô, đ ạnh đô th ị p đô i v hóa, phát tri n nông nghi ớ ệ Đ ạn ẩy m ần ể ấ ị ng bư ị t lư th c hoàn thi h ầng, phát tri n d ch v xã h i có ch ừ ớ ệ ộ ở , t t n cơ s ợn ạ ợng ụ ể ị , hình thành các đi m dân cư t ti i thành th p trung nông thôn xanh, sinh ớ ệ ận ậ m c ận v ể ề ừng bư c đưa phát tri n đô th ị đ ị thái. T a bàn nông thôn. ừn ớ v ố ề ắ ố ồ ằn i v i nông thôn khu v c mi n núi phía B ng b ớ ộ ở ở vùng Đ Đ t s ự c, m ằng ồ ề ể n các khu dân cư t ng và các vùng mi n khác, phát tri ậ p trung có quy mô sông H ế ầ ế ế ố ỗ i đô th ị u đ thích h ợp liên k ; h xây d h ng thi i v i nông ớ ớ ở t v tr t t y ợp ợ ựn ựng cơ s ạ ồ ể ố ề c vùng khó khăn, vùng đ thôn thu ng bào dân t c thi và mi n núi. ộ ộ u s ố ấ i v i nông thôn thu t nông nghi i vùng ớ ộ ệ ập ản c các vùng s Đ p t ập trung t ạ ản xu ồ ằ ể c Tây Nguyên, đ ị nh hư ng b ửu Long, khu v ớng phát tri n các khu ớn ửu ng sông C Đ ự",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 30,
@@ -336,7 +348,8 @@
           "text": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 7 Điều 1 của 20 Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 2030, tầm - nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
           "heading_level": null
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 40,
@@ -387,7 +400,8 @@
           "text": "Điều này được sửa đổi, bổ sung theo quy định tại khoản 9 Điều 1 của Nghị quyết số 30 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 2030, tầm nhìn đến - năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
           "heading_level": 3
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     },
     {
       "page_index": 47,
@@ -452,7 +466,8 @@
           "text": "Phụ lục này được sửa đổi, bổ sung theo quy định tại khoản 11 Điều 1 của Nghị quyết 32 số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 2030, tầm nhìn - đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
           "heading_level": 1
         }
-      ]
+      ],
+      "page_modality": "digital_vector"
     }
   ]
 }

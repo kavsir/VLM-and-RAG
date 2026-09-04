@@ -4,39 +4,121 @@
     "by_category": [
       {
         "category": "figure",
-        "f1": 0.8571,
-        "false_negatives": 1,
+        "f1": 0.0,
+        "false_negatives": 4,
         "false_positives": 0,
-        "precision": 1.0,
-        "recall": 0.75,
-        "true_positives": 3
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
+        "category": "header",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 15,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
+        "category": "heading",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 7,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       },
       {
         "category": "table",
-        "f1": 0.6667,
-        "false_negatives": 2,
+        "f1": 0.0,
+        "false_negatives": 4,
         "false_positives": 0,
-        "precision": 1.0,
-        "recall": 0.5,
-        "true_positives": 2
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       },
       {
         "category": "text",
-        "f1": 0.3548,
-        "false_negatives": 5,
+        "f1": 0.1111,
+        "false_negatives": 13,
         "false_positives": 35,
-        "precision": 0.2391,
-        "recall": 0.6875,
-        "true_positives": 11
+        "precision": 0.0789,
+        "recall": 0.1875,
+        "true_positives": 3
+      },
+      {
+        "category": "unknown",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       }
     ],
+    "classification_accuracy_on_matched": 0.1875,
+    "confusion_matrix": {
+      "figure": {
+        "figure": 0,
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 3
+      },
+      "header": {
+        "figure": 0,
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "heading": {
+        "figure": 0,
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "table": {
+        "figure": 0,
+        "header": 2,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "text": {
+        "figure": 0,
+        "header": 5,
+        "heading": 3,
+        "table": 0,
+        "text": 3,
+        "unknown": 0
+      },
+      "unknown": {
+        "figure": 0,
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      }
+    },
     "f1": 0.3636,
     "false_negatives": 8,
     "false_positives": 48,
     "mean_iou": 0.8354,
+    "pairwise_order_accuracy": 0.6667,
     "precision": 0.25,
-    "reading_order_concordance": 0.625,
+    "reading_order_concordance": 0.6667,
     "recall": 0.6667,
+    "spatial_f1": 0.3636,
+    "spatial_precision": 0.25,
+    "spatial_recall": 0.6667,
     "total_ground_truth": 24,
     "total_predicted": 64,
     "true_positives": 16
@@ -116,7 +198,10 @@
     }
   ],
   "pages_audited": 8,
+  "pages_per_second": 1.1684,
   "parser": "marker",
   "parser_backend": "fast-no-ocr",
-  "parser_version": "2.0.0"
+  "parser_version": "2.0.0",
+  "total_document_pages": 47,
+  "wall_clock_seconds": 40.2257
 }

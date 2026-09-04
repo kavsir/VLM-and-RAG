@@ -3,6 +3,24 @@
   "metrics": {
     "by_category": [
       {
+        "category": "header",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
+        "category": "heading",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 21,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
         "category": "table",
         "f1": 0.0,
         "false_negatives": 3,
@@ -13,21 +31,72 @@
       },
       {
         "category": "text",
-        "f1": 0.0625,
-        "false_negatives": 9,
+        "f1": 0.016,
+        "false_negatives": 12,
         "false_positives": 111,
-        "precision": 0.0348,
-        "recall": 0.3077,
-        "true_positives": 4
+        "precision": 0.0089,
+        "recall": 0.0769,
+        "true_positives": 1
+      },
+      {
+        "category": "unknown",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       }
     ],
+    "classification_accuracy_on_matched": 0.25,
+    "confusion_matrix": {
+      "header": {
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "heading": {
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "table": {
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "text": {
+        "header": 0,
+        "heading": 3,
+        "table": 0,
+        "text": 1,
+        "unknown": 0
+      },
+      "unknown": {
+        "header": 0,
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      }
+    },
     "f1": 0.0497,
     "false_negatives": 12,
     "false_positives": 141,
     "mean_iou": 0.7862,
+    "pairwise_order_accuracy": 1.0,
     "precision": 0.0276,
     "reading_order_concordance": 1.0,
     "recall": 0.25,
+    "spatial_f1": 0.0497,
+    "spatial_precision": 0.0276,
+    "spatial_recall": 0.25,
     "total_ground_truth": 16,
     "total_predicted": 145,
     "true_positives": 4
@@ -125,7 +194,10 @@
     }
   ],
   "pages_audited": 10,
+  "pages_per_second": 0.5017,
   "parser": "marker",
   "parser_backend": "fast-no-ocr",
-  "parser_version": "2.0.0"
+  "parser_version": "2.0.0",
+  "total_document_pages": 80,
+  "wall_clock_seconds": 159.4492
 }

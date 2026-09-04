@@ -3,31 +3,122 @@
   "metrics": {
     "by_category": [
       {
+        "category": "header",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
+        "category": "heading",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 9,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
+        "category": "page_number",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
         "category": "table",
-        "f1": 0.8571,
-        "false_negatives": 2,
+        "f1": 0.0,
+        "false_negatives": 8,
         "false_positives": 0,
-        "precision": 1.0,
-        "recall": 0.75,
-        "true_positives": 6
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       },
       {
         "category": "text",
-        "f1": 0.1053,
-        "false_negatives": 2,
-        "false_positives": 15,
-        "precision": 0.0625,
-        "recall": 0.3333,
-        "true_positives": 1
+        "f1": 0.0,
+        "false_negatives": 3,
+        "false_positives": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
+        "category": "unknown",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       }
     ],
+    "classification_accuracy_on_matched": 0.0,
+    "confusion_matrix": {
+      "header": {
+        "header": 0,
+        "heading": 0,
+        "page_number": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "heading": {
+        "header": 0,
+        "heading": 0,
+        "page_number": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "page_number": {
+        "header": 0,
+        "heading": 0,
+        "page_number": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "table": {
+        "header": 0,
+        "heading": 0,
+        "page_number": 0,
+        "table": 0,
+        "text": 2,
+        "unknown": 4
+      },
+      "text": {
+        "header": 1,
+        "heading": 0,
+        "page_number": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "unknown": {
+        "header": 0,
+        "heading": 0,
+        "page_number": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      }
+    },
     "f1": 0.3111,
     "false_negatives": 4,
     "false_positives": 27,
     "mean_iou": 0.7311,
+    "pairwise_order_accuracy": 0.7619,
     "precision": 0.2059,
-    "reading_order_concordance": 0.5238,
+    "reading_order_concordance": 0.7619,
     "recall": 0.6364,
+    "spatial_f1": 0.3111,
+    "spatial_precision": 0.2059,
+    "spatial_recall": 0.6364,
     "total_ground_truth": 11,
     "total_predicted": 34,
     "true_positives": 7
@@ -89,7 +180,10 @@
     }
   ],
   "pages_audited": 6,
+  "pages_per_second": 0.1517,
   "parser": "mineru",
   "parser_backend": "pipeline",
-  "parser_version": "3.4.5"
+  "parser_version": "3.4.5",
+  "total_document_pages": 19,
+  "wall_clock_seconds": 125.2493
 }

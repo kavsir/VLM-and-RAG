@@ -3,31 +3,80 @@
   "metrics": {
     "by_category": [
       {
+        "category": "heading",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 9,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
         "category": "table",
-        "f1": 0.8571,
-        "false_negatives": 2,
+        "f1": 0.0,
+        "false_negatives": 8,
         "false_positives": 0,
-        "precision": 1.0,
-        "recall": 0.75,
-        "true_positives": 6
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       },
       {
         "category": "text",
-        "f1": 0.1176,
-        "false_negatives": 2,
-        "false_positives": 13,
-        "precision": 0.0714,
-        "recall": 0.3333,
-        "true_positives": 1
+        "f1": 0.0,
+        "false_negatives": 3,
+        "false_positives": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
+      },
+      {
+        "category": "unknown",
+        "f1": 0.0,
+        "false_negatives": 0,
+        "false_positives": 8,
+        "precision": 0.0,
+        "recall": 0.0,
+        "true_positives": 0
       }
     ],
+    "classification_accuracy_on_matched": 0.0,
+    "confusion_matrix": {
+      "heading": {
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "table": {
+        "heading": 0,
+        "table": 0,
+        "text": 1,
+        "unknown": 5
+      },
+      "text": {
+        "heading": 1,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      },
+      "unknown": {
+        "heading": 0,
+        "table": 0,
+        "text": 0,
+        "unknown": 0
+      }
+    },
     "f1": 0.3333,
     "false_negatives": 4,
     "false_positives": 24,
     "mean_iou": 0.7871,
+    "pairwise_order_accuracy": 0.7143,
     "precision": 0.2258,
-    "reading_order_concordance": 0.4286,
+    "reading_order_concordance": 0.7143,
     "recall": 0.6364,
+    "spatial_f1": 0.3333,
+    "spatial_precision": 0.2258,
+    "spatial_recall": 0.6364,
     "total_ground_truth": 11,
     "total_predicted": 31,
     "true_positives": 7
@@ -89,7 +138,10 @@
     }
   ],
   "pages_audited": 6,
+  "pages_per_second": 0.863,
   "parser": "marker",
   "parser_backend": "fast-no-ocr",
-  "parser_version": "2.0.0"
+  "parser_version": "2.0.0",
+  "total_document_pages": 19,
+  "wall_clock_seconds": 22.0152
 }
