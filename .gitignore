@@ -6,6 +6,7 @@ __pycache__/
 
 # Environments and virtual environments
 .venv/
+.venv-mineru/
 venv/
 env/
 ENV/
@@ -53,3 +54,4 @@ data/*
 !data/manifests/**
 data/golden/**/*.pdf
 data/golden/**/*.part
+data/golden/**/parser_runs/
