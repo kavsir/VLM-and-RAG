@@ -7,6 +7,7 @@ __pycache__/
 # Environments and virtual environments
 .venv/
 .venv-mineru/
+.venv-marker/
 venv/
 env/
 ENV/

@@ -1,5 +1,25 @@
 """Adapters for explicitly invoked external document parser runtimes."""
 
+from vlm_rag.parsers.marker import (
+    MARKER_BACKEND,
+    MARKER_DEVICE_POLICY,
+    MARKER_MODE,
+    MARKER_NAME,
+    MARKER_OUTPUT_FORMAT,
+    MARKER_VERSION,
+    MarkerAdapter,
+    MarkerArtifact,
+    MarkerError,
+    MarkerExecutableNotFoundError,
+    MarkerExecutionError,
+    MarkerOutputError,
+    MarkerProbe,
+    MarkerProbeError,
+    MarkerRun,
+    MarkerTimeoutError,
+    discover_marker_artifacts,
+    discover_marker_document_json,
+)
 from vlm_rag.parsers.mineru import (
     MINERU_BACKEND,
     MINERU_NAME,
@@ -19,9 +39,25 @@ from vlm_rag.parsers.mineru import (
 )
 
 __all__ = [
+    "MARKER_BACKEND",
+    "MARKER_DEVICE_POLICY",
+    "MARKER_MODE",
+    "MARKER_NAME",
+    "MARKER_OUTPUT_FORMAT",
+    "MARKER_VERSION",
     "MINERU_BACKEND",
     "MINERU_NAME",
     "MINERU_VERSION",
+    "MarkerAdapter",
+    "MarkerArtifact",
+    "MarkerError",
+    "MarkerExecutableNotFoundError",
+    "MarkerExecutionError",
+    "MarkerOutputError",
+    "MarkerProbe",
+    "MarkerProbeError",
+    "MarkerRun",
+    "MarkerTimeoutError",
     "MinerUAdapter",
     "MinerUError",
     "MinerUExecutableNotFoundError",
@@ -34,4 +70,6 @@ __all__ = [
     "ParserExecutionMetadata",
     "ParserRun",
     "discover_artifacts",
+    "discover_marker_artifacts",
+    "discover_marker_document_json",
 ]

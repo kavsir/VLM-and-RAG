@@ -1,0 +1,12 @@
+{
+  "table_of_contents": null,
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [["Text", 1]],
+      "block_metadata": {}
+    }
+  ],
+  "debug_data_path": null
+}
