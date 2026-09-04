@@ -1,0 +1,46 @@
+[
+  {
+    "type": "header",
+    "text": "ỦY BAN NHÂN DÂN THÀNH PHỐ HÀ NỘI",
+    "bbox": [184, 64, 401, 102],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "QUYẾT ĐỊNH",
+    "bbox": [242, 229, 816, 252],
+    "text_level": 1,
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "Số: /QĐ-UBND",
+    "bbox": [189, 123, 396, 142],
+    "page_idx": 0
+  },
+  {
+    "type": "page_number",
+    "text": "1",
+    "bbox": [500, 950, 520, 970],
+    "page_idx": 0
+  },
+  {
+    "type": "text",
+    "text": "Điều 1. Quy định chung",
+    "bbox": [100, 150, 600, 180],
+    "text_level": 2,
+    "page_idx": 1
+  },
+  {
+    "type": "text",
+    "text": "Nội dung điều 1 thi hành quy hoạch tổng thể.",
+    "bbox": [100, 200, 700, 250],
+    "page_idx": 1
+  },
+  {
+    "type": "page_number",
+    "text": "2",
+    "bbox": [500, 950, 520, 970],
+    "page_idx": 1
+  }
+]
