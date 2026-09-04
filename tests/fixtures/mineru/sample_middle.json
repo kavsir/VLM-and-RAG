@@ -1,0 +1,14 @@
+{
+  "_version_name": "3.4.5",
+  "_backend": "pipeline",
+  "pdf_info": [
+    {
+      "page_idx": 0,
+      "page_size": [595.0, 841.0]
+    },
+    {
+      "page_idx": 1,
+      "page_size": [595.0, 841.0]
+    }
+  ]
+}
