@@ -2,6 +2,7 @@
 
 from vlm_rag.parsers.marker import (
     MARKER_BACKEND,
+    MARKER_DEVICE_POLICY,
     MARKER_MODE,
     MARKER_NAME,
     MARKER_OUTPUT_FORMAT,
@@ -39,6 +40,7 @@ from vlm_rag.parsers.mineru import (
 
 __all__ = [
     "MARKER_BACKEND",
+    "MARKER_DEVICE_POLICY",
     "MARKER_MODE",
     "MARKER_NAME",
     "MARKER_OUTPUT_FORMAT",

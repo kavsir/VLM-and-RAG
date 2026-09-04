@@ -37,6 +37,13 @@ The independent version probe returned `2.0.0`:
 .venv-marker\Scripts\python.exe -c "import importlib.metadata; print(importlib.metadata.version('marker-pdf'))"
 ```
 
+That command and the environment row above describe the retained historical run. The hardened
+adapter now requires `marker_single` and Python to resolve from the same environment directory,
+runs its package/device probe and parse with the same CUDA/HIP/ROCm-hiding environment, and fails
+sets Marker's `TORCH_DEVICE=cpu`, and fails if Torch still observes an accelerator. Successful
+future run manifests record the observed
+device, the `cpu-only` policy, and the effective isolation variables.
+
 ## Command
 
 The adapter executed this argument sequence (shown as a readable PowerShell command):
@@ -133,7 +140,9 @@ page number.
 
 Marker native bbox coordinates are projected to `normalized_1000` relative to the full native page
 bounds, with nonzero origins supported and results rounded to six decimal places. Out-of-page or
-reversed geometry fails rather than being clipped.
+reversed geometry fails rather than being clipped. A native coordinate no more than `1e-6` beyond
+an edge is treated solely as floating-point noise and snapped to that exact native edge before
+projection; an excursion beyond that tolerance fails.
 
 ## Physical IR counts
 

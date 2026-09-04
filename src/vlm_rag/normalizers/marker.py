@@ -66,6 +66,7 @@ _BLOCK_TAGS = frozenset(
     }
 )
 _GEOMETRY_TOLERANCE = 1e-6
+_MAX_CONTENT_REF_DEPTH = 64
 
 
 class MarkerNormalizationError(ValueError):
@@ -306,11 +307,12 @@ class MarkerPhysicalNormalizer:
         raw_directory: Path,
         output_path: Path,
         *,
+        source_artifact_path: Path | None = None,
         indent: int | None = 2,
         **kwargs: Any,
     ) -> PhysicalDocument:
         """Normalize in memory, then atomically persist deterministic UTF-8/LF bytes."""
-        self._protect_raw_evidence(raw_directory, output_path)
+        self._protect_raw_evidence(raw_directory, output_path, source_artifact_path)
         document = self.normalize(raw_directory, **kwargs)
         payload = physical_document_to_json(document, indent=indent).encode("utf-8")
         output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -334,11 +336,19 @@ class MarkerPhysicalNormalizer:
         return document
 
     @staticmethod
-    def _protect_raw_evidence(raw_directory: Path, output_path: Path) -> None:
+    def _protect_raw_evidence(
+        raw_directory: Path,
+        output_path: Path,
+        source_artifact_path: Path | None,
+    ) -> None:
         if not raw_directory.is_dir():
             raise MarkerNormalizationError(f"raw directory does not exist: {raw_directory}")
         raw_resolved = raw_directory.resolve()
         output_resolved = output_path.resolve()
+        if source_artifact_path is not None and output_resolved == source_artifact_path.resolve():
+            raise MarkerNormalizationError(
+                "normalized output would overwrite the authoritative source artifact"
+            )
         if output_resolved == raw_resolved or output_resolved.is_relative_to(raw_resolved):
             raise MarkerNormalizationError("normalized output must not be inside the raw directory")
         run_directory = raw_resolved.parent
@@ -502,15 +512,17 @@ def _project_bbox(
     height = py1 - py0
     if width <= 0 or height <= 0:
         raise MarkerNormalizationError("cannot project bbox from non-positive page bounds")
+    bx0 = px0 if bx0 < px0 else bx0
+    by0 = py0 if by0 < py0 else by0
+    bx1 = px1 if bx1 > px1 else bx1
+    by1 = py1 if by1 > py1 else by1
     normalized = (
         round((bx0 - px0) / width * 1000, 6),
         round((by0 - py0) / height * 1000, 6),
         round((bx1 - px0) / width * 1000, 6),
         round((by1 - py0) / height * 1000, 6),
     )
-    if any(
-        value < -_GEOMETRY_TOLERANCE or value > 1000 + _GEOMETRY_TOLERANCE for value in normalized
-    ):
+    if any(value < 0 or value > 1000 for value in normalized):
         raise MarkerNormalizationError(f"projected bbox is outside normalized_1000: {normalized}")
     try:
         return BoundingBox(
@@ -524,7 +536,21 @@ def _project_bbox(
         raise MarkerNormalizationError(f"invalid projected bbox {normalized}:\n{exc}") from exc
 
 
-def _render_block_html(raw_block: Mapping[str, Any]) -> str:
+def _render_block_html(
+    raw_block: Mapping[str, Any],
+    *,
+    active_ids: frozenset[str] = frozenset(),
+    depth: int = 0,
+) -> str:
+    if depth > _MAX_CONTENT_REF_DEPTH:
+        raise MarkerNormalizationError(
+            f"Marker content-ref nesting exceeds {_MAX_CONTENT_REF_DEPTH} levels"
+        )
+    raw_id = raw_block.get("id")
+    if isinstance(raw_id, str):
+        if raw_id in active_ids:
+            raise MarkerNormalizationError(f"cyclic Marker content-ref involving {raw_id!r}")
+        active_ids = active_ids | {raw_id}
     html = raw_block.get("html")
     if not isinstance(html, str):
         raise MarkerNormalizationError("canonical Marker block html must be a string")
@@ -547,7 +573,7 @@ def _render_block_html(raw_block: Mapping[str, Any]) -> str:
         child = children.get(child_id)
         if child is None:
             raise MarkerNormalizationError(f"unresolved Marker content-ref {child_id!r}")
-        return _render_block_html(child)
+        return _render_block_html(child, active_ids=active_ids, depth=depth + 1)
 
     return _CONTENT_REF.sub(replace, html)
 

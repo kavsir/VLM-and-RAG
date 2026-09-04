@@ -222,7 +222,9 @@ uv run python -m vlm_rag.parsers.marker_cli `
 ```
 
 The adapter explicitly records `mode=fast`, `disable_ocr=true`, `output_format=json`, and the
-`fast-no-ocr` experiment label. It does not use an LLM service or network from main application
+`fast-no-ocr` experiment label. It requires the Marker executable and Python interpreter to resolve
+from the same external environment, enforces a CPU-only subprocess environment, and records the
+observed device and device policy. It does not use an LLM service or network from main application
 code. Raw outputs and execution evidence are written below
 `data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/` and ignored by Git.
 

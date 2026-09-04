@@ -26,6 +26,7 @@ DEFAULT_MARKER_OUTPUT = Path(
     "data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/"
     "normalized/physical_ir.json"
 )
+DEFAULT_SOURCE_ARTIFACT = Path("data/golden/hanoi_master_plan_100y/v1/source.pdf")
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -50,6 +51,12 @@ def _build_parser() -> argparse.ArgumentParser:
     marker_parser.add_argument("--raw-dir", type=Path, default=DEFAULT_MARKER_RAW_DIR)
     marker_parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     marker_parser.add_argument("--output", type=Path, default=DEFAULT_MARKER_OUTPUT)
+    marker_parser.add_argument(
+        "--source-artifact",
+        type=Path,
+        default=DEFAULT_SOURCE_ARTIFACT,
+        help="authoritative source file that normalized output must not overwrite",
+    )
     normalize_parser.add_argument(
         "--manifest",
         type=Path,
@@ -116,7 +123,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         try:
             manifest = load_manifest(arguments.manifest)
             doc = MarkerPhysicalNormalizer().normalize_to_file(
-                arguments.raw_dir, arguments.output, manifest=manifest
+                arguments.raw_dir,
+                arguments.output,
+                source_artifact_path=arguments.source_artifact,
+                manifest=manifest,
             )
         except (ManifestValidationError, MarkerNormalizationError, OSError, ValueError) as exc:
             parser.exit(1, f"error: {exc}\n")

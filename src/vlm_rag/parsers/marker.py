@@ -21,6 +21,13 @@ MARKER_VERSION = "2.0.0"
 MARKER_MODE = "fast"
 MARKER_BACKEND = "fast-no-ocr"
 MARKER_OUTPUT_FORMAT = "json"
+MARKER_DEVICE_POLICY = "cpu-only"
+_CPU_ENVIRONMENT = {
+    "TORCH_DEVICE": "cpu",
+    "CUDA_VISIBLE_DEVICES": "",
+    "HIP_VISIBLE_DEVICES": "",
+    "ROCR_VISIBLE_DEVICES": "",
+}
 
 MarkerArtifactKind = Literal["document_json", "metadata_json", "image", "other"]
 
@@ -71,6 +78,7 @@ class MarkerProbe:
     executable_path: Path
     python_path: Path
     python_version: str
+    device: str
 
 
 @dataclass(frozen=True, slots=True)
@@ -133,6 +141,8 @@ class MarkerRun:
     python_path: str
     python_version: str
     device: str
+    device_policy: str
+    device_environment: tuple[tuple[str, str], ...]
     document_id: str
     version_id: str
     input_sha256: str
@@ -155,6 +165,8 @@ class MarkerRun:
             "python_path": self.python_path,
             "python_version": self.python_version,
             "device": self.device,
+            "device_policy": self.device_policy,
+            "device_environment": dict(self.device_environment),
             "document_id": self.document_id,
             "version_id": self.version_id,
             "input_sha256": self.input_sha256,
@@ -185,15 +197,24 @@ class MarkerAdapter:
         self._python_executable = os.fspath(python_executable)
         self.expected_version = expected_version
         self.timeout_seconds = timeout_seconds
+        self._process_environment = os.environ.copy()
+        self._process_environment.update(_CPU_ENVIRONMENT)
 
     def probe(self) -> MarkerProbe:
         """Resolve executables and probe Marker via installed-package metadata."""
         executable_path = self._resolve_executable(self._executable, "Marker")
         python_path = self._resolve_executable(self._python_executable, "Python")
+        self._validate_environment_identity(executable_path, python_path)
         script = (
-            "import importlib.metadata,sys;"
-            "print(importlib.metadata.version('marker-pdf'));"
-            "print(sys.version.split()[0])"
+            "import importlib.metadata,json,os,sys,torch;"
+            "mps=getattr(getattr(torch.backends,'mps',None),'is_available',lambda:False)();"
+            "xpu=getattr(getattr(torch,'xpu',None),'is_available',lambda:False)();"
+            "accelerators=[name for name,available in "
+            "(('cuda',torch.cuda.is_available()),('mps',mps),('xpu',xpu)) if available];"
+            "print(json.dumps({'version':importlib.metadata.version('marker-pdf'),"
+            "'python_version':sys.version.split()[0],"
+            "'configured_device':os.environ.get('TORCH_DEVICE'),"
+            "'device':'cpu' if not accelerators else '+'.join(accelerators)}))"
         )
         completed = self._run_process((os.fspath(python_path), "-c", script))
         if completed.returncode != 0:
@@ -202,9 +223,26 @@ class MarkerAdapter:
                 f"{completed.returncode}: {completed.stderr.strip() or completed.stdout.strip()}"
             )
         lines = [line.strip() for line in completed.stdout.splitlines() if line.strip()]
-        if len(lines) != 2:
+        if len(lines) != 1:
             raise MarkerProbeError(f"unrecognized Marker package probe output: {lines!r}")
-        version, python_version = lines
+        try:
+            probe_data: object = json.loads(lines[0])
+        except json.JSONDecodeError as exc:
+            raise MarkerProbeError(f"invalid Marker package probe JSON: {lines[0]!r}") from exc
+        if not isinstance(probe_data, dict):
+            raise MarkerProbeError("Marker package probe output must be a JSON object")
+        version = probe_data.get("version")
+        python_version = probe_data.get("python_version")
+        device = probe_data.get("device")
+        configured_device = probe_data.get("configured_device")
+        if not all(
+            isinstance(value, str) for value in (version, python_version, device, configured_device)
+        ):
+            raise MarkerProbeError("Marker package probe omitted version, Python, or device policy")
+        assert isinstance(version, str)
+        assert isinstance(python_version, str)
+        assert isinstance(device, str)
+        assert isinstance(configured_device, str)
         if version != self.expected_version:
             raise MarkerProbeError(
                 f"Marker version mismatch: expected {self.expected_version}, got {version}"
@@ -213,12 +251,21 @@ class MarkerAdapter:
             raise MarkerProbeError(
                 f"Marker requires the reviewed Python 3.12 environment, got {python_version}"
             )
+        if configured_device != "cpu":
+            raise MarkerProbeError(
+                f"Marker CPU-only policy was not applied: TORCH_DEVICE={configured_device!r}"
+            )
+        if device != "cpu":
+            raise MarkerProbeError(
+                f"Marker CPU-only policy found an available accelerator after isolation: {device}"
+            )
         return MarkerProbe(
             parser=MARKER_NAME,
             version=version,
             executable_path=executable_path,
             python_path=python_path,
             python_version=python_version,
+            device=device,
         )
 
     def run(
@@ -238,16 +285,21 @@ class MarkerAdapter:
 
         started_at = datetime.now(UTC)
         started_clock = time.perf_counter()
-        completed = self._run_process(command)
+        stdout_path = run_directory / "stdout.log"
+        stderr_path = run_directory / "stderr.log"
+        try:
+            completed = self._run_process(command)
+        except MarkerTimeoutError as exc:
+            self._write_bytes(stdout_path, exc.stdout.encode("utf-8"))
+            self._write_bytes(stderr_path, exc.stderr.encode("utf-8"))
+            raise
         duration_seconds = time.perf_counter() - started_clock
         completed_at = datetime.now(UTC)
+        self._write_bytes(stdout_path, completed.stdout.encode("utf-8"))
+        self._write_bytes(stderr_path, completed.stderr.encode("utf-8"))
         if completed.returncode != 0:
             raise MarkerExecutionError(completed.returncode, completed.stdout, completed.stderr)
 
-        stdout_path = run_directory / "stdout.log"
-        stderr_path = run_directory / "stderr.log"
-        self._write_bytes(stdout_path, completed.stdout.encode("utf-8"))
-        self._write_bytes(stderr_path, completed.stderr.encode("utf-8"))
         artifacts = discover_marker_artifacts(raw_directory)
         discover_marker_document_json(raw_directory)
         execution = MarkerExecutionMetadata(
@@ -271,7 +323,9 @@ class MarkerAdapter:
             executable_path=os.fspath(probe.executable_path),
             python_path=os.fspath(probe.python_path),
             python_version=probe.python_version,
-            device="cpu",
+            device=probe.device,
+            device_policy=MARKER_DEVICE_POLICY,
+            device_environment=tuple(sorted(_CPU_ENVIRONMENT.items())),
             document_id=manifest.document.id,
             version_id=manifest.version.id,
             input_sha256=verified_input.sha256,
@@ -321,6 +375,14 @@ class MarkerAdapter:
             )
         return Path(resolved).resolve()
 
+    @staticmethod
+    def _validate_environment_identity(executable_path: Path, python_path: Path) -> None:
+        if executable_path.parent != python_path.parent:
+            raise MarkerProbeError(
+                "Marker and Python executables must belong to the same environment directory: "
+                f"marker={executable_path.parent}, python={python_path.parent}"
+            )
+
     def _run_process(self, command: Sequence[str]) -> subprocess.CompletedProcess[str]:
         try:
             return subprocess.run(
@@ -329,6 +391,7 @@ class MarkerAdapter:
                 check=False,
                 encoding="utf-8",
                 errors="replace",
+                env=self._process_environment,
                 shell=False,
                 timeout=self.timeout_seconds,
             )
@@ -425,13 +488,11 @@ def discover_marker_document_json(raw_directory: Path) -> Path:
 
 
 def _is_marker_document_tree(value: object) -> bool:
-    if isinstance(value, dict):
-        return value.get("block_type") == "Document" and isinstance(value.get("children"), list)
-    if isinstance(value, list):
-        return bool(value) and all(
-            isinstance(item, dict) and item.get("block_type") == "Page" for item in value
-        )
-    return False
+    return (
+        isinstance(value, dict)
+        and value.get("block_type") == "Document"
+        and isinstance(value.get("children"), list)
+    )
 
 
 def _classify_artifact(path: Path) -> MarkerArtifactKind:
@@ -482,6 +543,7 @@ def _coerce_process_output(output: str | bytes | None) -> str:
 
 __all__ = [
     "MARKER_BACKEND",
+    "MARKER_DEVICE_POLICY",
     "MARKER_MODE",
     "MARKER_NAME",
     "MARKER_OUTPUT_FORMAT",

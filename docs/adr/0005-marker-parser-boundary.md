@@ -25,6 +25,14 @@ never imports `marker.*` or `surya.*`. The adapter verifies the registered sourc
 process, probes the installed distribution with `importlib.metadata`, uses a timeout, captures
 stdout/stderr, and hashes retained run evidence.
 
+The resolved `marker_single` and Python executables must have the same environment directory. The
+version/device probe and parse subprocess receive the same controlled environment, which hides
+CUDA, HIP, and ROCm devices and configures Marker's supported `TORCH_DEVICE=cpu` setting. Torch is
+imported only by the external probe process to observe the effective device; an accelerator that
+remains available is an error under the recorded `cpu-only`
+policy. The successful run manifest records the observed device, policy, and isolation variables
+rather than fabricating device provenance.
+
 The experiment is named `fast-no-ocr` and explicitly executes `mode=fast`,
 `disable_ocr=true`, and `output_format=json`. Header and footer HTML retention is also explicit so
 these detected physical regions remain observable. No LLM service or network-backed semantic layer
@@ -39,12 +47,19 @@ The observed Marker 2.0.0 JSON boundary is:
 
 Nested children remain in the immutable raw JSON but do not become duplicate PhysicalBlocks. When
 a canonical group contains `<content-ref>` placeholders, its nested children are used only to
-render that canonical block's visible text.
+render that canonical block's visible text. Duplicate or unresolved references, cycles, and
+excessive nesting fail with adapter-domain errors.
 
 Marker native page bounds are projected into Physical IR v0's `normalized_1000` coordinates. The
 projection accounts for nonzero page origins, rejects invalid/out-of-page geometry, and rounds to
-six decimal places for deterministic serialization. `PhysicalPage.width` and `height` retain the
+six decimal places for deterministic serialization. Native coordinates outside a page by at most
+`1e-6` are treated as floating-point noise and snapped to the exact native boundary before
+projection; larger excursions fail rather than being broadly clipped. `PhysicalPage.width` and `height` retain the
 parser-reported native canvas dimensions; they are not universally described as 72-DPI points.
+
+File normalization accepts an explicit authoritative source-artifact path and rejects that exact
+path as an output before parsing or writing. It also rejects the raw directory, every descendant,
+and run-evidence files as destinations, preserving source and raw evidence on failure.
 
 Physical IR v0 remains frozen. `Text`, `SectionHeader`, and `PageHeader` map to existing kinds.
 `PageFooter` and richer unsupported physical types map conservatively to `UNKNOWN`; unsupported
