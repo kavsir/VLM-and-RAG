@@ -27,7 +27,7 @@ We introduce **Physical Document IR v0** as a strict, parser-independent represe
    adapter (`MinerUPhysicalNormalizer`) and does not leak downstream.
 3. **v0 Supported Concepts**:
    - `PhysicalDocument`: Top-level document container holding metadata, page count, and ordered pages.
-   - `PhysicalPage`: 0-based page index, page dimensions (`width`, `height` in points when available),
+   - `PhysicalPage`: 0-based page index, page dimensions (`width`, `height` in native PDF page / canvas units when available),
      and ordered blocks.
    - `PhysicalBlock`: Individual layout block with unique ID, page index, reading order, kind,
      disposition, text, bounding box, optional heading level, and parser provenance.
@@ -42,24 +42,26 @@ We introduce **Physical Document IR v0** as a strict, parser-independent represe
 5. **Coordinate Convention**:
    - Origin `(0, 0)` is at the top-left corner of the document page.
    - Axis orientation: `x` increases rightward, `y` increases downward.
-   - Invariant: `x0 <= x1` and `y0 <= y1`, with `x0 >= 0` and `y0 >= 0`.
-   - Coordinate space: `coordinate_system = "normalized_1000"`, representing MinerU's native `0..1000`
-     coordinate grid, while `width` and `height` on `PhysicalPage` preserve PDF points (72 DPI).
+   - Invariants: `0 <= x0 <= x1 <= 1000` and `0 <= y0 <= y1 <= 1000`.
+   - Coordinate space: `coordinate_system = "normalized_1000"`, strictly representing MinerU's native `0..1000`
+     coordinate grid, while `width` and `height` on `PhysicalPage` preserve parser-reported native PDF canvas units.
 6. **Reading-Order Convention**:
    - Page-local 0-based integer sequence (`0, 1, 2, ...`).
    - Monotonically contiguous across blocks on each page.
 7. **Deterministic Block IDs**:
    - Format: `{document_id}_{version_id}_p{page_idx:04d}_b{reading_order:04d}`.
-   - Stable and repeatable across multiple normalization runs on identical raw input.
-   - Independent of mutable text content.
+   - Stable and repeatable across multiple normalization passes on identical raw input and ordering.
+   - Note: Positional IDs are not guaranteed stable across different parser versions, different parser
+     implementations, or changed reading order. Persistent cross-version entity matching is out of scope for v0.
 8. **Provenance Strategy**:
-   - Every block contains `BlockProvenance` recording parser name, version, backend, raw source
-     artifact relative path, and 0-based index in the raw content list.
+   - Every block contains `BlockProvenance` recording parser, parser_version, parser_backend,
+     source_raw_artifact (relative path), and source_raw_index (0-based index in raw content list).
+   - Provenance consistency is enforced across caller arguments, manifests, ParserRun, and raw JSON metadata.
 9. **Raw Format Selection**:
    - `source_content_list.json` is selected as the primary block source because it preserves linear
      reading order, block text, bounding boxes, and `text_level` (differentiating titles from paragraphs).
-   - `source_middle.json` is used as a secondary source to extract physical page dimensions (`page_size`
-     in points) and parser runtime metadata (`_backend`, `_version_name`).
+   - `source_middle.json` is strictly validated when present to extract physical page dimensions (`page_size`
+     in native PDF canvas units) and parser runtime metadata (`_backend`, `_version_name`).
    - `source_content_list_v2.json` was rejected as primary input because it omits `text_level` and
      nests text in complex wrapper objects without block-level page indexes.
 10. **Schema Versioning**:

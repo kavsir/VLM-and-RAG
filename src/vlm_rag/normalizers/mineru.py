@@ -3,7 +3,7 @@
 import json
 import os
 import tempfile
-from collections.abc import Mapping
+from collections.abc import Callable, Mapping, Sequence
 from contextlib import suppress
 from pathlib import Path
 from typing import Any
@@ -28,6 +28,46 @@ class NormalizationError(ValueError):
     """Raised when raw parser output cannot be normalized into Physical Document IR."""
 
 
+def _resolve_consistent_value(
+    field_name: str,
+    candidates: Sequence[tuple[str, Any]],
+    *,
+    required: bool = True,
+    normalize: Callable[[str], str] | None = None,
+) -> str | None:
+    """Resolve a field value across multiple provenance sources, rejecting contradictions.
+
+    - If no values are present and required is True, raises NormalizationError.
+    - If multiple values are present, normalizes and verifies all are identical.
+    - If values conflict, raises NormalizationError with conflicting sources and values.
+    - Returns the resolved value, or None if not present and required is False.
+    """
+    present: list[tuple[str, str]] = []
+    for source_name, raw_val in candidates:
+        if raw_val is not None:
+            val_str = str(raw_val).strip()
+            if val_str:
+                norm_val = normalize(val_str) if normalize else val_str
+                present.append((source_name, norm_val))
+
+    if not present:
+        if required:
+            sources_checked = [source_name for source_name, _ in candidates]
+            raise NormalizationError(
+                f"missing required provenance field {field_name!r}; "
+                f"not provided in any available source: {sources_checked}"
+            )
+        return None
+
+    _, first_val = present[0]
+    for _, val in present[1:]:
+        if val != first_val:
+            conflict_details = ", ".join(f"{s}={v!r}" for s, v in present)
+            raise NormalizationError(f"provenance conflict for {field_name!r}: {conflict_details}")
+
+    return first_val
+
+
 class MinerUPhysicalNormalizer:
     """Normalize raw MinerU layout artifacts into parser-independent PhysicalDocumentIR."""
 
@@ -48,90 +88,123 @@ class MinerUPhysicalNormalizer:
         if not raw_directory.exists():
             raise NormalizationError(f"raw directory does not exist: {raw_directory}")
 
-        # Locate raw content list file
-        content_list_path = self._locate_file(raw_directory, "_content_list.json")
-        if content_list_path is None:
-            raise NormalizationError(
-                f"could not find MinerU content list JSON (*_content_list.json) in {raw_directory}"
-            )
+        # Locate raw content list file (unambiguous canonical match required)
+        content_list_path = self._locate_canonical_file(
+            raw_directory, "_content_list.json", required=True
+        )
+        assert content_list_path is not None  # guaranteed by required=True
 
         # Locate middle.json and run.json if available
-        middle_path = self._locate_file(raw_directory, "_middle.json")
-        run_data = self._read_run_json(raw_directory)
+        middle_path = self._locate_canonical_file(raw_directory, "_middle.json", required=False)
+        run_data, _ = self._read_run_json(raw_directory)
 
-        # Resolve document and parser metadata
-        doc_id = document_id or (manifest.document.id if manifest else None)
-        ver_id = version_id or (manifest.version.id if manifest else None)
-        sha256 = (
-            source_artifact_sha256
-            or (manifest.artifact.sha256 if manifest else None)
-            or (run.input_sha256 if run else None)
-            or (run_data.get("input_sha256") if run_data else None)
-        )
-
-        p_name = (
-            parser
-            or (run.parser if run else None)
-            or (run_data.get("parser") if run_data else None)
-            or "mineru"
-        )
-        p_version = (
-            parser_version
-            or (run.parser_version if run else None)
-            or (run_data.get("parser_version") if run_data else None)
-        )
-        p_backend = (
-            parser_backend
-            or (run.backend if run else None)
-            or (run_data.get("backend") if run_data else None)
-        )
-
-        # Read middle metadata if needed
+        # Read middle metadata if available
         middle_data: dict[str, Any] | None = None
         if middle_path is not None:
             middle_data = self._read_json_dict(middle_path)
-            if p_version is None:
-                p_version = middle_data.get("_version_name")
-            if p_backend is None:
-                p_backend = middle_data.get("_backend")
 
-        if doc_id is None:
-            raise NormalizationError("missing document_id; provide manifest or document_id")
-        if ver_id is None:
-            raise NormalizationError("missing version_id; provide manifest or version_id")
-        if sha256 is None:
-            raise NormalizationError(
-                "missing source_artifact_sha256; provide manifest or source_artifact_sha256"
+        # Resolve document and artifact provenance across all sources
+        doc_id = _resolve_consistent_value(
+            "document_id",
+            [
+                ("argument 'document_id'", document_id),
+                ("manifest.document.id", manifest.document.id if manifest else None),
+                ("run.document_id", run.document_id if run else None),
+                ("run.json 'document_id'", run_data.get("document_id") if run_data else None),
+            ],
+            required=True,
+        )
+        assert doc_id is not None
+
+        ver_id = _resolve_consistent_value(
+            "version_id",
+            [
+                ("argument 'version_id'", version_id),
+                ("manifest.version.id", manifest.version.id if manifest else None),
+                ("run.version_id", run.version_id if run else None),
+                ("run.json 'version_id'", run_data.get("version_id") if run_data else None),
+            ],
+            required=True,
+        )
+        assert ver_id is not None
+
+        sha256 = _resolve_consistent_value(
+            "source_artifact_sha256",
+            [
+                ("argument 'source_artifact_sha256'", source_artifact_sha256),
+                ("manifest.artifact.sha256", manifest.artifact.sha256 if manifest else None),
+                ("run.input_sha256", run.input_sha256 if run else None),
+                ("run.json 'input_sha256'", run_data.get("input_sha256") if run_data else None),
+            ],
+            required=True,
+            normalize=str.lower,
+        )
+        assert sha256 is not None
+
+        # Resolve parser provenance across all sources
+        p_name = (
+            _resolve_consistent_value(
+                "parser",
+                [
+                    ("argument 'parser'", parser),
+                    ("run.parser", run.parser if run else None),
+                    ("run.json 'parser'", run_data.get("parser") if run_data else None),
+                ],
+                required=False,
             )
-        if p_version is None:
-            p_version = "3.4.5"
-        if p_backend is None:
-            p_backend = "pipeline"
+            or "mineru"
+        )
+
+        p_version = _resolve_consistent_value(
+            "parser_version",
+            [
+                ("argument 'parser_version'", parser_version),
+                ("run.parser_version", run.parser_version if run else None),
+                ("run.json 'parser_version'", run_data.get("parser_version") if run_data else None),
+                (
+                    "middle.json '_version_name'",
+                    middle_data.get("_version_name") if middle_data else None,
+                ),
+            ],
+            required=True,
+        )
+        assert p_version is not None
+
+        p_backend = _resolve_consistent_value(
+            "parser_backend",
+            [
+                ("argument 'parser_backend'", parser_backend),
+                ("run.backend", run.backend if run else None),
+                ("run.json 'backend'", run_data.get("backend") if run_data else None),
+                ("middle.json '_backend'", middle_data.get("_backend") if middle_data else None),
+            ],
+            required=True,
+        )
+        assert p_backend is not None
 
         # Read content list
         cl_items = self._read_content_list(content_list_path)
 
-        # Extract page dimensions from middle.json if available
+        # Extract and strictly validate page geometry from middle.json if present
         page_dimensions: dict[int, tuple[float, float]] = {}
-        total_pages_middle = 0
-        if middle_data is not None:
-            pdf_info = middle_data.get("pdf_info", [])
-            if isinstance(pdf_info, list):
-                total_pages_middle = len(pdf_info)
-                for page in pdf_info:
-                    if isinstance(page, dict):
-                        pidx = page.get("page_idx")
-                        psize = page.get("page_size")
-                        if isinstance(pidx, int) and isinstance(psize, list) and len(psize) == 2:
-                            with suppress(TypeError, ValueError):
-                                page_dimensions[pidx] = (float(psize[0]), float(psize[1]))
+        if middle_data is not None and middle_path is not None:
+            page_dimensions = self._validate_and_extract_middle_pages(middle_data, middle_path)
 
-        # Determine total page count
+        # Determine page count and validate content list page bounds
         max_page_idx = -1
         for item in cl_items:
             if "page_idx" in item and isinstance(item["page_idx"], int):
                 max_page_idx = max(max_page_idx, item["page_idx"])
-        page_count = max(total_pages_middle, max_page_idx + 1)
+
+        if middle_path is not None:
+            page_count = len(page_dimensions)
+            if max_page_idx >= page_count:
+                raise NormalizationError(
+                    f"content list block specifies page_idx={max_page_idx}, "
+                    f"which exceeds middle.json page count ({page_count})"
+                )
+        else:
+            page_count = max_page_idx + 1 if max_page_idx >= 0 else 0
 
         # Group blocks by page index preserving reading order
         pages_blocks: dict[int, list[PhysicalBlock]] = {idx: [] for idx in range(page_count)}
@@ -146,6 +219,13 @@ class MinerUPhysicalNormalizer:
                 raise NormalizationError(
                     f"item at index {raw_idx} in {content_list_path.name} "
                     f"has invalid page_idx: {page_idx}"
+                )
+
+            if middle_path is not None and page_idx not in page_dimensions:
+                max_middle_page = len(page_dimensions) - 1
+                raise NormalizationError(
+                    f"item at index {raw_idx} in {content_list_path.name} specifies "
+                    f"page_idx={page_idx}, outside middle range (0..{max_middle_page})"
                 )
 
             if page_idx not in pages_blocks:
@@ -214,10 +294,33 @@ class MinerUPhysicalNormalizer:
         **kwargs: Any,
     ) -> PhysicalDocument:
         """Normalize raw MinerU output and atomically serialize to output_path."""
-        document = self.normalize(raw_directory, **kwargs)
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        serialized = physical_document_to_json(document, indent=indent)
+        if not raw_directory.exists():
+            raise NormalizationError(f"raw directory does not exist: {raw_directory}")
 
+        raw_resolved = raw_directory.resolve()
+        output_resolved = output_path.resolve()
+
+        # Pre-write safety checks: Reject writing inside raw evidence directory or subdirectories
+        if output_resolved == raw_resolved or output_resolved.is_relative_to(raw_resolved):
+            raise NormalizationError(
+                f"output_path {output_path} must not be inside raw directory {raw_directory}"
+            )
+
+        # Check against run.json if present outside raw_directory
+        parent_run = raw_directory.parent / "run.json"
+        if parent_run.is_file() and output_resolved == parent_run.resolve():
+            raise NormalizationError(
+                f"output_path {output_path} cannot overwrite execution evidence {parent_run}"
+            )
+
+        # Perform normalization completely in memory before touching destination filesystem
+        document = self.normalize(raw_directory, **kwargs)
+
+        # Serialize to deterministic UTF-8 bytes (using LF newlines)
+        serialized_str = physical_document_to_json(document, indent=indent)
+        serialized_bytes = serialized_str.encode("utf-8")
+
+        output_path.parent.mkdir(parents=True, exist_ok=True)
         temporary_path: Path | None = None
         try:
             file_descriptor, temporary_name = tempfile.mkstemp(
@@ -227,7 +330,7 @@ class MinerUPhysicalNormalizer:
             )
             os.close(file_descriptor)
             temporary_path = Path(temporary_name)
-            temporary_path.write_text(serialized, encoding="utf-8")
+            temporary_path.write_bytes(serialized_bytes)
             os.replace(temporary_path, output_path)
         except OSError as exc:
             raise NormalizationError(
@@ -330,19 +433,42 @@ class MinerUPhysicalNormalizer:
             ) from exc
 
     @staticmethod
-    def _locate_file(directory: Path, suffix: str) -> Path | None:
-        """Find a file matching suffix in directory or immediate subdirectories."""
-        # Check direct children first
-        for candidate in sorted(directory.iterdir()):
-            if candidate.is_file() and candidate.name.endswith(suffix):
-                return candidate
+    def _locate_canonical_file(
+        directory: Path,
+        suffix: str,
+        *,
+        required: bool = True,
+    ) -> Path | None:
+        """Locate an unambiguous canonical file matching suffix in directory tree.
 
-        # Check subdirectories
-        for candidate in sorted(directory.rglob(f"*{suffix}")):
-            if candidate.is_file():
-                return candidate
+        If multiple files match, raises NormalizationError listing the candidate paths.
+        If 0 matches and required is True, raises NormalizationError.
+        """
+        matches = [
+            p for p in directory.rglob(f"*{suffix}") if p.is_file() and p.name.endswith(suffix)
+        ]
+        matches.sort()
 
-        return None
+        if len(matches) > 1:
+            rel_paths: list[str] = []
+            for p in matches:
+                try:
+                    rel_paths.append(str(p.relative_to(directory)))
+                except ValueError:
+                    rel_paths.append(str(p))
+            raise NormalizationError(
+                f"ambiguous raw parser input: found multiple files matching '*{suffix}' "
+                f"in {directory}: {rel_paths}"
+            )
+
+        if not matches:
+            if required:
+                raise NormalizationError(
+                    f"missing required raw parser input matching '*{suffix}' in {directory}"
+                )
+            return None
+
+        return matches[0]
 
     @staticmethod
     def _read_content_list(path: Path) -> list[dict[str, Any]]:
@@ -376,18 +502,102 @@ class MinerUPhysicalNormalizer:
             raise NormalizationError(f"JSON at {path} must be an object, got {type(raw).__name__}")
         return raw
 
-    def _read_run_json(self, raw_directory: Path) -> dict[str, Any] | None:
-        candidates = [
-            raw_directory / "run.json",
-            raw_directory.parent / "run.json",
-        ]
-        for c in candidates:
-            if c.is_file():
-                try:
-                    return self._read_json_dict(c)
-                except NormalizationError:
-                    pass
-        return None
+    def _read_run_json(self, raw_directory: Path) -> tuple[dict[str, Any] | None, Path | None]:
+        candidates: list[Path] = []
+        direct = raw_directory / "run.json"
+        parent_file = raw_directory.parent / "run.json"
+        if direct.is_file():
+            candidates.append(direct)
+        if parent_file.is_file() and parent_file not in candidates:
+            candidates.append(parent_file)
+
+        if not candidates:
+            return None, None
+
+        if len(candidates) > 1:
+            raise NormalizationError(
+                f"ambiguous run.json: found run.json at both {direct} and {parent_file}"
+            )
+
+        run_path = candidates[0]
+        data = self._read_json_dict(run_path)
+        return data, run_path
+
+    @staticmethod
+    def _validate_and_extract_middle_pages(
+        middle_data: dict[str, Any],
+        middle_path: Path,
+    ) -> dict[int, tuple[float, float]]:
+        """Strictly validate middle.json page structure and return page dimensions."""
+        if "pdf_info" not in middle_data:
+            raise NormalizationError(f"{middle_path.name} is missing required 'pdf_info' field")
+        pdf_info = middle_data["pdf_info"]
+        if not isinstance(pdf_info, list):
+            raise NormalizationError(
+                f"'pdf_info' in {middle_path.name} must be a list, got {type(pdf_info).__name__}"
+            )
+
+        page_dimensions: dict[int, tuple[float, float]] = {}
+        seen_page_indices: set[int] = set()
+
+        for idx, page_record in enumerate(pdf_info):
+            if not isinstance(page_record, dict):
+                raise NormalizationError(
+                    f"page record at index {idx} in {middle_path.name} 'pdf_info' must be a dict"
+                )
+            if "page_idx" not in page_record:
+                raise NormalizationError(
+                    f"page record at index {idx} in {middle_path.name} is missing 'page_idx'"
+                )
+            page_idx = page_record["page_idx"]
+            if not isinstance(page_idx, int) or page_idx < 0:
+                raise NormalizationError(
+                    f"page record {idx} in {middle_path.name} has invalid page_idx: {page_idx!r}"
+                )
+            if page_idx in seen_page_indices:
+                raise NormalizationError(
+                    f"duplicate page_idx {page_idx} found in {middle_path.name} 'pdf_info'"
+                )
+            seen_page_indices.add(page_idx)
+
+            if "page_size" not in page_record:
+                raise NormalizationError(
+                    f"page record {page_idx} in {middle_path.name} is missing 'page_size'"
+                )
+            page_size = page_record["page_size"]
+            if not isinstance(page_size, list) or len(page_size) != 2:
+                raise NormalizationError(
+                    f"page_size for page {page_idx} in {middle_path.name} "
+                    f"must be a list of 2 numbers, got {page_size!r}"
+                )
+            try:
+                width = float(page_size[0])
+                height = float(page_size[1])
+            except (TypeError, ValueError) as exc:
+                raise NormalizationError(
+                    f"page_size dimensions for page {page_idx} in {middle_path.name} "
+                    f"must be numeric: {page_size!r}"
+                ) from exc
+            if width <= 0 or height <= 0:
+                raise NormalizationError(
+                    f"page_size for page {page_idx} in {middle_path.name} "
+                    f"must be positive, got ({width}, {height})"
+                )
+            page_dimensions[page_idx] = (width, height)
+
+        expected_indices = set(range(len(pdf_info)))
+        if seen_page_indices != expected_indices:
+            if 0 not in seen_page_indices:
+                raise NormalizationError(
+                    f"page indexes in {middle_path.name} must start at 0, but 0 was not found"
+                )
+            max_idx = len(pdf_info) - 1
+            raise NormalizationError(
+                f"page indexes in {middle_path.name} must be contiguous from 0 to {max_idx}; "
+                f"got {sorted(seen_page_indices)}"
+            )
+
+        return page_dimensions
 
 
 __all__ = ["MinerUPhysicalNormalizer", "NormalizationError"]

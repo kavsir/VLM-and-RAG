@@ -1,6 +1,6 @@
 # Physical Document IR v0 — Hanoi Baseline Normalization Report
 
-This research note records the first normalization pass converting the real MinerU 3.4.5 parse of the
+This research note records the normalization pass converting the real MinerU 3.4.5 parse of the
 Hanoi golden document (`hanoi-master-plan-100y`, `v1`) into the parser-independent Physical Document IR v0.
 
 ## Normalization Metrics
@@ -11,15 +11,15 @@ Hanoi golden document (`hanoi-master-plan-100y`, `v1`) into the parser-independe
 | Authoritative Input SHA-256 | `ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028` |
 | Parser Runtime | MinerU 3.4.5 (`pipeline` backend) |
 | Pages Normalized | 80 (contiguous indexes `0` through `79`) |
-| Page Dimensions | Preserved from `middle.json` (`595.0` pt × `841.0` pt, A4 at 72 DPI) |
+| Page Dimensions | Preserved from `middle.json` (`595.0` × `841.0` native PDF canvas units) |
 | Total Observed Raw Blocks | 1,186 |
 | Total Normalized Physical Blocks | 1,186 |
 | Dropped Blocks | 0 (all raw blocks preserved) |
 | Normalization Runtime | ~0.005 – 0.010 seconds (5 – 10 ms) |
-| Serialized IR Byte Size | 1,173,108 bytes |
-| Serialized IR SHA-256 | `40c461e625c51c728db9c3e2f6e7ab8781deb20652cea39e371716c18dfef1e2` |
-| Repeat-Run SHA-256 | `40c461e625c51c728db9c3e2f6e7ab8781deb20652cea39e371716c18dfef1e2` |
-| Determinism Verdict | **Exact match (100% deterministic)** |
+| Serialized IR Byte Size | 1,145,258 bytes |
+| Serialized IR SHA-256 | `f28fcd11857ed8f269d9a82a08b346ced356590342c412def4d2d3d03663f7c5` |
+| Repeat-Run SHA-256 | `f28fcd11857ed8f269d9a82a08b346ced356590342c412def4d2d3d03663f7c5` |
+| Determinism Verdict | **Exact match (100% deterministic, cross-platform byte-stable)** |
 
 ## Block Counts & Categorization
 
@@ -46,12 +46,18 @@ Hanoi golden document (`hanoi-master-plan-100y`, `v1`) into the parser-independe
    to ignore non-content text.
 3. **Coordinate Semantics**:
    Coordinates from `content_list.json` are in MinerU's native `0..1000` normalized layout space. They
-   are stored as `BoundingBox(x0, y0, x1, y1, coordinate_system="normalized_1000")`. Physical page
-   dimensions (`width: 595.0`, `height: 841.0` in PDF points) are incorporated from `middle.json` at
-   the `PhysicalPage` level.
+   are stored as `BoundingBox(x0, y0, x1, y1, coordinate_system="normalized_1000")` with strict bounds
+   `0 <= x0 <= x1 <= 1000` and `0 <= y0 <= y1 <= 1000`. Physical page dimensions (`width: 595.0`, `height: 841.0`
+   in native PDF canvas units) are incorporated from `middle.json` at the `PhysicalPage` level.
 4. **Deterministic Block Identifiers**:
    Blocks receive immutable IDs formatted as `{document_id}_{version_id}_p{page_index:04d}_b{reading_order:04d}`
-   (e.g., `hanoi-master-plan-100y_v1_p0000_b0000`), ensuring repeatable references across runs.
+   (e.g., `hanoi-master-plan-100y_v1_p0000_b0000`), ensuring repeatable references across runs on identical
+   raw input and ordering. Positional IDs are not guaranteed stable across different parser versions or
+   changed reading orders.
+5. **Traceable Provenance**:
+   Each block captures `BlockProvenance` containing `parser`, `parser_version`, `parser_backend`,
+   `source_raw_artifact` (relative path), and `source_raw_index` (0-based raw index), with strict
+   provenance cross-validation enforced.
 
 ## Unresolved Representation Ambiguities & Scope Limitations
 

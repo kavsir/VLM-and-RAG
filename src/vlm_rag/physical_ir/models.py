@@ -44,19 +44,18 @@ class BlockDisposition(StrEnum):
 class BoundingBox(PhysicalIRModel):
     """Parser-independent 2D bounding box on a document page.
 
-    Coordinates follow standard computer vision / PDF layout conventions:
+    For Physical Document IR v0, coordinates use MinerU's native normalized layout grid:
     - Origin (0, 0) is at the top-left corner of the page.
-    - x0, y0: Top-left corner coordinates (x0 <= x1, y0 <= y1).
+    - x0, y0: Top-left corner coordinates (0 <= x0 <= x1 <= 1000, 0 <= y0 <= y1 <= 1000).
     - x1, y1: Bottom-right corner coordinates.
-    - coordinate_system: Identifies the coordinate space, e.g. 'normalized_1000'
-      (MinerU 0..1000 layout grid) or 'points' (standard 72 DPI PDF points).
+    - coordinate_system: Strictly "normalized_1000".
     """
 
-    x0: float = Field(ge=0.0)
-    y0: float = Field(ge=0.0)
-    x1: float = Field(ge=0.0)
-    y1: float = Field(ge=0.0)
-    coordinate_system: str = Field(default="normalized_1000", min_length=1)
+    x0: float = Field(ge=0.0, le=1000.0)
+    y0: float = Field(ge=0.0, le=1000.0)
+    x1: float = Field(ge=0.0, le=1000.0)
+    y1: float = Field(ge=0.0, le=1000.0)
+    coordinate_system: Literal["normalized_1000"] = "normalized_1000"
 
     @model_validator(mode="after")
     def validate_coordinates(self) -> Self:
@@ -125,8 +124,14 @@ class PhysicalPage(PhysicalIRModel):
     """A single page of a physical document and its ordered layout blocks."""
 
     page_index: NonNegativeInt
-    width: PositiveFloat | None = Field(default=None)
-    height: PositiveFloat | None = Field(default=None)
+    width: PositiveFloat | None = Field(
+        default=None,
+        description="Parser-reported native page width in PDF canvas/native page units.",
+    )
+    height: PositiveFloat | None = Field(
+        default=None,
+        description="Parser-reported native page height in PDF canvas/native page units.",
+    )
     blocks: tuple[PhysicalBlock, ...] = Field(default_factory=tuple)
 
     @field_validator("blocks", mode="before")
