@@ -1,0 +1,102 @@
+{
+  "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+  "version_id": "v1",
+  "source_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+  "audited_pages": [
+    {
+      "page_index": 0,
+      "phenomena": [
+        "scanned_raster_page",
+        "official_seal_stamp",
+        "preamble_scan"
+      ],
+      "regions": [
+        {
+          "id": "page_0_scanned_0",
+          "reading_order": 0,
+          "kind": "scanned_block",
+          "bbox": {
+            "x0": 0.0,
+            "y0": 0.0,
+            "x1": 1000.0,
+            "y1": 1000.0,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "[Văn bản quét Quyết định 23/2008/QĐ-UBND trang 1]",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "phenomena": [
+        "scanned_raster_page",
+        "dieu_khoan_scan",
+        "institute_functions"
+      ],
+      "regions": [
+        {
+          "id": "page_1_scanned_0",
+          "reading_order": 0,
+          "kind": "scanned_block",
+          "bbox": {
+            "x0": 0.0,
+            "y0": 0.0,
+            "x1": 1000.0,
+            "y1": 1000.0,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "[Văn bản quét Quyết định 23/2008/QĐ-UBND trang 2]",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "phenomena": [
+        "scanned_raster_page",
+        "organizational_structure_scan"
+      ],
+      "regions": [
+        {
+          "id": "page_2_scanned_0",
+          "reading_order": 0,
+          "kind": "scanned_block",
+          "bbox": {
+            "x0": 0.0,
+            "y0": 0.0,
+            "x1": 1000.0,
+            "y1": 1000.0,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "[Văn bản quét Quyết định 23/2008/QĐ-UBND trang 3]",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "phenomena": [
+        "scanned_raster_page",
+        "chairman_signature_scan",
+        "red_ink_seal"
+      ],
+      "regions": [
+        {
+          "id": "page_3_scanned_0",
+          "reading_order": 0,
+          "kind": "scanned_block",
+          "bbox": {
+            "x0": 0.0,
+            "y0": 0.0,
+            "x1": 1000.0,
+            "y1": 1000.0,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "[Văn bản quét Quyết định 23/2008/QĐ-UBND trang 4]",
+          "heading_level": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+  "metrics": {
+    "by_category": [
+      {
+        "category": "table",
+        "f1": 0.8571,
+        "false_negatives": 2,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.75,
+        "true_positives": 6
+      },
+      {
+        "category": "text",
+        "f1": 0.1053,
+        "false_negatives": 2,
+        "false_positives": 15,
+        "precision": 0.0625,
+        "recall": 0.3333,
+        "true_positives": 1
+      }
+    ],
+    "f1": 0.3111,
+    "false_negatives": 4,
+    "false_positives": 27,
+    "mean_iou": 0.7311,
+    "precision": 0.2059,
+    "reading_order_concordance": 0.5238,
+    "recall": 0.6364,
+    "total_ground_truth": 11,
+    "total_predicted": 34,
+    "true_positives": 7
+  },
+  "pages": [
+    {
+      "ground_truth_count": 3,
+      "matched_count": 1,
+      "mean_iou": 0.6594,
+      "page_index": 0,
+      "predicted_count": 5,
+      "unmatched_ground_truth": 2,
+      "unmatched_predicted": 4
+    },
+    {
+      "ground_truth_count": 1,
+      "matched_count": 1,
+      "mean_iou": 0.9842,
+      "page_index": 1,
+      "predicted_count": 1,
+      "unmatched_ground_truth": 0,
+      "unmatched_predicted": 0
+    },
+    {
+      "ground_truth_count": 1,
+      "matched_count": 1,
+      "mean_iou": 0.9546,
+      "page_index": 5,
+      "predicted_count": 1,
+      "unmatched_ground_truth": 0,
+      "unmatched_predicted": 0
+    },
+    {
+      "ground_truth_count": 3,
+      "matched_count": 2,
+      "mean_iou": 0.6861,
+      "page_index": 10,
+      "predicted_count": 12,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 10
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 1,
+      "mean_iou": 0.6354,
+      "page_index": 15,
+      "predicted_count": 10,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 9
+    },
+    {
+      "ground_truth_count": 1,
+      "matched_count": 1,
+      "mean_iou": 0.5116,
+      "page_index": 18,
+      "predicted_count": 5,
+      "unmatched_ground_truth": 0,
+      "unmatched_predicted": 4
+    }
+  ],
+  "pages_audited": 6,
+  "parser": "mineru",
+  "parser_backend": "pipeline",
+  "parser_version": "3.4.5"
+}

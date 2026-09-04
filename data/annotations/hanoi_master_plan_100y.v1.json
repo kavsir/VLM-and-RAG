@@ -1,0 +1,327 @@
+{
+  "document_id": "hanoi-master-plan-100y",
+  "version_id": "v1",
+  "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+  "audited_pages": [
+    {
+      "page_index": 0,
+      "phenomena": [
+        "legal_header",
+        "preamble",
+        "citation_list"
+      ],
+      "regions": [
+        {
+          "id": "page_0_blk_0",
+          "reading_order": 0,
+          "kind": "text",
+          "bbox": {
+            "x0": 189.66,
+            "y0": 67.84,
+            "x1": 933.98,
+            "y1": 105.08,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM THÀNH PHỐ HÀ NỘI Độc lập Hạnh phúc Tự do - -",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 196.19,
+            "y0": 125.43,
+            "x1": 886.3,
+            "y1": 147.87,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "Số: / QĐ UBND Hà Nội, ngày tháng năm 2026 -",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_2",
+          "reading_order": 2,
+          "kind": "text",
+          "bbox": {
+            "x0": 218.91,
+            "y0": 170.47,
+            "x1": 840.87,
+            "y1": 210.44,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "Ế QUY T Đ Ị NH ổ ể ầ ệ đô Hà N ộ Phê duy m nhìn 100 năm ủ i t Q uy ho ch ng th Th t t ạ",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_3",
+          "reading_order": 3,
+          "kind": "text",
+          "bbox": {
+            "x0": 248.68,
+            "y0": 232.9,
+            "x1": 812.58,
+            "y1": 250.86,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "Ủ Ủ Ố Y BAN NHÂN DÂN THÀNH PH HÀ N Ộ CH CH Ị T I",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_4",
+          "reading_order": 4,
+          "kind": "text",
+          "bbox": {
+            "x0": 140.47,
+            "y0": 276.55,
+            "x1": 922.66,
+            "y1": 920.94,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "Tổ ền ố ền đị ịa phương s Căn c ứ ức ch ức chính quy 72/2025/QH15 ậ Lu t Tổ địa s ; ết Số ề độ Căn c ứ các Ngh Chính tr NQ/TW ngày 22/12/2024 v ủ ộ độ Số a B 57- ị ị ết c t quy : S 7- ển đổ ển đổ ố ố Số ệ, đổ ển đổ ới phá phát tri ển khoa h c, công ngh o và chuy ệ, ới sáng t Số i m i s c gia; ọ ạ qu ề ố ế Số ới NQ/TW ngày 24/01/2025 v h i nh trong tình hình m NQ/TW ộ ập Số 59 66 ới; c t ập qu - - ề đổ ầ đổ t đáp ới ứn ngày 30/4/2025 v ới công tác xây dự ựng và thi hành pháp lu ậ ứng yêu c i m dựn u ển đấ ố ề ển ển đấ ước ới phát tri ớc trong kỷ NQ/TW ngày 04/5/2025 v phát tri kỷ nguyên m 68 ới; s t nướ ển - ế Số ề ố o đả m an ninh năng lư kinh t hân; NQ/TW 20/8/2025 v b ả đả ngày Số 70 tư n ợn ợng qu c - đến ầ đến Số ề gia đế m nhìn đế độ ến năm 2030, t ến năm 2045; NQ/TW ngày 22/8/2025 v t phá độ Số 71 - ển Số ề ố c và đào tạ i pháp độ phát tri ển giáo dụ NQ/TW ngày 09/9/2025 v ả ộ độ Số 72 gi t s t dụ tạ o; S m - Số phá, tăng cườ ệ, chă ườn ức ờng b ức kh e nhân dân; NQ/TW ả ỏ ệ, m sóc và nâng cao s Số 79 o v - ề ển ế Số ề nhà nướ ước ngày 06/1/2026 v phát tri ển kinh t NQ/TW ngày 07/01/2026, v Số 80 ớc; - ển Số ề ển ển văn hoá Vi phát tri -NQ/TW ngày 17/3/2026 v xây dự ựng và phát tri ệ Số 02 t Nam; dựn ển -N đô Hà N ới Th i trong kỷ ủ kỷ Nộ nguyên m Nộ ới; ố a Văn phòng Trung Căn c ứ Thông báo s TB/VPTW ngày 13/01/2026 c ủ 49 1 - kết đồ Tổn a đồ ổng Bí thư Tô Lâm v ới ng thông báo kế ết lu n làm vi ng chí Tổ ả ủ ậ ệ ương Đ ới Ban c c ố Thườ Công văn s a Văn ườn Thành CV/VPTW ngày 9/3/2026 c ủy ủ Nộ ủy Hà Nộ 829 0 i; ụ ờng v - ề ến đố ề phòng Trung ương ị, Ban Bí thư đố án đánh ới ý ki Chín h tr ả ủ ộ Đ ới Đ a B ị, i v ng v ến c ết ố giá 3 năm th do Ban Thườ ườn ực hi n Ngh NQ/TW c Chính tr ủ ệ ộ 15 a B ị ị ết s ực ụ quy ờng v - Thành i xây dự ủy Nộ Hà Nộ dựn ủy ựng; ết ốc Số ề Căn c ứ các Ngh ốc h 81/2023/QH15 ngày 09/01/2023 v ủ ộ a Qu i: Số Quy ị ết c quy tổn ể ốc tầ đến đổi ổ m nhìn đế ến năm 2050, đượ ửa đổ ời kỳ ho ch tổ ổng th ốc gia th ời kỳ ổi, b ửa 2021 203 0, tầ ược ạ qu ợc s - ố ều ết ố Số đi ều b ởi Ngh 252/2025/NQ QH15 ngày 10/12/2025; ởi ộ Số ị t s ết s sung m quy - ề ểm ố ế, để thí đi cơ ch ế, chính sách đặ c thù để đặ 258/2025/QH15 ngày 11/12/2025 v ộ t s ểm m ng trên đị đô; ớn th ực hi n các dự án l a bàn Th ủ ệ đị ớn, quan tr ực dự ọ ết Số ết đị 1569/QĐ Căn ứ ướn nh c a Th ớng Chính ph ủ ủ ủ các Quy TTg ngày : Số đị tướ c - ề tầ đến đô Hà Nộ m nhìn đế ời kỳ 12/12/2024 v c phê duy t Quy ho ch Th i th ời kỳ ủ ệ ệ Nộ 2021 2030, tầ vi ạ ến - Số ề ều 1668/QĐ năm 2050; Số TTg ngày 27/12/2024 v c phê duy ều ch ỉnh Quy ho ch ỉn ệ ệ t Đi vi ạ - đến tầ đến Số đô Hà Nộ i đế m nhìn đế 612/QĐ ến nă ến năm 2065; chung Th ủ Nộ TTg ngày Số m 2045, tầ - ề ều đồ ằn Hồ t đi ch vùng đồ ời kỳ 04/4/2026 v phê duy ều ch ỉnh Quy ho ng b ng th ời kỳ ỉn ệ ằng sông Hồ 2021 ạ - tầ đến m nhìn đế ến năm 2050; 2030, tầ đạ , Thườ Căn c ứ ướn ườn các ch a Th ớng Chính ph ực Chính ph ỉ ủ ủ ủ ủ i các tướ ờng tr tạ đạ ực tạ o c Số ề ề Văn b c rà soát, đi 1531/TTg CN ngày 28/11/2025 v u ch ỉnh các quy ho ch ả ỉn ệ n: Số vi ạ Tg - ố Số ề đẩy ến c đẩ ến độ a thành ph 1634/TTg CN ngày 25/12/2025 v ẩy nhanh ti ủ Nộ ệ độ Hà Nộ i; Số vi c - ẩm tổ ể Số ẩm đị đô Hà Nộ l ập, th nh, phê duy t Quy ho ch tổ ng th Th 709/TB ủ ập ệ Nộ VPCP ngày i; Số đị ạ -",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "phenomena": [
+        "heading_ch_dieu",
+        "legal_article",
+        "numbered_list"
+      ],
+      "regions": [
+        {
+          "id": "page_1_blk_0",
+          "reading_order": 0,
+          "kind": "text",
+          "bbox": {
+            "x0": 140.47,
+            "y0": 40.34,
+            "x1": 922.66,
+            "y1": 779.91,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "2 kết a Văn phòng Chính ph a Thườ ườn 19/12/2025 c thông báo kế ết lu ực Chính ph ủ ủ ủ ủ ậ ờng tr ực n c ề ổn ể Số ởng, đị nh hướ đô Hà Nộ ý tưở ướn ớn ớng l ớn Quy ho ch t ổng th Th 147/TB ưởn ủ Nộ ngày Số VPCP đị i; S ạ v - ề kết ề a Văn phòng Chính ph a Thườ ườn 23/3/2026 c kế ết lu ực Chính ph Quy ho ch ủ ủ ủ ủ ậ ờng trự rực ạ v n c v tổn ể đô; ổng th Th ủ tổ ến ố Văn b Căn c ứ n góp ý ki , ngành TW: i Giao (s ả ủ ộ các a các B 1040/BNG B W: Ngo ạ ến c \u0002 ố ố (s NGKT ngày 14/02/2026); Xây dự 4005/BXD QHKT ngày 13/3/2026 và s dựn ựng - ố (s ệp và Môi trườ ườn 4855/BXD QHKT ngày 01/4/2026); Nông nghi 2564/BNNMT\u0002 ệp ờng - T\u0002 ố ố ốc (s (s KHTC ngày 19/3/2026); Qu ốc phòng 1898/BQP ngày 25/3/2026); Tài chính TM - ố (s QLQH ngày 26/3/2026); Công thương 3713/BTC- 2097/BCT- KHTC ngày 27/3/2026); C- T- ố ể (s Văn hóa, th thao và Du l ch 1598/BVHTTDL KHTC ngày 27/3/2026); Khoa h c và ị ọ - ố ố ế (s (s Công ngh 1842/BKHCN- HVCL ngày 28/3/2026 ); Y t 5/BYT- ệ ngày PC 212 N- T- ố ố (s (s CQĐP ngày 30/3/2026); Dân t 28/3/2026); Nộ 2895/BNV- Nộ ộ c và Tôn giáo i v ụ V- ố (s KHTC ngày 31/3/2026); Tư pháp 808/BDTTG 2029/BTP ngày 01/4/2026); PLDSKT - - ố (s 6381 -ANTCĐT ngày 15/4/2026); /ANKT- ộ Công an B T-A đạ a Thườ ủy, Ban Thườ Căn c ứ ườn ườn ch Thành Thành ỉ ủ ủy ủy các c o, góp ý c ờng tr đạ ực ụ ực ờng v ủy Số Số Số i các Văn b TB/TU ngày 13/3/2026; Số CV/TU ngày 14/3/2026; Số ả Số 300 434 tạ tạ n: - - Số TB/TU ngày 18/3/2026; Số TB/TU ngày 19/3/2026 453 312 ; - - ết ố lầ ấp năm Ban Ch Căn c ứ ứ Ngh NQ/TU ngày 27/3/2026 Hộ i ngh lầ n th Hộ 08 ị ị ết s quy ấp - ố hành Đ kỳ ng b Th ành ph khoá XVIII (nhi m kỳ 2030); ả ộ ệ 2025 – – ết ố ố ề -HĐND ngày 28/3/2026 Căn c ứ Ngh 03/NQ Thành ph ủ HĐND ị ết s quy c a v -H tổn ể tầ đô Hà Nộ m nhìn 100 năm; thông qua Quy ho ch tổ ổng th Th ủ ệ Nộ vi i tầ ạ c ết ố -HĐND ngày 13/12/2025 Căn c ứ Ngh 84/2025/NQ Thành ủ HĐND ị ết quy s c a -H ố ầ ồ quy đị i dung, đị ức chi phí, đơn giá, thành ph sơ, trình tự ức ph nh n nh m n h ự, th ủ ộ đị đị tụ tự, tụ c ẩm ề tổn ể ẩm đị t, đi đô; lậ ập, th nh, phê duy u ch ỉnh Quy ho ch tổ ổng th Th ỉn ủ lập ệ đị ạ ết ố ố ết đị 813/QĐ Căn c ứ nh UBND ngày 21/02/2026 a UBND Thành ph ủ Quy đị s c - ề tổn ể tầ đô Hà Nộ m nhìn 100 năm; c phê duy t Nhi quy ho ch tổ ổng th Th ủ ệ ệ ệ Nộ vi i tầ ụ ạ v m v ố đồ ẩm HĐTĐ ngày 27/3/2026 c i đồ ẩm đị Căn c ứ Thông báo s 1971/TB ng th nh ủ Hộ Hộ đị a - tổn ể ề Kết đồ ẩm đô v i đồ ẩm đị Nhi quy ho ch, Quy ho ch tổ ổng th Th ết lu ng th nh ủ ủ ệ ậ Hộ Kế a Hộ đị ụ ạ ạ m v n c tổn ể đô; Nhi quy ho ch, Quy h ch tổ ổng th Th ủ ệ ụ ạ ạ m v o ố ề Kết Ủy Căn c ứ Thông báo s 0/TB 7/5 5/2026 ết lu Ủy ban ủ ệ ậ ngày 480/ UBND /5/ Kế vi v c K n c a - ố ề tổn ể tầ trương phê duy đô nhân dân Thành ph ch Quy ho ch tổ ổng th Th ủ ủ ệ Nộ Hà Nộ i, tầ t ạ v m nhìn 100 năm ; đề ấn đề i (đạ n Liên danh tư v ngh n Quy ho ch xây dự i di ấn) tạ ủ ệ Nộ ệ Xét ựng Hà Nộ Vi ị i ạ dựn đạ tạ c a: ố đồ ến Văn b n lý đồ 7/VQH- 7/4/2 quy ho ch ki ả ả ngày án trúc Qu TT2 17/ /2026; B 547/ Ban i tạ ạ tạ n s ến H- ố ến Văn b 4/BQLĐA 7/4/2026, Quy ho ch ả Sở KT&DV ngày trúc tạ QHKT- Sở 114/ 17/ Ki i ạ tạ n s ến - T- - 6, ố ố và Văn b Tờ trình s 4/TTr- 9/4 4/2 /QHKT- ả QKĐ QHKT ngày ngày 2544/ 19/ /2026 2921 Tờ /4/ n s r- T- 8/5 5/2026, 8/ /5/ 6,",
+          "heading_level": null
+        },
+        {
+          "id": "page_1_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 143.09,
+            "y0": 807.82,
+            "x1": 922.65,
+            "y1": 891.86,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "Ế QUY T Đ Ị NH : ề ổ ể ầ đô Hà N m nhìn 100 năm v Phê duy t Quy ho ch t ng th Th i t i ớ Đi ệ ộ ủ u 1. ạ ế u như sau: nh i dung ch ộ ủ ữ ng n y ấ ậ Tên quy ho và đơn v ị 1. ch n l p quy ho ch tư v ạ ạ :",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "phenomena": [
+        "heading_muc",
+        "hierarchical_text",
+        "bullet_list"
+      ],
+      "regions": [
+        {
+          "id": "page_2_blk_0",
+          "reading_order": 0,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.68,
+            "y0": 40.34,
+            "x1": 922.65,
+            "y1": 890.58,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "3 ổ ể ầ đô Hà N m nhìn 100 năm. 1.1. Tên quy ho Quy ho ch t ng th Th i t ộ ủ ch: ạ ạ ấ ấ ậ Liên danh tư v Vi n Quy ho ch xây d ị 1.2. Đơn v ệ n l p quy ho ch: tư v ựn ạ ạ n: V ựng ể ế i, Vi n Nghiên c ứu phát tri n kinh t xã h i Hà N i, Công ty TNHH Vi ứu ộ ệ ộ ộ ệ Hà N n Quy - ế ế ồ ế đô th ị Thư ho ch và Thi t k i, DHI China, Công ty TN HH The Boston ả Đ ng T ợng H ợn ạ Consulting Group, Công ty Encity Urban Solutions PTE.LTD. ậ m vi, quy mô ớ ờ ỳ và th , ranh gi i i 2. Ph k l p quy ho ch ạ ạ ậ m vi, quy mô, ranh gi ới ới l 2.1. Ph p quy ho ch ạ ạ : ồ đ ị đô Hà N Ph m vi quy ho ch g m toàn b a gi i hành chính Th i i 126 ớ ớ ộ ộ ủ + ạ ạ , v ấp đơn v ị ấp xã (51 phư hành chính c ờng, 75 xã). ờn 2 Quy mô l ập quy ho ch: kho km (335.984 ha) ập ả 3.359,84 + ạ ng . ắ Ranh gi i l ập quy ho ch: P Phía B c giáp t nh Thái Nguyên, t nh Phú Th ; Phía ớ ập ỉ ỉ + R ạ ọ ắ ; Phía Đông giáp t Nam và Tây Nam giáp t nh Ninh Bình, t nh Phú Th nh B c Ninh, ỉ ỉ ỉ ọ ắ nh Hưng Yên; Phía Tây và Tây B c giáp t nh Phú Th ỉ ỉ t ọ . ế ố Ph m vi nghiên c ứu không gian vùng: M ng nghiên c ứu k i v i Vùng ứu ứu ớ ộ ở + t n ạ r ồ ắ đô Hà N c Ninh, Hưng Yên, Th i (g i và 05 t nh: Phú Th , Thái Nguyên, B ộ ộ ủ ỉ m Hà N ọ ồ ằ ồ ề ắ Ninh Bình), Vùng Đ ng b du mi n núi phía B ng, Vùng Trung và c và ng sông H ế ế ố ố ế ể ấu đ ấu trúc chùm đô th ị n hành lang kinh t c gia, qu xác l ập các tuy Vùng, c t qu ập c ắ ẫ trong đó Hà N i đóng vai trò h t nhân d n d ộ t toàn vùng. ạ ố ấ báo quy mô dân s t đai: 2.2. D , đ ự ố a) Quy mô dân s : ế Giai đo ạn đ d báo kho 15 tri i. ờ n năm 2035: ệ ản ảng 14 + ự u ngư  ạn ế Giai đo ạn đ d báo kho 16 tri i. ờ n năm 2045: ệ ản ảng 15 + ự u ngư  ạn ế Giai đo ạn đ d báo kho 19 tri i. ờ n năm 2065: ệ ản ảng 17 + ự u ngư  ạn ế ổ ố ế Giai đo đ 2085 và xa hơn: Cơ b n đ ị dài h ản gi nh, kh ng ch ản n năm ữ + ạn ạn ạn ạn ố ố ẩ ề ố i đa không quá i; đ t đ quy mô dân s 20 tri m b o quy chu dân s ờ ệ ậ ộ ả ả t u ngư n v m ể ố Đô th ị đáp ị i đa kho ( có th ng ch i t 25 tri i v i d báo ứn ờ ớ ệ ả ản ảng 22 ỡ u t ứng ngư u ngư ự  ể n gia tăng t ập, giao thương, khách ngh phát tri m trú, khách vãng lai, làm vi c, h ệ ập ỉ c t ạ ọ dư ỡng, chăm sóc s ị c kh e, khách du du l ch). ứ ỏ ỡn đấ ấ đ ựng đô th ị (tỷ l t xây d ): b) Quy mô đấ t đai ệ tỷ ựn ế ấ ế ổ đ ựng đô th ị l t xây d chi m kho ng di n năm 2035: T ệ ệ ỷ ản ảng 40% 45% t Đ + ựn n - tích tự nhiên. tự ế ấ ổ đ ựng đô th ị l t xây d lên kho n năm 2045: Nâng t ệ ỷ ản ảng 45% 50% t Đ + ựn ng - ể ô hình “nén – xanh”. di n tích tự nhiên, phát tri n theo m ệ tự – ế ấ ế ổ đ ựng đô th ị l t xây d chi m kho ng di n năm 2065: T ệ ệ ỷ ản ảng 55% 60% t Đ + ựn n - ầ ấ ể đ i đư t đ tích tự nhiên. Ph t còn l c b nghiêm ng duy trì t l ừng, phát rừn ệ ệ ả ỷ ặ ỹ tự ợ ạ n qu o v rừ ể ổ ấ ố ấu n tích đ tri ( ng di t toàn thành ph ) ấu trúc hành lang xanh ừn ệ ủ và c % 6, 2 t > n r ừng c a đô Th ủ . ế ể ổ n năm 2085 và xa hơn: Gi n đ ị phát tri nh; t p trung hoàn thi n, hoàn ậ ệ Đ ữ + n ấ ấu t lư ch đư ch nh, nâng cao ch ng theo c ấu trúc quy ho c duy ệ ỉ t. ợ ợ ạ ậ ời kỳ ời kỳ 2.3. Th l p quy ho ch: ạ",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "phenomena": [
+        "numbered_list",
+        "legal_provisions"
+      ],
+      "regions": [
+        {
+          "id": "page_3_blk_0",
+          "reading_order": 0,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 40.34,
+            "x1": 922.67,
+            "y1": 899.13,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "4 ắn ế ế Giai đo Giai đo ắn h ạn trung h Giai 2035; 2045; n năm n năm ạn: Đ ạn: Đ ạn ạn ạn ạn ạn ng ế ế ầ ế ầ đo và đ n lư n dài h m nhìn chi m nhìn dài n năm 2085 2065 n năm ạn: Đ T c: T ợ ạ ạn ; h ạn 100 năm. ạn ể ầ c tiêu, t ủ 3. Quan đi m nhìn dài h a quy ho ch ạ ạ m, m n c : ụ ể .1. Quan đi 3 m : ể ế đô \"Văn hi Văn minh n đ Xây d ng và phát tri n Th Hi i ạnh phúc\"; ệ ủ H ự ạ ạn n - - - ấ ể ể c tiêu và đ l i làm trung tâm, ch th ng l a phát tri ờ ộ ủ ủ ặ t văn n. Đ con ngư ự , mụ c c mụ y ế ể ế ế ắ ị n lư i, \"Văn hi hoá a chi c phát tri n kinh t xã h ộ ở ủ ả trí trung tâm c B ợ n n s c v - - - ố ố ồ ề ề ị o\" là giá tr t lõi xuyên su n l i sinh và s nh m ứ ộ ả Sáng t t, ngu n t ự ạ ạ c c n c m m, n ng ể ể ề n lĩnh, trí tu và đ đô nhanh, b hì nh thành b ng l c phát tri n. Phát tri n Th ệ ộ ả ủ ữ ự n v ng, ắn ể ổ ố ể ổ ế ần n đ n đ n đ thông minh, hi i, bao trùm g i chuy i s , chuy i xanh, kinh t ớ ệ tu ạ ắn v ần ế ổ ố n đ o đ hoàn, thích i bi i khí h ậu; gi c phòng, an ninh, b ứn ớ ậu ậ ả ả ữ ữn m tr t tự tự ứng v ững qu v , n toàn xã h i. ộ a ổ ể ầ ổ đô Hà N m nhìn 100 năm n đ ị Quy ho ch t ng th Th i t nh theo không gian ộ ủ ạ , ể ấ ầ ấ ồ u trúc đô th ị \"đa t ng, đa l ớp, đa c c, đa trung tâm\", l phát tri ớp ở y Sông H ự n m , c ng ắ ế văn hoá ch đ đô làm trụ nh quan sinh thái n k t ch t ch i vùng Th ớ ả ủ ủ ặ ẽ ạ o; g c c rụ v - , ồ ằ ồ ề ắ vùng đ ng b ng, vùng Trung du và mi n núi phía B c và các hành lang ng Sông H ế ố ố ế kinh t c gia, qu c t qu . ồ môi trư n thiên nhiên và đa d đ ờng, b ạng sinh h c, ch ứng phó ờn ứn ệ ộ ả ả ủ B o t ạn ọ o v ng ế ổ ể ề n đ n theo hư ợp đi i thiên tai và bi i khí h Phát tri ng phù h u ki nhiên và ớ ớ ậu ệ n tự ợp tự ; v ậu ề ố ể đô đóng vai trò đi dụ ng hi tài nguyên. Th u ph i trung tâm ki ệ ử ả ủ m soát các s u qu dụ ấn ề ễ ấn đ m môi trư ô nhi ờ ng vùng. v c tiêu 3 .2. M : ụ tổn a) Mụ c tiêu tổ ổng quát: Mụ ế n năm 2035: Th đô Hà N thành đô th ị n đ i tr xanh, thông minh, hi i; h i ộ ệ ộ ủ ở Đ ạ ố ế hoa văn hoá, h ng; có năng l tinh h i nh nh tranh cao, ộ ập ộ ngày càng sâu r tụ c t ự ạ ập qu c c tụ ổ ố ể ị n đ ị thanh bình, ngư thành đi chính tr xã h i nh, thành ph i dân h nh phúc, tr ờ ộ ở ạ m - ế ấp ố ẫn đ đào t n an toàn, thân thi n và h ấp d ẫn. Hình thành m trung tâm giáo dụ ệ ộ t s ạ c o, y dụ - ế ấ ầu c châu Á ẫ t lư n đ Thái Bình Dương; trung ch ợng cao thu c nhóm d ầu trong khu v ộ t ợn ự - ổ ấp ố ị tài chính, thương m i và đ tâm d ch v i m i sáng t c gia, khu ớ o quan tr ạ ạ ọ ng c ấp qu ụ ố ế ể ỗ ; trung tâm nghiên c ứu, phát tri n; gi vai trò h t nhân trong các chu i ứu c và qu ữ c t ự ạ v ế ể ồ ằn ồ ề đô, vùng đ liên k phát tri n vùng Th ng b ng, vùng Trung du và mi ủ ằng Sông H t p n ắ núi phía B c. ế ổ t trung tâm đ i tr thành m i m i sáng t n năm 2045: Hà N ớ ộ ộ ở ủ Đ o quan tr ạ ọ ng c a ần c châu Á Thái Bình Dương, nơi h ị khu v i tụ tri th c và công ngh ; h ứ ộ ệ ản t ản tr ự ạ ầng, qu tụ - ấ ố đô th ị n đ i; ngư t lư i văn minh, an toàn, đáng hi i dân có ch ng cao; xã h ờ ệ ộ ợn ạ ợng s ố ng, h ạnh phúc. ạn s ế ố ầu ể n năm 2065: Th đô Hà N ầu, có trình đ i là thành ph phát tri ộ ộ ủ toàn c Đ n cao ề ấ ố ế đô có ch t lư và b ững; thu c nhóm các th ng và h ạnh phúc cao trên th ộ ủ ữn ợ ạn n v ng s gi i. ớ ế ầ và xa hơn nh hư t trong nh ởng l ớn n năm 2085 ộ ả ởn ững trung tâm có t Đ ữn : M m ớn ố ầ c Châu Á ẫn ng lư Thái Bình Dương i các thành ph khu v , d ớ và toàn c trong m ự ạ ẫn u - ắ ể ế ổ t các xu hư n đô th ị c và đ d ớng phát tri thông minh, kinh t tri th i m i sáng t o, là ớn ứ ớ ạ",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 15,
+      "phenomena": [
+        "detailed_planning_tasks",
+        "structured_text"
+      ],
+      "regions": [
+        {
+          "id": "page_15_blk_0",
+          "reading_order": 0,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 40.34,
+            "x1": 922.66,
+            "y1": 895.0,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "16 ần ế ố ầu ố ắ ầng trung (đ 15m đ trí đ i giao thông đư t đô 30m): B ờn ộ âu T + s n ầu m ờng s - - ố ầ ổ ị th , h th ng kho bãi ng m, hào k thu ng h ợp, công trình phòng tránh thiên tai và ệ ậ ỹ t t ợp ế n lư kho d chi rữ trữ ự ợ c. ầ ế ầ sâu (đ 30m đ 50m): Dành cho các tr c h ng kỹ thu ậ ộ ậ sâu kỹ T + t t ạ ng c n n ụ - - ố ầ ố chính, h th m quy mô l n và các công trình ph an ninh ớ ớ ệ ữ g tr nư n c ng c v qu c ụ ụ - phòng. ầ ế ng sâu (dư n lư i 50m): B nghiêm ng t làm không gian d chi ớ ệ ả ặ rữ T + trữ ự ợ o v c, - chưa khai thác trong th i k quy ho ch. ờ ỳ ạ ấ ấu ầ n đ c đô th ị Ch tiêu th c hi n: Ph l xây d ựng không gian ng i k khu v ệ ệ ỉ ỷ ấu t m t ự ựn ự ạ ấ trung tâm đ t ≥ 20% di n tích đ t vào năm 2045 và đ t ≥ 40% vào năm 2065. ệ ạ ạ ố ề ể ẩ đ đư Các thông s sâu và ph m vi c th c chu n hóa trong Quy ho ch ộ ẽ ợ ạ ạ s ụ v ầm ề ầm đô th ị u đi u tra đ ị chung không gian ng và các quy ho ch phân khu d a trên d li ệ ữ ự ạ a ấ ch h ng khu v từ ủ ủ y văn c t, t a từ ự c. ầ ấp ấp (dư * Không gian m th i 3.000m): ớ t ấ ể t đ t: Không gian ưu tiên cho con ngư i và h sinh thái t nhiên. Phát tri ờ ệ ặ + M ự n ố ồ ấu ố ng đi b h th an toàn, công viên, m c và b ấu trúc không gian di s ản ph ớ ệ ộ ả ản ặ t nư o t n c ổ ố , ph cũ. c ể ổ ố t đ + Không gian t rên cao: Phát tri h i các nút giao ậ ộ n các t cao t ợp ạ ợp cao c m ể ế ấ ế ố ầu thông TOD và hành lang vành đai đ m đ ầu đi b ti t ki t. Thi t l p h th ệ ậ ệ ộ trên ng c ế ố cao k i liên hoàn các công trình. t n ế ầ ấp ch các vùng tiên phong khai thác giao thư + Kinh t m th ấp: Quy ho ận t ơng, v ạ ận ể ằn ế ị bay không ngư i lái (drone) và giám sát đô chuy n b ằng taxi bay (eVTOL), thi t b ờ ị th thông minh. ầ ể ố ế i đ ị * Không gian m cao (trên 3.000m): Ki m soát hành lang bay qu ộ t c t , n a ắ ố ễ ản lý kho ảng không ph vi n thông, quan tr c khí h ậu, an ninh c phòng. ậu ản ản và qu c v qu ụ ụ - ấ u trúc đô th ị đa l ị và công năng): (2) C ớp (Tích h ợp giá tr ớp ợp ồ ể ắ ựng đô th ị ị đ ị Xây d d ch ng l ớp các giá tr o nên b th nh ớp ản c và s a trên s t ựn ự ự ự ạ ản s ề ợng b ữn vư ợn ững: n v ề ắ ồ Văn hóa: N ảng đ ị ớp Di s nh hình b c, b ớp ản ản ả ả ạng và n nguyên tr L + n t o t ạn ản n s - ấ ổ ổ ố ị (Hoàng thành Thăng Long, C phát huy g iá tr u trúc thành c Loa), khu ph các c ổ ố ề ề ố ấu ấ ế cũ, làng ngh ị , ph n th ng và các d n ki n trúc l ch s qua các th i kỳ ờ kỳ ử truy c ấu . ố c,… theo mô hình ớp Sinh thái và T nhiên: H th ng công viên, m ớp ớ ệ ặ L t nư + ự ố ế ”. Tích h ng trong Thành ph ợp không gian xanh vào t ng công trình ki Rừ ừ “Rừ n trúc và ợp ế ần n đư ần hoàn trong lòng đô th ị o h sinh thái tu ờn ệ tuy ờng, t ạ . ồ ế ế ng đ ng lư ớp Xã h i ng: Thi t l i không gian công c ng, thi ớp ớ ộ ộ ập ộ C + L t ạ ập m - ế ế ề ế ẳn văn hóa c đa năng, b o đ ận bình đ ch giáo dụ n ti ận ả ả ẳng và nâng cao y t m quy p c dụ - - ấ ố t lư ng cho cư dân. ch ợ ng s ế ần ố ể ổ t đ ng thương m i, đ ớp Kinh t : Phát tri n các ho i m i sáng ớp ớ ộ và H L + t ạ ạ ạ ầng s ề ầ ố ề o đi ảng h và d li u thông minh, t u ki n cho các mô hình kinh ệ ệ ản o trên n ữ t n t t ạ ạ ạ ng s ế ế chia s và kinh t tri th ng dụ ng công ngh thông minh (AI, Big Data, IoT) và ứ ứ ệ ẻ t ; c dụ ố ề ể đi (Digital Twin) làm công c u khi n, giám sát th i gian th c toàn b ờ ộ ả các B ự n sao s ụ t đ ận hành đô th ị đ ho g hóa. ộ ận ộ tự tự ạ ng v n v",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 30,
+      "phenomena": [
+        "annex_header",
+        "annex_intro",
+        "table"
+      ],
+      "regions": [
+        {
+          "id": "page_30_blk_0",
+          "reading_order": 0,
+          "kind": "table",
+          "bbox": {
+            "x0": 143.09,
+            "y0": 40.34,
+            "x1": 922.65,
+            "y1": 902.12,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "31 ể ế ồ ố + Phát tri n không gian hai bên các tuy ng, sông Đu n sông: sông H ng, sông ồ ế ầ Đà, sông Nhu , sông Đáy, sông Tích, , sông Thi thành ệ sông Cà L m Vân Trì Đ p - - ,… ế các hành lang xanh và vành đai xanh chi n lư ợ c . ồ ố + Xác l c không gian hai bên sông H ng là trụ ảnh quan Thủ ập ản hủ ập trụ c xương s ng c rụ rụ ố đô; t ng, công viên văn hóa, d ị ị ập trung b trí các công trình công c ch v du l ch, gi i ập ộ ả ụ ể ố trí và các công trình bi a Thành ph ủ u tư ợn ợng c . ể ố p và mô hình “Thành ph Phát tri n lâm nghi ừ ng”: ệ trong r ố ể t đ i di n tích r ng hi n h ữu và th c hi n l trình phát tri ừ ệ ệ ệ ệ ệ ộ ả ở ữu + B tuy ự o v n m ố ng di n tích r ng toàn Thành ph ừ ộ ệ r . ể ố ố n khai mô hình “R + Tri thành ph Thành ph i h ừ rừ ớ ng” v ệ ng trong trong rừ - ồ đ sinh thái r ừng làm ch o; xác l ập rõ vùng lõi b nhiên, r ừng phòng h ừn ừn ừn ập ộ ủ ả o t ừng t ự ạ n r ể ấp và vùng đ ị t đ m phát tri n công viên r ng, du l ch sinh thái m th ấp, thân thi n môi ừ ệ ậ ộ ệ ờn trư ờng . ế ố ế ố ng lư + Thi t l ập h th ng hành lang xanh l iên thông k i r i m i sông, ừ ớ ớ ập ệ t n ạ ng v ồ p và các vùng sinh thái đ h , không gian nông nghi c thù. ệ ặ ố i đô: th ng công viên và không gian xanh n ệ ộ H ấ ấ ưu tiên dành qu đ p các không gian xanh hi n h t sau khi di d i ờ ệ Nâng c ữu ỹ + ữu; ấ ể ổ p đ sung công viên, vư nghi b n hoa và ti n ích ờ ệ ệ ở ở ản các công s t công , cơ s s ản xu ộ công c ng . ể ể ng đi i đô (Th + Rà soát và tri n khai các d án công viên tr i khu v ộ ủ m t ự ự ọ ạ c n ố ầ ồ , Núi Cung, Đ Đình ...) đ m b o tính kh thi và phù h ệ ả ả ả ng Đa, Đ L m H ng, H ợp ạ ợp , hi ệ n tr ạ ng . ể ề ắn ể n chuyên đ t đ + Phát tri n các công viê , công viên sinh thái g i ho ng th ớ ộ ạ ắn v ế ố ố ng lư thao, gi i trí; hình thành m i k i liên hoàn v i h th ng cây xanh t nhiên ớ ớ ệ ả t n ự ạ ồ c Sóc Sơn, Ba Vì, Hương Tích và các lưu v i các c c sông, h t ự ự ạ . n lý nông thôn và m c sinh thái: ớ ả Qu ặ t nư ố i ưu h hóa vành đai xanh nông nghi ữu cơ, hi n đ p theo mô hình canh tác h i ệ ệ ữu + T ạ ấ ắn môi trư hóa s i b ớ ờn ệ ả ả t g n xu ắn v o v ờng . ố ồ ầm ể , đ c đ o đ năng tiêu + Gi gìn, khôi ph c h th ng sông, h b m kh ớ ệ ả ả ả ữ ầm nư ụ ằn ể ế ế thoát nư c đô th ị ằng môi trư cân b ờng sinh thái và phát tri n kinh t xã h i ; thi t l ớ ờn ộ ập ập - , ế ố ồ c và đ n hành lang b nghiêm ng t cho h th ập th y l i ớ ệ ệ ập ả ủ các tuy ặ n nư ợ o v ng ngu . ế ế ố + Quy ho ch không gian c nh quan sinh thái d n sông k i v i các ớ ả c các tuy t n ạ ọ ế ể , văn hóa l n đ ập đ c trưng môi ờng văn hóa trung tâm kinh t xác l sinh thái Thủ ớ ờn ập hủ ặ trư - đô . ế t đ ị + Khai thác hi không gian m c cho các ho ng kinh t d ch v ớ ệ ộ ả ặ t nư ạ u qu ụ , ị du l ch và v i th ận ả ủ ận t y . iến iết kế tổn ể: Địn ịnh hướ ướn đô th ị cả d) d) kiế ến trúc cả nh quan – thiế ết kế ổng th Đị tổ ớng k ể: – ế * Đ ị nh hư ng ki nh quan: ớ ả n trúc c ắ ế đô Hà N c tiêu Văn hi + Xây d ng hình nh và b a Th i theo m ộ ả ản ủ ủ ự ản s c c n ụ - ồ Văn minh n đ ị Hi i ạnh phúc d a trên b n và phát huy các giá tr di s n không ệ ả ả H o t ự ạ ạn - - ế ế ể ảnh quan, văn hóa, l ị n đô th ị gian, ki ch s , k t h ợp xây d ựng phát tri hi ệ ản ử n trúc, c ợp ựn n đ i, xanh và sáng t ạ ạ o.",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 45,
+      "phenomena": [
+        "dense_table",
+        "table_header",
+        "multi_column"
+      ],
+      "regions": [
+        {
+          "id": "page_45_blk_0",
+          "reading_order": 0,
+          "kind": "table",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 40.34,
+            "x1": 922.66,
+            "y1": 899.84,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "46 ể ổ ẩn ố ế ể đô. Phát tri thông đ ; đ Th n giáo d c ph t chu t phá trong phát tri n giáo ộ ủ c t ạ ẩn qu ụ ể ố ề ấp ấ t lư d c thông minh. Phát t ri n h th ờng có nhi ấp h ờng ch ờn ờn ệ ng trư c, trư ợn ọ u c ợng cao, ụ ế ố ế t đào t các lo i hình liên k ớ c và qu o trong nư c t ạ ạ . ể ố ố c thư t đ Phát tri ạnh giáo dụ ờng xuyên và h i, ờn ờ ập ủ và nâng cao c t ạn ọ n m ập su c ng c dụ t đ c thư hi ho a các trung tâm giáo dụ trung tâm h ờn ệ ộ ập ộ ả ủ ờng xuyên, c t ạ ọ u qu ng c ập c ng dụ ồ ần ố đ i các phư t đ ờng, xã, góp ph ần xây d ựng xã h i h i. ờn ờ ộ ập ng t c t ựn ạ ọ ập su ể ầu ồ o đ m đ ầu tư đ Phát tri n giáo d c chuyên bi t và giáo d c hòa nh ập, b ng b ệ ập ộ ả ả ụ ụ ề ấ ế ề ể ế ị và đ i ngũ giáo viên; t o đi n đ t ch t, trang thi t b u ki i khuy ờ ậ ộ ệ ậ ở t t t cơ s ngư ạ v v ố ế ẳn ấ ợng. Ưu và các đ i tư ợng đ c thù đư ợp, bình đ t lư c ti ận giáo d c phù h ẳng, ch ận ặ ợn ợ ợp ợn p c ụ ố ấ ổ ế đ tiên b t, hoàn thi n xây d ng ph thông chuyên bi t cho tr khuy ờ ệ ệ ẻ trí qu ỹ ựng trư t ựn ố t th nh ph i. à à ậ ộ H N t ể ấp ẩn ạng lư i, quy mô cơ s eo hư n đ Phát tri giáo dụ ấp th ớng hi i, chu ớ ớn ệ ở c các c ạn ạ n m ẩn dụ ế ng các đ ị a bàn đông dân cư, khu đô th ị nghi hóa; chú tr , khu công Gi i quy ệ ả t ọ p, … ể ế ấ t đ i đô không còn qu đ tri tình tr ng thi ờng, l i khu v ờn ớp ớ ệ ộ ộ ở ỹ ớp. V u trư t m ự ạ c n r ng, ần ố có chính sách đ t đ đ i các trư c thù cho phép nâng t xây d i v ầng và tăng m ớ ờn ậ ộ ặ ự ng đ ờng ấ ấ ể đ t; ưu tiên s đ đ không còn qu d t sau khi di d i các tr xây d ờ ử ở ỹ ỹ ự ng qu s ng ụ ụ ổ ờng ph thông. ờn trư ầ ể ỗ o đ i xã/phư ờng/đơn v ị m non công l ng ti u h ờn có trư ờ ờ ập ả ả ở B ập, trư ọ m m ng m c ổ công l ập, trung h công l ạn dân có m trung h c ph thông ờn ập ập ộ ở ập; 3 5 v t trư ờng tr c cơ s ọ ạn ọ - ầu ế ố ổ công l ập phù h i nhu c ầu th phân b ng trung h c ph thông phù ớ các trư ờ ập c t ợp ự ọ ; ợp v ầu ể ề ấp c dân cư h i nhu c i h i các khu v Phát tri ờng có nhi ấp h ớ ờ ờn n trư c t ợp ầu ngư ự ọ ạ ọ ợp v u c c . ế ề ế ể ổ n đ ững nơi có đi tiên ti n, hi i t i nh u ki n kinh t phát tri ờng ph thông liên ờn ệ ệ ữn n; trư ạ ạ ấp ế ấ ố n đ t lư ấp tiên ti n, hi i, ch ng cao. Xây d ng h th ờng chuyên ti ờn ệ ệ ệ ậ ng trư ợ ự ạ c m c n ố ế ố ố ế ắ ng chuyên, trư ; xây d ng h th i khu v c phía B c Th ờ ờn ệ ủ ng trư c t c t t ự ự ạ qu ờng qu đô. ề i các cơ s c đ Th c hi n l trình di d giáo dụ i h c, giáo d c ngh ghi ờ từ ệ ộ ệ ở p từ ự ạ ọ n dụ ụ ể i đô l ị đ hình thành các đô th ị đ khu v ch s i h ộ ập ử ở ra các c tăng trư c t ự ự ạ ọ c n c ng ập ồ ề ầ ầ ố n đ i và đ i cơ s trung, hi ng b h ng kỹ thu t, h ng xã h i. i v ph i di ớ ệ ộ ậ ộ ở ả kỹ Đ t t ạ ạ ạ v ể ổ ấ ể ổ ầ , ưu tiên chuy n đ i công năng qu đ i đô đ d i toàn b i n b sung h ờ ộ ộ ỹ t cũ t t ạ ạ ng ổ cho giáo dụ c ph thông, các công trình ti n ích công c ng và không gian xanh. Thành ệ ộ dụ ố ế ầ ầ ồ ể ố ỗ có cơ ch đ u tư xây d ng đ i đ ị a đi i cơ s ph h ựng h ng b i. i v ớ ớ ộ ở Đ tr t t ợ ựn ạ ạ m m ế i các cơ s không thu c di n di d i toàn b , khuy n khích m i; ờ ớ ộ ệ ộ ộ ở ở ng quy mô t ạ r m ầ ấ i đô th u trúc, ưu tiên ph ph n di n tích t i n c hi n tái c nghiên c ứu khoa h ứu ệ ộ ệ ự ạ ọ c v c, ụ ụ ể ổ ề ấ , đ o, đào t o sau đ c và đào t chuy n giao công ngh i m i sáng t i h o ngh ch ớ ệ t ạ ạ ạ ọ ạ lư ợ ng cao. ể ố ề p theo hư , đa d Phát tri n h th ng giáo dụ c ngh nghi ạng, linh ho ớ ệ ệ ở t, ạn ạ ng m dụ ầu ể ầ a trên đ ị đô Hà N i, đáp ph ù h i yêu c ầu phát tri a bàn Th ứng nhu c ớ ứn ộ ủ ủ ủ ợp ợp v n c u c a ể ề ể ầ ấ ị ng lao đ ng, ưu tiên phát tri ng đi th n các ngành ngh m, có phân t ng ch ờ ộ trư tr t ọ ắp ế ổ ề lư i cơ s ập theo hư ch c l giáo dụ c ngh nghi p công l ng tinh g ứ ớ ệ ập ở ng. S p, t ợ ạ ọ ắp x n, dụ ấ ấ , đ t lư ng đào t Hình thành các trư hi m b u, ch ờn ệ o quy mô, cơ c ả ả ả ờng trung ợ ạ qu o. u ề ắp ế ề c thư h c ngh p l i các trung tâm giáo d c ngh nghi giáo dụ ờn trên cơ s ệ ở ọ ạ s ắp x p ờng ụ dụ - ề ế ể ố ững xã chưa có đi ng nơi có s lư i nh u ki n kinh t xã h i phát tri n, nh ệ ộ xuyên t ữn ữ ợn ạ ợng - ố ẳn ấp đông ho c liên phư ng, xã chưa có trư ờng cao đ ấp trên đ ị dân s c khu v ờ ờn ặ ẳng, trung c ự a ể ầu ế ỗ bàn đ ph nhu c ầu h i ch , thu ận l i trong vi c ti i giáo dụ ớ ập ận ệ ận ủ c t ập t ợ ọ ạ c v p c ận v c c a ụ ụ dụ",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 60,
+      "phenomena": [
+        "roadmap_table",
+        "tabular_columns"
+      ],
+      "regions": [
+        {
+          "id": "page_60_blk_0",
+          "reading_order": 0,
+          "kind": "table",
+          "bbox": {
+            "x0": 142.36,
+            "y0": 40.34,
+            "x1": 922.66,
+            "y1": 895.0,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "61 ế ầu ng 979km đư đ ầu tư như sau: dài kho nghiên c ứu d ki phân kỳ ứu kỳ ả ợ ự c n p ế ầu Giai đo ch đ ầu tư kho Nghiên c ứu, xây d ng k ho ảng 500km ứu ản ạn 2026 2035: ự ạn ạ - ắ ế đư t đô th ị , trong đó ưu tiên t ập trung hoàn thành trư g giai đo ờn ớ ập c các tuy n tron ạn ờng s ạn ế ế ố ị a Ngh t 188/2025/QH15 và tuy 1 (N i Bài Yên Viên ộ ủ ga Hà 2026 2030 c quy n s - - - ồ i i). ộ N Ng c H ọ - ế ầ Giai đo ch đ u tư hoàn thi ng lư ho i và kéo dài... v i ớ ớ ệ ạn 2036 2045: K ạn ạ ạ n m - ề chi u dài kho ảng 479km. ản ể ển kế ển đượ ứu th ợc nghiên c ứu, xây dự ựng l trình p phát tri ển trong kế ho ch tri ộ Cụ ẽ ược Cụ dựn ạ s ển ồ ch trên cơ s đánh giá, xây dự ực, xác đị nh các phương th ức khai quy ho n l ở đị ạ dựn ực ựng ngu ức ển đố ến ể ển đồ ển khai đố ến; các giai đo ển khai song song đồ ới ừn n nêu trên có th tri i v ới t tri ừng tuy ạ ng ến ề đề ấ đố ến có đi ợi và có đề a các đố i tác có năng l ời ới th ới nh u ki n thu n l ủ ệ ậ ữn ời v ững tuy t c ợi ực xu ực; ển ến ế ứn ứn ứng dụ i pháp tri ển khai, ứng dụ ng khoa h c công ngh ến trên th ả ệ ng các gi tiên ti dụ dụ ọ để gắ tố ến ới để i đa ti ến độ ới hoàn thành. độ rút ngắ gi n tố ố * H th h àng không: ệ ng ấp ố ế ắ ấ c) đ ng hàng không qu i Bài (c c phía B t kho ộ ả ản ấp C Nâng c t công su N c t ự ạ ản g ề u hành khách/năm, m 50 tri ng quy mô kho ha v phía Nam. Xây d ệ ộ ở ản ảng 1.500 ựn r ựng Ứn đô t ng hàng không th 2 Vùng Th i c c phía Nam (khu v Ứng Hòa, Chuyên ứ ả ủ C c xã Ứ ự ự ạ ấ ế u khách/năm ) v i quy mô kho ha, công su t d ki n kho 50 tri ớ ệ ản ản ảng 1 500 30 ỹ M ự ảng - . ẩn ố ế ể ấp ổ đ n theo mô hình đô th ị t tiêu chu , phát tri sân bay. Nâng c ng, b ộ ở c t ạ ẩn qu ấp, m r c năng lư sung ch ng d ng cho các sân bay quân s Gia Lâm, Hoà L ứ ỡ ự ạ c. ụ ế ể ầ ố ấ ập các đi m đ Thi t l i c t/h i khu v c, Sóc Sơn, trên các tòa ập c Hòa L t ự ạ ạ ạ u m ầ ế ể đ phương ti nhà cao t ng, các khu v c b n, bãi phù h ph n công ngh i ớ ệ ệ ự ợp ợp c v m ụ ụ ể (drone, taxi bay,…) ph ị d ch v ận chuy n công ngh ận ệ c v ụ ụ ụ v . ố * th iao thông công c ệ ộ H ng: ng g ấn ấu ấn đ đ ng đ Ph l m nh a giao thông công c 30% vào năm 2035; ệ ậ ộ ỷ ả ủ t 25% ấu t ạ n c - 45% vào năm 2045 và 55 60% vào năm 2065. 40% - - ế ế phương ti i đô l ị Thi t l ập các vùng h ạn ch n cá nhân vào khu v ch s theo ập ệ ộ ử ự ạn c n ồ ấp ể ổ ớp vành đai đ n đ trình, hư các l ng b i các vùng phát th i th ấp; chuy i theo l ớp ớ ớ ộ ộ ả ng v i 100% phương ti ng năng lư n xe buýt, taxi s dụ ợng xanh. ớ ệ ử t ợn dụ ấ ể ể ể ế Ưu tiên qu đ t đ n đa phương ti phát tri g tâm trung chuy n k t h ệ n các trun ỹ ợp ợp ế ể n đô th ị i vi c tái thi t và phát tri theo mô hình TOD. ớ ệ v ấ ần ỗ Dành đ đ ng như bãi đ t cho h ầng giao thông công c m b ộ ủ ả t tr c, tr ạ ạ ạ ạ m s o - dư a ch a xe buýt. ử ỡn ữ ỡng s ấ ế ấ ằn ỗ Dành đ đ t cho đ xe theo hư m đ t đai ng ti t ki b ằng vi c khai thác ớ ệ ệ ủ ỹ qu ầ không gian đa t ng. ể ổ ố ể n đ o đ Xây d d li ng dụ ng chuy i s nhân t ản lý, ứ ệ ệ ở ản , trí tu ữ ựn ựng cơ s ạ qu dụ u, ố ố i đa năng l khai thác t a h th ng giao thông; ph công tác d báo, xây d ệ ủ ự ự ựn c c c v ựng ụ ụ ề ế ể ần đ án, k ho ch phát tri n h ầng giao thông. t ạ ạ ố ng đ * th ờng th ờn ệ ủ H ư y: ầ ố ấp ể ố ầu ng đ i đư i đ ị ng đ ờng th i t o, phát tri ờn ộ ộ ả ủ ả ả C âng c N t s ạ a: N u m y n ấp, c n m c ầu ố ế ể ổ ợp đ gánh vác vai trò logistics đư ng container Phù Đ i k t h ờng th ờn ủ ả ả y: C ng, C ợp m ng ồ c phía Đông); C Giang Biên (c ảng Ba Vì (c c phía ng Sơn Tây, C ả ả ản ng Hà, C ng H ự ự",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 78,
+      "phenomena": [
+        "sign_block",
+        "distribution_list",
+        "seal_area"
+      ],
+      "regions": [
+        {
+          "id": "page_78_blk_0",
+          "reading_order": 0,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 40.34,
+            "x1": 922.67,
+            "y1": 892.0,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "79 ề ố ố ị Ch u trách nhi tính chính xác c li u, tài li u, h th d li ệ ệ ệ ệ ệ ủ ở ữ ng cơ s m v a s u, ồ ồ ồ ổ ể ầ ản đ , sơ đ sơ Quy ho đô Hà N m nhìn 100 năm theo b trong h ch t ng th Th i t ộ ản ủ ạ ố ấ ồ ế quy đ ị sơ quy ho nh c a pháp lu th ng nh a toàn b h ch t i huy t minh, ậ ộ ủ ủ T t; s t c ự ạ ạ ồ sơ b uy đ ị h nh qu n lý. ản ả và Q ẽ ản v ố ấ ấn ồ i các đơn v ị c ngoài trong Liên danh tư v Ph i h ấn hoàn thi n h ớ ớ ệ tư v ợp n nư ợp v ổ ể ầ sơ Quy ho đô Hà N m nhìn 100 năm theo đúng quy đ ị ch t ng th Th i t nh, g i S ộ ủ ử ở ạ ế ận và lưu tr , lưu gi theo quy đ ị Quy ho ch Ki n trúc xác nh nh. ận ữ ữ ạ - ế Quy ho ch Ki ở n trúc: S 3 ạ - . ấu ế ị soát, đóng d h trách nhi xác nh i áo cáo thuy t minh quy ho ch, ệ ận à C B ận t ạ ạ m r u ấu x ồ ổ ể ầ sơ Quy ho đô Hà N m nhìn 100 năm đ trong h ch t ng th Th i t b ộ ả ủ ảm ả ẽ B ạ n v ảm o ế ố ề t đ ị phù h i nh phê duy a UBND Thành ph n cho S ớ ệ ủ uỷ ở và uỷ Quy Quy t c ợp ợp v quy ế ổ Quy đ ị đư ho ch Ki n trúc ban hành nh qu ản lý theo quy ho ch c duy ch ứ ệ ản công t; t ợ ạ ạ c - ố ồ và lưu trữ sơ quy ho ch theo quy đ ị b h nh. rữ ạ ố Tài chính và các cơ quan, đơn v ị liên quan tham mưu Ch trì, ph i h i S ớ ủ ở ợp ợp v ố ế ổ ể đô Hà N UBND Thành ph ban hành K ho ch th c hi n Quy ho ch t ng th Th i ệ ộ ủ ự ạ ạ ầm ầm nhìn 100 năm. t ầu ổ đ án đ ầu tư đang đư Ch rà soát các nhi , quy ho ch, dự ch c l ứ ệ ập ỉ c t dự ợ ạ ạ o m v ập, ụ ẩm ấp ẩm ề ấp ề ẩm đ ị c đã đư trương theo Đi th nh ho ấp th n phê duy t, ch ấp thu ận chủ ệ ận hủ ặ ợ c c ẩm quy u ế ầm ế đô Hà N đ ầm nhìn đ n năm 2065 đã đư ch nh Quy ho ch chung Th i đ ộ n năm 2045, t ỉ ủ ợ ạ c ế ố t đ ị 1668/QĐ Th ớng Chính phủ phê duy i Quy nh s 27/12/ ớn ệ ủ hủ TTg ngày 2024 và tư t t ạ - ể ế ch chuyên ngành đã đư t đ xác đ ị các quy ho duy nh các n i dung còn phù h ợp, k ệ ộ ợ ợp ạ c ể ổ ể ầm đô Hà N th a phát tri n, th c hi n phù h i Quy ho ch t ng th Thủ i t ầm nhìn 100 ừ ớ ệ ộ hủ ự ợp ạ ợp v năm đư c duy ệ t. ợ Tài chính: ở S 4. ố ế ban hành cơ ch Nghiên c ứu xây dự ựng, trình UBND Thành ph , chính sách, gi i ứu ả dựn ầu ể ể đô và quy đ ị t đ huy đ pháp phù h i yêu c ầu phát tri n Th nh c a pháp lu ớ ậ ộ ủ ủ ng các ợp ợp v ồ n l c th c hi n quy ho ch. ệ ự ự ạ ngu ầu ổ ẩ ấp đ án đ ầu tư đang đư m đ ị c đã đư Ch à soát các dự ch c th nh ho ứ ỉ ặ c t dự ợ ợ ạ o r c c ấp ẩm ể ấp trương theo Quy ho đô Hà N th n ch ấp thu ận ch ch Thủ i th i kỳ ờ kỳ ận ộ ủ hủ 2021 2030, ạ ẩm quy - ầm ế ế ố ầm nhìn đ n năm 2050 đư t đ ị c Thủ ớng Chính phủ phê duy i Quy nh s ớn ệ hủ hủ tư t t t ợ ạ ề ế 1569/QĐ 2024, Đi đô Hà N i đ / / u ch nh Quy ho ch chung Th ộ ỉ ủ TTg ngày 12 12 n năm ạ - ầm ế ế ố ầm nhìn đ n năm 2065 đư t đ ị c Thủ ớng Chính phủ phê duy i Quy nh s ớn ệ hủ hủ 2045, t tư t t ợ ạ ể 1668/QĐ ch chuyên ngành đã đư t đ ày 27/ / 2024 và các quy ho c duy ệ TTg ngày xác 12 ợ ạ - ế ể đ ị nh các n i dung còn phù h ợp, k th a phát tri n, th c hi n phù h i Quy ho ch ừ ớ ộ ệ ợp ự ợp ạ ợp v ổ ể ầ đô Hà N m nhìn 100 năm đư ng th Thủ i t c duy ộ ệ hủ t t. ợ ầu ế ể Quy ho ch – Ki Tài chính trong quá trình tri n khai th ở ở n trúc và S S Yêu c ự ạ c ầu – ề ch, các chương trình, đ hiên quy ho ch ờng h nhi , quy ho dự ờn ệ ợp các án, án Trư ợp dự ạ ạ : m v ụ ầu ổ ể ầm ần đ đô Hà N ầm nhìn 100 năm không phù h i Quy ho ch t ng th Th i t ớ ộ ủ ầu tư ợp ạ ợp v , c ần v ,.. ể ấn ề ẩm ề xác đ ị ấn đ n, đúng trình tự nh c th , nguyên nhân và x lý theo th ử các v tự ẩm quy , quy ụ đ ị o đ nh c a pháp lu ngành và pháp lu t có liên quan, b ảm không h ợp th c hóa các ứ ậ ậ ủ ả ảm t ợp ế chương trình đang đư sai ph , dự trình, lý theo các k ử ạm. Các án c rà soát, x công t dự ợ ạm , … ể ề ể ế m tra, đi đư lu ận thanh tra, ki u tra, ki m toán và thi hành các b ản án (n u có) ch ận ản ỉ ợ c ể ầu ầy ế ể n khai đ ầu tư sau khi đã th n đ ầy đ tri c hi i dung theo k t lu ận thanh tra, ki ệ ộ ận ủ các n ự m",
+          "heading_level": null
+        }
+      ]
+    },
+    {
+      "page_index": 79,
+      "phenomena": [
+        "final_annex",
+        "closing_provisions"
+      ],
+      "regions": [
+        {
+          "id": "page_79_blk_0",
+          "reading_order": 0,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 40.34,
+            "x1": 922.68,
+            "y1": 343.03,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "80 ề ể ế ấp ẩm ề ấp tra, đi và đư ận, đ u tra, ki m toán, b ản án (n u có) ấp có th n ch ấp thu ận ản ảm ợ c c ẩm quy ảm ợp các quy đ ị t và các quy đ ị b o phù h nh pháp lu nh khác có liên ậ ả ợp quan . ố UBND các xã, phư ờng trên đ ị ban ngành c a Thành ph a bàn Thành ờn ở ủ Các S 5 . , b , n , U ố ể ể ế t đ n đô th ị ph i m tra, giám sát, qu ản lý các ho ng xây dự ựng, phát tri , kinh t ộ ản K xã dựn ạ : - t đ theo đúng quy ho lý các trư h i v và các ho ng có liên quan t ch; x ờng h ợp sai ph ờn ộ ộ ử ợp ạ ạ ạm ạm ẩm ề n và quy đ ị theo th nh c a pháp lu ậ ủ t. ẩm quy ề ề ả Đi Đi thi hành u 3 kho n u . ế ể t đ ị nh này có hi u l c thi hành k ngày ký. từ ệ Quy từ ự ố ố ế Chánh Văn phòng UBND Thành ph Giám đ Quy ho ch Ki ở c các S n trúc, ạ : - , Tài chính, Vi ởng Vi n Quy ho ch xây dự i, Vi ởng Vi n Nghiên ệ ệ ộ ệ ệ ởn ởn ựng Hà N n trư n trư dựn ạ ể ế ố ồ ế i, Giám đ ản lý đ ứu phát tri n kinh t xã h i Hà N án quy ho ch ki ứu ộ ộ ản n trúc Qu c Ban Q ạ c - ế ố ố n trúc); Giám đ (thu Quy ho ch Ki c, th , ban, ngành Thành ph ộ ở ủ ởn ở ởng các S c S trư ạ - , ố ị ch UBND các phư ờng, xã trên đ ị đơn h a bàn Thành ph và th ờn ủ ủ ởn ởng các C trư t cơ quan, đ ế ị ị t đ ị , cá nhân có liên quan ch u trách nhi m thi hành Quy nh này./. ệ v",
+          "heading_level": null
+        },
+        {
+          "id": "page_79_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.33,
+            "y0": 373.95,
+            "x1": 810.97,
+            "y1": 628.26,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "Ủ Nơi nh ậ CH CH Ị T n: ề Như Đi u 3; - ố c h i; ộ UBTV Qu - Th hính ph ớ ủ ủ C tư ; ng - ể (đ ác Phó Th Chính ph b/cáo) ớ ủ ủ C tư ; ng - Thư c Thành ờ ủ ng trự rự y; - ố Thư c HĐND Thành ph ờ ng trự rự ; - , cơ quan ngang b Các b ộ ộ - ắ , Vũ Đ i Th ạ ng quan thu c Chính ph ộ ủ cơ ; ố nh, thành ph c thu ộ ỉ UBND các t trự rự c - ố nh, thành ph thu trung ương; các t ộ ỉ ùng V c V đô, V Th ùng ĐBSH, vùng TD ủ & V MN P B; ố ị Ch ch, các PCT UBND Thành ph ủ t ; - VP UBTP: CVP, các PCVP - , ác phòng chuyên môn ; c ố li công ngh ệ ệ u và Trung tâm TT, D ữ TP, s - Lưu VT , ĐT - .",
+          "heading_level": null
+        }
+      ]
+    }
+  ]
+}

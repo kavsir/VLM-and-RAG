@@ -1,0 +1,131 @@
+{
+  "document_id": "luat-112-2025-qh15",
+  "metrics": {
+    "by_category": [
+      {
+        "category": "heading",
+        "f1": 0.4828,
+        "false_negatives": 5,
+        "false_positives": 10,
+        "precision": 0.4118,
+        "recall": 0.5833,
+        "true_positives": 7
+      },
+      {
+        "category": "text",
+        "f1": 0.2174,
+        "false_negatives": 7,
+        "false_positives": 101,
+        "precision": 0.1293,
+        "recall": 0.6818,
+        "true_positives": 15
+      }
+    ],
+    "f1": 0.2444,
+    "false_negatives": 12,
+    "false_positives": 124,
+    "mean_iou": 0.7604,
+    "precision": 0.1507,
+    "reading_order_concordance": 0.9221,
+    "recall": 0.6471,
+    "total_ground_truth": 34,
+    "total_predicted": 146,
+    "true_positives": 22
+  },
+  "pages": [
+    {
+      "ground_truth_count": 8,
+      "matched_count": 6,
+      "mean_iou": 0.7486,
+      "page_index": 0,
+      "predicted_count": 19,
+      "unmatched_ground_truth": 2,
+      "unmatched_predicted": 13
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 1,
+      "mean_iou": 0.8049,
+      "page_index": 1,
+      "predicted_count": 11,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 10
+    },
+    {
+      "ground_truth_count": 3,
+      "matched_count": 2,
+      "mean_iou": 0.6643,
+      "page_index": 5,
+      "predicted_count": 13,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 11
+    },
+    {
+      "ground_truth_count": 4,
+      "matched_count": 3,
+      "mean_iou": 0.7552,
+      "page_index": 12,
+      "predicted_count": 23,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 20
+    },
+    {
+      "ground_truth_count": 3,
+      "matched_count": 1,
+      "mean_iou": 0.7871,
+      "page_index": 20,
+      "predicted_count": 23,
+      "unmatched_ground_truth": 2,
+      "unmatched_predicted": 22
+    },
+    {
+      "ground_truth_count": 5,
+      "matched_count": 3,
+      "mean_iou": 0.7065,
+      "page_index": 28,
+      "predicted_count": 19,
+      "unmatched_ground_truth": 2,
+      "unmatched_predicted": 16
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 1,
+      "mean_iou": 0.8005,
+      "page_index": 35,
+      "predicted_count": 18,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 17
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 1,
+      "mean_iou": 0.8037,
+      "page_index": 42,
+      "predicted_count": 14,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 13
+    },
+    {
+      "ground_truth_count": 3,
+      "matched_count": 2,
+      "mean_iou": 0.8114,
+      "page_index": 50,
+      "predicted_count": 3,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 1
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 2,
+      "mean_iou": 0.8521,
+      "page_index": 51,
+      "predicted_count": 3,
+      "unmatched_ground_truth": 0,
+      "unmatched_predicted": 1
+    }
+  ],
+  "pages_audited": 10,
+  "parser": "marker",
+  "parser_backend": "fast-no-ocr",
+  "parser_version": "2.0.0"
+}

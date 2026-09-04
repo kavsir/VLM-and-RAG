@@ -1,0 +1,122 @@
+{
+  "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+  "metrics": {
+    "by_category": [
+      {
+        "category": "figure",
+        "f1": 0.8571,
+        "false_negatives": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.75,
+        "true_positives": 3
+      },
+      {
+        "category": "table",
+        "f1": 0.6667,
+        "false_negatives": 2,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.5,
+        "true_positives": 2
+      },
+      {
+        "category": "text",
+        "f1": 0.3385,
+        "false_negatives": 5,
+        "false_positives": 38,
+        "precision": 0.2245,
+        "recall": 0.6875,
+        "true_positives": 11
+      }
+    ],
+    "f1": 0.3636,
+    "false_negatives": 8,
+    "false_positives": 48,
+    "mean_iou": 0.7262,
+    "precision": 0.25,
+    "reading_order_concordance": 0.4083,
+    "recall": 0.6667,
+    "total_ground_truth": 24,
+    "total_predicted": 64,
+    "true_positives": 16
+  },
+  "pages": [
+    {
+      "ground_truth_count": 8,
+      "matched_count": 6,
+      "mean_iou": 0.744,
+      "page_index": 0,
+      "predicted_count": 18,
+      "unmatched_ground_truth": 2,
+      "unmatched_predicted": 12
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 1,
+      "mean_iou": 0.6102,
+      "page_index": 5,
+      "predicted_count": 18,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 17
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 1,
+      "mean_iou": 0.5913,
+      "page_index": 15,
+      "predicted_count": 9,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 8
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 1,
+      "mean_iou": 0.5986,
+      "page_index": 20,
+      "predicted_count": 5,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 4
+    },
+    {
+      "ground_truth_count": 4,
+      "matched_count": 3,
+      "mean_iou": 0.8139,
+      "page_index": 21,
+      "predicted_count": 7,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 4
+    },
+    {
+      "ground_truth_count": 4,
+      "matched_count": 2,
+      "mean_iou": 0.67,
+      "page_index": 26,
+      "predicted_count": 3,
+      "unmatched_ground_truth": 2,
+      "unmatched_predicted": 1
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 2,
+      "mean_iou": 0.7862,
+      "page_index": 27,
+      "predicted_count": 3,
+      "unmatched_ground_truth": 0,
+      "unmatched_predicted": 1
+    },
+    {
+      "ground_truth_count": 0,
+      "matched_count": 0,
+      "mean_iou": 0.0,
+      "page_index": 46,
+      "predicted_count": 1,
+      "unmatched_ground_truth": 0,
+      "unmatched_predicted": 1
+    }
+  ],
+  "pages_audited": 8,
+  "parser": "mineru",
+  "parser_backend": "pipeline",
+  "parser_version": "3.4.5"
+}

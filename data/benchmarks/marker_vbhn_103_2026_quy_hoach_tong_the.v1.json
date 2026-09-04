@@ -1,0 +1,122 @@
+{
+  "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+  "metrics": {
+    "by_category": [
+      {
+        "category": "heading",
+        "f1": 0.375,
+        "false_negatives": 0,
+        "false_positives": 10,
+        "precision": 0.2308,
+        "recall": 1.0,
+        "true_positives": 3
+      },
+      {
+        "category": "table",
+        "f1": 0.6667,
+        "false_negatives": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.5,
+        "true_positives": 1
+      },
+      {
+        "category": "text",
+        "f1": 0.3409,
+        "false_negatives": 7,
+        "false_positives": 51,
+        "precision": 0.2273,
+        "recall": 0.6818,
+        "true_positives": 15
+      }
+    ],
+    "f1": 0.2969,
+    "false_negatives": 8,
+    "false_positives": 82,
+    "mean_iou": 0.7849,
+    "precision": 0.1881,
+    "reading_order_concordance": 0.8889,
+    "recall": 0.7037,
+    "total_ground_truth": 27,
+    "total_predicted": 101,
+    "true_positives": 19
+  },
+  "pages": [
+    {
+      "ground_truth_count": 6,
+      "matched_count": 4,
+      "mean_iou": 0.7677,
+      "page_index": 0,
+      "predicted_count": 19,
+      "unmatched_ground_truth": 2,
+      "unmatched_predicted": 15
+    },
+    {
+      "ground_truth_count": 4,
+      "matched_count": 2,
+      "mean_iou": 0.8302,
+      "page_index": 1,
+      "predicted_count": 21,
+      "unmatched_ground_truth": 2,
+      "unmatched_predicted": 19
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 1,
+      "mean_iou": 0.7597,
+      "page_index": 5,
+      "predicted_count": 12,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 11
+    },
+    {
+      "ground_truth_count": 3,
+      "matched_count": 3,
+      "mean_iou": 0.7427,
+      "page_index": 12,
+      "predicted_count": 8,
+      "unmatched_ground_truth": 0,
+      "unmatched_predicted": 5
+    },
+    {
+      "ground_truth_count": 2,
+      "matched_count": 1,
+      "mean_iou": 0.7526,
+      "page_index": 20,
+      "predicted_count": 12,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 11
+    },
+    {
+      "ground_truth_count": 3,
+      "matched_count": 2,
+      "mean_iou": 0.8328,
+      "page_index": 30,
+      "predicted_count": 10,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 8
+    },
+    {
+      "ground_truth_count": 3,
+      "matched_count": 2,
+      "mean_iou": 0.8364,
+      "page_index": 40,
+      "predicted_count": 13,
+      "unmatched_ground_truth": 1,
+      "unmatched_predicted": 11
+    },
+    {
+      "ground_truth_count": 4,
+      "matched_count": 4,
+      "mean_iou": 0.7757,
+      "page_index": 47,
+      "predicted_count": 6,
+      "unmatched_ground_truth": 0,
+      "unmatched_predicted": 2
+    }
+  ],
+  "pages_audited": 8,
+  "parser": "marker",
+  "parser_backend": "fast-no-ocr",
+  "parser_version": "2.0.0"
+}

@@ -1,0 +1,25 @@
+manifest_schema_version: 1
+document:
+  id: luat-112-2025-qh15
+  document_number: "112/2025/QH15"
+  normalized_document_number: 112/2025/QH15
+  title: Luật Quy hoạch
+  document_type: Luật
+  issuer: Quốc hội
+version:
+  id: v1
+  document_id: luat-112-2025-qh15
+  issued_on: 2025-12-11
+  effective_on: 2026-03-01
+source:
+  source_type: official_government_portal
+  publisher: Cổng thông tin điện tử Công báo nước Cộng hòa xã hội chủ nghĩa Việt Nam
+  signer: Trần Thanh Mẫn
+  landing_page_url: https://congbao.chinhphu.vn/van-ban/luat-so-112-2025-qh15-468674.htm
+  asset_url: https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/112signed-1769241287237757225866.pdf
+  retrieved_at: 2026-09-04T15:00:00.000Z
+artifact:
+  filename: 112signed-1769241287237757225866.pdf
+  media_type: application/pdf
+  byte_size: 1523362
+  sha256: 8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b
