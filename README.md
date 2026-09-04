@@ -14,8 +14,10 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Current Project Status
 
-- **Phase**: Physical Document IR v0 (Issue #004)
-- **Status**: The engineering foundation, golden-document registry, external MinerU adapter, and parser-independent Physical Document IR v0 are implemented. Semantic extraction, RAG, and retrieval features are not yet implemented.
+- **Phase**: Marker Adapter + Physical IR v0 Normalization (Issue #005)
+- **Status**: The engineering foundation, golden-document registry, independent external MinerU
+  and Marker adapters, and parser-independent Physical Document IR v0 normalization are
+  implemented. Semantic extraction, RAG, and retrieval features are not yet implemented.
 
 ## Prerequisites
 
@@ -187,6 +189,52 @@ run metadata is written to
 outputs are retained below its `raw/` directory. The entire generated `parser_runs/` tree is ignored
 by Git. The measured structure, artifact hashes, and runtime from the first real Hanoi parse are
 recorded in [`docs/research/mineru-hanoi-baseline.md`](docs/research/mineru-hanoi-baseline.md).
+
+## Optional Marker Parser Environment
+
+Marker 2.0.0 is the second independent external parser. Its Torch, Surya, and model dependencies
+remain outside the main project and CI. Create the dedicated Python 3.12 environment and install the
+exact reviewed distribution:
+
+```powershell
+uv venv .venv-marker --python 3.12
+uv pip install --python .venv-marker\Scripts\python.exe "marker-pdf==2.0.0"
+```
+
+Verify the installed package through distribution metadata, without importing Marker internals:
+
+```powershell
+.venv-marker\Scripts\python.exe -c "import importlib.metadata; print(importlib.metadata.version('marker-pdf'))"
+```
+
+The installed `marker_single --help` must expose the flags used by the adapter. Probe the boundary
+and then run the checksum-verified born-digital Hanoi baseline in `fast-no-ocr` mode:
+
+```powershell
+uv run python -m vlm_rag.parsers.marker_cli `
+  --executable .venv-marker\Scripts\marker_single.exe `
+  --python-executable .venv-marker\Scripts\python.exe probe
+
+uv run python -m vlm_rag.parsers.marker_cli `
+  --executable .venv-marker\Scripts\marker_single.exe `
+  --python-executable .venv-marker\Scripts\python.exe `
+  --timeout 14400 run
+```
+
+The adapter explicitly records `mode=fast`, `disable_ocr=true`, `output_format=json`, and the
+`fast-no-ocr` experiment label. It does not use an LLM service or network from main application
+code. Raw outputs and execution evidence are written below
+`data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/` and ignored by Git.
+
+Normalize the retained Marker document tree into the unchanged Physical IR v0:
+
+```powershell
+uv run python -m vlm_rag.physical_ir normalize-marker
+```
+
+See [ADR 0005](docs/adr/0005-marker-parser-boundary.md) and the
+[Marker Hanoi baseline](docs/research/marker-hanoi-baseline.md) for the observed JSON boundary,
+mapping rules, artifact hashes, metrics, and MinerU comparison.
 
 ## Physical Document IR v0
 

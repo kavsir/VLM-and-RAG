@@ -1,0 +1,97 @@
+{
+  "children": [
+    {
+      "id": "/page/0/Page/99",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/0/PageHeader/0'></content-ref>",
+      "polygon": [[10.0, 20.0], [210.0, 20.0], [210.0, 420.0], [10.0, 420.0]],
+      "bbox": [10.0, 20.0, 210.0, 420.0],
+      "children": [
+        {
+          "id": "/page/0/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "<p>Official header</p>",
+          "polygon": [[20.0, 30.0], [200.0, 30.0], [200.0, 50.0], [20.0, 50.0]],
+          "bbox": [20.0, 30.0, 200.0, 50.0],
+          "children": null,
+          "section_hierarchy": {},
+          "images": {}
+        },
+        {
+          "id": "/page/0/Text/1",
+          "block_type": "Text",
+          "html": "<p>Hello <b>world</b> &amp; Hà Nội<br>next line</p>",
+          "polygon": [[30.0, 60.0], [110.0, 60.0], [110.0, 220.0], [30.0, 220.0]],
+          "bbox": [30.0, 60.0, 110.0, 220.0],
+          "children": null,
+          "section_hierarchy": {},
+          "images": {}
+        },
+        {
+          "id": "/page/0/SectionHeader/2",
+          "block_type": "SectionHeader",
+          "html": "<h3>Section title</h3>",
+          "polygon": [[20.0, 230.0], [190.0, 230.0], [190.0, 260.0], [20.0, 260.0]],
+          "bbox": [20.0, 230.0, 190.0, 260.0],
+          "children": null,
+          "section_hierarchy": {"3": "/page/0/SectionHeader/2"},
+          "images": {}
+        },
+        {
+          "id": "/page/0/PageFooter/3",
+          "block_type": "PageFooter",
+          "html": "<p>1</p>",
+          "polygon": [[90.0, 390.0], [130.0, 390.0], [130.0, 410.0], [90.0, 410.0]],
+          "bbox": [90.0, 390.0, 130.0, 410.0],
+          "children": null,
+          "section_hierarchy": {"3": "/page/0/SectionHeader/2"},
+          "images": {}
+        },
+        {
+          "id": "/page/0/Table/4",
+          "block_type": "Table",
+          "html": "<table><tr><td>Cell</td></tr></table>",
+          "polygon": [[20.0, 270.0], [190.0, 270.0], [190.0, 320.0], [20.0, 320.0]],
+          "bbox": [20.0, 270.0, 190.0, 320.0],
+          "children": null,
+          "section_hierarchy": {"3": "/page/0/SectionHeader/2"},
+          "images": {}
+        },
+        {
+          "id": "/page/0/ListGroup/5",
+          "block_type": "ListGroup",
+          "html": "<ul><content-ref src='/page/0/ListItem/10'></content-ref><content-ref src='/page/0/ListItem/11'></content-ref></ul>",
+          "polygon": [[20.0, 330.0], [190.0, 330.0], [190.0, 380.0], [20.0, 380.0]],
+          "bbox": [20.0, 330.0, 190.0, 380.0],
+          "children": [
+            {
+              "id": "/page/0/ListItem/10",
+              "block_type": "ListItem",
+              "html": "<li>First</li>",
+              "polygon": [[20.0, 330.0], [190.0, 330.0], [190.0, 350.0], [20.0, 350.0]],
+              "bbox": [20.0, 330.0, 190.0, 350.0],
+              "children": null,
+              "section_hierarchy": {},
+              "images": {}
+            },
+            {
+              "id": "/page/0/ListItem/11",
+              "block_type": "ListItem",
+              "html": "<li>Second</li>",
+              "polygon": [[20.0, 355.0], [190.0, 355.0], [190.0, 375.0], [20.0, 375.0]],
+              "bbox": [20.0, 355.0, 190.0, 375.0],
+              "children": null,
+              "section_hierarchy": {},
+              "images": {}
+            }
+          ],
+          "section_hierarchy": {"3": "/page/0/SectionHeader/2"},
+          "images": null
+        }
+      ],
+      "section_hierarchy": {"3": "/page/0/SectionHeader/2"},
+      "images": null
+    }
+  ],
+  "block_type": "Document"
+}
