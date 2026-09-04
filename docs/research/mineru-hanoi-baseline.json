@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "document": {
+    "document_id": "hanoi-master-plan-100y",
+    "version_id": "v1",
+    "input_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+    "input_byte_size": 2218758,
+    "source_pdf_pages": 80
+  },
+  "parser": {
+    "name": "mineru",
+    "version": "3.4.5",
+    "backend": "pipeline",
+    "environment_python": "3.12.10",
+    "device_observed": "cpu"
+  },
+  "execution": {
+    "started_at": "2026-09-04T09:19:28.026523+00:00",
+    "completed_at": "2026-09-04T09:46:15.931838+00:00",
+    "duration_seconds": 1607.9058961000005,
+    "exit_code": 0
+  },
+  "structure": {
+    "mineru_pages": 80,
+    "page_index_min": 0,
+    "page_index_max": 79,
+    "page_indexes_complete": true,
+    "paragraphs": 982,
+    "titles": 123,
+    "heading_levels": {
+      "1": 1,
+      "2": 122
+    },
+    "tables": 0,
+    "images": 0,
+    "charts": 0,
+    "formulas": 0,
+    "discarded_blocks": 81,
+    "headers": 2,
+    "footers": 0,
+    "page_numbers": 79,
+    "blocks_with_bbox": 1186,
+    "content_list_blocks": 1186
+  },
+  "representations": {
+    "middle": {
+      "pages": 80,
+      "paragraph_blocks": 982,
+      "title_blocks": 123,
+      "discarded_blocks": 81
+    },
+    "content_list": {
+      "items": 1186,
+      "text_items": 1105,
+      "header_items": 2,
+      "page_number_items": 79
+    },
+    "content_list_v2": {
+      "shape": "list of 80 per-page block lists",
+      "items": 1186,
+      "paragraph_items": 982,
+      "title_items": 123,
+      "page_header_items": 2,
+      "page_number_items": 79,
+      "items_contain_page_idx": false
+    },
+    "markdown": {
+      "characters": 234522,
+      "lines": 2151,
+      "heading_lines": 123
+    }
+  },
+  "artifacts": [
+    {
+      "relative_path": "source/auto/source.md",
+      "byte_size": 308780,
+      "sha256": "57ad2127afd3c2e43bd88c32de690a6d005536625d2b66b33c3a55ef65dcc4c9"
+    },
+    {
+      "relative_path": "source/auto/source_content_list.json",
+      "byte_size": 518799,
+      "sha256": "23d24aafd5e13a5babf6344aaa6a0a28ba944da49ca19ca708e7075d4fefc4ec"
+    },
+    {
+      "relative_path": "source/auto/source_content_list_v2.json",
+      "byte_size": 770845,
+      "sha256": "d3a19945ddf5ff3a9ab28a389af88d6e5bac1c06c25f9b23d0516051d5d31149"
+    },
+    {
+      "relative_path": "source/auto/source_layout.pdf",
+      "byte_size": 9996435,
+      "sha256": "fae13d4e4b8c4244689ee48a7339379291c3d13fa2085ba1ec432447001be03e"
+    },
+    {
+      "relative_path": "source/auto/source_middle.json",
+      "byte_size": 7256419,
+      "sha256": "f8bb08cc846b6502a940cd674d10e2bf773dcb388b977acc360a7e8656932cff"
+    },
+    {
+      "relative_path": "source/auto/source_model.json",
+      "byte_size": 1300246,
+      "sha256": "e8a214568c7c7bcdc77a39bdff6fb3040c65e8255a2116028fc66bad5ea1ddf0"
+    },
+    {
+      "relative_path": "source/auto/source_origin.pdf",
+      "byte_size": 2075074,
+      "sha256": "42d26544aeae963fbcd08ec71311c6a173de37966864edff4b69b9344f4eb1de"
+    },
+    {
+      "relative_path": "source/auto/source_span.pdf",
+      "byte_size": 9956572,
+      "sha256": "8a2396e77a16c2239bf069c1ab96cbef83fb8a93c1a55c0bbebb7fd2baf01b2d"
+    }
+  ]
+}
