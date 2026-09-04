@@ -14,8 +14,8 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Current Project Status
 
-- **Phase**: External Parser Baseline (Issue #003)
-- **Status**: The engineering foundation, golden-document registry, and an external MinerU adapter are implemented. Physical document IR, RAG, and retrieval features are not yet implemented.
+- **Phase**: Physical Document IR v0 (Issue #004)
+- **Status**: The engineering foundation, golden-document registry, external MinerU adapter, and parser-independent Physical Document IR v0 are implemented. Semantic extraction, RAG, and retrieval features are not yet implemented.
 
 ## Prerequisites
 
@@ -187,6 +187,30 @@ run metadata is written to
 outputs are retained below its `raw/` directory. The entire generated `parser_runs/` tree is ignored
 by Git. The measured structure, artifact hashes, and runtime from the first real Hanoi parse are
 recorded in [`docs/research/mineru-hanoi-baseline.md`](docs/research/mineru-hanoi-baseline.md).
+
+## Physical Document IR v0
+
+Physical Document IR provides an explicit, parser-independent representation of layout blocks, bounding
+boxes, and reading order, decoupled from MinerU or any other parser runtime.
+
+Normalize raw parser outputs into a validated `PhysicalDocument`:
+
+```bash
+uv run python -m vlm_rag.physical_ir normalize \
+  --raw-dir data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw \
+  --manifest data/manifests/hanoi_master_plan_100y.v1.yaml \
+  --output data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json
+```
+
+Validate an existing serialized PhysicalDocument JSON file:
+
+```bash
+uv run python -m vlm_rag.physical_ir validate \
+  data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json
+```
+
+See [ADR 0004](docs/adr/0004-physical-document-ir-v0.md) and the [Hanoi Normalization Report](docs/research/physical-ir-hanoi-normalization.md)
+for schema design and baseline metrics.
 
 ## Branch & PR Workflow
 
