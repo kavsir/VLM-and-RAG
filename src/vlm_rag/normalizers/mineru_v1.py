@@ -13,7 +13,7 @@ from pydantic import ValidationError
 from vlm_rag.normalizers._assets_v1 import VisualAssetSourceError, relative_visual_asset
 from vlm_rag.normalizers.mineru import MinerUPhysicalNormalizer, NormalizationError
 from vlm_rag.parsers.mineru import ParserRun
-from vlm_rag.physical_ir.models import PhysicalBlock
+from vlm_rag.physical_ir.models import BlockDisposition, PhysicalBlock
 from vlm_rag.physical_ir.serialization_v1 import physical_document_v1_to_json
 from vlm_rag.physical_ir.table_html import TableHTMLStructureError, table_structure_from_html
 from vlm_rag.physical_ir.v1 import (
@@ -166,13 +166,18 @@ class MinerUPhysicalNormalizerV1:
             else None
         )
         provenance = historical.provenance
+        disposition = (
+            BlockDisposition.CONTENT
+            if kind in {BlockKindV1.TABLE, BlockKindV1.IMAGE}
+            else historical.disposition
+        )
         try:
             return PhysicalBlockV1(
                 id=historical.id,
                 page_index=historical.page_index,
                 reading_order=historical.reading_order,
                 kind=kind,
-                disposition=historical.disposition,
+                disposition=disposition,
                 text=historical.text,
                 bbox=historical.bbox,
                 heading_level=historical.heading_level if kind == BlockKindV1.TITLE else None,

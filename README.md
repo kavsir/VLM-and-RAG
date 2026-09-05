@@ -280,6 +280,11 @@ cells, safe visual-asset evidence, and explicitly bounded text-extraction proven
 physical observation model: no legal semantics or evaluation-label correction occurs during
 normalization.
 
+For wire version 2, `relative_file` means verified retained bytes and requires a safe relative
+path, SHA-256, and byte size. Table row spans cannot extend beyond explicit `<tr>` rows. Marker
+text is `native_text` only when both no-OCR run provenance and page-level `pdftext` provider
+metadata establish that path; otherwise extraction remains `unknown`.
+
 The Python API keeps v0 and v1 explicit (`MarkerPhysicalNormalizerV1`,
 `MinerUPhysicalNormalizerV1`, and `PhysicalDocumentV1`). The version-aware
 `load_physical_document` dispatcher accepts wire versions 1 and 2 and rejects unknown versions;

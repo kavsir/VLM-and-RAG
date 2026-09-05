@@ -20,7 +20,7 @@ class _TableHTMLParser(HTMLParser):
         self.row_index = -1
         self.in_row = False
         self.cell_start: tuple[int, int, int, int, bool] | None = None
-        self.cell_text: list[str] = []
+        self.cell_text: list[str | None] = []
         self.saw_table = False
         self.table_depth = 0
 
@@ -57,7 +57,8 @@ class _TableHTMLParser(HTMLParser):
             self.cell_start = (self.row_index, column, row_span, column_span, name == "th")
             self.cell_text = []
         elif name == "br" and self.cell_start is not None:
-            self.cell_text.append("\n")
+            # None distinguishes an observed <br> from incidental source whitespace.
+            self.cell_text.append(None)
 
     def handle_endtag(self, tag: str) -> None:
         name = tag.lower()
@@ -80,7 +81,7 @@ class _TableHTMLParser(HTMLParser):
                             f"HTML table cells overlap at logical position {position}"
                         )
                     self.occupied.add(position)
-            text = re.sub(r"\s+", " ", "".join(self.cell_text)).strip()
+            text = _normalize_cell_text(self.cell_text)
             self.cells.append(
                 TableCell(
                     row_start=row,
@@ -127,11 +128,28 @@ def table_structure_from_html(html: str) -> TableStructure | None:
         return None
     if parser.table_depth or parser.in_row or parser.cell_start is not None:
         raise TableHTMLStructureError("unterminated table HTML")
-    row_count = max(
-        [parser.row_index + 1, *(cell.row_start + cell.row_span for cell in parser.cells)]
-    )
+    row_count = parser.row_index + 1
+    overflowing = [cell for cell in parser.cells if cell.row_start + cell.row_span > row_count]
+    if overflowing:
+        cell = overflowing[0]
+        raise TableHTMLStructureError(
+            "rowspan exceeds the number of explicit tr rows: "
+            f"row_start={cell.row_start}, row_span={cell.row_span}, rows={row_count}"
+        )
     column_count = max([0, *(cell.column_start + cell.column_span for cell in parser.cells)])
     return TableStructure(row_count=row_count, column_count=column_count, cells=tuple(parser.cells))
+
+
+def _normalize_cell_text(parts: list[str | None]) -> str:
+    """Preserve observed ``br`` boundaries and normalize each logical line."""
+    lines: list[list[str]] = [[]]
+    for part in parts:
+        if part is None:
+            lines.append([])
+        else:
+            lines[-1].append(part)
+    normalized = [re.sub(r"\s+", " ", "".join(line)).strip() for line in lines]
+    return "\n".join(normalized)
 
 
 __all__ = ["TableHTMLStructureError", "table_structure_from_html"]

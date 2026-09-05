@@ -74,6 +74,9 @@ class MarkerPhysicalNormalizerV1:
         raw_pages = raw_root["children"]
         if len(raw_pages) != len(historical.pages):
             raise MarkerNormalizationError("Marker raw page count changed after v0 validation")
+        page_extraction_methods = self._read_page_extraction_methods(
+            document_path, len(historical.pages)
+        )
 
         pages: list[PhysicalPageV1] = []
         for historical_page, raw_page in zip(historical.pages, raw_pages, strict=True):
@@ -83,7 +86,13 @@ class MarkerPhysicalNormalizerV1:
             if len(raw_blocks) != len(historical_page.blocks):
                 raise MarkerNormalizationError("Marker raw block count changed after v0 validation")
             blocks = [
-                self._enrich_block(block, raw_block)
+                self._enrich_block(
+                    block,
+                    raw_block,
+                    native_text_proven=(
+                        page_extraction_methods.get(historical_page.page_index) == "pdftext"
+                    ),
+                )
                 for block, raw_block in zip(historical_page.blocks, raw_blocks, strict=True)
                 if isinstance(raw_block, Mapping)
             ]
@@ -113,7 +122,47 @@ class MarkerPhysicalNormalizerV1:
             raise MarkerNormalizationError(f"invalid Marker Physical IR v1:\n{exc}") from exc
 
     @staticmethod
-    def _enrich_block(historical: PhysicalBlock, raw_block: Mapping[str, Any]) -> PhysicalBlockV1:
+    def _read_page_extraction_methods(document_path: Path, page_count: int) -> dict[int, str]:
+        """Read positive page-level provider evidence from Marker metadata when retained."""
+        metadata_path = document_path.with_name(f"{document_path.stem}_meta.json")
+        if not metadata_path.is_file():
+            return {}
+        try:
+            metadata: object = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise MarkerNormalizationError(
+                f"cannot read Marker extraction metadata {metadata_path}: {exc}"
+            ) from exc
+        if not isinstance(metadata, Mapping) or not isinstance(metadata.get("page_stats"), list):
+            raise MarkerNormalizationError("Marker extraction metadata must contain page_stats")
+        methods: dict[int, str] = {}
+        for position, raw_stat in enumerate(metadata["page_stats"]):
+            if not isinstance(raw_stat, Mapping):
+                raise MarkerNormalizationError(f"Marker page_stats[{position}] must be an object")
+            page_id = raw_stat.get("page_id")
+            if isinstance(page_id, bool) or not isinstance(page_id, int):
+                raise MarkerNormalizationError(
+                    f"Marker page_stats[{position}].page_id must be an integer"
+                )
+            if page_id < 0 or page_id >= page_count or page_id in methods:
+                raise MarkerNormalizationError(
+                    f"Marker page_stats has invalid or duplicate page_id {page_id}"
+                )
+            method = raw_stat.get("text_extraction_method")
+            if method is not None and not isinstance(method, str):
+                raise MarkerNormalizationError(
+                    f"Marker page_stats[{position}].text_extraction_method must be a string"
+                )
+            methods[page_id] = method.strip().casefold() if isinstance(method, str) else ""
+        return methods
+
+    @staticmethod
+    def _enrich_block(
+        historical: PhysicalBlock,
+        raw_block: Mapping[str, Any],
+        *,
+        native_text_proven: bool,
+    ) -> PhysicalBlockV1:
         raw_type = raw_block.get("block_type")
         if not isinstance(raw_type, str) or not raw_type:
             raise MarkerNormalizationError("Marker raw block has invalid block_type")
@@ -149,7 +198,14 @@ class MarkerPhysicalNormalizerV1:
                         raise MarkerNormalizationError(str(exc)) from exc
 
         text_extraction = (
-            TextExtractionEvidence(method=TextExtractionMethod.NATIVE_TEXT, confidence=None)
+            TextExtractionEvidence(
+                method=(
+                    TextExtractionMethod.NATIVE_TEXT
+                    if native_text_proven
+                    else TextExtractionMethod.UNKNOWN
+                ),
+                confidence=None,
+            )
             if historical.text
             else None
         )

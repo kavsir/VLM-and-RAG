@@ -20,7 +20,12 @@ def physical_document_v1_to_dict(document: PhysicalDocumentV1) -> dict[str, obje
 def physical_document_v1_to_json(document: PhysicalDocumentV1, *, indent: int | None = 2) -> str:
     """Serialize deterministically as UTF-8-ready JSON with a terminal LF."""
     payload = physical_document_v1_to_dict(document)
-    return json.dumps(payload, ensure_ascii=False, indent=indent) + "\n"
+    try:
+        return json.dumps(payload, ensure_ascii=False, indent=indent, allow_nan=False) + "\n"
+    except ValueError as exc:
+        raise PhysicalIRV1SerializationError(
+            f"Physical IR v1 contains a non-finite JSON number: {exc}"
+        ) from exc
 
 
 def physical_document_v1_from_dict(data: Mapping[str, object]) -> PhysicalDocumentV1:

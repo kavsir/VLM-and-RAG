@@ -1,5 +1,12 @@
-"""Physical Document IR v1 domain models (wire/schema version 2)."""
+"""Physical Document IR v1 domain models (wire/schema version 2).
 
+Block disposition describes the current physical observation: ``content`` is body
+content, ``discarded`` is intentional boilerplate exclusion, and ``unknown`` means
+the normalizer cannot determine the disposition.  It is not inherited uncertainty
+about a v0 block kind.
+"""
+
+import math
 from enum import StrEnum
 from pathlib import PurePosixPath, PureWindowsPath
 from typing import Literal, Self
@@ -70,6 +77,13 @@ class TextExtractionEvidence(PhysicalIRModel):
                 return TextExtractionMethod(value)
             except ValueError:
                 return value
+        return value
+
+    @field_validator("confidence")
+    @classmethod
+    def _require_finite_confidence(cls, value: float | None) -> float | None:
+        if value is not None and not math.isfinite(value):
+            raise ValueError("confidence must be finite")
         return value
 
 
@@ -166,8 +180,10 @@ class VisualAssetEvidence(PhysicalIRModel):
         if has_hash != has_size:
             raise ValueError("sha256 and byte_size must either both be present or both be null")
         if self.storage_kind == VisualAssetStorage.RELATIVE_FILE:
-            if self.relative_path is None:
-                raise ValueError("relative_file storage requires relative_path")
+            if self.relative_path is None or not has_hash:
+                raise ValueError(
+                    "relative_file storage requires relative_path, sha256, and byte_size"
+                )
         elif self.storage_kind == VisualAssetStorage.EMBEDDED_RAW:
             if self.relative_path is not None:
                 raise ValueError("embedded_raw storage cannot carry relative_path")
@@ -182,7 +198,11 @@ class VisualAssetEvidence(PhysicalIRModel):
 
 
 class PhysicalBlockV1(PhysicalIRModel):
-    """One physical parser observation in Physical IR v1."""
+    """One physical parser observation in Physical IR v1.
+
+    Disposition is about this v1 observation: CONTENT is body content, DISCARDED is
+    intentionally excluded boilerplate, and UNKNOWN means disposition is not known.
+    """
 
     id: str = Field(min_length=1)
     page_index: NonNegativeInt
@@ -217,6 +237,13 @@ class PhysicalBlockV1(PhysicalIRModel):
                 return value
         return value
 
+    @field_validator("bbox")
+    @classmethod
+    def _require_finite_bbox(cls, value: BoundingBox) -> BoundingBox:
+        if not all(math.isfinite(item) for item in (value.x0, value.y0, value.x1, value.y1)):
+            raise ValueError("v1 bounding-box coordinates must be finite")
+        return value
+
     @model_validator(mode="after")
     def validate_conditional_fields(self) -> Self:
         """Constrain optional evidence to the physical observations it describes."""
@@ -247,6 +274,13 @@ class PhysicalPageV1(PhysicalIRModel):
     def _coerce_blocks_tuple(cls, value: object) -> object:
         if isinstance(value, list):
             return tuple(value)
+        return value
+
+    @field_validator("width", "height")
+    @classmethod
+    def _require_finite_dimension(cls, value: float | None) -> float | None:
+        if value is not None and not math.isfinite(value):
+            raise ValueError("v1 page dimensions must be finite")
         return value
 
     @model_validator(mode="after")

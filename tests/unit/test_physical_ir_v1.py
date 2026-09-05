@@ -95,6 +95,10 @@ def _write_marker_raw(tmp_path: Path, transform: object | None = None) -> Path:
     if callable(transform):
         transform(tree)
     (source / "source.json").write_text(json.dumps(tree), encoding="utf-8")
+    (source / "source_meta.json").write_text(
+        json.dumps({"page_stats": [{"page_id": 0, "text_extraction_method": "pdftext"}]}),
+        encoding="utf-8",
+    )
     run = {
         "parser": "marker",
         "parser_version": "2.0.0",
@@ -260,6 +264,40 @@ def test_table_html_simple_headers_rowspan_colspan_and_empty() -> None:
 
 
 @pytest.mark.parametrize(
+    ("html", "valid", "expected_rows"),
+    [
+        ("<table><tr><td rowspan='10'>A</td></tr></table>", False, None),
+        ("<table><tr><td rowspan='2'>A</td></tr><tr></tr></table>", True, 2),
+        ("<table><tr><td rowspan='3'>A</td></tr><tr></tr></table>", False, None),
+        (
+            "<table><tr><th rowspan='2' colspan='2'>A</th><td>B</td></tr>"
+            "<tr><td>C</td></tr></table>",
+            True,
+            2,
+        ),
+    ],
+)
+def test_table_html_rowspan_requires_explicit_rows(
+    html: str, valid: bool, expected_rows: int | None
+) -> None:
+    if not valid:
+        with pytest.raises(TableHTMLStructureError, match="explicit tr rows"):
+            table_structure_from_html(html)
+        return
+    structure = table_structure_from_html(html)
+    assert structure is not None
+    assert structure.row_count == expected_rows
+
+
+def test_table_cell_br_preserves_lines_and_vietnamese() -> None:
+    structure = table_structure_from_html(
+        "<table><tr><td>  Hà   Nội <br> dòng\t hai<br><br> cuối  </td></tr></table>"
+    )
+    assert structure is not None
+    assert structure.cells[0].text == "Hà Nội\ndòng hai\n\ncuối"
+
+
+@pytest.mark.parametrize(
     ("method", "confidence"),
     [
         (TextExtractionMethod.NATIVE_TEXT, None),
@@ -278,9 +316,27 @@ def test_text_extraction_methods_and_confidence_bounds(
 def test_invalid_text_extraction_values_are_rejected() -> None:
     with pytest.raises(ValidationError):
         TextExtractionEvidence(method="guessed")
-    for confidence in (-0.01, 1.01):
+    for confidence in (-0.01, 1.01, float("inf"), float("-inf"), float("nan")):
         with pytest.raises(ValidationError):
             TextExtractionEvidence(method="ocr", confidence=confidence)
+
+
+@pytest.mark.parametrize("field", ["width", "height"])
+@pytest.mark.parametrize("value", [float("inf"), float("-inf"), float("nan")])
+def test_v1_page_dimensions_must_be_finite(field: str, value: float) -> None:
+    values: dict[str, object] = {"page_index": 0, "width": 1.0, "height": 1.0}
+    values[field] = value
+    with pytest.raises(ValidationError):
+        PhysicalPageV1(**values)
+
+
+@pytest.mark.parametrize("field", ["x0", "y0", "x1", "y1"])
+def test_v1_rejects_forged_non_finite_v0_bbox(field: str) -> None:
+    values = {"x0": 0.0, "y0": 0.0, "x1": 1.0, "y1": 1.0}
+    values[field] = float("nan")
+    forged = BoundingBox.model_construct(**values, coordinate_system="normalized_1000")
+    with pytest.raises(ValidationError, match="finite"):
+        _block(bbox=forged)
 
 
 def test_visual_asset_storage_contract_and_paths() -> None:
@@ -311,6 +367,56 @@ def test_visual_asset_storage_contract_and_paths() -> None:
         VisualAssetEvidence(storage_kind="embedded_raw", media_type="image/jpeg")
 
 
+@pytest.mark.parametrize(
+    "overrides",
+    [
+        {"relative_path": "images/a.png"},
+        {"relative_path": "images/a.png", "sha256": "a" * 64},
+        {"relative_path": "images/a.png", "byte_size": 1},
+        {"sha256": "a" * 64, "byte_size": 1},
+    ],
+)
+def test_relative_file_requires_path_hash_and_size(overrides: dict[str, object]) -> None:
+    with pytest.raises(ValidationError, match=r"relative_file|both be present"):
+        VisualAssetEvidence(storage_kind="relative_file", **overrides)
+
+
+def test_relative_file_media_type_may_be_null() -> None:
+    evidence = VisualAssetEvidence(
+        storage_kind="relative_file",
+        relative_path="images/unknown.bin",
+        sha256="a" * 64,
+        byte_size=1,
+    )
+    assert evidence.media_type is None
+
+
+@pytest.mark.parametrize(
+    "metadata",
+    [
+        {"relative_path": "images/a.png"},
+        {"media_type": "image/png"},
+        {"sha256": "a" * 64, "byte_size": 1},
+    ],
+)
+def test_unavailable_visual_forbids_path_and_byte_metadata(
+    metadata: dict[str, object],
+) -> None:
+    with pytest.raises(ValidationError, match="unavailable"):
+        VisualAssetEvidence(storage_kind="unavailable", **metadata)
+
+
+def test_embedded_visual_forbids_relative_path() -> None:
+    with pytest.raises(ValidationError, match="cannot carry relative_path"):
+        VisualAssetEvidence(
+            storage_kind="embedded_raw",
+            relative_path="images/a.png",
+            media_type="image/png",
+            sha256="a" * 64,
+            byte_size=1,
+        )
+
+
 def test_v1_serialization_roundtrip_is_deterministic_utf8_lf() -> None:
     document = _document(_block())
     payload_a = physical_document_v1_to_json(document)
@@ -319,6 +425,25 @@ def test_v1_serialization_roundtrip_is_deterministic_utf8_lf() -> None:
     assert payload_a.endswith("\n") and "\r" not in payload_a
     assert physical_document_v1_from_json(payload_a) == document
     assert physical_document_v1_to_json(physical_document_v1_from_json(payload_a)) == payload_a
+
+
+def test_v1_serializer_defensively_rejects_non_finite_numbers() -> None:
+    forged_page = PhysicalPageV1.model_construct(
+        page_index=0, width=float("nan"), height=1.0, blocks=()
+    )
+    forged_document = PhysicalDocumentV1.model_construct(
+        physical_ir_version=2,
+        document_id="test-document",
+        version_id="v1",
+        source_artifact_sha256=SOURCE_SHA,
+        parser="marker",
+        parser_version="2.0.0",
+        parser_backend="fast-no-ocr",
+        page_count=1,
+        pages=(forged_page,),
+    )
+    with pytest.raises(PhysicalIRV1SerializationError, match="non-finite"):
+        physical_document_v1_to_json(forged_document)
 
 
 def test_version_dispatch_is_strict_and_does_not_upgrade(tmp_path: Path) -> None:
@@ -367,6 +492,35 @@ def test_marker_v1_maps_native_types_table_and_extraction(tmp_path: Path) -> Non
     assert table.text_extraction == TextExtractionEvidence(method="native_text")
     assert table.text_extraction.confidence is None
     assert document.pages[0].blocks[5].kind == BlockKindV1.UNKNOWN
+
+
+@pytest.mark.parametrize("metadata_state", ["missing", "unknown", "empty"])
+def test_marker_disable_ocr_alone_does_not_prove_native_text(
+    tmp_path: Path, metadata_state: str
+) -> None:
+    raw = _write_marker_raw(tmp_path)
+    metadata = raw / "source" / "source_meta.json"
+    if metadata_state == "missing":
+        metadata.unlink()
+    else:
+        method = "ocr" if metadata_state == "unknown" else ""
+        metadata.write_text(
+            json.dumps({"page_stats": [{"page_id": 0, "text_extraction_method": method}]}),
+            encoding="utf-8",
+        )
+    nonempty = [
+        block for block in MarkerPhysicalNormalizerV1().normalize(raw).pages[0].blocks if block.text
+    ]
+    assert nonempty
+    assert all(block.text_extraction is not None for block in nonempty)
+    assert all(block.text_extraction.method == TextExtractionMethod.UNKNOWN for block in nonempty)  # type: ignore[union-attr]
+
+
+def test_marker_present_malformed_extraction_metadata_fails(tmp_path: Path) -> None:
+    raw = _write_marker_raw(tmp_path)
+    (raw / "source" / "source_meta.json").write_text("{", encoding="utf-8")
+    with pytest.raises(ValueError, match="extraction metadata"):
+        MarkerPhysicalNormalizerV1().normalize(raw)
 
 
 def test_v1_normalizers_preserve_v0_provenance_conflict_checks(tmp_path: Path) -> None:
@@ -449,6 +603,55 @@ def test_mineru_v1_maps_table_image_unknown_and_keeps_unknown_extraction(tmp_pat
     )
     assert blocks[3].text_extraction == TextExtractionEvidence(method="unknown")
     assert blocks[3].text_extraction.confidence is None
+    assert blocks[0].disposition == BlockDisposition.CONTENT
+    assert blocks[1].disposition == BlockDisposition.CONTENT
+    assert blocks[2].disposition == BlockDisposition.UNKNOWN
+
+
+def test_mineru_missing_referenced_visual_is_unavailable(tmp_path: Path) -> None:
+    raw = _write_mineru_raw(
+        tmp_path,
+        [
+            {
+                "type": "image",
+                "img_path": "images/not-retained.png",
+                "bbox": [0, 0, 100, 100],
+                "page_idx": 0,
+            }
+        ],
+    )
+    block = MinerUPhysicalNormalizerV1().normalize(raw).pages[0].blocks[0]
+    assert block.kind == BlockKindV1.IMAGE
+    assert block.disposition == BlockDisposition.CONTENT
+    assert block.visual_asset == VisualAssetEvidence(storage_kind="unavailable")
+
+
+@pytest.mark.parametrize("parser", ["marker", "mineru"])
+def test_table_identity_survives_rowspan_structure_rejection(tmp_path: Path, parser: str) -> None:
+    invalid_html = "<table><tr><td rowspan='10'>A</td></tr></table>"
+    if parser == "marker":
+
+        def transform(tree: dict[str, object]) -> None:
+            block = tree["children"][0]["children"][4]  # type: ignore[index]
+            block["html"] = invalid_html
+
+        raw = _write_marker_raw(tmp_path, transform)
+        block = MarkerPhysicalNormalizerV1().normalize(raw).pages[0].blocks[4]
+    else:
+        raw = _write_mineru_raw(
+            tmp_path,
+            [
+                {
+                    "type": "table",
+                    "table_body": invalid_html,
+                    "bbox": [0, 0, 100, 100],
+                    "page_idx": 0,
+                }
+            ],
+        )
+        block = MinerUPhysicalNormalizerV1().normalize(raw).pages[0].blocks[0]
+    assert block.kind == BlockKindV1.TABLE
+    assert block.table_structure is None
 
 
 def test_mineru_diagram_annotation_cannot_override_raw_table(tmp_path: Path) -> None:
@@ -541,6 +744,8 @@ def test_frozen_v0_fixture_hashes_do_not_change(tmp_path: Path) -> None:
 def test_committed_v1_corpus_evidence_and_generated_report_are_consistent() -> None:
     evidence_path = Path("data/benchmarks/physical_ir_v1_validation.v1.json")
     evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
+    assert evidence["validation_schema_version"] == 2
+    assert evidence["validation_protocol_revision"] == 2
     assert evidence["available_pairs"] == 10
     assert evidence["all_v0_hashes_preserved"] is True
     assert evidence["all_v1_equal"] is True
@@ -552,6 +757,9 @@ def test_committed_v1_corpus_evidence_and_generated_report_are_consistent() -> N
     assert aggregate["image_count"] == 5
     assert aggregate["ocr_confidence_count"] == 0
     assert aggregate["visual_asset_hash_count"] == 6
+    assert aggregate["verified_visual_asset_count"] == 6
+    assert aggregate["rowspan_markup_table_count"] == 39
+    assert aggregate["rowspan_explicit_row_violation_count"] == 0
     assert aggregate["v0_to_v1_kind_transitions"] == {
         "unknown->figure": 1,
         "unknown->image": 5,
@@ -574,5 +782,26 @@ def test_committed_v1_corpus_evidence_and_generated_report_are_consistent() -> N
     assert sum(entry["tables_with_structure"] for entry in mineru) == 43
     assert aggregate["by_parser"]["marker"]["table_cell_count"] == 3205
     assert aggregate["by_parser"]["mineru"]["table_cell_count"] == 3060
+    mineru_dispositions = aggregate["by_parser"]["mineru"]["kind_disposition_matrix"]
+    assert mineru_dispositions["table"] == {"content": 52}
+    assert mineru_dispositions["image"] == {"content": 1}
+    assert aggregate["text_extraction_method_histogram"] == {
+        "native_text": 2739,
+        "not_recorded": 493,
+        "unknown": 1737,
+    }
+    assert aggregate["unknown_kind_by_parser_source_raw_type"]["marker"] == {
+        "Footnote": 40,
+        "ListGroup": 46,
+        "TableGroup": 2,
+        "TableOfContents": 1,
+    }
+    assert aggregate["unknown_kind_by_parser_source_raw_type"]["mineru"] == {}
+    assert aggregate["unknown_text_extraction_by_parser_source_raw_type"]["marker"] == {}
+    assert aggregate["unknown_text_extraction_by_parser_source_raw_type"]["mineru"] == {
+        "header": 50,
+        "page_number": 130,
+        "text": 1557,
+    }
     report = Path("docs/research/physical-ir-v1-validation.md").read_text(encoding="utf-8")
     assert render_physical_ir_v1_validation(evidence) == report

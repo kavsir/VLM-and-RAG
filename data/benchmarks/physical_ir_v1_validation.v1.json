@@ -1,5 +1,7 @@
 {
-  "validation_schema_version": 1,
+  "validation_schema_version": 2,
+  "validation_protocol": "physical_ir_v1_retained_corpus",
+  "validation_protocol_revision": 2,
   "physical_ir_research_generation": "v1",
   "physical_ir_wire_schema_version": 2,
   "input_v0_determinism_evidence": "data/benchmarks/normalization_determinism.v1.json",
@@ -46,6 +48,23 @@
         "title": 119,
         "unknown": 1
       },
+      "kind_disposition_matrix": {
+        "header": {
+          "discarded": 80
+        },
+        "image": {
+          "content": 1
+        },
+        "text": {
+          "content": 1004
+        },
+        "title": {
+          "content": 119
+        },
+        "unknown": {
+          "content": 1
+        }
+      },
       "table_count": 0,
       "tables_with_structure": 0,
       "table_cell_count": 0,
@@ -59,10 +78,41 @@
         "native_text": 1163,
         "not_recorded": 42
       },
+      "source_raw_type_extraction_method_matrix": {
+        "ListGroup": {
+          "native_text": 1
+        },
+        "PageHeader": {
+          "native_text": 80
+        },
+        "Picture": {
+          "not_recorded": 1
+        },
+        "SectionHeader": {
+          "native_text": 104,
+          "not_recorded": 15
+        },
+        "Text": {
+          "native_text": 978,
+          "not_recorded": 26
+        }
+      },
+      "unknown_kind_by_source_raw_type": {
+        "ListGroup": 1
+      },
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {},
       "explicit_text_extraction_count": 1163,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 1,
       "visual_asset_hash_count": 1,
+      "verified_visual_asset_count": 1,
+      "visual_asset_storage_histogram": {
+        "embedded_raw": 1
+      },
+      "table_markup_count": 0,
+      "rowspan_markup_table_count": 0,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 1162526,
       "v0_actual_byte_size": 1162526,
       "v0_expected_sha256": "d58d65296160dabf7fdb81774c123e15165477495e40aabe879c08e28eb546aa",
@@ -91,6 +141,20 @@
         "text": 982,
         "title": 123
       },
+      "kind_disposition_matrix": {
+        "header": {
+          "discarded": 2
+        },
+        "page_number": {
+          "discarded": 79
+        },
+        "text": {
+          "content": 982
+        },
+        "title": {
+          "content": 123
+        }
+      },
       "table_count": 0,
       "tables_with_structure": 0,
       "table_cell_count": 0,
@@ -104,10 +168,34 @@
         "not_recorded": 29,
         "unknown": 1157
       },
+      "source_raw_type_extraction_method_matrix": {
+        "header": {
+          "unknown": 2
+        },
+        "page_number": {
+          "unknown": 79
+        },
+        "text": {
+          "not_recorded": 29,
+          "unknown": 1076
+        }
+      },
+      "unknown_kind_by_source_raw_type": {},
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {
+        "header": 2,
+        "page_number": 79,
+        "text": 1076
+      },
       "explicit_text_extraction_count": 0,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 0,
       "visual_asset_hash_count": 0,
+      "verified_visual_asset_count": 0,
+      "visual_asset_storage_histogram": {},
+      "table_markup_count": 0,
+      "rowspan_markup_table_count": 0,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 1145258,
       "v0_actual_byte_size": 1145258,
       "v0_expected_sha256": "f28fcd11857ed8f269d9a82a08b346ced356590342c412def4d2d3d03663f7c5",
@@ -135,6 +223,23 @@
         "title": 69,
         "unknown": 20
       },
+      "kind_disposition_matrix": {
+        "header": {
+          "discarded": 106
+        },
+        "table": {
+          "content": 3
+        },
+        "text": {
+          "content": 614
+        },
+        "title": {
+          "content": 69
+        },
+        "unknown": {
+          "content": 20
+        }
+      },
       "table_count": 3,
       "tables_with_structure": 3,
       "table_cell_count": 438,
@@ -148,10 +253,44 @@
         "native_text": 698,
         "not_recorded": 114
       },
+      "source_raw_type_extraction_method_matrix": {
+        "ListGroup": {
+          "native_text": 19
+        },
+        "PageHeader": {
+          "native_text": 53,
+          "not_recorded": 53
+        },
+        "SectionHeader": {
+          "native_text": 67,
+          "not_recorded": 2
+        },
+        "Table": {
+          "native_text": 3
+        },
+        "TableGroup": {
+          "native_text": 1
+        },
+        "Text": {
+          "native_text": 555,
+          "not_recorded": 59
+        }
+      },
+      "unknown_kind_by_source_raw_type": {
+        "ListGroup": 19,
+        "TableGroup": 1
+      },
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {},
       "explicit_text_extraction_count": 698,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 0,
       "visual_asset_hash_count": 0,
+      "verified_visual_asset_count": 0,
+      "visual_asset_storage_histogram": {},
+      "table_markup_count": 3,
+      "rowspan_markup_table_count": 0,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 723367,
       "v0_actual_byte_size": 723367,
       "v0_expected_sha256": "5b58e46a1815064ac250bcb6f90bd835a9c71d479cb756b59464bd01cc414ed0",
@@ -182,6 +321,26 @@
         "title": 45,
         "unknown": 47
       },
+      "kind_disposition_matrix": {
+        "header": {
+          "discarded": 98
+        },
+        "image": {
+          "content": 1
+        },
+        "table": {
+          "content": 1
+        },
+        "text": {
+          "content": 297
+        },
+        "title": {
+          "content": 45
+        },
+        "unknown": {
+          "content": 47
+        }
+      },
       "table_count": 1,
       "tables_with_structure": 1,
       "table_cell_count": 70,
@@ -195,10 +354,49 @@
         "native_text": 423,
         "not_recorded": 66
       },
+      "source_raw_type_extraction_method_matrix": {
+        "Footnote": {
+          "native_text": 40
+        },
+        "ListGroup": {
+          "native_text": 7
+        },
+        "PageHeader": {
+          "native_text": 49,
+          "not_recorded": 49
+        },
+        "Picture": {
+          "not_recorded": 1
+        },
+        "SectionHeader": {
+          "native_text": 42,
+          "not_recorded": 3
+        },
+        "Table": {
+          "native_text": 1
+        },
+        "Text": {
+          "native_text": 284,
+          "not_recorded": 13
+        }
+      },
+      "unknown_kind_by_source_raw_type": {
+        "Footnote": 40,
+        "ListGroup": 7
+      },
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {},
       "explicit_text_extraction_count": 423,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 1,
       "visual_asset_hash_count": 1,
+      "verified_visual_asset_count": 1,
+      "visual_asset_storage_histogram": {
+        "embedded_raw": 1
+      },
+      "table_markup_count": 1,
+      "rowspan_markup_table_count": 0,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 534686,
       "v0_actual_byte_size": 534686,
       "v0_expected_sha256": "e70fe40d84540bf73cdd3e1999227b6fc028c697c4a473ab827bbac76763fb70",
@@ -229,6 +427,23 @@
         "title": 48,
         "unknown": 5
       },
+      "kind_disposition_matrix": {
+        "image": {
+          "content": 1
+        },
+        "table": {
+          "content": 27
+        },
+        "text": {
+          "content": 73
+        },
+        "title": {
+          "content": 48
+        },
+        "unknown": {
+          "content": 5
+        }
+      },
       "table_count": 27,
       "tables_with_structure": 24,
       "table_cell_count": 1591,
@@ -242,10 +457,46 @@
         "native_text": 129,
         "not_recorded": 25
       },
+      "source_raw_type_extraction_method_matrix": {
+        "ListGroup": {
+          "native_text": 4
+        },
+        "Picture": {
+          "not_recorded": 1
+        },
+        "SectionHeader": {
+          "native_text": 35,
+          "not_recorded": 13
+        },
+        "Table": {
+          "native_text": 24,
+          "not_recorded": 3
+        },
+        "TableOfContents": {
+          "native_text": 1
+        },
+        "Text": {
+          "native_text": 65,
+          "not_recorded": 8
+        }
+      },
+      "unknown_kind_by_source_raw_type": {
+        "ListGroup": 4,
+        "TableOfContents": 1
+      },
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {},
       "explicit_text_extraction_count": 129,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 1,
       "visual_asset_hash_count": 1,
+      "verified_visual_asset_count": 1,
+      "visual_asset_storage_histogram": {
+        "embedded_raw": 1
+      },
+      "table_markup_count": 24,
+      "rowspan_markup_table_count": 0,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 139489,
       "v0_actual_byte_size": 139489,
       "v0_expected_sha256": "265cf27c4456e5c647f608f38f128064a8ddba9443548d69f81198e3baf83654",
@@ -276,6 +527,23 @@
         "text": 94,
         "title": 45
       },
+      "kind_disposition_matrix": {
+        "header": {
+          "discarded": 1
+        },
+        "page_number": {
+          "discarded": 2
+        },
+        "table": {
+          "content": 27
+        },
+        "text": {
+          "content": 94
+        },
+        "title": {
+          "content": 45
+        }
+      },
       "table_count": 27,
       "tables_with_structure": 25,
       "table_cell_count": 933,
@@ -289,10 +557,37 @@
         "not_recorded": 28,
         "unknown": 141
       },
+      "source_raw_type_extraction_method_matrix": {
+        "header": {
+          "unknown": 1
+        },
+        "page_number": {
+          "unknown": 2
+        },
+        "table": {
+          "not_recorded": 27
+        },
+        "text": {
+          "not_recorded": 1,
+          "unknown": 138
+        }
+      },
+      "unknown_kind_by_source_raw_type": {},
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {
+        "header": 1,
+        "page_number": 2,
+        "text": 138
+      },
       "explicit_text_extraction_count": 0,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 0,
       "visual_asset_hash_count": 0,
+      "verified_visual_asset_count": 0,
+      "visual_asset_storage_histogram": {},
+      "table_markup_count": 25,
+      "rowspan_markup_table_count": 24,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 138451,
       "v0_actual_byte_size": 138451,
       "v0_expected_sha256": "f91c8a15fde0bc6bdf83873e3dcea96343c368931078fcf83d7a0f57c1a3ca9c",
@@ -302,9 +597,9 @@
         "unknown->table": 27
       },
       "byte_size_a": 396354,
-      "sha256_a": "18a19cdeb7f5b75fabed529bbd3d10b43592ec845463142a64f85d2fe24bb141",
+      "sha256_a": "5c27e12e74f961958127342dff2a086f968127a1135d97d0a5a65e761e8b2be8",
       "byte_size_b": 396354,
-      "sha256_b": "18a19cdeb7f5b75fabed529bbd3d10b43592ec845463142a64f85d2fe24bb141",
+      "sha256_b": "5c27e12e74f961958127342dff2a086f968127a1135d97d0a5a65e761e8b2be8",
       "equal": true
     },
     {
@@ -323,6 +618,26 @@
         "title": 42,
         "unknown": 16
       },
+      "kind_disposition_matrix": {
+        "figure": {
+          "content": 1
+        },
+        "header": {
+          "discarded": 93
+        },
+        "table": {
+          "content": 24
+        },
+        "text": {
+          "content": 237
+        },
+        "title": {
+          "content": 42
+        },
+        "unknown": {
+          "content": 16
+        }
+      },
       "table_count": 24,
       "tables_with_structure": 11,
       "table_cell_count": 1106,
@@ -336,10 +651,50 @@
         "native_text": 326,
         "not_recorded": 87
       },
+      "source_raw_type_extraction_method_matrix": {
+        "Figure": {
+          "not_recorded": 1
+        },
+        "ListGroup": {
+          "native_text": 15
+        },
+        "PageHeader": {
+          "native_text": 47,
+          "not_recorded": 46
+        },
+        "SectionHeader": {
+          "native_text": 39,
+          "not_recorded": 3
+        },
+        "Table": {
+          "native_text": 11,
+          "not_recorded": 13
+        },
+        "TableGroup": {
+          "not_recorded": 1
+        },
+        "Text": {
+          "native_text": 214,
+          "not_recorded": 23
+        }
+      },
+      "unknown_kind_by_source_raw_type": {
+        "ListGroup": 15,
+        "TableGroup": 1
+      },
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {},
       "explicit_text_extraction_count": 326,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 1,
       "visual_asset_hash_count": 1,
+      "verified_visual_asset_count": 1,
+      "visual_asset_storage_histogram": {
+        "embedded_raw": 1
+      },
+      "table_markup_count": 11,
+      "rowspan_markup_table_count": 0,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 367749,
       "v0_actual_byte_size": 367749,
       "v0_expected_sha256": "2c5aa538023d7043c9d07b279db24f8da12b89a70e2de78845049305c566041a",
@@ -377,6 +732,23 @@
         "text": 235,
         "title": 34
       },
+      "kind_disposition_matrix": {
+        "header": {
+          "discarded": 45
+        },
+        "page_number": {
+          "discarded": 46
+        },
+        "table": {
+          "content": 25
+        },
+        "text": {
+          "content": 235
+        },
+        "title": {
+          "content": 34
+        }
+      },
       "table_count": 25,
       "tables_with_structure": 18,
       "table_cell_count": 2127,
@@ -390,10 +762,37 @@
         "not_recorded": 27,
         "unknown": 358
       },
+      "source_raw_type_extraction_method_matrix": {
+        "header": {
+          "unknown": 45
+        },
+        "page_number": {
+          "unknown": 46
+        },
+        "table": {
+          "not_recorded": 25
+        },
+        "text": {
+          "not_recorded": 2,
+          "unknown": 267
+        }
+      },
+      "unknown_kind_by_source_raw_type": {},
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {
+        "header": 45,
+        "page_number": 46,
+        "text": 267
+      },
       "explicit_text_extraction_count": 0,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 0,
       "visual_asset_hash_count": 0,
+      "verified_visual_asset_count": 0,
+      "visual_asset_storage_histogram": {},
+      "table_markup_count": 19,
+      "rowspan_markup_table_count": 15,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 339239,
       "v0_actual_byte_size": 339239,
       "v0_expected_sha256": "9b0341ae5568f39ba6048f171dbdcea3e5fb2aa43484b1e236f4fd0a7f3ec642",
@@ -403,9 +802,9 @@
         "unknown->table": 25
       },
       "byte_size_a": 931120,
-      "sha256_a": "336ba840df09bc50aed4164c85be296a6cad32dd4f619f246d9f5c8a8e61d364",
+      "sha256_a": "0e8b3f2ec69f22d77858f9aeec895110e99f5b8b8a3222ab1b2a1f8aea850670",
       "byte_size_b": 931120,
-      "sha256_b": "336ba840df09bc50aed4164c85be296a6cad32dd4f619f246d9f5c8a8e61d364",
+      "sha256_b": "0e8b3f2ec69f22d77858f9aeec895110e99f5b8b8a3222ab1b2a1f8aea850670",
       "equal": true,
       "anti_evaluation_leakage_observation": {
         "page_index": 21,
@@ -429,6 +828,20 @@
         "text": 57,
         "title": 13
       },
+      "kind_disposition_matrix": {
+        "header": {
+          "discarded": 3
+        },
+        "image": {
+          "content": 1
+        },
+        "text": {
+          "content": 57
+        },
+        "title": {
+          "content": 13
+        }
+      },
       "table_count": 0,
       "tables_with_structure": 0,
       "table_cell_count": 0,
@@ -441,10 +854,34 @@
       "text_extraction_method_histogram": {
         "not_recorded": 74
       },
+      "source_raw_type_extraction_method_matrix": {
+        "PageHeader": {
+          "not_recorded": 3
+        },
+        "Picture": {
+          "not_recorded": 1
+        },
+        "SectionHeader": {
+          "not_recorded": 13
+        },
+        "Text": {
+          "not_recorded": 57
+        }
+      },
+      "unknown_kind_by_source_raw_type": {},
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {},
       "explicit_text_extraction_count": 0,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 1,
       "visual_asset_hash_count": 1,
+      "verified_visual_asset_count": 1,
+      "visual_asset_storage_histogram": {
+        "embedded_raw": 1
+      },
+      "table_markup_count": 0,
+      "rowspan_markup_table_count": 0,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 53740,
       "v0_actual_byte_size": 53740,
       "v0_expected_sha256": "e9afc5c92d3133a05f06b797bd82fa149ce1875dbdec251c3e4e27706b84b1b4",
@@ -474,6 +911,23 @@
         "text": 70,
         "title": 6
       },
+      "kind_disposition_matrix": {
+        "header": {
+          "discarded": 2
+        },
+        "image": {
+          "content": 1
+        },
+        "page_number": {
+          "discarded": 3
+        },
+        "text": {
+          "content": 70
+        },
+        "title": {
+          "content": 6
+        }
+      },
       "table_count": 0,
       "tables_with_structure": 0,
       "table_cell_count": 0,
@@ -487,10 +941,38 @@
         "not_recorded": 1,
         "unknown": 81
       },
+      "source_raw_type_extraction_method_matrix": {
+        "header": {
+          "unknown": 2
+        },
+        "image": {
+          "not_recorded": 1
+        },
+        "page_number": {
+          "unknown": 3
+        },
+        "text": {
+          "unknown": 76
+        }
+      },
+      "unknown_kind_by_source_raw_type": {},
+      "unknown_disposition_by_source_raw_type": {},
+      "unknown_text_extraction_by_source_raw_type": {
+        "header": 2,
+        "page_number": 3,
+        "text": 76
+      },
       "explicit_text_extraction_count": 0,
       "ocr_confidence_count": 0,
       "visual_asset_evidence_count": 1,
       "visual_asset_hash_count": 1,
+      "verified_visual_asset_count": 1,
+      "visual_asset_storage_histogram": {
+        "relative_file": 1
+      },
+      "table_markup_count": 0,
+      "rowspan_markup_table_count": 0,
+      "rowspan_explicit_row_violation_count": 0,
       "v0_expected_byte_size": 66564,
       "v0_actual_byte_size": 66564,
       "v0_expected_sha256": "c8eca3498e3c847c06c96a325ca5067529cfe0b84577ffa8a1e0b00427f325a8",
@@ -500,9 +982,9 @@
         "unknown->image": 1
       },
       "byte_size_a": 84398,
-      "sha256_a": "afa8cda92b0ab496eddb3d967274e830bc3f464642cccc2308cc442929cf68a2",
+      "sha256_a": "9e32f090643e027b34dd5f83c586a4cba23cd7d28dd35bdb86de075fd5b73a0f",
       "byte_size_b": 84398,
-      "sha256_b": "afa8cda92b0ab496eddb3d967274e830bc3f464642cccc2308cc442929cf68a2",
+      "sha256_b": "9e32f090643e027b34dd5f83c586a4cba23cd7d28dd35bdb86de075fd5b73a0f",
       "equal": true
     }
   ],
@@ -519,6 +1001,32 @@
       "title": 544,
       "unknown": 89
     },
+    "kind_disposition_matrix": {
+      "figure": {
+        "content": 1
+      },
+      "header": {
+        "discarded": 430
+      },
+      "image": {
+        "content": 5
+      },
+      "page_number": {
+        "discarded": 130
+      },
+      "table": {
+        "content": 107
+      },
+      "text": {
+        "content": 3663
+      },
+      "title": {
+        "content": 544
+      },
+      "unknown": {
+        "content": 89
+      }
+    },
     "table_count": 107,
     "tables_with_structure": 82,
     "table_cell_count": 6265,
@@ -533,10 +1041,92 @@
       "not_recorded": 493,
       "unknown": 1737
     },
+    "source_raw_type_extraction_method_matrix_by_parser": {
+      "marker": {
+        "Figure": {
+          "not_recorded": 1
+        },
+        "Footnote": {
+          "native_text": 40
+        },
+        "ListGroup": {
+          "native_text": 46
+        },
+        "PageHeader": {
+          "native_text": 229,
+          "not_recorded": 151
+        },
+        "Picture": {
+          "not_recorded": 4
+        },
+        "SectionHeader": {
+          "native_text": 287,
+          "not_recorded": 49
+        },
+        "Table": {
+          "native_text": 39,
+          "not_recorded": 16
+        },
+        "TableGroup": {
+          "native_text": 1,
+          "not_recorded": 1
+        },
+        "TableOfContents": {
+          "native_text": 1
+        },
+        "Text": {
+          "native_text": 2096,
+          "not_recorded": 186
+        }
+      },
+      "mineru": {
+        "header": {
+          "unknown": 50
+        },
+        "image": {
+          "not_recorded": 1
+        },
+        "page_number": {
+          "unknown": 130
+        },
+        "table": {
+          "not_recorded": 52
+        },
+        "text": {
+          "not_recorded": 32,
+          "unknown": 1557
+        }
+      }
+    },
+    "unknown_kind_by_parser_source_raw_type": {
+      "marker": {
+        "Footnote": 40,
+        "ListGroup": 46,
+        "TableGroup": 2,
+        "TableOfContents": 1
+      },
+      "mineru": {}
+    },
+    "unknown_disposition_by_parser_source_raw_type": {
+      "marker": {},
+      "mineru": {}
+    },
+    "unknown_text_extraction_by_parser_source_raw_type": {
+      "marker": {},
+      "mineru": {
+        "header": 50,
+        "page_number": 130,
+        "text": 1557
+      }
+    },
     "explicit_text_extraction_count": 2739,
     "ocr_confidence_count": 0,
     "visual_asset_evidence_count": 6,
     "visual_asset_hash_count": 6,
+    "verified_visual_asset_count": 6,
+    "table_markup_count": 83,
+    "rowspan_markup_table_count": 39,
+    "rowspan_explicit_row_violation_count": 0,
     "v0_to_v1_kind_transitions": {
       "unknown->figure": 1,
       "unknown->image": 5,
@@ -552,7 +1142,77 @@
         "image_count": 4,
         "explicit_text_extraction_count": 2739,
         "ocr_confidence_count": 0,
-        "visual_asset_hash_count": 5
+        "visual_asset_hash_count": 5,
+        "verified_visual_asset_count": 5,
+        "kind_disposition_matrix": {
+          "figure": {
+            "content": 1
+          },
+          "header": {
+            "discarded": 380
+          },
+          "image": {
+            "content": 4
+          },
+          "table": {
+            "content": 55
+          },
+          "text": {
+            "content": 2282
+          },
+          "title": {
+            "content": 336
+          },
+          "unknown": {
+            "content": 89
+          }
+        },
+        "source_raw_type_extraction_method_matrix": {
+          "Figure": {
+            "not_recorded": 1
+          },
+          "Footnote": {
+            "native_text": 40
+          },
+          "ListGroup": {
+            "native_text": 46
+          },
+          "PageHeader": {
+            "native_text": 229,
+            "not_recorded": 151
+          },
+          "Picture": {
+            "not_recorded": 4
+          },
+          "SectionHeader": {
+            "native_text": 287,
+            "not_recorded": 49
+          },
+          "Table": {
+            "native_text": 39,
+            "not_recorded": 16
+          },
+          "TableGroup": {
+            "native_text": 1,
+            "not_recorded": 1
+          },
+          "TableOfContents": {
+            "native_text": 1
+          },
+          "Text": {
+            "native_text": 2096,
+            "not_recorded": 186
+          }
+        },
+        "unknown_kind_by_source_raw_type": {
+          "Footnote": 40,
+          "ListGroup": 46,
+          "TableGroup": 2,
+          "TableOfContents": 1
+        },
+        "unknown_disposition_by_source_raw_type": {},
+        "unknown_text_extraction_by_source_raw_type": {},
+        "rowspan_explicit_row_violation_count": 0
       },
       "mineru": {
         "pairs": 4,
@@ -563,7 +1223,54 @@
         "image_count": 1,
         "explicit_text_extraction_count": 0,
         "ocr_confidence_count": 0,
-        "visual_asset_hash_count": 1
+        "visual_asset_hash_count": 1,
+        "verified_visual_asset_count": 1,
+        "kind_disposition_matrix": {
+          "header": {
+            "discarded": 50
+          },
+          "image": {
+            "content": 1
+          },
+          "page_number": {
+            "discarded": 130
+          },
+          "table": {
+            "content": 52
+          },
+          "text": {
+            "content": 1381
+          },
+          "title": {
+            "content": 208
+          }
+        },
+        "source_raw_type_extraction_method_matrix": {
+          "header": {
+            "unknown": 50
+          },
+          "image": {
+            "not_recorded": 1
+          },
+          "page_number": {
+            "unknown": 130
+          },
+          "table": {
+            "not_recorded": 52
+          },
+          "text": {
+            "not_recorded": 32,
+            "unknown": 1557
+          }
+        },
+        "unknown_kind_by_source_raw_type": {},
+        "unknown_disposition_by_source_raw_type": {},
+        "unknown_text_extraction_by_source_raw_type": {
+          "header": 50,
+          "page_number": 130,
+          "text": 1557
+        },
+        "rowspan_explicit_row_violation_count": 0
       }
     }
   }

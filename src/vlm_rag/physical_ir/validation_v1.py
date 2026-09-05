@@ -3,6 +3,7 @@
 import hashlib
 import json
 from collections import Counter
+from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
 
@@ -13,6 +14,7 @@ from vlm_rag.normalizers.mineru_v1 import MinerUPhysicalNormalizerV1
 from vlm_rag.physical_ir.models import PhysicalDocument
 from vlm_rag.physical_ir.serialization import physical_document_to_json
 from vlm_rag.physical_ir.serialization_v1 import physical_document_v1_to_json
+from vlm_rag.physical_ir.table_html import TableHTMLStructureError, table_structure_from_html
 from vlm_rag.physical_ir.v1 import PhysicalDocumentV1
 
 
@@ -25,6 +27,83 @@ def _read_json_object(path: Path) -> dict[str, Any]:
 
 def _hash(payload: bytes) -> str:
     return hashlib.sha256(payload).hexdigest()
+
+
+def _nested_counts(counter: Counter[tuple[str, str]]) -> dict[str, dict[str, int]]:
+    result: dict[str, dict[str, int]] = {}
+    for (outer, inner), count in sorted(counter.items()):
+        result.setdefault(outer, {})[inner] = count
+    return result
+
+
+def _merge_nested_counts(counter: Counter[tuple[str, str]], values: Mapping[str, object]) -> None:
+    for outer, raw_inner in values.items():
+        if not isinstance(raw_inner, Mapping):
+            raise ValueError("expected nested validation counts")
+        for inner, raw_count in raw_inner.items():
+            if not isinstance(inner, str) or not isinstance(raw_count, int):
+                raise ValueError("invalid nested validation count")
+            counter[(outer, inner)] += raw_count
+
+
+def _raw_records(parser: str, raw_directory: Path) -> list[Mapping[str, Any]]:
+    if parser == "marker":
+        candidates = [
+            path
+            for path in raw_directory.rglob("*.json")
+            if not path.name.casefold().endswith("_meta.json")
+        ]
+        roots = [_read_json_object(path) for path in candidates]
+        documents = [root for root in roots if root.get("block_type") == "Document"]
+        if len(documents) != 1 or not isinstance(documents[0].get("children"), list):
+            raise ValueError("cannot identify one Marker document for rowspan audit")
+        records: list[Mapping[str, Any]] = []
+        for page in documents[0]["children"]:
+            if not isinstance(page, Mapping) or not isinstance(page.get("children"), list):
+                raise ValueError("invalid Marker page during rowspan audit")
+            for block in page["children"]:
+                if not isinstance(block, Mapping):
+                    raise ValueError("invalid Marker block during rowspan audit")
+                records.append(block)
+        return records
+    matches = sorted(path for path in raw_directory.rglob("*_content_list.json") if path.is_file())
+    if len(matches) != 1:
+        raise ValueError("cannot identify one MinerU content list for rowspan audit")
+    value: object = json.loads(matches[0].read_text(encoding="utf-8"))
+    if not isinstance(value, list) or not all(isinstance(item, Mapping) for item in value):
+        raise ValueError("invalid MinerU content list during rowspan audit")
+    return list(value)
+
+
+def _rowspan_audit(parser: str, raw_directory: Path, blocks: list[Any]) -> dict[str, int]:
+    records = _raw_records(parser, raw_directory)
+    markup_count = 0
+    rowspan_markup_count = 0
+    explicit_row_violations = 0
+    for block in blocks:
+        if block.kind.value != "table":
+            continue
+        raw_index = block.provenance.source_raw_index
+        if raw_index >= len(records):
+            raise ValueError("table provenance is outside raw records during rowspan audit")
+        record = records[raw_index]
+        field = "html" if parser == "marker" else "table_body"
+        html = record.get(field)
+        if not isinstance(html, str) or "<table" not in html.casefold():
+            continue
+        markup_count += 1
+        if "rowspan" in html.casefold():
+            rowspan_markup_count += 1
+        try:
+            table_structure_from_html(html)
+        except TableHTMLStructureError as exc:
+            if "rowspan exceeds the number of explicit tr rows" in str(exc):
+                explicit_row_violations += 1
+    return {
+        "table_markup_count": markup_count,
+        "rowspan_markup_table_count": rowspan_markup_count,
+        "rowspan_explicit_row_violation_count": explicit_row_violations,
+    }
 
 
 def _normalize_v0(parser: str, raw_directory: Path) -> PhysicalDocument:
@@ -90,6 +169,32 @@ def _summarize_pair(
     structures = [block.table_structure for block in tables if block.table_structure is not None]
     cells = [cell for structure in structures for cell in structure.cells]
     visual_evidence = [block.visual_asset for block in current_blocks if block.visual_asset]
+    kind_disposition = Counter(
+        (block.kind.value, block.disposition.value) for block in current_blocks
+    )
+    raw_type_extraction = Counter(
+        (
+            block.provenance.source_raw_type,
+            block.text_extraction.method.value if block.text_extraction else "not_recorded",
+        )
+        for block in current_blocks
+    )
+    unknown_kind_by_raw_type = Counter(
+        block.provenance.source_raw_type
+        for block in current_blocks
+        if block.kind.value == "unknown"
+    )
+    unknown_disposition_by_raw_type = Counter(
+        block.provenance.source_raw_type
+        for block in current_blocks
+        if block.disposition.value == "unknown"
+    )
+    unknown_extraction_by_raw_type = Counter(
+        block.provenance.source_raw_type
+        for block in current_blocks
+        if block.text_extraction is not None and block.text_extraction.method.value == "unknown"
+    )
+    rowspan_audit = _rowspan_audit(parser, raw_directory, current_blocks)
     result: dict[str, Any] = {
         "document_id": current_a.document_id,
         "version_id": current_a.version_id,
@@ -99,6 +204,7 @@ def _summarize_pair(
         "pages": current_a.page_count,
         "total_blocks": len(current_blocks),
         "kind_histogram": dict(sorted(kind_histogram.items())),
+        "kind_disposition_matrix": _nested_counts(kind_disposition),
         "table_count": len(tables),
         "tables_with_structure": len(structures),
         "table_cell_count": len(cells),
@@ -109,6 +215,14 @@ def _summarize_pair(
         "image_count": kind_histogram["image"],
         "unknown_count": kind_histogram["unknown"],
         "text_extraction_method_histogram": dict(sorted(extraction_histogram.items())),
+        "source_raw_type_extraction_method_matrix": _nested_counts(raw_type_extraction),
+        "unknown_kind_by_source_raw_type": dict(sorted(unknown_kind_by_raw_type.items())),
+        "unknown_disposition_by_source_raw_type": dict(
+            sorted(unknown_disposition_by_raw_type.items())
+        ),
+        "unknown_text_extraction_by_source_raw_type": dict(
+            sorted(unknown_extraction_by_raw_type.items())
+        ),
         "explicit_text_extraction_count": sum(
             block.text_extraction is not None and block.text_extraction.method.value != "unknown"
             for block in current_blocks
@@ -119,6 +233,16 @@ def _summarize_pair(
         ),
         "visual_asset_evidence_count": len(visual_evidence),
         "visual_asset_hash_count": sum(asset.sha256 is not None for asset in visual_evidence),
+        "verified_visual_asset_count": sum(
+            asset.storage_kind.value in {"relative_file", "embedded_raw"}
+            and asset.sha256 is not None
+            and asset.byte_size is not None
+            for asset in visual_evidence
+        ),
+        "visual_asset_storage_histogram": dict(
+            sorted(Counter(asset.storage_kind.value for asset in visual_evidence).items())
+        ),
+        **rowspan_audit,
         "v0_expected_byte_size": expected_size,
         "v0_actual_byte_size": len(historical_bytes),
         "v0_expected_sha256": expected_sha,
@@ -167,6 +291,23 @@ def collect_physical_ir_v1_validation(root: Path) -> dict[str, Any]:
     aggregate_kinds: Counter[str] = Counter()
     aggregate_extraction: Counter[str] = Counter()
     aggregate_transitions: Counter[str] = Counter()
+    aggregate_kind_disposition: Counter[tuple[str, str]] = Counter()
+    aggregate_raw_type_extraction: dict[str, Counter[tuple[str, str]]] = {
+        "marker": Counter(),
+        "mineru": Counter(),
+    }
+    aggregate_unknown_kind: dict[str, Counter[str]] = {
+        "marker": Counter(),
+        "mineru": Counter(),
+    }
+    aggregate_unknown_disposition: dict[str, Counter[str]] = {
+        "marker": Counter(),
+        "mineru": Counter(),
+    }
+    aggregate_unknown_extraction: dict[str, Counter[str]] = {
+        "marker": Counter(),
+        "mineru": Counter(),
+    }
     for raw_entry in raw_entries:
         if not isinstance(raw_entry, dict):
             raise ValueError("v0 determinism entry must be an object")
@@ -175,6 +316,19 @@ def collect_physical_ir_v1_validation(root: Path) -> dict[str, Any]:
         aggregate_kinds.update(entry["kind_histogram"])
         aggregate_extraction.update(entry["text_extraction_method_histogram"])
         aggregate_transitions.update(entry["v0_to_v1_kind_transitions"])
+        _merge_nested_counts(aggregate_kind_disposition, entry["kind_disposition_matrix"])
+        parser = str(entry["parser"])
+        _merge_nested_counts(
+            aggregate_raw_type_extraction[parser],
+            entry["source_raw_type_extraction_method_matrix"],
+        )
+        aggregate_unknown_kind[parser].update(entry["unknown_kind_by_source_raw_type"])
+        aggregate_unknown_disposition[parser].update(
+            entry["unknown_disposition_by_source_raw_type"]
+        )
+        aggregate_unknown_extraction[parser].update(
+            entry["unknown_text_extraction_by_source_raw_type"]
+        )
 
     def total(field: str) -> int:
         return sum(int(entry[field]) for entry in entries)
@@ -196,9 +350,12 @@ def collect_physical_ir_v1_validation(root: Path) -> dict[str, Any]:
         ) != (raw_type, kind):
             raise ValueError(f"TT04/2023 anti-evaluation-leakage check failed for {parser}")
 
-    by_parser: dict[str, dict[str, int]] = {}
+    by_parser: dict[str, dict[str, Any]] = {}
     for parser in ("marker", "mineru"):
         parser_entries = [entry for entry in entries if entry["parser"] == parser]
+        parser_kind_disposition: Counter[tuple[str, str]] = Counter()
+        for entry in parser_entries:
+            _merge_nested_counts(parser_kind_disposition, entry["kind_disposition_matrix"])
         by_parser[parser] = {
             "pairs": len(parser_entries),
             "table_count": sum(int(entry["table_count"]) for entry in parser_entries),
@@ -217,10 +374,29 @@ def collect_physical_ir_v1_validation(root: Path) -> dict[str, Any]:
             "visual_asset_hash_count": sum(
                 int(entry["visual_asset_hash_count"]) for entry in parser_entries
             ),
+            "verified_visual_asset_count": sum(
+                int(entry["verified_visual_asset_count"]) for entry in parser_entries
+            ),
+            "kind_disposition_matrix": _nested_counts(parser_kind_disposition),
+            "source_raw_type_extraction_method_matrix": _nested_counts(
+                aggregate_raw_type_extraction[parser]
+            ),
+            "unknown_kind_by_source_raw_type": dict(sorted(aggregate_unknown_kind[parser].items())),
+            "unknown_disposition_by_source_raw_type": dict(
+                sorted(aggregate_unknown_disposition[parser].items())
+            ),
+            "unknown_text_extraction_by_source_raw_type": dict(
+                sorted(aggregate_unknown_extraction[parser].items())
+            ),
+            "rowspan_explicit_row_violation_count": sum(
+                int(entry["rowspan_explicit_row_violation_count"]) for entry in parser_entries
+            ),
         }
 
     return {
-        "validation_schema_version": 1,
+        "validation_schema_version": 2,
+        "validation_protocol": "physical_ir_v1_retained_corpus",
+        "validation_protocol_revision": 2,
         "physical_ir_research_generation": "v1",
         "physical_ir_wire_schema_version": 2,
         "input_v0_determinism_evidence": source_path.relative_to(root).as_posix(),
@@ -247,6 +423,7 @@ def collect_physical_ir_v1_validation(root: Path) -> dict[str, Any]:
             "pages": total("pages"),
             "total_blocks": total("total_blocks"),
             "kind_histogram": dict(sorted(aggregate_kinds.items())),
+            "kind_disposition_matrix": _nested_counts(aggregate_kind_disposition),
             "table_count": total("table_count"),
             "tables_with_structure": total("tables_with_structure"),
             "table_cell_count": total("table_cell_count"),
@@ -257,10 +434,30 @@ def collect_physical_ir_v1_validation(root: Path) -> dict[str, Any]:
             "image_count": total("image_count"),
             "unknown_count": total("unknown_count"),
             "text_extraction_method_histogram": dict(sorted(aggregate_extraction.items())),
+            "source_raw_type_extraction_method_matrix_by_parser": {
+                parser: _nested_counts(counter)
+                for parser, counter in aggregate_raw_type_extraction.items()
+            },
+            "unknown_kind_by_parser_source_raw_type": {
+                parser: dict(sorted(counter.items()))
+                for parser, counter in aggregate_unknown_kind.items()
+            },
+            "unknown_disposition_by_parser_source_raw_type": {
+                parser: dict(sorted(counter.items()))
+                for parser, counter in aggregate_unknown_disposition.items()
+            },
+            "unknown_text_extraction_by_parser_source_raw_type": {
+                parser: dict(sorted(counter.items()))
+                for parser, counter in aggregate_unknown_extraction.items()
+            },
             "explicit_text_extraction_count": total("explicit_text_extraction_count"),
             "ocr_confidence_count": total("ocr_confidence_count"),
             "visual_asset_evidence_count": total("visual_asset_evidence_count"),
             "visual_asset_hash_count": total("visual_asset_hash_count"),
+            "verified_visual_asset_count": total("verified_visual_asset_count"),
+            "table_markup_count": total("table_markup_count"),
+            "rowspan_markup_table_count": total("rowspan_markup_table_count"),
+            "rowspan_explicit_row_violation_count": total("rowspan_explicit_row_violation_count"),
             "v0_to_v1_kind_transitions": dict(sorted(aggregate_transitions.items())),
             "by_parser": by_parser,
         },
@@ -284,6 +481,11 @@ def render_physical_ir_v1_validation(evidence: dict[str, Any]) -> str:
         (
             "Physical IR research generation **v1** uses wire/schema version **2**. "
             "Historical Physical IR v0 remains wire version 1."
+        ),
+        (
+            "This file remains `.v1.json` because that is the Physical IR v1 validation "
+            "protocol name; `validation_schema_version: 2` records the corrected evidence "
+            "artifact shape."
         ),
         "",
         "## Validation result",
@@ -330,6 +532,33 @@ def render_physical_ir_v1_validation(evidence: dict[str, Any]) -> str:
             f"{parser_summary['tables_with_structure']} | "
             f"{parser_summary['table_cell_count']} |"
         )
+    lines.extend(
+        [
+            "",
+            "## Kind by disposition by parser",
+            "",
+            (
+                "Disposition describes the current v1 physical observation: `content` is body "
+                "content, `discarded` is intentional boilerplate exclusion, and `unknown` means "
+                "the disposition cannot be determined. It is not copied v0 kind uncertainty."
+            ),
+            "",
+            "| Parser | Kind | Content | Discarded | Unknown |",
+            "|---|---|---:|---:|---:|",
+        ]
+    )
+    for parser in ("marker", "mineru"):
+        parser_summary = by_parser[parser]
+        matrix = parser_summary["kind_disposition_matrix"]
+        if not isinstance(matrix, dict):
+            raise ValueError(f"invalid kind/disposition matrix for {parser}")
+        for kind, raw_counts in matrix.items():
+            if not isinstance(raw_counts, dict):
+                raise ValueError("invalid kind/disposition row")
+            lines.append(
+                f"| {parser} | {kind} | {raw_counts.get('content', 0)} | "
+                f"{raw_counts.get('discarded', 0)} | {raw_counts.get('unknown', 0)} |"
+            )
     transitions = aggregate["v0_to_v1_kind_transitions"]
     extraction = aggregate["text_extraction_method_histogram"]
     anti_leakage = evidence["anti_evaluation_leakage_case"]
@@ -358,10 +587,23 @@ def render_physical_ir_v1_validation(evidence: dict[str, Any]) -> str:
                 f"**{aggregate['header_cell_count']}**."
             ),
             (
+                "- Explicit-row rowspan audit: "
+                f"**{aggregate['rowspan_explicit_row_violation_count']}** violations across "
+                f"**{aggregate['rowspan_markup_table_count']}** table markups containing "
+                "`rowspan`. A cell may not extend beyond the observed `<tr>` count."
+            ),
+            (
                 f"- Visuals: FIGURE **{aggregate['figure_count']}**, IMAGE "
                 f"**{aggregate['image_count']}**; asset hashes "
                 f"**{aggregate['visual_asset_hash_count']}/"
                 f"{aggregate['visual_asset_evidence_count']}**."
+            ),
+            (
+                "- Verified visual assets satisfying the storage contract: "
+                f"**{aggregate['verified_visual_asset_count']}/"
+                f"{aggregate['visual_asset_evidence_count']}**. A `relative_file` requires a "
+                "safe path, SHA-256, and positive byte size; media type may be null. Missing "
+                "referenced bytes are represented as `unavailable`."
             ),
             f"- Kind transitions from frozen v0: `{json.dumps(transitions, sort_keys=True)}`.",
             (
@@ -382,19 +624,52 @@ def render_physical_ir_v1_validation(evidence: dict[str, Any]) -> str:
             "## Extraction evidence policy",
             "",
             (
-                "Marker text-bearing blocks are `native_text` only because the retained run "
-                "metadata records `disable_ocr=true`; empty blocks carry no text-extraction "
-                "record. MinerU 3.4.5 pipeline artifacts expose span/layout scores but no field "
+                "Marker non-empty blocks are `native_text` only where both the validated run "
+                "records `disable_ocr=true` and that page's retained `source_meta.json` records "
+                "`text_extraction_method=pdftext`; empty blocks carry no text-extraction record. "
+                "Missing or different page/provider evidence is `unknown`. MinerU 3.4.5 "
+                "pipeline artifacts expose span/layout scores but no field "
                 "distinguishing OCR from native PDF text, so non-empty MinerU text is `unknown` "
                 "and confidence remains null. Annotation modality labels are never normalizer "
                 "inputs."
             ),
             "",
+            "### Marker source raw type by extraction method",
+            "",
+            "| Source raw type | Native text | OCR | Unknown | Not recorded |",
+            "|---|---:|---:|---:|---:|",
+        ]
+    )
+    marker_matrix = by_parser["marker"]["source_raw_type_extraction_method_matrix"]
+    if not isinstance(marker_matrix, dict):
+        raise ValueError("missing Marker extraction matrix")
+    for raw_type, raw_counts in marker_matrix.items():
+        if not isinstance(raw_counts, dict):
+            raise ValueError("invalid Marker extraction matrix row")
+        lines.append(
+            f"| {raw_type} | {raw_counts.get('native_text', 0)} | "
+            f"{raw_counts.get('ocr', 0)} | {raw_counts.get('unknown', 0)} | "
+            f"{raw_counts.get('not_recorded', 0)} |"
+        )
+    unknown_kind = aggregate["unknown_kind_by_parser_source_raw_type"]
+    unknown_extraction = aggregate["unknown_text_extraction_by_parser_source_raw_type"]
+    unknown_kind_json = json.dumps(unknown_kind, sort_keys=True)
+    unknown_extraction_json = json.dumps(unknown_extraction, sort_keys=True)
+    lines.extend(
+        [
+            "",
+            "## Remaining unknown evidence",
+            "",
+            f"- UNKNOWN kind by parser/source raw type: `{unknown_kind_json}`.",
+            (f"- UNKNOWN text extraction by parser/source raw type: `{unknown_extraction_json}`."),
+            "",
             "## Limitations",
             "",
             (
-                "Tables whose observed HTML cannot be converted safely retain TABLE identity with "
-                "null structure. UNKNOWN remains intentional for unsupported raw types. No OCR "
+                "`table_structure: null` can mean absent markup or rejected markup; v1 does not "
+                "add a field distinguishing those causes. Tables whose observed HTML cannot be "
+                "converted safely retain TABLE identity. UNKNOWN remains intentional for "
+                "unsupported raw types. No OCR "
                 "accuracy, semantic map meaning, or structural/legal interpretation is claimed."
             ),
             "",
