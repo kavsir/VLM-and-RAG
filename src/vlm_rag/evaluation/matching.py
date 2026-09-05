@@ -1,10 +1,10 @@
 """Deterministic maximum-cardinality bipartite IoU region matching."""
 
-from collections import deque
 from collections.abc import Sequence
 from dataclasses import dataclass
+from fractions import Fraction
 
-from vlm_rag.evaluation.models import AnnotationBoundingBox, GroundTruthRegion
+from vlm_rag.evaluation.models import AnnotationBoundingBox, ReferenceRegion
 from vlm_rag.physical_ir.models import BoundingBox, PhysicalBlock
 
 
@@ -33,9 +33,9 @@ def calculate_iou(
 
 @dataclass(frozen=True, slots=True)
 class MatchedPair:
-    """A matched ground truth region and predicted block with their overlap score."""
+    """A matched reference region and predicted block with their overlap score."""
 
-    ground_truth: GroundTruthRegion
+    reference: ReferenceRegion
     predicted: PhysicalBlock
     iou: float
 
@@ -45,7 +45,7 @@ class MatchResult:
     """Results of maximum-cardinality bipartite matching on a single page."""
 
     matched_pairs: tuple[MatchedPair, ...]
-    unmatched_ground_truth: tuple[GroundTruthRegion, ...]
+    unmatched_reference: tuple[ReferenceRegion, ...]
     unmatched_predicted: tuple[PhysicalBlock, ...]
 
 
@@ -56,134 +56,154 @@ def _find_max_cardinality_max_iou_matching(
 ) -> list[tuple[int, int, float]]:
     """Solve maximum-cardinality bipartite matching with secondary max-IoU objective.
 
-    Uses successive shortest augmenting paths (Min-Cost Max-Flow) with large negative base
-    cost to strictly prioritize maximum cardinality over individual IoU magnitudes.
-    Deterministic tie-breaking is enforced by sorting candidate edges.
+    Cardinality is computed independently. A min-cost flow of exactly that cardinality then
+    maximizes the sum of the exact IEEE-754 IoU values represented by ``Fraction.from_float``.
+    Stable graph ordering and path tie-breaking make equal-weight solutions deterministic.
     """
     if m == 0 or n == 0 or not candidate_edges:
         return []
 
-    V = m + n + 2
-    S = 0
-    T = V - 1
+    neighbors: list[list[int]] = [[] for _ in range(m)]
+    for u, v, _ in sorted(candidate_edges, key=lambda edge: (edge[0], edge[1])):
+        neighbors[u].append(v)
+    matched_right = [-1] * n
 
-    adj: list[list[int]] = [[] for _ in range(V)]
-    edges: list[dict[str, int]] = []
+    def augment_cardinality(u: int, seen: set[int]) -> bool:
+        for v in neighbors[u]:
+            if v in seen:
+                continue
+            seen.add(v)
+            if matched_right[v] == -1 or augment_cardinality(matched_right[v], seen):
+                matched_right[v] = u
+                return True
+        return False
 
-    def add_edge(frm: int, to: int, cap: int, cost: int, edge_idx: int = -1) -> None:
-        e1 = {
-            "frm": frm,
-            "to": to,
-            "cap": cap,
-            "flow": 0,
-            "cost": cost,
-            "rev": len(edges) + 1,
-            "edge_idx": edge_idx,
-        }
-        e2 = {
-            "frm": to,
-            "to": frm,
-            "cap": 0,
-            "flow": 0,
-            "cost": -cost,
-            "rev": len(edges),
-            "edge_idx": -1,
-        }
-        adj[frm].append(len(edges))
-        edges.append(e1)
-        adj[to].append(len(edges))
-        edges.append(e2)
+    cardinality = sum(augment_cardinality(u, set()) for u in range(m))
+
+    @dataclass(slots=True)
+    class FlowEdge:
+        to: int
+        reverse_index: int
+        capacity: int
+        cost: Fraction
+
+    vertex_count = m + n + 2
+    source = 0
+    sink = vertex_count - 1
+    graph: list[list[FlowEdge]] = [[] for _ in range(vertex_count)]
+
+    def add_edge(frm: int, to: int, capacity: int, cost: Fraction) -> FlowEdge:
+        forward = FlowEdge(to, len(graph[to]), capacity, cost)
+        reverse = FlowEdge(frm, len(graph[frm]), 0, -cost)
+        graph[frm].append(forward)
+        graph[to].append(reverse)
+        return forward
 
     for u in range(m):
-        add_edge(S, u + 1, 1, 0)
+        add_edge(source, u + 1, 1, Fraction(0))
     for v in range(n):
-        add_edge(m + 1 + v, T, 1, 0)
+        add_edge(m + 1 + v, sink, 1, Fraction(0))
 
-    # Sort deterministically: highest IoU first, then lower u, then lower v
-    sorted_edges = sorted(candidate_edges, key=lambda x: (-x[2], x[0], x[1]))
-    for idx, (u, v, iou) in enumerate(sorted_edges):
-        cost = -int(1_000_000 + round(iou * 10_000))
-        add_edge(u + 1, m + 1 + v, 1, cost, idx)
+    candidate_flow_edges: list[tuple[int, int, float, FlowEdge]] = []
+    for u, v, iou in sorted(candidate_edges, key=lambda edge: (edge[0], edge[1])):
+        edge = add_edge(u + 1, m + 1 + v, 1, -Fraction.from_float(iou))
+        candidate_flow_edges.append((u, v, iou, edge))
 
-    while True:
-        dist = [float("inf")] * V
-        parent = [-1] * V
-        in_queue = [False] * V
-        dist[S] = 0.0
-        q: deque[int] = deque([S])
-        in_queue[S] = True
+    for _ in range(cardinality):
+        distances: list[Fraction | None] = [None] * vertex_count
+        path_keys: list[tuple[tuple[int, int], ...] | None] = [None] * vertex_count
+        parents: list[tuple[int, int] | None] = [None] * vertex_count
+        distances[source] = Fraction(0)
+        path_keys[source] = ()
 
-        while q:
-            curr = q.popleft()
-            in_queue[curr] = False
-            for e_idx in adj[curr]:
-                e = edges[e_idx]
-                if e["cap"] - e["flow"] > 0 and dist[e["to"]] > dist[curr] + e["cost"]:
-                    dist[e["to"]] = dist[curr] + e["cost"]
-                    parent[e["to"]] = e_idx
-                    if not in_queue[e["to"]]:
-                        q.append(e["to"])
-                        in_queue[e["to"]] = True
+        for _relaxation in range(vertex_count - 1):
+            changed = False
+            for frm, outgoing in enumerate(graph):
+                source_distance = distances[frm]
+                source_path_key = path_keys[frm]
+                if source_distance is None or source_path_key is None:
+                    continue
+                for edge_index, edge in enumerate(outgoing):
+                    if edge.capacity == 0:
+                        continue
+                    candidate_distance = source_distance + edge.cost
+                    candidate_key = (*source_path_key, (frm, edge_index))
+                    current_distance = distances[edge.to]
+                    current_key = path_keys[edge.to]
+                    if (
+                        current_distance is None
+                        or candidate_distance < current_distance
+                        or (
+                            candidate_distance == current_distance
+                            and (current_key is None or candidate_key < current_key)
+                        )
+                    ):
+                        distances[edge.to] = candidate_distance
+                        path_keys[edge.to] = candidate_key
+                        parents[edge.to] = (frm, edge_index)
+                        changed = True
+            if not changed:
+                break
 
-        if dist[T] >= 0:
-            break
+        if parents[sink] is None:
+            raise RuntimeError("maximum-cardinality matching could not be reconstructed")
+        current = sink
+        while current != source:
+            parent = parents[current]
+            if parent is None:
+                raise RuntimeError("incomplete augmenting path")
+            frm, edge_index = parent
+            edge = graph[frm][edge_index]
+            edge.capacity -= 1
+            graph[edge.to][edge.reverse_index].capacity += 1
+            current = frm
 
-        curr = T
-        while curr != S:
-            e_idx = parent[curr]
-            edges[e_idx]["flow"] += 1
-            edges[edges[e_idx]["rev"]]["flow"] -= 1
-            curr = edges[e_idx]["frm"]
-
-    results: list[tuple[int, int, float]] = []
-    for e in edges:
-        if 1 <= e["frm"] <= m and m + 1 <= e["to"] <= m + n and e["flow"] > 0:
-            u = e["frm"] - 1
-            v = e["to"] - (m + 1)
-            iou = sorted_edges[e["edge_idx"]][2]
-            results.append((u, v, iou))
-
-    return results
+    return sorted(
+        ((u, v, iou) for u, v, iou, edge in candidate_flow_edges if edge.capacity == 0),
+        key=lambda match: (match[0], match[1]),
+    )
 
 
 def match_page_regions(
-    ground_truth_regions: Sequence[GroundTruthRegion],
+    reference_regions: Sequence[ReferenceRegion],
     predicted_blocks: Sequence[PhysicalBlock],
     *,
     iou_threshold: float = 0.5,
 ) -> MatchResult:
-    """Deterministically match ground truth regions with predicted physical blocks."""
+    """Deterministically match reference regions with predicted physical blocks."""
     if iou_threshold < 0.0 or iou_threshold > 1.0:
         raise ValueError("iou_threshold must be between 0.0 and 1.0")
 
     candidates: list[tuple[int, int, float]] = []
-    for gt_idx, gt in enumerate(ground_truth_regions):
+    for reference_index, reference in enumerate(reference_regions):
         for pred_idx, pred in enumerate(predicted_blocks):
-            score = calculate_iou(gt.bbox, pred.bbox)
+            score = calculate_iou(reference.bbox, pred.bbox)
             if score >= iou_threshold:
-                candidates.append((gt_idx, pred_idx, score))
+                candidates.append((reference_index, pred_idx, score))
 
     matched_indices = _find_max_cardinality_max_iou_matching(
-        len(ground_truth_regions),
+        len(reference_regions),
         len(predicted_blocks),
         candidates,
     )
 
     matched_pairs: list[MatchedPair] = []
-    used_gt_indices: set[int] = set()
+    used_reference_indices: set[int] = set()
     used_pred_indices: set[int] = set()
 
     for u, v, iou in matched_indices:
-        gt = ground_truth_regions[u]
+        reference = reference_regions[u]
         pred = predicted_blocks[v]
-        used_gt_indices.add(u)
+        used_reference_indices.add(u)
         used_pred_indices.add(v)
-        matched_pairs.append(MatchedPair(ground_truth=gt, predicted=pred, iou=iou))
+        matched_pairs.append(MatchedPair(reference=reference, predicted=pred, iou=iou))
 
-    matched_pairs.sort(key=lambda mp: (mp.ground_truth.reading_order, mp.ground_truth.id))
+    matched_pairs.sort(key=lambda mp: (mp.reference.reading_order, mp.reference.id))
 
-    unmatched_gt = tuple(
-        gt for i, gt in enumerate(ground_truth_regions) if i not in used_gt_indices
+    unmatched_reference = tuple(
+        reference
+        for i, reference in enumerate(reference_regions)
+        if i not in used_reference_indices
     )
     unmatched_pred = tuple(
         pred for j, pred in enumerate(predicted_blocks) if j not in used_pred_indices
@@ -191,7 +211,7 @@ def match_page_regions(
 
     return MatchResult(
         matched_pairs=tuple(matched_pairs),
-        unmatched_ground_truth=unmatched_gt,
+        unmatched_reference=unmatched_reference,
         unmatched_predicted=unmatched_pred,
     )
 

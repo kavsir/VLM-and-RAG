@@ -1,244 +1,1302 @@
 {
-  "benchmark_schema_version": 1,
+  "benchmark_schema_version": 2,
+  "annotation_schema_version": 2,
+  "annotation_version": "v3",
+  "annotation_provenance": {
+    "annotator": "codex",
+    "annotator_type": "ai_visual_audit",
+    "annotation_method": "visual_pdf_reaudit",
+    "created_at": "2026-09-05T01:15:00+07:00",
+    "prior_parser_output_exposure": true,
+    "parser_output_used_as_reference": false,
+    "audit_evidence_path": "data/annotations/reference_annotation_audit.v3.json",
+    "audit_evidence_sha256": "d2cff34152d26370ecd2043201034b9b05aeef678957acaf92c0316fc30ac1da"
+  },
   "corpus_total_pages": 250,
   "corpus_documents_count": 6,
   "total_audited_pages": 46,
-  "total_reference_regions": 112,
-  "annotation_version": "v2",
-  "annotation_provenance": {
-    "annotator": "antigravity",
-    "annotator_type": "ai_visual_audit",
-    "annotation_method": "independent_visual_pdf_audit",
-    "parser_output_used_as_ground_truth": false
-  },
+  "total_reference_regions": 110,
   "evaluation_configuration": {
+    "coordinate_system": "normalized_1000",
     "iou_threshold": 0.5,
-    "matching_objective": "maximum_cardinality_bipartite_matching_with_secondary_max_iou",
-    "metric_names": [
-      "spatial_precision",
-      "spatial_recall",
-      "spatial_f1",
-      "mean_iou",
-      "pairwise_order_accuracy",
-      "classification_accuracy_on_matched"
-    ]
+    "matching_primary_objective": "maximum cardinality among edges at or above IoU threshold",
+    "matching_secondary_objective": "maximum exact sum of computed IEEE-754 IoU values among maximum-cardinality matchings",
+    "deterministic_tie_breaking": "stable zero-based graph and edge ordering"
+  },
+  "metric_definitions": {
+    "spatial_precision": {
+      "formula": "TP_spatial / (TP_spatial + FP_spatial)",
+      "zero_denominator": 0.0
+    },
+    "spatial_recall": {
+      "formula": "TP_spatial / (TP_spatial + FN_spatial)",
+      "zero_denominator": 0.0
+    },
+    "spatial_f1": {
+      "formula": "2 * spatial_precision * spatial_recall / (spatial_precision + spatial_recall)",
+      "zero_denominator": 0.0
+    },
+    "mean_iou": {
+      "formula": "sum(IoU of spatial matches) / spatial_matches"
+    },
+    "classification_accuracy_on_matched": {
+      "formula": "correct_classified_spatial_matches / spatial_matches"
+    },
+    "pairwise_order_accuracy": {
+      "formula": "concordant comparable pairs / total comparable pairs",
+      "prediction_ties": "non-concordant",
+      "null_when": "fewer than two matched regions"
+    }
   },
   "parser_coverage_matrix": {
     "marker": {
       "parser": "marker",
       "version": "2.0.0",
-      "mode": "fast",
       "backend": "fast-no-ocr",
-      "disable_ocr": true,
+      "mode": "fast",
+      "configuration": {
+        "disable_ocr": true,
+        "output_format": "json"
+      },
       "evaluated_documents": 6,
+      "corpus_documents": 6,
       "evaluated_pages": 250,
-      "coverage": "6/6 (250/250 pages)"
+      "corpus_pages": 250,
+      "omitted_documents": []
     },
     "mineru": {
       "parser": "mineru",
       "version": "3.4.5",
-      "mode": "pipeline",
       "backend": "pipeline",
-      "device": "cpu",
+      "mode": "pipeline",
+      "configuration": {
+        "device": "cpu"
+      },
       "evaluated_documents": 4,
+      "corpus_documents": 6,
       "evaluated_pages": 150,
-      "coverage": "4/6 (150/250 pages)",
+      "corpus_pages": 250,
       "omitted_documents": [
-        "luat-112-2025-qh15 (52 pages, CPU budget boundary)",
-        "vbhn-103-2026-quy-hoach-tong-the (48 pages, CPU budget boundary)"
+        "luat-112-2025-qh15",
+        "vbhn-103-2026-quy-hoach-tong-the"
       ]
     }
+  },
+  "scanned_case_evidence": {
+    "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+    "page_modality": "scanned_raster",
+    "text_reference_available": false,
+    "ocr_recall_cer_wer_available": false,
+    "runs": {
+      "marker": {
+        "raw_object_type_counts": {
+          "PageHeader": 3,
+          "Picture": 1,
+          "SectionHeader": 13,
+          "Text": 57
+        },
+        "total_structural_physical_blocks": 74,
+        "physical_ir_kind_counts": {
+          "header": 3,
+          "text": 57,
+          "title": 13,
+          "unknown": 1
+        },
+        "non_empty_text_blocks": 0,
+        "text_or_title_blocks": 70,
+        "non_empty_text_or_title_blocks": 0
+      },
+      "mineru": {
+        "raw_object_type_counts": {
+          "header": 2,
+          "image": 1,
+          "page_number": 3,
+          "text": 76
+        },
+        "total_structural_physical_blocks": 82,
+        "physical_ir_kind_counts": {
+          "header": 2,
+          "page_number": 3,
+          "text": 70,
+          "title": 6,
+          "unknown": 1
+        },
+        "non_empty_text_blocks": 81,
+        "text_or_title_blocks": 76,
+        "non_empty_text_or_title_blocks": 76
+      }
+    }
+  },
+  "map_figure_page_evidence": {
+    "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+    "layout_diagram": {
+      "pdf_page_number_1_based": 22,
+      "page_index": 21,
+      "render_sha256": "6e2eacc9bd2d32fefe40d568920eda7375be5863f27171502c55423979d325f5"
+    },
+    "pre_symbology_prose": {
+      "pdf_page_number_1_based": 26,
+      "page_index": 25,
+      "render_sha256": "343f143c8a980676de17377acffc50c19bdae7147606ee467d32dec6ffb22925"
+    },
+    "symbology_sheets": {
+      "pdf_page_numbers_1_based": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "page_indices": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "render_sha256": [
+        "eb74b736b51808bfa363f5cdf7d436d20c2285e7b6177a7d93a7b96a546f4fa2",
+        "c2d0e155323464400b9e5bfe5e882792292afd5f8d8e2ec9882184a9a43acbfc",
+        "709e8630ef875a9f004b5038e69d9bafd3af299b6f8d01871e29e1d57d1972cd",
+        "09c025281ff82b7b2878d1a4b406415d213076623ab9d98b7d24e9af1d028155",
+        "64e267bdefeabd6fee71e7b2768e59cbab50bb9e005e3b9cf6f8d86542291047",
+        "33d9f66a83ea357b5a636c89efddcbe6217319f08ce129114ab24e3bbc5ef5ce"
+      ]
+    }
+  },
+  "gap_example_pages": {
+    "table_localization": {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "pdf_page_number_1_based": 2,
+      "page_index": 1
+    },
+    "scanned_modality": {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "pdf_page_numbers_1_based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "page_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "normalization_determinism": {
+    "path": "data/benchmarks/normalization_determinism.v1.json",
+    "sha256": "721733c27e6d580352e7238163d55acf60b0302ff8bc326dc16890bef5a7b4b1",
+    "byte_size": 5051
+  },
+  "clean_clone_reproducibility": {
+    "can": [
+      "validate committed benchmark, annotation, and determinism artifacts",
+      "regenerate all Markdown reports offline",
+      "run evaluation unit tests"
+    ],
+    "cannot_without_external_artifacts": [
+      "regenerate parser outputs",
+      "recompute Physical IR normalization from retained raw parser evidence",
+      "recompute benchmark evaluations from untracked Physical IR files"
+    ]
   },
   "documents": [
     {
       "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
       "document_number": "2512/QĐ-UBND",
       "title": "Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm",
+      "issuer": "Ủy ban nhân dân thành phố Hà Nội",
+      "issued_on": "2026-05-13",
+      "effective_on": "2026-05-13",
+      "signer": "Vũ Đại Thắng",
       "pages": 80,
-      "byte_size": 2218758,
-      "sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "source_artifact_byte_size": 2218758,
+      "source_artifact_path": "data/golden/hanoi_master_plan_100y/v1/source.pdf",
+      "source_artifact_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
       "manifest_path": "data/manifests/hanoi_master_plan_100y.v1.yaml",
-      "annotation_path": "data/annotations/hanoi_master_plan_100y.v1.json",
+      "reference_annotation_path": "data/annotations/hanoi_master_plan_100y.v1.json",
+      "reference_annotation_sha256": "95e69f0af48e87b7f42acb8552993bcbbad6305c44386d9db35d4cb9d237a3dc",
+      "audited_pages": 10,
+      "reference_regions": 16,
       "runs": {
         "marker": {
-          "wall_clock_seconds": 159.44924349999928,
+          "parser": "marker",
+          "parser_version": "2.0.0",
+          "backend": "fast-no-ocr",
+          "mode": "fast",
+          "configuration": {
+            "disable_ocr": true,
+            "output_format": "json"
+          },
+          "source_artifact_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+          "wall_clock_seconds": 159.4492,
           "pages_per_second": 0.5017,
           "spatial_precision": 0.0276,
           "spatial_recall": 0.25,
           "spatial_f1": 0.0497,
           "mean_iou": 0.7862,
           "pairwise_order_accuracy": 1.0,
+          "classification_accuracy_on_matched": 0.25,
           "run_json_path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "run_json_sha256": "28751876baef128b37cab078c2e434c3e28a8bce6441220c4abde5d7baf1fe04",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source.json",
+              "kind": "document_json",
+              "sha256": "be138bdaf3bc630ab0a4a8c77b21e0a49bd7073039ef8073bb2d234cc3562bda",
+              "byte_size": 1596521
+            },
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source_meta.json",
+              "kind": "metadata_json",
+              "sha256": "08d016a59075bfb9f84353c1a15a875510fd2c8528244b8e65605af5f22ebad8",
+              "byte_size": 109937
+            }
+          ],
           "physical_ir_path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
-          "benchmark_result_path": "data/benchmarks/marker_hanoi_master_plan_100y.v1.json"
+          "physical_ir_sha256": "d58d65296160dabf7fdb81774c123e15165477495e40aabe879c08e28eb546aa",
+          "physical_ir_byte_size": 1162526,
+          "reference_annotation_path": "data/annotations/hanoi_master_plan_100y.v1.json",
+          "reference_annotation_sha256": "95e69f0af48e87b7f42acb8552993bcbbad6305c44386d9db35d4cb9d237a3dc",
+          "evaluation_result_path": "data/benchmarks/marker_hanoi_master_plan_100y.v1.json",
+          "evaluation_result_sha256": "25a9fd70bb9d35b539229db6a41741fea7e380d9cbc66267a8c466de3daa920a",
+          "table_object_mapping": {
+            "raw_object_name": "Table",
+            "raw_table_object_count": 0,
+            "physical_ir_kind_counts": {},
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          }
         },
         "mineru": {
-          "wall_clock_seconds": 1607.9058961000005,
+          "parser": "mineru",
+          "parser_version": "3.4.5",
+          "backend": "pipeline",
+          "mode": "pipeline",
+          "configuration": {
+            "device": "cpu"
+          },
+          "source_artifact_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+          "wall_clock_seconds": 1607.9059,
           "pages_per_second": 0.0498,
           "spatial_precision": 0.0195,
           "spatial_recall": 0.1875,
           "spatial_f1": 0.0353,
           "mean_iou": 0.7136,
           "pairwise_order_accuracy": 0.3333,
+          "classification_accuracy_on_matched": 0.3333,
           "run_json_path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/run.json",
+          "run_json_sha256": "4ff13953896f521e86cff623f64cb218dea179efb5448c2e528c4f173659e31c",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source.md",
+              "kind": "markdown",
+              "sha256": "57ad2127afd3c2e43bd88c32de690a6d005536625d2b66b33c3a55ef65dcc4c9",
+              "byte_size": 308780
+            },
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_content_list.json",
+              "kind": "content_list_json",
+              "sha256": "23d24aafd5e13a5babf6344aaa6a0a28ba944da49ca19ca708e7075d4fefc4ec",
+              "byte_size": 518799
+            },
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_content_list_v2.json",
+              "kind": "content_list_v2_json",
+              "sha256": "d3a19945ddf5ff3a9ab28a389af88d6e5bac1c06c25f9b23d0516051d5d31149",
+              "byte_size": 770845
+            },
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_layout.pdf",
+              "kind": "other",
+              "sha256": "fae13d4e4b8c4244689ee48a7339379291c3d13fa2085ba1ec432447001be03e",
+              "byte_size": 9996435
+            },
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_middle.json",
+              "kind": "middle_json",
+              "sha256": "f8bb08cc846b6502a940cd674d10e2bf773dcb388b977acc360a7e8656932cff",
+              "byte_size": 7256419
+            },
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_model.json",
+              "kind": "other",
+              "sha256": "e8a214568c7c7bcdc77a39bdff6fb3040c65e8255a2116028fc66bad5ea1ddf0",
+              "byte_size": 1300246
+            },
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_origin.pdf",
+              "kind": "other",
+              "sha256": "42d26544aeae963fbcd08ec71311c6a173de37966864edff4b69b9344f4eb1de",
+              "byte_size": 2075074
+            },
+            {
+              "path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_span.pdf",
+              "kind": "other",
+              "sha256": "8a2396e77a16c2239bf069c1ab96cbef83fb8a93c1a55c0bbebb7fd2baf01b2d",
+              "byte_size": 9956572
+            }
+          ],
           "physical_ir_path": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json",
-          "benchmark_result_path": "data/benchmarks/mineru_hanoi_master_plan_100y.v1.json"
+          "physical_ir_sha256": "f28fcd11857ed8f269d9a82a08b346ced356590342c412def4d2d3d03663f7c5",
+          "physical_ir_byte_size": 1145258,
+          "reference_annotation_path": "data/annotations/hanoi_master_plan_100y.v1.json",
+          "reference_annotation_sha256": "95e69f0af48e87b7f42acb8552993bcbbad6305c44386d9db35d4cb9d237a3dc",
+          "evaluation_result_path": "data/benchmarks/mineru_hanoi_master_plan_100y.v1.json",
+          "evaluation_result_sha256": "13875ad6fe65d562d8c74199878def1a7d3892a5acb87d5565562611ada43fd4",
+          "table_object_mapping": {
+            "raw_object_name": "table",
+            "raw_table_object_count": 0,
+            "physical_ir_kind_counts": {},
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          }
         }
       }
     },
     {
       "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
       "document_number": "112/2025/QH15",
       "title": "Luật Quy hoạch",
+      "issuer": "Quốc hội",
+      "issued_on": "2025-12-10",
+      "effective_on": "2026-03-01",
+      "signer": "Trần Thanh Mẫn",
       "pages": 52,
-      "byte_size": 1523362,
-      "sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "source_artifact_byte_size": 1523362,
+      "source_artifact_path": "data/golden/luat_112_2025_qh15/v1/source.pdf",
+      "source_artifact_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
       "manifest_path": "data/manifests/luat_112_2025_qh15.v1.yaml",
-      "annotation_path": "data/annotations/luat_112_2025_qh15.v1.json",
+      "reference_annotation_path": "data/annotations/luat_112_2025_qh15.v1.json",
+      "reference_annotation_sha256": "3a5b14b78ac9d23f49a65508b8114c4860169b43e75fbb6897a6592ea651673f",
+      "audited_pages": 10,
+      "reference_regions": 34,
       "runs": {
         "marker": {
-          "wall_clock_seconds": 49.947127600000385,
+          "parser": "marker",
+          "parser_version": "2.0.0",
+          "backend": "fast-no-ocr",
+          "mode": "fast",
+          "configuration": {
+            "disable_ocr": true,
+            "output_format": "json"
+          },
+          "source_artifact_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+          "wall_clock_seconds": 49.9471,
           "pages_per_second": 1.0411,
           "spatial_precision": 0.1507,
           "spatial_recall": 0.6471,
           "spatial_f1": 0.2444,
           "mean_iou": 0.7604,
           "pairwise_order_accuracy": 0.7446,
+          "classification_accuracy_on_matched": 0.6364,
           "run_json_path": "data/golden/luat_112_2025_qh15/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "run_json_sha256": "2e068a61a09e84b90dcaaaf04e96c793a805da2d7e9f46c5c24332a7a83e3ff9",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/luat_112_2025_qh15/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source.json",
+              "kind": "document_json",
+              "sha256": "e176d6f676bad4275ae6a811c12ea5654b35bf747a9093add9ca5f057d776a4c",
+              "byte_size": 1067128
+            },
+            {
+              "path": "data/golden/luat_112_2025_qh15/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source_meta.json",
+              "kind": "metadata_json",
+              "sha256": "f6bf1ed9a64dec9dfdf6f203f3969daa00bdf11faaf56d3cdbd92f9201497c57",
+              "byte_size": 69739
+            }
+          ],
           "physical_ir_path": "data/golden/luat_112_2025_qh15/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
-          "benchmark_result_path": "data/benchmarks/marker_luat_112_2025_qh15.v1.json"
+          "physical_ir_sha256": "5b58e46a1815064ac250bcb6f90bd835a9c71d479cb756b59464bd01cc414ed0",
+          "physical_ir_byte_size": 723367,
+          "reference_annotation_path": "data/annotations/luat_112_2025_qh15.v1.json",
+          "reference_annotation_sha256": "3a5b14b78ac9d23f49a65508b8114c4860169b43e75fbb6897a6592ea651673f",
+          "evaluation_result_path": "data/benchmarks/marker_luat_112_2025_qh15.v1.json",
+          "evaluation_result_sha256": "25e7e68911874bd1b16520fc7e3a62c9e7e339a0b5866f3a7a725199471e41c7",
+          "table_object_mapping": {
+            "raw_object_name": "Table",
+            "raw_table_object_count": 3,
+            "physical_ir_kind_counts": {
+              "unknown": 3
+            },
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          }
         }
       }
     },
     {
       "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
       "document_number": "103/VBHN-VPQH",
       "title": "Văn bản hợp nhất Nghị quyết về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050",
+      "issuer": "Văn phòng Quốc hội",
+      "issued_on": "2026-04-22",
+      "effective_on": null,
+      "signer": "Bùi Văn Cường",
       "pages": 48,
-      "byte_size": 1169934,
-      "sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "source_artifact_byte_size": 1169934,
+      "source_artifact_path": "data/golden/vbhn_103_2026_quy_hoach_tong_the/v1/source.pdf",
+      "source_artifact_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
       "manifest_path": "data/manifests/vbhn_103_2026_quy_hoach_tong_the.v1.yaml",
-      "annotation_path": "data/annotations/vbhn_103_2026_quy_hoach_tong_the.v1.json",
+      "reference_annotation_path": "data/annotations/vbhn_103_2026_quy_hoach_tong_the.v1.json",
+      "reference_annotation_sha256": "57130a943ee1501eddc462ba4d20a8a93d0d59a58d5465ccc23ed5813a2ac305",
+      "audited_pages": 8,
+      "reference_regions": 27,
       "runs": {
         "marker": {
-          "wall_clock_seconds": 43.394605699999374,
+          "parser": "marker",
+          "parser_version": "2.0.0",
+          "backend": "fast-no-ocr",
+          "mode": "fast",
+          "configuration": {
+            "disable_ocr": true,
+            "output_format": "json"
+          },
+          "source_artifact_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+          "wall_clock_seconds": 43.3946,
           "pages_per_second": 1.1061,
           "spatial_precision": 0.1881,
           "spatial_recall": 0.7037,
           "spatial_f1": 0.2969,
           "mean_iou": 0.7849,
           "pairwise_order_accuracy": 0.7544,
+          "classification_accuracy_on_matched": 0.4211,
           "run_json_path": "data/golden/vbhn_103_2026_quy_hoach_tong_the/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "run_json_sha256": "31e16e29f7fa8d90268e6a1852ee1145267bee1ec52e17fe844cd4af73f8f01e",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/vbhn_103_2026_quy_hoach_tong_the/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source.json",
+              "kind": "document_json",
+              "sha256": "abf65c16dbaf16fd45f26d5b50ad15e3dd6477cafd8d9968dee21a4126e99813",
+              "byte_size": 712758
+            },
+            {
+              "path": "data/golden/vbhn_103_2026_quy_hoach_tong_the/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source_meta.json",
+              "kind": "metadata_json",
+              "sha256": "f83951dc5546b2e4043d40826e3b8c6ba45bda31b05b0cff7c33caabb96858a7",
+              "byte_size": 56623
+            }
+          ],
           "physical_ir_path": "data/golden/vbhn_103_2026_quy_hoach_tong_the/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
-          "benchmark_result_path": "data/benchmarks/marker_vbhn_103_2026_quy_hoach_tong_the.v1.json"
+          "physical_ir_sha256": "e70fe40d84540bf73cdd3e1999227b6fc028c697c4a473ab827bbac76763fb70",
+          "physical_ir_byte_size": 534686,
+          "reference_annotation_path": "data/annotations/vbhn_103_2026_quy_hoach_tong_the.v1.json",
+          "reference_annotation_sha256": "57130a943ee1501eddc462ba4d20a8a93d0d59a58d5465ccc23ed5813a2ac305",
+          "evaluation_result_path": "data/benchmarks/marker_vbhn_103_2026_quy_hoach_tong_the.v1.json",
+          "evaluation_result_sha256": "9947bcc13ea5045cd31a332f7662d6d65e346c205b821f5ab217095b6065dd8b",
+          "table_object_mapping": {
+            "raw_object_name": "Table",
+            "raw_table_object_count": 1,
+            "physical_ir_kind_counts": {
+              "unknown": 1
+            },
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          }
         }
       }
     },
     {
       "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
       "document_number": "04/2026/TT-BXD/PL2",
       "title": "Định mức dự toán bảo dưỡng công trình đường sắt cầu Thăng Long và tuyến Bắc Hồng - Văn Điển",
+      "issuer": "Bộ Xây dựng",
+      "issued_on": "2026-01-30",
+      "effective_on": "2026-02-01",
+      "signer": "Nguyễn Danh Huy",
       "pages": 19,
-      "byte_size": 345504,
-      "sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "source_artifact_byte_size": 345504,
+      "source_artifact_path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/source.pdf",
+      "source_artifact_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
       "manifest_path": "data/manifests/tt_04_2026_bxd_pl2_dinh_muc.v1.yaml",
-      "annotation_path": "data/annotations/tt_04_2026_bxd_pl2_dinh_muc.v1.json",
+      "reference_annotation_path": "data/annotations/tt_04_2026_bxd_pl2_dinh_muc.v1.json",
+      "reference_annotation_sha256": "65051c812d3bfe22d39bc3402730a79d385d3c6028b9f66e7e372e5c6132e95d",
+      "audited_pages": 6,
+      "reference_regions": 11,
       "runs": {
         "marker": {
-          "wall_clock_seconds": 22.01520090000122,
+          "parser": "marker",
+          "parser_version": "2.0.0",
+          "backend": "fast-no-ocr",
+          "mode": "fast",
+          "configuration": {
+            "disable_ocr": true,
+            "output_format": "json"
+          },
+          "source_artifact_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+          "wall_clock_seconds": 22.0152,
           "pages_per_second": 0.863,
           "spatial_precision": 0.2258,
           "spatial_recall": 0.6364,
           "spatial_f1": 0.3333,
           "mean_iou": 0.7871,
           "pairwise_order_accuracy": 0.7143,
+          "classification_accuracy_on_matched": 0.0,
           "run_json_path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "run_json_sha256": "f7d243967e824ecdebb24fcf6be4cc9102cc81af8e95c62a19ee39667b49e1fc",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source.json",
+              "kind": "document_json",
+              "sha256": "96c4c58a18f21b10bcf2c8522dab15a06a1dfbaf3f7f42f8a715adf202542e2e",
+              "byte_size": 325122
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source_meta.json",
+              "kind": "metadata_json",
+              "sha256": "74383a5e980822f06f96aed3000050c1156d521a9d0ac565e1405c12c5c6f3c2",
+              "byte_size": 37678
+            }
+          ],
           "physical_ir_path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
-          "benchmark_result_path": "data/benchmarks/marker_tt_04_2026_bxd_pl2_dinh_muc.v1.json"
+          "physical_ir_sha256": "265cf27c4456e5c647f608f38f128064a8ddba9443548d69f81198e3baf83654",
+          "physical_ir_byte_size": 139489,
+          "reference_annotation_path": "data/annotations/tt_04_2026_bxd_pl2_dinh_muc.v1.json",
+          "reference_annotation_sha256": "65051c812d3bfe22d39bc3402730a79d385d3c6028b9f66e7e372e5c6132e95d",
+          "evaluation_result_path": "data/benchmarks/marker_tt_04_2026_bxd_pl2_dinh_muc.v1.json",
+          "evaluation_result_sha256": "c0e105bfd706815d0fc78d535d60362da98829cd89ab9a25123a4ca75e9e6bd0",
+          "table_object_mapping": {
+            "raw_object_name": "Table",
+            "raw_table_object_count": 27,
+            "physical_ir_kind_counts": {
+              "unknown": 27
+            },
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          }
         },
         "mineru": {
-          "wall_clock_seconds": 125.24927839999873,
+          "parser": "mineru",
+          "parser_version": "3.4.5",
+          "backend": "pipeline",
+          "mode": "pipeline",
+          "configuration": {
+            "device": "cpu"
+          },
+          "source_artifact_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+          "wall_clock_seconds": 125.2493,
           "pages_per_second": 0.1517,
           "spatial_precision": 0.2059,
           "spatial_recall": 0.6364,
           "spatial_f1": 0.3111,
           "mean_iou": 0.7311,
           "pairwise_order_accuracy": 0.7619,
+          "classification_accuracy_on_matched": 0.1429,
           "run_json_path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/run.json",
+          "run_json_sha256": "ef0edc54d80fce7b68685d2922bba82a78db853c8bb58047423b861e725c380c",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/0f129c8420db38272a50b3907b6cb01ba70189c5f10848b565627c7990ab2cad.jpg",
+              "kind": "image",
+              "sha256": "69de6407b05156791589a44a631de0d8a5390b21ab4733ee47377bf5244ed3cd",
+              "byte_size": 71085
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/132c281b9d692a39e12563251c2e0d4ce526f6ebd1983f9fd9ed19f71f8772aa.jpg",
+              "kind": "image",
+              "sha256": "efc3a2dde1e67d87211151158cb7f1ac5d798e1499a1ec28434dbf53eec28612",
+              "byte_size": 274657
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/1adf7d92e7f773eb9a45d40dd40a3fd74ad6d875b82a5d630f8ee611568aba51.jpg",
+              "kind": "image",
+              "sha256": "1958b4f70b4ba9d205144d13fbf2ac36186dc8c457823405bf57b0281f4a6d53",
+              "byte_size": 70040
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/1b8e64c8f98544e4fde6a00af2eda31c94590302d627ec4fc2d9738922546f1b.jpg",
+              "kind": "image",
+              "sha256": "ad34e54068eba06dc3d9569874de41dacf2a9ed0a8f64de7e4db07dbbecc906e",
+              "byte_size": 40497
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/24f0fb97114db1504b09053ee3501f86272fcce8e790519c66fed5397887b026.jpg",
+              "kind": "image",
+              "sha256": "aba854adb9ffcd90b678e06752deb005992f56fa584e58a68d0a805c79c096f7",
+              "byte_size": 74144
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/28d4b30daeb686e9502f17d810ec7eb545490b80a43f2f9361c3ab642cd5c289.jpg",
+              "kind": "image",
+              "sha256": "5206570fb9ed03c324f4a9a2b51c8bd407ae0f911006329940c842462b7e16ee",
+              "byte_size": 339353
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/35b49aa707c58a202e99dccb678e6c9b344ec0d1b7d39ee55b9c49fe10902aea.jpg",
+              "kind": "image",
+              "sha256": "89e0502bf0ae3355fad1904f1b4ffe83d0e46bbdf1d7db9b7e862a7daa2e0bf9",
+              "byte_size": 59326
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/373e47be67c110cccf5586c544b615af6e8e3ff2a8be63a0e4be54863384362e.jpg",
+              "kind": "image",
+              "sha256": "b6e169b01706596cf9a53e3dfbf32dd339080a24bfa872d7091e2ba077aa64ee",
+              "byte_size": 138151
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/39ea9421b5221ac64089bc07d2b10e0b0fa050e71694c9437f55fc55b5c68524.jpg",
+              "kind": "image",
+              "sha256": "66186f3e56dd69f836d0ff907bbe9c7a7749cfa037f838e1677750619d2192d3",
+              "byte_size": 54920
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/3f335bd72d981c7debc0cd295d08a915d1a4924d76d1cb0309f95846aad61f62.jpg",
+              "kind": "image",
+              "sha256": "9802b0075f360e3ef849b0a761fb73bcdb53159b2f68d117dc920e9273f37794",
+              "byte_size": 58314
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/425cf1c4fdddaab76baef9ef5b26f2ac8f2e711172bfa9c51643eeead30b371f.jpg",
+              "kind": "image",
+              "sha256": "6f97bd8a1b958df1257a32c32568fddf83955c483d64ca53c4a2c790af30d9dd",
+              "byte_size": 124519
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/58cd56640ecc79fac4bd093241d40beb1c7112b1889271463016466744296374.jpg",
+              "kind": "image",
+              "sha256": "680e25b449bc39fd05ecccde65cfcaaa0ac215642192322a8d993a5e7bc3315c",
+              "byte_size": 173005
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/808a2197d53a795c2798149916ef6b26bae39d1553999a5881d0405214dfa952.jpg",
+              "kind": "image",
+              "sha256": "92691d7aa6d3010608a6047b52aca7495c509ae5b579454efadd1af4c2d11f8a",
+              "byte_size": 63683
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/836ca0607b4c34dd3e03dc0d38f0da96534d3f8fac6bcf5fe82f17eaecacd2a6.jpg",
+              "kind": "image",
+              "sha256": "74f9b430b70da2a8ff9f730c2c7f1c8eb14f4b2ab52a41349ab68ecece6c674c",
+              "byte_size": 58421
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/8533bdd642d878346cae9b9448dac2f02ab00cbbd98b9806b9ab6f6c932e39d8.jpg",
+              "kind": "image",
+              "sha256": "cd0d86ef97b08135e4c6d12843dd72869ab1fcd3aa2583914f30c1fe658de159",
+              "byte_size": 46922
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/8d2be3b3fa97024d3971e8a05f27efef96c73c3fbbe395b21c6e102b6fb32aa6.jpg",
+              "kind": "image",
+              "sha256": "cda0857401fd838176ed7bd8350ac66e065700dd208f27ef493631c83c3d5d93",
+              "byte_size": 46063
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/976705681f13fe12769518a2c4c214b661629ffaed1c39d1f136b2dbf0ce7834.jpg",
+              "kind": "image",
+              "sha256": "68b95aed01e7154b67ade9949f65bc8c9495dfc2eabaf6cfc380e31b84fcf978",
+              "byte_size": 50855
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/9c9d3d18bbd3ead567e43aea67a7f5bb3ad793d7051344a956a52e8004d01fbd.jpg",
+              "kind": "image",
+              "sha256": "7e85d7b611664b9733524153c2031d3fc25cadf2ccac3503f954b98bcff08e60",
+              "byte_size": 40376
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/a56534d3e538061b3d6b47f65bc622a78cfb0c3e76901413a6815f076272d289.jpg",
+              "kind": "image",
+              "sha256": "d1407deeffc628c6ed7c4a636008ffcdbe5a75dc5a0475254f1a6e709bd17b47",
+              "byte_size": 65916
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/b7b238808e86fbb7ec6ae1bde7112603b7649b4fcc220aed553ad81855628441.jpg",
+              "kind": "image",
+              "sha256": "f93fa40c5351c143e183f7c38e56d709397c98f05132251f2ad1aff27c1cb748",
+              "byte_size": 355445
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/ba6f3e7d3f6c7aeae754ebda50922a432dbba1a8b9922f7e88636874fc89f8c5.jpg",
+              "kind": "image",
+              "sha256": "05a90aca9a6c638db8244ca504c2a506baa3d56c33c3ad6782e7de4431dd5032",
+              "byte_size": 68426
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/c17a033a728afd3fccb8425425afed3c97e730cb3e61be2451c8c6966b70f43b.jpg",
+              "kind": "image",
+              "sha256": "0aea8e1d2995b02d160313c7f47752936cccdfdf2b3f183ecd5623919f1be94d",
+              "byte_size": 41616
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/c1c654c27075b271b768863ee23d1e10f2b1339e674bace610504b1add07532a.jpg",
+              "kind": "image",
+              "sha256": "c9f1224d5d00c2527701c6e6160f7cbb75739ed8b302ca911f934b392ad26f59",
+              "byte_size": 52808
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/d6b2a1237bf778c7e989a5dfbb9541dbd14c5964278248a22bf006f9a58a2efd.jpg",
+              "kind": "image",
+              "sha256": "0a283ca112510a886f635f22c4fe1dc7f8bf9d1e485a05dfd7387e03070464be",
+              "byte_size": 72185
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/da7d210e74e1577d96ed9a1d5b7f6319a90d9a8261696a80ccb7f0a534b39bb1.jpg",
+              "kind": "image",
+              "sha256": "2dee7cc31187d9be3c46ac56a650511b9ad0b914233382fd8eb40aa5a383c826",
+              "byte_size": 97839
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/e6291aa6fbc4d8c9ebcf469a78b3a2800a8bee925693e9799c43f009585f457c.jpg",
+              "kind": "image",
+              "sha256": "dab1df3b8b0451d48dc7bff59a673142580288f16c82efee13cca9c159b948b3",
+              "byte_size": 56514
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/fa7024b0028b8428852c207389285fbb3525a756ad031439b659e74f5aa634d0.jpg",
+              "kind": "image",
+              "sha256": "adc1f76b5ac3e09662d5e1a78571120494596a0af7e13132194008692d24b87c",
+              "byte_size": 51084
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source.md",
+              "kind": "markdown",
+              "sha256": "6e5f1825954b556e4403053fb5b0406a61d303e07a5664b914cb5ebc1b840916",
+              "byte_size": 56602
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_content_list.json",
+              "kind": "content_list_json",
+              "sha256": "1442f71de6f32449d260bc0db4c46f61ed17e2e3dcbf925b8eec34b5c50fcf86",
+              "byte_size": 92800
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_content_list_v2.json",
+              "kind": "content_list_v2_json",
+              "sha256": "fd8021d07900fb570e5d10a3270f25645bf7fe383c634bd19dd1091a377ecf73",
+              "byte_size": 141991
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_layout.pdf",
+              "kind": "other",
+              "sha256": "48f998cc88669d7c4377318c1dab08f88e0f11a8c6a8d6567461ac3d1eb95faa",
+              "byte_size": 775732
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_middle.json",
+              "kind": "middle_json",
+              "sha256": "ed7ed47a713cc88a97119aef157931e615fb790265b19f74c89fe11866e645b8",
+              "byte_size": 810089
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_model.json",
+              "kind": "other",
+              "sha256": "f33b7760b43d173762c39250f7a3d56603588de70e2bdbe2efcfe89e90008f68",
+              "byte_size": 173159
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_origin.pdf",
+              "kind": "other",
+              "sha256": "d15aede5d69401a21e1fcbebb797c624bc7e37f9669630feee3fcfe328a8271e",
+              "byte_size": 343627
+            },
+            {
+              "path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_span.pdf",
+              "kind": "other",
+              "sha256": "1f57a4a6987d26506f98c2ba012b3374fc2497c9dc63321ea12896ea5690ae43",
+              "byte_size": 763290
+            }
+          ],
           "physical_ir_path": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json",
-          "benchmark_result_path": "data/benchmarks/mineru_tt_04_2026_bxd_pl2_dinh_muc.v1.json"
+          "physical_ir_sha256": "f91c8a15fde0bc6bdf83873e3dcea96343c368931078fcf83d7a0f57c1a3ca9c",
+          "physical_ir_byte_size": 138451,
+          "reference_annotation_path": "data/annotations/tt_04_2026_bxd_pl2_dinh_muc.v1.json",
+          "reference_annotation_sha256": "65051c812d3bfe22d39bc3402730a79d385d3c6028b9f66e7e372e5c6132e95d",
+          "evaluation_result_path": "data/benchmarks/mineru_tt_04_2026_bxd_pl2_dinh_muc.v1.json",
+          "evaluation_result_sha256": "7457b41fa1b891b71da4092b711c0c245b6283db5d4817544695f6e71e89514e",
+          "table_object_mapping": {
+            "raw_object_name": "table",
+            "raw_table_object_count": 27,
+            "physical_ir_kind_counts": {
+              "unknown": 27
+            },
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          }
         }
       }
     },
     {
       "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
       "document_number": "04/2023/TT-BKHĐT",
       "title": "Hướng dẫn yêu cầu nội dung và kỹ thuật cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "issuer": "Bộ Kế hoạch và Đầu tư",
+      "issued_on": "2023-06-26",
+      "effective_on": "2023-08-10",
+      "signer": "Trần Quốc Phương",
       "pages": 47,
-      "byte_size": 2024373,
-      "sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "source_artifact_byte_size": 2024373,
+      "source_artifact_path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/source.pdf",
+      "source_artifact_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
       "manifest_path": "data/manifests/tt_04_2023_bkhdt_so_do_ban_do.v1.yaml",
-      "annotation_path": "data/annotations/tt_04_2023_bkhdt_so_do_ban_do.v1.json",
+      "reference_annotation_path": "data/annotations/tt_04_2023_bkhdt_so_do_ban_do.v1.json",
+      "reference_annotation_sha256": "09092f90678108d4ed20dcbfddc7349c7dea8a62f3c1eb906f694e149011ddbc",
+      "audited_pages": 8,
+      "reference_regions": 22,
       "runs": {
         "marker": {
-          "wall_clock_seconds": 40.2256578000015,
+          "parser": "marker",
+          "parser_version": "2.0.0",
+          "backend": "fast-no-ocr",
+          "mode": "fast",
+          "configuration": {
+            "disable_ocr": true,
+            "output_format": "json"
+          },
+          "source_artifact_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+          "wall_clock_seconds": 40.2257,
           "pages_per_second": 1.1684,
           "spatial_precision": 0.25,
-          "spatial_recall": 0.6667,
-          "spatial_f1": 0.3636,
-          "mean_iou": 0.8354,
-          "pairwise_order_accuracy": 0.6667,
+          "spatial_recall": 0.7273,
+          "spatial_f1": 0.3721,
+          "mean_iou": 0.8501,
+          "pairwise_order_accuracy": 0.8,
+          "classification_accuracy_on_matched": 0.5625,
           "run_json_path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "run_json_sha256": "d8fe8e3d39bc6930539ba5257ed58bfba99735cd4b2255e1082ad3cd282dd8f9",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source.json",
+              "kind": "document_json",
+              "sha256": "152a50799510ef272d5b47406125611ec9d53994cf04e8f09db0e958c748702a",
+              "byte_size": 1192275
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source_meta.json",
+              "kind": "metadata_json",
+              "sha256": "6f6490cb08ca4fa91d4fb073f306a4edf8d8651672bf58469852e3d5c860e1dc",
+              "byte_size": 51549
+            }
+          ],
           "physical_ir_path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
-          "benchmark_result_path": "data/benchmarks/marker_tt_04_2023_bkhdt_so_do_ban_do.v1.json"
+          "physical_ir_sha256": "2c5aa538023d7043c9d07b279db24f8da12b89a70e2de78845049305c566041a",
+          "physical_ir_byte_size": 367749,
+          "reference_annotation_path": "data/annotations/tt_04_2023_bkhdt_so_do_ban_do.v1.json",
+          "reference_annotation_sha256": "09092f90678108d4ed20dcbfddc7349c7dea8a62f3c1eb906f694e149011ddbc",
+          "evaluation_result_path": "data/benchmarks/marker_tt_04_2023_bkhdt_so_do_ban_do.v1.json",
+          "evaluation_result_sha256": "c3690c5fde79645564d349c3b9b06f86ce6f42a835d7871fada0f3cb784c1e5b",
+          "table_object_mapping": {
+            "raw_object_name": "Table",
+            "raw_table_object_count": 24,
+            "physical_ir_kind_counts": {
+              "unknown": 24
+            },
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          },
+          "layout_diagram_object_mapping": {
+            "page_index": 21,
+            "raw_object_type_counts": {
+              "Figure": 1
+            },
+            "physical_ir_kind_counts": {
+              "unknown": 1
+            }
+          }
         },
         "mineru": {
-          "wall_clock_seconds": 418.11074550000194,
+          "parser": "mineru",
+          "parser_version": "3.4.5",
+          "backend": "pipeline",
+          "mode": "pipeline",
+          "configuration": {
+            "device": "cpu"
+          },
+          "source_artifact_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+          "wall_clock_seconds": 418.1107,
           "pages_per_second": 0.1124,
           "spatial_precision": 0.25,
-          "spatial_recall": 0.6667,
-          "spatial_f1": 0.3636,
-          "mean_iou": 0.7262,
-          "pairwise_order_accuracy": 0.425,
+          "spatial_recall": 0.7273,
+          "spatial_f1": 0.3721,
+          "mean_iou": 0.7413,
+          "pairwise_order_accuracy": 0.3833,
+          "classification_accuracy_on_matched": 0.625,
           "run_json_path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/run.json",
+          "run_json_sha256": "9862da7834528bea0f0690e7d70f74faecc9a23d188df6d7ab42c051773f1ae9",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/03f1e58a92b9c8f02bd3a9be27dc4a3f1239888e42bd4cd7c7beaa4b9c0cc800.jpg",
+              "kind": "image",
+              "sha256": "8f38a8b2178d73683312ae1d3b4e240f3ea78b24cfbff57a60faaa0aaed16b61",
+              "byte_size": 215363
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/094fad2dbba011977e22c99608b0ea8e617d15414f7249d26393be9d27476224.jpg",
+              "kind": "image",
+              "sha256": "50c3a587cc106cf53c61b539cb2c5e9cb8ce7423c2ab60156f27345364b41d4b",
+              "byte_size": 268945
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/0e5bd06d5dbb3024c10eaf969b78e8ea9ef5bcfe9d6ebeacee6488a0481ff762.jpg",
+              "kind": "image",
+              "sha256": "44a7ce92639df676cad7d514ca5bac5dda8458678edb4f7148277d812a90e3e1",
+              "byte_size": 232534
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/25b4bb9d9a29ae72d1ab7179720baf6b9a3db2e2ccbba1595f75aa9c09a07399.jpg",
+              "kind": "image",
+              "sha256": "98a459c3f21b14cb68e3c6da9bf6a0bdd1705adb2e219c5d3dc2057a31526369",
+              "byte_size": 172145
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/3cc97ef59162ad659cc9f3dc73bb156d5d96900f8a6025735e38743453b44b9c.jpg",
+              "kind": "image",
+              "sha256": "4d96151ef137b24df7c7f9d025ce65aac214e26d5d87d0af4fd9ea57ba732e18",
+              "byte_size": 209153
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/4185af08c3df0ee5a9ea6e4901e0bc135bb962d15148beba6b1259704ac5a6d8.jpg",
+              "kind": "image",
+              "sha256": "5e3f7797853db9152f83a7dc801c1cb571211f4a33e9a1e884f877126e8a0273",
+              "byte_size": 44194
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/430b09ed05e39f85725edc06b016f18eda79c74869b536ae81801187b250ba1f.jpg",
+              "kind": "image",
+              "sha256": "41474b35c757d05d438295b3d4638efb2f1cddceafd71fc7c19dc57d9ffcbfb2",
+              "byte_size": 90608
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/60941d5510d76e4367d6fb1a48dc3c2b1ac41b96a9ab48332e13fbfdf735b585.jpg",
+              "kind": "image",
+              "sha256": "560a40de6c8d5cc9279bd96238e7334ab83e907ace2ed10ab7ccc0c76b0b52d4",
+              "byte_size": 248322
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/672cfe4f4fdad9641052bb4f198c543a919a272b4c49c7d690e39195b4bbac69.jpg",
+              "kind": "image",
+              "sha256": "da74719415b4702402bb41fd028dda39bec30454b5ff3021dcae2ed1d4abf36f",
+              "byte_size": 312273
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/7353ebe1a6e6de54fea095f00a5e2aeb2141a51cacc60bfc83343f72e472b2ec.jpg",
+              "kind": "image",
+              "sha256": "342dca727460e98159aaa94fc6cd8134d0df1d7c5b71a3072b96aae67f27d4cd",
+              "byte_size": 238056
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/75a81670f34cfb5f7470cdaf0fbd329f67d95ffea4820452b8e9795d5c20561f.jpg",
+              "kind": "image",
+              "sha256": "757a296906ab1732a3ed0e9a1d571ec01c0552672fd5468db91cc980ba741e4a",
+              "byte_size": 21983
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/82e72b21a546b2f8392a8b2493d08cf13da558582f637f3b235c2d5324a27d16.jpg",
+              "kind": "image",
+              "sha256": "64eeec87887876f1aad623772bf12a44080bd3102a84c65c70095353143d209a",
+              "byte_size": 213982
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/a39dcdd4b0160de9112687a0b53ad2c2fa316b5046a7d0c86cd1d12d3c58df90.jpg",
+              "kind": "image",
+              "sha256": "0c7867847da725c3bb069bf870ba4b6687bf44a452a31f3c89d5d0e69489cabf",
+              "byte_size": 215807
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/b6a75d635a993e62455fc79cc24910ccabde0b067c4c168c7b5d480d89136426.jpg",
+              "kind": "image",
+              "sha256": "5f5bd687cf3d8dfbb69c2180f9e9aa8bd4ae5665cceee652ba3672e340e7ea99",
+              "byte_size": 298681
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/c5e37661f769e412ea5de86b2a7436f78fa38f7c01d7057ec966efc08842fbf8.jpg",
+              "kind": "image",
+              "sha256": "567e9d33160d0135343669ca44b4bdca7ce92f87488aad365ca9b1b7005cf95c",
+              "byte_size": 93509
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/cb24c01729a4b6329718e744849c2201a414f2cf13a74a16a76ea8fd21105294.jpg",
+              "kind": "image",
+              "sha256": "fe5a6a9650969223f5fdbb664ce4f25d1c8c20746a133732ea2bb57cfd92bcb1",
+              "byte_size": 40793
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/d100ccb4fc87a07474f6a0c90b9cfc7acc31245fffd6c73bc052b58ae8a8f2f8.jpg",
+              "kind": "image",
+              "sha256": "39b1b28e7e60c9825ae4d7e7a4122589980a9d55ee176e7fba1251a41b971ae9",
+              "byte_size": 235309
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/dcf1eefc46c7ab171bb56d3306d6cc5df098611275ab991057f0d5f87ae17463.jpg",
+              "kind": "image",
+              "sha256": "87b00f5de2078be4d3511d8ccb5b2116beaacac4c8a6cef7b0f554c7ce62c276",
+              "byte_size": 40223
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/eb676983422882719f278d6f3c664e8b0a7b052d3665abe8cea11ca0b94f5921.jpg",
+              "kind": "image",
+              "sha256": "2cbbddb6c3e4d364bf8020bfc7f0581e82ffe8643f2ba9bf70edccfa97fc2bd0",
+              "byte_size": 48613
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/edb7f71efcbc3de71a54cc0fd4a231ca2c5773a252a9505355fe686e436001f6.jpg",
+              "kind": "image",
+              "sha256": "c26ea30891fe6915e2110f1ff44c3d78b34e118f12cefa9346970200348808db",
+              "byte_size": 256574
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/f45bae059002cc17fa82042ad58b782fb2826c902c8f6a60fc7158b580ecccda.jpg",
+              "kind": "image",
+              "sha256": "d329d1d7ba484a60c6c9c8da2d6543bad68b274f8a250626ef36c44cfd1c20ee",
+              "byte_size": 243640
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/f7dddff96db3e45da51f4f2e144492e2d3ad2417a596c9783edbb72836e0e3c2.jpg",
+              "kind": "image",
+              "sha256": "5fae74d7b0f07a79dd939db07d0b3d5ba961f80b1919297c6958da44c854e59e",
+              "byte_size": 58109
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/f88e16b9e25bf0e53ef30b9b300070c75666772380332718a656b82e530e1849.jpg",
+              "kind": "image",
+              "sha256": "9dfaacdcd9646b0bb1fe9394960287bf49472963722351ffe79880381b6f3973",
+              "byte_size": 114614
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/fc29cba69ca48846d8b2dc45c48666172702578a1fb69d410f01c38315d244b7.jpg",
+              "kind": "image",
+              "sha256": "5f1b3432fc754f4a3deb36aba7c26bd46593dd1da2cc0ff967fdb140307cb801",
+              "byte_size": 200887
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/fd85bbccea4b3320c981168f07f1a47eabd1bc3b131830fffbebf9c6a539fc1c.jpg",
+              "kind": "image",
+              "sha256": "208485bb148a1b4a6e3a694c2a1918972c955569204bec2cafcbed07c0c4f690",
+              "byte_size": 289259
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source.md",
+              "kind": "markdown",
+              "sha256": "5f62f14ff7b50b80e5b6b4d087285de440a365e354941709da54e5ee10587dcf",
+              "byte_size": 139214
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_content_list.json",
+              "kind": "content_list_json",
+              "sha256": "f32495cb5f395719b5f18fe7d30b09f97141ae2b5c475173ad0624e9fd46fb6f",
+              "byte_size": 215444
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_content_list_v2.json",
+              "kind": "content_list_v2_json",
+              "sha256": "a1bce26b0bd589d349f4ccc78907149e7a71eba434ba2aaa7c1a2f1c5633c73d",
+              "byte_size": 299470
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_layout.pdf",
+              "kind": "other",
+              "sha256": "f2187a64a6d3d60498ce5983a8a1e267db507f60c42cc87af04dcda5bda869d8",
+              "byte_size": 3072335
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_middle.json",
+              "kind": "middle_json",
+              "sha256": "0a8ca6e1742f17ea4b0d3daf658e9deca0576df917df88eb81bad0c744cd1d09",
+              "byte_size": 1942370
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_model.json",
+              "kind": "other",
+              "sha256": "bf9c14f13c9f15ff2ae449a2f86aab249cea42f849e95dc5dcef6239cc158935",
+              "byte_size": 425901
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_origin.pdf",
+              "kind": "other",
+              "sha256": "38bab963593216d704da2ac7dc143fc55fe6774b68cf2e11f982d0e127589eba",
+              "byte_size": 2020268
+            },
+            {
+              "path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_span.pdf",
+              "kind": "other",
+              "sha256": "f4975f9d54a2f5b3238d09eead841c50076b9ecc9dad21ea4688bb54887d8965",
+              "byte_size": 3054856
+            }
+          ],
           "physical_ir_path": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json",
-          "benchmark_result_path": "data/benchmarks/mineru_tt_04_2023_bkhdt_so_do_ban_do.v1.json"
+          "physical_ir_sha256": "9b0341ae5568f39ba6048f171dbdcea3e5fb2aa43484b1e236f4fd0a7f3ec642",
+          "physical_ir_byte_size": 339239,
+          "reference_annotation_path": "data/annotations/tt_04_2023_bkhdt_so_do_ban_do.v1.json",
+          "reference_annotation_sha256": "09092f90678108d4ed20dcbfddc7349c7dea8a62f3c1eb906f694e149011ddbc",
+          "evaluation_result_path": "data/benchmarks/mineru_tt_04_2023_bkhdt_so_do_ban_do.v1.json",
+          "evaluation_result_sha256": "390903d9bdfe9c3f6360a48b37df4d75920bd7ca82495b53ae0a424af5ef43f4",
+          "table_object_mapping": {
+            "raw_object_name": "table",
+            "raw_table_object_count": 25,
+            "physical_ir_kind_counts": {
+              "unknown": 25
+            },
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          },
+          "layout_diagram_object_mapping": {
+            "page_index": 21,
+            "raw_object_type_counts": {
+              "table": 1
+            },
+            "physical_ir_kind_counts": {
+              "unknown": 1
+            }
+          }
         }
       }
     },
     {
       "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "version_id": "v1",
       "document_number": "23/2008/QĐ-UBND",
       "title": "Thành lập Viện Quy hoạch Xây dựng Hà Nội",
+      "issuer": "Ủy ban nhân dân thành phố Hà Nội",
+      "issued_on": "2008-09-29",
+      "effective_on": "2008-10-09",
+      "signer": "Nguyễn Thế Thảo",
       "pages": 4,
-      "byte_size": 140726,
-      "sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+      "source_artifact_byte_size": 140726,
+      "source_artifact_path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/source.pdf",
+      "source_artifact_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
       "manifest_path": "data/manifests/qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.yaml",
-      "annotation_path": "data/annotations/qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json",
+      "reference_annotation_path": "data/annotations/qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json",
+      "reference_annotation_sha256": "f84bb358b5c6f3e01aa2f13cf36bde5693e6bc5f8c584dad252761c8d0938d01",
+      "audited_pages": 4,
+      "reference_regions": 0,
       "runs": {
         "marker": {
-          "wall_clock_seconds": 16.49949750000087,
+          "parser": "marker",
+          "parser_version": "2.0.0",
+          "backend": "fast-no-ocr",
+          "mode": "fast",
+          "configuration": {
+            "disable_ocr": true,
+            "output_format": "json"
+          },
+          "source_artifact_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+          "wall_clock_seconds": 16.4995,
           "pages_per_second": 0.2424,
           "spatial_precision": 0.0,
           "spatial_recall": 0.0,
           "spatial_f1": 0.0,
           "mean_iou": 0.0,
           "pairwise_order_accuracy": null,
+          "classification_accuracy_on_matched": 0.0,
           "run_json_path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/marker/2.0.0/fast-no-ocr/run.json",
+          "run_json_sha256": "36b998c0b50839d0f7c421777b0902f89d797a50e8ee6c173218e5db4e538c62",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source.json",
+              "kind": "document_json",
+              "sha256": "59c13e5e2176d3f244ba3b0f174c21e154216aee446f05adc2f76196934ee561",
+              "byte_size": 116312
+            },
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw/source/source_meta.json",
+              "kind": "metadata_json",
+              "sha256": "c029a7ddeecbb171322f7935445c58d45d8f0c27c604b5c8334d1a3ce764f86b",
+              "byte_size": 7997
+            }
+          ],
           "physical_ir_path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/marker/2.0.0/fast-no-ocr/normalized/physical_ir.json",
-          "benchmark_result_path": "data/benchmarks/marker_qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json"
+          "physical_ir_sha256": "e9afc5c92d3133a05f06b797bd82fa149ce1875dbdec251c3e4e27706b84b1b4",
+          "physical_ir_byte_size": 53740,
+          "reference_annotation_path": "data/annotations/qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json",
+          "reference_annotation_sha256": "f84bb358b5c6f3e01aa2f13cf36bde5693e6bc5f8c584dad252761c8d0938d01",
+          "evaluation_result_path": "data/benchmarks/marker_qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json",
+          "evaluation_result_sha256": "9573906607837a2a46924b0da74ae5cb8f18a745b90ccf5db4c605d0c31b3633",
+          "table_object_mapping": {
+            "raw_object_name": "Table",
+            "raw_table_object_count": 0,
+            "physical_ir_kind_counts": {},
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          }
         },
         "mineru": {
-          "wall_clock_seconds": 82.49464600000283,
+          "parser": "mineru",
+          "parser_version": "3.4.5",
+          "backend": "pipeline",
+          "mode": "pipeline",
+          "configuration": {
+            "device": "cpu"
+          },
+          "source_artifact_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+          "wall_clock_seconds": 82.4946,
           "pages_per_second": 0.0485,
           "spatial_precision": 0.0,
           "spatial_recall": 0.0,
           "spatial_f1": 0.0,
           "mean_iou": 0.0,
           "pairwise_order_accuracy": null,
+          "classification_accuracy_on_matched": 0.0,
           "run_json_path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/run.json",
+          "run_json_sha256": "00745b9240da9a7c2009eca93bfcbf093cf3a3bb51ef94f791557173396dd047",
+          "raw_artifacts": [
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/images/147e6239931dcfd9c76d84f0afe0a51978aa013b0a2f880bf224e174f346ada3.jpg",
+              "kind": "image",
+              "sha256": "aa46e6f4bb0b46e9ca8b95c2e3a244825221555082c0ed2254e39fc18f5d7c8a",
+              "byte_size": 39246
+            },
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source.md",
+              "kind": "markdown",
+              "sha256": "bb4a51d3a40218c7c5b72bb312e91e7abb050908f0b1fa42d3f58a43ebb3d3cd",
+              "byte_size": 7607
+            },
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_content_list.json",
+              "kind": "content_list_json",
+              "sha256": "969ff7fd4f231ec8f631f287890b17517ba167e04bca29257b240f2c509608c3",
+              "byte_size": 22121
+            },
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_content_list_v2.json",
+              "kind": "content_list_v2_json",
+              "sha256": "77acfb274c5e89f905d9e3e596c773c5a236410bbb4ed2611fc2c660d0c84447",
+              "byte_size": 39815
+            },
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_layout.pdf",
+              "kind": "other",
+              "sha256": "5f3fe34641e9e9230fa6c451d0a1f50b5c89b6c368c7bb2e7b00eefeae0c7dc1",
+              "byte_size": 151775
+            },
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_middle.json",
+              "kind": "middle_json",
+              "sha256": "afd522a446f215fe953bdcbb9718c0a4569e032d6fb06bef66642151fa795e11",
+              "byte_size": 328023
+            },
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_model.json",
+              "kind": "other",
+              "sha256": "7aa1b69245645014c48ff3d531a8fada09671f55fc10a73b7ca0653fc0a6df08",
+              "byte_size": 72860
+            },
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_origin.pdf",
+              "kind": "other",
+              "sha256": "6ded5f367adf4ce5bd474c368580fe0ae0307780b2b6bc7054ba2cb3135dcedf",
+              "byte_size": 140389
+            },
+            {
+              "path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw/source/auto/source_span.pdf",
+              "kind": "other",
+              "sha256": "d82d611cb2976a7b554e7ee77f54a604975526b6e027e556dda3f8829d01c37c",
+              "byte_size": 146108
+            }
+          ],
           "physical_ir_path": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/physical_ir_v0.json",
-          "benchmark_result_path": "data/benchmarks/mineru_qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json"
+          "physical_ir_sha256": "c8eca3498e3c847c06c96a325ca5067529cfe0b84577ffa8a1e0b00427f325a8",
+          "physical_ir_byte_size": 66564,
+          "reference_annotation_path": "data/annotations/qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json",
+          "reference_annotation_sha256": "f84bb358b5c6f3e01aa2f13cf36bde5693e6bc5f8c584dad252761c8d0938d01",
+          "evaluation_result_path": "data/benchmarks/mineru_qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json",
+          "evaluation_result_sha256": "89771ad817b1ba2b69d74bb3479abf9074875959a524d6d707f82a419f8bb37b",
+          "table_object_mapping": {
+            "raw_object_name": "table",
+            "raw_table_object_count": 0,
+            "physical_ir_kind_counts": {},
+            "interpretation": "Counts follow parser-native table objects through source_raw_index provenance. Separately emitted nested text is not table-object preservation."
+          }
         }
       }
     }

@@ -14,11 +14,10 @@ from vlm_rag.evaluation.metrics import (
 )
 from vlm_rag.evaluation.models import (
     AnnotationBoundingBox,
+    AnnotationMethod,
+    AnnotatorType,
     AuditedPage,
     DocumentAnnotation,
-    GroundTruthRegion,
-    ReferenceDocumentAnnotation,
-    ReferencePage,
     ReferenceRegion,
     RegionKind,
 )
@@ -26,16 +25,15 @@ from vlm_rag.evaluation.serialization import dump_evaluation_report, load_annota
 
 __all__ = [
     "AnnotationBoundingBox",
+    "AnnotationMethod",
+    "AnnotatorType",
     "AuditedPage",
     "CategoryMetrics",
     "DocumentAnnotation",
     "DocumentEvaluationReport",
-    "GroundTruthRegion",
     "MatchResult",
     "OverallMetrics",
     "PageEvaluationReport",
-    "ReferenceDocumentAnnotation",
-    "ReferencePage",
     "ReferenceRegion",
     "RegionKind",
     "calculate_metrics",

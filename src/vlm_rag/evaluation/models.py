@@ -1,6 +1,6 @@
 """Typed domain models for reference layout annotation and spatial evaluation."""
 
-from datetime import UTC, datetime
+from datetime import datetime
 from enum import StrEnum
 from typing import Annotated, Literal, Self
 
@@ -40,6 +40,23 @@ class RegionKind(StrEnum):
     UNKNOWN = "unknown"
 
 
+class AnnotatorType(StrEnum):
+    """Controlled identity class for an annotation producer."""
+
+    HUMAN_EXPERT = "human_expert"
+    AI_VISUAL_AUDIT = "ai_visual_audit"
+    SYNTHETIC = "synthetic"
+
+
+class AnnotationMethod(StrEnum):
+    """Controlled method used to establish reference regions."""
+
+    VISUAL_PDF_AUDIT = "visual_pdf_audit"
+    VISUAL_PDF_REAUDIT = "visual_pdf_reaudit"
+    PARSER_BOOTSTRAPPED = "parser_bootstrapped"
+    SYNTHETIC = "synthetic"
+
+
 class AnnotationBoundingBox(EvaluationBaseModel):
     """Normalized 1000-based bounding box for reference annotations."""
 
@@ -59,7 +76,7 @@ class AnnotationBoundingBox(EvaluationBaseModel):
         return self
 
 
-class GroundTruthRegion(EvaluationBaseModel):
+class ReferenceRegion(EvaluationBaseModel):
     """An audited reference layout segment on a document page."""
 
     id: str = Field(min_length=1)
@@ -80,16 +97,12 @@ class GroundTruthRegion(EvaluationBaseModel):
         return value
 
 
-# Provide ReferenceRegion as alias for GroundTruthRegion
-ReferenceRegion = GroundTruthRegion
-
-
 class AuditedPage(EvaluationBaseModel):
     """Audited reference regions and documented phenomena for one page."""
 
     page_index: NonNegativeInt
     phenomena: tuple[str, ...] = Field(default_factory=tuple)
-    regions: tuple[GroundTruthRegion, ...] = Field(default_factory=tuple)
+    regions: tuple[ReferenceRegion, ...] = Field(default_factory=tuple)
     page_modality: Literal["digital_vector", "scanned_raster"] = "digital_vector"
 
     @field_validator("phenomena", "regions", mode="before")
@@ -101,7 +114,7 @@ class AuditedPage(EvaluationBaseModel):
 
     @model_validator(mode="after")
     def validate_page_invariants(self) -> Self:
-        """Validate unique IDs and unique reading order on page."""
+        """Validate unique IDs and a contiguous zero-based reading order on page."""
         seen_ids: set[str] = set()
         seen_reading_orders: set[int] = set()
         for r in self.regions:
@@ -111,23 +124,27 @@ class AuditedPage(EvaluationBaseModel):
             if r.reading_order in seen_reading_orders:
                 raise ValueError(f"duplicate reading order on page: {r.reading_order}")
             seen_reading_orders.add(r.reading_order)
+        actual_order = sorted(seen_reading_orders)
+        expected_order = list(range(len(self.regions)))
+        if actual_order != expected_order:
+            raise ValueError(
+                "reading order must be contiguous and zero-based: "
+                f"expected {expected_order}, got {actual_order}"
+            )
         return self
-
-
-# Provide ReferencePage as alias for AuditedPage
-ReferencePage = AuditedPage
 
 
 class DocumentAnnotation(EvaluationBaseModel):
     """Complete reference audit dataset for a document version."""
 
-    annotation_schema_version: Literal[1] = 1
-    annotation_version: str = Field(default="v2", min_length=1)
-    annotator: str = Field(default="antigravity", min_length=1)
-    annotator_type: str = Field(default="ai_visual_audit", min_length=1)
-    annotation_method: str = Field(default="independent_visual_pdf_audit", min_length=1)
-    created_at: AwareDatetime = Field(default_factory=lambda: datetime.now(UTC))
-    parser_output_used_as_ground_truth: bool = False
+    annotation_schema_version: Literal[2]
+    annotation_version: str = Field(min_length=1)
+    annotator: str = Field(min_length=1)
+    annotator_type: AnnotatorType
+    annotation_method: AnnotationMethod
+    created_at: AwareDatetime
+    prior_parser_output_exposure: bool
+    parser_output_used_as_reference: bool
     document_id: str = Field(min_length=1)
     version_id: str = Field(min_length=1)
     source_sha256: Sha256Digest
@@ -158,18 +175,13 @@ class DocumentAnnotation(EvaluationBaseModel):
         return self
 
 
-# Provide ReferenceDocumentAnnotation as alias for DocumentAnnotation
-ReferenceDocumentAnnotation = DocumentAnnotation
-
-
 __all__ = [
     "AnnotationBoundingBox",
+    "AnnotationMethod",
+    "AnnotatorType",
     "AuditedPage",
     "DocumentAnnotation",
     "EvaluationBaseModel",
-    "GroundTruthRegion",
-    "ReferenceDocumentAnnotation",
-    "ReferencePage",
     "ReferenceRegion",
     "RegionKind",
     "Sha256Digest",

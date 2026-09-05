@@ -66,57 +66,53 @@
         "unknown": 0
       }
     },
-    "f1": 0.0,
     "false_negatives": 0,
     "false_positives": 74,
     "mean_iou": 0.0,
     "pairwise_order_accuracy": null,
-    "precision": 0.0,
-    "reading_order_concordance": null,
-    "recall": 0.0,
     "spatial_f1": 0.0,
     "spatial_precision": 0.0,
     "spatial_recall": 0.0,
-    "total_ground_truth": 0,
     "total_predicted": 74,
+    "total_reference": 0,
     "true_positives": 0
   },
   "pages": [
     {
-      "ground_truth_count": 0,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 0,
       "predicted_count": 21,
-      "unmatched_ground_truth": 0,
-      "unmatched_predicted": 21
+      "reference_count": 0,
+      "unmatched_predicted": 21,
+      "unmatched_reference": 0
     },
     {
-      "ground_truth_count": 0,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 1,
       "predicted_count": 15,
-      "unmatched_ground_truth": 0,
-      "unmatched_predicted": 15
+      "reference_count": 0,
+      "unmatched_predicted": 15,
+      "unmatched_reference": 0
     },
     {
-      "ground_truth_count": 0,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 2,
       "predicted_count": 20,
-      "unmatched_ground_truth": 0,
-      "unmatched_predicted": 20
+      "reference_count": 0,
+      "unmatched_predicted": 20,
+      "unmatched_reference": 0
     },
     {
-      "ground_truth_count": 0,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 3,
       "predicted_count": 18,
-      "unmatched_ground_truth": 0,
-      "unmatched_predicted": 18
+      "reference_count": 0,
+      "unmatched_predicted": 18,
+      "unmatched_reference": 0
     }
   ],
   "pages_audited": 4,

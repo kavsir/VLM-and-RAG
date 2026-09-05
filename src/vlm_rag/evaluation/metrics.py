@@ -24,7 +24,7 @@ class CategoryMetrics(EvaluationBaseModel):
 class OverallMetrics(EvaluationBaseModel):
     """Summary metrics across all evaluated pages."""
 
-    total_ground_truth: int
+    total_reference: int
     total_predicted: int
     true_positives: int
     false_positives: int
@@ -32,12 +32,8 @@ class OverallMetrics(EvaluationBaseModel):
     spatial_precision: float
     spatial_recall: float
     spatial_f1: float
-    precision: float
-    recall: float
-    f1: float
     mean_iou: float
     pairwise_order_accuracy: float | None = None
-    reading_order_concordance: float | None = None
     classification_accuracy_on_matched: float = 0.0
     confusion_matrix: dict[str, dict[str, int]] = Field(default_factory=dict)
     by_category: tuple[CategoryMetrics, ...]
@@ -59,7 +55,7 @@ def _map_pred_kind_to_eval_category(kind: BlockKind | str) -> str:
     return "unknown"
 
 
-def _map_gt_kind_to_eval_category(kind: RegionKind | str) -> str:
+def _map_reference_kind_to_eval_category(kind: RegionKind | str) -> str:
     """Map RegionKind to canonical evaluation category."""
     val = kind.value if isinstance(kind, RegionKind) else str(kind)
     if val == "title":
@@ -70,7 +66,7 @@ def _map_gt_kind_to_eval_category(kind: RegionKind | str) -> str:
 def calculate_pairwise_order_accuracy(
     matched_pairs: Sequence[MatchedPair],
 ) -> float | None:
-    """Calculate pairwise reading order accuracy between ground truth and predictions.
+    """Calculate pairwise reading order accuracy between references and predictions.
 
     Returns the ratio of concordant comparable pairs to total comparable pairs in [0, 1].
     If fewer than 2 pairs are matched, returns None because ordering cannot be measured.
@@ -79,8 +75,8 @@ def calculate_pairwise_order_accuracy(
     if len(matched_pairs) < 2:
         return None
 
-    # Sort matched pairs by ground truth reading order
-    ordered_pairs = sorted(matched_pairs, key=lambda mp: mp.ground_truth.reading_order)
+    # Sort matched pairs by reference reading order
+    ordered_pairs = sorted(matched_pairs, key=lambda mp: mp.reference.reading_order)
 
     total_comparable = 0
     concordant = 0
@@ -101,18 +97,18 @@ def calculate_pairwise_order_accuracy(
 def calculate_metrics(match_results: Sequence[MatchResult]) -> OverallMetrics:
     """Aggregate matching results across pages into spatial and classification metrics."""
     all_matched: list[MatchedPair] = []
-    total_unmatched_gt = 0
+    total_unmatched_reference = 0
     total_unmatched_pred = 0
 
     for res in match_results:
         all_matched.extend(res.matched_pairs)
-        total_unmatched_gt += len(res.unmatched_ground_truth)
+        total_unmatched_reference += len(res.unmatched_reference)
         total_unmatched_pred += len(res.unmatched_predicted)
 
     # Spatial region detection counts
     tp = len(all_matched)
     fp = total_unmatched_pred
-    fn = total_unmatched_gt
+    fn = total_unmatched_reference
 
     spatial_prec = tp / (tp + fp) if (tp + fp) > 0 else 0.0
     spatial_rec = tp / (tp + fn) if (tp + fn) > 0 else 0.0
@@ -129,11 +125,11 @@ def calculate_metrics(match_results: Sequence[MatchResult]) -> OverallMetrics:
     # Classification metrics & Confusion Matrix over GT union Pred categories
     all_categories: set[str] = set()
     for m in all_matched:
-        all_categories.add(_map_gt_kind_to_eval_category(m.ground_truth.kind))
+        all_categories.add(_map_reference_kind_to_eval_category(m.reference.kind))
         all_categories.add(_map_pred_kind_to_eval_category(m.predicted.kind))
     for res in match_results:
-        for u in res.unmatched_ground_truth:
-            all_categories.add(_map_gt_kind_to_eval_category(u.kind))
+        for u in res.unmatched_reference:
+            all_categories.add(_map_reference_kind_to_eval_category(u.kind))
         for p in res.unmatched_predicted:
             all_categories.add(_map_pred_kind_to_eval_category(p.kind))
 
@@ -144,7 +140,7 @@ def calculate_metrics(match_results: Sequence[MatchResult]) -> OverallMetrics:
 
     correct_classification_on_matched = 0
     for m in all_matched:
-        gt_cat = _map_gt_kind_to_eval_category(m.ground_truth.kind)
+        gt_cat = _map_reference_kind_to_eval_category(m.reference.kind)
         pred_cat = _map_pred_kind_to_eval_category(m.predicted.kind)
         confusion_matrix[gt_cat][pred_cat] += 1
         if gt_cat == pred_cat:
@@ -159,8 +155,8 @@ def calculate_metrics(match_results: Sequence[MatchResult]) -> OverallMetrics:
         cat_fn += sum(
             1
             for res in match_results
-            for u in res.unmatched_ground_truth
-            if _map_gt_kind_to_eval_category(u.kind) == cat
+            for u in res.unmatched_reference
+            if _map_reference_kind_to_eval_category(u.kind) == cat
         )
         cat_fp = sum(confusion_matrix[other][cat] for other in sorted_categories if other != cat)
         cat_fp += sum(
@@ -187,7 +183,7 @@ def calculate_metrics(match_results: Sequence[MatchResult]) -> OverallMetrics:
         )
 
     return OverallMetrics(
-        total_ground_truth=tp + fn,
+        total_reference=tp + fn,
         total_predicted=tp + fp,
         true_positives=tp,
         false_positives=fp,
@@ -195,14 +191,8 @@ def calculate_metrics(match_results: Sequence[MatchResult]) -> OverallMetrics:
         spatial_precision=round(spatial_prec, 4),
         spatial_recall=round(spatial_rec, 4),
         spatial_f1=round(spatial_f1, 4),
-        precision=round(spatial_prec, 4),
-        recall=round(spatial_rec, 4),
-        f1=round(spatial_f1, 4),
         mean_iou=round(mean_iou, 4),
         pairwise_order_accuracy=(round(order_accuracy, 4) if order_accuracy is not None else None),
-        reading_order_concordance=(
-            round(order_accuracy, 4) if order_accuracy is not None else None
-        ),
         classification_accuracy_on_matched=round(classification_accuracy_on_matched, 4),
         confusion_matrix=confusion_matrix,
         by_category=tuple(by_cat),

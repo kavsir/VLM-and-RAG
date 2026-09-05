@@ -1,11 +1,10 @@
 {
-  "annotation_schema_version": 1,
-  "annotation_version": "v2",
-  "annotator": "antigravity",
+  "annotation_schema_version": 2,
+  "annotation_version": "v3",
+  "annotator": "codex",
   "annotator_type": "ai_visual_audit",
-  "annotation_method": "independent_visual_pdf_audit",
-  "created_at": "2026-09-05T00:00:00Z",
-  "parser_output_used_as_ground_truth": false,
+  "annotation_method": "visual_pdf_reaudit",
+  "created_at": "2026-09-05T01:15:00+07:00",
   "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
   "version_id": "v1",
   "source_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
@@ -49,5 +48,7 @@
       "regions": [],
       "page_modality": "scanned_raster"
     }
-  ]
+  ],
+  "prior_parser_output_exposure": true,
+  "parser_output_used_as_reference": false
 }

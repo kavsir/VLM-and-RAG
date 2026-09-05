@@ -1,0 +1,119 @@
+{
+  "determinism_schema_version": 1,
+  "normalization_target": "Physical Document IR v0 deterministic UTF-8/LF JSON",
+  "method": "two fresh normalizations from the same retained immutable raw parser evidence",
+  "available_pairs": 10,
+  "all_equal": true,
+  "entries": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "parser": "marker",
+      "raw_directory": "data/golden/hanoi_master_plan_100y/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw",
+      "byte_size_a": 1162526,
+      "sha256_a": "d58d65296160dabf7fdb81774c123e15165477495e40aabe879c08e28eb546aa",
+      "byte_size_b": 1162526,
+      "sha256_b": "d58d65296160dabf7fdb81774c123e15165477495e40aabe879c08e28eb546aa",
+      "equal": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "parser": "mineru",
+      "raw_directory": "data/golden/hanoi_master_plan_100y/v1/parser_runs/mineru/3.4.5/pipeline/raw",
+      "byte_size_a": 1145258,
+      "sha256_a": "f28fcd11857ed8f269d9a82a08b346ced356590342c412def4d2d3d03663f7c5",
+      "byte_size_b": 1145258,
+      "sha256_b": "f28fcd11857ed8f269d9a82a08b346ced356590342c412def4d2d3d03663f7c5",
+      "equal": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "parser": "marker",
+      "raw_directory": "data/golden/luat_112_2025_qh15/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw",
+      "byte_size_a": 723367,
+      "sha256_a": "5b58e46a1815064ac250bcb6f90bd835a9c71d479cb756b59464bd01cc414ed0",
+      "byte_size_b": 723367,
+      "sha256_b": "5b58e46a1815064ac250bcb6f90bd835a9c71d479cb756b59464bd01cc414ed0",
+      "equal": true
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "parser": "marker",
+      "raw_directory": "data/golden/vbhn_103_2026_quy_hoach_tong_the/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw",
+      "byte_size_a": 534686,
+      "sha256_a": "e70fe40d84540bf73cdd3e1999227b6fc028c697c4a473ab827bbac76763fb70",
+      "byte_size_b": 534686,
+      "sha256_b": "e70fe40d84540bf73cdd3e1999227b6fc028c697c4a473ab827bbac76763fb70",
+      "equal": true
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "parser": "marker",
+      "raw_directory": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw",
+      "byte_size_a": 139489,
+      "sha256_a": "265cf27c4456e5c647f608f38f128064a8ddba9443548d69f81198e3baf83654",
+      "byte_size_b": 139489,
+      "sha256_b": "265cf27c4456e5c647f608f38f128064a8ddba9443548d69f81198e3baf83654",
+      "equal": true
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "parser": "mineru",
+      "raw_directory": "data/golden/tt_04_2026_bxd_pl2_dinh_muc/v1/parser_runs/mineru/3.4.5/pipeline/raw",
+      "byte_size_a": 138451,
+      "sha256_a": "f91c8a15fde0bc6bdf83873e3dcea96343c368931078fcf83d7a0f57c1a3ca9c",
+      "byte_size_b": 138451,
+      "sha256_b": "f91c8a15fde0bc6bdf83873e3dcea96343c368931078fcf83d7a0f57c1a3ca9c",
+      "equal": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "parser": "marker",
+      "raw_directory": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw",
+      "byte_size_a": 367749,
+      "sha256_a": "2c5aa538023d7043c9d07b279db24f8da12b89a70e2de78845049305c566041a",
+      "byte_size_b": 367749,
+      "sha256_b": "2c5aa538023d7043c9d07b279db24f8da12b89a70e2de78845049305c566041a",
+      "equal": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "parser": "mineru",
+      "raw_directory": "data/golden/tt_04_2023_bkhdt_so_do_ban_do/v1/parser_runs/mineru/3.4.5/pipeline/raw",
+      "byte_size_a": 339239,
+      "sha256_a": "9b0341ae5568f39ba6048f171dbdcea3e5fb2aa43484b1e236f4fd0a7f3ec642",
+      "byte_size_b": 339239,
+      "sha256_b": "9b0341ae5568f39ba6048f171dbdcea3e5fb2aa43484b1e236f4fd0a7f3ec642",
+      "equal": true
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "version_id": "v1",
+      "parser": "marker",
+      "raw_directory": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/marker/2.0.0/fast-no-ocr/raw",
+      "byte_size_a": 53740,
+      "sha256_a": "e9afc5c92d3133a05f06b797bd82fa149ce1875dbdec251c3e4e27706b84b1b4",
+      "byte_size_b": 53740,
+      "sha256_b": "e9afc5c92d3133a05f06b797bd82fa149ce1875dbdec251c3e4e27706b84b1b4",
+      "equal": true
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "version_id": "v1",
+      "parser": "mineru",
+      "raw_directory": "data/golden/qd_23_2008_ubnd_hanoi_vien_quy_hoach/v1/parser_runs/mineru/3.4.5/pipeline/raw",
+      "byte_size_a": 66564,
+      "sha256_a": "c8eca3498e3c847c06c96a325ca5067529cfe0b84577ffa8a1e0b00427f325a8",
+      "byte_size_b": 66564,
+      "sha256_b": "c8eca3498e3c847c06c96a325ca5067529cfe0b84577ffa8a1e0b00427f325a8",
+      "equal": true
+    }
+  ]
+}

@@ -4,12 +4,12 @@
     "by_category": [
       {
         "category": "header",
-        "f1": 0.0,
+        "f1": 0.6667,
         "false_negatives": 0,
-        "false_positives": 2,
-        "precision": 0.0,
-        "recall": 0.0,
-        "true_positives": 0
+        "false_positives": 1,
+        "precision": 0.5,
+        "recall": 1.0,
+        "true_positives": 1
       },
       {
         "category": "heading",
@@ -41,17 +41,17 @@
       {
         "category": "text",
         "f1": 0.0,
-        "false_negatives": 13,
+        "false_negatives": 12,
         "false_positives": 127,
         "precision": 0.0,
         "recall": 0.0,
         "true_positives": 0
       }
     ],
-    "classification_accuracy_on_matched": 0.0,
+    "classification_accuracy_on_matched": 0.3333,
     "confusion_matrix": {
       "header": {
-        "header": 0,
+        "header": 1,
         "heading": 0,
         "page_number": 0,
         "table": 0,
@@ -79,118 +79,114 @@
         "text": 0
       },
       "text": {
-        "header": 1,
+        "header": 0,
         "heading": 2,
         "page_number": 0,
         "table": 0,
         "text": 0
       }
     },
-    "f1": 0.0353,
     "false_negatives": 13,
     "false_positives": 151,
     "mean_iou": 0.7136,
     "pairwise_order_accuracy": 0.3333,
-    "precision": 0.0195,
-    "reading_order_concordance": 0.3333,
-    "recall": 0.1875,
     "spatial_f1": 0.0353,
     "spatial_precision": 0.0195,
     "spatial_recall": 0.1875,
-    "total_ground_truth": 16,
     "total_predicted": 154,
+    "total_reference": 16,
     "true_positives": 3
   },
   "pages": [
     {
-      "ground_truth_count": 5,
       "matched_count": 3,
       "mean_iou": 0.7136,
       "page_index": 0,
       "predicted_count": 12,
-      "unmatched_ground_truth": 2,
-      "unmatched_predicted": 9
+      "reference_count": 5,
+      "unmatched_predicted": 9,
+      "unmatched_reference": 2
     },
     {
-      "ground_truth_count": 2,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 1,
       "predicted_count": 14,
-      "unmatched_ground_truth": 2,
-      "unmatched_predicted": 14
+      "reference_count": 2,
+      "unmatched_predicted": 14,
+      "unmatched_reference": 2
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 2,
       "predicted_count": 21,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 21
+      "reference_count": 1,
+      "unmatched_predicted": 21,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 3,
       "predicted_count": 13,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 13
+      "reference_count": 1,
+      "unmatched_predicted": 13,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 15,
       "predicted_count": 17,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 17
+      "reference_count": 1,
+      "unmatched_predicted": 17,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 30,
       "predicted_count": 19,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 19
+      "reference_count": 1,
+      "unmatched_predicted": 19,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 45,
       "predicted_count": 8,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 8
+      "reference_count": 1,
+      "unmatched_predicted": 8,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 60,
       "predicted_count": 17,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 17
+      "reference_count": 1,
+      "unmatched_predicted": 17,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 78,
       "predicted_count": 11,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 11
+      "reference_count": 1,
+      "unmatched_predicted": 11,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 2,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 79,
       "predicted_count": 22,
-      "unmatched_ground_truth": 2,
-      "unmatched_predicted": 22
+      "reference_count": 2,
+      "unmatched_predicted": 22,
+      "unmatched_reference": 2
     }
   ],
   "pages_audited": 10,

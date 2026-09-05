@@ -44,7 +44,7 @@ class DocumentVersion(RegistryModel):
     id: VersionIdentifier
     document_id: Identifier
     issued_on: date
-    effective_on: date | None = None
+    effective_on: date | None
 
 
 class SourceReference(RegistryModel):

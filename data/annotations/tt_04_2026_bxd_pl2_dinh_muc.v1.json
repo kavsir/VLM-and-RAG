@@ -1,11 +1,10 @@
 {
-  "annotation_schema_version": 1,
-  "annotation_version": "v2",
-  "annotator": "antigravity",
+  "annotation_schema_version": 2,
+  "annotation_version": "v3",
+  "annotator": "codex",
   "annotator_type": "ai_visual_audit",
-  "annotation_method": "independent_visual_pdf_audit",
-  "created_at": "2026-09-05T00:00:00Z",
-  "parser_output_used_as_ground_truth": false,
+  "annotation_method": "visual_pdf_reaudit",
+  "created_at": "2026-09-05T01:15:00+07:00",
   "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
   "version_id": "v1",
   "source_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
@@ -21,7 +20,7 @@
         {
           "id": "page_0_blk_0",
           "reading_order": 0,
-          "kind": "text",
+          "kind": "header",
           "bbox": {
             "x0": 441.36,
             "y0": 63.76,
@@ -29,7 +28,7 @@
             "y1": 82.04,
             "coordinate_system": "normalized_1000"
           },
-          "text": "XÂY DỰNG BỘ",
+          "text": "",
           "heading_level": null
         },
         {
@@ -43,7 +42,7 @@
             "y1": 398.08,
             "coordinate_system": "normalized_1000"
           },
-          "text": "LỤC PHỤ II MỨC ĐỊNH BẢO CẦU TUYẾN SẮT ĐƯỜNG THĂNG DƯỠNG LONG, BẮC HỒNG ĐIỂN VĂN –",
+          "text": "",
           "heading_level": null
         },
         {
@@ -57,7 +56,7 @@
             "y1": 933.79,
             "coordinate_system": "normalized_1000"
           },
-          "text": "Năm 2026",
+          "text": "",
           "heading_level": null
         }
       ],
@@ -82,7 +81,7 @@
             "y1": 938.71,
             "coordinate_system": "normalized_1000"
           },
-          "text": "MỤC LỤC THUYẾT DẪN HƯỚNG MINH VÀ ÁP DỤNG ..............................................3 cầu tuyến sắt Bắc Hồng Nội định bả dưỡng Thăng đường dung mức 1. Long, o – Điển ................................................................................................................3 Văn Kết cấu cầu tuyến sắt Bắc Hồng định bảo dưỡng Thăng đường mức 2. Long, – Điển ................................................................................................................3 Văn dẫn dụng Hướng áp 3. ...........................................................................................3 PHẦN TỔNG KHỐI BẢO CHO CÔNG TÁC DƯỠNG LƯỢNG HỢP I. CẦU THƯỜNG XUYÊN THĂNG LONG........................................................5 PHẦN BẢO CẦU MỨC THƯỜNG XUYÊN DƯỠNG ĐỊNH II. THĂNG LONG....................................................................................................9 QUẢN I. CÔNG TÁC LÝ ..................................................................9 CHƯƠNG Tuần cầu QLTL.10000 .........................................................................................9 cầu (tuần cầu) tra, canh gác vệ Bảo QLTL.10100 .................................................9 KIỂM II. CÔNG TÁC CHƯƠNG TRA..............................................................10 Kiểm cầu kỹ thuật tra tình KTTL.10000 ....................................................10 trạng Kiểm phần xuất chiếu điện điện sản t và sáng ...........................10 KTTL.10100 tra p Kiểm xuất chiếu cầu sắt đường điện đường sáng 2 bên sản t và KTTL.10110 10 tra Kiểm xuống Mố Mố đường điện điện O và KTTL.10120 2 15.............11 trạm tra BẢO MỨC THƯỜNG XUYÊN DƯỠNG CHƯƠNG ĐỊNH III. CẦU THĂNG LONG........................................................................................12 số mố, cầu kẻ Sơn BDTL.10000 ....................................................................12 trụ dầm bằng thống hệ điện sinh thép b hành Vệ vận BDTL.10200 ...........................12 dầm bằng thống hệ thủ sinh thép b hành Vệ vận BDTL.10300 công ....................13 Tẩy dầm bằng phương thép b pháp phun cát................................13 rỉ BDTL.10410 dầm bằng thép 4 nước nước Sơn và 5 BDTL.10420 Epoxy.........................14 sơn gối cố cầu dầm định thép................................................15 Sơn BDTL.10500 trên gối cầu dầm (gối dưỡng động) thép di Bảo BDTL. 10600. trên .........................15 gối cầu tầng dưỡng đường Bảo BDTL.10700. trên ô tô 2...................................16 hỏng lẻ BDTL.10800 Thay tà t bê tông 4 ray tẻ ..............................................17 vẹt Điều đá hòa BDTL. 10900. .................................................................................17 Dồn cầu gỗ thép tà BDTL.11000. ray trên ....................................................18 vẹt cầu bằng BDTL. 11100 Thay tà composite...................................................18 vẹt sắt dưỡng đường khe co giãn Bảo t 1m và 1,435 m......................19 BDTL. 11200 cấu điều dưỡng chỉnh nhịp đường Bảo 1m và 1,435 m ...........19 BDTL.11300 cơ dưỡng t thép treo ............................................................20 Bảo tà BDTL.11400 vẹt dưỡng đường Bảo BDTL.11500 công ............................................................20 vụ chắn lưới đá Sơn BDTL.11600 ...........................................................................21 cầu dưỡng lớn khe co giãn thô Bảo BDTL.11700 ...................................21 mặt sơ cầu chữa, bảo dưỡng nhỏ khe co giãn thô Sửa BDTL.11800 ..................22 mặt sơ",
+          "text": "",
           "heading_level": null
         }
       ],
@@ -106,7 +105,7 @@
             "y1": 942.39,
             "coordinate_system": "normalized_1000"
           },
-          "text": "Khối hiệu việc Tên công vị Ghi chú Đơn Mã TT lượng Bắt xiết loại bu lông cái t các RC.12200 25.320 phần gối cầu dưỡng Bảo II.3 gối cố cầu dầm định Sơn trên BDTL.10500 m2 200 thép gối cầu dầm dưỡng Bảo trên BDTL. gối 40 (gối động) thép di 10600 gối cầu dầm dưỡng Bảo trên gối RC.12700 1.176 BTCT gối cầu dưỡng đường Bảo trên ô gối BDTL.10700 700 tầng tô 2 cầu phần dưỡng đường Bảo g trên II.4 cầu đá mặt ba lát máng cầu phần dưỡng đường Bảo trên 1 3.827 TH m cầu đá ba lát máng mặt thống dưỡng hệ hỏa phòng Bảo bể RC.13900 2 58 (xới hỏa) cát phòng cầu phần dưỡng đường Bảo g trên cầu sắt cầu dầm đường mặt t trên II.5 thép chữa phương hướng ự ly, Sửa cự RC.10800 1.688 m thuỷ bình dưỡng bu lông móc cái Bảo RC.10900 9.398 Thay bu lông móc cộng vòng cái RC.11000 940 đệm cầu Thay tà BDTL.11100 vẹt số 15% gỗ thanh - Tà vẹt tà vẹt số tà 2% t composit thanh - Tà vẹt vẹt dưỡng đường khe co giãn Bảo BDTL. khe 10 sắt t 1m và 1,435 m 11200 cấu điều dưỡng chỉnh Bảo cơ bộ BDTL.11300 40 nhịp đường 1m và 1,435 m tuần cầu dưỡng Bảo ván RC.13200 1.688 m dưỡng bộ t thép treo Bảo tà BDTL.11400 180 vẹt Dồn cầu gỗ thép tà BDTL.11000 ray trên 336 vẹt m sắt dưỡng gờ, gờ Bảo t góc RC.11500 1.688 ray m Xiết chặt đinh tiaropong cái RC.11300 66.180",
+          "text": "",
           "heading_level": null
         }
       ],
@@ -130,7 +129,7 @@
             "y1": 150.28,
             "coordinate_system": "normalized_1000"
           },
-          "text": "dầm bằng thống Vệ hệ vận công thủ thép hành sinh BDTL.10300 phần Thành p việc: công Chuẩn dầm cầu Kết bị dụng đảm bảo kỹ thuật. dọn sinh thép t thúc, thu Vệ yêu cụ. hiện trường.",
+          "text": "",
           "heading_level": null
         },
         {
@@ -144,7 +143,7 @@
             "y1": 321.34,
             "coordinate_system": "normalized_1000"
           },
-          "text": "1 m2 Đơn vị: Công tác bảo Đơn phần Số hiệu Thành hao phí lượng Mã vị dưỡng dầm sinh Vệ bằng hệ thép b bậc Nhân công 3,5/7 BDTL.103 công 0,023 thống hành vận thủ công 10",
+          "text": "",
           "heading_level": null
         },
         {
@@ -158,7 +157,7 @@
             "y1": 794.7,
             "coordinate_system": "normalized_1000"
           },
-          "text": "Tẩy dầm bằng rỉ thép pháp phun cát BDTL.10410 phương phần Thành p việc: công Chuẩn bằng, bề bằng thiết bị dụng sạch loại bị làm t kim phun cát mặt mặt cụ, cầu đúng kỹ thuật theo yêu t vị tính: 1 m2 Đơn Công tác bảo Đơn phần Số hiệu Thành hao phí lượng Mã vị dưỡng liệu Vật chuẩn Cát m3 0,057 liệu khác Vật % 2 Tẩy dầm rỉ bậc Nhân công 4,0/7 công 0,39 bằng thép b Máy thi công BDTL.104 phương pháp Cần cẩu 25T 0,004 ca phun cát Máy nén khí 600m3/h 0,03 ca Thiết bị phun cát 0,03 ca Máy khác % 1 10 cần cẩu cần hợp dụng Trường Ghi chú: - không s 25T thì không tính hao phí sử cẩu định mức. 25T trong gồm lắp Định chưa dựng mức bao g hao phí g giàn giáo. - Đ",
+          "text": "",
           "heading_level": null
         }
       ],
@@ -182,7 +181,7 @@
             "y1": 231.62,
             "coordinate_system": "normalized_1000"
           },
-          "text": "cầu bằng BDTL. 11100 Thay tà composite vẹt phần Thành p việc: công Chuẩn kết Lắp bị dụng giữa Tháo bu lông liên dàn giáo tà t và ray. công vẹt cụ, cụ. vị mới đúng vị bộ phận và kéo tà trí bên ngoài ray. trí, thay b tà vào Đưa vẹt vẹt t ra kết Lắp kết với giữa đảm bảo đúng liên bu lông liên tà ray và tà yêu vẹt. vẹt t ray cầu chuyển thiết kỹ thuật. bị phạm dọn thiện vi 50m. Thu hoàn Vận vật tư trong p hiện trường.",
+          "text": "",
           "heading_level": null
         },
         {
@@ -196,7 +195,7 @@
             "y1": 853.98,
             "coordinate_system": "normalized_1000"
           },
-          "text": "1 thanh Đơn vị: Công tác TV Composite Đơn phần hiệu bảo Thành hao phí Mã ≤2,85 L>2,85 L vị dưỡng (m) (m) liệu Vật t composite thanh Tà 1 1 Thay tà vẹt cầu Phụ kiện t composite tà vẹt vẹt BDTL.111 1 1 bằng đồng bộ thanh composite liệu khác Vật % 0,5 0,5 bậc Nhân công 4,7/7 công 3,333 3,576 Máy thi công Máy khoan 0,8kw 0,053 0,053 ca tấn Kích 15 0,317 0,317 ca Máy khác % 2,5 2,5 10 20 gồm chuyển đến Định chưa Ghi chú: bao ừ kho mức từ vận công tác tà vẹt vị trí thi công sắt đường Bảo 1m và 1,435 m dưỡng khe co giãn BDTL. 11200 phần Thành p việc: công Chuẩn kết bị dụng chạy. Phòng Tháo bu lông liên t khe co giãn, sinh, vệ vệ tàu cụ. lắp siết chấm dầu cầu Kết lại, kỹ thuật. dọn hiện theo yêu t thúc, thu trường. 1 khe Đơn vị: Số Công tác bảo Đơn phần hiệu Thành hao phí Mã vị dưỡng lượng liệu Vật dưỡng khe Bảo Dầu nhờn lít đường co giãn 10,33 BDTL.112 sắt đường liệu 1m và khác Vật % 1 đường 1,435m bậc Nhân công 3,7/7 công 12,898 10",
+          "text": "",
           "heading_level": null
         }
       ],
@@ -220,11 +219,13 @@
             "y1": 335.89,
             "coordinate_system": "normalized_1000"
           },
-          "text": "cầu thô Sửa bảo nhỏ mặt chữa, dưỡng khe co giãn BDTL.11800 sơ phần Thành p việc: công Chuẩn bằng, bị dụng tưới nhựa đường bê tông, sinh khe co giãn, vệ mặt Đục cụ. đổ cầu Kết đảm bảo kỹ thuật dọn vào khe bê tông carbonco t thúc, thu nứt, yêu . hiện trường. vị tính: 1 khe Đơn phần Số hiệu Công tác bảo vị Thành hao phí dưỡng Đơn lượng Mã liệu Vật Carbonco kg 168,7 chữa, bảo dưỡng Sửa nhỏ Nhựa đường khe co giãn kg 4,529 mặt BDTL.118 cầu thô liệu khác Vật % 1 sơ bậc Nhân công 3,5/7 công 1,146 10",
+          "text": "",
           "heading_level": null
         }
       ],
       "page_modality": "digital_vector"
     }
-  ]
+  ],
+  "prior_parser_output_exposure": true,
+  "parser_output_used_as_reference": false
 }

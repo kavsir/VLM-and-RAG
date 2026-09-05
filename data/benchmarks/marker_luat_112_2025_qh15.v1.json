@@ -4,12 +4,12 @@
     "by_category": [
       {
         "category": "header",
-        "f1": 0.0,
+        "f1": 0.625,
         "false_negatives": 0,
-        "false_positives": 22,
-        "precision": 0.0,
-        "recall": 0.0,
-        "true_positives": 0
+        "false_positives": 12,
+        "precision": 0.4545,
+        "recall": 1.0,
+        "true_positives": 10
       },
       {
         "category": "heading",
@@ -22,11 +22,11 @@
       },
       {
         "category": "text",
-        "f1": 0.031,
-        "false_negatives": 20,
+        "f1": 0.0336,
+        "false_negatives": 10,
         "false_positives": 105,
         "precision": 0.0187,
-        "recall": 0.0909,
+        "recall": 0.1667,
         "true_positives": 2
       },
       {
@@ -39,10 +39,10 @@
         "true_positives": 0
       }
     ],
-    "classification_accuracy_on_matched": 0.1818,
+    "classification_accuracy_on_matched": 0.6364,
     "confusion_matrix": {
       "header": {
-        "header": 0,
+        "header": 10,
         "heading": 0,
         "text": 0,
         "unknown": 0
@@ -54,7 +54,7 @@
         "unknown": 1
       },
       "text": {
-        "header": 10,
+        "header": 0,
         "heading": 1,
         "text": 2,
         "unknown": 2
@@ -66,111 +66,107 @@
         "unknown": 0
       }
     },
-    "f1": 0.2444,
     "false_negatives": 12,
     "false_positives": 124,
     "mean_iou": 0.7604,
     "pairwise_order_accuracy": 0.7446,
-    "precision": 0.1507,
-    "reading_order_concordance": 0.7446,
-    "recall": 0.6471,
     "spatial_f1": 0.2444,
     "spatial_precision": 0.1507,
     "spatial_recall": 0.6471,
-    "total_ground_truth": 34,
     "total_predicted": 146,
+    "total_reference": 34,
     "true_positives": 22
   },
   "pages": [
     {
-      "ground_truth_count": 8,
       "matched_count": 6,
       "mean_iou": 0.7486,
       "page_index": 0,
       "predicted_count": 19,
-      "unmatched_ground_truth": 2,
-      "unmatched_predicted": 13
+      "reference_count": 8,
+      "unmatched_predicted": 13,
+      "unmatched_reference": 2
     },
     {
-      "ground_truth_count": 2,
       "matched_count": 1,
       "mean_iou": 0.8049,
       "page_index": 1,
       "predicted_count": 11,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 10
+      "reference_count": 2,
+      "unmatched_predicted": 10,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 3,
       "matched_count": 2,
       "mean_iou": 0.6643,
       "page_index": 5,
       "predicted_count": 13,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 11
+      "reference_count": 3,
+      "unmatched_predicted": 11,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 4,
       "matched_count": 3,
       "mean_iou": 0.7552,
       "page_index": 12,
       "predicted_count": 23,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 20
+      "reference_count": 4,
+      "unmatched_predicted": 20,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 3,
       "matched_count": 1,
       "mean_iou": 0.7871,
       "page_index": 20,
       "predicted_count": 23,
-      "unmatched_ground_truth": 2,
-      "unmatched_predicted": 22
+      "reference_count": 3,
+      "unmatched_predicted": 22,
+      "unmatched_reference": 2
     },
     {
-      "ground_truth_count": 5,
       "matched_count": 3,
       "mean_iou": 0.7065,
       "page_index": 28,
       "predicted_count": 19,
-      "unmatched_ground_truth": 2,
-      "unmatched_predicted": 16
+      "reference_count": 5,
+      "unmatched_predicted": 16,
+      "unmatched_reference": 2
     },
     {
-      "ground_truth_count": 2,
       "matched_count": 1,
       "mean_iou": 0.8005,
       "page_index": 35,
       "predicted_count": 18,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 17
+      "reference_count": 2,
+      "unmatched_predicted": 17,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 2,
       "matched_count": 1,
       "mean_iou": 0.8037,
       "page_index": 42,
       "predicted_count": 14,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 13
+      "reference_count": 2,
+      "unmatched_predicted": 13,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 3,
       "matched_count": 2,
       "mean_iou": 0.8114,
       "page_index": 50,
       "predicted_count": 3,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 1
+      "reference_count": 3,
+      "unmatched_predicted": 1,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 2,
       "matched_count": 2,
       "mean_iou": 0.8521,
       "page_index": 51,
       "predicted_count": 3,
-      "unmatched_ground_truth": 0,
-      "unmatched_predicted": 1
+      "reference_count": 2,
+      "unmatched_predicted": 1,
+      "unmatched_reference": 0
     }
   ],
   "pages_audited": 10,

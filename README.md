@@ -14,10 +14,11 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Current Project Status
 
-- **Phase**: Marker Adapter + Physical IR v0 Normalization (Issue #005)
+- **Phase**: Vietnamese Legal/Planning Corpus + Parser Benchmark (Issue #006)
 - **Status**: The engineering foundation, golden-document registry, independent external MinerU
-  and Marker adapters, and parser-independent Physical Document IR v0 normalization are
-  implemented. Semantic extraction, RAG, and retrieval features are not yet implemented.
+  and Marker adapters, parser-independent Physical Document IR v0 normalization, six-document
+  reference corpus, and ten-run parser benchmark are implemented. Semantic extraction, RAG, and
+  retrieval features are not yet implemented.
 
 ## Prerequisites
 
@@ -261,6 +262,32 @@ uv run python -m vlm_rag.physical_ir validate \
 
 See [ADR 0004](docs/adr/0004-physical-document-ir-v0.md) and the [Hanoi Normalization Report](docs/research/physical-ir-hanoi-normalization.md)
 for schema design and baseline metrics.
+
+## Corpus Benchmark Reproducibility
+
+Reference annotations are AI visual reference annotations, not human ground truth. Version `v3`
+records prior parser-output exposure truthfully while confirming parser output was not used as the
+reference source for region geometry or type. Per-page audit evidence is committed at
+`data/annotations/reference_annotation_audit.v3.json`.
+
+Regenerate all Markdown reports offline from committed machine evidence only:
+
+```bash
+uv run python scripts/generate_benchmark_and_reports.py --render-only
+```
+
+Recollect evaluation and normalization evidence when the ignored source PDFs, raw parser outputs,
+run manifests, and Physical IR files have been restored at the relative paths and hashes recorded
+in `data/benchmarks/benchmark_manifest.v1.json`:
+
+```bash
+uv run python scripts/generate_benchmark_and_reports.py
+```
+
+A clean clone can validate committed evidence, render reports, and run tests. It cannot rerun parser
+inference or normalization until those intentionally external artifacts are restored. See the
+[benchmark report](docs/research/parser-benchmark-v1.md) and
+[Physical IR gap report](docs/research/physical-ir-v1-gaps.md).
 
 ## Branch & PR Workflow
 

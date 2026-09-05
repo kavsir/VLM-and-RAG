@@ -4,12 +4,12 @@
     "by_category": [
       {
         "category": "header",
-        "f1": 0.0,
+        "f1": 1.0,
         "false_negatives": 0,
-        "false_positives": 1,
-        "precision": 0.0,
-        "recall": 0.0,
-        "true_positives": 0
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "true_positives": 1
       },
       {
         "category": "heading",
@@ -41,7 +41,7 @@
       {
         "category": "text",
         "f1": 0.0,
-        "false_negatives": 3,
+        "false_negatives": 2,
         "false_positives": 17,
         "precision": 0.0,
         "recall": 0.0,
@@ -57,10 +57,10 @@
         "true_positives": 0
       }
     ],
-    "classification_accuracy_on_matched": 0.0,
+    "classification_accuracy_on_matched": 0.1429,
     "confusion_matrix": {
       "header": {
-        "header": 0,
+        "header": 1,
         "heading": 0,
         "page_number": 0,
         "table": 0,
@@ -92,7 +92,7 @@
         "unknown": 4
       },
       "text": {
-        "header": 1,
+        "header": 0,
         "heading": 0,
         "page_number": 0,
         "table": 0,
@@ -108,75 +108,71 @@
         "unknown": 0
       }
     },
-    "f1": 0.3111,
     "false_negatives": 4,
     "false_positives": 27,
     "mean_iou": 0.7311,
     "pairwise_order_accuracy": 0.7619,
-    "precision": 0.2059,
-    "reading_order_concordance": 0.7619,
-    "recall": 0.6364,
     "spatial_f1": 0.3111,
     "spatial_precision": 0.2059,
     "spatial_recall": 0.6364,
-    "total_ground_truth": 11,
     "total_predicted": 34,
+    "total_reference": 11,
     "true_positives": 7
   },
   "pages": [
     {
-      "ground_truth_count": 3,
       "matched_count": 1,
       "mean_iou": 0.6594,
       "page_index": 0,
       "predicted_count": 5,
-      "unmatched_ground_truth": 2,
-      "unmatched_predicted": 4
+      "reference_count": 3,
+      "unmatched_predicted": 4,
+      "unmatched_reference": 2
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 1,
       "mean_iou": 0.9842,
       "page_index": 1,
       "predicted_count": 1,
-      "unmatched_ground_truth": 0,
-      "unmatched_predicted": 0
+      "reference_count": 1,
+      "unmatched_predicted": 0,
+      "unmatched_reference": 0
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 1,
       "mean_iou": 0.9546,
       "page_index": 5,
       "predicted_count": 1,
-      "unmatched_ground_truth": 0,
-      "unmatched_predicted": 0
+      "reference_count": 1,
+      "unmatched_predicted": 0,
+      "unmatched_reference": 0
     },
     {
-      "ground_truth_count": 3,
       "matched_count": 2,
       "mean_iou": 0.6861,
       "page_index": 10,
       "predicted_count": 12,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 10
+      "reference_count": 3,
+      "unmatched_predicted": 10,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 2,
       "matched_count": 1,
       "mean_iou": 0.6354,
       "page_index": 15,
       "predicted_count": 10,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 9
+      "reference_count": 2,
+      "unmatched_predicted": 9,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 1,
       "mean_iou": 0.5116,
       "page_index": 18,
       "predicted_count": 5,
-      "unmatched_ground_truth": 0,
-      "unmatched_predicted": 4
+      "reference_count": 1,
+      "unmatched_predicted": 4,
+      "unmatched_reference": 0
     }
   ],
   "pages_audited": 6,

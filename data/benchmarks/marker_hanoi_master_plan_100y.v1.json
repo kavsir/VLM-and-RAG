@@ -5,7 +5,7 @@
       {
         "category": "header",
         "f1": 0.0,
-        "false_negatives": 0,
+        "false_negatives": 1,
         "false_positives": 10,
         "precision": 0.0,
         "recall": 0.0,
@@ -31,11 +31,11 @@
       },
       {
         "category": "text",
-        "f1": 0.016,
-        "false_negatives": 12,
+        "f1": 0.0161,
+        "false_negatives": 11,
         "false_positives": 111,
         "precision": 0.0089,
-        "recall": 0.0769,
+        "recall": 0.0833,
         "true_positives": 1
       },
       {
@@ -52,7 +52,7 @@
     "confusion_matrix": {
       "header": {
         "header": 0,
-        "heading": 0,
+        "heading": 1,
         "table": 0,
         "text": 0,
         "unknown": 0
@@ -73,7 +73,7 @@
       },
       "text": {
         "header": 0,
-        "heading": 3,
+        "heading": 2,
         "table": 0,
         "text": 1,
         "unknown": 0
@@ -86,111 +86,107 @@
         "unknown": 0
       }
     },
-    "f1": 0.0497,
     "false_negatives": 12,
     "false_positives": 141,
     "mean_iou": 0.7862,
     "pairwise_order_accuracy": 1.0,
-    "precision": 0.0276,
-    "reading_order_concordance": 1.0,
-    "recall": 0.25,
     "spatial_f1": 0.0497,
     "spatial_precision": 0.0276,
     "spatial_recall": 0.25,
-    "total_ground_truth": 16,
     "total_predicted": 145,
+    "total_reference": 16,
     "true_positives": 4
   },
   "pages": [
     {
-      "ground_truth_count": 5,
       "matched_count": 4,
       "mean_iou": 0.7862,
       "page_index": 0,
       "predicted_count": 13,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 9
+      "reference_count": 5,
+      "unmatched_predicted": 9,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 2,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 1,
       "predicted_count": 14,
-      "unmatched_ground_truth": 2,
-      "unmatched_predicted": 14
+      "reference_count": 2,
+      "unmatched_predicted": 14,
+      "unmatched_reference": 2
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 2,
       "predicted_count": 22,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 22
+      "reference_count": 1,
+      "unmatched_predicted": 22,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 3,
       "predicted_count": 13,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 13
+      "reference_count": 1,
+      "unmatched_predicted": 13,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 15,
       "predicted_count": 17,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 17
+      "reference_count": 1,
+      "unmatched_predicted": 17,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 30,
       "predicted_count": 19,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 19
+      "reference_count": 1,
+      "unmatched_predicted": 19,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 45,
       "predicted_count": 8,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 8
+      "reference_count": 1,
+      "unmatched_predicted": 8,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 60,
       "predicted_count": 17,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 17
+      "reference_count": 1,
+      "unmatched_predicted": 17,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 1,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 78,
       "predicted_count": 12,
-      "unmatched_ground_truth": 1,
-      "unmatched_predicted": 12
+      "reference_count": 1,
+      "unmatched_predicted": 12,
+      "unmatched_reference": 1
     },
     {
-      "ground_truth_count": 2,
       "matched_count": 0,
       "mean_iou": 0.0,
       "page_index": 79,
       "predicted_count": 10,
-      "unmatched_ground_truth": 2,
-      "unmatched_predicted": 10
+      "reference_count": 2,
+      "unmatched_predicted": 10,
+      "unmatched_reference": 2
     }
   ],
   "pages_audited": 10,

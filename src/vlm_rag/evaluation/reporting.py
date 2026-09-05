@@ -1,17 +1,34 @@
-"""Deterministic reporting pipeline generating benchmark JSON and research markdown reports."""
+"""Deterministic benchmark evidence collection and offline report rendering."""
 
+from __future__ import annotations
+
+import hashlib
 import json
+import tempfile
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
 from vlm_rag.evaluation.evaluator import evaluate_physical_document
 from vlm_rag.evaluation.models import DocumentAnnotation
 from vlm_rag.evaluation.serialization import dump_evaluation_report
-from vlm_rag.physical_ir.models import PhysicalDocument
+from vlm_rag.normalizers.marker import MarkerPhysicalNormalizer
+from vlm_rag.normalizers.mineru import MinerUPhysicalNormalizer
+from vlm_rag.parsers.marker import discover_marker_document_json
+from vlm_rag.physical_ir.models import BlockKind, PhysicalDocument
 from vlm_rag.registry import load_manifest
 
+BENCHMARK_MANIFEST = Path("data/benchmarks/benchmark_manifest.v1.json")
+DETERMINISM_MANIFEST = Path("data/benchmarks/normalization_determinism.v1.json")
+ANNOTATION_AUDIT = Path("data/annotations/reference_annotation_audit.v3.json")
+REPORT_PATHS = (
+    Path("docs/research/parser-benchmark-v1.md"),
+    Path("docs/research/corpus-vietnamese-legal-planning-v1.md"),
+    Path("docs/research/physical-ir-v1-gaps.md"),
+)
 
-def _marker_run(root: Path, doc_slug: str) -> dict[str, Path]:
+
+def _marker_run(root: Path, doc_slug: str) -> dict[str, Any]:
     base = (
         root
         / "data"
@@ -24,699 +41,1022 @@ def _marker_run(root: Path, doc_slug: str) -> dict[str, Path]:
         / "fast-no-ocr"
     )
     return {
-        "ir_path": base / "normalized" / "physical_ir.json",
+        "parser": "marker",
+        "parser_version": "2.0.0",
+        "backend": "fast-no-ocr",
+        "mode": "fast",
+        "configuration": {"disable_ocr": True, "output_format": "json"},
+        "raw_directory": base / "raw",
+        "physical_ir_path": base / "normalized" / "physical_ir.json",
         "run_json_path": base / "run.json",
-        "bench_out": root / "data" / "benchmarks" / f"marker_{doc_slug}.v1.json",
+        "benchmark_result_path": root / "data" / "benchmarks" / f"marker_{doc_slug}.v1.json",
     }
 
 
-def _mineru_run(root: Path, doc_slug: str) -> dict[str, Path]:
+def _mineru_run(root: Path, doc_slug: str) -> dict[str, Any]:
     base = (
         root / "data" / "golden" / doc_slug / "v1" / "parser_runs" / "mineru" / "3.4.5" / "pipeline"
     )
     return {
-        "ir_path": base / "physical_ir_v0.json",
+        "parser": "mineru",
+        "parser_version": "3.4.5",
+        "backend": "pipeline",
+        "mode": "pipeline",
+        "configuration": {"device": "cpu"},
+        "raw_directory": base / "raw",
+        "physical_ir_path": base / "physical_ir_v0.json",
         "run_json_path": base / "run.json",
-        "bench_out": root / "data" / "benchmarks" / f"mineru_{doc_slug}.v1.json",
+        "benchmark_result_path": root / "data" / "benchmarks" / f"mineru_{doc_slug}.v1.json",
     }
 
 
 def get_corpus_config(root: Path) -> list[dict[str, Any]]:
-    """Return configuration for all 6 golden corpus documents and their parser runs."""
-    manifests = root / "data" / "manifests"
-    annotations = root / "data" / "annotations"
-    return [
-        {
-            "document_id": "hanoi-master-plan-100y",
-            "slug": "hanoi_master_plan_100y",
-            "manifest_path": manifests / "hanoi_master_plan_100y.v1.yaml",
-            "annotation_path": annotations / "hanoi_master_plan_100y.v1.json",
-            "runs": {
-                "marker": _marker_run(root, "hanoi_master_plan_100y"),
-                "mineru": _mineru_run(root, "hanoi_master_plan_100y"),
-            },
-        },
-        {
-            "document_id": "luat-112-2025-qh15",
-            "slug": "luat_112_2025_qh15",
-            "manifest_path": manifests / "luat_112_2025_qh15.v1.yaml",
-            "annotation_path": annotations / "luat_112_2025_qh15.v1.json",
-            "runs": {
-                "marker": _marker_run(root, "luat_112_2025_qh15"),
-            },
-        },
-        {
-            "document_id": "vbhn-103-2026-quy-hoach-tong-the",
-            "slug": "vbhn_103_2026_quy_hoach_tong_the",
-            "manifest_path": manifests / "vbhn_103_2026_quy_hoach_tong_the.v1.yaml",
-            "annotation_path": annotations / "vbhn_103_2026_quy_hoach_tong_the.v1.json",
-            "runs": {
-                "marker": _marker_run(root, "vbhn_103_2026_quy_hoach_tong_the"),
-            },
-        },
-        {
-            "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
-            "slug": "tt_04_2026_bxd_pl2_dinh_muc",
-            "manifest_path": manifests / "tt_04_2026_bxd_pl2_dinh_muc.v1.yaml",
-            "annotation_path": annotations / "tt_04_2026_bxd_pl2_dinh_muc.v1.json",
-            "runs": {
-                "marker": _marker_run(root, "tt_04_2026_bxd_pl2_dinh_muc"),
-                "mineru": _mineru_run(root, "tt_04_2026_bxd_pl2_dinh_muc"),
-            },
-        },
-        {
-            "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
-            "slug": "tt_04_2023_bkhdt_so_do_ban_do",
-            "manifest_path": manifests / "tt_04_2023_bkhdt_so_do_ban_do.v1.yaml",
-            "annotation_path": annotations / "tt_04_2023_bkhdt_so_do_ban_do.v1.json",
-            "runs": {
-                "marker": _marker_run(root, "tt_04_2023_bkhdt_so_do_ban_do"),
-                "mineru": _mineru_run(root, "tt_04_2023_bkhdt_so_do_ban_do"),
-            },
-        },
-        {
-            "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
-            "slug": "qd_23_2008_ubnd_hanoi_vien_quy_hoach",
-            "manifest_path": manifests / "qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.yaml",
-            "annotation_path": annotations / "qd_23_2008_ubnd_hanoi_vien_quy_hoach.v1.json",
-            "runs": {
-                "marker": _marker_run(root, "qd_23_2008_ubnd_hanoi_vien_quy_hoach"),
-                "mineru": _mineru_run(root, "qd_23_2008_ubnd_hanoi_vien_quy_hoach"),
-            },
-        },
-    ]
-
-
-def generate_all_benchmarks_and_reports(root: Path) -> dict[str, Any]:
-    """Execute evaluations, persist benchmark artifacts, and render reports."""
-    config = get_corpus_config(root)
-    corpus_summary: list[dict[str, Any]] = []
-    benchmark_results: dict[str, dict[str, Any]] = {}
-
-    total_corpus_pages = 0
-    total_audited_pages = 0
-    total_reference_regions = 0
-
-    for doc_item in config:
-        manifest = load_manifest(doc_item["manifest_path"])
-        ann_text = doc_item["annotation_path"].read_text(encoding="utf-8")
-        annotation = DocumentAnnotation.model_validate_json(ann_text)
-
-        doc_pages_count = 0
-        doc_results: dict[str, Any] = {}
-
-        audited_cnt = len(annotation.audited_pages)
-        regions_cnt = sum(len(p.regions) for p in annotation.audited_pages)
-        total_audited_pages += audited_cnt
-        total_reference_regions += regions_cnt
-
-        for parser_name, run_info in doc_item["runs"].items():
-            ir_text = run_info["ir_path"].read_text(encoding="utf-8")
-            phys_doc = PhysicalDocument.model_validate_json(ir_text)
-            doc_pages_count = phys_doc.page_count
-
-            run_json = json.loads(run_info["run_json_path"].read_text(encoding="utf-8"))
-            execution = run_json.get("execution", {})
-            wall_clock = execution.get("duration_seconds")
-            if wall_clock is None:
-                wall_clock = run_json.get("duration_seconds", 0.0)
-
-            report = evaluate_physical_document(phys_doc, annotation)
-            report_dict = report.to_dict()
-            report_dict["wall_clock_seconds"] = round(wall_clock, 4)
-            report_dict["pages_per_second"] = (
-                round(doc_pages_count / wall_clock, 4) if wall_clock > 0 else 0.0
-            )
-            report_dict["total_document_pages"] = doc_pages_count
-
-            dump_evaluation_report(report_dict, run_info["bench_out"])
-
-            doc_results[parser_name] = {
-                "report": report,
-                "dict": report_dict,
-                "wall_clock": wall_clock,
-                "pages_per_second": report_dict["pages_per_second"],
-                "run_json_rel": str(run_info["run_json_path"].relative_to(root)).replace("\\", "/"),
-                "ir_rel": str(run_info["ir_path"].relative_to(root)).replace("\\", "/"),
-                "bench_rel": str(run_info["bench_out"].relative_to(root)).replace("\\", "/"),
-            }
-
-        total_corpus_pages += doc_pages_count
-
-        corpus_summary.append(
+    """Return the six registered documents and ten available parser runs."""
+    definitions = (
+        ("hanoi-master-plan-100y", "hanoi_master_plan_100y", ("marker", "mineru")),
+        ("luat-112-2025-qh15", "luat_112_2025_qh15", ("marker",)),
+        ("vbhn-103-2026-quy-hoach-tong-the", "vbhn_103_2026_quy_hoach_tong_the", ("marker",)),
+        ("tt-04-2026-bxd-pl2-dinh-muc", "tt_04_2026_bxd_pl2_dinh_muc", ("marker", "mineru")),
+        ("tt-04-2023-bkhdt-so-do-ban-do", "tt_04_2023_bkhdt_so_do_ban_do", ("marker", "mineru")),
+        (
+            "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+            "qd_23_2008_ubnd_hanoi_vien_quy_hoach",
+            ("marker", "mineru"),
+        ),
+    )
+    result: list[dict[str, Any]] = []
+    for document_id, slug, parsers in definitions:
+        runs = {
+            parser: (_marker_run(root, slug) if parser == "marker" else _mineru_run(root, slug))
+            for parser in parsers
+        }
+        result.append(
             {
-                "document_id": doc_item["document_id"],
+                "document_id": document_id,
+                "slug": slug,
+                "manifest_path": root / "data" / "manifests" / f"{slug}.v1.yaml",
+                "annotation_path": root / "data" / "annotations" / f"{slug}.v1.json",
+                "source_path": root / "data" / "golden" / slug / "v1" / "source.pdf",
+                "runs": runs,
+            }
+        )
+    return result
+
+
+def _relative(path: Path, root: Path) -> str:
+    return path.relative_to(root).as_posix()
+
+
+def _file_evidence(path: Path, root: Path) -> dict[str, Any]:
+    payload = path.read_bytes()
+    return {
+        "path": _relative(path, root),
+        "sha256": hashlib.sha256(payload).hexdigest(),
+        "byte_size": len(payload),
+    }
+
+
+def _write_json(path: Path, value: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes((json.dumps(value, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+
+
+def _duration_seconds(run_data: dict[str, Any]) -> float:
+    execution = run_data.get("execution")
+    value = execution.get("duration_seconds") if isinstance(execution, dict) else None
+    if value is None:
+        value = run_data.get("duration_seconds")
+    if isinstance(value, bool) or not isinstance(value, int | float) or value <= 0:
+        raise ValueError("run.json must contain a positive duration_seconds value")
+    return float(value)
+
+
+def _validate_run_provenance(
+    run_data: dict[str, Any],
+    run: dict[str, Any],
+    document: PhysicalDocument,
+) -> None:
+    expected = {
+        "status": "succeeded",
+        "parser": run["parser"],
+        "parser_version": run["parser_version"],
+        "backend": run["backend"],
+        "document_id": document.document_id,
+        "version_id": document.version_id,
+        "input_sha256": document.source_artifact_sha256,
+    }
+    conflicts = {
+        field: {"expected": value, "observed": run_data.get(field)}
+        for field, value in expected.items()
+        if run_data.get(field) != value
+    }
+    if conflicts:
+        raise ValueError(f"run.json provenance conflicts with Physical IR: {conflicts}")
+
+
+def _raw_artifact_catalog(
+    run_data: dict[str, Any], raw_directory: Path, root: Path
+) -> list[dict[str, Any]]:
+    artifacts = run_data.get("artifacts")
+    if not isinstance(artifacts, list) or not artifacts:
+        raise ValueError("run.json must contain a non-empty raw artifact inventory")
+    raw_root = raw_directory.resolve()
+    catalog: list[dict[str, Any]] = []
+    for item in artifacts:
+        if not isinstance(item, dict):
+            raise ValueError("run.json artifact entries must be objects")
+        relative_path = item.get("relative_path")
+        if not isinstance(relative_path, str) or not relative_path:
+            raise ValueError("run.json artifact relative_path must be a non-empty string")
+        artifact_path = (raw_directory / relative_path).resolve()
+        if not artifact_path.is_relative_to(raw_root):
+            raise ValueError(f"run.json artifact escapes raw directory: {relative_path}")
+        evidence = _file_evidence(artifact_path, root)
+        if (
+            item.get("sha256") != evidence["sha256"]
+            or item.get("byte_size") != evidence["byte_size"]
+        ):
+            raise ValueError(f"raw artifact evidence mismatch: {relative_path}")
+        catalog.append(
+            {
+                "path": evidence["path"],
+                "kind": item.get("kind"),
+                "sha256": evidence["sha256"],
+                "byte_size": evidence["byte_size"],
+            }
+        )
+    return catalog
+
+
+def _table_object_mapping(run: dict[str, Any], document: PhysicalDocument) -> dict[str, Any]:
+    raw_directory = run["raw_directory"]
+    if run["parser"] == "marker":
+        raw_root = json.loads(
+            discover_marker_document_json(raw_directory).read_text(encoding="utf-8")
+        )
+        raw_index = 0
+        table_indices: set[int] = set()
+        for page in raw_root["children"]:
+            for block in page["children"]:
+                if block.get("block_type") == "Table":
+                    table_indices.add(raw_index)
+                raw_index += 1
+        raw_object_name = "Table"
+    else:
+        candidates = sorted(raw_directory.rglob("*_content_list.json"))
+        if len(candidates) != 1:
+            raise ValueError(f"expected one MinerU content list below {raw_directory}")
+        content = json.loads(candidates[0].read_text(encoding="utf-8"))
+        table_indices = {
+            index
+            for index, item in enumerate(content)
+            if isinstance(item, dict) and str(item.get("type", "")).casefold() == "table"
+        }
+        raw_object_name = "table"
+    mapped = Counter(
+        block.kind.value
+        for page in document.pages
+        for block in page.blocks
+        if block.provenance.source_raw_index in table_indices
+    )
+    return {
+        "raw_object_name": raw_object_name,
+        "raw_table_object_count": len(table_indices),
+        "physical_ir_kind_counts": dict(sorted(mapped.items())),
+        "interpretation": (
+            "Counts follow parser-native table objects through source_raw_index provenance. "
+            "Separately emitted nested text is not table-object preservation."
+        ),
+    }
+
+
+def _raw_type_counts(run: dict[str, Any]) -> Counter[str]:
+    raw_directory = run["raw_directory"]
+    if run["parser"] == "marker":
+        raw_root = json.loads(
+            discover_marker_document_json(raw_directory).read_text(encoding="utf-8")
+        )
+        return Counter(
+            str(block.get("block_type", "unknown"))
+            for page in raw_root["children"]
+            for block in page["children"]
+        )
+    candidates = sorted(raw_directory.rglob("*_content_list.json"))
+    if len(candidates) != 1:
+        raise ValueError(f"expected one MinerU content list below {raw_directory}")
+    content = json.loads(candidates[0].read_text(encoding="utf-8"))
+    return Counter(
+        str(item.get("type", "unknown")) if isinstance(item, dict) else "invalid"
+        for item in content
+    )
+
+
+def _layout_diagram_mapping(
+    run: dict[str, Any], document: PhysicalDocument, page_index: int
+) -> dict[str, Any]:
+    raw_directory = run["raw_directory"]
+    selected_indices: set[int] = set()
+    selected_types: Counter[str] = Counter()
+    if run["parser"] == "marker":
+        raw_root = json.loads(
+            discover_marker_document_json(raw_directory).read_text(encoding="utf-8")
+        )
+        raw_index = 0
+        for current_page_index, page in enumerate(raw_root["children"]):
+            for block in page["children"]:
+                raw_type = str(block.get("block_type", "unknown"))
+                if current_page_index == page_index and raw_type in {"Figure", "Picture"}:
+                    selected_indices.add(raw_index)
+                    selected_types[raw_type] += 1
+                raw_index += 1
+    else:
+        candidates = sorted(raw_directory.rglob("*_content_list.json"))
+        if len(candidates) != 1:
+            raise ValueError(f"expected one MinerU content list below {raw_directory}")
+        content = json.loads(candidates[0].read_text(encoding="utf-8"))
+        for raw_index, item in enumerate(content):
+            if not isinstance(item, dict) or item.get("page_idx") != page_index:
+                continue
+            raw_type = str(item.get("type", "unknown"))
+            if raw_type in {"image", "table"}:
+                selected_indices.add(raw_index)
+                selected_types[raw_type] += 1
+    mapped = Counter(
+        block.kind.value
+        for block in document.pages[page_index].blocks
+        if block.provenance.source_raw_index in selected_indices
+    )
+    return {
+        "page_index": page_index,
+        "raw_object_type_counts": dict(sorted(selected_types.items())),
+        "physical_ir_kind_counts": dict(sorted(mapped.items())),
+    }
+
+
+def _normalize_once(document_item: dict[str, Any], run: dict[str, Any], output_path: Path) -> None:
+    manifest = load_manifest(document_item["manifest_path"])
+    if run["parser"] == "marker":
+        MarkerPhysicalNormalizer().normalize_to_file(
+            run["raw_directory"],
+            output_path,
+            manifest=manifest,
+            source_artifact_path=document_item["source_path"],
+        )
+    else:
+        MinerUPhysicalNormalizer().normalize_to_file(
+            run["raw_directory"], output_path, manifest=manifest
+        )
+
+
+def _collect_normalization_determinism(root: Path, config: list[dict[str, Any]]) -> dict[str, Any]:
+    entries: list[dict[str, Any]] = []
+    with tempfile.TemporaryDirectory(prefix="vlm-rag-determinism-") as temporary:
+        temporary_root = Path(temporary)
+        for document_item in config:
+            for parser, run in document_item["runs"].items():
+                first = temporary_root / f"{document_item['slug']}-{parser}-a.json"
+                second = temporary_root / f"{document_item['slug']}-{parser}-b.json"
+                _normalize_once(document_item, run, first)
+                _normalize_once(document_item, run, second)
+                first_evidence = _file_evidence(first, temporary_root)
+                second_evidence = _file_evidence(second, temporary_root)
+                entries.append(
+                    {
+                        "document_id": document_item["document_id"],
+                        "version_id": "v1",
+                        "parser": parser,
+                        "raw_directory": _relative(run["raw_directory"], root),
+                        "byte_size_a": first_evidence["byte_size"],
+                        "sha256_a": first_evidence["sha256"],
+                        "byte_size_b": second_evidence["byte_size"],
+                        "sha256_b": second_evidence["sha256"],
+                        "equal": first.read_bytes() == second.read_bytes(),
+                    }
+                )
+    if not all(entry["equal"] for entry in entries):
+        raise ValueError("normalization determinism failed for at least one retained parser run")
+    return {
+        "determinism_schema_version": 1,
+        "normalization_target": "Physical Document IR v0 deterministic UTF-8/LF JSON",
+        "method": "two fresh normalizations from the same retained immutable raw parser evidence",
+        "available_pairs": len(entries),
+        "all_equal": True,
+        "entries": entries,
+    }
+
+
+def collect_benchmark_evidence(root: Path) -> dict[str, Any]:
+    """Stage A: evaluate retained external artifacts and write committed machine evidence."""
+    config = get_corpus_config(root)
+    audit_path = root / ANNOTATION_AUDIT
+    audit_evidence = _file_evidence(audit_path, root)
+    audit_data = json.loads(audit_path.read_text(encoding="utf-8"))
+    documents: list[dict[str, Any]] = []
+    scanned_case: dict[str, Any] = {}
+    annotations: list[DocumentAnnotation] = []
+
+    for document_item in config:
+        manifest = load_manifest(document_item["manifest_path"])
+        annotation = DocumentAnnotation.model_validate_json(
+            document_item["annotation_path"].read_text(encoding="utf-8")
+        )
+        annotations.append(annotation)
+        annotation_evidence = _file_evidence(document_item["annotation_path"], root)
+        if (
+            annotation.document_id != manifest.document.id
+            or annotation.source_sha256 != manifest.artifact.sha256
+        ):
+            raise ValueError(
+                "annotation identity or source SHA-256 does not match registry manifest"
+            )
+        run_records: dict[str, Any] = {}
+        page_count: int | None = None
+        for parser, run in document_item["runs"].items():
+            physical_document = PhysicalDocument.model_validate_json(
+                run["physical_ir_path"].read_text(encoding="utf-8")
+            )
+            if page_count is None:
+                page_count = physical_document.page_count
+            elif page_count != physical_document.page_count:
+                raise ValueError("parser runs disagree on document page count")
+            run_data = json.loads(run["run_json_path"].read_text(encoding="utf-8"))
+            _validate_run_provenance(run_data, run, physical_document)
+            duration = _duration_seconds(run_data)
+            result = evaluate_physical_document(physical_document, annotation).to_dict()
+            result["wall_clock_seconds"] = round(duration, 4)
+            result["pages_per_second"] = round(physical_document.page_count / duration, 4)
+            result["total_document_pages"] = physical_document.page_count
+            dump_evaluation_report(result, run["benchmark_result_path"])
+            physical_evidence = _file_evidence(run["physical_ir_path"], root)
+            run_evidence = _file_evidence(run["run_json_path"], root)
+            result_evidence = _file_evidence(run["benchmark_result_path"], root)
+            metrics = result["metrics"]
+            run_records[parser] = {
+                "parser": physical_document.parser,
+                "parser_version": physical_document.parser_version,
+                "backend": physical_document.parser_backend,
+                "mode": run["mode"],
+                "configuration": run["configuration"],
+                "source_artifact_sha256": physical_document.source_artifact_sha256,
+                "wall_clock_seconds": result["wall_clock_seconds"],
+                "pages_per_second": result["pages_per_second"],
+                "spatial_precision": metrics["spatial_precision"],
+                "spatial_recall": metrics["spatial_recall"],
+                "spatial_f1": metrics["spatial_f1"],
+                "mean_iou": metrics["mean_iou"],
+                "pairwise_order_accuracy": metrics["pairwise_order_accuracy"],
+                "classification_accuracy_on_matched": metrics["classification_accuracy_on_matched"],
+                "run_json_path": run_evidence["path"],
+                "run_json_sha256": run_evidence["sha256"],
+                "raw_artifacts": _raw_artifact_catalog(run_data, run["raw_directory"], root),
+                "physical_ir_path": physical_evidence["path"],
+                "physical_ir_sha256": physical_evidence["sha256"],
+                "physical_ir_byte_size": physical_evidence["byte_size"],
+                "reference_annotation_path": annotation_evidence["path"],
+                "reference_annotation_sha256": annotation_evidence["sha256"],
+                "evaluation_result_path": result_evidence["path"],
+                "evaluation_result_sha256": result_evidence["sha256"],
+                "table_object_mapping": _table_object_mapping(run, physical_document),
+            }
+            if document_item["document_id"] == "tt-04-2023-bkhdt-so-do-ban-do":
+                diagram_page_index = audit_data["map_figure_page_evidence"]["layout_diagram"][
+                    "page_index"
+                ]
+                run_records[parser]["layout_diagram_object_mapping"] = _layout_diagram_mapping(
+                    run, physical_document, diagram_page_index
+                )
+            if document_item["document_id"].startswith("qd-23-2008"):
+                blocks = [block for page in physical_document.pages for block in page.blocks]
+                scanned_case[parser] = {
+                    "raw_object_type_counts": dict(sorted(_raw_type_counts(run).items())),
+                    "total_structural_physical_blocks": len(blocks),
+                    "physical_ir_kind_counts": dict(
+                        sorted(Counter(block.kind.value for block in blocks).items())
+                    ),
+                    "non_empty_text_blocks": sum(bool(block.text.strip()) for block in blocks),
+                    "text_or_title_blocks": sum(
+                        block.kind in {BlockKind.TEXT, BlockKind.TITLE} for block in blocks
+                    ),
+                    "non_empty_text_or_title_blocks": sum(
+                        block.kind in {BlockKind.TEXT, BlockKind.TITLE} and bool(block.text.strip())
+                        for block in blocks
+                    ),
+                }
+        if page_count is None:
+            raise ValueError("each corpus document requires at least one retained parser run")
+        documents.append(
+            {
+                "document_id": manifest.document.id,
+                "version_id": manifest.version.id,
                 "document_number": manifest.document.document_number,
                 "title": manifest.document.title,
                 "issuer": manifest.document.issuer,
                 "issued_on": str(manifest.version.issued_on),
-                "effective_on": (
-                    str(manifest.version.effective_on) if manifest.version.effective_on else None
-                ),
+                "effective_on": str(manifest.version.effective_on)
+                if manifest.version.effective_on is not None
+                else None,
                 "signer": manifest.source.signer,
-                "pages": doc_pages_count,
-                "byte_size": manifest.artifact.byte_size,
-                "sha256": manifest.artifact.sha256,
-                "audited_pages": audited_cnt,
-                "reference_regions": regions_cnt,
-                "manifest_rel": str(doc_item["manifest_path"].relative_to(root)).replace("\\", "/"),
-                "annotation_rel": str(doc_item["annotation_path"].relative_to(root)).replace(
-                    "\\", "/"
-                ),
-                "runs": doc_results,
+                "pages": page_count,
+                "source_artifact_byte_size": manifest.artifact.byte_size,
+                "source_artifact_path": _relative(document_item["source_path"], root),
+                "source_artifact_sha256": manifest.artifact.sha256,
+                "manifest_path": _relative(document_item["manifest_path"], root),
+                "reference_annotation_path": annotation_evidence["path"],
+                "reference_annotation_sha256": annotation_evidence["sha256"],
+                "audited_pages": len(annotation.audited_pages),
+                "reference_regions": sum(len(page.regions) for page in annotation.audited_pages),
+                "runs": run_records,
             }
         )
-        benchmark_results[doc_item["document_id"]] = doc_results
 
+    provenance = {
+        (
+            item.annotation_schema_version,
+            item.annotation_version,
+            item.annotator,
+            item.annotator_type.value,
+            item.annotation_method.value,
+            item.created_at.isoformat(),
+            item.prior_parser_output_exposure,
+            item.parser_output_used_as_reference,
+        )
+        for item in annotations
+    }
+    if len(provenance) != 1:
+        raise ValueError("reference annotation files disagree on version or provenance")
+    (
+        annotation_schema,
+        annotation_version,
+        annotator,
+        annotator_type,
+        method,
+        created_at,
+        prior_exposure,
+        used_as_reference,
+    ) = provenance.pop()
+    total_pages = sum(document["pages"] for document in documents)
+    coverage: dict[str, Any] = {}
+    for parser in ("marker", "mineru"):
+        covered = [document for document in documents if parser in document["runs"]]
+        first_run = covered[0]["runs"][parser]
+        coverage[parser] = {
+            "parser": parser,
+            "version": first_run["parser_version"],
+            "backend": first_run["backend"],
+            "mode": first_run["mode"],
+            "configuration": first_run["configuration"],
+            "evaluated_documents": len(covered),
+            "corpus_documents": len(documents),
+            "evaluated_pages": sum(document["pages"] for document in covered),
+            "corpus_pages": total_pages,
+            "omitted_documents": [
+                document["document_id"] for document in documents if parser not in document["runs"]
+            ],
+        }
+    annotations_by_document = {annotation.document_id: annotation for annotation in annotations}
+    table_example_annotation = annotations_by_document["tt-04-2026-bxd-pl2-dinh-muc"]
+    table_example_page = next(
+        page
+        for page in table_example_annotation.audited_pages
+        if "norm_table_header" in page.phenomena
+    )
+    scanned_annotation = annotations_by_document["qd-23-2008-ubnd-hanoi-vien-quy-hoach"]
+    scanned_page_indices = [
+        page.page_index
+        for page in scanned_annotation.audited_pages
+        if page.page_modality == "scanned_raster"
+    ]
+    determinism = _collect_normalization_determinism(root, config)
+    _write_json(root / DETERMINISM_MANIFEST, determinism)
     manifest_data = {
-        "benchmark_schema_version": 1,
-        "corpus_total_pages": total_corpus_pages,
-        "corpus_documents_count": len(config),
-        "total_audited_pages": total_audited_pages,
-        "total_reference_regions": total_reference_regions,
-        "annotation_version": "v2",
+        "benchmark_schema_version": 2,
+        "annotation_schema_version": annotation_schema,
+        "annotation_version": annotation_version,
         "annotation_provenance": {
-            "annotator": "antigravity",
-            "annotator_type": "ai_visual_audit",
-            "annotation_method": "independent_visual_pdf_audit",
-            "parser_output_used_as_ground_truth": False,
+            "annotator": annotator,
+            "annotator_type": annotator_type,
+            "annotation_method": method,
+            "created_at": created_at,
+            "prior_parser_output_exposure": prior_exposure,
+            "parser_output_used_as_reference": used_as_reference,
+            "audit_evidence_path": audit_evidence["path"],
+            "audit_evidence_sha256": audit_evidence["sha256"],
         },
+        "corpus_total_pages": total_pages,
+        "corpus_documents_count": len(documents),
+        "total_audited_pages": sum(document["audited_pages"] for document in documents),
+        "total_reference_regions": sum(document["reference_regions"] for document in documents),
         "evaluation_configuration": {
+            "coordinate_system": "normalized_1000",
             "iou_threshold": 0.5,
-            "matching_objective": "maximum_cardinality_bipartite_matching_with_secondary_max_iou",
-            "metric_names": [
+            "matching_primary_objective": (
+                "maximum cardinality among edges at or above IoU threshold"
+            ),
+            "matching_secondary_objective": (
+                "maximum exact sum of computed IEEE-754 IoU values among "
+                "maximum-cardinality matchings"
+            ),
+            "deterministic_tie_breaking": "stable zero-based graph and edge ordering",
+        },
+        "metric_definitions": {
+            "spatial_precision": {
+                "formula": "TP_spatial / (TP_spatial + FP_spatial)",
+                "zero_denominator": 0.0,
+            },
+            "spatial_recall": {
+                "formula": "TP_spatial / (TP_spatial + FN_spatial)",
+                "zero_denominator": 0.0,
+            },
+            "spatial_f1": {
+                "formula": (
+                    "2 * spatial_precision * spatial_recall / (spatial_precision + spatial_recall)"
+                ),
+                "zero_denominator": 0.0,
+            },
+            "mean_iou": {"formula": "sum(IoU of spatial matches) / spatial_matches"},
+            "classification_accuracy_on_matched": {
+                "formula": "correct_classified_spatial_matches / spatial_matches"
+            },
+            "pairwise_order_accuracy": {
+                "formula": "concordant comparable pairs / total comparable pairs",
+                "prediction_ties": "non-concordant",
+                "null_when": "fewer than two matched regions",
+            },
+        },
+        "parser_coverage_matrix": coverage,
+        "scanned_case_evidence": {
+            "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+            "page_modality": "scanned_raster",
+            "text_reference_available": False,
+            "ocr_recall_cer_wer_available": False,
+            "runs": scanned_case,
+        },
+        "map_figure_page_evidence": audit_data["map_figure_page_evidence"],
+        "gap_example_pages": {
+            "table_localization": {
+                "document_id": table_example_annotation.document_id,
+                "pdf_page_number_1_based": table_example_page.page_index + 1,
+                "page_index": table_example_page.page_index,
+            },
+            "scanned_modality": {
+                "document_id": scanned_annotation.document_id,
+                "pdf_page_numbers_1_based": [index + 1 for index in scanned_page_indices],
+                "page_indices": scanned_page_indices,
+            },
+        },
+        "normalization_determinism": _file_evidence(root / DETERMINISM_MANIFEST, root),
+        "clean_clone_reproducibility": {
+            "can": [
+                "validate committed benchmark, annotation, and determinism artifacts",
+                "regenerate all Markdown reports offline",
+                "run evaluation unit tests",
+            ],
+            "cannot_without_external_artifacts": [
+                "regenerate parser outputs",
+                "recompute Physical IR normalization from retained raw parser evidence",
+                "recompute benchmark evaluations from untracked Physical IR files",
+            ],
+        },
+        "documents": documents,
+    }
+    _write_json(root / BENCHMARK_MANIFEST, manifest_data)
+    return manifest_data
+
+
+def _validated_machine_evidence(root: Path) -> dict[str, Any]:
+    manifest: dict[str, Any] = json.loads((root / BENCHMARK_MANIFEST).read_text(encoding="utf-8"))
+    provenance = manifest["annotation_provenance"]
+    audit_path = root / provenance["audit_evidence_path"]
+    if _file_evidence(audit_path, root)["sha256"] != provenance["audit_evidence_sha256"]:
+        raise ValueError("reference annotation audit hash mismatch")
+    determinism_ref = manifest["normalization_determinism"]
+    determinism_path = root / determinism_ref["path"]
+    if _file_evidence(determinism_path, root)["sha256"] != determinism_ref["sha256"]:
+        raise ValueError("normalization determinism artifact hash mismatch")
+    determinism = json.loads(determinism_path.read_text(encoding="utf-8"))
+    if not determinism["all_equal"] or not all(item["equal"] for item in determinism["entries"]):
+        raise ValueError("normalization determinism evidence contains a failed pair")
+    for document in manifest["documents"]:
+        annotation = root / document["reference_annotation_path"]
+        if _file_evidence(annotation, root)["sha256"] != document["reference_annotation_sha256"]:
+            raise ValueError("reference annotation hash mismatch")
+        annotation_data = DocumentAnnotation.model_validate_json(
+            annotation.read_text(encoding="utf-8")
+        )
+        if (
+            annotation_data.document_id != document["document_id"]
+            or annotation_data.version_id != document["version_id"]
+            or annotation_data.source_sha256 != document["source_artifact_sha256"]
+        ):
+            raise ValueError("reference annotation identity conflicts with benchmark manifest")
+        for parser, run in document["runs"].items():
+            if (
+                run["reference_annotation_path"] != document["reference_annotation_path"]
+                or run["reference_annotation_sha256"] != document["reference_annotation_sha256"]
+                or run["source_artifact_sha256"] != document["source_artifact_sha256"]
+            ):
+                raise ValueError("run evidence conflicts with document evidence")
+            result_path = root / run["evaluation_result_path"]
+            if _file_evidence(result_path, root)["sha256"] != run["evaluation_result_sha256"]:
+                raise ValueError("evaluation result hash mismatch")
+            result = json.loads(result_path.read_text(encoding="utf-8"))
+            expected_result_values = {
+                "document_id": document["document_id"],
+                "parser": parser,
+                "parser_version": run["parser_version"],
+                "parser_backend": run["backend"],
+                "pages_audited": document["audited_pages"],
+                "total_document_pages": document["pages"],
+                "wall_clock_seconds": run["wall_clock_seconds"],
+                "pages_per_second": run["pages_per_second"],
+            }
+            for field, expected in expected_result_values.items():
+                if result.get(field) != expected:
+                    raise ValueError(f"evaluation result {field} conflicts with benchmark manifest")
+            for metric in (
                 "spatial_precision",
                 "spatial_recall",
                 "spatial_f1",
                 "mean_iou",
                 "pairwise_order_accuracy",
                 "classification_accuracy_on_matched",
-            ],
-        },
-        "parser_coverage_matrix": {
-            "marker": {
-                "parser": "marker",
-                "version": "2.0.0",
-                "mode": "fast",
-                "backend": "fast-no-ocr",
-                "disable_ocr": True,
-                "evaluated_documents": 6,
-                "evaluated_pages": 250,
-                "coverage": "6/6 (250/250 pages)",
-            },
-            "mineru": {
-                "parser": "mineru",
-                "version": "3.4.5",
-                "mode": "pipeline",
-                "backend": "pipeline",
-                "device": "cpu",
-                "evaluated_documents": 4,
-                "evaluated_pages": 150,
-                "coverage": "4/6 (150/250 pages)",
-                "omitted_documents": [
-                    "luat-112-2025-qh15 (52 pages, CPU budget boundary)",
-                    "vbhn-103-2026-quy-hoach-tong-the (48 pages, CPU budget boundary)",
-                ],
-            },
-        },
-        "documents": [
-            {
-                "document_id": item["document_id"],
-                "document_number": item["document_number"],
-                "title": item["title"],
-                "pages": item["pages"],
-                "byte_size": item["byte_size"],
-                "sha256": item["sha256"],
-                "manifest_path": item["manifest_rel"],
-                "annotation_path": item["annotation_rel"],
-                "runs": {
-                    parser_name: {
-                        "wall_clock_seconds": r_data["wall_clock"],
-                        "pages_per_second": r_data["pages_per_second"],
-                        "spatial_precision": r_data["report"].metrics.spatial_precision,
-                        "spatial_recall": r_data["report"].metrics.spatial_recall,
-                        "spatial_f1": r_data["report"].metrics.spatial_f1,
-                        "mean_iou": r_data["report"].metrics.mean_iou,
-                        "pairwise_order_accuracy": r_data["report"].metrics.pairwise_order_accuracy,
-                        "run_json_path": r_data["run_json_rel"],
-                        "physical_ir_path": r_data["ir_rel"],
-                        "benchmark_result_path": r_data["bench_rel"],
-                    }
-                    for parser_name, r_data in item["runs"].items()
-                },
-            }
-            for item in corpus_summary
-        ],
-    }
-
-    manifest_file = root / "data/benchmarks/benchmark_manifest.v1.json"
-    manifest_file.write_text(
-        json.dumps(manifest_data, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
-
-    _render_parser_benchmark_report(
-        root, corpus_summary, total_corpus_pages, total_audited_pages, total_reference_regions
-    )
-    _render_corpus_report(
-        root, corpus_summary, total_corpus_pages, total_audited_pages, total_reference_regions
-    )
-    _render_physical_ir_gaps_report(root, total_corpus_pages)
-
-    return {
-        "manifest_data": manifest_data,
-        "corpus_summary": corpus_summary,
-        "benchmark_results": benchmark_results,
-    }
+            ):
+                if result["metrics"].get(metric) != run[metric]:
+                    raise ValueError(
+                        f"evaluation result metric {metric} conflicts with benchmark manifest"
+                    )
+    manifest["_determinism"] = determinism
+    return manifest
 
 
-def _render_parser_benchmark_report(
-    root: Path,
-    corpus_summary: list[dict[str, Any]],
-    total_corpus_pages: int,
-    total_audited_pages: int,
-    total_reference_regions: int,
-) -> None:
+def _format_order(value: float | None) -> str:
+    return "N/A" if value is None else f"{value:.4f}"
+
+
+def _render_parser_report(manifest: dict[str, Any]) -> str:
+    coverage = manifest["parser_coverage_matrix"]
     lines = [
-        "# Parser Benchmark: MinerU 3.4.5 vs Marker 2.0.0 on Vietnamese Legal & Planning"
-        " Multimodal Corpus (v1)",
+        "# Parser Benchmark: Vietnamese Legal and Planning Corpus v1",
         "",
-        "## Executive Summary",
+        "## Scope and provenance",
         "",
-        f"This study presents an empirical benchmark comparing **Marker 2.0.0** (`fast-no-ocr`"
-        f" CPU policy) and **MinerU 3.4.5** (`pipeline` CPU backend) across an authoritative"
-        f" 6-document golden corpus ({total_corpus_pages} total pages) representing Vietnamese"
-        " public administrative law, urban master planning, engineering maintenance norms,"
-        " spatial diagram symbology, and historical scanned decrees.",
+        (
+            f"This benchmark contains {manifest['corpus_documents_count']} authoritative "
+            f"documents spanning {manifest['corpus_total_pages']} pages. It evaluates "
+            f"{manifest['total_reference_regions']} reference regions on "
+            f"{manifest['total_audited_pages']} selected pages."
+        ),
         "",
-        "All spatial evaluations are executed using a parser-independent layout evaluation harness"
-        f" (`src/vlm_rag/evaluation/`), operating on a normalized 1,000-point coordinate grid"
-        f" against **{total_audited_pages} reference audited pages** ({total_reference_regions}"
-        " reference layout regions across 42 digital vector pages, plus 4 scanned raster pages"
-        " evaluated under the Page Modality Task).",
+        (
+            f"The annotations are {manifest['annotation_version']} AI visual reference "
+            "annotations created with "
+            f"`{manifest['annotation_provenance']['annotation_method']}`. Prior parser output "
+            "exposure was "
+            f"`{str(manifest['annotation_provenance']['prior_parser_output_exposure']).lower()}`; "
+            "parser outputs were not used as the reference source for region geometry or type."
+        ),
         "",
-        "### Parser Coverage Matrix",
+        "## Parser coverage",
         "",
-        f"- **Marker 2.0.0**: 6/6 documents evaluated ({total_corpus_pages}/{total_corpus_pages}"
-        " pages). Complete corpus coverage under `fast-no-ocr` mode.",
-        "- **MinerU 3.4.5**: 4/6 documents evaluated (150/250 pages). Documents"
-        " `luat-112-2025-qh15` (52 pages) and `vbhn-103-2026-quy-hoach-tong-the` (48 pages)"
-        " were omitted from the CPU benchmark due to CPU execution budget boundaries"
-        " (~10 hours estimated runtime on CPU). They remain registered for future"
-        " GPU-accelerated evaluation.",
-        "",
-        "---",
-        "",
-        "## 1. Experimental Environment & Runtime Isolation",
-        "",
-        "Both parsers were executed in strictly isolated external environments without"
-        " contaminating the offline project core or CI dependencies:",
-        "",
-        "- **Host Environment**: Windows 11, Intel x86_64 CPU.",
-        "- **Python**: 3.12.10.",
-        "- **Marker Runtime**: Isolated virtual environment `.venv-marker`, Marker 2.0.0 with"
-        ' PyTorch 2.14.0+cpu, `TORCH_DEVICE=cpu`, `CUDA_VISIBLE_DEVICES=""`, `backend:'
-        " fast-no-ocr`, `mode: fast`, `disable_ocr: true` (`marker_single.exe --output_format"
-        " json --disable_ocr`).",
-        "- **MinerU Runtime**: Isolated virtual environment `.venv-mineru`, MinerU 3.4.5,"
-        " command-line pipeline backend (`mineru.exe -p <pdf> -o <out> -b pipeline`),"
-        " CPU execution (`device: cpu`).",
-        "- **Integration Boundary**: Subprocess execution, verified exit codes, immutable"
-        " filesystem isolation, and strict Pydantic normalization into `PhysicalDocument`"
-        " (IR v0).",
-        "",
-        "---",
-        "",
-        "## 2. Benchmark Results & Comparative Analysis",
-        "",
-        "### Comprehensive Benchmark Summary Table",
-        "",
-        "| Document ID | Official Ref | Pages | Parser | Backend / Mode | Wall Clock (s) |"
-        " Pages/sec | Audited Pages | Spatial Precision | Spatial Recall | Spatial F1 | Mean IoU"
-        " | Pairwise Order Accuracy |",
-        "| :--- | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: |"
-        " :---: | :---: | :---: |",
     ]
-
-    for item in corpus_summary:
-        doc_id = item["document_id"]
-        doc_num = item["document_number"]
-        pages = item["pages"]
-        audited_pages = item["audited_pages"]
-
-        if "marker" in item["runs"]:
-            m_res = item["runs"]["marker"]
-            m_rep = m_res["report"]
-            m_order = (
-                f"{m_rep.metrics.pairwise_order_accuracy:.4f}"
-                if m_rep.metrics.pairwise_order_accuracy is not None
-                else "N/A*"
-            )
-            lines.append(
-                f"| `{doc_id}` | `{doc_num}` | {pages} | **Marker** | fast-no-ocr | "
-                f"**{m_res['wall_clock']:.2f}s** | **{m_res['pages_per_second']:.2f}** | "
-                f"{audited_pages} | {m_rep.metrics.spatial_precision:.4f} | "
-                f"{m_rep.metrics.spatial_recall:.4f} | {m_rep.metrics.spatial_f1:.4f} | "
-                f"{m_rep.metrics.mean_iou:.4f} | {m_order} |"
-            )
-
-        if "mineru" in item["runs"]:
-            u_res = item["runs"]["mineru"]
-            u_rep = u_res["report"]
-            u_order = (
-                f"{u_rep.metrics.pairwise_order_accuracy:.4f}"
-                if u_rep.metrics.pairwise_order_accuracy is not None
-                else "N/A*"
-            )
-            lines.append(
-                f"| `{doc_id}` | `{doc_num}` | {pages} | **MinerU** | pipeline (CPU) | "
-                f"{u_res['wall_clock']:.2f}s | {u_res['pages_per_second']:.2f} | "
-                f"{audited_pages} | {u_rep.metrics.spatial_precision:.4f} | "
-                f"{u_rep.metrics.spatial_recall:.4f} | {u_rep.metrics.spatial_f1:.4f} | "
-                f"{u_rep.metrics.mean_iou:.4f} | {u_order} |"
-            )
-        else:
-            lines.append(
-                f"| `{doc_id}` | `{doc_num}` | {pages} | **MinerU** | pipeline (CPU) | "
-                "*Omitted (CPU budget)* | — | — | — | — | — | — | — |"
-            )
-
-    lines.extend(
-        [
-            "",
-            r"*\* Note: Pairwise order accuracy is reported as N/A when matched pairs count < 2"
-            r" (e.g. on `qd_23_2008` where 0 spatial layout blocks are matched).*",
-            r"*\*\* Note: Runtimes reflect exact retained wall-clock duration from execution"
-            r" metadata (`run.json`).*",
-            "",
-            "---",
-            "",
-            "## 3. Measured Facts, Interpretation, and Recommendations",
-            "",
-            "### A. Measured Facts",
-            "",
-            "1. **Scanned Page Modality Handling (`qd_23_2008_ubnd_hanoi_vien_quy_hoach`)**:",
-            "   - On the 4 scanned raster pages of `qd_23_2008`, **Marker (`fast-no-ocr`)**"
-            " produced 0 text blocks because native digital font extraction returned empty"
-            " character streams.",
-            "   - **MinerU (`pipeline`)** executed full visual OCR, extracting"
-            " **82 physical text/title blocks** across the 4 scanned pages.",
-            "   - Spatial layout precision, recall, and F1 evaluate to `0.0000` for both"
-            " parsers against reference annotations because no double-key verbatim text"
-            " transcription ground truth was established for OCR bounding boxes; the document is"
-            " evaluated under the Page Modality Task.",
-            "",
-            "2. **Throughput Differences on CPU**:",
-            "   - **Marker** achieved wall-clock throughput between **0.50 and 1.17"
-            " pages/second** across all 6 documents.",
-            "   - **MinerU** achieved CPU throughput between **0.05 and 0.15 pages/second**,"
-            " requiring 1,607.91 seconds (~26.8 minutes) for the 80-page `hanoi_master_plan_100y`.",
-            "",
-            "3. **Reading Order Concordance on Dense Tables (`tt_04_2026_bxd_pl2_dinh_muc`)**:",
-            "   - On dense engineering tables, **MinerU** achieved a pairwise reading order"
-            " accuracy of **0.7619** compared to **Marker's 0.7143**.",
-            "   - On born-digital administrative text (`tt_04_2023`), **Marker** achieved"
-            " a pairwise order accuracy of **0.6667** compared to **MinerU's 0.4250**.",
-            "",
-            "### B. Interpretation",
-            "",
-            "1. **Modal Specialization**: Fast heuristics without OCR (`fast-no-ocr`) cannot"
-            " process scanned historical decisions or stamped documents. When document collections"
-            " contain mixed digital and scanned files, a uniform no-OCR strategy will leave"
-            " scanned files unparsed.",
-            "2. **Computational Cost**: Visual layout models on CPU impose heavy computational"
-            " overhead (10x to 25x slower than heuristic text parsers). Running MinerU on long"
-            " documents (>50 pages) without GPU acceleration is operationally constrained.",
-            "",
-            "### C. Future Recommendations",
-            "",
-            "1. **Modality Router**: Implement an upstream fast document modality classifier"
-            " (detecting page raster vs vector text density) to dispatch born-digital PDFs to"
-            " fast engines while routing scanned documents to OCR-enabled pipelines.",
-            "2. **GPU Benchmark Milestone**: Complete the remaining MinerU runs"
-            " (`luat-112-2025-qh15` and `vbhn-103-2026-quy-hoach-tong-the`) in an accelerated"
-            " GPU environment.",
-            "",
-            "---",
-            "",
-            "## 4. Deterministic Normalization Verification",
-            "",
-            "For every evaluated document, the normalization from raw parser outputs into"
-            " `PhysicalDocument` was verified for strict bitwise determinism:",
-            r"$$\text{SHA-256}(\text{Serialization}_A) \equiv"
-            r" \text{SHA-256}(\text{Serialization}_B)$$",
-            "All 10 benchmark normalizations passed 100% bitwise verification under UTF-8 LF"
-            " serialization with sorted dictionary keys.",
-            "",
-        ]
-    )
-
-    out_file = root / "docs/research/parser-benchmark-v1.md"
-    out_file.write_text("\n".join(lines), encoding="utf-8", newline="\n")
-
-
-def _render_corpus_report(
-    root: Path,
-    corpus_summary: list[dict[str, Any]],
-    total_corpus_pages: int,
-    total_audited_pages: int,
-    total_reference_regions: int,
-) -> None:
-    lines = [
-        "# Vietnamese Legal, Administrative, and Planning Multimodal Golden Corpus (v1)",
-        "",
-        "## Executive Summary",
-        "",
-        "Issue #006 establishes an authoritative, multimodal golden corpus curated for"
-        " benchmarking document parsing and layout extraction on Vietnamese legal, administrative,"
-        " and spatial planning documents.",
-        "",
-        f"The corpus consists of **6 verified documents** ({total_corpus_pages} total pages)"
-        " sourced exclusively from official government portals (`congbao.chinhphu.vn`,"
-        " `vanban.chinhphu.vn`). Every document is immutably registered in `data/manifests/`"
-        " with cryptographic SHA-256 digests and exact byte sizes, ensuring 100% offline"
-        " verification and provenance tracking.",
-        "",
-        "---",
-        "",
-        "## 1. Corpus Inventory & Provenance",
-        "",
-        "| Document ID | Official Number | Title | Issuer | Issued Date | Effective Date |"
-        " Signer | Pages | Byte Size | SHA-256 Digest |",
-        "| :--- | :--- | :--- | :--- | :---: | :---: | :--- | :---: | :---: | :--- |",
-    ]
-
-    for item in corpus_summary:
-        eff = item["effective_on"] if item["effective_on"] else "N/A*"
+    for parser, item in coverage.items():
         lines.append(
-            f"| `{item['document_id']}` | `{item['document_number']}` | {item['title']} | "
-            f"{item['issuer']} | {item['issued_on']} | {eff} | {item['signer']} | "
-            f"**{item['pages']}** | {item['byte_size']:,} | `{item['sha256']}` |"
+            f"- **{parser} {item['version']}**: "
+            f"{item['evaluated_documents']}/{item['corpus_documents']} documents and "
+            f"{item['evaluated_pages']}/{item['corpus_pages']} pages "
+            f"(`{item['backend']}`)."
         )
-
     lines.extend(
         [
             "",
-            r"*\* Note: For consolidated texts (`VBHN 103/VBHN-VPQH`), official Vietnamese"
-            " jurisprudence does not assign an independent effective date to the consolidated"
-            " text itself; effective dates derive from the underlying amended enactments."
-            " The manifest truthfully records effective_on as absent.*",
+            "## Results",
             "",
-            "---",
+            "| Document ID | Parser | Pages | Runtime (s) | Pages/s | Audited pages | "
+            "Spatial P | Spatial R | Spatial F1 | Mean IoU | Pairwise order |",
+            "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
+        ]
+    )
+    for document in manifest["documents"]:
+        for parser, run in document["runs"].items():
+            lines.append(
+                f"| `{document['document_id']}` | {parser} | {document['pages']} | "
+                f"{run['wall_clock_seconds']:.4f} | {run['pages_per_second']:.4f} | "
+                f"{document['audited_pages']} | {run['spatial_precision']:.4f} | "
+                f"{run['spatial_recall']:.4f} | {run['spatial_f1']:.4f} | "
+                f"{run['mean_iou']:.4f} | {_format_order(run['pairwise_order_accuracy'])} |"
+            )
+    lines.extend(["", "## Metric definitions", ""])
+    for name, definition in manifest["metric_definitions"].items():
+        line = f"- `{name}`: `{definition['formula']}`."
+        if "null_when" in definition:
+            line += (
+                f" Null when {definition['null_when']}; prediction ties are "
+                f"{definition['prediction_ties']}."
+            )
+        lines.append(line)
+    scanned = manifest["scanned_case_evidence"]
+    lines.extend(["", "## Scanned-document evidence", ""])
+    for parser, facts in scanned["runs"].items():
+        lines.append(
+            f"- **{parser}** produced {facts['total_structural_physical_blocks']} structural "
+            f"Physical IR blocks, {facts['non_empty_text_blocks']} with non-empty text, and "
+            f"{facts['text_or_title_blocks']} typed TEXT/TITLE."
+        )
+    lines.append(
+        "No OCR recall, CER, or WER is reported because no text transcription reference exists."
+    )
+    map_evidence = manifest["map_figure_page_evidence"]
+    diagram = map_evidence["layout_diagram"]
+    prose = map_evidence["pre_symbology_prose"]
+    sheets = map_evidence["symbology_sheets"]
+    sheet_pairs = ", ".join(
+        f"PDF page {pdf_page} (page_index={page_index})"
+        for pdf_page, page_index in zip(
+            sheets["pdf_page_numbers_1_based"], sheets["page_indices"], strict=True
+        )
+    )
+    lines.extend(
+        [
             "",
-            "## 2. Multimodal & Legal Phenomena Coverage",
+            "## Visual page evidence",
             "",
-            "The corpus systematically exercises the complete range of complex document phenomena"
-            " found in Vietnamese public administration and territorial planning:",
+            (
+                f"The layout diagram is on PDF page {diagram['pdf_page_number_1_based']} "
+                f"(page_index={diagram['page_index']}). PDF page "
+                f"{prose['pdf_page_number_1_based']} (page_index={prose['page_index']}) is "
+                f"prose. The verified symbology sheets are: {sheet_pairs}."
+            ),
             "",
-            "1. **Hierarchical Statutory Legal Text (`Luật Quy hoạch 112/2025/QH15`)**:",
-            "   - Structural hierarchy: `Chương` -> `Mục` -> `Điều` -> `Khoản` -> `Điểm`"
-            " (no `Phần` division in this statute).",
-            "   - Preamble, enacting formula, authenticating national seal and signature of the"
-            " National Assembly Chairman (Trần Thanh Mẫn).",
+            "## Normalization determinism",
             "",
-            "2. **Consolidated Planning Resolution (`VBHN 103/VBHN-VPQH`)**:",
-            "   - Complex legal consolidation reconciling national master planning directives.",
-            "   - Multi-part socioeconomic orientations, sector-specific directives, and"
-            " multi-tier lists.",
+            (
+                f"All {manifest['_determinism']['available_pairs']} retained parser/document "
+                "pairs produced byte-identical A/B Physical IR JSON. This statement is "
+                f"generated from `{manifest['normalization_determinism']['path']}`."
+            ),
             "",
-            "3. **Dense Multi-Column Engineering & Maintenance Norms (`Thông tư 04/2026/TT-BXD"
-            " Phụ lục II`)**:",
-            "   - Multi-level table headers with merged spanning columns.",
-            "   - Numeric tabular data (labor codes, machine shift units, component ratios)"
-            " exercising spatial table recovery.",
-            "   - *Relationship Note*: The registered artifact is Annex II (`Phụ lục II: Định"
-            " mức dự toán bảo dưỡng công trình đường sắt cầu Thăng Long...`) attached to"
-            " Circular 04/2026/TT-BXD. Registry v1 schema does not encode parent-document links"
-            " explicitly; this relationship is documented here.",
+            "## Reproducibility boundary",
             "",
-            "4. **Spatial Diagrams & Map Symbology Graphics (`Thông tư 04/2023/TT-BKHĐT"
-            " Phụ lục II`)**:",
-            "   - Embedded raster figures illustrating standard map frames and layout"
-            " composition on **PDF page 21 (page_index=20)**.",
-            "   - Vector and raster sheets detailing official map symbology, point markers, and"
-            " line styles on **PDF pages 26-31 (page_index=25 to 30)**.",
-            "",
-            "5. **100% Scanned / OCR-Dependent Case (`Quyết định 23/2008/QĐ-UBND`)**:",
-            "   - Zero native digital text (`text_len = 0` across all 4 pages).",
-            "   - Scanned raster pages bearing authentic historical red seal stamps and"
-            " signatures, serving as an empirical test for Page Modality Classification"
-            " and OCR recovery.",
-            "",
-            "6. **Domain & Thematic Cohesion**:",
-            "   - *Direct legal cross-references*: No direct intra-corpus citation edge was"
-            " established among these specific document members in v1.",
-            "   - *Thematic cohesion*: The members represent interconnected aspects of the"
-            " Vietnamese territorial planning ecosystem: statutory planning frameworks (Law 112),"
-            " national spatial planning resolutions (VBHN 103), technical mapping and database"
-            " specifications (TT 04/2023), urban capital planning (Hanoi Master Plan),"
-            " infrastructure maintenance norms (TT 04/2026 PL2), and urban planning"
-            " institutional mandates (QD 23/2008).",
-            "",
-            "---",
-            "",
-            "## 3. Reference Annotation Quality & Traceability",
-            "",
-            f"A total of **{total_audited_pages} pages** were audited, comprising"
-            f" **{total_reference_regions} layout reference regions**:",
-            "",
-            "- **Annotation Version**: `v2`",
-            "- **Annotator**: `antigravity`",
-            "- **Annotator Type**: `ai_visual_audit`",
-            "- **Method**: `independent_visual_pdf_audit`",
-            "- **Protocol**: Reference annotations were created by inspecting rendered PDF page"
-            " canvases and frozen prior to running parser evaluations"
-            " (`parser_output_used_as_ground_truth: false`).",
-            "- **Scanned Pages**: On `qd_23_2008` (4 pages), pages are labeled with"
-            ' `page_modality: "scanned_raster"` under the Page Modality Task without synthetic'
-            " OCR transcription boxes.",
-            "",
-            "---",
-            "",
-            "## 4. Rejected Candidates Log",
-            "",
-            "| Candidate Considered | Source | Rationale for Exclusion |",
-            "| :--- | :--- | :--- |",
-            "| `Thông tư 22/2026/TT-BTC` (`22-btc.pdf`) | `datafiles.chinhphu.vn` | Large file"
-            " (45.5 MB, 138 pages) composed of repetitive scanned tables; excluded in favor of"
-            " compact 4-page scanned reference (`qd_23_2008`) and born-digital norm tables"
-            " (`tt_04_2026`). |",
-            "| `04-bkhdt.signed.pdf` | `datafiles.chinhphu.vn` | Scanned raster version without"
-            " text layer; excluded in favor of official Công báo born-digital gazette edition"
-            " containing vector text and layout diagrams"
-            " (`45667-1-2023815-81604-2023-tt-bkhdt.pdf`). |",
-            "| `55-vbhn-bnnmt.pdf` | `datafiles.chinhphu.vn` | Text-only document (103 pages)"
-            " lacking visual diagrams or tables; redundant with VBHN 103. |",
+            (
+                "A clean clone can validate committed machine artifacts, regenerate these "
+                "Markdown reports offline, and run unit tests. Raw parser outputs, source PDFs, "
+                "run manifests, and Physical IR files remain intentionally untracked; restoring "
+                "the paths and hashes listed in the benchmark manifest is required to recollect "
+                "Stage A evidence."
+            ),
             "",
         ]
     )
-
-    out_file = root / "docs/research/corpus-vietnamese-legal-planning-v1.md"
-    out_file.write_text("\n".join(lines), encoding="utf-8", newline="\n")
+    return "\n".join(lines)
 
 
-def _render_physical_ir_gaps_report(root: Path, total_corpus_pages: int) -> None:
+def _render_corpus_report(manifest: dict[str, Any]) -> str:
     lines = [
-        "# Physical Document IR v0: Empirical Gap Analysis & v1 Evolution Roadmap",
+        "# Vietnamese Legal and Planning Reference Corpus v1",
         "",
-        "## Executive Summary",
+        (
+            f"The corpus registers {manifest['corpus_documents_count']} official documents and "
+            f"{manifest['corpus_total_pages']} source pages. Source PDFs are identified by "
+            "immutable SHA-256 values."
+        ),
         "",
-        f"Issue #006 evaluated `Physical Document IR v0` across a 6-document golden corpus spanning"
-        f" {total_corpus_pages} pages of Vietnamese statutes, planning resolutions, dense"
-        " engineering tables, spatial layout diagrams, and scanned decrees.",
+        "| Document | Official number | Pages | Issued | Effective | Signer | Source SHA-256 |",
+        "| --- | --- | ---: | --- | --- | --- | --- |",
+    ]
+    for document in manifest["documents"]:
+        effective = (
+            document["effective_on"] if document["effective_on"] is not None else "explicit null"
+        )
+        lines.append(
+            f"| `{document['document_id']}` | `{document['document_number']}` | "
+            f"{document['pages']} | {document['issued_on']} | {effective} | "
+            f"{document['signer']} | `{document['source_artifact_sha256']}` |"
+        )
+    lines.extend(
+        [
+            "",
+            "## Reference annotation policy",
+            "",
+            (
+                f"Version {manifest['annotation_version']} uses "
+                f"`{manifest['annotation_provenance']['annotation_method']}` AI visual reference "
+                "annotations. For digital pages, regions target visually separable text groups, "
+                "headings, coherent outer tables, and visible figures at the selected audit "
+                "granularity. For scanned pages, modality is separate and full-page raster boxes "
+                "are not treated as OCR text truth."
+            ),
+            "",
+            (
+                "Per-page re-audit evidence is committed at "
+                f"`{manifest['annotation_provenance']['audit_evidence_path']}` with SHA-256 "
+                f"`{manifest['annotation_provenance']['audit_evidence_sha256']}`."
+            ),
+            "",
+            (
+                "These are reference annotations, not human ground truth. Prior parser-output "
+                "exposure existed, but parser output was not the reference source for geometry "
+                "or region type during the visual re-audit."
+            ),
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def _render_gap_report(manifest: dict[str, Any]) -> str:
+    table_totals: dict[str, Counter[str]] = {}
+    raw_totals: Counter[str] = Counter()
+    diagram_mappings: dict[str, dict[str, Any]] = {}
+    for document in manifest["documents"]:
+        for parser, run in document["runs"].items():
+            mapping = run["table_object_mapping"]
+            raw_totals[parser] += mapping["raw_table_object_count"]
+            table_totals.setdefault(parser, Counter()).update(mapping["physical_ir_kind_counts"])
+            if "layout_diagram_object_mapping" in run:
+                diagram_mappings[parser] = run["layout_diagram_object_mapping"]
+    scanned = manifest["scanned_case_evidence"]["runs"]
+    diagram = manifest["map_figure_page_evidence"]["layout_diagram"]
+    diagram_candidate_count = sum(
+        sum(item["raw_object_type_counts"].values()) for item in diagram_mappings.values()
+    )
+    table_page = manifest["gap_example_pages"]["table_localization"]
+    scanned_pages = manifest["gap_example_pages"]["scanned_modality"]
+    scanned_page_pairs = ", ".join(
+        f"PDF page {pdf_page} (page_index={page_index})"
+        for pdf_page, page_index in zip(
+            scanned_pages["pdf_page_numbers_1_based"],
+            scanned_pages["page_indices"],
+            strict=True,
+        )
+    )
+    lines = [
+        "# Physical Document IR v0: Evidence-Based Gaps",
         "",
-        "While `Physical IR v0` successfully proved **parser independence** by normalizing both"
-        " MinerU 3.4.5 and Marker 2.0.0 into a unified schema with deterministic serialization,"
-        " empirical benchmark evidence revealed several representational gaps that motivate the"
-        " design of `Physical Document IR v1`.",
+        "This report records observed representational gaps only; it does not implement "
+        "Physical IR v1.",
         "",
-        "---",
+        "## TABLE representation",
         "",
-        "## 1. Concrete Gaps Identified from Benchmark Evidence",
-        "",
-        "### Gap 1: Tabular Structure Flattening",
-        "- **Empirical Evidence**: In `Thông tư 04/2026/TT-BXD Phụ lục II` (19 pages of maintenance"
-        " norms) and `hanoi-master-plan-100y`, dense multi-column tables dominate the document.",
-        "- **Raw Parser Representations**: MinerU emits structured `table` layout blocks with"
-        " HTML/markdown representations; Marker emits `Table` blocks.",
-        "- **Normalized v0 Behavior**: Because `BlockKind` in v0 only defines `TEXT`, `TITLE`,"
-        " `HEADER`, `PAGE_NUMBER`, and `UNKNOWN`, MinerU table blocks are mapped to"
-        " `BlockKind.TEXT`, while Marker tables are mapped to `BlockKind.TEXT` (or"
-        " `BlockKind.UNKNOWN` when structural parsing is incomplete).",
-        "- **Information Lost**: Cell bounding boxes, row spans, column spans, and table header"
-        " hierarchies are erased into unsegmented text strings.",
-        "",
-        "### Gap 2: Multimodal Graphics & Diagram Loss",
-        "- **Empirical Evidence**: In `Thông tư 04/2023/TT-BKHĐT`, **PDF page 21 (page_index=20)**"
-        " contains a formal layout diagram defining national map sheet compositions, and"
-        " **PDF pages 26-31 (page_index=25 to 30)** contain map symbology sheets.",
-        "- **Raw Parser Representations**: Marker identifies `Picture`/`Figure` regions; MinerU"
-        " layout analysis identifies `image` regions.",
-        "- **Normalized v0 Behavior**: `BlockKind` provides no representation for image/figure"
-        " objects. Marker maps them to `BlockKind.UNKNOWN` or discards them; MinerU drops image"
-        " crops.",
-        "- **Information Lost**: Spatial coordinates of diagrams, bounding boxes of symbology"
-        " figures, and relative image asset links are omitted from the physical IR.",
-        "",
-        "### Gap 3: Legal Numbered Provisions Merged into Narrative Text",
-        "- **Empirical Evidence**: In `Luật Quy hoạch 112/2025/QH15` (52 pages) and"
-        " `VBHN 103/VBHN-VPQH` (48 pages), statutory provisions follow a strict hierarchy"
-        " (`Chương` -> `Mục` -> `Điều` -> `Khoản` -> `Điểm`).",
-        "- **Raw Parser Representations**: Parsers recognize major headings (`Chương`, `Điều`) as"
-        " headings/titles, but emit subsequent provisions (`Khoản`, `Điểm`) as standard body"
-        " paragraphs.",
-        "- **Normalized v0 Behavior**: Major headings are normalized to `BlockKind.TITLE` (with"
-        " `heading_level`), but `Khoản` and `Điểm` remain generic `BlockKind.TEXT`.",
-        "- **Information Lost**: Sub-article structural hierarchy and provision numbering are"
-        " lost to downstream consumers without NLP regex re-splitting.",
-        "",
-        "### Gap 4: Document Modality (Native Vector vs Scanned Raster)",
-        "- **Empirical Evidence**: On `Quyết định 23/2008/QĐ-UBND` (4 pages, 100% scanned raster),"
-        " Marker fast-no-ocr produced 0 text blocks, whereas MinerU pipeline recognized 82 OCR"
-        " text and title blocks.",
-        "- **Normalized v0 Behavior**: `PhysicalBlock` contains no field indicating whether"
-        " extracted text originates from native PDF digital font streams or OCR inference.",
-        "- **Information Lost**: Downstream consumers cannot determine optical recognition"
-        " confidence or distinguish authentic native digital text from potential OCR noise.",
-        "",
-        "---",
-        "",
-        "## 2. Quantitative Summary Across Evaluated Runs",
-        "",
-        "| Dimension | Marker 2.0.0 (fast-no-ocr) | MinerU 3.4.5 (pipeline CPU) | Observation |",
-        "| :--- | :---: | :---: | :--- |",
-        "| **Throughput (CPU)** | **0.50 - 1.17 pages/sec** | 0.05 - 0.15 pages/sec | Marker is"
-        " 5x-15x faster on CPU for born-digital documents. |",
-        "| **Scanned Page Modality** | 0 blocks (skips OCR) | **82 OCR blocks recovered** |"
-        " Marker requires OCR policy for scanned documents; MinerU handles scans automatically. |",
-        "| **Tabular Order Accuracy** | 0.7143 | **0.7619** | MinerU preserves vertical column"
-        " reading order slightly better on dense norms. |",
-        "| **Deterministic Output** | 100% (Bitwise identical) | 100% (Bitwise identical) | Both"
-        " normalizers achieve bitwise-reproducible PhysicalDocument JSON. |",
-        "",
-        "---",
-        "",
-        "## 3. Physical IR v1 Evolution Proposals",
-        "",
-        "1. **Expanded `BlockKind` Enum**:",
-        "   Add `TABLE`, `FIGURE`, `LIST_ITEM`, and `FOOTER` to `BlockKind`.",
-        "2. **Optional `TableStructure` Payload**:",
-        "   Attach structured cell bounding boxes and row/column indices to `TABLE` blocks.",
-        "3. **Modality & Provenance Declarations**:",
-        '   Record `extraction_modality: Literal["native_digital", "ocr", "hybrid"]` in'
-        " `BlockProvenance`.",
-        "4. **Visual Crop File Linkage**:",
-        "   Record relative paths to extracted diagram image files in parser run output"
-        " directories.",
+        (
+            f"- **Actual page evidence**: `{table_page['document_id']}`, PDF page "
+            f"{table_page['pdf_page_number_1_based']} "
+            f"(page_index={table_page['page_index']}) contains a visually audited norm table."
+        ),
         "",
     ]
+    for parser in sorted(raw_totals):
+        mappings = (
+            ", ".join(
+                f"{count} as `{kind}`" for kind, count in sorted(table_totals[parser].items())
+            )
+            or "no corresponding normalized blocks"
+        )
+        lines.append(
+            f"- **Raw `{parser}` representation and v0 mapping**: "
+            f"{raw_totals[parser]} parser-native table objects map to {mappings}."
+        )
+    lines.extend(
+        [
+            "",
+            (
+                "- **Specific information loss**: The counts follow parser-native table "
+                "objects through `source_raw_index`. "
+                "Separately emitted nested text may become TEXT, but that does not preserve the "
+                "table object, cells, spans, or header structure."
+            ),
+            "",
+            (
+                f"- **Machine-derived frequency**: {sum(raw_totals.values())} table objects "
+                "were traced across the retained runs."
+            ),
+            "",
+            "- **Candidate future requirement**: Represent TABLE objects and structured cells.",
+            "",
+            "## FIGURE / MAP representation",
+            "",
+            (
+                "- **Actual page evidence**: TT04/2023 contains a verified layout diagram on "
+                f"PDF page "
+                f"{diagram['pdf_page_number_1_based']} (page_index={diagram['page_index']}) and "
+                "later visually verified symbology sheets."
+            ),
+            "",
+        ]
+    )
+    for parser in sorted(diagram_mappings):
+        mapping = diagram_mappings[parser]
+        raw = ", ".join(
+            f"{count} `{kind}`" for kind, count in mapping["raw_object_type_counts"].items()
+        )
+        normalized = ", ".join(
+            f"{count} `{kind}`" for kind, count in mapping["physical_ir_kind_counts"].items()
+        )
+        lines.append(
+            f"- **Raw `{parser}` representation and v0 mapping**: {raw} map to {normalized}."
+        )
+    lines.extend(
+        [
+            "",
+            (
+                "- **Specific information loss**: Physical IR v0 has no FIGURE/MAP kind or "
+                "retained visual-asset link, so graphical identity and asset provenance are lost."
+            ),
+            "",
+            (
+                "- **Machine-derived frequency**: the page-specific provenance trace covers "
+                f"{diagram_candidate_count} "
+                "parser-native diagram candidates across the retained parser runs; it is not a "
+                "corpus-wide figure-frequency estimate."
+            ),
+            "",
+            (
+                "- **Candidate future requirement**: Add typed visual objects and relative "
+                "asset references."
+            ),
+            "",
+            "## OCR / modality distinction",
+            "",
+            (
+                f"- **Actual page evidence**: `{scanned_pages['document_id']}` is raster-only "
+                f"on {scanned_page_pairs}."
+            ),
+            "",
+        ]
+    )
+    for parser, facts in scanned.items():
+        raw_types = ", ".join(
+            f"{count} `{kind}`" for kind, count in facts["raw_object_type_counts"].items()
+        )
+        physical_kinds = ", ".join(
+            f"{count} `{kind}`" for kind, count in facts["physical_ir_kind_counts"].items()
+        )
+        lines.append(
+            f"- **Raw `{parser}` representation and v0 mapping**: {raw_types}; normalized as "
+            f"{physical_kinds}."
+        )
+    lines.extend(
+        [
+            "",
+            (
+                "- **Specific information loss**: Physical IR v0 does not distinguish native "
+                "digital text from OCR-derived text "
+                "or attach OCR confidence. No OCR recall, CER, or WER conclusion is possible "
+                "without transcription reference data."
+            ),
+            "",
+            (
+                "- **Machine-derived frequency**: "
+                + "; ".join(
+                    f"{parser} produced {facts['total_structural_physical_blocks']} structural "
+                    f"blocks, {facts['non_empty_text_blocks']} with non-empty text"
+                    for parser, facts in scanned.items()
+                )
+                + "."
+            ),
+            "",
+            (
+                "- **Candidate future requirement**: Carry extraction modality, OCR confidence, "
+                "and provenance without treating OCR output as transcription reference data."
+            ),
+            "",
+            "## Clean-clone boundary",
+            "",
+            (
+                "The quantitative statements above are rendered from the committed benchmark "
+                "manifest. Recomputing them from parser-native evidence requires restoration of "
+                "the external paths and hashes listed there."
+            ),
+            "",
+        ]
+    )
+    return "\n".join(lines)
 
-    out_file = root / "docs/research/physical-ir-v1-gaps.md"
-    out_file.write_text("\n".join(lines), encoding="utf-8", newline="\n")
+
+def render_reports_from_committed_artifacts(root: Path, output_root: Path | None = None) -> None:
+    """Stage B: validate committed machine evidence and render reports without raw artifacts."""
+    manifest = _validated_machine_evidence(root)
+    destination = root if output_root is None else output_root
+    rendered = (
+        _render_parser_report(manifest),
+        _render_corpus_report(manifest),
+        _render_gap_report(manifest),
+    )
+    for relative_path, report_text in zip(REPORT_PATHS, rendered, strict=True):
+        path = destination / relative_path
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes((report_text.rstrip("\n") + "\n").encode("utf-8"))
+
+
+def generate_all_benchmarks_and_reports(root: Path) -> dict[str, Any]:
+    """Collect Stage A machine evidence, then render Stage B Markdown reports."""
+    manifest = collect_benchmark_evidence(root)
+    render_reports_from_committed_artifacts(root)
+    return manifest
 
 
 __all__ = [
+    "collect_benchmark_evidence",
     "generate_all_benchmarks_and_reports",
     "get_corpus_config",
+    "render_reports_from_committed_artifacts",
 ]

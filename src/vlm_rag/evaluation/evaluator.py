@@ -14,10 +14,10 @@ class PageEvaluationReport:
     """Evaluation summary for one audited page."""
 
     page_index: int
-    ground_truth_count: int
+    reference_count: int
     predicted_count: int
     matched_count: int
-    unmatched_ground_truth: int
+    unmatched_reference: int
     unmatched_predicted: int
     mean_iou: float
 
@@ -46,10 +46,10 @@ class DocumentEvaluationReport:
             "pages": [
                 {
                     "page_index": p.page_index,
-                    "ground_truth_count": p.ground_truth_count,
+                    "reference_count": p.reference_count,
                     "predicted_count": p.predicted_count,
                     "matched_count": p.matched_count,
-                    "unmatched_ground_truth": p.unmatched_ground_truth,
+                    "unmatched_reference": p.unmatched_reference,
                     "unmatched_predicted": p.unmatched_predicted,
                     "mean_iou": p.mean_iou,
                 }
@@ -64,7 +64,7 @@ def evaluate_physical_document(
     *,
     iou_threshold: float = 0.5,
 ) -> DocumentEvaluationReport:
-    """Evaluate a parsed PhysicalDocument against ground-truth annotations."""
+    """Evaluate a parsed PhysicalDocument against reference annotations."""
     # Cross-artifact integrity validation
     if annotation.document_id != document.document_id:
         raise ValueError(
@@ -107,10 +107,10 @@ def evaluate_physical_document(
         page_reports.append(
             PageEvaluationReport(
                 page_index=idx,
-                ground_truth_count=len(audited_page.regions),
+                reference_count=len(audited_page.regions),
                 predicted_count=len(pred_blocks),
                 matched_count=matched_cnt,
-                unmatched_ground_truth=len(res.unmatched_ground_truth),
+                unmatched_reference=len(res.unmatched_reference),
                 unmatched_predicted=len(res.unmatched_predicted),
                 mean_iou=round(mean_p_iou, 4),
             )

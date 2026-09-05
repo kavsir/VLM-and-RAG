@@ -1,5 +1,8 @@
 """Unit tests for the layout evaluation and spatial benchmark module."""
 
+import json
+import shutil
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
@@ -17,11 +20,14 @@ from vlm_rag.evaluation.metrics import (
 )
 from vlm_rag.evaluation.models import (
     AnnotationBoundingBox,
+    AnnotationMethod,
+    AnnotatorType,
     AuditedPage,
     DocumentAnnotation,
-    GroundTruthRegion,
+    ReferenceRegion,
     RegionKind,
 )
+from vlm_rag.evaluation.reporting import render_reports_from_committed_artifacts
 from vlm_rag.evaluation.serialization import dump_evaluation_report, load_annotation_file
 from vlm_rag.physical_ir.models import (
     BlockDisposition,
@@ -32,6 +38,7 @@ from vlm_rag.physical_ir.models import (
     PhysicalDocument,
     PhysicalPage,
 )
+from vlm_rag.registry import load_manifest
 
 
 def _dummy_provenance(parser: str = "mineru", backend: str = "pipeline") -> BlockProvenance:
@@ -70,12 +77,35 @@ def _dummy_gt_region(
     reading_order: int = 0,
     kind: RegionKind = RegionKind.TEXT,
     bbox: AnnotationBoundingBox | None = None,
-) -> GroundTruthRegion:
-    return GroundTruthRegion(
+) -> ReferenceRegion:
+    return ReferenceRegion(
         id=region_id,
         reading_order=reading_order,
         kind=kind,
         bbox=bbox or AnnotationBoundingBox(x0=100.0, y0=100.0, x1=200.0, y1=200.0),
+    )
+
+
+def _annotation(
+    *,
+    document_id: str = "doc-test",
+    version_id: str = "v1",
+    source_sha256: str = "a" * 64,
+    audited_pages: tuple[AuditedPage, ...] = (),
+) -> DocumentAnnotation:
+    return DocumentAnnotation(
+        annotation_schema_version=2,
+        annotation_version="test-v1",
+        annotator="test-suite",
+        annotator_type=AnnotatorType.SYNTHETIC,
+        annotation_method=AnnotationMethod.SYNTHETIC,
+        created_at=datetime(2026, 9, 5, tzinfo=UTC),
+        prior_parser_output_exposure=False,
+        parser_output_used_as_reference=False,
+        document_id=document_id,
+        version_id=version_id,
+        source_sha256=source_sha256,
+        audited_pages=audited_pages,
     )
 
 
@@ -109,6 +139,51 @@ def test_audited_page_rejects_duplicate_region_ids() -> None:
         AuditedPage(page_index=0, regions=(r1, r2))
 
 
+def test_annotation_provenance_is_explicit_and_controlled() -> None:
+    payload = _annotation().model_dump()
+    required_fields = (
+        "annotation_schema_version",
+        "annotation_version",
+        "annotator",
+        "annotator_type",
+        "annotation_method",
+        "created_at",
+        "prior_parser_output_exposure",
+        "parser_output_used_as_reference",
+        "document_id",
+        "version_id",
+        "source_sha256",
+    )
+    for field in required_fields:
+        incomplete = dict(payload)
+        incomplete.pop(field)
+        with pytest.raises(ValidationError, match=field):
+            DocumentAnnotation.model_validate(incomplete)
+
+    invalid_annotator = dict(payload, annotator_type="banana")
+    with pytest.raises(ValidationError, match="annotator_type"):
+        DocumentAnnotation.model_validate(invalid_annotator)
+
+    invalid_method = dict(payload, annotation_method="whatever")
+    with pytest.raises(ValidationError, match="annotation_method"):
+        DocumentAnnotation.model_validate(invalid_method)
+
+
+def test_reading_order_requires_contiguous_zero_based_sequence() -> None:
+    valid = tuple(_dummy_gt_region(f"r{i}", reading_order=i) for i in range(3))
+    assert len(AuditedPage(page_index=0, regions=valid).regions) == 3
+    assert AuditedPage(page_index=0, regions=()).regions == ()
+
+    non_contiguous = (
+        _dummy_gt_region("r0", reading_order=0),
+        _dummy_gt_region("r2", reading_order=2),
+    )
+    with pytest.raises(ValidationError, match="contiguous and zero-based"):
+        AuditedPage(page_index=0, regions=non_contiguous)
+    with pytest.raises(ValidationError, match="contiguous and zero-based"):
+        AuditedPage(page_index=0, regions=(_dummy_gt_region("r1", reading_order=1),))
+
+
 def test_match_page_regions_threshold_and_tie_breaking() -> None:
     gt1 = _dummy_gt_region("gt-1")
     pred1 = _dummy_block("blk-1")
@@ -120,16 +195,16 @@ def test_match_page_regions_threshold_and_tie_breaking() -> None:
 
     result = match_page_regions([gt1], [pred1, pred_far], iou_threshold=0.5)
     assert len(result.matched_pairs) == 1
-    assert result.matched_pairs[0].ground_truth.id == "gt-1"
+    assert result.matched_pairs[0].reference.id == "gt-1"
     assert result.matched_pairs[0].predicted.id == "blk-1"
-    assert len(result.unmatched_ground_truth) == 0
+    assert len(result.unmatched_reference) == 0
     assert len(result.unmatched_predicted) == 1
     assert result.unmatched_predicted[0].id == "blk-2"
 
 
-def test_reading_order_concordance_and_metrics() -> None:
+def test_pairwise_reading_order_accuracy_and_metrics() -> None:
     gt_regions = [
-        GroundTruthRegion(
+        ReferenceRegion(
             id=f"gt-{i}",
             reading_order=i,
             kind=RegionKind.TEXT,
@@ -170,14 +245,14 @@ def test_evaluate_physical_document_end_to_end(tmp_path: Path) -> None:
         page_index=0,
         phenomena=("legal_hierarchy",),
         regions=(
-            GroundTruthRegion(
+            ReferenceRegion(
                 id="r-title",
                 reading_order=0,
                 kind=RegionKind.HEADING,
                 bbox=AnnotationBoundingBox(x0=200.0, y0=50.0, x1=800.0, y1=100.0),
                 heading_level=1,
             ),
-            GroundTruthRegion(
+            ReferenceRegion(
                 id="r-article",
                 reading_order=1,
                 kind=RegionKind.TEXT,
@@ -185,7 +260,7 @@ def test_evaluate_physical_document_end_to_end(tmp_path: Path) -> None:
             ),
         ),
     )
-    annotation = DocumentAnnotation(
+    annotation = _annotation(
         document_id="doc-test",
         version_id="v1",
         source_sha256="a" * 64,
@@ -259,7 +334,7 @@ def test_evaluate_physical_document_end_to_end(tmp_path: Path) -> None:
 
 def test_1_exact_bbox_gt_text_vs_predicted_title() -> None:
     """1. exact-bbox GT TEXT vs predicted TITLE: TEXT F1 != 1, heading FP visible."""
-    gt = GroundTruthRegion(
+    gt = ReferenceRegion(
         id="gt-t1",
         reading_order=0,
         kind=RegionKind.TEXT,
@@ -381,7 +456,7 @@ def test_4_perfect_pairwise_order() -> None:
     """4. perfect pairwise order yields 1.0."""
     pairs = [
         MatchedPair(
-            ground_truth=_dummy_gt_region(f"gt-{i}", reading_order=i),
+            reference=_dummy_gt_region(f"gt-{i}", reading_order=i),
             predicted=_dummy_block(f"p-{i}", reading_order=i),
             iou=0.9,
         )
@@ -394,7 +469,7 @@ def test_5_fully_reversed_pairwise_order() -> None:
     """5. fully reversed pairwise order yields 0.0."""
     pairs = [
         MatchedPair(
-            ground_truth=_dummy_gt_region(f"gt-{i}", reading_order=i),
+            reference=_dummy_gt_region(f"gt-{i}", reading_order=i),
             predicted=_dummy_block(f"p-{i}", reading_order=2 - i),
             iou=0.9,
         )
@@ -409,7 +484,7 @@ def test_6_partial_inversion_order() -> None:
     pred_orders = [0, 2, 1]
     pairs = [
         MatchedPair(
-            ground_truth=_dummy_gt_region(f"gt-{i}", reading_order=i),
+            reference=_dummy_gt_region(f"gt-{i}", reading_order=i),
             predicted=_dummy_block(f"p-{i}", reading_order=pred_orders[i]),
             iou=0.9,
         )
@@ -426,7 +501,7 @@ def test_7_zero_match_reading_order_is_none() -> None:
 def test_8_single_match_reading_order_is_none() -> None:
     """8. 1-match reading order = None/N/A."""
     p = MatchedPair(
-        ground_truth=_dummy_gt_region("gt-0", reading_order=0),
+        reference=_dummy_gt_region("gt-0", reading_order=0),
         predicted=_dummy_block("p-0", reading_order=0),
         iou=0.9,
     )
@@ -443,13 +518,13 @@ def test_9_maximum_cardinality_counterexample() -> None:
     # B-X IoU = 70/130 = 0.5385
     # Greedy picks A-X (0.8182), leaving B and Y unmatched (cardinality 1).
     # Maximum cardinality picks A-Y (0.70) and B-X (0.5385) (cardinality 2).
-    gt_a = GroundTruthRegion(
+    gt_a = ReferenceRegion(
         id="A",
         reading_order=0,
         kind=RegionKind.TEXT,
         bbox=AnnotationBoundingBox(x0=0.0, y0=0.0, x1=100.0, y1=100.0),
     )
-    gt_b = GroundTruthRegion(
+    gt_b = ReferenceRegion(
         id="B",
         reading_order=1,
         kind=RegionKind.TEXT,
@@ -468,11 +543,81 @@ def test_9_maximum_cardinality_counterexample() -> None:
 
     result = match_page_regions([gt_a, gt_b], [pred_x, pred_y], iou_threshold=0.5)
     assert len(result.matched_pairs) == 2
-    matched_gt = {mp.ground_truth.id: mp.predicted.id for mp in result.matched_pairs}
+    matched_gt = {mp.reference.id: mp.predicted.id for mp in result.matched_pairs}
     assert matched_gt["A"] == "Y"
     assert matched_gt["B"] == "X"
-    assert len(result.unmatched_ground_truth) == 0
+    assert len(result.unmatched_reference) == 0
     assert len(result.unmatched_predicted) == 0
+
+
+def test_secondary_matching_objective_uses_exact_float_ordering(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    references = [
+        _dummy_gt_region(
+            "A",
+            reading_order=0,
+            bbox=AnnotationBoundingBox(x0=0.0, y0=0.0, x1=10.0, y1=10.0),
+        ),
+        _dummy_gt_region(
+            "B",
+            reading_order=1,
+            bbox=AnnotationBoundingBox(x0=100.0, y0=0.0, x1=110.0, y1=10.0),
+        ),
+    ]
+    predictions = [
+        _dummy_block(
+            "X",
+            bbox=BoundingBox(x0=200.0, y0=0.0, x1=210.0, y1=10.0),
+        ),
+        _dummy_block(
+            "Y",
+            reading_order=1,
+            bbox=BoundingBox(x0=300.0, y0=0.0, x1=310.0, y1=10.0),
+        ),
+    ]
+    weights = {
+        (0.0, 200.0): 0.50010,
+        (0.0, 300.0): 0.50004,
+        (100.0, 200.0): 0.50012,
+        (100.0, 300.0): 0.50001,
+    }
+    monkeypatch.setattr(
+        "vlm_rag.evaluation.matching.calculate_iou",
+        lambda left, right: weights[(left.x0, right.x0)],
+    )
+
+    result = match_page_regions(references, predictions, iou_threshold=0.5)
+    pairs = {pair.reference.id: pair.predicted.id for pair in result.matched_pairs}
+    assert pairs == {"A": "Y", "B": "X"}
+    assert sum(pair.iou for pair in result.matched_pairs) == pytest.approx(1.00016)
+
+
+def test_equal_weight_matching_is_deterministic(monkeypatch: pytest.MonkeyPatch) -> None:
+    references = [
+        _dummy_gt_region("A", reading_order=0),
+        _dummy_gt_region(
+            "B",
+            reading_order=1,
+            bbox=AnnotationBoundingBox(x0=300.0, y0=100.0, x1=400.0, y1=200.0),
+        ),
+    ]
+    predictions = [
+        _dummy_block("X"),
+        _dummy_block(
+            "Y",
+            reading_order=1,
+            bbox=BoundingBox(x0=300.0, y0=100.0, x1=400.0, y1=200.0),
+        ),
+    ]
+    monkeypatch.setattr("vlm_rag.evaluation.matching.calculate_iou", lambda *_args: 0.75)
+
+    first = match_page_regions(references, predictions)
+    second = match_page_regions(references, predictions)
+    first_ids = [(pair.reference.id, pair.predicted.id) for pair in first.matched_pairs]
+    second_ids = [(pair.reference.id, pair.predicted.id) for pair in second.matched_pairs]
+    assert first_ids == second_ids
+    assert len(first_ids) == 2
 
 
 def test_10_duplicate_audited_page_index_rejected() -> None:
@@ -480,7 +625,7 @@ def test_10_duplicate_audited_page_index_rejected() -> None:
     p1 = AuditedPage(page_index=0, regions=(_dummy_gt_region("r1"),))
     p2 = AuditedPage(page_index=0, regions=(_dummy_gt_region("r2"),))
     with pytest.raises(ValidationError, match="duplicate audited page index"):
-        DocumentAnnotation(
+        _annotation(
             document_id="doc-test",
             version_id="v1",
             source_sha256="a" * 64,
@@ -499,7 +644,7 @@ def test_11_duplicate_reading_order_rejected() -> None:
 def test_12_malformed_sha_rejected() -> None:
     """12. malformed SHA rejected."""
     with pytest.raises(ValidationError):
-        DocumentAnnotation(
+        _annotation(
             document_id="doc-test",
             version_id="v1",
             source_sha256="short_sha",
@@ -518,7 +663,7 @@ def test_13_zero_area_reference_bbox_rejected() -> None:
 
 def test_14_annotation_document_id_mismatch_rejected() -> None:
     """14. annotation/document ID mismatch rejected."""
-    ann = DocumentAnnotation(
+    ann = _annotation(
         document_id="doc-correct",
         version_id="v1",
         source_sha256="a" * 64,
@@ -541,7 +686,7 @@ def test_14_annotation_document_id_mismatch_rejected() -> None:
 
 def test_15_version_mismatch_rejected() -> None:
     """15. version mismatch rejected."""
-    ann = DocumentAnnotation(
+    ann = _annotation(
         document_id="doc-test",
         version_id="v1",
         source_sha256="a" * 64,
@@ -564,7 +709,7 @@ def test_15_version_mismatch_rejected() -> None:
 
 def test_16_source_sha_mismatch_rejected() -> None:
     """16. source SHA mismatch rejected."""
-    ann = DocumentAnnotation(
+    ann = _annotation(
         document_id="doc-test",
         version_id="v1",
         source_sha256="a" * 64,
@@ -588,7 +733,7 @@ def test_16_source_sha_mismatch_rejected() -> None:
 def test_17_out_of_range_audited_page_rejected() -> None:
     """17. out-of-range audited page rejected."""
     p_out = AuditedPage(page_index=5, regions=(_dummy_gt_region("r1"),))
-    ann = DocumentAnnotation(
+    ann = _annotation(
         document_id="doc-test",
         version_id="v1",
         source_sha256="a" * 64,
@@ -630,85 +775,148 @@ def test_18_marker_backend_provenance_consistency() -> None:
 
 
 def test_19_corpus_total_page_computation_equals_250() -> None:
-    """19. corpus total-page computation = exactly 250 pages."""
-    corpus_page_counts = {
-        "hanoi_master_plan_100y": 80,
-        "luat_112_2025_qh15": 52,
-        "vbhn_103_2026_quy_hoach_tong_the": 48,
-        "tt_04_2026_bxd_pl2_dinh_muc": 19,
-        "tt_04_2023_bkhdt_so_do_ban_do": 47,
-        "qd_23_2008_ubnd_hanoi_vien_quy_hoach": 4,
-    }
-    total_pages = sum(corpus_page_counts.values())
-    assert total_pages == 250
+    """19. page and parser coverage totals are internally consistent machine evidence."""
+    manifest = json.loads(
+        Path("data/benchmarks/benchmark_manifest.v1.json").read_text(encoding="utf-8")
+    )
+    derived_total = sum(document["pages"] for document in manifest["documents"])
+    assert derived_total == manifest["corpus_total_pages"] == 250
+    marker = manifest["parser_coverage_matrix"]["marker"]
+    mineru = manifest["parser_coverage_matrix"]["mineru"]
+    assert marker["evaluated_pages"] == derived_total
+    assert mineru["evaluated_pages"] == sum(
+        document["pages"] for document in manifest["documents"] if "mineru" in document["runs"]
+    )
+    assert mineru["evaluated_pages"] == 150
 
 
 def test_20_generated_report_numbers_equal_source_evaluation_artifacts() -> None:
-    """20. generated report numbers equal source evaluation artifacts."""
-    gt_page = AuditedPage(
-        page_index=0,
-        regions=(
-            _dummy_gt_region("r1", reading_order=0, kind=RegionKind.TEXT),
-            _dummy_gt_region(
-                "r2",
-                reading_order=1,
-                kind=RegionKind.HEADING,
-                bbox=AnnotationBoundingBox(x0=300.0, y0=300.0, x1=400.0, y1=400.0),
-            ),
-        ),
+    """20. selected Markdown rows bind to the matching machine-result artifact."""
+    manifest = json.loads(
+        Path("data/benchmarks/benchmark_manifest.v1.json").read_text(encoding="utf-8")
     )
-    ann = DocumentAnnotation(
-        document_id="doc-report-test",
-        version_id="v1",
-        source_sha256="c" * 64,
-        audited_pages=(gt_page,),
+    report_lines = (
+        Path("docs/research/parser-benchmark-v1.md").read_text(encoding="utf-8").splitlines()
     )
-    doc = PhysicalDocument(
-        physical_ir_version=1,
-        document_id="doc-report-test",
-        version_id="v1",
-        source_artifact_sha256="c" * 64,
-        parser="mineru",
-        parser_version="3.4.5",
-        parser_backend="pipeline",
-        page_count=1,
-        pages=(
-            PhysicalPage(
-                page_index=0,
-                width=1000.0,
-                height=1000.0,
-                blocks=(
-                    _dummy_block("p1", reading_order=0, kind=BlockKind.TEXT),
-                    _dummy_block(
-                        "p2",
-                        reading_order=1,
-                        kind=BlockKind.TITLE,
-                        bbox=BoundingBox(x0=300.0, y0=300.0, x1=400.0, y1=400.0),
-                    ),
-                ),
-            ),
-        ),
+    rows: dict[tuple[str, str], list[str]] = {}
+    for line in report_lines:
+        if line.startswith("| `"):
+            cells = [cell.strip().strip("`") for cell in line.strip("|").split("|")]
+            rows[(cells[0], cells[1])] = cells
+    targets = (
+        ("hanoi-master-plan-100y", "marker"),
+        ("tt-04-2026-bxd-pl2-dinh-muc", "mineru"),
+        ("qd-23-2008-ubnd-hanoi-vien-quy-hoach", "mineru"),
+    )
+    documents = {document["document_id"]: document for document in manifest["documents"]}
+    for document_id, parser in targets:
+        machine = documents[document_id]["runs"][parser]
+        individual = json.loads(Path(machine["evaluation_result_path"]).read_text(encoding="utf-8"))
+        row = rows[(document_id, parser)]
+        assert row[3] == f"{individual['wall_clock_seconds']:.4f}"
+        assert row[8] == f"{individual['metrics']['spatial_f1']:.4f}"
+
+
+def test_report_rendering_uses_only_committed_machine_artifacts(tmp_path: Path) -> None:
+    manifest_path = Path("data/benchmarks/benchmark_manifest.v1.json")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    required_paths = {
+        manifest_path,
+        Path(manifest["annotation_provenance"]["audit_evidence_path"]),
+        Path(manifest["normalization_determinism"]["path"]),
+    }
+    for document in manifest["documents"]:
+        required_paths.add(Path(document["reference_annotation_path"]))
+        for run in document["runs"].values():
+            required_paths.add(Path(run["evaluation_result_path"]))
+    for source in required_paths:
+        destination = tmp_path / source
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source, destination)
+
+    render_reports_from_committed_artifacts(tmp_path)
+
+    for report_path in (
+        Path("docs/research/parser-benchmark-v1.md"),
+        Path("docs/research/corpus-vietnamese-legal-planning-v1.md"),
+        Path("docs/research/physical-ir-v1-gaps.md"),
+    ):
+        assert (tmp_path / report_path).read_bytes() == report_path.read_bytes()
+
+
+def test_reference_annotation_v3_audit_is_complete_and_truthful() -> None:
+    audit = json.loads(
+        Path("data/annotations/reference_annotation_audit.v3.json").read_text(encoding="utf-8")
+    )
+    expected_pages: set[tuple[str, int]] = set()
+    for annotation_path in sorted(Path("data/annotations").glob("*.v1.json")):
+        annotation = load_annotation_file(annotation_path)
+        assert annotation.annotation_schema_version == 2
+        assert annotation.annotation_version == "v3"
+        assert annotation.annotation_method is AnnotationMethod.VISUAL_PDF_REAUDIT
+        assert annotation.prior_parser_output_exposure is True
+        assert annotation.parser_output_used_as_reference is False
+        assert all(
+            region.text == "" for page in annotation.audited_pages for region in page.regions
+        )
+        manifest_path = Path("data/manifests") / annotation_path.name.replace(".json", ".yaml")
+        manifest = load_manifest(manifest_path)
+        assert annotation.source_sha256 == manifest.artifact.sha256
+        expected_pages.update(
+            (annotation.document_id, page.page_index) for page in annotation.audited_pages
+        )
+    audited_pages = {(page["document_id"], page["page_index"]) for page in audit["pages"]}
+    assert audited_pages == expected_pages
+    assert audit["pages_audited"] == len(expected_pages) == 46
+    assert audit["regions_before"] == 112
+    assert audit["regions_after"] == 110
+
+    tt_path = Path("data/annotations/tt_04_2023_bkhdt_so_do_ban_do.v1.json")
+    tt = load_annotation_file(tt_path)
+    prose_page = next(page for page in tt.audited_pages if page.page_index == 20)
+    diagram_page = next(page for page in tt.audited_pages if page.page_index == 21)
+    assert {region.kind for region in prose_page.regions} == {
+        RegionKind.HEADER,
+        RegionKind.TEXT,
+    }
+    assert RegionKind.FIGURE in {region.kind for region in diagram_page.regions}
+    assert [region.kind for region in diagram_page.regions] == [
+        RegionKind.HEADER,
+        RegionKind.HEADING,
+        RegionKind.TEXT,
+        RegionKind.FIGURE,
+    ]
+    symbology_page = next(page for page in tt.audited_pages if page.page_index == 26)
+    assert [region.kind for region in symbology_page.regions] == [
+        RegionKind.HEADER,
+        RegionKind.FIGURE,
+    ]
+    assert audit["map_figure_page_evidence"]["layout_diagram"]["page_index"] == 21
+    assert audit["map_figure_page_evidence"]["pre_symbology_prose"]["page_index"] == 25
+    assert audit["map_figure_page_evidence"]["symbology_sheets"]["page_indices"] == list(
+        range(26, 32)
     )
 
-    report = evaluate_physical_document(doc, ann)
-    report_dict = report.to_dict()
 
-    # Verify machine dict matches report object exactly
-    assert report_dict["document_id"] == "doc-report-test"
-    assert report_dict["metrics"]["spatial_precision"] == report.metrics.spatial_precision
-    assert report_dict["metrics"]["spatial_recall"] == report.metrics.spatial_recall
-    assert report_dict["metrics"]["spatial_f1"] == report.metrics.spatial_f1
-    assert (
-        report_dict["metrics"]["pairwise_order_accuracy"] == report.metrics.pairwise_order_accuracy
+def test_determinism_evidence_and_metric_schema_are_consistent() -> None:
+    determinism = json.loads(
+        Path("data/benchmarks/normalization_determinism.v1.json").read_text(encoding="utf-8")
     )
-
-    # Verify markdown table matches benchmark artifact exactly
-    hanoi_marker_bench = Path("data/benchmarks/marker_hanoi_master_plan_100y.v1.json")
-    report_md = Path("docs/research/parser-benchmark-v1.md")
-    if hanoi_marker_bench.exists() and report_md.exists():
-        import json
-
-        data = json.loads(hanoi_marker_bench.read_text(encoding="utf-8"))
-        f1_str = f"{data['metrics']['spatial_f1']:.4f}"
-        report_text = report_md.read_text(encoding="utf-8")
-        assert f1_str in report_text
+    assert determinism["available_pairs"] == len(determinism["entries"]) == 10
+    assert determinism["all_equal"] is True
+    assert all(
+        entry["equal"]
+        and entry["sha256_a"] == entry["sha256_b"]
+        and entry["byte_size_a"] == entry["byte_size_b"]
+        for entry in determinism["entries"]
+    )
+    manifest = json.loads(
+        Path("data/benchmarks/benchmark_manifest.v1.json").read_text(encoding="utf-8")
+    )
+    for document in manifest["documents"]:
+        for run in document["runs"].values():
+            result = json.loads(Path(run["evaluation_result_path"]).read_text(encoding="utf-8"))
+            assert {"precision", "recall", "f1", "reading_order_concordance"}.isdisjoint(
+                result["metrics"]
+            )
+            assert "ground_truth" not in json.dumps(result)

@@ -1,58 +1,46 @@
-# Physical Document IR v0: Empirical Gap Analysis & v1 Evolution Roadmap
+# Physical Document IR v0: Evidence-Based Gaps
 
-## Executive Summary
+This report records observed representational gaps only; it does not implement Physical IR v1.
 
-Issue #006 evaluated `Physical Document IR v0` across a 6-document golden corpus spanning 250 pages of Vietnamese statutes, planning resolutions, dense engineering tables, spatial layout diagrams, and scanned decrees.
+## TABLE representation
 
-While `Physical IR v0` successfully proved **parser independence** by normalizing both MinerU 3.4.5 and Marker 2.0.0 into a unified schema with deterministic serialization, empirical benchmark evidence revealed several representational gaps that motivate the design of `Physical Document IR v1`.
+- **Actual page evidence**: `tt-04-2026-bxd-pl2-dinh-muc`, PDF page 2 (page_index=1) contains a visually audited norm table.
 
----
+- **Raw `marker` representation and v0 mapping**: 55 parser-native table objects map to 55 as `unknown`.
+- **Raw `mineru` representation and v0 mapping**: 52 parser-native table objects map to 52 as `unknown`.
 
-## 1. Concrete Gaps Identified from Benchmark Evidence
+- **Specific information loss**: The counts follow parser-native table objects through `source_raw_index`. Separately emitted nested text may become TEXT, but that does not preserve the table object, cells, spans, or header structure.
 
-### Gap 1: Tabular Structure Flattening
-- **Empirical Evidence**: In `Thông tư 04/2026/TT-BXD Phụ lục II` (19 pages of maintenance norms) and `hanoi-master-plan-100y`, dense multi-column tables dominate the document.
-- **Raw Parser Representations**: MinerU emits structured `table` layout blocks with HTML/markdown representations; Marker emits `Table` blocks.
-- **Normalized v0 Behavior**: Because `BlockKind` in v0 only defines `TEXT`, `TITLE`, `HEADER`, `PAGE_NUMBER`, and `UNKNOWN`, MinerU table blocks are mapped to `BlockKind.TEXT`, while Marker tables are mapped to `BlockKind.TEXT` (or `BlockKind.UNKNOWN` when structural parsing is incomplete).
-- **Information Lost**: Cell bounding boxes, row spans, column spans, and table header hierarchies are erased into unsegmented text strings.
+- **Machine-derived frequency**: 107 table objects were traced across the retained runs.
 
-### Gap 2: Multimodal Graphics & Diagram Loss
-- **Empirical Evidence**: In `Thông tư 04/2023/TT-BKHĐT`, **PDF page 21 (page_index=20)** contains a formal layout diagram defining national map sheet compositions, and **PDF pages 26-31 (page_index=25 to 30)** contain map symbology sheets.
-- **Raw Parser Representations**: Marker identifies `Picture`/`Figure` regions; MinerU layout analysis identifies `image` regions.
-- **Normalized v0 Behavior**: `BlockKind` provides no representation for image/figure objects. Marker maps them to `BlockKind.UNKNOWN` or discards them; MinerU drops image crops.
-- **Information Lost**: Spatial coordinates of diagrams, bounding boxes of symbology figures, and relative image asset links are omitted from the physical IR.
+- **Candidate future requirement**: Represent TABLE objects and structured cells.
 
-### Gap 3: Legal Numbered Provisions Merged into Narrative Text
-- **Empirical Evidence**: In `Luật Quy hoạch 112/2025/QH15` (52 pages) and `VBHN 103/VBHN-VPQH` (48 pages), statutory provisions follow a strict hierarchy (`Chương` -> `Mục` -> `Điều` -> `Khoản` -> `Điểm`).
-- **Raw Parser Representations**: Parsers recognize major headings (`Chương`, `Điều`) as headings/titles, but emit subsequent provisions (`Khoản`, `Điểm`) as standard body paragraphs.
-- **Normalized v0 Behavior**: Major headings are normalized to `BlockKind.TITLE` (with `heading_level`), but `Khoản` and `Điểm` remain generic `BlockKind.TEXT`.
-- **Information Lost**: Sub-article structural hierarchy and provision numbering are lost to downstream consumers without NLP regex re-splitting.
+## FIGURE / MAP representation
 
-### Gap 4: Document Modality (Native Vector vs Scanned Raster)
-- **Empirical Evidence**: On `Quyết định 23/2008/QĐ-UBND` (4 pages, 100% scanned raster), Marker fast-no-ocr produced 0 text blocks, whereas MinerU pipeline recognized 82 OCR text and title blocks.
-- **Normalized v0 Behavior**: `PhysicalBlock` contains no field indicating whether extracted text originates from native PDF digital font streams or OCR inference.
-- **Information Lost**: Downstream consumers cannot determine optical recognition confidence or distinguish authentic native digital text from potential OCR noise.
+- **Actual page evidence**: TT04/2023 contains a verified layout diagram on PDF page 22 (page_index=21) and later visually verified symbology sheets.
 
----
+- **Raw `marker` representation and v0 mapping**: 1 `Figure` map to 1 `unknown`.
+- **Raw `mineru` representation and v0 mapping**: 1 `table` map to 1 `unknown`.
 
-## 2. Quantitative Summary Across Evaluated Runs
+- **Specific information loss**: Physical IR v0 has no FIGURE/MAP kind or retained visual-asset link, so graphical identity and asset provenance are lost.
 
-| Dimension | Marker 2.0.0 (fast-no-ocr) | MinerU 3.4.5 (pipeline CPU) | Observation |
-| :--- | :---: | :---: | :--- |
-| **Throughput (CPU)** | **0.50 - 1.17 pages/sec** | 0.05 - 0.15 pages/sec | Marker is 5x-15x faster on CPU for born-digital documents. |
-| **Scanned Page Modality** | 0 blocks (skips OCR) | **82 OCR blocks recovered** | Marker requires OCR policy for scanned documents; MinerU handles scans automatically. |
-| **Tabular Order Accuracy** | 0.7143 | **0.7619** | MinerU preserves vertical column reading order slightly better on dense norms. |
-| **Deterministic Output** | 100% (Bitwise identical) | 100% (Bitwise identical) | Both normalizers achieve bitwise-reproducible PhysicalDocument JSON. |
+- **Machine-derived frequency**: the page-specific provenance trace covers 2 parser-native diagram candidates across the retained parser runs; it is not a corpus-wide figure-frequency estimate.
 
----
+- **Candidate future requirement**: Add typed visual objects and relative asset references.
 
-## 3. Physical IR v1 Evolution Proposals
+## OCR / modality distinction
 
-1. **Expanded `BlockKind` Enum**:
-   Add `TABLE`, `FIGURE`, `LIST_ITEM`, and `FOOTER` to `BlockKind`.
-2. **Optional `TableStructure` Payload**:
-   Attach structured cell bounding boxes and row/column indices to `TABLE` blocks.
-3. **Modality & Provenance Declarations**:
-   Record `extraction_modality: Literal["native_digital", "ocr", "hybrid"]` in `BlockProvenance`.
-4. **Visual Crop File Linkage**:
-   Record relative paths to extracted diagram image files in parser run output directories.
+- **Actual page evidence**: `qd-23-2008-ubnd-hanoi-vien-quy-hoach` is raster-only on PDF page 1 (page_index=0), PDF page 2 (page_index=1), PDF page 3 (page_index=2), PDF page 4 (page_index=3).
+
+- **Raw `marker` representation and v0 mapping**: 3 `PageHeader`, 1 `Picture`, 13 `SectionHeader`, 57 `Text`; normalized as 3 `header`, 57 `text`, 13 `title`, 1 `unknown`.
+- **Raw `mineru` representation and v0 mapping**: 2 `header`, 1 `image`, 3 `page_number`, 76 `text`; normalized as 2 `header`, 3 `page_number`, 70 `text`, 6 `title`, 1 `unknown`.
+
+- **Specific information loss**: Physical IR v0 does not distinguish native digital text from OCR-derived text or attach OCR confidence. No OCR recall, CER, or WER conclusion is possible without transcription reference data.
+
+- **Machine-derived frequency**: marker produced 74 structural blocks, 0 with non-empty text; mineru produced 82 structural blocks, 81 with non-empty text.
+
+- **Candidate future requirement**: Carry extraction modality, OCR confidence, and provenance without treating OCR output as transcription reference data.
+
+## Clean-clone boundary
+
+The quantitative statements above are rendered from the committed benchmark manifest. Recomputing them from parser-native evidence requires restoration of the external paths and hashes listed there.
