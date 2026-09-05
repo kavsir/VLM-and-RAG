@@ -1,0 +1,25 @@
+manifest_schema_version: 1
+document:
+  id: tt-04-2023-bkhdt-so-do-ban-do
+  document_number: "04/2023/TT-BKHĐT"
+  normalized_document_number: 04/2023/TT-BKHĐT
+  title: Hướng dẫn yêu cầu nội dung và kỹ thuật cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh
+  document_type: Thông tư
+  issuer: Bộ Kế hoạch và Đầu tư
+version:
+  id: v1
+  document_id: tt-04-2023-bkhdt-so-do-ban-do
+  issued_on: 2023-06-26
+  effective_on: 2023-08-10
+source:
+  source_type: official_government_portal
+  publisher: Cổng thông tin điện tử Công báo nước Cộng hòa xã hội chủ nghĩa Việt Nam
+  signer: Trần Quốc Phương
+  landing_page_url: https://congbao.chinhphu.vn/van-ban/thong-tu-so-04-2023-tt-bkhdt-39703.htm
+  asset_url: https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/6/39703/45667-1-2023815-81604-2023-tt-bkhdt.pdf
+  retrieved_at: 2026-09-04T15:00:00.000Z
+artifact:
+  filename: 45667-1-2023815-81604-2023-tt-bkhdt.pdf
+  media_type: application/pdf
+  byte_size: 2024373
+  sha256: 196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b

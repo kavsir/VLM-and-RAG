@@ -96,6 +96,21 @@ def test_valid_manifest_loads_offline(tmp_path: Path) -> None:
     assert manifest.document.normalized_document_number == "1/QD-TEST"
 
 
+def test_effective_on_accepts_dated_value_and_explicit_null(tmp_path: Path) -> None:
+    dated = load_manifest(_write_manifest(tmp_path, VALID_MANIFEST))
+    assert dated.version.effective_on == date(2026, 5, 13)
+
+    explicit_null = VALID_MANIFEST.replace("  effective_on: 2026-05-13\n", "  effective_on: null\n")
+    undated = load_manifest(_write_manifest(tmp_path, explicit_null))
+    assert undated.version.effective_on is None
+
+
+def test_effective_on_cannot_be_omitted(tmp_path: Path) -> None:
+    missing = VALID_MANIFEST.replace("  effective_on: 2026-05-13\n", "")
+    with pytest.raises(ManifestValidationError, match=r"(?s)effective_on.*Field required"):
+        load_manifest(_write_manifest(tmp_path, missing))
+
+
 def test_missing_required_field_fails_clearly(tmp_path: Path) -> None:
     content = VALID_MANIFEST.replace("  signer: Test signer\n", "")
 

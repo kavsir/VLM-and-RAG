@@ -1,0 +1,1885 @@
+{
+  "audit_schema_version": 1,
+  "annotation_schema_version": 2,
+  "annotation_version": "v3",
+  "created_at": "2026-09-05T01:15:00+07:00",
+  "annotator": "codex",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_reaudit",
+  "prior_parser_output_exposure": true,
+  "parser_output_used_as_reference": false,
+  "terminology": "AI visual reference annotations",
+  "region_policy": {
+    "digital_pages": "Reference regions target visually separable text or paragraph groups where useful, visually identifiable headings, coherent outer tables for table localization, and actual visible figures, diagrams, maps, or symbol sheets at the selected physical-audit granularity.",
+    "list_items": "LIST_ITEM is used only when the individual item is the chosen physical audit granularity.",
+    "marginal_regions": "HEADER, FOOTER, and PAGE_NUMBER are used when those regions are visually identifiable and relevant to the selected page audit.",
+    "scanned_pages": "Page modality is recorded separately; a full-page raster is not an OCR text region.",
+    "text": "Text is empty unless visually verified transcription is needed; layout scoring uses region geometry and type."
+  },
+  "render_configuration": {
+    "engine": "pypdfium2",
+    "engine_version": "5.10.1",
+    "pdfium_version": "151.0.7891.0",
+    "scale": 2.0,
+    "rotation_degrees": 0,
+    "color_mode": "RGB",
+    "format": "PNG",
+    "png_compress_level": 9,
+    "png_optimize": false
+  },
+  "pages_audited": 46,
+  "regions_before": 112,
+  "regions_after": 110,
+  "geometry_or_type_changed_pages": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 12,
+      "pdf_page_number_1_based": 13,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 28,
+      "pdf_page_number_1_based": 29,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 35,
+      "pdf_page_number_1_based": 36,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 42,
+      "pdf_page_number_1_based": 43,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 50,
+      "pdf_page_number_1_based": 51,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 51,
+      "pdf_page_number_1_based": 52,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "change": "The two false TABLE labels were corrected to HEADER and TEXT: PDF page 21 (page_index=20) is ordinary legal prose beneath a running gazette header."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 21,
+      "pdf_page_number_1_based": 22,
+      "change": "Corrected the running header and annex heading types and reordered the layout diagram after the text that visually precedes it on PDF page 22."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 26,
+      "pdf_page_number_1_based": 27,
+      "change": "Corrected reading order, typed the running header as HEADER, consolidated two arbitrary partial FIGURE boxes into one coherent symbology-sheet region, and removed one phantom bottom TEXT box not supported by the rendered page."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 27,
+      "pdf_page_number_1_based": 28,
+      "change": "Corrected the running header type and placed it before the symbology-sheet FIGURE in reading order."
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 12,
+      "pdf_page_number_1_based": 13,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 30,
+      "pdf_page_number_1_based": 31,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 47,
+      "pdf_page_number_1_based": 48,
+      "change": "A visually identifiable running or document header was corrected from TEXT to HEADER."
+    }
+  ],
+  "pages": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "ca0a99f4130ebe590e035f6824b43b3610d641708a4f4ebb46d52905781700c6",
+      "phenomena_verified": [
+        "legal_header",
+        "preamble",
+        "citation_list"
+      ],
+      "region_count": 5,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "ba9337a9a4bdd57aa6f05c4afd72a43cced554a37d78dff99f0a3ebcd4ecc4cb",
+      "phenomena_verified": [
+        "heading_ch_dieu",
+        "legal_article",
+        "numbered_list"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 2,
+      "pdf_page_number_1_based": 3,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "e7391cdec0fe8497a9f26747910b503f9c649576924be7f8a40102e630533db1",
+      "phenomena_verified": [
+        "heading_muc",
+        "hierarchical_text",
+        "bullet_list"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 3,
+      "pdf_page_number_1_based": 4,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "e2e8842e0d077b67d9748cf2e922082b8cdc926efb2d09edb51cb2e2debc4404",
+      "phenomena_verified": [
+        "numbered_list",
+        "legal_provisions"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 15,
+      "pdf_page_number_1_based": 16,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "8e50c0de89d39e0ef7faba6f2e65b3a312d96ef21ba64f897b7b8d6d3d263753",
+      "phenomena_verified": [
+        "detailed_planning_tasks",
+        "structured_text"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 30,
+      "pdf_page_number_1_based": 31,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "cae4a87aca95ff43670cfd198d8383aec1fb2b0e050139ed5fb7cecf2811ba4d",
+      "phenomena_verified": [
+        "annex_header",
+        "annex_intro",
+        "table"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 45,
+      "pdf_page_number_1_based": 46,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "90b7f747fc858871c45d88e49d38c4a8ac4794692d6adb6e533dfc0bf60c677d",
+      "phenomena_verified": [
+        "dense_table",
+        "table_header",
+        "multi_column"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 60,
+      "pdf_page_number_1_based": 61,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "1cbe2270ca0fff14b0c94e46626d9e922396a551436ad37c6f1dc253c0af790d",
+      "phenomena_verified": [
+        "roadmap_table",
+        "tabular_columns"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 78,
+      "pdf_page_number_1_based": 79,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "da642bb32fadfb73182fc71f6366801dd7ee72d399dcde48ba847968ce465a3e",
+      "phenomena_verified": [
+        "sign_block",
+        "distribution_list",
+        "seal_area"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "page_index": 79,
+      "pdf_page_number_1_based": 80,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "1abb4f70cb60870998d9e60709af29f2a0182459cf940683558d6341b58f57e6",
+      "phenomena_verified": [
+        "final_annex",
+        "closing_provisions"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "fd1c32ba7b6502e2ef2647cada7e002b98f04d73df389dd0672ea0fd772a0a6c",
+      "phenomena_verified": [
+        "national_header",
+        "law_title",
+        "heading_chuong",
+        "dieu_khoan"
+      ],
+      "region_count": 8,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "5c9906f38548644c8218a15edc2a3a22e1e2ee70c3084fb2a57038c9ea723d3f",
+      "phenomena_verified": [
+        "definition_list",
+        "dieu_khoan_diem"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "cdd227fed82bcfd45e0b3b3e7df3b008f092c925c3ccf14153da24e352279318",
+      "phenomena_verified": [
+        "rights_duties",
+        "hierarchical_legal_clauses"
+      ],
+      "region_count": 3,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 12,
+      "pdf_page_number_1_based": 13,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "6c0ac9f1224285e5122df0ee4e138d3151d73122afd5115f72f65cc8b165c0a1",
+      "phenomena_verified": [
+        "heading_chuong_ii",
+        "planning_formulation_procedures"
+      ],
+      "region_count": 4,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "1fa2633c2ba032b2ab022a842d0d159e78ef1e78b200c5897b789771565eb8ab",
+      "phenomena_verified": [
+        "appraisal_authority",
+        "legal_provisions"
+      ],
+      "region_count": 3,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 28,
+      "pdf_page_number_1_based": 29,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "f3f126ebf2385100502ea8cc24c375ae5742392f7febd9ec651fcfe52eb93672",
+      "phenomena_verified": [
+        "regional_planning_content",
+        "dieu_khoan_diem"
+      ],
+      "region_count": 5,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 35,
+      "pdf_page_number_1_based": 36,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "389ad069752ee502e45e7b481aba23e57270dc280fb945da2220c49791bf5b52",
+      "phenomena_verified": [
+        "provincial_planning_content",
+        "hierarchical_clauses"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 42,
+      "pdf_page_number_1_based": 43,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "3b944990a053d23d6d76ca5113d23a2bd5ad6e1f4120a54af8cc668498111edd",
+      "phenomena_verified": [
+        "heading_chuong_v",
+        "planning_adjustment"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 50,
+      "pdf_page_number_1_based": 51,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "6c14c61b01f92603b91766e4115206a9d0231ff49d86dbcfbeb0598c6a0bffb4",
+      "phenomena_verified": [
+        "heading_chuong_vi",
+        "transitional_provisions"
+      ],
+      "region_count": 3,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "page_index": 51,
+      "pdf_page_number_1_based": 52,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "20616c6c064c48ac7b4ae3408db17426a179a4a742fb54be04be003e7ecfe993",
+      "phenomena_verified": [
+        "enactment_clause",
+        "parliament_signature_block"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "version_id": "v1",
+      "source_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "138f6ec5a31537326e8cfe24e79f08e6fe44fa3bc53414356cc95ccfca4793cb",
+      "phenomena_verified": [
+        "scanned_raster_page",
+        "official_seal_stamp",
+        "preamble_scan"
+      ],
+      "region_count": 0,
+      "ambiguities": [
+        "No visually verified text transcription reference was established for the scan."
+      ],
+      "audit_notes": "Visually verified scanned-page modality. No reference text regions were added without a separately established transcription reference."
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "version_id": "v1",
+      "source_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "9b386b00835a3bcee4227c02e58d543d8f031c8cb165dd50fa082d8c0dae6399",
+      "phenomena_verified": [
+        "scanned_raster_page",
+        "dieu_khoan_scan",
+        "institute_functions"
+      ],
+      "region_count": 0,
+      "ambiguities": [
+        "No visually verified text transcription reference was established for the scan."
+      ],
+      "audit_notes": "Visually verified scanned-page modality. No reference text regions were added without a separately established transcription reference."
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "version_id": "v1",
+      "source_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+      "page_index": 2,
+      "pdf_page_number_1_based": 3,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "475763fa3115f2600175daf6d6f0be72add9a5233eeaac9b6c94ca75b289b5f3",
+      "phenomena_verified": [
+        "scanned_raster_page",
+        "organizational_structure_scan"
+      ],
+      "region_count": 0,
+      "ambiguities": [
+        "No visually verified text transcription reference was established for the scan."
+      ],
+      "audit_notes": "Visually verified scanned-page modality. No reference text regions were added without a separately established transcription reference."
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "version_id": "v1",
+      "source_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+      "page_index": 3,
+      "pdf_page_number_1_based": 4,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "9aa0a556449456ddeab8febdd6f0fbfa79e9625015c2a05b640231921049f1cb",
+      "phenomena_verified": [
+        "scanned_raster_page",
+        "chairman_signature_scan",
+        "red_ink_seal"
+      ],
+      "region_count": 0,
+      "ambiguities": [
+        "No visually verified text transcription reference was established for the scan."
+      ],
+      "audit_notes": "Visually verified scanned-page modality. No reference text regions were added without a separately established transcription reference."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "09fd03a5b719b4b7cb1de066a76c06d6e25060fa521f8b7f39adb11d29283768",
+      "phenomena_verified": [
+        "circular_header",
+        "purpose_and_scope",
+        "dieu_khoan"
+      ],
+      "region_count": 8,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "fe91df54f37d2895e018c2ad22b71e6c6531bb63f4f85a8bf36999416c766fe2",
+      "phenomena_verified": [
+        "spatial_database_architecture",
+        "technical_clauses"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 15,
+      "pdf_page_number_1_based": 16,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "5c8a714249c0f9f5579fa4ec4d4d862f9543bc836b5aecdd5fed4501e0e5bdc7",
+      "phenomena_verified": [
+        "metadata_standard_table",
+        "tabular_specifications"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "5f06ed14f5f40758c9f9388eba10f8a1bb937a3d21e4d0171ee6b6a81fde0b4b",
+      "phenomena_verified": [
+        "legal_prose",
+        "data_content_requirements",
+        "numbered_clauses"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "The two false TABLE labels were corrected to HEADER and TEXT: PDF page 21 (page_index=20) is ordinary legal prose beneath a running gazette header. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 21,
+      "pdf_page_number_1_based": 22,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "6e2eacc9bd2d32fefe40d568920eda7375be5863f27171502c55423979d325f5",
+      "phenomena_verified": [
+        "annex_layout_title",
+        "figure_layout_diagram",
+        "map_frame_spec"
+      ],
+      "region_count": 4,
+      "ambiguities": [],
+      "audit_notes": "Corrected the running header and annex heading types and reordered the layout diagram after the text that visually precedes it on PDF page 22. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 26,
+      "pdf_page_number_1_based": 27,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "eb74b736b51808bfa363f5cdf7d436d20c2285e7b6177a7d93a7b96a546f4fa2",
+      "phenomena_verified": [
+        "map_symbology_sheet",
+        "figure_symbols_top",
+        "figure_symbols_bottom"
+      ],
+      "region_count": 2,
+      "ambiguities": [
+        "The symbology sheet combines tabular organization and graphical symbols; regions target visible figure/symbol groups, not table-cell structure."
+      ],
+      "audit_notes": "Corrected reading order, typed the running header as HEADER, consolidated two arbitrary partial FIGURE boxes into one coherent symbology-sheet region, and removed one phantom bottom TEXT box not supported by the rendered page. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 27,
+      "pdf_page_number_1_based": 28,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "c2d0e155323464400b9e5bfe5e882792292afd5f8d8e2ec9882184a9a43acbfc",
+      "phenomena_verified": [
+        "map_symbology_continuation",
+        "figure_symbols_sheet"
+      ],
+      "region_count": 2,
+      "ambiguities": [
+        "The symbology sheet combines tabular organization and graphical symbols; regions target visible figure/symbol groups, not table-cell structure."
+      ],
+      "audit_notes": "Corrected the running header type and placed it before the symbology-sheet FIGURE in reading order. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 46,
+      "pdf_page_number_1_based": 47,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "34ca0dfcdfb5021566ba4b51674218570ada8e0f3edb4e5709276c8af2b5fd9b",
+      "phenomena_verified": [
+        "closing_instructions",
+        "ministerial_signature_block"
+      ],
+      "region_count": 0,
+      "ambiguities": [],
+      "audit_notes": "Visually verified scanned-page modality. No reference text regions were added without a separately established transcription reference."
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "source_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "b4d9d0018c9b99d81bda23f15ec6ae4a29203cfe895efa65bb23f6676953ad30",
+      "phenomena_verified": [
+        "circular_appendix_title",
+        "technical_explanation",
+        "usage_guide"
+      ],
+      "region_count": 3,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "source_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "334e59e485256081c1d9b75e1ad68b3b16e4cfd831c4972ddab9db1e5579158b",
+      "phenomena_verified": [
+        "norm_table_header",
+        "multi_column_table",
+        "labor_norm_code"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "source_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "663836369dcacde7722411fe83240b64a12b0e6ffae8c27a23773dfc58046470",
+      "phenomena_verified": [
+        "nested_header_table",
+        "technical_maintenance_code"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "source_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "page_index": 10,
+      "pdf_page_number_1_based": 11,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "14477795dc0eb1f39749261a74209383968aa0266d9bbeedd80ee1357a8ae846",
+      "phenomena_verified": [
+        "machine_shift_table",
+        "dense_numeric_columns"
+      ],
+      "region_count": 3,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "source_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "page_index": 15,
+      "pdf_page_number_1_based": 16,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "c8708e1c88224f4afbbde62f32e0ed5ceab43890fbfaa68f4d321d73e7e8eb24",
+      "phenomena_verified": [
+        "material_breakdown_table",
+        "component_specifications"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "source_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "page_index": 18,
+      "pdf_page_number_1_based": 19,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "8815f936c0924e398d1c6c9272bf034779be2502a81eb0967ab12f028e2b44b6",
+      "phenomena_verified": [
+        "final_norm_table",
+        "footer_notes"
+      ],
+      "region_count": 1,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "4abbecf2451ae9c55ad7096f0436d7f623f9fc5318bc7c63d2f3371f1173d6ce",
+      "phenomena_verified": [
+        "consolidation_header",
+        "resolution_title",
+        "legal_preamble"
+      ],
+      "region_count": 6,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "18809518abe21164e1fb5e7f2e7584c65c96a0bfcd6362540c4a706d1b0a43f7",
+      "phenomena_verified": [
+        "resolution_article_1",
+        "vision_and_objectives"
+      ],
+      "region_count": 4,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "fb3146620dbeee3b2bc567aef0b68923aa40de59a84f1da6ad3c74fb81eb96fe",
+      "phenomena_verified": [
+        "national_spatial_orientation",
+        "hierarchical_lists"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "page_index": 12,
+      "pdf_page_number_1_based": 13,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "bbff497a3228d402a02f27b6197037cff721277f62d7cad72bc150c824c77be1",
+      "phenomena_verified": [
+        "economic_corridors",
+        "development_poles"
+      ],
+      "region_count": 3,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "089936698167c3890ef0878294ab1acf92f9433a1a63c755d6cc4be4247cb9c3",
+      "phenomena_verified": [
+        "marine_spatial_zones",
+        "infrastructure_axes"
+      ],
+      "region_count": 2,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "page_index": 30,
+      "pdf_page_number_1_based": 31,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "09daaa461fc9668e07b6a53babd2c47837c42fd1d758fb506c36eea47e3e7710",
+      "phenomena_verified": [
+        "implementation_roadmap",
+        "government_tasks"
+      ],
+      "region_count": 3,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "page_index": 40,
+      "pdf_page_number_1_based": 41,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "d9137ce57365f3b98c17cca83f4faacfe25deae7e36f55a1bac34e1abb062392",
+      "phenomena_verified": [
+        "national_project_table",
+        "dense_tabular_rows"
+      ],
+      "region_count": 3,
+      "ambiguities": [],
+      "audit_notes": "Visually verified region geometry, type, and order against the rendered PDF; those labels remain unchanged from v2. Extracted text was cleared because it was not a visually verified transcription and is not needed for layout scoring."
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "page_index": 47,
+      "pdf_page_number_1_based": 48,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "c1b26cbc89c18f9574d0f2862974e833f3ce091c4765683f86b26f09b3e027c4",
+      "phenomena_verified": [
+        "closing_provisions",
+        "authenticating_signature"
+      ],
+      "region_count": 4,
+      "ambiguities": [],
+      "audit_notes": "A visually identifiable running or document header was corrected from TEXT to HEADER. All retained region geometry/type/order was visually checked; reference text remains empty because transcription is outside this layout benchmark."
+    }
+  ],
+  "map_figure_page_evidence": {
+    "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+    "layout_diagram": {
+      "pdf_page_number_1_based": 22,
+      "page_index": 21,
+      "render_sha256": "6e2eacc9bd2d32fefe40d568920eda7375be5863f27171502c55423979d325f5"
+    },
+    "pre_symbology_prose": {
+      "pdf_page_number_1_based": 26,
+      "page_index": 25,
+      "render_sha256": "343f143c8a980676de17377acffc50c19bdae7147606ee467d32dec6ffb22925"
+    },
+    "symbology_sheets": {
+      "pdf_page_numbers_1_based": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "page_indices": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "render_sha256": [
+        "eb74b736b51808bfa363f5cdf7d436d20c2285e7b6177a7d93a7b96a546f4fa2",
+        "c2d0e155323464400b9e5bfe5e882792292afd5f8d8e2ec9882184a9a43acbfc",
+        "709e8630ef875a9f004b5038e69d9bafd3af299b6f8d01871e29e1d57d1972cd",
+        "09c025281ff82b7b2878d1a4b406415d213076623ab9d98b7d24e9af1d028155",
+        "64e267bdefeabd6fee71e7b2768e59cbab50bb9e005e3b9cf6f8d86542291047",
+        "33d9f66a83ea357b5a636c89efddcbe6217319f08ce129114ab24e3bbc5ef5ce"
+      ]
+    }
+  },
+  "contextual_pages_inspected": [
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 25,
+      "pdf_page_number_1_based": 26,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "343f143c8a980676de17377acffc50c19bdae7147606ee467d32dec6ffb22925",
+      "phenomena_verified": [
+        "legal_prose"
+      ],
+      "region_count": 0,
+      "ambiguities": [],
+      "audit_notes": "Context-only visual verification; this page is not part of the selected reference annotation set and no reference regions were added."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 28,
+      "pdf_page_number_1_based": 29,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "709e8630ef875a9f004b5038e69d9bafd3af299b6f8d01871e29e1d57d1972cd",
+      "phenomena_verified": [
+        "map_symbology_sheet"
+      ],
+      "region_count": 0,
+      "ambiguities": [],
+      "audit_notes": "Context-only visual verification; this page is not part of the selected reference annotation set and no reference regions were added."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 29,
+      "pdf_page_number_1_based": 30,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "09c025281ff82b7b2878d1a4b406415d213076623ab9d98b7d24e9af1d028155",
+      "phenomena_verified": [
+        "map_symbology_sheet"
+      ],
+      "region_count": 0,
+      "ambiguities": [],
+      "audit_notes": "Context-only visual verification; this page is not part of the selected reference annotation set and no reference regions were added."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 30,
+      "pdf_page_number_1_based": 31,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "64e267bdefeabd6fee71e7b2768e59cbab50bb9e005e3b9cf6f8d86542291047",
+      "phenomena_verified": [
+        "map_symbology_sheet"
+      ],
+      "region_count": 0,
+      "ambiguities": [],
+      "audit_notes": "Context-only visual verification; this page is not part of the selected reference annotation set and no reference regions were added."
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "page_index": 31,
+      "pdf_page_number_1_based": 32,
+      "annotation_version": "v3",
+      "annotator": "codex",
+      "annotator_type": "ai_visual_audit",
+      "annotation_method": "visual_pdf_reaudit",
+      "prior_parser_output_exposure": true,
+      "parser_output_used_as_reference": false,
+      "render_configuration": {
+        "engine": "pypdfium2",
+        "engine_version": "5.10.1",
+        "pdfium_version": "151.0.7891.0",
+        "scale": 2.0,
+        "rotation_degrees": 0,
+        "color_mode": "RGB",
+        "format": "PNG",
+        "png_compress_level": 9,
+        "png_optimize": false
+      },
+      "render_sha256": "33d9f66a83ea357b5a636c89efddcbe6217319f08ce129114ab24e3bbc5ef5ce",
+      "phenomena_verified": [
+        "map_symbology_sheet"
+      ],
+      "region_count": 0,
+      "ambiguities": [],
+      "audit_notes": "Context-only visual verification; this page is not part of the selected reference annotation set and no reference regions were added."
+    }
+  ]
+}

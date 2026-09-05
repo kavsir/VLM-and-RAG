@@ -1,0 +1,593 @@
+{
+  "annotation_schema_version": 2,
+  "annotation_version": "v3",
+  "annotator": "codex",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_reaudit",
+  "created_at": "2026-09-05T01:15:00+07:00",
+  "document_id": "luat-112-2025-qh15",
+  "version_id": "v1",
+  "source_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+  "audited_pages": [
+    {
+      "page_index": 0,
+      "phenomena": [
+        "national_header",
+        "law_title",
+        "heading_chuong",
+        "dieu_khoan"
+      ],
+      "regions": [
+        {
+          "id": "page_0_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 904.09,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 177.45,
+            "y0": 76.31,
+            "x1": 892.09,
+            "y1": 129.45,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_2",
+          "reading_order": 2,
+          "kind": "text",
+          "bbox": {
+            "x0": 451.72,
+            "y0": 166.22,
+            "x1": 596.55,
+            "y1": 209.64,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_3",
+          "reading_order": 3,
+          "kind": "text",
+          "bbox": {
+            "x0": 143.4,
+            "y0": 245.35,
+            "x1": 910.92,
+            "y1": 312.47,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_4",
+          "reading_order": 4,
+          "kind": "heading",
+          "bbox": {
+            "x0": 418.26,
+            "y0": 352.77,
+            "x1": 630.14,
+            "y1": 388.41,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 1
+        },
+        {
+          "id": "page_0_blk_5",
+          "reading_order": 5,
+          "kind": "heading",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 419.28,
+            "x1": 910.92,
+            "y1": 508.06,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        },
+        {
+          "id": "page_0_blk_6",
+          "reading_order": 6,
+          "kind": "heading",
+          "bbox": {
+            "x0": 143.73,
+            "y0": 518.36,
+            "x1": 910.93,
+            "y1": 607.15,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        },
+        {
+          "id": "page_0_blk_7",
+          "reading_order": 7,
+          "kind": "heading",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 617.42,
+            "x1": 910.92,
+            "y1": 929.01,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 1,
+      "phenomena": [
+        "definition_list",
+        "dieu_khoan_diem"
+      ],
+      "regions": [
+        {
+          "id": "page_1_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 903.76,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_1_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 76.86,
+            "x1": 910.94,
+            "y1": 930.72,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 5,
+      "phenomena": [
+        "rights_duties",
+        "hierarchical_legal_clauses"
+      ],
+      "regions": [
+        {
+          "id": "page_5_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 904.14,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_5_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 77.14,
+            "x1": 910.92,
+            "y1": 267.29,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_5_blk_2",
+          "reading_order": 2,
+          "kind": "heading",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 276.43,
+            "x1": 910.92,
+            "y1": 927.45,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 12,
+      "phenomena": [
+        "heading_chuong_ii",
+        "planning_formulation_procedures"
+      ],
+      "regions": [
+        {
+          "id": "page_12_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 904.11,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_12_blk_1",
+          "reading_order": 1,
+          "kind": "heading",
+          "bbox": {
+            "x0": 143.73,
+            "y0": 77.14,
+            "x1": 910.92,
+            "y1": 233.37,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        },
+        {
+          "id": "page_12_blk_2",
+          "reading_order": 2,
+          "kind": "heading",
+          "bbox": {
+            "x0": 143.14,
+            "y0": 242.36,
+            "x1": 910.87,
+            "y1": 412.85,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        },
+        {
+          "id": "page_12_blk_3",
+          "reading_order": 3,
+          "kind": "heading",
+          "bbox": {
+            "x0": 142.93,
+            "y0": 421.84,
+            "x1": 910.94,
+            "y1": 930.01,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 20,
+      "phenomena": [
+        "appraisal_authority",
+        "legal_provisions"
+      ],
+      "regions": [
+        {
+          "id": "page_20_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 904.09,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_20_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 143.1,
+            "y0": 77.0,
+            "x1": 910.92,
+            "y1": 247.62,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_20_blk_2",
+          "reading_order": 2,
+          "kind": "heading",
+          "bbox": {
+            "x0": 143.1,
+            "y0": 252.76,
+            "x1": 910.92,
+            "y1": 930.72,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 28,
+      "phenomena": [
+        "regional_planning_content",
+        "dieu_khoan_diem"
+      ],
+      "regions": [
+        {
+          "id": "page_28_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 903.57,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_28_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 143.1,
+            "y0": 77.14,
+            "x1": 910.93,
+            "y1": 508.35,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_28_blk_2",
+          "reading_order": 2,
+          "kind": "heading",
+          "bbox": {
+            "x0": 380.49,
+            "y0": 541.38,
+            "x1": 667.91,
+            "y1": 576.86,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 2
+        },
+        {
+          "id": "page_28_blk_3",
+          "reading_order": 3,
+          "kind": "heading",
+          "bbox": {
+            "x0": 143.1,
+            "y0": 613.43,
+            "x1": 910.93,
+            "y1": 837.94,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        },
+        {
+          "id": "page_28_blk_4",
+          "reading_order": 4,
+          "kind": "heading",
+          "bbox": {
+            "x0": 143.4,
+            "y0": 843.37,
+            "x1": 910.92,
+            "y1": 927.02,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 35,
+      "phenomena": [
+        "provincial_planning_content",
+        "hierarchical_clauses"
+      ],
+      "regions": [
+        {
+          "id": "page_35_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 904.14,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_35_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 76.86,
+            "x1": 910.93,
+            "y1": 929.55,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 42,
+      "phenomena": [
+        "heading_chuong_v",
+        "planning_adjustment"
+      ],
+      "regions": [
+        {
+          "id": "page_42_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 904.11,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_42_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 77.0,
+            "x1": 910.92,
+            "y1": 920.6,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 50,
+      "phenomena": [
+        "heading_chuong_vi",
+        "transitional_provisions"
+      ],
+      "regions": [
+        {
+          "id": "page_50_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 904.09,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_50_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 348.51,
+            "y0": 87.93,
+            "x1": 700.09,
+            "y1": 122.84,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_50_blk_2",
+          "reading_order": 2,
+          "kind": "text",
+          "bbox": {
+            "x0": 137.98,
+            "y0": 155.99,
+            "x1": 958.9,
+            "y1": 924.7,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 51,
+      "phenomena": [
+        "enactment_clause",
+        "parliament_signature_block"
+      ],
+      "regions": [
+        {
+          "id": "page_51_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 346.83,
+            "y0": 34.1,
+            "x1": 903.76,
+            "y1": 52.76,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_51_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 137.98,
+            "y0": 77.57,
+            "x1": 958.9,
+            "y1": 721.94,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    }
+  ],
+  "prior_parser_output_exposure": true,
+  "parser_output_used_as_reference": false
+}

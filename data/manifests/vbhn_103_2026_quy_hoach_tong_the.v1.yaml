@@ -1,0 +1,25 @@
+manifest_schema_version: 1
+document:
+  id: vbhn-103-2026-quy-hoach-tong-the
+  document_number: "103/VBHN-VPQH"
+  normalized_document_number: 103/VBHN-VPQH
+  title: Văn bản hợp nhất Nghị quyết về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050
+  document_type: Văn bản hợp nhất
+  issuer: Văn phòng Quốc hội
+version:
+  id: v1
+  document_id: vbhn-103-2026-quy-hoach-tong-the
+  issued_on: 2026-04-22
+  effective_on: null
+source:
+  source_type: official_government_portal
+  publisher: Cổng thông tin điện tử Công báo nước Cộng hòa xã hội chủ nghĩa Việt Nam
+  signer: Bùi Văn Cường
+  landing_page_url: https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-103-vbhn-vpqh-469445.htm
+  asset_url: https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/8/469445-1778212770_v1_1778233188_signed.pdf
+  retrieved_at: 2026-09-04T15:00:00.000Z
+artifact:
+  filename: 469445-1778212770_v1_1778233188_signed.pdf
+  media_type: application/pdf
+  byte_size: 1169934
+  sha256: 342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109

@@ -1,0 +1,474 @@
+{
+  "annotation_schema_version": 2,
+  "annotation_version": "v3",
+  "annotator": "codex",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_reaudit",
+  "created_at": "2026-09-05T01:15:00+07:00",
+  "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+  "version_id": "v1",
+  "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+  "audited_pages": [
+    {
+      "page_index": 0,
+      "phenomena": [
+        "consolidation_header",
+        "resolution_title",
+        "legal_preamble"
+      ],
+      "regions": [
+        {
+          "id": "page_0_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 340.99,
+            "y0": 34.09,
+            "x1": 903.57,
+            "y1": 52.75,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 498.98,
+            "y0": 76.19,
+            "x1": 918.43,
+            "y1": 111.31,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_2",
+          "reading_order": 2,
+          "kind": "text",
+          "bbox": {
+            "x0": 147.78,
+            "y0": 142.0,
+            "x1": 899.84,
+            "y1": 181.18,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_3",
+          "reading_order": 3,
+          "kind": "text",
+          "bbox": {
+            "x0": 143.1,
+            "y0": 213.97,
+            "x1": 910.92,
+            "y1": 408.52,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_4",
+          "reading_order": 4,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.34,
+            "y0": 444.44,
+            "x1": 910.92,
+            "y1": 794.5,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_5",
+          "reading_order": 5,
+          "kind": "text",
+          "bbox": {
+            "x0": 143.12,
+            "y0": 820.5,
+            "x1": 909.8,
+            "y1": 925.54,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 1,
+      "phenomena": [
+        "resolution_article_1",
+        "vision_and_objectives"
+      ],
+      "regions": [
+        {
+          "id": "page_1_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 340.99,
+            "y0": 34.09,
+            "x1": 904.21,
+            "y1": 52.75,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_1_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 76.99,
+            "x1": 910.93,
+            "y1": 609.91,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_1_blk_2",
+          "reading_order": 2,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.79,
+            "y0": 635.48,
+            "x1": 910.07,
+            "y1": 857.68,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_1_blk_3",
+          "reading_order": 3,
+          "kind": "heading",
+          "bbox": {
+            "x0": 143.08,
+            "y0": 860.4,
+            "x1": 910.02,
+            "y1": 925.54,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 5,
+      "phenomena": [
+        "national_spatial_orientation",
+        "hierarchical_lists"
+      ],
+      "regions": [
+        {
+          "id": "page_5_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 340.99,
+            "y0": 34.09,
+            "x1": 904.28,
+            "y1": 52.75,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_5_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.67,
+            "y0": 76.99,
+            "x1": 910.95,
+            "y1": 927.06,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 12,
+      "phenomena": [
+        "economic_corridors",
+        "development_poles"
+      ],
+      "regions": [
+        {
+          "id": "page_12_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 340.99,
+            "y0": 34.09,
+            "x1": 904.09,
+            "y1": 52.75,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_12_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.91,
+            "y0": 76.85,
+            "x1": 910.92,
+            "y1": 836.82,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_12_blk_2",
+          "reading_order": 2,
+          "kind": "text",
+          "bbox": {
+            "x0": 143.08,
+            "y0": 860.4,
+            "x1": 910.05,
+            "y1": 925.54,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 20,
+      "phenomena": [
+        "marine_spatial_zones",
+        "infrastructure_axes"
+      ],
+      "regions": [
+        {
+          "id": "page_20_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 340.99,
+            "y0": 34.09,
+            "x1": 903.57,
+            "y1": 52.75,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_20_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.93,
+            "y0": 76.99,
+            "x1": 910.92,
+            "y1": 929.19,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 30,
+      "phenomena": [
+        "implementation_roadmap",
+        "government_tasks"
+      ],
+      "regions": [
+        {
+          "id": "page_30_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 340.99,
+            "y0": 34.09,
+            "x1": 903.57,
+            "y1": 52.75,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_30_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 142.67,
+            "y0": 76.99,
+            "x1": 910.92,
+            "y1": 829.7,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_30_blk_2",
+          "reading_order": 2,
+          "kind": "text",
+          "bbox": {
+            "x0": 143.08,
+            "y0": 860.4,
+            "x1": 910.07,
+            "y1": 925.54,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 40,
+      "phenomena": [
+        "national_project_table",
+        "dense_tabular_rows"
+      ],
+      "regions": [
+        {
+          "id": "page_40_blk_0",
+          "reading_order": 0,
+          "kind": "table",
+          "bbox": {
+            "x0": 340.99,
+            "y0": 34.09,
+            "x1": 903.57,
+            "y1": 52.75,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_40_blk_1",
+          "reading_order": 1,
+          "kind": "table",
+          "bbox": {
+            "x0": 143.1,
+            "y0": 77.42,
+            "x1": 910.92,
+            "y1": 838.96,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_40_blk_2",
+          "reading_order": 2,
+          "kind": "heading",
+          "bbox": {
+            "x0": 143.08,
+            "y0": 860.4,
+            "x1": 910.0,
+            "y1": 925.54,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 3
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 47,
+      "phenomena": [
+        "closing_provisions",
+        "authenticating_signature"
+      ],
+      "regions": [
+        {
+          "id": "page_47_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 340.99,
+            "y0": 34.09,
+            "x1": 904.14,
+            "y1": 52.75,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_47_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 188.61,
+            "y0": 78.14,
+            "x1": 859.47,
+            "y1": 177.44,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_47_blk_2",
+          "reading_order": 2,
+          "kind": "text",
+          "bbox": {
+            "x0": 136.14,
+            "y0": 211.12,
+            "x1": 903.78,
+            "y1": 570.13,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_47_blk_3",
+          "reading_order": 3,
+          "kind": "heading",
+          "bbox": {
+            "x0": 143.16,
+            "y0": 860.4,
+            "x1": 910.05,
+            "y1": 925.54,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": 1
+        }
+      ],
+      "page_modality": "digital_vector"
+    }
+  ],
+  "prior_parser_output_exposure": true,
+  "parser_output_used_as_reference": false
+}

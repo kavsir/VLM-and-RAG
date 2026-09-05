@@ -1,0 +1,25 @@
+manifest_schema_version: 1
+document:
+  id: qd-23-2008-ubnd-hanoi-vien-quy-hoach
+  document_number: "23/2008/QĐ-UBND"
+  normalized_document_number: 23/2008/QD-UBND
+  title: Thành lập Viện Quy hoạch Xây dựng Hà Nội
+  document_type: Quyết định
+  issuer: Ủy ban nhân dân thành phố Hà Nội
+version:
+  id: v1
+  document_id: qd-23-2008-ubnd-hanoi-vien-quy-hoach
+  issued_on: 2008-09-29
+  effective_on: 2008-10-09
+source:
+  source_type: official_government_portal
+  publisher: Cổng Thông tin điện tử Chính phủ - Cơ sở dữ liệu Văn bản quy phạm pháp luật
+  signer: Nguyễn Thế Thảo
+  landing_page_url: https://vanban.chinhphu.vn/?pageid=27160&docid=78121
+  asset_url: https://datafiles.chinhphu.vn/cpp/files/vbpq/2008/10/80360_qd23ub.pdf
+  retrieved_at: 2026-09-04T15:00:00.000Z
+artifact:
+  filename: 80360_qd23ub.pdf
+  media_type: application/pdf
+  byte_size: 140726
+  sha256: 2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc

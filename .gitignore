@@ -50,9 +50,14 @@ Thumbs.db
 data/*
 !data/golden/
 !data/manifests/
+!data/annotations/
+!data/benchmarks/
 !data/golden/**/
 !data/golden/**/.gitkeep
 !data/manifests/**
+!data/annotations/**
+!data/benchmarks/**
 data/golden/**/*.pdf
 data/golden/**/*.part
 data/golden/**/parser_runs/
+

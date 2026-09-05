@@ -1,0 +1,231 @@
+{
+  "annotation_schema_version": 2,
+  "annotation_version": "v3",
+  "annotator": "codex",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_reaudit",
+  "created_at": "2026-09-05T01:15:00+07:00",
+  "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+  "version_id": "v1",
+  "source_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+  "audited_pages": [
+    {
+      "page_index": 0,
+      "phenomena": [
+        "circular_appendix_title",
+        "technical_explanation",
+        "usage_guide"
+      ],
+      "regions": [
+        {
+          "id": "page_0_blk_0",
+          "reading_order": 0,
+          "kind": "header",
+          "bbox": {
+            "x0": 441.36,
+            "y0": 63.76,
+            "x1": 608.3,
+            "y1": 82.04,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_1",
+          "reading_order": 1,
+          "kind": "text",
+          "bbox": {
+            "x0": 205.88,
+            "y0": 295.67,
+            "x1": 902.64,
+            "y1": 398.08,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_0_blk_2",
+          "reading_order": 2,
+          "kind": "text",
+          "bbox": {
+            "x0": 474.4,
+            "y0": 922.13,
+            "x1": 574.6,
+            "y1": 933.79,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 1,
+      "phenomena": [
+        "norm_table_header",
+        "multi_column_table",
+        "labor_norm_code"
+      ],
+      "regions": [
+        {
+          "id": "page_1_blk_0",
+          "reading_order": 0,
+          "kind": "table",
+          "bbox": {
+            "x0": 143.07,
+            "y0": 56.21,
+            "x1": 910.64,
+            "y1": 938.71,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 5,
+      "phenomena": [
+        "nested_header_table",
+        "technical_maintenance_code"
+      ],
+      "regions": [
+        {
+          "id": "page_5_blk_0",
+          "reading_order": 0,
+          "kind": "table",
+          "bbox": {
+            "x0": 149.15,
+            "y0": 55.15,
+            "x1": 941.62,
+            "y1": 942.39,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 10,
+      "phenomena": [
+        "machine_shift_table",
+        "dense_numeric_columns"
+      ],
+      "regions": [
+        {
+          "id": "page_10_blk_0",
+          "reading_order": 0,
+          "kind": "table",
+          "bbox": {
+            "x0": 143.0,
+            "y0": 52.61,
+            "x1": 914.05,
+            "y1": 150.28,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_10_blk_1",
+          "reading_order": 1,
+          "kind": "table",
+          "bbox": {
+            "x0": 163.54,
+            "y0": 173.7,
+            "x1": 909.08,
+            "y1": 321.34,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_10_blk_2",
+          "reading_order": 2,
+          "kind": "table",
+          "bbox": {
+            "x0": 142.86,
+            "y0": 363.05,
+            "x1": 906.62,
+            "y1": 794.7,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 15,
+      "phenomena": [
+        "material_breakdown_table",
+        "component_specifications"
+      ],
+      "regions": [
+        {
+          "id": "page_15_blk_0",
+          "reading_order": 0,
+          "kind": "table",
+          "bbox": {
+            "x0": 143.0,
+            "y0": 81.11,
+            "x1": 917.04,
+            "y1": 231.62,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        },
+        {
+          "id": "page_15_blk_1",
+          "reading_order": 1,
+          "kind": "table",
+          "bbox": {
+            "x0": 143.05,
+            "y0": 254.75,
+            "x1": 912.19,
+            "y1": 853.98,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    },
+    {
+      "page_index": 18,
+      "phenomena": [
+        "final_norm_table",
+        "footer_notes"
+      ],
+      "regions": [
+        {
+          "id": "page_18_blk_0",
+          "reading_order": 0,
+          "kind": "table",
+          "bbox": {
+            "x0": 143.0,
+            "y0": 59.73,
+            "x1": 927.26,
+            "y1": 335.89,
+            "coordinate_system": "normalized_1000"
+          },
+          "text": "",
+          "heading_level": null
+        }
+      ],
+      "page_modality": "digital_vector"
+    }
+  ],
+  "prior_parser_output_exposure": true,
+  "parser_output_used_as_reference": false
+}
