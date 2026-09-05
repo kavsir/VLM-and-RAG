@@ -1,6 +1,9 @@
 # Physical Document IR v0: Evidence-Based Gaps
 
-This report records observed representational gaps only; it does not implement Physical IR v1.
+This is the historical Issue #006 gap analysis: it records observed representational gaps and did
+not itself implement Physical IR v1. Issue #007 now addresses the evidence-backed subset; see the
+[Physical IR v1 validation report](physical-ir-v1-validation.md). Historical measurements below
+remain unchanged.
 
 ## TABLE representation
 

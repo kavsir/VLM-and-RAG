@@ -18,3 +18,4 @@ Each record should be named sequentially: `NNNN-short-title.md` (e.g. `0001-boot
 * [0003 — Keep Document Parsers Behind an External Runtime Boundary](0003-external-document-parser-boundary.md)
 * [0004 — Physical Document Intermediate Representation (v0)](0004-physical-document-ir-v0.md)
 * [0005 — Add Marker Through an External Runtime Boundary](0005-marker-parser-boundary.md)
+* [0006 — Evolve Physical Document IR to v1 without rewriting v0 evidence](0006-physical-ir-v1-evolution.md)

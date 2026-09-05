@@ -14,11 +14,21 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Current Project Status
 
-- **Phase**: Vietnamese Legal/Planning Corpus + Parser Benchmark (Issue #006)
+- **Phase**: Physical Document IR v1 (Issue #007)
 - **Status**: The engineering foundation, golden-document registry, independent external MinerU
-  and Marker adapters, parser-independent Physical Document IR v0 normalization, six-document
-  reference corpus, and ten-run parser benchmark are implemented. Semantic extraction, RAG, and
-  retrieval features are not yet implemented.
+  and Marker adapters, frozen Physical Document IR v0 evidence, six-document reference corpus,
+  ten-run parser benchmark, and Physical Document IR v1 are implemented. Structural extraction,
+  semantic extraction, RAG, and retrieval features are not yet implemented.
+
+### Current data flow
+
+```text
+Parser Raw
+├── v0 normalizer → Physical IR v0 [research frozen; wire version 1]
+└── v1 normalizer → Physical IR v1 [current physical representation; wire version 2]
+                          │
+                          └──→ #008 Structural IR [not implemented]
+```
 
 ## Prerequisites
 
@@ -263,6 +273,33 @@ uv run python -m vlm_rag.physical_ir validate \
 See [ADR 0004](docs/adr/0004-physical-document-ir-v0.md) and the [Hanoi Normalization Report](docs/research/physical-ir-hanoi-normalization.md)
 for schema design and baseline metrics.
 
+## Physical Document IR v1
+
+Physical IR v1 preserves parser-native TABLE, FIGURE, and IMAGE identity, optional logical table
+cells, safe visual-asset evidence, and explicitly bounded text-extraction provenance. It remains a
+physical observation model: no legal semantics or evaluation-label correction occurs during
+normalization.
+
+The Python API keeps v0 and v1 explicit (`MarkerPhysicalNormalizerV1`,
+`MinerUPhysicalNormalizerV1`, and `PhysicalDocumentV1`). The version-aware
+`load_physical_document` dispatcher accepts wire versions 1 and 2 and rejects unknown versions;
+it never fabricates a v1 upgrade from lossy v0 UNKNOWN blocks.
+
+Recollect v1 validation from the ten locally retained raw runs:
+
+```bash
+uv run python scripts/generate_physical_ir_v1_validation.py
+```
+
+A clean clone can regenerate only the human report from committed machine evidence:
+
+```bash
+uv run python scripts/generate_physical_ir_v1_validation.py --render-only
+```
+
+See [ADR 0006](docs/adr/0006-physical-ir-v1-evolution.md) and the generated
+[Physical IR v1 validation report](docs/research/physical-ir-v1-validation.md).
+
 ## Corpus Benchmark Reproducibility
 
 Reference annotations are AI visual reference annotations, not human ground truth. Version `v3`
@@ -287,7 +324,7 @@ uv run python scripts/generate_benchmark_and_reports.py
 A clean clone can validate committed evidence, render reports, and run tests. It cannot rerun parser
 inference or normalization until those intentionally external artifacts are restored. See the
 [benchmark report](docs/research/parser-benchmark-v1.md) and
-[Physical IR gap report](docs/research/physical-ir-v1-gaps.md).
+[historical Physical IR gap report](docs/research/physical-ir-v1-gaps.md).
 
 ## Branch & PR Workflow
 
