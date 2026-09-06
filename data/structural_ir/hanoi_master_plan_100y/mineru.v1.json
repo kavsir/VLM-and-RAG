@@ -188,13 +188,13 @@
           "page_index": 1,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0001_b0011",
           "page_index": 1,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 103
         }
       ],
@@ -231,6 +231,20 @@
           "role": "body",
           "char_start": 3,
           "char_end": 48
+        },
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0002_b0000",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 70
+        },
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0002_b0001",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 295
         }
       ],
       "recognition_evidence": {
@@ -242,47 +256,6 @@
     },
     {
       "id": "node-000003",
-      "kind": "generic_section",
-      "parent_id": "node-000002",
-      "depth": 3,
-      "ordinal_raw": "1.1",
-      "ordinal_key": "1.1",
-      "marker_text": "1.1.",
-      "title": "Tên quy hoạch: Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm.",
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0002_b0000",
-          "page_index": 2,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 5
-        },
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0002_b0000",
-          "page_index": 2,
-          "role": "title",
-          "char_start": 5,
-          "char_end": 70
-        }
-      ],
-      "direct_content_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0002_b0001",
-          "page_index": 2,
-          "role": "body",
-          "char_start": 0,
-          "char_end": 295
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "1.1."
-      },
-      "canonical_path": "article:1/clause:1/generic:1.1"
-    },
-    {
-      "id": "node-000004",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -316,9 +289,9 @@
       "canonical_path": "article:1/clause:2"
     },
     {
-      "id": "node-000005",
+      "id": "node-000004",
       "kind": "generic_section",
-      "parent_id": "node-000004",
+      "parent_id": "node-000003",
       "depth": 3,
       "ordinal_raw": "2.1",
       "ordinal_key": "2.1",
@@ -378,9 +351,9 @@
       "canonical_path": "article:1/clause:2/generic:2.1"
     },
     {
-      "id": "node-000006",
+      "id": "node-000005",
       "kind": "generic_section",
-      "parent_id": "node-000004",
+      "parent_id": "node-000003",
       "depth": 3,
       "ordinal_raw": "2.2",
       "ordinal_key": "2.2",
@@ -411,9 +384,9 @@
       "canonical_path": "article:1/clause:2/generic:2.2"
     },
     {
-      "id": "node-000007",
+      "id": "node-000006",
       "kind": "point",
-      "parent_id": "node-000004",
+      "parent_id": "node-000003",
       "depth": 3,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -473,9 +446,9 @@
       "canonical_path": "article:1/clause:2/point:a"
     },
     {
-      "id": "node-000008",
+      "id": "node-000007",
       "kind": "point",
-      "parent_id": "node-000004",
+      "parent_id": "node-000003",
       "depth": 3,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -535,9 +508,9 @@
       "canonical_path": "article:1/clause:2/point:b"
     },
     {
-      "id": "node-000009",
+      "id": "node-000008",
       "kind": "generic_section",
-      "parent_id": "node-000004",
+      "parent_id": "node-000003",
       "depth": 3,
       "ordinal_raw": "2.3",
       "ordinal_key": "2.3",
@@ -576,7 +549,7 @@
       "canonical_path": "article:1/clause:2/generic:2.3"
     },
     {
-      "id": "node-000010",
+      "id": "node-000009",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -610,9 +583,9 @@
       "canonical_path": "article:1/clause:3"
     },
     {
-      "id": "node-000011",
+      "id": "node-000010",
       "kind": "generic_section",
-      "parent_id": "node-000010",
+      "parent_id": "node-000009",
       "depth": 3,
       "ordinal_raw": "3.1",
       "ordinal_key": "3.1",
@@ -665,9 +638,9 @@
       "canonical_path": "article:1/clause:3/generic:3.1"
     },
     {
-      "id": "node-000012",
+      "id": "node-000011",
       "kind": "generic_section",
-      "parent_id": "node-000010",
+      "parent_id": "node-000009",
       "depth": 3,
       "ordinal_raw": "3.2",
       "ordinal_key": "3.2",
@@ -698,9 +671,9 @@
       "canonical_path": "article:1/clause:3/generic:3.2"
     },
     {
-      "id": "node-000013",
+      "id": "node-000012",
       "kind": "point",
-      "parent_id": "node-000010",
+      "parent_id": "node-000009",
       "depth": 3,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -767,9 +740,9 @@
       "canonical_path": "article:1/clause:3/point:a"
     },
     {
-      "id": "node-000014",
+      "id": "node-000013",
       "kind": "point",
-      "parent_id": "node-000010",
+      "parent_id": "node-000009",
       "depth": 3,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -906,9 +879,9 @@
       "canonical_path": "article:1/clause:3/point:b"
     },
     {
-      "id": "node-000015",
+      "id": "node-000014",
       "kind": "generic_section",
-      "parent_id": "node-000010",
+      "parent_id": "node-000009",
       "depth": 3,
       "ordinal_raw": "3.3",
       "ordinal_key": "3.3",
@@ -947,7 +920,7 @@
       "canonical_path": "article:1/clause:3/generic:3.3"
     },
     {
-      "id": "node-000016",
+      "id": "node-000015",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -981,9 +954,9 @@
       "canonical_path": "article:1/clause:4"
     },
     {
-      "id": "node-000017",
+      "id": "node-000016",
       "kind": "generic_section",
-      "parent_id": "node-000016",
+      "parent_id": "node-000015",
       "depth": 3,
       "ordinal_raw": "4.1",
       "ordinal_key": "4.1",
@@ -1099,9 +1072,9 @@
       "canonical_path": "article:1/clause:4/generic:4.1"
     },
     {
-      "id": "node-000018",
+      "id": "node-000017",
       "kind": "generic_section",
-      "parent_id": "node-000016",
+      "parent_id": "node-000015",
       "depth": 3,
       "ordinal_raw": "4.2",
       "ordinal_key": "4.2",
@@ -1168,7 +1141,7 @@
       "canonical_path": "article:1/clause:4/generic:4.2"
     },
     {
-      "id": "node-000019",
+      "id": "node-000018",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -1192,6 +1165,13 @@
           "role": "body",
           "char_start": 3,
           "char_end": 22
+        },
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0008_b0004",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 87
         }
       ],
       "recognition_evidence": {
@@ -1202,42 +1182,9 @@
       "canonical_path": "article:1/clause:5"
     },
     {
-      "id": "node-000020",
-      "kind": "generic_section",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "5.1",
-      "ordinal_key": "5.1",
-      "marker_text": "5.1.",
-      "title": "Mô hình, cấu trúc và định hướng tổ chức không gian phát triển đô thị và nông thôn:",
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0008_b0004",
-          "page_index": 8,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 5
-        },
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0008_b0004",
-          "page_index": 8,
-          "role": "title",
-          "char_start": 5,
-          "char_end": 87
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.1."
-      },
-      "canonical_path": "article:1/clause:5/generic:5.1"
-    },
-    {
-      "id": "node-000021",
+      "id": "node-000019",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -1458,9 +1405,9 @@
       "canonical_path": "article:1/clause:5/point:a"
     },
     {
-      "id": "node-000022",
+      "id": "node-000020",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -2255,12 +2202,12 @@
       "canonical_path": "article:1/clause:5/point:b"
     },
     {
-      "id": "node-000023",
+      "id": "node-000021",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "c",
-      "ordinal_key": "100",
+      "ordinal_key": "c",
       "marker_text": "c)",
       "title": null,
       "heading_anchors": [
@@ -3616,15 +3563,15 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "article:1/clause:5/point:100"
+      "canonical_path": "article:1/clause:5/point:c"
     },
     {
-      "id": "node-000024",
+      "id": "node-000022",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "d",
-      "ordinal_key": "500",
+      "ordinal_key": "d",
       "marker_text": "d)",
       "title": null,
       "heading_anchors": [
@@ -3853,12 +3800,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "article:1/clause:5/point:500"
+      "canonical_path": "article:1/clause:5/point:d"
     },
     {
-      "id": "node-000025",
+      "id": "node-000023",
       "kind": "generic_section",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "5.2",
       "ordinal_key": "5.2",
@@ -3880,38 +3827,12 @@
           "char_end": 55
         }
       ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.2."
-      },
-      "canonical_path": "article:1/clause:5/generic:5.2"
-    },
-    {
-      "id": "node-000026",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "a",
-      "ordinal_key": "a",
-      "marker_text": "a)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0033_b0008",
-          "page_index": 33,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
       "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0033_b0008",
           "page_index": 33,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 30
         },
         {
@@ -3969,39 +3890,12 @@
           "role": "body",
           "char_start": 0,
           "char_end": 217
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "a)"
-      },
-      "canonical_path": "article:1/clause:5/point:a~2"
-    },
-    {
-      "id": "node-000027",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "b",
-      "ordinal_key": "b",
-      "marker_text": "b)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0034_b0004",
-          "page_index": 34,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0034_b0004",
           "page_index": 34,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 79
         },
         {
@@ -4251,16 +4145,16 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "b)"
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.2."
       },
-      "canonical_path": "article:1/clause:5/point:b~2"
+      "canonical_path": "article:1/clause:5/generic:5.2"
     },
     {
-      "id": "node-000028",
+      "id": "node-000024",
       "kind": "generic_section",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "5.3",
       "ordinal_key": "5.3",
@@ -4282,38 +4176,12 @@
           "char_end": 48
         }
       ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.3."
-      },
-      "canonical_path": "article:1/clause:5/generic:5.3"
-    },
-    {
-      "id": "node-000029",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "a",
-      "ordinal_key": "a",
-      "marker_text": "a)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0037_b0003",
-          "page_index": 37,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
       "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0037_b0003",
           "page_index": 37,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 48
         },
         {
@@ -4742,39 +4610,12 @@
           "role": "body",
           "char_start": 0,
           "char_end": 442
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "a)"
-      },
-      "canonical_path": "article:1/clause:5/point:a~3"
-    },
-    {
-      "id": "node-000030",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "b",
-      "ordinal_key": "b",
-      "marker_text": "b)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0042_b0001",
-          "page_index": 42,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0042_b0001",
           "page_index": 42,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 52
         },
         {
@@ -5224,72 +5065,19 @@
           "role": "object",
           "char_start": null,
           "char_end": null
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "b)"
-      },
-      "canonical_path": "article:1/clause:5/point:b~3"
-    },
-    {
-      "id": "node-000031",
-      "kind": "generic_section",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "5.4",
-      "ordinal_key": "5.4",
-      "marker_text": "5.4.",
-      "title": "Định hướng khung quy hoạch sử dụng đất và quy mô dân số:",
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0049_b0001",
-          "page_index": 49,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 5
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0049_b0001",
           "page_index": 49,
-          "role": "title",
-          "char_start": 5,
-          "char_end": 61
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.4."
-      },
-      "canonical_path": "article:1/clause:5/generic:5.4"
-    },
-    {
-      "id": "node-000032",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "a",
-      "ordinal_key": "a",
-      "marker_text": "a)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0049_b0002",
-          "page_index": 49,
-          "role": "marker",
+          "role": "body",
           "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+          "char_end": 61
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0049_b0002",
           "page_index": 49,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 61
         },
         {
@@ -5354,39 +5142,12 @@
           "role": "body",
           "char_start": 0,
           "char_end": 145
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "a)"
-      },
-      "canonical_path": "article:1/clause:5/point:a~4"
-    },
-    {
-      "id": "node-000033",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "b",
-      "ordinal_key": "b",
-      "marker_text": "b)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0049_b0012",
-          "page_index": 49,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0049_b0012",
           "page_index": 49,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 86
         },
         {
@@ -5468,16 +5229,16 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "b)"
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.3."
       },
-      "canonical_path": "article:1/clause:5/point:b~4"
+      "canonical_path": "article:1/clause:5/generic:5.3"
     },
     {
-      "id": "node-000034",
+      "id": "node-000025",
       "kind": "generic_section",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "5.5",
       "ordinal_key": "5.5",
@@ -5499,38 +5260,12 @@
           "char_end": 45
         }
       ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.5."
-      },
-      "canonical_path": "article:1/clause:5/generic:5.5"
-    },
-    {
-      "id": "node-000035",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "a",
-      "ordinal_key": "a",
-      "marker_text": "a)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0050_b0008",
-          "page_index": 50,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
       "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0050_b0008",
           "page_index": 50,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 41
         },
         {
@@ -5539,39 +5274,12 @@
           "role": "body",
           "char_start": 0,
           "char_end": 484
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "a)"
-      },
-      "canonical_path": "article:1/clause:5/point:a~5"
-    },
-    {
-      "id": "node-000036",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "b",
-      "ordinal_key": "b",
-      "marker_text": "b)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0050_b0010",
-          "page_index": 50,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0050_b0010",
           "page_index": 50,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 15
         },
         {
@@ -5608,39 +5316,12 @@
           "role": "object",
           "char_start": null,
           "char_end": null
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "b)"
-      },
-      "canonical_path": "article:1/clause:5/point:b~5"
-    },
-    {
-      "id": "node-000037",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "c",
-      "ordinal_key": "100",
-      "marker_text": "c)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0051_b0001",
-          "page_index": 51,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0051_b0001",
           "page_index": 51,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 19
         },
         {
@@ -5733,39 +5414,12 @@
           "role": "body",
           "char_start": 0,
           "char_end": 133
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "c)"
-      },
-      "canonical_path": "article:1/clause:5/point:100~2"
-    },
-    {
-      "id": "node-000038",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "d",
-      "ordinal_key": "500",
-      "marker_text": "d)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0051_b0015",
-          "page_index": 51,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0051_b0015",
           "page_index": 51,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 50
         },
         {
@@ -5833,16 +5487,16 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "d)"
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.5."
       },
-      "canonical_path": "article:1/clause:5/point:500~2"
+      "canonical_path": "article:1/clause:5/generic:5.5"
     },
     {
-      "id": "node-000039",
+      "id": "node-000026",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -5944,9 +5598,9 @@
       "canonical_path": "article:1/clause:5/point:e"
     },
     {
-      "id": "node-000040",
+      "id": "node-000027",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "g",
       "ordinal_key": "g",
@@ -6027,9 +5681,9 @@
       "canonical_path": "article:1/clause:5/point:g"
     },
     {
-      "id": "node-000041",
+      "id": "node-000028",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "h",
       "ordinal_key": "h",
@@ -6082,12 +5736,12 @@
       "canonical_path": "article:1/clause:5/point:h"
     },
     {
-      "id": "node-000042",
+      "id": "node-000029",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "i",
-      "ordinal_key": "1",
+      "ordinal_key": "i",
       "marker_text": "i)",
       "title": null,
       "heading_anchors": [
@@ -6204,12 +5858,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "i)"
       },
-      "canonical_path": "article:1/clause:5/point:1"
+      "canonical_path": "article:1/clause:5/point:i"
     },
     {
-      "id": "node-000043",
+      "id": "node-000030",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "k",
       "ordinal_key": "k",
@@ -6381,12 +6035,12 @@
       "canonical_path": "article:1/clause:5/point:k"
     },
     {
-      "id": "node-000044",
+      "id": "node-000031",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "l",
-      "ordinal_key": "50",
+      "ordinal_key": "l",
       "marker_text": "l)",
       "title": null,
       "heading_anchors": [
@@ -6482,15 +6136,15 @@
         "recognition_method": "contextual_point",
         "matched_text": "l)"
       },
-      "canonical_path": "article:1/clause:5/point:50"
+      "canonical_path": "article:1/clause:5/point:l"
     },
     {
-      "id": "node-000045",
+      "id": "node-000032",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "m",
-      "ordinal_key": "1000",
+      "ordinal_key": "m",
       "marker_text": "m)",
       "title": null,
       "heading_anchors": [
@@ -6628,12 +6282,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "m)"
       },
-      "canonical_path": "article:1/clause:5/point:1000"
+      "canonical_path": "article:1/clause:5/point:m"
     },
     {
-      "id": "node-000046",
+      "id": "node-000033",
       "kind": "point",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "n",
       "ordinal_key": "n",
@@ -6700,9 +6354,9 @@
       "canonical_path": "article:1/clause:5/point:n"
     },
     {
-      "id": "node-000047",
+      "id": "node-000034",
       "kind": "generic_section",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "5.6",
       "ordinal_key": "5.6",
@@ -6724,38 +6378,12 @@
           "char_end": 70
         }
       ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.6."
-      },
-      "canonical_path": "article:1/clause:5/generic:5.6"
-    },
-    {
-      "id": "node-000048",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "a",
-      "ordinal_key": "a",
-      "marker_text": "a)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0056_b0017",
-          "page_index": 56,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
       "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0056_b0017",
           "page_index": 56,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 51
         },
         {
@@ -7723,39 +7351,12 @@
           "role": "body",
           "char_start": 0,
           "char_end": 159
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "a)"
-      },
-      "canonical_path": "article:1/clause:5/point:a~6"
-    },
-    {
-      "id": "node-000049",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "b",
-      "ordinal_key": "b",
-      "marker_text": "b)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0066_b0014",
-          "page_index": 66,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0066_b0014",
           "page_index": 66,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 41
         },
         {
@@ -7897,39 +7498,12 @@
           "role": "body",
           "char_start": 0,
           "char_end": 171
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "b)"
-      },
-      "canonical_path": "article:1/clause:5/point:b~6"
-    },
-    {
-      "id": "node-000050",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "a",
-      "ordinal_key": "a",
-      "marker_text": "a)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0068_b0003",
-          "page_index": 68,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0068_b0003",
           "page_index": 68,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 72
         },
         {
@@ -8337,39 +7911,12 @@
           "role": "body",
           "char_start": 0,
           "char_end": 233
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "a)"
-      },
-      "canonical_path": "article:1/clause:5/point:a~7"
-    },
-    {
-      "id": "node-000051",
-      "kind": "point",
-      "parent_id": "node-000019",
-      "depth": 3,
-      "ordinal_raw": "c",
-      "ordinal_key": "100",
-      "marker_text": "c)",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0072_b0005",
-          "page_index": 72,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0072_b0005",
           "page_index": 72,
           "role": "body",
-          "char_start": 3,
+          "char_start": 0,
           "char_end": 68
         },
         {
@@ -8570,16 +8117,16 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
-        "matched_text": "c)"
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.6."
       },
-      "canonical_path": "article:1/clause:5/point:100~3"
+      "canonical_path": "article:1/clause:5/generic:5.6"
     },
     {
-      "id": "node-000052",
+      "id": "node-000035",
       "kind": "generic_section",
-      "parent_id": "node-000019",
+      "parent_id": "node-000018",
       "depth": 3,
       "ordinal_raw": "5.8",
       "ordinal_key": "5.8",
@@ -8730,7 +8277,7 @@
       "canonical_path": "article:1/clause:5/generic:5.8"
     },
     {
-      "id": "node-000053",
+      "id": "node-000036",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -8754,41 +8301,14 @@
           "role": "body",
           "char_start": 3,
           "char_end": 36
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
-        "recognition_method": "contextual_clause",
-        "matched_text": "6."
-      },
-      "canonical_path": "article:1/clause:6"
-    },
-    {
-      "id": "node-000054",
-      "kind": "generic_section",
-      "parent_id": "node-000053",
-      "depth": 3,
-      "ordinal_raw": "6.1",
-      "ordinal_key": "6.1",
-      "marker_text": "6.1.",
-      "title": "Giai đoạn 2026 - 2030: (Tập trung tháo gỡ điểm nghẽn và định hình khung hạ tầng)",
-      "heading_anchors": [
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0075_b0004",
-          "page_index": 75,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 5
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0075_b0004",
           "page_index": 75,
-          "role": "title",
-          "char_start": 5,
+          "role": "body",
+          "char_start": 0,
           "char_end": 85
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0075_b0005",
           "page_index": 75,
@@ -8812,16 +8332,16 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "6.1."
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "6."
       },
-      "canonical_path": "article:1/clause:6/generic:6.1"
+      "canonical_path": "article:1/clause:6"
     },
     {
-      "id": "node-000055",
+      "id": "node-000037",
       "kind": "generic_section",
-      "parent_id": "node-000053",
+      "parent_id": "node-000036",
       "depth": 3,
       "ordinal_raw": "6.2",
       "ordinal_key": "6.2",
@@ -8881,7 +8401,7 @@
       "canonical_path": "article:1/clause:6/generic:6.2"
     },
     {
-      "id": "node-000056",
+      "id": "node-000038",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -9006,7 +8526,7 @@
       "canonical_path": "article:1/clause:7"
     },
     {
-      "id": "node-000057",
+      "id": "node-000039",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -9054,7 +8574,7 @@
       "canonical_path": "article:1/clause:8"
     },
     {
-      "id": "node-000058",
+      "id": "node-000040",
       "kind": "article",
       "parent_id": "node-000000",
       "depth": 1,
@@ -9068,13 +8588,13 @@
           "page_index": 77,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0077_b0009",
           "page_index": 77,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 26
         }
       ],
@@ -9087,9 +8607,9 @@
       "canonical_path": "article:2"
     },
     {
-      "id": "node-000059",
+      "id": "node-000041",
       "kind": "clause",
-      "parent_id": "node-000058",
+      "parent_id": "node-000040",
       "depth": 2,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -9121,9 +8641,9 @@
       "canonical_path": "article:2/clause:1"
     },
     {
-      "id": "node-000060",
+      "id": "node-000042",
       "kind": "clause",
-      "parent_id": "node-000058",
+      "parent_id": "node-000040",
       "depth": 2,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -9169,9 +8689,9 @@
       "canonical_path": "article:2/clause:2"
     },
     {
-      "id": "node-000061",
+      "id": "node-000043",
       "kind": "clause",
-      "parent_id": "node-000058",
+      "parent_id": "node-000040",
       "depth": 2,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -9224,9 +8744,9 @@
       "canonical_path": "article:2/clause:3"
     },
     {
-      "id": "node-000062",
+      "id": "node-000044",
       "kind": "clause",
-      "parent_id": "node-000058",
+      "parent_id": "node-000040",
       "depth": 2,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -9286,9 +8806,9 @@
       "canonical_path": "article:2/clause:4"
     },
     {
-      "id": "node-000063",
+      "id": "node-000045",
       "kind": "clause",
-      "parent_id": "node-000058",
+      "parent_id": "node-000040",
       "depth": 2,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -9320,7 +8840,7 @@
       "canonical_path": "article:2/clause:5"
     },
     {
-      "id": "node-000064",
+      "id": "node-000046",
       "kind": "article",
       "parent_id": "node-000000",
       "depth": 1,
@@ -9334,13 +8854,13 @@
           "page_index": 79,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0079_b0002",
           "page_index": 79,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 27
         }
       ],

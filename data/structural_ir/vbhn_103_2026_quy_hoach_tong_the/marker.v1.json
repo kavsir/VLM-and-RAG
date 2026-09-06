@@ -153,13 +153,13 @@
           "page_index": 1,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0003",
           "page_index": 1,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 50
         }
       ],
@@ -254,13 +254,13 @@
           "page_index": 1,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0006",
           "page_index": 1,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 101
         }
       ],
@@ -969,7 +969,7 @@
       "parent_id": "node-000012",
       "depth": 3,
       "ordinal_raw": "d",
-      "ordinal_key": "500",
+      "ordinal_key": "d",
       "marker_text": "d)",
       "title": null,
       "heading_anchors": [
@@ -995,7 +995,7 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "article:2/clause:4/point:500"
+      "canonical_path": "article:2/clause:4/point:d"
     },
     {
       "id": "node-000016",
@@ -1080,13 +1080,13 @@
           "page_index": 7,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0006",
           "page_index": 7,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 57
         }
       ],
@@ -1776,13 +1776,13 @@
           "page_index": 17,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0003",
           "page_index": 17,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 68
         }
       ],
@@ -2041,7 +2041,7 @@
       "parent_id": "node-000024",
       "depth": 3,
       "ordinal_raw": "c",
-      "ordinal_key": "100",
+      "ordinal_key": "c",
       "marker_text": "c)",
       "title": null,
       "heading_anchors": [
@@ -2074,7 +2074,7 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "article:4/clause:2/point:100"
+      "canonical_path": "article:4/clause:2/point:c"
     },
     {
       "id": "node-000028",
@@ -2082,7 +2082,7 @@
       "parent_id": "node-000024",
       "depth": 3,
       "ordinal_raw": "d",
-      "ordinal_key": "500",
+      "ordinal_key": "d",
       "marker_text": "d)",
       "title": null,
       "heading_anchors": [
@@ -2115,7 +2115,7 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "article:4/clause:2/point:500"
+      "canonical_path": "article:4/clause:2/point:d"
     },
     {
       "id": "node-000029",
@@ -2256,13 +2256,13 @@
           "page_index": 21,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0005",
           "page_index": 21,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 45
         }
       ],
@@ -2484,7 +2484,7 @@
       "parent_id": "node-000035",
       "depth": 3,
       "ordinal_raw": "c",
-      "ordinal_key": "100",
+      "ordinal_key": "c",
       "marker_text": "c)",
       "title": null,
       "heading_anchors": [
@@ -2510,7 +2510,7 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "article:5/clause:4/point:100"
+      "canonical_path": "article:5/clause:4/point:c"
     },
     {
       "id": "node-000039",
@@ -2518,7 +2518,7 @@
       "parent_id": "node-000035",
       "depth": 3,
       "ordinal_raw": "d",
-      "ordinal_key": "500",
+      "ordinal_key": "d",
       "marker_text": "d)",
       "title": null,
       "heading_anchors": [
@@ -2586,7 +2586,7 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "article:5/clause:4/point:500"
+      "canonical_path": "article:5/clause:4/point:d"
     },
     {
       "id": "node-000040",
@@ -2685,13 +2685,13 @@
           "page_index": 23,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0006",
           "page_index": 23,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 49
         }
       ],
@@ -2841,13 +2841,13 @@
           "page_index": 24,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0003",
           "page_index": 24,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 74
         }
       ],
@@ -3032,13 +3032,13 @@
           "page_index": 26,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0026_b0003",
           "page_index": 26,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 57
         }
       ],
@@ -3260,13 +3260,13 @@
           "page_index": 30,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0003",
           "page_index": 30,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 59
         }
       ],
@@ -3654,13 +3654,13 @@
           "page_index": 35,
           "role": "marker",
           "char_start": 0,
-          "char_end": 8
+          "char_end": 9
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0006",
           "page_index": 35,
           "role": "title",
-          "char_start": 8,
+          "char_start": 9,
           "char_end": 113
         }
       ],
@@ -3787,7 +3787,7 @@
       "parent_id": "node-000059",
       "depth": 3,
       "ordinal_raw": "c",
-      "ordinal_key": "100",
+      "ordinal_key": "c",
       "marker_text": "c)",
       "title": null,
       "heading_anchors": [
@@ -3813,7 +3813,7 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "article:10/clause:1/point:100"
+      "canonical_path": "article:10/clause:1/point:c"
     },
     {
       "id": "node-000063",
@@ -3821,7 +3821,7 @@
       "parent_id": "node-000059",
       "depth": 3,
       "ordinal_raw": "d",
-      "ordinal_key": "500",
+      "ordinal_key": "d",
       "marker_text": "d)",
       "title": null,
       "heading_anchors": [
@@ -3861,7 +3861,7 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "article:10/clause:1/point:500"
+      "canonical_path": "article:10/clause:1/point:d"
     },
     {
       "id": "node-000064",
@@ -4009,13 +4009,13 @@
           "page_index": 38,
           "role": "marker",
           "char_start": 0,
-          "char_end": 8
+          "char_end": 9
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0006",
           "page_index": 38,
           "role": "title",
-          "char_start": 8,
+          "char_start": 9,
           "char_end": 76
         }
       ],
@@ -4165,13 +4165,13 @@
           "page_index": 39,
           "role": "marker",
           "char_start": 0,
-          "char_end": 8
+          "char_end": 9
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0004",
           "page_index": 39,
           "role": "title",
-          "char_start": 8,
+          "char_start": 9,
           "char_end": 42
         }
       ],
@@ -4382,13 +4382,13 @@
           "page_index": 40,
           "role": "marker",
           "char_start": 0,
-          "char_end": 8
+          "char_end": 9
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0004",
           "page_index": 40,
           "role": "title",
-          "char_start": 8,
+          "char_start": 9,
           "char_end": 83
         }
       ],
@@ -4483,13 +4483,13 @@
           "page_index": 40,
           "role": "marker",
           "char_start": 0,
-          "char_end": 8
+          "char_end": 9
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0007",
           "page_index": 40,
           "role": "title",
-          "char_start": 8,
+          "char_start": 9,
           "char_end": 51
         }
       ],
@@ -4861,13 +4861,13 @@
           "page_index": 44,
           "role": "marker",
           "char_start": 0,
-          "char_end": 8
+          "char_end": 9
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0006",
           "page_index": 44,
           "role": "title",
-          "char_start": 8,
+          "char_start": 9,
           "char_end": 36
         }
       ],
@@ -4995,7 +4995,7 @@
       "parent_id": "node-000086",
       "depth": 3,
       "ordinal_raw": "c",
-      "ordinal_key": "100",
+      "ordinal_key": "c",
       "marker_text": "c)",
       "title": null,
       "heading_anchors": [
@@ -5021,7 +5021,7 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "article:15/clause:2/point:100"
+      "canonical_path": "article:15/clause:2/point:c"
     },
     {
       "id": "node-000090",
@@ -5029,7 +5029,7 @@
       "parent_id": "node-000086",
       "depth": 3,
       "ordinal_raw": "d",
-      "ordinal_key": "500",
+      "ordinal_key": "d",
       "marker_text": "d)",
       "title": null,
       "heading_anchors": [
@@ -5062,7 +5062,7 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "article:15/clause:2/point:500"
+      "canonical_path": "article:15/clause:2/point:d"
     },
     {
       "id": "node-000091",
@@ -5239,6 +5239,20 @@
           "role": "body",
           "char_start": 0,
           "char_end": 26
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0009",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 131
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0010",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 27
         }
       ],
       "recognition_evidence": {
@@ -5250,49 +5264,8 @@
     },
     {
       "id": "node-000096",
-      "kind": "article",
-      "parent_id": "node-000000",
-      "depth": 1,
-      "ordinal_raw": "50",
-      "ordinal_key": "50",
-      "marker_text": "Điều 50",
-      "title": "và Điều 51 của Luật Công nghiệp công nghệ số số 71/2025/QH15, có hiệu lực kể từ ngày 01 tháng 01 năm 2026 quy định như sau:",
-      "heading_anchors": [
-        {
-          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0009",
-          "page_index": 45,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 8
-        },
-        {
-          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0009",
-          "page_index": 45,
-          "role": "title",
-          "char_start": 8,
-          "char_end": 131
-        }
-      ],
-      "direct_content_anchors": [
-        {
-          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0010",
-          "page_index": 45,
-          "role": "body",
-          "char_start": 0,
-          "char_end": 27
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_ARTICLE_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Điều 50"
-      },
-      "canonical_path": "article:50"
-    },
-    {
-      "id": "node-000097",
       "kind": "clause",
-      "parent_id": "node-000096",
+      "parent_id": "node-000085",
       "depth": 2,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -5314,6 +5287,20 @@
           "role": "body",
           "char_start": 3,
           "char_end": 108
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0012",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 87
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0013",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 318
         }
       ],
       "recognition_evidence": {
@@ -5321,78 +5308,10 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "article:50/clause:1"
+      "canonical_path": "article:15/clause:1"
     },
     {
-      "id": "node-000098",
-      "kind": "clause",
-      "parent_id": "node-000096",
-      "depth": 2,
-      "ordinal_raw": "2",
-      "ordinal_key": "2",
-      "marker_text": "2.",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0012",
-          "page_index": 45,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
-        {
-          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0012",
-          "page_index": 45,
-          "role": "body",
-          "char_start": 3,
-          "char_end": 87
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
-        "recognition_method": "contextual_clause",
-        "matched_text": "2."
-      },
-      "canonical_path": "article:50/clause:2"
-    },
-    {
-      "id": "node-000099",
-      "kind": "clause",
-      "parent_id": "node-000096",
-      "depth": 2,
-      "ordinal_raw": "3",
-      "ordinal_key": "3",
-      "marker_text": "3.",
-      "title": null,
-      "heading_anchors": [
-        {
-          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0013",
-          "page_index": 45,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
-        {
-          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0013",
-          "page_index": 45,
-          "role": "body",
-          "char_start": 3,
-          "char_end": 318
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
-        "recognition_method": "contextual_clause",
-        "matched_text": "3."
-      },
-      "canonical_path": "article:50/clause:3"
-    },
-    {
-      "id": "node-000100",
+      "id": "node-000097",
       "kind": "article",
       "parent_id": "node-000000",
       "depth": 1,
@@ -5406,13 +5325,13 @@
           "page_index": 45,
           "role": "marker",
           "char_start": 0,
-          "char_end": 8
+          "char_end": 9
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0014",
           "page_index": 45,
           "role": "title",
-          "char_start": 8,
+          "char_start": 9,
           "char_end": 29
         }
       ],
@@ -5425,9 +5344,9 @@
       "canonical_path": "article:51"
     },
     {
-      "id": "node-000101",
+      "id": "node-000098",
       "kind": "clause",
-      "parent_id": "node-000100",
+      "parent_id": "node-000097",
       "depth": 2,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -5459,9 +5378,9 @@
       "canonical_path": "article:51/clause:1"
     },
     {
-      "id": "node-000102",
+      "id": "node-000099",
       "kind": "clause",
-      "parent_id": "node-000100",
+      "parent_id": "node-000097",
       "depth": 2,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -5490,41 +5409,14 @@
           "role": "body",
           "char_start": 0,
           "char_end": 129
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
-        "recognition_method": "contextual_clause",
-        "matched_text": "2."
-      },
-      "canonical_path": "article:51/clause:2"
-    },
-    {
-      "id": "node-000103",
-      "kind": "article",
-      "parent_id": "node-000000",
-      "depth": 1,
-      "ordinal_raw": "2",
-      "ordinal_key": "2",
-      "marker_text": "Điều 2",
-      "title": "của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025 quy định như sau:",
-      "heading_anchors": [
-        {
-          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0003",
-          "page_index": 46,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 7
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0003",
           "page_index": 46,
-          "role": "title",
-          "char_start": 7,
+          "role": "body",
+          "char_start": 0,
           "char_end": 272
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0004",
           "page_index": 46,
@@ -5580,41 +5472,14 @@
           "role": "body",
           "char_start": 0,
           "char_end": 13
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_ARTICLE_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Điều 2"
-      },
-      "canonical_path": "article:2~2"
-    },
-    {
-      "id": "node-000104",
-      "kind": "appendix",
-      "parent_id": "node-000000",
-      "depth": 1,
-      "ordinal_raw": null,
-      "ordinal_key": null,
-      "marker_text": "PHỤ LỤC",
-      "title": "32 DANH MỤC DỰ KIẾN CÁC DỰ ÁN QUAN TRỌNG QUỐC GIA THỜI KỲ 2021 - 2030, TẦM NHÌN ĐẾN NĂM 2050",
-      "heading_anchors": [
-        {
-          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0002",
-          "page_index": 47,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 7
         },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0002",
           "page_index": 47,
-          "role": "title",
-          "char_start": 7,
+          "role": "body",
+          "char_start": 0,
           "char_end": 99
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0003",
           "page_index": 47,
@@ -5967,11 +5832,11 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_FORMAL_APPENDIX_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "PHỤ LỤC"
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
       },
-      "canonical_path": "appendix:1"
+      "canonical_path": "article:51/clause:2"
     }
   ]
 }

@@ -1,16 +1,16 @@
 {
-  "annotation_schema_version": 1,
-  "annotation_version": "v1",
+  "annotation_schema_version": 2,
+  "annotation_version": "v2",
   "annotator": "codex",
   "annotator_type": "ai_visual_audit",
-  "annotation_method": "visual_pdf_structural_audit",
+  "annotation_method": "visual_pdf_structural_reaudit",
   "created_at": "2026-09-06T00:00:00+07:00",
   "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
   "version_id": "v1",
   "source_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
   "prior_physical_ir_exposure": true,
   "physical_ir_used_as_reference": false,
-  "selection_rationale": "Pages were stratified across formal legal hierarchy, planning outlines, appendices, cross-page continuity, visual objects, and scanned structure; selection was made from rendered PDFs rather than extractor success.",
+  "selection_rationale": "The same fixed stratified pages were re-audited directly from 144-DPI-equivalent rendered source PDF pages after ordinal contamination was discovered; prior system exposure is disclosed and no extractor output was used as reference truth.",
   "audited_pages": [
     {
       "page_index": 0,
@@ -141,10 +141,10 @@
           "pdf_page_number_1_based": 6,
           "kind": "point",
           "ordinal_raw": "i",
-          "ordinal_key": "1",
+          "ordinal_key": "i",
           "marker_text": "i)",
           "title": null,
-          "canonical_path": "chapter:3/article:9/clause:1/point:1",
+          "canonical_path": "chapter:3/article:9/clause:1/point:i",
           "parent_canonical_path": "chapter:3/article:9/clause:1",
           "source_excerpt": "i)",
           "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
@@ -169,10 +169,10 @@
           "pdf_page_number_1_based": 6,
           "kind": "point",
           "ordinal_raw": "l",
-          "ordinal_key": "50",
+          "ordinal_key": "l",
           "marker_text": "l)",
           "title": null,
-          "canonical_path": "chapter:3/article:9/clause:1/point:50",
+          "canonical_path": "chapter:3/article:9/clause:1/point:l",
           "parent_canonical_path": "chapter:3/article:9/clause:1",
           "source_excerpt": "l)",
           "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
@@ -183,10 +183,10 @@
           "pdf_page_number_1_based": 6,
           "kind": "point",
           "ordinal_raw": "m",
-          "ordinal_key": "1000",
+          "ordinal_key": "m",
           "marker_text": "m)",
           "title": null,
-          "canonical_path": "chapter:3/article:9/clause:1/point:1000",
+          "canonical_path": "chapter:3/article:9/clause:1/point:m",
           "parent_canonical_path": "chapter:3/article:9/clause:1",
           "source_excerpt": "m)",
           "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
@@ -385,5 +385,7 @@
       "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
       "nodes": []
     }
-  ]
+  ],
+  "prior_structural_extractor_exposure": true,
+  "structural_extractor_output_used_as_reference": false
 }

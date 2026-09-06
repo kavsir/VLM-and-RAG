@@ -1,16 +1,16 @@
 {
-  "annotation_schema_version": 1,
-  "annotation_version": "v1",
+  "annotation_schema_version": 2,
+  "annotation_version": "v2",
   "annotator": "codex",
   "annotator_type": "ai_visual_audit",
-  "annotation_method": "visual_pdf_structural_audit",
+  "annotation_method": "visual_pdf_structural_reaudit",
   "created_at": "2026-09-06T00:00:00+07:00",
   "document_id": "hanoi-master-plan-100y",
   "version_id": "v1",
   "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
   "prior_physical_ir_exposure": true,
   "physical_ir_used_as_reference": false,
-  "selection_rationale": "Pages were stratified across formal legal hierarchy, planning outlines, appendices, cross-page continuity, visual objects, and scanned structure; selection was made from rendered PDFs rather than extractor success.",
+  "selection_rationale": "The same fixed stratified pages were re-audited directly from 144-DPI-equivalent rendered source PDF pages after ordinal contamination was discovered; prior system exposure is disclosed and no extractor output was used as reference truth.",
   "audited_pages": [
     {
       "page_index": 0,
@@ -321,10 +321,10 @@
           "pdf_page_number_1_based": 31,
           "kind": "point",
           "ordinal_raw": "d",
-          "ordinal_key": "500",
+          "ordinal_key": "d",
           "marker_text": "d)",
           "title": null,
-          "canonical_path": "article:1/clause:5/point:500",
+          "canonical_path": "article:1/clause:5/point:d",
           "parent_canonical_path": "article:1/clause:5",
           "source_excerpt": "d)",
           "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
@@ -442,5 +442,7 @@
         }
       ]
     }
-  ]
+  ],
+  "prior_structural_extractor_exposure": true,
+  "structural_extractor_output_used_as_reference": false
 }

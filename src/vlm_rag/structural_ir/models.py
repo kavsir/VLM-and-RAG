@@ -180,7 +180,7 @@ class StructuralNode(StructuralModel):
             expected_name = (
                 "generic" if self.kind == StructuralNodeKind.GENERIC_SECTION else self.kind.value
             )
-            match = re.fullmatch(rf"{expected_name}:(?P<value>[^/~]+)(?:~[2-9]\d*)?", segment)
+            match = re.fullmatch(rf"{expected_name}:(?P<value>[^/~]+)", segment)
             if match is None:
                 raise ValueError("canonical path segment does not match node kind")
             if self.ordinal_key is not None and match.group("value") != self.ordinal_key:
@@ -286,12 +286,16 @@ class StructuralDocument(StructuralModel):
                     raise ValueError(f"wrong depth for node {node.id!r}")
                 if parent.kind not in _ALLOWED_PARENTS[node.kind]:
                     raise ValueError(f"{node.kind.value} cannot be a child of {parent.kind.value}")
-                expected_prefix = f"{parent.canonical_path}/"
-                if (
-                    parent.kind != StructuralNodeKind.DOCUMENT
-                    and not node.canonical_path.startswith(expected_prefix)
-                ):
-                    raise ValueError(f"canonical path does not extend parent for {node.id!r}")
+                segment = node.canonical_path.rsplit("/", maxsplit=1)[-1]
+                expected_path = (
+                    segment
+                    if parent.kind == StructuralNodeKind.DOCUMENT
+                    else f"{parent.canonical_path}/{segment}"
+                )
+                if node.canonical_path != expected_path:
+                    raise ValueError(
+                        f"canonical path does not exactly extend parent for {node.id!r}"
+                    )
             by_id[node.id] = node
             paths.add(node.canonical_path)
         return self

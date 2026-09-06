@@ -1,16 +1,16 @@
 {
-  "annotation_schema_version": 1,
-  "annotation_version": "v1",
+  "annotation_schema_version": 2,
+  "annotation_version": "v2",
   "annotator": "codex",
   "annotator_type": "ai_visual_audit",
-  "annotation_method": "visual_pdf_structural_audit",
+  "annotation_method": "visual_pdf_structural_reaudit",
   "created_at": "2026-09-06T00:00:00+07:00",
   "document_id": "vbhn-103-2026-quy-hoach-tong-the",
   "version_id": "v1",
   "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
   "prior_physical_ir_exposure": true,
   "physical_ir_used_as_reference": false,
-  "selection_rationale": "Pages were stratified across formal legal hierarchy, planning outlines, appendices, cross-page continuity, visual objects, and scanned structure; selection was made from rendered PDFs rather than extractor success.",
+  "selection_rationale": "The same fixed stratified pages were re-audited directly from 144-DPI-equivalent rendered source PDF pages after ordinal contamination was discovered; prior system exposure is disclosed and no extractor output was used as reference truth.",
   "audited_pages": [
     {
       "page_index": 0,
@@ -135,18 +135,18 @@
           "scored": false
         },
         {
-          "page_index": 8,
-          "pdf_page_number_1_based": 9,
+          "page_index": 12,
+          "pdf_page_number_1_based": 13,
           "kind": "clause",
-          "ordinal_raw": "2030",
-          "ordinal_key": "2030",
-          "marker_text": "2030.",
-          "title": null,
-          "canonical_path": "article:3/clause:2030",
+          "ordinal_raw": "2",
+          "ordinal_key": "2",
+          "marker_text": "2.",
+          "title": "Phát triển các vùng động lực, cực tăng trưởng quốc gia",
+          "canonical_path": "article:3/clause:2",
           "parent_canonical_path": "article:3",
-          "source_excerpt": "2030.",
-          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
-          "scored": false
+          "source_excerpt": "2. Phát triển các vùng động lực, cực tăng trưởng quốc gia",
+          "visual_evidence_note": "Clause marker visually verified; superscript footnote 4 is not part of the ordinal.",
+          "scored": true
         },
         {
           "page_index": 12,
@@ -156,8 +156,8 @@
           "ordinal_key": "a",
           "marker_text": "a)",
           "title": null,
-          "canonical_path": "article:3/clause:2030/point:a",
-          "parent_canonical_path": "article:3/clause:2030",
+          "canonical_path": "article:3/clause:2/point:a",
+          "parent_canonical_path": "article:3/clause:2",
           "source_excerpt": "a)",
           "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
           "scored": true
@@ -202,10 +202,10 @@
           "pdf_page_number_1_based": 21,
           "kind": "point",
           "ordinal_raw": "d",
-          "ordinal_key": "500",
+          "ordinal_key": "d",
           "marker_text": "d)",
           "title": null,
-          "canonical_path": "article:4/clause:2/point:500",
+          "canonical_path": "article:4/clause:2/point:d",
           "parent_canonical_path": "article:4/clause:2",
           "source_excerpt": "d)",
           "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
@@ -373,5 +373,7 @@
       "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
       "nodes": []
     }
-  ]
+  ],
+  "prior_structural_extractor_exposure": true,
+  "structural_extractor_output_used_as_reference": false
 }

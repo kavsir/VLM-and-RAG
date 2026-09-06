@@ -19,13 +19,19 @@ from vlm_rag.physical_ir import (
 from vlm_rag.structural_ir import (
     AnchorRole,
     PhysicalAnchor,
+    StructuralDiagnostic,
     StructuralDocument,
     StructuralIRSerializationError,
     StructuralNodeKind,
     StructuralPhysicalIntegrityError,
     VietnameseStructuralExtractor,
-    ordinal_key,
+    article_ordinal_key,
+    clause_ordinal_key,
+    formal_container_ordinal_key,
+    generic_decimal_ordinal_key,
+    point_ordinal_key,
     reconstruction_by_block,
+    roman_ordinal_key,
     structural_document_from_json,
     structural_document_to_json,
     validate_against_physical,
@@ -83,12 +89,25 @@ def _extract(text: str, *, kind: BlockKindV1 = BlockKindV1.TEXT) -> StructuralDo
     return result
 
 
-@pytest.mark.parametrize(
-    ("raw", "expected"),
-    [("IV", "4"), ("10a", "10a"), ("A", "a"), ("đ", "đ"), ("1.2.3", "1.2.3")],
-)
-def test_ordinal_keys_preserve_non_integer_forms(raw: str, expected: str) -> None:
-    assert ordinal_key(raw) == expected
+def test_kind_aware_ordinal_contracts() -> None:
+    assert article_ordinal_key("10A") == "10a"
+    assert article_ordinal_key("3Đ") == "3đ"
+    assert clause_ordinal_key("2") == "2"
+    assert generic_decimal_ordinal_key("1.2.3") == "1.2.3"
+    assert formal_container_ordinal_key("IV") == "4"
+    for letter in ("a", "c", "d", "i", "l", "m", "đ"):
+        assert point_ordinal_key(letter) == letter
+
+
+@pytest.mark.parametrize(("raw", "expected"), [("I", "1"), ("IV", "4"), ("IX", "9"), ("XL", "40")])
+def test_strict_valid_roman_ordinals(raw: str, expected: str) -> None:
+    assert roman_ordinal_key(raw) == expected
+
+
+@pytest.mark.parametrize("raw", ["IIII", "IC", "VX", "IIV", "MMMM"])
+def test_invalid_roman_ordinals_are_rejected(raw: str) -> None:
+    assert roman_ordinal_key(raw) is None
+    assert len(_extract(f"CHƯƠNG {raw}").nodes) == 1
 
 
 @pytest.mark.parametrize(
@@ -124,6 +143,15 @@ def test_article_clause_and_vietnamese_points_require_context() -> None:
     assert point_d.ordinal_key == "đ"
 
 
+@pytest.mark.parametrize("letter", ["c", "d", "i", "l", "m", "đ"])
+def test_point_letters_are_never_roman_normalized(letter: str) -> None:
+    result = _extract(f"Điều 1. A\n1. B\n{letter}) C")
+    point = result.nodes[-1]
+    assert point.kind == StructuralNodeKind.POINT
+    assert point.ordinal_key == letter
+    assert point.canonical_path == f"article:1/clause:1/point:{letter}"
+
+
 @pytest.mark.parametrize(
     "text",
     [
@@ -137,6 +165,63 @@ def test_article_clause_and_vietnamese_points_require_context() -> None:
 )
 def test_cross_references_in_body_do_not_create_nodes(text: str) -> None:
     assert len(_extract(text).nodes) == 1
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Điều 3 của Luật này được áp dụng...",
+        "Điều 4 nêu trên được sửa đổi...",
+        "Chương II của Luật quy định...",
+        "Phụ lục II kèm theo Thông tư này hướng dẫn...",
+        "Mục 2 của kế hoạch này quy định...",
+    ],
+)
+def test_line_start_prose_references_remain_body(text: str) -> None:
+    physical = _physical(_block("b0", text))
+    diagnostics: list[StructuralDiagnostic] = []
+    structural = VietnameseStructuralExtractor().extract(physical, diagnostics=diagnostics)
+    assert len(structural.nodes) == 1
+    assert diagnostics[0].category == "line_start_prose_reference_rejected"
+    assert reconstruction_by_block(structural, physical)["b0"] == text
+
+
+def test_toc_pages_do_not_reserve_real_structural_paths() -> None:
+    toc_text = "MỤC LỤC\nPHẦN I ........ 4\nCHƯƠNG I ...... 5\nĐIỀU 1 ........ 6\n"
+    body_text = "PHẦN I\nCHƯƠNG I\nĐiều 1. Nội dung\n"
+    toc_block = _block("toc", toc_text, page_index=0)
+    body_block = _block("body", body_text, page_index=1)
+    physical = PhysicalDocumentV1(
+        document_id="test-document",
+        version_id="v1",
+        source_artifact_sha256=SOURCE_SHA,
+        parser="test",
+        parser_version="1",
+        parser_backend="fixture",
+        page_count=2,
+        pages=(
+            PhysicalPageV1(page_index=0, width=100.0, height=200.0, blocks=(toc_block,)),
+            PhysicalPageV1(page_index=1, width=100.0, height=200.0, blocks=(body_block,)),
+        ),
+    )
+    diagnostics: list[StructuralDiagnostic] = []
+    result = VietnameseStructuralExtractor().extract(physical, diagnostics=diagnostics)
+    assert [node.canonical_path for node in result.nodes[1:]] == [
+        "part:1",
+        "part:1/chapter:1",
+        "part:1/chapter:1/article:1",
+    ]
+    assert sum(item.category == "table_of_contents_entry_rejected" for item in diagnostics) == 3
+    validate_against_physical(result, physical)
+    assert reconstruction_by_block(result, physical) == {
+        "toc": toc_block.text,
+        "body": body_block.text,
+    }
+
+
+def test_plain_muc_luc_phrase_does_not_suppress_real_heading() -> None:
+    result = _extract("mục lục\nCHƯƠNG I")
+    assert [node.canonical_path for node in result.nodes[1:]] == ["chapter:1"]
 
 
 def test_clause_and_point_markers_outside_legal_context_remain_body() -> None:
@@ -255,13 +340,53 @@ def test_appendix_can_contain_part_chapter_and_section() -> None:
     assert section.canonical_path == "appendix:2/part:1/chapter:1/section:1"
 
 
-def test_generic_decimal_inside_clause_preserves_legal_context() -> None:
+def test_ambiguous_generic_decimal_inside_clause_remains_body_and_preserves_context() -> None:
     result = _extract("Điều 1. Quy hoạch\n1. Nội dung\n1.1. Chi tiết\n2. Khoản tiếp")
-    article, clause_one, generic, clause_two = result.nodes[1:]
-    assert generic.kind == StructuralNodeKind.GENERIC_SECTION
-    assert generic.parent_id == clause_one.id
+    article, clause_one, clause_two = result.nodes[1:]
     assert clause_two.kind == StructuralNodeKind.CLAUSE
     assert clause_two.parent_id == article.id
+    assert any(anchor.role == AnchorRole.BODY for anchor in clause_one.direct_content_anchors)
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "1.1. dự toán được tính như sau...",
+        "2.3. số liệu được tổng hợp...",
+        "1.2. trường hợp này...",
+        "I. QUAN ĐIỂM\n1. đây là nội dung liệt kê thông thường",
+    ],
+)
+def test_generic_numbering_requires_strong_heading_or_numeric_parent(text: str) -> None:
+    nodes = _extract(text).nodes[1:]
+    assert all(node.ordinal_key not in {"1.1", "2.3", "1.2"} for node in nodes)
+    assert all(
+        node.ordinal_key != "1" or node.title != "đây là nội dung liệt kê thông thường"
+        for node in nodes
+    )
+
+
+def test_duplicate_structural_key_is_body_with_diagnostic() -> None:
+    text = "Điều 1. A\nĐiều 1. B"
+    physical = _physical(_block("b0", text))
+    diagnostics: list[StructuralDiagnostic] = []
+    result = VietnameseStructuralExtractor().extract(physical, diagnostics=diagnostics)
+    assert [node.canonical_path for node in result.nodes] == ["document", "article:1"]
+    duplicate = [
+        item for item in diagnostics if item.category == "duplicate_structural_key_rejected"
+    ]
+    assert len(duplicate) == 1
+    assert duplicate[0].canonical_key == "article:1"
+    assert "~" not in structural_document_to_json(result)
+    assert reconstruction_by_block(result, physical)["b0"] == text
+
+
+def test_appendix_is_terminal_for_profile_v1() -> None:
+    result = _extract("PHỤ LỤC II\nPHẦN I\nCHƯƠNG I\nĐiều 1. Nội dung")
+    appendix, part, chapter, article = result.nodes[1:]
+    assert part.parent_id == appendix.id
+    assert chapter.parent_id == part.id
+    assert article.parent_id == chapter.id
 
 
 def test_non_contiguous_article_numbering_does_not_invent_nodes() -> None:
@@ -278,8 +403,10 @@ def test_model_rejects_duplicate_id_path_missing_parent_and_wrong_depth() -> Non
     duplicate_id["nodes"][2]["id"] = duplicate_id["nodes"][1]["id"]
     with pytest.raises(ValidationError, match="duplicate structural node id"):
         StructuralDocument.model_validate(duplicate_id)
-    duplicate_path = _extract("Điều 1. A\nĐiều 1. B").model_dump(mode="json")
+    duplicate_path = _extract("Điều 1. A\nĐiều 2. B").model_dump(mode="json")
     duplicate_path["nodes"][2]["canonical_path"] = duplicate_path["nodes"][1]["canonical_path"]
+    duplicate_path["nodes"][2]["ordinal_raw"] = "1"
+    duplicate_path["nodes"][2]["ordinal_key"] = "1"
     with pytest.raises(ValidationError, match="duplicate canonical path"):
         StructuralDocument.model_validate(duplicate_path)
     missing_parent = deepcopy(raw)
@@ -298,6 +425,14 @@ def test_model_rejects_duplicate_id_path_missing_parent_and_wrong_depth() -> Non
     wrong_kind_segment["nodes"][1]["canonical_path"] = "chapter:1"
     with pytest.raises(ValidationError, match="does not match node kind"):
         StructuralDocument.model_validate(wrong_kind_segment)
+    hidden_parent_segment = deepcopy(raw)
+    hidden_parent_segment["nodes"][1]["canonical_path"] = "chapter:99/article:1"
+    with pytest.raises(ValidationError, match="does not exactly extend parent"):
+        StructuralDocument.model_validate(hidden_parent_segment)
+    occurrence_suffix = deepcopy(raw)
+    occurrence_suffix["nodes"][1]["canonical_path"] = "article:1~2"
+    with pytest.raises(ValidationError, match="does not match node kind"):
+        StructuralDocument.model_validate(occurrence_suffix)
 
 
 @pytest.mark.parametrize(

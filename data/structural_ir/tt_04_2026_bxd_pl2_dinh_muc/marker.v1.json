@@ -282,41 +282,14 @@
           "role": "body",
           "char_start": 589,
           "char_end": 594
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_APPENDIX_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "PHỤ LỤC II"
-      },
-      "canonical_path": "appendix:2"
-    },
-    {
-      "id": "node-000002",
-      "kind": "generic_section",
-      "parent_id": "node-000001",
-      "depth": 2,
-      "ordinal_raw": "I",
-      "ordinal_key": "1",
-      "marker_text": "I.",
-      "title": "TỔNG",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
-          "page_index": 1,
-          "role": "marker",
-          "char_start": 594,
-          "char_end": 597
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
           "page_index": 1,
-          "role": "title",
-          "char_start": 597,
+          "role": "body",
+          "char_start": 594,
           "char_end": 602
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
           "page_index": 1,
@@ -393,41 +366,14 @@
           "role": "body",
           "char_start": 725,
           "char_end": 730
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
-        "recognition_method": "generic_roman_heading",
-        "matched_text": "I."
-      },
-      "canonical_path": "appendix:2/generic:1"
-    },
-    {
-      "id": "node-000003",
-      "kind": "generic_section",
-      "parent_id": "node-000001",
-      "depth": 2,
-      "ordinal_raw": "II",
-      "ordinal_key": "2",
-      "marker_text": "II.",
-      "title": "ĐỊNH",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
-          "page_index": 1,
-          "role": "marker",
-          "char_start": 730,
-          "char_end": 734
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
           "page_index": 1,
-          "role": "title",
-          "char_start": 734,
+          "role": "body",
+          "char_start": 730,
           "char_end": 739
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
           "page_index": 1,
@@ -476,41 +422,14 @@
           "role": "body",
           "char_start": 882,
           "char_end": 889
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
-        "recognition_method": "generic_roman_heading",
-        "matched_text": "II."
-      },
-      "canonical_path": "appendix:2/generic:2"
-    },
-    {
-      "id": "node-000004",
-      "kind": "generic_section",
-      "parent_id": "node-000001",
-      "depth": 2,
-      "ordinal_raw": "I",
-      "ordinal_key": "1",
-      "marker_text": "I.",
-      "title": "CÔNG TÁC",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
-          "page_index": 1,
-          "role": "marker",
-          "char_start": 889,
-          "char_end": 892
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
           "page_index": 1,
-          "role": "title",
-          "char_start": 892,
+          "role": "body",
+          "char_start": 889,
           "char_end": 901
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
           "page_index": 1,
@@ -608,41 +527,14 @@
           "role": "body",
           "char_start": 1186,
           "char_end": 1193
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
-        "recognition_method": "generic_roman_heading",
-        "matched_text": "I."
-      },
-      "canonical_path": "appendix:2/generic:1~2"
-    },
-    {
-      "id": "node-000005",
-      "kind": "generic_section",
-      "parent_id": "node-000001",
-      "depth": 2,
-      "ordinal_raw": "II",
-      "ordinal_key": "2",
-      "marker_text": "II.",
-      "title": "CÔNG TÁC",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
-          "page_index": 1,
-          "role": "marker",
-          "char_start": 1193,
-          "char_end": 1197
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
           "page_index": 1,
-          "role": "title",
-          "char_start": 1197,
+          "role": "body",
+          "char_start": 1193,
           "char_end": 1206
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0001",
           "page_index": 1,
@@ -1828,17 +1720,17 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
-        "recognition_method": "generic_roman_heading",
-        "matched_text": "II."
+        "rule_id": "VI_FORMAL_APPENDIX_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "PHỤ LỤC II"
       },
-      "canonical_path": "appendix:2/generic:2~2"
+      "canonical_path": "appendix:2"
     },
     {
-      "id": "node-000006",
+      "id": "node-000002",
       "kind": "generic_section",
-      "parent_id": "node-000005",
-      "depth": 3,
+      "parent_id": "node-000001",
+      "depth": 2,
       "ordinal_raw": "1",
       "ordinal_key": "1",
       "marker_text": "1.",
@@ -1894,13 +1786,13 @@
         "recognition_method": "generic_decimal_heading",
         "matched_text": "1."
       },
-      "canonical_path": "appendix:2/generic:2~2/generic:1"
+      "canonical_path": "appendix:2/generic:1"
     },
     {
-      "id": "node-000007",
+      "id": "node-000003",
       "kind": "generic_section",
-      "parent_id": "node-000005",
-      "depth": 3,
+      "parent_id": "node-000001",
+      "depth": 2,
       "ordinal_raw": "2",
       "ordinal_key": "2",
       "marker_text": "2.",
@@ -1935,10 +1827,10 @@
         "recognition_method": "generic_decimal_heading",
         "matched_text": "2."
       },
-      "canonical_path": "appendix:2/generic:2~2/generic:2"
+      "canonical_path": "appendix:2/generic:2"
     },
     {
-      "id": "node-000008",
+      "id": "node-000004",
       "kind": "part",
       "parent_id": "node-000001",
       "depth": 2,
@@ -1952,13 +1844,13 @@
           "page_index": 2,
           "role": "marker",
           "char_start": 0,
-          "char_end": 7
+          "char_end": 8
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0009",
           "page_index": 2,
           "role": "title",
-          "char_start": 7,
+          "char_start": 8,
           "char_end": 78
         }
       ],
@@ -1971,7 +1863,7 @@
       "canonical_path": "appendix:2/part:1"
     },
     {
-      "id": "node-000009",
+      "id": "node-000005",
       "kind": "part",
       "parent_id": "node-000001",
       "depth": 2,
@@ -1985,13 +1877,13 @@
           "page_index": 2,
           "role": "marker",
           "char_start": 0,
-          "char_end": 8
+          "char_end": 9
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0010",
           "page_index": 2,
           "role": "title",
-          "char_start": 8,
+          "char_start": 9,
           "char_end": 77
         }
       ],
@@ -2004,9 +1896,9 @@
       "canonical_path": "appendix:2/part:2"
     },
     {
-      "id": "node-000010",
+      "id": "node-000006",
       "kind": "chapter",
-      "parent_id": "node-000009",
+      "parent_id": "node-000005",
       "depth": 3,
       "ordinal_raw": "I",
       "ordinal_key": "1",
@@ -2018,13 +1910,13 @@
           "page_index": 2,
           "role": "marker",
           "char_start": 0,
-          "char_end": 9
+          "char_end": 10
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0011",
           "page_index": 2,
           "role": "title",
-          "char_start": 9,
+          "char_start": 10,
           "char_end": 26
         }
       ],
@@ -2037,9 +1929,9 @@
       "canonical_path": "appendix:2/part:2/chapter:1"
     },
     {
-      "id": "node-000011",
+      "id": "node-000007",
       "kind": "chapter",
-      "parent_id": "node-000009",
+      "parent_id": "node-000005",
       "depth": 3,
       "ordinal_raw": "II",
       "ordinal_key": "2",
@@ -2051,13 +1943,13 @@
           "page_index": 2,
           "role": "marker",
           "char_start": 0,
-          "char_end": 10
+          "char_end": 11
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0012",
           "page_index": 2,
           "role": "title",
-          "char_start": 10,
+          "char_start": 11,
           "char_end": 28
         }
       ],
@@ -2070,9 +1962,9 @@
       "canonical_path": "appendix:2/part:2/chapter:2"
     },
     {
-      "id": "node-000012",
+      "id": "node-000008",
       "kind": "chapter",
-      "parent_id": "node-000009",
+      "parent_id": "node-000005",
       "depth": 3,
       "ordinal_raw": "III",
       "ordinal_key": "3",
@@ -2084,13 +1976,13 @@
           "page_index": 2,
           "role": "marker",
           "char_start": 0,
-          "char_end": 11
+          "char_end": 12
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0013",
           "page_index": 2,
           "role": "title",
-          "char_start": 11,
+          "char_start": 12,
           "char_end": 58
         }
       ],
@@ -2103,7 +1995,7 @@
       "canonical_path": "appendix:2/part:2/chapter:3"
     },
     {
-      "id": "node-000013",
+      "id": "node-000009",
       "kind": "generic_section",
       "parent_id": "node-000001",
       "depth": 2,
@@ -2186,7 +2078,7 @@
       "canonical_path": "appendix:2/generic:3"
     },
     {
-      "id": "node-000014",
+      "id": "node-000010",
       "kind": "generic_section",
       "parent_id": "node-000001",
       "depth": 2,
@@ -2217,41 +2109,14 @@
           "role": "body",
           "char_start": 0,
           "char_end": 46
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "4."
-      },
-      "canonical_path": "appendix:2/generic:4"
-    },
-    {
-      "id": "node-000015",
-      "kind": "part",
-      "parent_id": "node-000001",
-      "depth": 2,
-      "ordinal_raw": "I",
-      "ordinal_key": "1",
-      "marker_text": "PHẦN I.",
-      "title": "TỔNG HỢP KHỐI LƯỢNG CHO CÔNG TÁC BẢO DƯỠNG THƯỜNG XUYÊN CẦU THĂNG LONG",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0004_b0000",
-          "page_index": 4,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 7
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0004_b0000",
           "page_index": 4,
-          "role": "title",
-          "char_start": 7,
+          "role": "body",
+          "char_start": 0,
           "char_end": 78
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0004_b0001",
           "page_index": 4,
@@ -5821,74 +5686,21 @@
           "role": "body",
           "char_start": 913,
           "char_end": 931
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_PART_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "PHẦN I."
-      },
-      "canonical_path": "appendix:2/part:1~2"
-    },
-    {
-      "id": "node-000016",
-      "kind": "part",
-      "parent_id": "node-000001",
-      "depth": 2,
-      "ordinal_raw": "II",
-      "ordinal_key": "2",
-      "marker_text": "PHẦN II.",
-      "title": "ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN CẦU THĂNG LONG",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0000",
-          "page_index": 7,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 8
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0000",
           "page_index": 7,
-          "role": "title",
-          "char_start": 8,
+          "role": "body",
+          "char_start": 0,
           "char_end": 55
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_PART_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "PHẦN II."
-      },
-      "canonical_path": "appendix:2/part:2~2"
-    },
-    {
-      "id": "node-000017",
-      "kind": "chapter",
-      "parent_id": "node-000016",
-      "depth": 3,
-      "ordinal_raw": "I",
-      "ordinal_key": "1",
-      "marker_text": "CHƯƠNG I.",
-      "title": "CÔNG TÁC QUẢN LÝ",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0001",
-          "page_index": 7,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 9
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0001",
           "page_index": 7,
-          "role": "title",
-          "char_start": 9,
+          "role": "body",
+          "char_start": 0,
           "char_end": 26
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0002",
           "page_index": 7,
@@ -6350,41 +6162,14 @@
           "role": "body",
           "char_start": 135,
           "char_end": 145
-        }
-      ],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_CHAPTER_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "CHƯƠNG I."
-      },
-      "canonical_path": "appendix:2/part:2~2/chapter:1"
-    },
-    {
-      "id": "node-000018",
-      "kind": "chapter",
-      "parent_id": "node-000016",
-      "depth": 3,
-      "ordinal_raw": "III",
-      "ordinal_key": "3",
-      "marker_text": "CHƯƠNG III.",
-      "title": "ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN CẦU THĂNG LONG",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0000",
-          "page_index": 9,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 11
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0000",
           "page_index": 9,
-          "role": "title",
-          "char_start": 11,
+          "role": "body",
+          "char_start": 0,
           "char_end": 58
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0001",
           "page_index": 9,
@@ -9712,11 +9497,11 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_FORMAL_CHAPTER_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "CHƯƠNG III."
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "4."
       },
-      "canonical_path": "appendix:2/part:2~2/chapter:3"
+      "canonical_path": "appendix:2/generic:4"
     }
   ]
 }

@@ -22,13 +22,23 @@ from vlm_rag.structural_ir.validation import (
     reconstruction_by_block,
     validate_against_physical,
 )
-from vlm_rag.structural_ir.vietnamese import VietnameseStructuralExtractor, ordinal_key
+from vlm_rag.structural_ir.vietnamese import (
+    StructuralDiagnostic,
+    VietnameseStructuralExtractor,
+    article_ordinal_key,
+    clause_ordinal_key,
+    formal_container_ordinal_key,
+    generic_decimal_ordinal_key,
+    point_ordinal_key,
+    roman_ordinal_key,
+)
 
 __all__ = [
     "AnchorRole",
     "PhysicalAnchor",
     "RecognitionEvidence",
     "RecognitionMethod",
+    "StructuralDiagnostic",
     "StructuralDocument",
     "StructuralIRSerializationError",
     "StructuralNode",
@@ -36,8 +46,13 @@ __all__ = [
     "StructuralPhysicalIntegrityError",
     "StructuralProfile",
     "VietnameseStructuralExtractor",
-    "ordinal_key",
+    "article_ordinal_key",
+    "clause_ordinal_key",
+    "formal_container_ordinal_key",
+    "generic_decimal_ordinal_key",
+    "point_ordinal_key",
     "reconstruction_by_block",
+    "roman_ordinal_key",
     "structural_document_from_dict",
     "structural_document_from_json",
     "structural_document_to_dict",

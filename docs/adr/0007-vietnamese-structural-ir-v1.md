@@ -47,12 +47,16 @@ outline cannot cause the next `2.` clause to lose its legal context.
 
 Node IDs are zero-padded reading-order sequences. They are deterministic for identical normalized
 input and order, not persistent identity across parser representations or document versions.
-Ordinals preserve `ordinal_raw` and a normalized `ordinal_key`, including Roman numerals, Vietnamese
-letters, amendment suffixes, and dotted decimals.
+Ordinals preserve `ordinal_raw` and a kind-aware normalized `ordinal_key`. Article and clause Arabic
+ordinals preserve lowercase amendment suffixes, POINT ordinals preserve Vietnamese letters (including
+`c`, `d`, `i`, `l`, `m`, and `đ`), and only Roman-numbered structural kinds use strict Roman
+conversion. Non-canonical Roman spellings such as `IIII`, `IC`, `VX`, `IIV`, and `MMMM` are rejected.
 
-Canonical paths use controlled kind/ordinal segments and never raw parser IDs. Duplicate paths gain a
-deterministic occurrence suffix. A path represents the recovered hierarchy for that exact physical
-input; cross-parser equality is measured rather than assumed.
+Canonical paths use controlled kind/ordinal segments and never raw parser IDs or occurrence suffixes.
+A duplicate parent/kind/ordinal key is rejected before node creation, retained as BODY, and recorded as
+`duplicate_structural_key_rejected`; the extractor does not invent `~2` identities. A path represents
+the recovered hierarchical key for that exact physical input; cross-parser equality is measured rather
+than assumed.
 
 ### Physical anchors and complete partition
 
@@ -75,19 +79,35 @@ active. Article/heading detection does not require the physical block to be a ti
 
 Outside those contexts, heading-like Roman or dotted decimal outlines may become
 `GENERIC_SECTION`. A simple Arabic generic heading requires stronger physical/typographic evidence.
+A multi-component decimal in ordinary text requires either strong heading evidence or an exact active
+numeric generic parent; short text alone is insufficient.
 Letter items outside clauses remain body content. Immediate title continuation is accepted only for
 a physical title or a short uppercase heading-like line.
 
 The rules are anchored at line start. Embedded phrases such as “theo Điều 3”, “tại điểm a khoản 2”,
-or “thực hiện Chương II” do not create nodes. No fuzzy edit distance or synthetic confidence is used.
+or “thực hiện Chương II” do not create nodes. Line-start prose references using continuations such as
+“của”, “nêu trên”, and “kèm theo” are also rejected. Likely TOC pages are detected conservatively from
+an exact `MỤC LỤC` heading plus dotted/page-number leader entries, or from multiple leader entries;
+their text remains BODY and cannot reserve a structural key. No fuzzy edit distance or synthetic
+confidence is used.
+
+APPENDIX is terminal in profile v1. The retained corpus does not require returning from an appendix to
+the outer legal hierarchy; a future profile must add evidence for such a transition rather than infer it.
 
 ### Evaluation and reproducibility
 
-The v1 reference family is an AI visual PDF structural audit, not human ground truth. It records prior
-Physical IR exposure honestly, states that Physical IR was not used as reference truth, and contains
-no parser/block identity. Exact page/kind/ordinal/reading-occurrence matching has no hidden fuzzy
-step. Predictions outside audited pages are ignored; unscored context ancestors support edge/path
-evaluation.
+Reference annotation v2/schema 2 is an AI visual PDF structural re-audit, not human ground truth. It
+discloses prior Physical IR and Structural extractor exposure, states that neither output was used as
+reference truth, and contains no parser/block identity. The 46-page re-audit log, render configuration,
+render SHA-256 values, corrections, and ambiguities are committed in
+`data/structural_annotations/reference_structural_audit.v2.json`.
+
+Matching requires exact audited page, kind, and ordinal. Singleton groups match directly; duplicate
+groups match only through a uniquely resolvable exact parent canonical path. Ambiguous groups remain
+unmatched, so occurrence shifting cannot create a false true-positive. Full parent-edge metrics include
+document-root edges, all unmatched predicted/reference edges, and count a wrong parent as one FP plus
+one FN. Zero-denominator metrics and empty-union Jaccard are `null`/N/A. Marker, MinerU, and the combined
+parser-representation-weighted aggregate are reported separately.
 
 All ten retained Physical IR inputs are extracted twice. The reasonably small outputs are committed
 so a clean clone can load the schema, validate annotations, re-evaluate metrics offline, and render
@@ -100,6 +120,8 @@ the report without parser inference or source PDFs.
 - Conservative rules intentionally leave OCR-corrupted, visual-only, and ambiguous numbering cases
   unresolved.
 - Cross-parser path differences are reported as consistency, not accuracy.
+- Duplicate-first-wins remains deliberately conservative after TOC and prose suppression: later
+  duplicate structural keys remain BODY and are exposed in diagnostics.
 - No entity extraction, legal-reference resolution, semantic edge, retrieval, RAG, knowledge graph,
   VLM, or LLM behavior is introduced.
 
