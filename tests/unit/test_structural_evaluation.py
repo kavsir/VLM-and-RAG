@@ -18,6 +18,7 @@ from vlm_rag.evaluation.structural import (
 )
 from vlm_rag.structural_ir import (
     AnchorRole,
+    OrdinalSystem,
     PhysicalAnchor,
     RecognitionEvidence,
     RecognitionMethod,
@@ -64,6 +65,11 @@ def _document(
     ]
     ids = {"document": "root"}
     for index, (kind, key, parent_path) in enumerate(specs, start=1):
+        method = (
+            RecognitionMethod.GENERIC_DECIMAL_HEADING
+            if kind == StructuralNodeKind.GENERIC_SECTION
+            else RecognitionMethod.EXPLICIT_LEGAL_MARKER
+        )
         path = (
             f"{parent_path}/{_segment(kind, key)}"
             if parent_path != "document"
@@ -90,7 +96,7 @@ def _document(
                 ),
                 recognition_evidence=RecognitionEvidence(
                     rule_id="test",
-                    recognition_method=RecognitionMethod.EXPLICIT_LEGAL_MARKER,
+                    recognition_method=method,
                     matched_text=f"{key}.",
                 ),
                 canonical_path=path,
@@ -119,13 +125,21 @@ def _annotation(
             if parent_path != "document"
             else _segment(kind, key)
         )
+        ordinal_system = {
+            StructuralNodeKind.ARTICLE: OrdinalSystem.ARTICLE,
+            StructuralNodeKind.CLAUSE: OrdinalSystem.CLAUSE,
+            StructuralNodeKind.POINT: OrdinalSystem.POINT,
+            StructuralNodeKind.GENERIC_SECTION: OrdinalSystem.GENERIC_DECIMAL,
+        }.get(kind, OrdinalSystem.FORMAL_CONTAINER)
         nodes.append(
             {
+                "reference_instance_id": f"ref-test-{len(nodes):04d}",
                 "page_index": 0,
                 "pdf_page_number_1_based": 1,
                 "kind": kind.value,
                 "ordinal_raw": key,
                 "ordinal_key": key,
+                "ordinal_system": ordinal_system.value,
                 "marker_text": f"{key}.",
                 "title": None,
                 "canonical_path": path,
@@ -137,8 +151,8 @@ def _annotation(
         )
     return StructuralReferenceAnnotation.model_validate(
         {
-            "annotation_schema_version": 2,
-            "annotation_version": "v2",
+            "annotation_schema_version": 3,
+            "annotation_version": "v3",
             "annotator": "codex",
             "annotator_type": "ai_visual_audit",
             "annotation_method": "visual_pdf_structural_reaudit",
@@ -174,25 +188,25 @@ def test_reference_annotations_have_required_scope_and_disclosed_identity() -> N
             for page in annotation.audited_pages
             for node in page.nodes
         )
-        == 186
+        == 187
     )
     for annotation in annotations.values():
         assert annotation.prior_physical_ir_exposure is True
         assert annotation.prior_structural_extractor_exposure is True
         assert annotation.physical_ir_used_as_reference is False
         assert annotation.structural_extractor_output_used_as_reference is False
-        assert annotation.annotation_schema_version == 2
-        assert annotation.annotation_version == "v2"
+        assert annotation.annotation_schema_version == 3
+        assert annotation.annotation_version == "v3"
 
 
 def test_reference_reaudit_log_covers_all_selected_pages() -> None:
     audit = json.loads(
-        (ROOT / "data/structural_annotations/reference_structural_audit.v2.json").read_text(
+        (ROOT / "data/structural_annotations/reference_structural_audit.v3.json").read_text(
             encoding="utf-8"
         )
     )
     assert audit["page_count"] == 46 == len(audit["records"])
-    assert sum(item["scored_node_count"] for item in audit["records"]) == 186
+    assert sum(item["scored_node_count"] for item in audit["records"]) == 187
     assert sum(item["context_node_count"] for item in audit["records"]) == 40
     assert len({(item["document_id"], item["page_index"]) for item in audit["records"]}) == 46
     assert all(len(item["render_sha256"]) == 64 for item in audit["records"])
@@ -203,11 +217,14 @@ def test_reference_reaudit_log_covers_all_selected_pages() -> None:
     )
     assert corrected == 30
     assert audit["summary"] == {
-        "scored_node_count": 186,
+        "scored_node_count": 187,
         "context_node_count": 40,
         "changed_or_removed_v1_node_records": 47,
         "corrected_point_ordinal_records": 30,
         "pages_with_node_field_changes": 13,
+        "restored_genuine_node_records": 1,
+        "v2_to_v3_changed_node_records": 1,
+        "pages_reverified_for_v3": 46,
     }
 
 
@@ -231,13 +248,23 @@ def _first_reference_payload() -> dict[str, Any]:
     return annotation.model_dump(mode="json")
 
 
-def test_reference_schema_rejects_duplicate_scored_identity() -> None:
+def test_reference_schema_accepts_duplicate_scored_path_with_unique_instance_identity() -> None:
     raw = _first_reference_payload()
     scored = next(node for page in raw["audited_pages"] for node in page["nodes"] if node["scored"])
     raw["audited_pages"][0]["nodes"].append(deepcopy(scored))
     raw["audited_pages"][0]["nodes"][-1]["page_index"] = 0
     raw["audited_pages"][0]["nodes"][-1]["pdf_page_number_1_based"] = 1
-    with pytest.raises(ValidationError, match="duplicate scored canonical path"):
+    raw["audited_pages"][0]["nodes"][-1]["reference_instance_id"] += "-duplicate"
+    StructuralReferenceAnnotation.model_validate(raw)
+
+
+def test_reference_schema_rejects_duplicate_reference_instance_identity() -> None:
+    raw = _first_reference_payload()
+    scored = next(node for page in raw["audited_pages"] for node in page["nodes"] if node["scored"])
+    raw["audited_pages"][0]["nodes"].append(deepcopy(scored))
+    raw["audited_pages"][0]["nodes"][-1]["page_index"] = 0
+    raw["audited_pages"][0]["nodes"][-1]["pdf_page_number_1_based"] = 1
+    with pytest.raises(ValidationError, match="duplicate reference_instance_id"):
         StructuralReferenceAnnotation.model_validate(raw)
 
 
@@ -266,6 +293,60 @@ def test_reference_schema_rejects_ordinal_path_disagreement() -> None:
 
 
 @pytest.mark.parametrize(
+    ("kind", "source_key", "raw_ordinal", "bad_key", "ordinal_system"),
+    [
+        ("point", "a", "c", "100", "point"),
+        ("chapter", "1", "IV", "8", "formal_container"),
+        ("article", "1", "10a", "10", "article"),
+        ("generic_section", "1", "IX", "11", "generic_roman"),
+    ],
+)
+def test_reference_schema_rejects_kind_aware_ordinal_corruption(
+    kind: str,
+    source_key: str,
+    raw_ordinal: str,
+    bad_key: str,
+    ordinal_system: str,
+) -> None:
+    kind_enum = StructuralNodeKind(kind)
+    if kind_enum == StructuralNodeKind.POINT:
+        specs = [
+            (StructuralNodeKind.ARTICLE, "1", "document"),
+            (StructuralNodeKind.CLAUSE, "1", "article:1"),
+            (StructuralNodeKind.POINT, source_key, "article:1/clause:1"),
+        ]
+    else:
+        specs = [(kind_enum, source_key, "document")]
+    raw = _annotation(specs).model_dump(mode="json")
+    node = raw["audited_pages"][0]["nodes"][-1]
+    node["ordinal_raw"] = raw_ordinal
+    node["ordinal_key"] = bad_key
+    node["ordinal_system"] = ordinal_system
+    node["canonical_path"] = (
+        _segment(kind_enum, bad_key)
+        if node["parent_canonical_path"] == "document"
+        else f"{node['parent_canonical_path']}/{_segment(kind_enum, bad_key)}"
+    )
+    with pytest.raises(ValidationError, match="kind-aware ordinal semantics"):
+        StructuralReferenceAnnotation.model_validate(raw)
+
+
+def test_duplicate_reference_instances_are_counted_one_to_one() -> None:
+    article = (StructuralNodeKind.ARTICLE, "2", "document")
+    result = evaluate_structural_document(_document([article]), _annotation([article, article]))
+    assert result["node_metrics"] == {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": pytest.approx(2 / 3),
+    }
+    assert len(result["false_negative_trace"]) == 1
+    assert result["false_negative_trace"][0]["reference_instance_id"].startswith("ref-test-")
+
+
+@pytest.mark.parametrize(
     ("child_kind", "invalid_parent_kind"),
     [
         (StructuralNodeKind.POINT, StructuralNodeKind.CHAPTER),
@@ -279,7 +360,7 @@ def test_reference_schema_rejects_invalid_parent_relationship(
     section = (StructuralNodeKind.SECTION, "1", "chapter:1")
     article = (StructuralNodeKind.ARTICLE, "1", "chapter:1/section:1")
     clause = (StructuralNodeKind.CLAUSE, "1", "chapter:1/section:1/article:1")
-    point = (StructuralNodeKind.POINT, "1", "chapter:1/section:1/article:1/clause:1")
+    point = (StructuralNodeKind.POINT, "a", "chapter:1/section:1/article:1/clause:1")
     raw = _annotation([chapter, section, article, clause, point]).model_dump(mode="json")
     child = next(
         node for node in raw["audited_pages"][0]["nodes"] if node["kind"] == child_kind.value
@@ -288,7 +369,7 @@ def test_reference_schema_rejects_invalid_parent_relationship(
         "chapter:1" if invalid_parent_kind == StructuralNodeKind.CHAPTER else "chapter:1/section:1"
     )
     child["parent_canonical_path"] = parent_path
-    child["canonical_path"] = f"{parent_path}/{_segment(child_kind, '1')}"
+    child["canonical_path"] = f"{parent_path}/{_segment(child_kind, child['ordinal_key'])}"
     with pytest.raises(ValidationError, match="invalid reference hierarchy"):
         StructuralReferenceAnnotation.model_validate(raw)
 
@@ -305,19 +386,11 @@ def test_reference_schema_rejects_phantom_parent() -> None:
 
 
 def test_reference_schema_rejects_contradictory_context_definition() -> None:
-    raw = _first_reference_payload()
-    node = deepcopy(
-        next(
-            node
-            for page in raw["audited_pages"]
-            for node in page["nodes"]
-            if node["ordinal_key"] == "1"
-        )
-    )
-    node["ordinal_raw"] = "01"
+    raw = _annotation([(StructuralNodeKind.CHAPTER, "1", "document")]).model_dump(mode="json")
+    node = deepcopy(raw["audited_pages"][0]["nodes"][0])
+    node["reference_instance_id"] += "-context"
+    node["ordinal_raw"] = "I"
     node["scored"] = False
-    node["page_index"] = 0
-    node["pdf_page_number_1_based"] = 1
     raw["audited_pages"][0]["nodes"].append(node)
     with pytest.raises(ValidationError, match="contradictory repeated reference context"):
         StructuralReferenceAnnotation.model_validate(raw)
@@ -443,6 +516,56 @@ def test_committed_outputs_are_strict_and_bound_to_issue_007_hashes() -> None:
         assert entry["equal"] is True
 
 
+def test_v3_restores_qd23_repeated_article_as_false_negative() -> None:
+    annotations = load_structural_annotations(ROOT)
+    qd = annotations["qd-23-2008-ubnd-hanoi-vien-quy-hoach"]
+    repeated = [
+        node
+        for page in qd.audited_pages
+        for node in page.nodes
+        if node.scored and node.kind == StructuralNodeKind.ARTICLE and node.ordinal_key == "2"
+    ]
+    assert [(node.page_index, node.canonical_path) for node in repeated] == [
+        (0, "article:2"),
+        (3, "article:2"),
+    ]
+    assert len({node.reference_instance_id for node in repeated}) == 2
+    evidence = _evidence()
+    restored_false_negatives = [
+        item
+        for item in evidence["false_negative_trace"]
+        if item["document_id"] == qd.document_id
+        and item["page_index"] == 3
+        and item["kind"] == "article"
+        and item["ordinal_key"] == "2"
+    ]
+    assert {item["parser"] for item in restored_false_negatives} == {"marker", "mineru"}
+
+
+def test_retained_tt04_stack_and_toc_corrections_are_measured() -> None:
+    evidence = _evidence()
+    duplicate_audit = evidence["duplicate_rejection_audit"]
+    assert duplicate_audit["after_fix"]["total"] < duplicate_audit["before_fix"]["total"]
+    assert duplicate_audit["after_fix"]["by_document"]["tt-04-2023-bkhdt-so-do-ban-do"] == 4
+    assert "tt-04-2026-bxd-pl2-dinh-muc" not in duplicate_audit["after_fix"]["by_document"]
+    assert evidence["toc_corpus_audit"]["rejected_entries"] == 15
+    for parser in ("marker", "mineru"):
+        path = ROOT / "data/structural_ir/tt_04_2023_bkhdt_so_do_ban_do" / f"{parser}.v1.json"
+        document = structural_document_from_json(path.read_text(encoding="utf-8"))
+        appendix = next(
+            node
+            for node in document.nodes
+            if node.kind == StructuralNodeKind.APPENDIX and node.ordinal_key == "1"
+        )
+        assert appendix.heading_anchors[0].page_index == 8
+        assert not any(
+            node.heading_anchors
+            and node.heading_anchors[0].page_index >= 8
+            and node.canonical_path.startswith("chapter:4/article:14")
+            for node in document.nodes
+        )
+
+
 def test_structural_evidence_and_report_reproduce_offline() -> None:
     evidence = _evidence()
     verify_committed_structural_evidence(ROOT, evidence)
@@ -454,9 +577,9 @@ def test_structural_evidence_and_report_reproduce_offline() -> None:
 
 def test_machine_evidence_records_exact_partition_and_metric_formulas() -> None:
     evidence = _evidence()
-    assert evidence["validation_schema_version"] == 2
-    assert evidence["reference_annotation_schema_version"] == 2
-    assert evidence["reference_annotation_version"] == "v2"
+    assert evidence["validation_schema_version"] == 3
+    assert evidence["reference_annotation_schema_version"] == 3
+    assert evidence["reference_annotation_version"] == "v3"
     assert evidence["available_pairs"] == 10
     assert evidence["all_deterministic"] is True
     aggregate = evidence["aggregate"]
@@ -476,6 +599,11 @@ def test_machine_evidence_records_exact_partition_and_metric_formulas() -> None:
     assert len(evidence["false_negative_trace"]) == weighted["node_metrics"]["fn"]
     assert weighted["node_metrics_by_kind"]["part"]["recall"] is None
     assert evidence["canonical_path_correction"]["regenerated_suffix_paths"] == 0
+    assert (
+        evidence["canonical_path_correction"]["reviewed_head_suffix_paths_independent_recount"]
+        == 67
+    )
+    assert evidence["duplicate_rejection_audit"]["before_fix"]["total"] == 237
     qd = next(
         item
         for item in evidence["cross_parser_agreement"]

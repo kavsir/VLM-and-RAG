@@ -332,11 +332,14 @@ The approximately 2.1 MB of derived Structural IR JSON is committed under `data/
 make that offline boundary reproducible. See [ADR 0007](docs/adr/0007-vietnamese-structural-ir-v1.md)
 and the generated [Structural IR v1 validation report](docs/research/structural-ir-v1-validation.md).
 
-Structural reference annotation v2/schema 2 is a 46-page AI visual PDF re-audit with prior Physical
+Structural reference annotation v3/schema 3 is a 46-page AI visual PDF re-audit with prior Physical
 IR and Structural extractor exposure disclosed. It is not human ground truth, and neither system
 output was used as reference truth. Page-level render hashes, corrections, and ambiguities are in
-`data/structural_annotations/reference_structural_audit.v2.json`. Ordinals are kind-aware, canonical
-paths contain no occurrence suffixes, and duplicate structural keys remain BODY with diagnostics.
+`data/structural_annotations/reference_structural_audit.v3.json`. V3 restores a visually genuine
+QD23 Article 2 that v2 incorrectly removed to fit extractor limitations. Parser-independent reference
+instance IDs distinguish genuine repeated reference paths without changing Structural IR canonical
+identity. Ordinals are kind-aware at extraction and schema boundaries, canonical paths contain no
+occurrence suffixes, and unsupported duplicate structural keys remain BODY with diagnostics.
 
 ## Corpus Benchmark Reproducibility
 

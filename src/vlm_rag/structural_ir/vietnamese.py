@@ -2,7 +2,6 @@
 
 import hashlib
 import re
-import unicodedata
 from dataclasses import dataclass, field
 
 from vlm_rag.physical_ir.models import BlockDisposition
@@ -18,6 +17,16 @@ from vlm_rag.structural_ir.models import (
     StructuralNode,
     StructuralNodeKind,
     StructuralProfile,
+)
+from vlm_rag.structural_ir.ordinals import (
+    article_ordinal_key,
+    clause_ordinal_key,
+    formal_container_ordinal_key,
+    generic_decimal_ordinal_key,
+    generic_letter_ordinal_key,
+    normalize_detection_text,
+    point_ordinal_key,
+    roman_ordinal_key,
 )
 
 _FORMAL_PATTERNS: tuple[tuple[StructuralNodeKind, re.Pattern[str], str], ...] = (
@@ -72,10 +81,9 @@ _FORMAL_PATTERNS: tuple[tuple[StructuralNodeKind, re.Pattern[str], str], ...] = 
 )
 _CLAUSE = re.compile(r"^\s*(?P<ordinal>\d+[a-zđ]?)\.\s+", re.IGNORECASE)
 _POINT = re.compile(r"^\s*(?P<ordinal>[a-zđ])\)\s+", re.IGNORECASE)
+_GENERIC_LETTER = _POINT
 _GENERIC_ROMAN = re.compile(r"^\s*(?P<ordinal>[IVXLCDM]+)\.\s+", re.IGNORECASE)
 _GENERIC_DECIMAL = re.compile(r"^\s*(?P<ordinal>\d+(?:\.\d+)*)\.(?:\s+|$)", re.IGNORECASE)
-_ROMAN_VALUES = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
-_STRICT_ROMAN = re.compile(r"M{0,3}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3})")
 _TOC_HEADING = re.compile(r"^\s*(?:mục\s+lục|muc\s+luc)\s*$", re.IGNORECASE)
 _TOC_LEADER_ENTRY = re.compile(r"(?:\.{3,}|…{2,})\s*(?:trang\s*)?\d+\s*$", re.IGNORECASE)
 _PROSE_CONTINUATION = re.compile(
@@ -140,61 +148,6 @@ class _NodeDraft:
         )
 
 
-def normalize_detection_text(value: str) -> str:
-    """Normalize only a detection copy; stored text and offsets remain untouched."""
-    normalized = unicodedata.normalize("NFKC", value).replace("\u00a0", " ")
-    return re.sub(r"[\t\f\v ]+", " ", normalized).strip()
-
-
-def _normalized_ordinal(value: str) -> str:
-    return normalize_detection_text(value).strip(".:-").casefold()
-
-
-def roman_ordinal_key(value: str) -> str | None:
-    """Convert only a syntactically valid canonical Roman numeral (1..3999)."""
-    upper = _normalized_ordinal(value).upper()
-    if not upper or _STRICT_ROMAN.fullmatch(upper) is None:
-        return None
-    total = 0
-    previous = 0
-    for character in reversed(upper):
-        current = _ROMAN_VALUES[character]
-        if current < previous:
-            total -= current
-        else:
-            total += current
-            previous = current
-    return str(total)
-
-
-def article_ordinal_key(value: str) -> str | None:
-    """Preserve a decimal Vietnamese Article ordinal and lowercase suffix."""
-    normalized = _normalized_ordinal(value)
-    return normalized if re.fullmatch(r"\d+[a-zđ]?", normalized) else None
-
-
-def clause_ordinal_key(value: str) -> str | None:
-    """Preserve a decimal Vietnamese Clause ordinal and lowercase suffix."""
-    return article_ordinal_key(value)
-
-
-def point_ordinal_key(value: str) -> str | None:
-    """Preserve a Vietnamese Point letter; never interpret it as Roman."""
-    normalized = _normalized_ordinal(value)
-    return normalized if re.fullmatch(r"[a-zđ]", normalized) else None
-
-
-def formal_container_ordinal_key(value: str) -> str | None:
-    """Normalize a formal container's decimal/suffix or strict Roman ordinal."""
-    return article_ordinal_key(value) or roman_ordinal_key(value)
-
-
-def generic_decimal_ordinal_key(value: str) -> str | None:
-    """Preserve a dotted decimal outline key."""
-    normalized = _normalized_ordinal(value)
-    return normalized if re.fullmatch(r"\d+(?:\.\d+)*", normalized) else None
-
-
 def _heading_like(text: str, kind: BlockKindV1, *, allow_short: bool = False) -> bool:
     candidate = normalize_detection_text(text)
     if not candidate or len(candidate) > 160 or len(candidate.split()) > 18:
@@ -205,6 +158,30 @@ def _heading_like(text: str, kind: BlockKindV1, *, allow_short: bool = False) ->
     if letters and candidate == candidate.upper():
         return True
     return allow_short and len(candidate) <= 100 and not candidate.endswith((";", ","))
+
+
+def _formal_remainder_is_heading(
+    kind: StructuralNodeKind, remainder: str, separator: str | None
+) -> bool:
+    """Reject prose continuations independently of a parser's TITLE classification."""
+    normalized = normalize_detection_text(remainder)
+    if not normalized:
+        return True
+    if _PROSE_CONTINUATION.match(normalized) is not None:
+        return False
+    if separator is not None:
+        return True
+    if kind == StructuralNodeKind.ARTICLE:
+        return False
+    title_part = normalized.split("(", maxsplit=1)[0].strip()
+    letters = [character for character in title_part if character.isalpha()]
+    return bool(letters) and title_part == title_part.upper()
+
+
+def _starts_with_uppercase_word(value: str) -> bool:
+    """Require visible sentence-initial heading evidence for contextual outline children."""
+    normalized = normalize_detection_text(value)
+    return bool(normalized) and normalized[0].isalpha() and normalized[0].isupper()
 
 
 class VietnameseStructuralExtractor:
@@ -220,7 +197,7 @@ class VietnameseStructuralExtractor:
     ) -> StructuralDocument:
         """Extract hierarchy and complete content anchors from Physical IR wire version 2."""
         diagnostic_sink = diagnostics if diagnostics is not None else []
-        toc_pages = self._toc_pages(physical)
+        toc_events = self._toc_events(physical)
         physical_payload = physical_document_v1_to_json(physical).encode("utf-8")
         physical_sha = hashlib.sha256(physical_payload).hexdigest()
         root = _NodeDraft(
@@ -242,7 +219,7 @@ class VietnameseStructuralExtractor:
         drafts = [root]
         by_id = {root.id: root}
         active: dict[StructuralNodeKind, str] = {}
-        generic_stack: list[tuple[int, str, str, RecognitionMethod]] = []
+        generic_stack: list[tuple[int, str, str, RecognitionMethod, bool]] = []
         used_paths = {root.canonical_path}
         current_id = root.id
         pending_title_id: str | None = None
@@ -264,7 +241,8 @@ class VietnameseStructuralExtractor:
                     document_order += 1
                     continue
                 for event in iter_block_lines(block, document_order):
-                    if event.page_index in toc_pages:
+                    event_key = (event.block_id, event.char_start, event.char_end)
+                    if event_key in toc_events:
                         candidate_kind, candidate_ordinal = self._candidate_shape(event.text)
                         if candidate_kind is not None:
                             diagnostic_sink.append(
@@ -339,7 +317,19 @@ class VietnameseStructuralExtractor:
                         continue
                     canonical_path = base_path
                     used_paths.add(canonical_path)
-                    self._reset_state(detection, active, generic_stack)
+                    parent_is_legal_context = parent.kind in {
+                        StructuralNodeKind.ARTICLE,
+                        StructuralNodeKind.CLAUSE,
+                    } or any(
+                        segment.startswith(("article:", "clause:"))
+                        for segment in parent.canonical_path.split("/")
+                    )
+                    self._reset_state(
+                        detection,
+                        active,
+                        generic_stack,
+                        generic_parent_is_legal=parent_is_legal_context,
+                    )
                     node_id = f"node-{len(drafts):06d}"
                     marker_end = event.char_start + detection.marker_end
                     remainder = event.text[detection.marker_end :]
@@ -406,6 +396,7 @@ class VietnameseStructuralExtractor:
                                 node.id,
                                 detection.ordinal_key or "",
                                 detection.method,
+                                parent_is_legal_context,
                             )
                         )
                     current_id = node.id
@@ -483,17 +474,34 @@ class VietnameseStructuralExtractor:
         return None, None
 
     @staticmethod
-    def _toc_pages(physical: PhysicalDocumentV1) -> frozenset[int]:
+    def _toc_events(physical: PhysicalDocumentV1) -> frozenset[tuple[str, int, int]]:
+        """Identify a bounded explicit TOC range or isolated strong leader entries."""
         events_by_page: dict[int, list[PhysicalLineEvent]] = {}
         for event in physical_text_events(physical):
             events_by_page.setdefault(event.page_index, []).append(event)
-        result: set[int] = set()
-        for page_index, events in events_by_page.items():
+        result: set[tuple[str, int, int]] = set()
+        for events in events_by_page.values():
             normalized = [normalize_detection_text(event.text) for event in events]
-            heading_count = sum(bool(_TOC_HEADING.fullmatch(line)) for line in normalized)
-            leader_count = sum(bool(_TOC_LEADER_ENTRY.search(line)) for line in normalized)
-            if leader_count >= 2 or (heading_count >= 1 and leader_count >= 1):
-                result.add(page_index)
+            heading_indices = [
+                index for index, text in enumerate(normalized) if _TOC_HEADING.fullmatch(text)
+            ]
+            leader_indices = [
+                index
+                for index, text in enumerate(normalized)
+                if _TOC_LEADER_ENTRY.search(text) is not None
+            ]
+            if heading_indices:
+                start = heading_indices[0]
+                later_leaders = [index for index in leader_indices if index >= start]
+                if later_leaders:
+                    for event in events[start : max(later_leaders) + 1]:
+                        result.add((event.block_id, event.char_start, event.char_end))
+                    continue
+            for index in leader_indices:
+                event = events[index]
+                candidate_kind, _ = VietnameseStructuralExtractor._candidate_shape(event.text)
+                if candidate_kind is not None:
+                    result.add((event.block_id, event.char_start, event.char_end))
         return frozenset(result)
 
     @staticmethod
@@ -516,13 +524,9 @@ class VietnameseStructuralExtractor:
             raw = match.groupdict().get("ordinal")
             if raw is not None and cls._formal_key(kind, raw) is None:
                 return "invalid_roman_ordinal_rejected", kind, raw
-            remainder = normalize_detection_text(candidate[match.end() :])
-            if remainder and (
-                _PROSE_CONTINUATION.match(remainder) is not None
-                or (
-                    match.groupdict().get("separator") is None
-                    and not _heading_like(candidate, event.block_kind)
-                )
+            remainder = candidate[match.end() :]
+            if not _formal_remainder_is_heading(
+                kind, remainder, match.groupdict().get("separator")
             ):
                 return "line_start_prose_reference_rejected", kind, raw
         decimal = _GENERIC_DECIMAL.match(candidate)
@@ -545,9 +549,10 @@ class VietnameseStructuralExtractor:
         self,
         event: PhysicalLineEvent,
         active: dict[StructuralNodeKind, str],
-        generic_stack: list[tuple[int, str, str, RecognitionMethod]],
+        generic_stack: list[tuple[int, str, str, RecognitionMethod, bool]],
     ) -> _Detection | None:
         candidate = event.text.replace("\u00a0", " ").rstrip("\r\n")
+        nonlegal_generic_context = bool(generic_stack and not generic_stack[-1][4])
         for kind, pattern, rule_id in _FORMAL_PATTERNS:
             match = pattern.match(candidate)
             if match is not None:
@@ -555,13 +560,15 @@ class VietnameseStructuralExtractor:
                 key = self._formal_key(kind, raw)
                 if raw is not None and key is None:
                     continue
-                remainder = normalize_detection_text(candidate[match.end() :])
-                if remainder and _PROSE_CONTINUATION.match(remainder) is not None:
+                remainder = candidate[match.end() :]
+                if not _formal_remainder_is_heading(
+                    kind, remainder, match.groupdict().get("separator")
+                ):
                     continue
                 if (
-                    remainder
-                    and match.groupdict().get("separator") is None
-                    and not _heading_like(candidate, event.block_kind)
+                    nonlegal_generic_context
+                    and event.block_kind != BlockKindV1.TITLE
+                    and kind in {StructuralNodeKind.PART, StructuralNodeKind.CHAPTER}
                 ):
                     continue
                 return _Detection(
@@ -573,7 +580,7 @@ class VietnameseStructuralExtractor:
                     rule_id=rule_id,
                 )
 
-        if StructuralNodeKind.CLAUSE in active:
+        if StructuralNodeKind.CLAUSE in active and not nonlegal_generic_context:
             point_match = _POINT.match(candidate)
             if point_match is not None:
                 raw = point_match.group("ordinal")
@@ -585,7 +592,7 @@ class VietnameseStructuralExtractor:
                     method=RecognitionMethod.CONTEXTUAL_POINT,
                     rule_id="VI_CONTEXTUAL_POINT_V1",
                 )
-        if StructuralNodeKind.ARTICLE in active:
+        if StructuralNodeKind.ARTICLE in active and not nonlegal_generic_context:
             clause_match = _CLAUSE.match(candidate)
             if clause_match is not None:
                 raw = clause_match.group("ordinal")
@@ -614,18 +621,46 @@ class VietnameseStructuralExtractor:
                 generic_level=1,
             )
 
+        letter_match = _GENERIC_LETTER.match(candidate)
+        if (
+            letter_match is not None
+            and nonlegal_generic_context
+            and _starts_with_uppercase_word(candidate[letter_match.end() :])
+        ):
+            raw = letter_match.group("ordinal")
+            parent_level = next(
+                level
+                for level, _, _, method, _ in reversed(generic_stack)
+                if method != RecognitionMethod.GENERIC_LETTER_HEADING
+            )
+            return _Detection(
+                kind=StructuralNodeKind.GENERIC_SECTION,
+                ordinal_raw=raw,
+                ordinal_key=generic_letter_ordinal_key(raw),
+                marker_end=letter_match.end(),
+                method=RecognitionMethod.GENERIC_LETTER_HEADING,
+                rule_id="VI_GENERIC_LETTER_HEADING_V1",
+                generic_level=parent_level + 1,
+            )
+
         decimal_match = _GENERIC_DECIMAL.match(candidate)
         if decimal_match is None:
             return None
         raw = decimal_match.group("ordinal")
         components = raw.count(".") + 1
         has_roman_parent = any(
-            method == RecognitionMethod.GENERIC_ROMAN_HEADING for _, _, _, method in generic_stack
+            method == RecognitionMethod.GENERIC_ROMAN_HEADING
+            for _, _, _, method, _ in generic_stack
         )
-        simple_supported = _heading_like(candidate, event.block_kind)
+        contextual_outline_supported = nonlegal_generic_context and _starts_with_uppercase_word(
+            candidate[decimal_match.end() :]
+        )
+        simple_supported = contextual_outline_supported or _heading_like(
+            candidate, event.block_kind
+        )
         prefix = raw.rsplit(".", maxsplit=1)[0] if components > 1 else None
         parent_prefix_active = prefix is not None and any(
-            key == prefix for _, _, key, _ in generic_stack
+            key == prefix for _, _, key, _, _ in generic_stack
         )
         multi_supported = components > 1 and (
             _heading_like(candidate, event.block_kind)
@@ -651,7 +686,7 @@ class VietnameseStructuralExtractor:
         detection: _Detection,
         root_id: str,
         active: dict[StructuralNodeKind, str],
-        generic_stack: list[tuple[int, str, str, RecognitionMethod]],
+        generic_stack: list[tuple[int, str, str, RecognitionMethod, bool]],
     ) -> tuple[str, int | None]:
         kind = detection.kind
         if kind == StructuralNodeKind.APPENDIX:
@@ -701,10 +736,10 @@ class VietnameseStructuralExtractor:
         level = detection.generic_level or 1
         if detection.ordinal_key and "." in detection.ordinal_key:
             prefix = detection.ordinal_key.rsplit(".", maxsplit=1)[0]
-            for _, node_id, key, _ in reversed(generic_stack):
+            for _, node_id, key, _, _ in reversed(generic_stack):
                 if key == prefix:
                     return node_id, level
-        for candidate_level, node_id, _, _ in reversed(generic_stack):
+        for candidate_level, node_id, _, _, _ in reversed(generic_stack):
             if candidate_level < level:
                 return node_id, level
         clause_id = active.get(StructuralNodeKind.CLAUSE)
@@ -718,7 +753,9 @@ class VietnameseStructuralExtractor:
     def _reset_state(
         detection: _Detection,
         active: dict[StructuralNodeKind, str],
-        generic_stack: list[tuple[int, str, str, RecognitionMethod]],
+        generic_stack: list[tuple[int, str, str, RecognitionMethod, bool]],
+        *,
+        generic_parent_is_legal: bool,
     ) -> None:
         kind = detection.kind
         order = [
@@ -737,6 +774,13 @@ class VietnameseStructuralExtractor:
         if kind == StructuralNodeKind.GENERIC_SECTION:
             level = detection.generic_level or 1
             generic_stack[:] = [item for item in generic_stack if item[0] < level]
+            if not generic_parent_is_legal:
+                for legal_kind in (
+                    StructuralNodeKind.ARTICLE,
+                    StructuralNodeKind.CLAUSE,
+                    StructuralNodeKind.POINT,
+                ):
+                    active.pop(legal_kind, None)
             return
         generic_stack.clear()
         start = order.index(kind)
@@ -751,6 +795,7 @@ __all__ = [
     "clause_ordinal_key",
     "formal_container_ordinal_key",
     "generic_decimal_ordinal_key",
+    "generic_letter_ordinal_key",
     "normalize_detection_text",
     "point_ordinal_key",
     "roman_ordinal_key",

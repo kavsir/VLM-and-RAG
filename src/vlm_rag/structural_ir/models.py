@@ -7,6 +7,7 @@ from typing import Literal, Self
 from pydantic import BaseModel, ConfigDict, Field, NonNegativeInt, field_validator, model_validator
 
 from vlm_rag.registry.models import Identifier, Sha256Digest, VersionIdentifier
+from vlm_rag.structural_ir.ordinals import OrdinalSystem, ordinal_key_for_system
 
 
 class StructuralModel(BaseModel):
@@ -54,6 +55,7 @@ class RecognitionMethod(StrEnum):
     CONTEXTUAL_POINT = "contextual_point"
     GENERIC_ROMAN_HEADING = "generic_roman_heading"
     GENERIC_DECIMAL_HEADING = "generic_decimal_heading"
+    GENERIC_LETTER_HEADING = "generic_letter_heading"
 
 
 class PhysicalAnchor(StructuralModel):
@@ -165,6 +167,15 @@ class StructuralNode(StructuralModel):
                 raise ValueError("non-root nodes cannot use document_root recognition evidence")
         if (self.ordinal_raw is None) != (self.ordinal_key is None):
             raise ValueError("ordinal_raw and ordinal_key must both be present or both be null")
+        ordinal_system = _node_ordinal_system(
+            self.kind, self.recognition_evidence.recognition_method
+        )
+        expected_ordinal = ordinal_key_for_system(ordinal_system, self.ordinal_raw)
+        if self.ordinal_key != expected_ordinal:
+            raise ValueError(
+                "ordinal_key does not match kind-aware semantics for ordinal_raw "
+                "and recognition method"
+            )
         if any(
             anchor.role not in {AnchorRole.MARKER, AnchorRole.TITLE}
             for anchor in self.heading_anchors
@@ -186,6 +197,30 @@ class StructuralNode(StructuralModel):
             if self.ordinal_key is not None and match.group("value") != self.ordinal_key:
                 raise ValueError("canonical path ordinal does not match ordinal_key")
         return self
+
+
+def _node_ordinal_system(kind: StructuralNodeKind, method: RecognitionMethod) -> OrdinalSystem:
+    if kind == StructuralNodeKind.DOCUMENT:
+        return OrdinalSystem.NONE
+    if kind == StructuralNodeKind.ARTICLE:
+        return OrdinalSystem.ARTICLE
+    if kind == StructuralNodeKind.CLAUSE:
+        return OrdinalSystem.CLAUSE
+    if kind == StructuralNodeKind.POINT:
+        return OrdinalSystem.POINT
+    if kind == StructuralNodeKind.GENERIC_SECTION:
+        generic_systems = {
+            RecognitionMethod.GENERIC_ROMAN_HEADING: OrdinalSystem.GENERIC_ROMAN,
+            RecognitionMethod.GENERIC_DECIMAL_HEADING: OrdinalSystem.GENERIC_DECIMAL,
+            RecognitionMethod.GENERIC_LETTER_HEADING: OrdinalSystem.GENERIC_LETTER,
+        }
+        try:
+            return generic_systems[method]
+        except KeyError as error:
+            raise ValueError(
+                "GENERIC_SECTION requires an explicit generic ordinal method"
+            ) from error
+    return OrdinalSystem.FORMAL_CONTAINER
 
 
 _ALLOWED_PARENTS: dict[StructuralNodeKind, frozenset[StructuralNodeKind]] = {

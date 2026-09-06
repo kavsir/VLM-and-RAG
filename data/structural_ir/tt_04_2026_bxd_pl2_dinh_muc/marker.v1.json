@@ -1820,6 +1820,41 @@
           "role": "body",
           "char_start": 0,
           "char_end": 89
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0009",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 78
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0010",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 77
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0011",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 26
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0012",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 28
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0013",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 58
         }
       ],
       "recognition_evidence": {
@@ -1831,171 +1866,6 @@
     },
     {
       "id": "node-000004",
-      "kind": "part",
-      "parent_id": "node-000001",
-      "depth": 2,
-      "ordinal_raw": "I",
-      "ordinal_key": "1",
-      "marker_text": "Phần I.",
-      "title": "Tổng hợp khối lượng cho công tác bảo dưỡng thường xuyên cầu Thăng Long",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0009",
-          "page_index": 2,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 8
-        },
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0009",
-          "page_index": 2,
-          "role": "title",
-          "char_start": 8,
-          "char_end": 78
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_PART_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Phần I."
-      },
-      "canonical_path": "appendix:2/part:1"
-    },
-    {
-      "id": "node-000005",
-      "kind": "part",
-      "parent_id": "node-000001",
-      "depth": 2,
-      "ordinal_raw": "II",
-      "ordinal_key": "2",
-      "marker_text": "Phần II.",
-      "title": "Định mức bảo dưỡng thường xuyên cầu Thăng Long bao gồm các công tác:",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0010",
-          "page_index": 2,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 9
-        },
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0010",
-          "page_index": 2,
-          "role": "title",
-          "char_start": 9,
-          "char_end": 77
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_PART_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Phần II."
-      },
-      "canonical_path": "appendix:2/part:2"
-    },
-    {
-      "id": "node-000006",
-      "kind": "chapter",
-      "parent_id": "node-000005",
-      "depth": 3,
-      "ordinal_raw": "I",
-      "ordinal_key": "1",
-      "marker_text": "Chương I.",
-      "title": "Công tác quản lý",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0011",
-          "page_index": 2,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 10
-        },
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0011",
-          "page_index": 2,
-          "role": "title",
-          "char_start": 10,
-          "char_end": 26
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_CHAPTER_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Chương I."
-      },
-      "canonical_path": "appendix:2/part:2/chapter:1"
-    },
-    {
-      "id": "node-000007",
-      "kind": "chapter",
-      "parent_id": "node-000005",
-      "depth": 3,
-      "ordinal_raw": "II",
-      "ordinal_key": "2",
-      "marker_text": "Chương II.",
-      "title": "Công tác kiểm tra",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0012",
-          "page_index": 2,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 11
-        },
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0012",
-          "page_index": 2,
-          "role": "title",
-          "char_start": 11,
-          "char_end": 28
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_CHAPTER_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Chương II."
-      },
-      "canonical_path": "appendix:2/part:2/chapter:2"
-    },
-    {
-      "id": "node-000008",
-      "kind": "chapter",
-      "parent_id": "node-000005",
-      "depth": 3,
-      "ordinal_raw": "III",
-      "ordinal_key": "3",
-      "marker_text": "Chương III.",
-      "title": "Định mức bảo dưỡng thường xuyên cầu Thăng Long",
-      "heading_anchors": [
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0013",
-          "page_index": 2,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 12
-        },
-        {
-          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0013",
-          "page_index": 2,
-          "role": "title",
-          "char_start": 12,
-          "char_end": 58
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_CHAPTER_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Chương III."
-      },
-      "canonical_path": "appendix:2/part:2/chapter:3"
-    },
-    {
-      "id": "node-000009",
       "kind": "generic_section",
       "parent_id": "node-000001",
       "depth": 2,
@@ -2078,7 +1948,7 @@
       "canonical_path": "appendix:2/generic:3"
     },
     {
-      "id": "node-000010",
+      "id": "node-000005",
       "kind": "generic_section",
       "parent_id": "node-000001",
       "depth": 2,
@@ -2109,14 +1979,41 @@
           "role": "body",
           "char_start": 0,
           "char_end": 46
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "4."
+      },
+      "canonical_path": "appendix:2/generic:4"
+    },
+    {
+      "id": "node-000006",
+      "kind": "part",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "PHẦN I.",
+      "title": "TỔNG HỢP KHỐI LƯỢNG CHO CÔNG TÁC BẢO DƯỠNG THƯỜNG XUYÊN CẦU THĂNG LONG",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0004_b0000",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0004_b0000",
           "page_index": 4,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 8,
           "char_end": 78
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0004_b0001",
           "page_index": 4,
@@ -5686,21 +5583,74 @@
           "role": "body",
           "char_start": 913,
           "char_end": 931
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_PART_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "PHẦN I."
+      },
+      "canonical_path": "appendix:2/part:1"
+    },
+    {
+      "id": "node-000007",
+      "kind": "part",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "PHẦN II.",
+      "title": "ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN CẦU THĂNG LONG",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0000",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0000",
           "page_index": 7,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 9,
           "char_end": 55
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_PART_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "PHẦN II."
+      },
+      "canonical_path": "appendix:2/part:2"
+    },
+    {
+      "id": "node-000008",
+      "kind": "chapter",
+      "parent_id": "node-000007",
+      "depth": 3,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "CHƯƠNG I.",
+      "title": "CÔNG TÁC QUẢN LÝ",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0001",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 10
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0001",
           "page_index": 7,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 10,
           "char_end": 26
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0002",
           "page_index": 7,
@@ -6162,14 +6112,41 @@
           "role": "body",
           "char_start": 135,
           "char_end": 145
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "CHƯƠNG I."
+      },
+      "canonical_path": "appendix:2/part:2/chapter:1"
+    },
+    {
+      "id": "node-000009",
+      "kind": "chapter",
+      "parent_id": "node-000007",
+      "depth": 3,
+      "ordinal_raw": "III",
+      "ordinal_key": "3",
+      "marker_text": "CHƯƠNG III.",
+      "title": "ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN CẦU THĂNG LONG",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0000",
+          "page_index": 9,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 12
         },
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0000",
           "page_index": 9,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 12,
           "char_end": 58
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0001",
           "page_index": 9,
@@ -9497,11 +9474,11 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "4."
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "CHƯƠNG III."
       },
-      "canonical_path": "appendix:2/generic:4"
+      "canonical_path": "appendix:2/part:2/chapter:3"
     }
   ]
 }

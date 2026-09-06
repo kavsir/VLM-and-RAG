@@ -40,14 +40,17 @@ nodes may nest below an appendix, another generic node, or an active article/cla
 outline is physically embedded in a decision article.
 
 State transitions are deterministic. A new legal sibling closes its descendants; an appendix closes
-the legal and generic stacks. A generic child does not erase the active article/clause, so a `1.1`
-outline cannot cause the next `2.` clause to lose its legal context.
+the legal and generic stacks. A generic child nested inside a legal ARTICLE/CLAUSE preserves that
+legal context. A generic outline selected under APPENDIX or another non-legal generic parent closes
+incompatible stale ARTICLE/CLAUSE/POINT state before later numbering is interpreted.
 
 ### Deterministic identity and path
 
 Node IDs are zero-padded reading-order sequences. They are deterministic for identical normalized
 input and order, not persistent identity across parser representations or document versions.
-Ordinals preserve `ordinal_raw` and a kind-aware normalized `ordinal_key`. Article and clause Arabic
+Ordinals preserve `ordinal_raw` and a kind-aware normalized `ordinal_key`. One parser-independent
+ordinal module is used by extraction, the Structural domain schema, and the reference schema, so an
+internally path-consistent but semantically corrupt pair is invalid. Article and clause Arabic
 ordinals preserve lowercase amendment suffixes, POINT ordinals preserve Vietnamese letters (including
 `c`, `d`, `i`, `l`, `m`, and `đ`), and only Roman-numbered structural kinds use strict Roman
 conversion. Non-canonical Roman spellings such as `IIII`, `IC`, `VX`, `IIV`, and `MMMM` are rejected.
@@ -78,29 +81,37 @@ clause only while an article is active; a leading letter item is a point only wh
 active. Article/heading detection does not require the physical block to be a title.
 
 Outside those contexts, heading-like Roman or dotted decimal outlines may become
-`GENERIC_SECTION`. A simple Arabic generic heading requires stronger physical/typographic evidence.
+`GENERIC_SECTION`. Under an evidenced non-legal APPENDIX/generic outline, uppercase-initial decimal
+and letter items may become nested `GENERIC_SECTION` nodes using explicit Roman, decimal, or letter
+recognition methods. A generic letter is never a legal POINT unless a compatible legal CLAUSE is active.
+A simple Arabic generic heading otherwise requires stronger physical/typographic evidence.
 A multi-component decimal in ordinary text requires either strong heading evidence or an exact active
 numeric generic parent; short text alone is insufficient.
-Letter items outside clauses remain body content. Immediate title continuation is accepted only for
-a physical title or a short uppercase heading-like line.
+Letter items outside compatible legal or generic context remain body content. Immediate title
+continuation is accepted only for a physical title or a short uppercase heading-like line.
 
 The rules are anchored at line start. Embedded phrases such as “theo Điều 3”, “tại điểm a khoản 2”,
-or “thực hiện Chương II” do not create nodes. Line-start prose references using continuations such as
-“của”, “nêu trên”, and “kèm theo” are also rejected. Likely TOC pages are detected conservatively from
-an exact `MỤC LỤC` heading plus dotted/page-number leader entries, or from multiple leader entries;
-their text remains BODY and cannot reserve a structural key. No fuzzy edit distance or synthetic
-confidence is used.
+or “thực hiện Chương II” do not create nodes. Formal no-separator prose is rejected before
+parser TITLE evidence is considered; a no-separator container title requires uppercase structural
+form. An explicit `MỤC LỤC` starts a bounded TOC event range ending at the last leader/page-number
+entry on that page. Without the explicit heading, only individual strong marker-shaped leader events
+are suppressed. TOC text remains BODY and cannot reserve a key; later same-page body structure is
+still eligible. No fuzzy edit distance or synthetic confidence is used.
 
 APPENDIX is terminal in profile v1. The retained corpus does not require returning from an appendix to
 the outer legal hierarchy; a future profile must add evidence for such a transition rather than infer it.
 
 ### Evaluation and reproducibility
 
-Reference annotation v2/schema 2 is an AI visual PDF structural re-audit, not human ground truth. It
+Reference annotation v3/schema 3 is an AI visual PDF structural re-audit, not human ground truth. It
 discloses prior Physical IR and Structural extractor exposure, states that neither output was used as
-reference truth, and contains no parser/block identity. The 46-page re-audit log, render configuration,
-render SHA-256 values, corrections, and ambiguities are committed in
-`data/structural_annotations/reference_structural_audit.v2.json`.
+reference truth, and contains no parser/block identity. V2 was invalidated after it removed a genuine
+repeated QD23 Article 2 to accommodate extractor limitations. V3 restores that scored instance.
+Canonical path remains hierarchical identity; a separate deterministic PDF-based
+`reference_instance_id` distinguishes genuine visual instances and never participates in prediction
+identity. Repeated scored paths are allowed with unique instance IDs, while conflicting context
+definitions remain invalid. The 46-page log and render hashes are committed in
+`data/structural_annotations/reference_structural_audit.v3.json`.
 
 Matching requires exact audited page, kind, and ordinal. Singleton groups match directly; duplicate
 groups match only through a uniquely resolvable exact parent canonical path. Ambiguous groups remain
@@ -120,8 +131,9 @@ the report without parser inference or source PDFs.
 - Conservative rules intentionally leave OCR-corrupted, visual-only, and ambiguous numbering cases
   unresolved.
 - Cross-parser path differences are reported as consistency, not accuracy.
-- Duplicate-first-wins remains deliberately conservative after TOC and prose suppression: later
-  duplicate structural keys remain BODY and are exposed in diagnostics.
+- Duplicate-first-wins remains deliberately conservative after TOC, prose, and stale-stack
+  correction: indistinguishable later Structural IR keys remain BODY and are exposed in diagnostics;
+  visually genuine reference instances are never deleted to improve extractor scores.
 - No entity extraction, legal-reference resolution, semantic edge, retrieval, RAG, knowledge graph,
   VLM, or LLM behavior is introduced.
 

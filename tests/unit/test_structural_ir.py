@@ -22,6 +22,7 @@ from vlm_rag.structural_ir import (
     StructuralDiagnostic,
     StructuralDocument,
     StructuralIRSerializationError,
+    StructuralNode,
     StructuralNodeKind,
     StructuralPhysicalIntegrityError,
     VietnameseStructuralExtractor,
@@ -99,15 +100,125 @@ def test_kind_aware_ordinal_contracts() -> None:
         assert point_ordinal_key(letter) == letter
 
 
-@pytest.mark.parametrize(("raw", "expected"), [("I", "1"), ("IV", "4"), ("IX", "9"), ("XL", "40")])
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        ("I", "1"),
+        ("II", "2"),
+        ("III", "3"),
+        ("IV", "4"),
+        ("V", "5"),
+        ("IX", "9"),
+        ("X", "10"),
+        ("XIV", "14"),
+        ("XL", "40"),
+        ("XC", "90"),
+        ("C", "100"),
+        ("CD", "400"),
+        ("D", "500"),
+        ("CM", "900"),
+        ("M", "1000"),
+        ("MMMCMXCIX", "3999"),
+    ],
+)
 def test_strict_valid_roman_ordinals(raw: str, expected: str) -> None:
     assert roman_ordinal_key(raw) == expected
 
 
-@pytest.mark.parametrize("raw", ["IIII", "IC", "VX", "IIV", "MMMM"])
+@pytest.mark.parametrize("raw", ["IIII", "IC", "VX", "IIV", "MMMM", "IL", "XM", "VV"])
 def test_invalid_roman_ordinals_are_rejected(raw: str) -> None:
     assert roman_ordinal_key(raw) is None
     assert len(_extract(f"CHƯƠNG {raw}").nodes) == 1
+
+
+@pytest.mark.parametrize(
+    ("source", "bad_key"),
+    [
+        ("Điều 1.\n1. Khoản\nc) Điểm", "100"),
+        ("Điều 1.\n1. Khoản\nd) Điểm", "500"),
+        ("Điều 1.\n1. Khoản\ni) Điểm", "1"),
+        ("Điều 10a. Bổ sung", "999"),
+        ("CHƯƠNG IV", "8"),
+    ],
+)
+def test_domain_model_rejects_kind_aware_ordinal_corruption(source: str, bad_key: str) -> None:
+    node = _extract(source).nodes[-1]
+    raw = node.model_dump(mode="json")
+    raw["ordinal_key"] = bad_key
+    raw["canonical_path"] = raw["canonical_path"].rsplit(":", maxsplit=1)[0] + f":{bad_key}"
+    with pytest.raises(ValidationError, match="kind-aware semantics"):
+        StructuralNode.model_validate(raw)
+
+
+def test_toc_suppression_is_event_scoped_on_mixed_page() -> None:
+    result = _extract(
+        "MỤC LỤC\n"
+        "CHƯƠNG I ........ 2\n"
+        "CHƯƠNG II ....... 8\n\n"
+        "CHƯƠNG I\n"
+        "QUY ĐỊNH CHUNG\n"
+        "Điều 1. Phạm vi điều chỉnh"
+    )
+    assert [(node.kind, node.ordinal_key) for node in result.nodes[1:]] == [
+        (StructuralNodeKind.CHAPTER, "1"),
+        (StructuralNodeKind.ARTICLE, "1"),
+    ]
+    assert {node.canonical_path for node in result.nodes} >= {"chapter:1", "chapter:1/article:1"}
+
+
+def test_two_leader_lines_do_not_suppress_real_hierarchy() -> None:
+    result = _extract(
+        "Hạng mục A ........ 10\n"
+        "Hạng mục B ........ 20\n\n"
+        "CHƯƠNG I\n"
+        "QUY ĐỊNH CHUNG\n"
+        "Điều 1. Phạm vi"
+    )
+    assert [(node.kind, node.ordinal_key) for node in result.nodes[1:]] == [
+        (StructuralNodeKind.CHAPTER, "1"),
+        (StructuralNodeKind.ARTICLE, "1"),
+    ]
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Điều 3 này được áp dụng...",
+        "Điều 4 được sửa đổi...",
+        "Chương II quy định về...",
+        "Phụ lục II hướng dẫn...",
+        "Điều 3 của Luật này...",
+        "Điều 4 nêu trên...",
+        "Chương II của Luật...",
+        "Phụ lục II kèm theo...",
+        "Mục 2 của kế hoạch...",
+    ],
+)
+def test_title_block_does_not_override_formal_prose_grammar(text: str) -> None:
+    assert len(_extract(text, kind=BlockKindV1.TITLE).nodes) == 1
+
+
+def test_appendix_generic_stack_closes_stale_legal_state_and_supports_letters() -> None:
+    result = _extract(
+        "Điều 14. Hiệu lực\n"
+        "1. Khoản cũ\n"
+        "Phụ lục I NỘI DUNG\n"
+        "I. Nhóm A\n"
+        "1. Mục A\n"
+        "a) Tiểu mục A\n"
+        "II. Nhóm B\n"
+        "2. Mục B\n"
+        "a) Tiểu mục B",
+        kind=BlockKindV1.TITLE,
+    )
+    appendix_nodes = result.nodes[3:]
+    assert appendix_nodes[0].kind == StructuralNodeKind.APPENDIX
+    assert all(node.kind == StructuralNodeKind.GENERIC_SECTION for node in appendix_nodes[1:])
+    assert appendix_nodes[3].recognition_evidence.recognition_method.value == (
+        "generic_letter_heading"
+    )
+    assert appendix_nodes[-1].canonical_path == "appendix:1/generic:2/generic:2/generic:a"
+    assert all("~" not in node.canonical_path for node in result.nodes)
 
 
 @pytest.mark.parametrize(

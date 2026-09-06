@@ -10730,6 +10730,13 @@
           "role": "body",
           "char_start": 0,
           "char_end": 210
+        },
+        {
+          "block_id": "luat-112-2025-qh15_v1_p0021_b0008",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 83
         }
       ],
       "recognition_evidence": {
@@ -10741,42 +10748,9 @@
     },
     {
       "id": "node-000305",
-      "kind": "chapter",
-      "parent_id": "node-000000",
-      "depth": 1,
-      "ordinal_raw": "III",
-      "ordinal_key": "3",
-      "marker_text": "Chương III",
-      "title": "THẨM ĐỊNH, QUYẾT ĐỊNH HOẶC PHÊ DUYỆT QUY HOẠCH Mục 1 THẨM ĐỊNH QUY HOẠCH",
-      "heading_anchors": [
-        {
-          "block_id": "luat-112-2025-qh15_v1_p0021_b0008",
-          "page_index": 21,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 11
-        },
-        {
-          "block_id": "luat-112-2025-qh15_v1_p0021_b0008",
-          "page_index": 21,
-          "role": "title",
-          "char_start": 11,
-          "char_end": 83
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_CHAPTER_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Chương III"
-      },
-      "canonical_path": "chapter:3"
-    },
-    {
-      "id": "node-000306",
       "kind": "article",
-      "parent_id": "node-000305",
-      "depth": 2,
+      "parent_id": "node-000191",
+      "depth": 3,
       "ordinal_raw": "32",
       "ordinal_key": "32",
       "marker_text": "Điều 32.",
@@ -10803,13 +10777,13 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 32."
       },
-      "canonical_path": "chapter:3/article:32"
+      "canonical_path": "chapter:2/section:2/article:32"
     },
     {
-      "id": "node-000307",
+      "id": "node-000306",
       "kind": "clause",
-      "parent_id": "node-000306",
-      "depth": 3,
+      "parent_id": "node-000305",
+      "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
       "marker_text": "1.",
@@ -10837,13 +10811,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/article:32/clause:1"
+      "canonical_path": "chapter:2/section:2/article:32/clause:1"
     },
     {
-      "id": "node-000308",
+      "id": "node-000307",
       "kind": "clause",
-      "parent_id": "node-000306",
-      "depth": 3,
+      "parent_id": "node-000305",
+      "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
       "marker_text": "2.",
@@ -10871,13 +10845,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/article:32/clause:2"
+      "canonical_path": "chapter:2/section:2/article:32/clause:2"
     },
     {
-      "id": "node-000309",
+      "id": "node-000308",
       "kind": "clause",
-      "parent_id": "node-000306",
-      "depth": 3,
+      "parent_id": "node-000305",
+      "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
       "marker_text": "3.",
@@ -10905,13 +10879,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/article:32/clause:3"
+      "canonical_path": "chapter:2/section:2/article:32/clause:3"
     },
     {
-      "id": "node-000310",
+      "id": "node-000309",
       "kind": "clause",
-      "parent_id": "node-000306",
-      "depth": 3,
+      "parent_id": "node-000305",
+      "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
       "marker_text": "4.",
@@ -10939,13 +10913,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/article:32/clause:4"
+      "canonical_path": "chapter:2/section:2/article:32/clause:4"
     },
     {
-      "id": "node-000311",
+      "id": "node-000310",
       "kind": "article",
-      "parent_id": "node-000305",
-      "depth": 2,
+      "parent_id": "node-000191",
+      "depth": 3,
       "ordinal_raw": "33",
       "ordinal_key": "33",
       "marker_text": "Điều 33.",
@@ -10972,13 +10946,13 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 33."
       },
-      "canonical_path": "chapter:3/article:33"
+      "canonical_path": "chapter:2/section:2/article:33"
     },
     {
-      "id": "node-000312",
+      "id": "node-000311",
       "kind": "clause",
-      "parent_id": "node-000311",
-      "depth": 3,
+      "parent_id": "node-000310",
+      "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
       "marker_text": "1.",
@@ -11006,13 +10980,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/article:33/clause:1"
+      "canonical_path": "chapter:2/section:2/article:33/clause:1"
     },
     {
-      "id": "node-000313",
+      "id": "node-000312",
       "kind": "clause",
-      "parent_id": "node-000311",
-      "depth": 3,
+      "parent_id": "node-000310",
+      "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
       "marker_text": "2.",
@@ -11040,13 +11014,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/article:33/clause:2"
+      "canonical_path": "chapter:2/section:2/article:33/clause:2"
     },
     {
-      "id": "node-000314",
+      "id": "node-000313",
       "kind": "clause",
-      "parent_id": "node-000311",
-      "depth": 3,
+      "parent_id": "node-000310",
+      "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
       "marker_text": "3.",
@@ -11081,13 +11055,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/article:33/clause:3"
+      "canonical_path": "chapter:2/section:2/article:33/clause:3"
     },
     {
-      "id": "node-000315",
+      "id": "node-000314",
       "kind": "clause",
-      "parent_id": "node-000311",
-      "depth": 3,
+      "parent_id": "node-000310",
+      "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
       "marker_text": "4.",
@@ -11115,13 +11089,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/article:33/clause:4"
+      "canonical_path": "chapter:2/section:2/article:33/clause:4"
     },
     {
-      "id": "node-000316",
+      "id": "node-000315",
       "kind": "article",
-      "parent_id": "node-000305",
-      "depth": 2,
+      "parent_id": "node-000191",
+      "depth": 3,
       "ordinal_raw": "34",
       "ordinal_key": "34",
       "marker_text": "Điều 34.",
@@ -11148,13 +11122,13 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 34."
       },
-      "canonical_path": "chapter:3/article:34"
+      "canonical_path": "chapter:2/section:2/article:34"
     },
     {
-      "id": "node-000317",
+      "id": "node-000316",
       "kind": "clause",
-      "parent_id": "node-000316",
-      "depth": 3,
+      "parent_id": "node-000315",
+      "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
       "marker_text": "1.",
@@ -11189,13 +11163,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/article:34/clause:1"
+      "canonical_path": "chapter:2/section:2/article:34/clause:1"
     },
     {
-      "id": "node-000318",
+      "id": "node-000317",
       "kind": "point",
-      "parent_id": "node-000317",
-      "depth": 4,
+      "parent_id": "node-000316",
+      "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
       "marker_text": "a)",
@@ -11223,13 +11197,13 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/article:34/clause:1/point:a"
+      "canonical_path": "chapter:2/section:2/article:34/clause:1/point:a"
     },
     {
-      "id": "node-000319",
+      "id": "node-000318",
       "kind": "point",
-      "parent_id": "node-000317",
-      "depth": 4,
+      "parent_id": "node-000316",
+      "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
       "marker_text": "b)",
@@ -11257,13 +11231,13 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/article:34/clause:1/point:b"
+      "canonical_path": "chapter:2/section:2/article:34/clause:1/point:b"
     },
     {
-      "id": "node-000320",
+      "id": "node-000319",
       "kind": "point",
-      "parent_id": "node-000317",
-      "depth": 4,
+      "parent_id": "node-000316",
+      "depth": 5,
       "ordinal_raw": "c",
       "ordinal_key": "c",
       "marker_text": "c)",
@@ -11291,13 +11265,13 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "chapter:3/article:34/clause:1/point:c"
+      "canonical_path": "chapter:2/section:2/article:34/clause:1/point:c"
     },
     {
-      "id": "node-000321",
+      "id": "node-000320",
       "kind": "point",
-      "parent_id": "node-000317",
-      "depth": 4,
+      "parent_id": "node-000316",
+      "depth": 5,
       "ordinal_raw": "d",
       "ordinal_key": "d",
       "marker_text": "d)",
@@ -11325,13 +11299,13 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "chapter:3/article:34/clause:1/point:d"
+      "canonical_path": "chapter:2/section:2/article:34/clause:1/point:d"
     },
     {
-      "id": "node-000322",
+      "id": "node-000321",
       "kind": "point",
-      "parent_id": "node-000317",
-      "depth": 4,
+      "parent_id": "node-000316",
+      "depth": 5,
       "ordinal_raw": "e",
       "ordinal_key": "e",
       "marker_text": "e)",
@@ -11359,13 +11333,13 @@
         "recognition_method": "contextual_point",
         "matched_text": "e)"
       },
-      "canonical_path": "chapter:3/article:34/clause:1/point:e"
+      "canonical_path": "chapter:2/section:2/article:34/clause:1/point:e"
     },
     {
-      "id": "node-000323",
+      "id": "node-000322",
       "kind": "clause",
-      "parent_id": "node-000316",
-      "depth": 3,
+      "parent_id": "node-000315",
+      "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
       "marker_text": "2.",
@@ -11393,13 +11367,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/article:34/clause:2"
+      "canonical_path": "chapter:2/section:2/article:34/clause:2"
     },
     {
-      "id": "node-000324",
+      "id": "node-000323",
       "kind": "clause",
-      "parent_id": "node-000316",
-      "depth": 3,
+      "parent_id": "node-000315",
+      "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
       "marker_text": "3.",
@@ -11427,13 +11401,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/article:34/clause:3"
+      "canonical_path": "chapter:2/section:2/article:34/clause:3"
     },
     {
-      "id": "node-000325",
+      "id": "node-000324",
       "kind": "clause",
-      "parent_id": "node-000316",
-      "depth": 3,
+      "parent_id": "node-000315",
+      "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
       "marker_text": "4.",
@@ -11489,13 +11463,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/article:34/clause:4"
+      "canonical_path": "chapter:2/section:2/article:34/clause:4"
     },
     {
-      "id": "node-000326",
+      "id": "node-000325",
       "kind": "article",
-      "parent_id": "node-000305",
-      "depth": 2,
+      "parent_id": "node-000191",
+      "depth": 3,
       "ordinal_raw": "35",
       "ordinal_key": "35",
       "marker_text": "Điều 35.",
@@ -11522,13 +11496,13 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 35."
       },
-      "canonical_path": "chapter:3/article:35"
+      "canonical_path": "chapter:2/section:2/article:35"
     },
     {
-      "id": "node-000327",
+      "id": "node-000326",
       "kind": "clause",
-      "parent_id": "node-000326",
-      "depth": 3,
+      "parent_id": "node-000325",
+      "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
       "marker_text": "1.",
@@ -11556,13 +11530,13 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/article:35/clause:1"
+      "canonical_path": "chapter:2/section:2/article:35/clause:1"
     },
     {
-      "id": "node-000328",
+      "id": "node-000327",
       "kind": "point",
-      "parent_id": "node-000327",
-      "depth": 4,
+      "parent_id": "node-000326",
+      "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
       "marker_text": "b)",
@@ -11590,13 +11564,13 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/article:35/clause:1/point:b"
+      "canonical_path": "chapter:2/section:2/article:35/clause:1/point:b"
     },
     {
-      "id": "node-000329",
+      "id": "node-000328",
       "kind": "point",
-      "parent_id": "node-000327",
-      "depth": 4,
+      "parent_id": "node-000326",
+      "depth": 5,
       "ordinal_raw": "c",
       "ordinal_key": "c",
       "marker_text": "c)",
@@ -11624,13 +11598,13 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "chapter:3/article:35/clause:1/point:c"
+      "canonical_path": "chapter:2/section:2/article:35/clause:1/point:c"
     },
     {
-      "id": "node-000330",
+      "id": "node-000329",
       "kind": "point",
-      "parent_id": "node-000327",
-      "depth": 4,
+      "parent_id": "node-000326",
+      "depth": 5,
       "ordinal_raw": "d",
       "ordinal_key": "d",
       "marker_text": "d)",
@@ -11672,13 +11646,13 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "chapter:3/article:35/clause:1/point:d"
+      "canonical_path": "chapter:2/section:2/article:35/clause:1/point:d"
     },
     {
-      "id": "node-000331",
+      "id": "node-000330",
       "kind": "clause",
-      "parent_id": "node-000326",
-      "depth": 3,
+      "parent_id": "node-000325",
+      "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
       "marker_text": "2.",
@@ -11699,6 +11673,13 @@
           "role": "body",
           "char_start": 3,
           "char_end": 190
+        },
+        {
+          "block_id": "luat-112-2025-qh15_v1_p0023_b0003",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 41
         }
       ],
       "recognition_evidence": {
@@ -11706,45 +11687,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/article:35/clause:2"
+      "canonical_path": "chapter:2/section:2/article:35/clause:2"
     },
     {
-      "id": "node-000332",
-      "kind": "section",
-      "parent_id": "node-000305",
-      "depth": 2,
-      "ordinal_raw": "2",
-      "ordinal_key": "2",
-      "marker_text": "Mục 2",
-      "title": "QUYẾT ĐỊNH HOẶC PHÊ DUYỆT QUY HOẠCH",
-      "heading_anchors": [
-        {
-          "block_id": "luat-112-2025-qh15_v1_p0023_b0003",
-          "page_index": 23,
-          "role": "marker",
-          "char_start": 0,
-          "char_end": 6
-        },
-        {
-          "block_id": "luat-112-2025-qh15_v1_p0023_b0003",
-          "page_index": 23,
-          "role": "title",
-          "char_start": 6,
-          "char_end": 41
-        }
-      ],
-      "direct_content_anchors": [],
-      "recognition_evidence": {
-        "rule_id": "VI_FORMAL_SECTION_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Mục 2"
-      },
-      "canonical_path": "chapter:3/section:2"
-    },
-    {
-      "id": "node-000333",
+      "id": "node-000331",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "36",
       "ordinal_key": "36",
@@ -11772,12 +11720,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 36."
       },
-      "canonical_path": "chapter:3/section:2/article:36"
+      "canonical_path": "chapter:2/section:2/article:36"
     },
     {
-      "id": "node-000334",
+      "id": "node-000332",
       "kind": "clause",
-      "parent_id": "node-000333",
+      "parent_id": "node-000331",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -11806,12 +11754,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:36/clause:1"
+      "canonical_path": "chapter:2/section:2/article:36/clause:1"
     },
     {
-      "id": "node-000335",
+      "id": "node-000333",
       "kind": "clause",
-      "parent_id": "node-000333",
+      "parent_id": "node-000331",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -11840,12 +11788,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:36/clause:2"
+      "canonical_path": "chapter:2/section:2/article:36/clause:2"
     },
     {
-      "id": "node-000336",
+      "id": "node-000334",
       "kind": "clause",
-      "parent_id": "node-000333",
+      "parent_id": "node-000331",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -11874,12 +11822,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:36/clause:3"
+      "canonical_path": "chapter:2/section:2/article:36/clause:3"
     },
     {
-      "id": "node-000337",
+      "id": "node-000335",
       "kind": "clause",
-      "parent_id": "node-000333",
+      "parent_id": "node-000331",
       "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -11908,12 +11856,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/section:2/article:36/clause:4"
+      "canonical_path": "chapter:2/section:2/article:36/clause:4"
     },
     {
-      "id": "node-000338",
+      "id": "node-000336",
       "kind": "clause",
-      "parent_id": "node-000333",
+      "parent_id": "node-000331",
       "depth": 4,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -11963,12 +11911,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "5."
       },
-      "canonical_path": "chapter:3/section:2/article:36/clause:5"
+      "canonical_path": "chapter:2/section:2/article:36/clause:5"
     },
     {
-      "id": "node-000339",
+      "id": "node-000337",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "37",
       "ordinal_key": "37",
@@ -11996,12 +11944,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 37."
       },
-      "canonical_path": "chapter:3/section:2/article:37"
+      "canonical_path": "chapter:2/section:2/article:37"
     },
     {
-      "id": "node-000340",
+      "id": "node-000338",
       "kind": "clause",
-      "parent_id": "node-000339",
+      "parent_id": "node-000337",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -12037,12 +11985,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:37/clause:1"
+      "canonical_path": "chapter:2/section:2/article:37/clause:1"
     },
     {
-      "id": "node-000341",
+      "id": "node-000339",
       "kind": "clause",
-      "parent_id": "node-000339",
+      "parent_id": "node-000337",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -12071,12 +12019,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:37/clause:2"
+      "canonical_path": "chapter:2/section:2/article:37/clause:2"
     },
     {
-      "id": "node-000342",
+      "id": "node-000340",
       "kind": "clause",
-      "parent_id": "node-000339",
+      "parent_id": "node-000337",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -12105,12 +12053,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:37/clause:3"
+      "canonical_path": "chapter:2/section:2/article:37/clause:3"
     },
     {
-      "id": "node-000343",
+      "id": "node-000341",
       "kind": "clause",
-      "parent_id": "node-000339",
+      "parent_id": "node-000337",
       "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -12139,12 +12087,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/section:2/article:37/clause:4"
+      "canonical_path": "chapter:2/section:2/article:37/clause:4"
     },
     {
-      "id": "node-000344",
+      "id": "node-000342",
       "kind": "point",
-      "parent_id": "node-000343",
+      "parent_id": "node-000341",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -12173,12 +12121,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:37/clause:4/point:a"
+      "canonical_path": "chapter:2/section:2/article:37/clause:4/point:a"
     },
     {
-      "id": "node-000345",
+      "id": "node-000343",
       "kind": "point",
-      "parent_id": "node-000343",
+      "parent_id": "node-000341",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -12207,12 +12155,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:37/clause:4/point:b"
+      "canonical_path": "chapter:2/section:2/article:37/clause:4/point:b"
     },
     {
-      "id": "node-000346",
+      "id": "node-000344",
       "kind": "clause",
-      "parent_id": "node-000339",
+      "parent_id": "node-000337",
       "depth": 4,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -12241,12 +12189,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "5."
       },
-      "canonical_path": "chapter:3/section:2/article:37/clause:5"
+      "canonical_path": "chapter:2/section:2/article:37/clause:5"
     },
     {
-      "id": "node-000347",
+      "id": "node-000345",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "38",
       "ordinal_key": "38",
@@ -12274,12 +12222,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 38."
       },
-      "canonical_path": "chapter:3/section:2/article:38"
+      "canonical_path": "chapter:2/section:2/article:38"
     },
     {
-      "id": "node-000348",
+      "id": "node-000346",
       "kind": "clause",
-      "parent_id": "node-000347",
+      "parent_id": "node-000345",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -12308,12 +12256,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:1"
+      "canonical_path": "chapter:2/section:2/article:38/clause:1"
     },
     {
-      "id": "node-000349",
+      "id": "node-000347",
       "kind": "point",
-      "parent_id": "node-000348",
+      "parent_id": "node-000346",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -12342,12 +12290,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:1/point:a"
+      "canonical_path": "chapter:2/section:2/article:38/clause:1/point:a"
     },
     {
-      "id": "node-000350",
+      "id": "node-000348",
       "kind": "point",
-      "parent_id": "node-000348",
+      "parent_id": "node-000346",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -12376,12 +12324,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:1/point:b"
+      "canonical_path": "chapter:2/section:2/article:38/clause:1/point:b"
     },
     {
-      "id": "node-000351",
+      "id": "node-000349",
       "kind": "point",
-      "parent_id": "node-000348",
+      "parent_id": "node-000346",
       "depth": 5,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -12410,12 +12358,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:1/point:c"
+      "canonical_path": "chapter:2/section:2/article:38/clause:1/point:c"
     },
     {
-      "id": "node-000352",
+      "id": "node-000350",
       "kind": "point",
-      "parent_id": "node-000348",
+      "parent_id": "node-000346",
       "depth": 5,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -12444,12 +12392,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:1/point:d"
+      "canonical_path": "chapter:2/section:2/article:38/clause:1/point:d"
     },
     {
-      "id": "node-000353",
+      "id": "node-000351",
       "kind": "point",
-      "parent_id": "node-000348",
+      "parent_id": "node-000346",
       "depth": 5,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -12478,12 +12426,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "đ)"
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:1/point:đ"
+      "canonical_path": "chapter:2/section:2/article:38/clause:1/point:đ"
     },
     {
-      "id": "node-000354",
+      "id": "node-000352",
       "kind": "point",
-      "parent_id": "node-000348",
+      "parent_id": "node-000346",
       "depth": 5,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -12512,12 +12460,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "e)"
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:1/point:e"
+      "canonical_path": "chapter:2/section:2/article:38/clause:1/point:e"
     },
     {
-      "id": "node-000355",
+      "id": "node-000353",
       "kind": "point",
-      "parent_id": "node-000348",
+      "parent_id": "node-000346",
       "depth": 5,
       "ordinal_raw": "g",
       "ordinal_key": "g",
@@ -12546,12 +12494,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "g)"
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:1/point:g"
+      "canonical_path": "chapter:2/section:2/article:38/clause:1/point:g"
     },
     {
-      "id": "node-000356",
+      "id": "node-000354",
       "kind": "point",
-      "parent_id": "node-000348",
+      "parent_id": "node-000346",
       "depth": 5,
       "ordinal_raw": "h",
       "ordinal_key": "h",
@@ -12580,12 +12528,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "h)"
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:1/point:h"
+      "canonical_path": "chapter:2/section:2/article:38/clause:1/point:h"
     },
     {
-      "id": "node-000357",
+      "id": "node-000355",
       "kind": "clause",
-      "parent_id": "node-000347",
+      "parent_id": "node-000345",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -12614,12 +12562,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:2"
+      "canonical_path": "chapter:2/section:2/article:38/clause:2"
     },
     {
-      "id": "node-000358",
+      "id": "node-000356",
       "kind": "clause",
-      "parent_id": "node-000347",
+      "parent_id": "node-000345",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -12648,12 +12596,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:38/clause:3"
+      "canonical_path": "chapter:2/section:2/article:38/clause:3"
     },
     {
-      "id": "node-000359",
+      "id": "node-000357",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "39",
       "ordinal_key": "39",
@@ -12689,12 +12637,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 39."
       },
-      "canonical_path": "chapter:3/section:2/article:39"
+      "canonical_path": "chapter:2/section:2/article:39"
     },
     {
-      "id": "node-000360",
+      "id": "node-000358",
       "kind": "clause",
-      "parent_id": "node-000359",
+      "parent_id": "node-000357",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -12723,12 +12671,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:39/clause:1"
+      "canonical_path": "chapter:2/section:2/article:39/clause:1"
     },
     {
-      "id": "node-000361",
+      "id": "node-000359",
       "kind": "clause",
-      "parent_id": "node-000359",
+      "parent_id": "node-000357",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -12757,12 +12705,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:39/clause:2"
+      "canonical_path": "chapter:2/section:2/article:39/clause:2"
     },
     {
-      "id": "node-000362",
+      "id": "node-000360",
       "kind": "clause",
-      "parent_id": "node-000359",
+      "parent_id": "node-000357",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -12791,12 +12739,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:39/clause:3"
+      "canonical_path": "chapter:2/section:2/article:39/clause:3"
     },
     {
-      "id": "node-000363",
+      "id": "node-000361",
       "kind": "point",
-      "parent_id": "node-000362",
+      "parent_id": "node-000360",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -12825,12 +12773,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:39/clause:3/point:a"
+      "canonical_path": "chapter:2/section:2/article:39/clause:3/point:a"
     },
     {
-      "id": "node-000364",
+      "id": "node-000362",
       "kind": "point",
-      "parent_id": "node-000362",
+      "parent_id": "node-000360",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -12859,12 +12807,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:39/clause:3/point:b"
+      "canonical_path": "chapter:2/section:2/article:39/clause:3/point:b"
     },
     {
-      "id": "node-000365",
+      "id": "node-000363",
       "kind": "point",
-      "parent_id": "node-000362",
+      "parent_id": "node-000360",
       "depth": 5,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -12893,12 +12841,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "chapter:3/section:2/article:39/clause:3/point:c"
+      "canonical_path": "chapter:2/section:2/article:39/clause:3/point:c"
     },
     {
-      "id": "node-000366",
+      "id": "node-000364",
       "kind": "clause",
-      "parent_id": "node-000359",
+      "parent_id": "node-000357",
       "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -12927,12 +12875,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/section:2/article:39/clause:4"
+      "canonical_path": "chapter:2/section:2/article:39/clause:4"
     },
     {
-      "id": "node-000367",
+      "id": "node-000365",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "40",
       "ordinal_key": "40",
@@ -12960,12 +12908,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 40."
       },
-      "canonical_path": "chapter:3/section:2/article:40"
+      "canonical_path": "chapter:2/section:2/article:40"
     },
     {
-      "id": "node-000368",
+      "id": "node-000366",
       "kind": "clause",
-      "parent_id": "node-000367",
+      "parent_id": "node-000365",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -12994,12 +12942,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:40/clause:1"
+      "canonical_path": "chapter:2/section:2/article:40/clause:1"
     },
     {
-      "id": "node-000369",
+      "id": "node-000367",
       "kind": "clause",
-      "parent_id": "node-000367",
+      "parent_id": "node-000365",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -13035,12 +12983,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:40/clause:2"
+      "canonical_path": "chapter:2/section:2/article:40/clause:2"
     },
     {
-      "id": "node-000370",
+      "id": "node-000368",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "41",
       "ordinal_key": "41",
@@ -13068,12 +13016,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 41."
       },
-      "canonical_path": "chapter:3/section:2/article:41"
+      "canonical_path": "chapter:2/section:2/article:41"
     },
     {
-      "id": "node-000371",
+      "id": "node-000369",
       "kind": "clause",
-      "parent_id": "node-000370",
+      "parent_id": "node-000368",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -13102,12 +13050,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:41/clause:1"
+      "canonical_path": "chapter:2/section:2/article:41/clause:1"
     },
     {
-      "id": "node-000372",
+      "id": "node-000370",
       "kind": "clause",
-      "parent_id": "node-000370",
+      "parent_id": "node-000368",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -13136,12 +13084,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:41/clause:2"
+      "canonical_path": "chapter:2/section:2/article:41/clause:2"
     },
     {
-      "id": "node-000373",
+      "id": "node-000371",
       "kind": "point",
-      "parent_id": "node-000372",
+      "parent_id": "node-000370",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -13170,12 +13118,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:41/clause:2/point:a"
+      "canonical_path": "chapter:2/section:2/article:41/clause:2/point:a"
     },
     {
-      "id": "node-000374",
+      "id": "node-000372",
       "kind": "point",
-      "parent_id": "node-000372",
+      "parent_id": "node-000370",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -13204,12 +13152,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:41/clause:2/point:b"
+      "canonical_path": "chapter:2/section:2/article:41/clause:2/point:b"
     },
     {
-      "id": "node-000375",
+      "id": "node-000373",
       "kind": "point",
-      "parent_id": "node-000372",
+      "parent_id": "node-000370",
       "depth": 5,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -13238,12 +13186,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "chapter:3/section:2/article:41/clause:2/point:c"
+      "canonical_path": "chapter:2/section:2/article:41/clause:2/point:c"
     },
     {
-      "id": "node-000376",
+      "id": "node-000374",
       "kind": "clause",
-      "parent_id": "node-000370",
+      "parent_id": "node-000368",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -13286,12 +13234,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:41/clause:3"
+      "canonical_path": "chapter:2/section:2/article:41/clause:3"
     },
     {
-      "id": "node-000377",
+      "id": "node-000375",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "42",
       "ordinal_key": "42",
@@ -13319,12 +13267,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 42."
       },
-      "canonical_path": "chapter:3/section:2/article:42"
+      "canonical_path": "chapter:2/section:2/article:42"
     },
     {
-      "id": "node-000378",
+      "id": "node-000376",
       "kind": "clause",
-      "parent_id": "node-000377",
+      "parent_id": "node-000375",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -13353,12 +13301,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:42/clause:1"
+      "canonical_path": "chapter:2/section:2/article:42/clause:1"
     },
     {
-      "id": "node-000379",
+      "id": "node-000377",
       "kind": "clause",
-      "parent_id": "node-000377",
+      "parent_id": "node-000375",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -13387,12 +13335,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:42/clause:2"
+      "canonical_path": "chapter:2/section:2/article:42/clause:2"
     },
     {
-      "id": "node-000380",
+      "id": "node-000378",
       "kind": "clause",
-      "parent_id": "node-000377",
+      "parent_id": "node-000375",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -13421,12 +13369,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:42/clause:3"
+      "canonical_path": "chapter:2/section:2/article:42/clause:3"
     },
     {
-      "id": "node-000381",
+      "id": "node-000379",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "43",
       "ordinal_key": "43",
@@ -13454,12 +13402,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 43."
       },
-      "canonical_path": "chapter:3/section:2/article:43"
+      "canonical_path": "chapter:2/section:2/article:43"
     },
     {
-      "id": "node-000382",
+      "id": "node-000380",
       "kind": "clause",
-      "parent_id": "node-000381",
+      "parent_id": "node-000379",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -13488,12 +13436,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:43/clause:1"
+      "canonical_path": "chapter:2/section:2/article:43/clause:1"
     },
     {
-      "id": "node-000383",
+      "id": "node-000381",
       "kind": "clause",
-      "parent_id": "node-000381",
+      "parent_id": "node-000379",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -13522,12 +13470,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:43/clause:2"
+      "canonical_path": "chapter:2/section:2/article:43/clause:2"
     },
     {
-      "id": "node-000384",
+      "id": "node-000382",
       "kind": "clause",
-      "parent_id": "node-000381",
+      "parent_id": "node-000379",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -13556,12 +13504,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:43/clause:3"
+      "canonical_path": "chapter:2/section:2/article:43/clause:3"
     },
     {
-      "id": "node-000385",
+      "id": "node-000383",
       "kind": "clause",
-      "parent_id": "node-000381",
+      "parent_id": "node-000379",
       "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -13590,12 +13538,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/section:2/article:43/clause:4"
+      "canonical_path": "chapter:2/section:2/article:43/clause:4"
     },
     {
-      "id": "node-000386",
+      "id": "node-000384",
       "kind": "clause",
-      "parent_id": "node-000381",
+      "parent_id": "node-000379",
       "depth": 4,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -13624,12 +13572,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "5."
       },
-      "canonical_path": "chapter:3/section:2/article:43/clause:5"
+      "canonical_path": "chapter:2/section:2/article:43/clause:5"
     },
     {
-      "id": "node-000387",
+      "id": "node-000385",
       "kind": "clause",
-      "parent_id": "node-000381",
+      "parent_id": "node-000379",
       "depth": 4,
       "ordinal_raw": "6",
       "ordinal_key": "6",
@@ -13658,12 +13606,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "6."
       },
-      "canonical_path": "chapter:3/section:2/article:43/clause:6"
+      "canonical_path": "chapter:2/section:2/article:43/clause:6"
     },
     {
-      "id": "node-000388",
+      "id": "node-000386",
       "kind": "clause",
-      "parent_id": "node-000381",
+      "parent_id": "node-000379",
       "depth": 4,
       "ordinal_raw": "7",
       "ordinal_key": "7",
@@ -13692,12 +13640,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "7."
       },
-      "canonical_path": "chapter:3/section:2/article:43/clause:7"
+      "canonical_path": "chapter:2/section:2/article:43/clause:7"
     },
     {
-      "id": "node-000389",
+      "id": "node-000387",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "44",
       "ordinal_key": "44",
@@ -13725,12 +13673,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 44."
       },
-      "canonical_path": "chapter:3/section:2/article:44"
+      "canonical_path": "chapter:2/section:2/article:44"
     },
     {
-      "id": "node-000390",
+      "id": "node-000388",
       "kind": "clause",
-      "parent_id": "node-000389",
+      "parent_id": "node-000387",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -13759,12 +13707,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:1"
+      "canonical_path": "chapter:2/section:2/article:44/clause:1"
     },
     {
-      "id": "node-000391",
+      "id": "node-000389",
       "kind": "clause",
-      "parent_id": "node-000389",
+      "parent_id": "node-000387",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -13800,12 +13748,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:2"
+      "canonical_path": "chapter:2/section:2/article:44/clause:2"
     },
     {
-      "id": "node-000392",
+      "id": "node-000390",
       "kind": "point",
-      "parent_id": "node-000391",
+      "parent_id": "node-000389",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -13834,12 +13782,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:2/point:a"
+      "canonical_path": "chapter:2/section:2/article:44/clause:2/point:a"
     },
     {
-      "id": "node-000393",
+      "id": "node-000391",
       "kind": "point",
-      "parent_id": "node-000391",
+      "parent_id": "node-000389",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -13868,12 +13816,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:2/point:b"
+      "canonical_path": "chapter:2/section:2/article:44/clause:2/point:b"
     },
     {
-      "id": "node-000394",
+      "id": "node-000392",
       "kind": "point",
-      "parent_id": "node-000391",
+      "parent_id": "node-000389",
       "depth": 5,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -13909,12 +13857,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:2/point:c"
+      "canonical_path": "chapter:2/section:2/article:44/clause:2/point:c"
     },
     {
-      "id": "node-000395",
+      "id": "node-000393",
       "kind": "clause",
-      "parent_id": "node-000389",
+      "parent_id": "node-000387",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -13943,12 +13891,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:3"
+      "canonical_path": "chapter:2/section:2/article:44/clause:3"
     },
     {
-      "id": "node-000396",
+      "id": "node-000394",
       "kind": "clause",
-      "parent_id": "node-000389",
+      "parent_id": "node-000387",
       "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -13977,12 +13925,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:4"
+      "canonical_path": "chapter:2/section:2/article:44/clause:4"
     },
     {
-      "id": "node-000397",
+      "id": "node-000395",
       "kind": "point",
-      "parent_id": "node-000396",
+      "parent_id": "node-000394",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -14011,12 +13959,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:4/point:a"
+      "canonical_path": "chapter:2/section:2/article:44/clause:4/point:a"
     },
     {
-      "id": "node-000398",
+      "id": "node-000396",
       "kind": "point",
-      "parent_id": "node-000396",
+      "parent_id": "node-000394",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -14045,12 +13993,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:4/point:b"
+      "canonical_path": "chapter:2/section:2/article:44/clause:4/point:b"
     },
     {
-      "id": "node-000399",
+      "id": "node-000397",
       "kind": "point",
-      "parent_id": "node-000396",
+      "parent_id": "node-000394",
       "depth": 5,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -14079,12 +14027,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:4/point:c"
+      "canonical_path": "chapter:2/section:2/article:44/clause:4/point:c"
     },
     {
-      "id": "node-000400",
+      "id": "node-000398",
       "kind": "point",
-      "parent_id": "node-000396",
+      "parent_id": "node-000394",
       "depth": 5,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -14113,12 +14061,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:4/point:d"
+      "canonical_path": "chapter:2/section:2/article:44/clause:4/point:d"
     },
     {
-      "id": "node-000401",
+      "id": "node-000399",
       "kind": "clause",
-      "parent_id": "node-000389",
+      "parent_id": "node-000387",
       "depth": 4,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -14147,12 +14095,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "5."
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:5"
+      "canonical_path": "chapter:2/section:2/article:44/clause:5"
     },
     {
-      "id": "node-000402",
+      "id": "node-000400",
       "kind": "clause",
-      "parent_id": "node-000389",
+      "parent_id": "node-000387",
       "depth": 4,
       "ordinal_raw": "6",
       "ordinal_key": "6",
@@ -14181,12 +14129,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "6."
       },
-      "canonical_path": "chapter:3/section:2/article:44/clause:6"
+      "canonical_path": "chapter:2/section:2/article:44/clause:6"
     },
     {
-      "id": "node-000403",
+      "id": "node-000401",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "45",
       "ordinal_key": "45",
@@ -14214,12 +14162,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 45."
       },
-      "canonical_path": "chapter:3/section:2/article:45"
+      "canonical_path": "chapter:2/section:2/article:45"
     },
     {
-      "id": "node-000404",
+      "id": "node-000402",
       "kind": "clause",
-      "parent_id": "node-000403",
+      "parent_id": "node-000401",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -14248,12 +14196,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:45/clause:1"
+      "canonical_path": "chapter:2/section:2/article:45/clause:1"
     },
     {
-      "id": "node-000405",
+      "id": "node-000403",
       "kind": "point",
-      "parent_id": "node-000404",
+      "parent_id": "node-000402",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -14282,12 +14230,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:45/clause:1/point:a"
+      "canonical_path": "chapter:2/section:2/article:45/clause:1/point:a"
     },
     {
-      "id": "node-000406",
+      "id": "node-000404",
       "kind": "point",
-      "parent_id": "node-000404",
+      "parent_id": "node-000402",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -14316,12 +14264,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:45/clause:1/point:b"
+      "canonical_path": "chapter:2/section:2/article:45/clause:1/point:b"
     },
     {
-      "id": "node-000407",
+      "id": "node-000405",
       "kind": "clause",
-      "parent_id": "node-000403",
+      "parent_id": "node-000401",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -14350,12 +14298,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:45/clause:2"
+      "canonical_path": "chapter:2/section:2/article:45/clause:2"
     },
     {
-      "id": "node-000408",
+      "id": "node-000406",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "46",
       "ordinal_key": "46",
@@ -14383,12 +14331,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 46."
       },
-      "canonical_path": "chapter:3/section:2/article:46"
+      "canonical_path": "chapter:2/section:2/article:46"
     },
     {
-      "id": "node-000409",
+      "id": "node-000407",
       "kind": "clause",
-      "parent_id": "node-000408",
+      "parent_id": "node-000406",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -14417,12 +14365,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:1"
+      "canonical_path": "chapter:2/section:2/article:46/clause:1"
     },
     {
-      "id": "node-000410",
+      "id": "node-000408",
       "kind": "clause",
-      "parent_id": "node-000408",
+      "parent_id": "node-000406",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -14451,12 +14399,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:2"
+      "canonical_path": "chapter:2/section:2/article:46/clause:2"
     },
     {
-      "id": "node-000411",
+      "id": "node-000409",
       "kind": "point",
-      "parent_id": "node-000410",
+      "parent_id": "node-000408",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -14485,12 +14433,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:2/point:a"
+      "canonical_path": "chapter:2/section:2/article:46/clause:2/point:a"
     },
     {
-      "id": "node-000412",
+      "id": "node-000410",
       "kind": "point",
-      "parent_id": "node-000410",
+      "parent_id": "node-000408",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -14519,12 +14467,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:2/point:b"
+      "canonical_path": "chapter:2/section:2/article:46/clause:2/point:b"
     },
     {
-      "id": "node-000413",
+      "id": "node-000411",
       "kind": "point",
-      "parent_id": "node-000410",
+      "parent_id": "node-000408",
       "depth": 5,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -14553,12 +14501,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:2/point:c"
+      "canonical_path": "chapter:2/section:2/article:46/clause:2/point:c"
     },
     {
-      "id": "node-000414",
+      "id": "node-000412",
       "kind": "point",
-      "parent_id": "node-000410",
+      "parent_id": "node-000408",
       "depth": 5,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -14587,12 +14535,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:2/point:d"
+      "canonical_path": "chapter:2/section:2/article:46/clause:2/point:d"
     },
     {
-      "id": "node-000415",
+      "id": "node-000413",
       "kind": "clause",
-      "parent_id": "node-000408",
+      "parent_id": "node-000406",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -14621,12 +14569,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:3"
+      "canonical_path": "chapter:2/section:2/article:46/clause:3"
     },
     {
-      "id": "node-000416",
+      "id": "node-000414",
       "kind": "point",
-      "parent_id": "node-000415",
+      "parent_id": "node-000413",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -14655,12 +14603,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:3/point:a"
+      "canonical_path": "chapter:2/section:2/article:46/clause:3/point:a"
     },
     {
-      "id": "node-000417",
+      "id": "node-000415",
       "kind": "point",
-      "parent_id": "node-000415",
+      "parent_id": "node-000413",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -14689,12 +14637,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:3/point:b"
+      "canonical_path": "chapter:2/section:2/article:46/clause:3/point:b"
     },
     {
-      "id": "node-000418",
+      "id": "node-000416",
       "kind": "point",
-      "parent_id": "node-000415",
+      "parent_id": "node-000413",
       "depth": 5,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -14723,12 +14671,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "c)"
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:3/point:c"
+      "canonical_path": "chapter:2/section:2/article:46/clause:3/point:c"
     },
     {
-      "id": "node-000419",
+      "id": "node-000417",
       "kind": "point",
-      "parent_id": "node-000415",
+      "parent_id": "node-000413",
       "depth": 5,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -14757,12 +14705,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "d)"
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:3/point:d"
+      "canonical_path": "chapter:2/section:2/article:46/clause:3/point:d"
     },
     {
-      "id": "node-000420",
+      "id": "node-000418",
       "kind": "clause",
-      "parent_id": "node-000408",
+      "parent_id": "node-000406",
       "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -14798,12 +14746,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/section:2/article:46/clause:4"
+      "canonical_path": "chapter:2/section:2/article:46/clause:4"
     },
     {
-      "id": "node-000421",
+      "id": "node-000419",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "47",
       "ordinal_key": "47",
@@ -14831,12 +14779,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 47."
       },
-      "canonical_path": "chapter:3/section:2/article:47"
+      "canonical_path": "chapter:2/section:2/article:47"
     },
     {
-      "id": "node-000422",
+      "id": "node-000420",
       "kind": "clause",
-      "parent_id": "node-000421",
+      "parent_id": "node-000419",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -14865,12 +14813,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:47/clause:1"
+      "canonical_path": "chapter:2/section:2/article:47/clause:1"
     },
     {
-      "id": "node-000423",
+      "id": "node-000421",
       "kind": "clause",
-      "parent_id": "node-000421",
+      "parent_id": "node-000419",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -14899,12 +14847,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:47/clause:2"
+      "canonical_path": "chapter:2/section:2/article:47/clause:2"
     },
     {
-      "id": "node-000424",
+      "id": "node-000422",
       "kind": "clause",
-      "parent_id": "node-000421",
+      "parent_id": "node-000419",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -14933,12 +14881,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:47/clause:3"
+      "canonical_path": "chapter:2/section:2/article:47/clause:3"
     },
     {
-      "id": "node-000425",
+      "id": "node-000423",
       "kind": "article",
-      "parent_id": "node-000332",
+      "parent_id": "node-000191",
       "depth": 3,
       "ordinal_raw": "48",
       "ordinal_key": "48",
@@ -14966,12 +14914,12 @@
         "recognition_method": "explicit_legal_marker",
         "matched_text": "Điều 48."
       },
-      "canonical_path": "chapter:3/section:2/article:48"
+      "canonical_path": "chapter:2/section:2/article:48"
     },
     {
-      "id": "node-000426",
+      "id": "node-000424",
       "kind": "clause",
-      "parent_id": "node-000425",
+      "parent_id": "node-000423",
       "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -15007,12 +14955,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "1."
       },
-      "canonical_path": "chapter:3/section:2/article:48/clause:1"
+      "canonical_path": "chapter:2/section:2/article:48/clause:1"
     },
     {
-      "id": "node-000427",
+      "id": "node-000425",
       "kind": "point",
-      "parent_id": "node-000426",
+      "parent_id": "node-000424",
       "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -15041,12 +14989,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "a)"
       },
-      "canonical_path": "chapter:3/section:2/article:48/clause:1/point:a"
+      "canonical_path": "chapter:2/section:2/article:48/clause:1/point:a"
     },
     {
-      "id": "node-000428",
+      "id": "node-000426",
       "kind": "point",
-      "parent_id": "node-000426",
+      "parent_id": "node-000424",
       "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -15075,12 +15023,12 @@
         "recognition_method": "contextual_point",
         "matched_text": "b)"
       },
-      "canonical_path": "chapter:3/section:2/article:48/clause:1/point:b"
+      "canonical_path": "chapter:2/section:2/article:48/clause:1/point:b"
     },
     {
-      "id": "node-000429",
+      "id": "node-000427",
       "kind": "clause",
-      "parent_id": "node-000425",
+      "parent_id": "node-000423",
       "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -15116,12 +15064,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "2."
       },
-      "canonical_path": "chapter:3/section:2/article:48/clause:2"
+      "canonical_path": "chapter:2/section:2/article:48/clause:2"
     },
     {
-      "id": "node-000430",
+      "id": "node-000428",
       "kind": "clause",
-      "parent_id": "node-000425",
+      "parent_id": "node-000423",
       "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -15157,12 +15105,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "3."
       },
-      "canonical_path": "chapter:3/section:2/article:48/clause:3"
+      "canonical_path": "chapter:2/section:2/article:48/clause:3"
     },
     {
-      "id": "node-000431",
+      "id": "node-000429",
       "kind": "clause",
-      "parent_id": "node-000425",
+      "parent_id": "node-000423",
       "depth": 4,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -15191,12 +15139,12 @@
         "recognition_method": "contextual_clause",
         "matched_text": "4."
       },
-      "canonical_path": "chapter:3/section:2/article:48/clause:4"
+      "canonical_path": "chapter:2/section:2/article:48/clause:4"
     },
     {
-      "id": "node-000432",
+      "id": "node-000430",
       "kind": "clause",
-      "parent_id": "node-000425",
+      "parent_id": "node-000423",
       "depth": 4,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -15225,10 +15173,10 @@
         "recognition_method": "contextual_clause",
         "matched_text": "5."
       },
-      "canonical_path": "chapter:3/section:2/article:48/clause:5"
+      "canonical_path": "chapter:2/section:2/article:48/clause:5"
     },
     {
-      "id": "node-000433",
+      "id": "node-000431",
       "kind": "chapter",
       "parent_id": "node-000000",
       "depth": 1,
@@ -15261,9 +15209,9 @@
       "canonical_path": "chapter:5"
     },
     {
-      "id": "node-000434",
+      "id": "node-000432",
       "kind": "article",
-      "parent_id": "node-000433",
+      "parent_id": "node-000431",
       "depth": 2,
       "ordinal_raw": "49",
       "ordinal_key": "49",
@@ -15294,9 +15242,9 @@
       "canonical_path": "chapter:5/article:49"
     },
     {
-      "id": "node-000435",
+      "id": "node-000433",
       "kind": "clause",
-      "parent_id": "node-000434",
+      "parent_id": "node-000432",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -15328,9 +15276,9 @@
       "canonical_path": "chapter:5/article:49/clause:1"
     },
     {
-      "id": "node-000436",
+      "id": "node-000434",
       "kind": "clause",
-      "parent_id": "node-000434",
+      "parent_id": "node-000432",
       "depth": 3,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -15369,9 +15317,9 @@
       "canonical_path": "chapter:5/article:49/clause:2"
     },
     {
-      "id": "node-000437",
+      "id": "node-000435",
       "kind": "point",
-      "parent_id": "node-000436",
+      "parent_id": "node-000434",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -15403,9 +15351,9 @@
       "canonical_path": "chapter:5/article:49/clause:2/point:a"
     },
     {
-      "id": "node-000438",
+      "id": "node-000436",
       "kind": "point",
-      "parent_id": "node-000436",
+      "parent_id": "node-000434",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -15437,9 +15385,9 @@
       "canonical_path": "chapter:5/article:49/clause:2/point:b"
     },
     {
-      "id": "node-000439",
+      "id": "node-000437",
       "kind": "point",
-      "parent_id": "node-000436",
+      "parent_id": "node-000434",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -15471,9 +15419,9 @@
       "canonical_path": "chapter:5/article:49/clause:2/point:c"
     },
     {
-      "id": "node-000440",
+      "id": "node-000438",
       "kind": "point",
-      "parent_id": "node-000436",
+      "parent_id": "node-000434",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -15505,9 +15453,9 @@
       "canonical_path": "chapter:5/article:49/clause:2/point:d"
     },
     {
-      "id": "node-000441",
+      "id": "node-000439",
       "kind": "clause",
-      "parent_id": "node-000434",
+      "parent_id": "node-000432",
       "depth": 3,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -15539,9 +15487,9 @@
       "canonical_path": "chapter:5/article:49/clause:4"
     },
     {
-      "id": "node-000442",
+      "id": "node-000440",
       "kind": "point",
-      "parent_id": "node-000441",
+      "parent_id": "node-000439",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -15573,9 +15521,9 @@
       "canonical_path": "chapter:5/article:49/clause:4/point:a"
     },
     {
-      "id": "node-000443",
+      "id": "node-000441",
       "kind": "point",
-      "parent_id": "node-000441",
+      "parent_id": "node-000439",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -15607,9 +15555,9 @@
       "canonical_path": "chapter:5/article:49/clause:4/point:b"
     },
     {
-      "id": "node-000444",
+      "id": "node-000442",
       "kind": "clause",
-      "parent_id": "node-000434",
+      "parent_id": "node-000432",
       "depth": 3,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -15641,9 +15589,9 @@
       "canonical_path": "chapter:5/article:49/clause:5"
     },
     {
-      "id": "node-000445",
+      "id": "node-000443",
       "kind": "clause",
-      "parent_id": "node-000434",
+      "parent_id": "node-000432",
       "depth": 3,
       "ordinal_raw": "6",
       "ordinal_key": "6",
@@ -15675,9 +15623,9 @@
       "canonical_path": "chapter:5/article:49/clause:6"
     },
     {
-      "id": "node-000446",
+      "id": "node-000444",
       "kind": "article",
-      "parent_id": "node-000433",
+      "parent_id": "node-000431",
       "depth": 2,
       "ordinal_raw": "50",
       "ordinal_key": "50",
@@ -15708,9 +15656,9 @@
       "canonical_path": "chapter:5/article:50"
     },
     {
-      "id": "node-000447",
+      "id": "node-000445",
       "kind": "clause",
-      "parent_id": "node-000446",
+      "parent_id": "node-000444",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -15742,9 +15690,9 @@
       "canonical_path": "chapter:5/article:50/clause:1"
     },
     {
-      "id": "node-000448",
+      "id": "node-000446",
       "kind": "clause",
-      "parent_id": "node-000446",
+      "parent_id": "node-000444",
       "depth": 3,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -15776,9 +15724,9 @@
       "canonical_path": "chapter:5/article:50/clause:2"
     },
     {
-      "id": "node-000449",
+      "id": "node-000447",
       "kind": "article",
-      "parent_id": "node-000433",
+      "parent_id": "node-000431",
       "depth": 2,
       "ordinal_raw": "51",
       "ordinal_key": "51",
@@ -15809,9 +15757,9 @@
       "canonical_path": "chapter:5/article:51"
     },
     {
-      "id": "node-000450",
+      "id": "node-000448",
       "kind": "clause",
-      "parent_id": "node-000449",
+      "parent_id": "node-000447",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -15843,9 +15791,9 @@
       "canonical_path": "chapter:5/article:51/clause:1"
     },
     {
-      "id": "node-000451",
+      "id": "node-000449",
       "kind": "clause",
-      "parent_id": "node-000449",
+      "parent_id": "node-000447",
       "depth": 3,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -15877,9 +15825,9 @@
       "canonical_path": "chapter:5/article:51/clause:2"
     },
     {
-      "id": "node-000452",
+      "id": "node-000450",
       "kind": "clause",
-      "parent_id": "node-000449",
+      "parent_id": "node-000447",
       "depth": 3,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -15911,9 +15859,9 @@
       "canonical_path": "chapter:5/article:51/clause:3"
     },
     {
-      "id": "node-000453",
+      "id": "node-000451",
       "kind": "clause",
-      "parent_id": "node-000449",
+      "parent_id": "node-000447",
       "depth": 3,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -15945,9 +15893,9 @@
       "canonical_path": "chapter:5/article:51/clause:4"
     },
     {
-      "id": "node-000454",
+      "id": "node-000452",
       "kind": "clause",
-      "parent_id": "node-000449",
+      "parent_id": "node-000447",
       "depth": 3,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -15979,9 +15927,9 @@
       "canonical_path": "chapter:5/article:51/clause:5"
     },
     {
-      "id": "node-000455",
+      "id": "node-000453",
       "kind": "article",
-      "parent_id": "node-000433",
+      "parent_id": "node-000431",
       "depth": 2,
       "ordinal_raw": "52",
       "ordinal_key": "52",
@@ -16012,9 +15960,9 @@
       "canonical_path": "chapter:5/article:52"
     },
     {
-      "id": "node-000456",
+      "id": "node-000454",
       "kind": "clause",
-      "parent_id": "node-000455",
+      "parent_id": "node-000453",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -16046,9 +15994,9 @@
       "canonical_path": "chapter:5/article:52/clause:1"
     },
     {
-      "id": "node-000457",
+      "id": "node-000455",
       "kind": "point",
-      "parent_id": "node-000456",
+      "parent_id": "node-000454",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -16080,9 +16028,9 @@
       "canonical_path": "chapter:5/article:52/clause:1/point:a"
     },
     {
-      "id": "node-000458",
+      "id": "node-000456",
       "kind": "point",
-      "parent_id": "node-000456",
+      "parent_id": "node-000454",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -16114,9 +16062,9 @@
       "canonical_path": "chapter:5/article:52/clause:1/point:b"
     },
     {
-      "id": "node-000459",
+      "id": "node-000457",
       "kind": "point",
-      "parent_id": "node-000456",
+      "parent_id": "node-000454",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -16148,9 +16096,9 @@
       "canonical_path": "chapter:5/article:52/clause:1/point:c"
     },
     {
-      "id": "node-000460",
+      "id": "node-000458",
       "kind": "point",
-      "parent_id": "node-000456",
+      "parent_id": "node-000454",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -16182,9 +16130,9 @@
       "canonical_path": "chapter:5/article:52/clause:1/point:d"
     },
     {
-      "id": "node-000461",
+      "id": "node-000459",
       "kind": "point",
-      "parent_id": "node-000456",
+      "parent_id": "node-000454",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -16216,9 +16164,9 @@
       "canonical_path": "chapter:5/article:52/clause:1/point:đ"
     },
     {
-      "id": "node-000462",
+      "id": "node-000460",
       "kind": "point",
-      "parent_id": "node-000456",
+      "parent_id": "node-000454",
       "depth": 4,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -16250,9 +16198,9 @@
       "canonical_path": "chapter:5/article:52/clause:1/point:e"
     },
     {
-      "id": "node-000463",
+      "id": "node-000461",
       "kind": "clause",
-      "parent_id": "node-000455",
+      "parent_id": "node-000453",
       "depth": 3,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -16284,9 +16232,9 @@
       "canonical_path": "chapter:5/article:52/clause:2"
     },
     {
-      "id": "node-000464",
+      "id": "node-000462",
       "kind": "article",
-      "parent_id": "node-000433",
+      "parent_id": "node-000431",
       "depth": 2,
       "ordinal_raw": "53",
       "ordinal_key": "53",
@@ -16317,9 +16265,9 @@
       "canonical_path": "chapter:5/article:53"
     },
     {
-      "id": "node-000465",
+      "id": "node-000463",
       "kind": "clause",
-      "parent_id": "node-000464",
+      "parent_id": "node-000462",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -16351,9 +16299,9 @@
       "canonical_path": "chapter:5/article:53/clause:1"
     },
     {
-      "id": "node-000466",
+      "id": "node-000464",
       "kind": "point",
-      "parent_id": "node-000465",
+      "parent_id": "node-000463",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -16385,9 +16333,9 @@
       "canonical_path": "chapter:5/article:53/clause:1/point:a"
     },
     {
-      "id": "node-000467",
+      "id": "node-000465",
       "kind": "point",
-      "parent_id": "node-000465",
+      "parent_id": "node-000463",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -16419,9 +16367,9 @@
       "canonical_path": "chapter:5/article:53/clause:1/point:b"
     },
     {
-      "id": "node-000468",
+      "id": "node-000466",
       "kind": "point",
-      "parent_id": "node-000465",
+      "parent_id": "node-000463",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -16453,9 +16401,9 @@
       "canonical_path": "chapter:5/article:53/clause:1/point:c"
     },
     {
-      "id": "node-000469",
+      "id": "node-000467",
       "kind": "point",
-      "parent_id": "node-000465",
+      "parent_id": "node-000463",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -16487,9 +16435,9 @@
       "canonical_path": "chapter:5/article:53/clause:1/point:d"
     },
     {
-      "id": "node-000470",
+      "id": "node-000468",
       "kind": "clause",
-      "parent_id": "node-000464",
+      "parent_id": "node-000462",
       "depth": 3,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -16521,9 +16469,9 @@
       "canonical_path": "chapter:5/article:53/clause:2"
     },
     {
-      "id": "node-000471",
+      "id": "node-000469",
       "kind": "point",
-      "parent_id": "node-000470",
+      "parent_id": "node-000468",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -16555,9 +16503,9 @@
       "canonical_path": "chapter:5/article:53/clause:2/point:a"
     },
     {
-      "id": "node-000472",
+      "id": "node-000470",
       "kind": "point",
-      "parent_id": "node-000470",
+      "parent_id": "node-000468",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -16589,9 +16537,9 @@
       "canonical_path": "chapter:5/article:53/clause:2/point:b"
     },
     {
-      "id": "node-000473",
+      "id": "node-000471",
       "kind": "point",
-      "parent_id": "node-000470",
+      "parent_id": "node-000468",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -16623,9 +16571,9 @@
       "canonical_path": "chapter:5/article:53/clause:2/point:c"
     },
     {
-      "id": "node-000474",
+      "id": "node-000472",
       "kind": "point",
-      "parent_id": "node-000470",
+      "parent_id": "node-000468",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -16657,9 +16605,9 @@
       "canonical_path": "chapter:5/article:53/clause:2/point:d"
     },
     {
-      "id": "node-000475",
+      "id": "node-000473",
       "kind": "point",
-      "parent_id": "node-000470",
+      "parent_id": "node-000468",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -16691,9 +16639,9 @@
       "canonical_path": "chapter:5/article:53/clause:2/point:đ"
     },
     {
-      "id": "node-000476",
+      "id": "node-000474",
       "kind": "point",
-      "parent_id": "node-000470",
+      "parent_id": "node-000468",
       "depth": 4,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -16725,9 +16673,9 @@
       "canonical_path": "chapter:5/article:53/clause:2/point:e"
     },
     {
-      "id": "node-000477",
+      "id": "node-000475",
       "kind": "clause",
-      "parent_id": "node-000464",
+      "parent_id": "node-000462",
       "depth": 3,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -16759,9 +16707,9 @@
       "canonical_path": "chapter:5/article:53/clause:3"
     },
     {
-      "id": "node-000478",
+      "id": "node-000476",
       "kind": "article",
-      "parent_id": "node-000433",
+      "parent_id": "node-000431",
       "depth": 2,
       "ordinal_raw": "54",
       "ordinal_key": "54",
@@ -16792,9 +16740,9 @@
       "canonical_path": "chapter:5/article:54"
     },
     {
-      "id": "node-000479",
+      "id": "node-000477",
       "kind": "clause",
-      "parent_id": "node-000478",
+      "parent_id": "node-000476",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -16826,9 +16774,9 @@
       "canonical_path": "chapter:5/article:54/clause:1"
     },
     {
-      "id": "node-000480",
+      "id": "node-000478",
       "kind": "point",
-      "parent_id": "node-000479",
+      "parent_id": "node-000477",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -16860,9 +16808,9 @@
       "canonical_path": "chapter:5/article:54/clause:1/point:a"
     },
     {
-      "id": "node-000481",
+      "id": "node-000479",
       "kind": "point",
-      "parent_id": "node-000479",
+      "parent_id": "node-000477",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -16894,9 +16842,9 @@
       "canonical_path": "chapter:5/article:54/clause:1/point:b"
     },
     {
-      "id": "node-000482",
+      "id": "node-000480",
       "kind": "point",
-      "parent_id": "node-000479",
+      "parent_id": "node-000477",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -16928,9 +16876,9 @@
       "canonical_path": "chapter:5/article:54/clause:1/point:c"
     },
     {
-      "id": "node-000483",
+      "id": "node-000481",
       "kind": "point",
-      "parent_id": "node-000479",
+      "parent_id": "node-000477",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -16962,9 +16910,9 @@
       "canonical_path": "chapter:5/article:54/clause:1/point:d"
     },
     {
-      "id": "node-000484",
+      "id": "node-000482",
       "kind": "point",
-      "parent_id": "node-000479",
+      "parent_id": "node-000477",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -16996,9 +16944,9 @@
       "canonical_path": "chapter:5/article:54/clause:1/point:đ"
     },
     {
-      "id": "node-000485",
+      "id": "node-000483",
       "kind": "point",
-      "parent_id": "node-000479",
+      "parent_id": "node-000477",
       "depth": 4,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -17030,9 +16978,9 @@
       "canonical_path": "chapter:5/article:54/clause:1/point:e"
     },
     {
-      "id": "node-000486",
+      "id": "node-000484",
       "kind": "clause",
-      "parent_id": "node-000478",
+      "parent_id": "node-000476",
       "depth": 3,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -17064,9 +17012,9 @@
       "canonical_path": "chapter:5/article:54/clause:2"
     },
     {
-      "id": "node-000487",
+      "id": "node-000485",
       "kind": "clause",
-      "parent_id": "node-000478",
+      "parent_id": "node-000476",
       "depth": 3,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -17098,9 +17046,9 @@
       "canonical_path": "chapter:5/article:54/clause:3"
     },
     {
-      "id": "node-000488",
+      "id": "node-000486",
       "kind": "point",
-      "parent_id": "node-000487",
+      "parent_id": "node-000485",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -17132,9 +17080,9 @@
       "canonical_path": "chapter:5/article:54/clause:3/point:a"
     },
     {
-      "id": "node-000489",
+      "id": "node-000487",
       "kind": "point",
-      "parent_id": "node-000487",
+      "parent_id": "node-000485",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -17166,9 +17114,9 @@
       "canonical_path": "chapter:5/article:54/clause:3/point:b"
     },
     {
-      "id": "node-000490",
+      "id": "node-000488",
       "kind": "point",
-      "parent_id": "node-000487",
+      "parent_id": "node-000485",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -17200,9 +17148,9 @@
       "canonical_path": "chapter:5/article:54/clause:3/point:c"
     },
     {
-      "id": "node-000491",
+      "id": "node-000489",
       "kind": "point",
-      "parent_id": "node-000487",
+      "parent_id": "node-000485",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -17234,9 +17182,9 @@
       "canonical_path": "chapter:5/article:54/clause:3/point:d"
     },
     {
-      "id": "node-000492",
+      "id": "node-000490",
       "kind": "clause",
-      "parent_id": "node-000478",
+      "parent_id": "node-000476",
       "depth": 3,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -17268,9 +17216,9 @@
       "canonical_path": "chapter:5/article:54/clause:4"
     },
     {
-      "id": "node-000493",
+      "id": "node-000491",
       "kind": "clause",
-      "parent_id": "node-000478",
+      "parent_id": "node-000476",
       "depth": 3,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -17302,7 +17250,7 @@
       "canonical_path": "chapter:5/article:54/clause:5"
     },
     {
-      "id": "node-000494",
+      "id": "node-000492",
       "kind": "chapter",
       "parent_id": "node-000000",
       "depth": 1,
@@ -17335,9 +17283,9 @@
       "canonical_path": "chapter:6"
     },
     {
-      "id": "node-000495",
+      "id": "node-000493",
       "kind": "article",
-      "parent_id": "node-000494",
+      "parent_id": "node-000492",
       "depth": 2,
       "ordinal_raw": "55",
       "ordinal_key": "55",
@@ -17368,9 +17316,9 @@
       "canonical_path": "chapter:6/article:55"
     },
     {
-      "id": "node-000496",
+      "id": "node-000494",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -17402,9 +17350,9 @@
       "canonical_path": "chapter:6/article:55/clause:1"
     },
     {
-      "id": "node-000497",
+      "id": "node-000495",
       "kind": "point",
-      "parent_id": "node-000496",
+      "parent_id": "node-000494",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -17436,9 +17384,9 @@
       "canonical_path": "chapter:6/article:55/clause:1/point:a"
     },
     {
-      "id": "node-000498",
+      "id": "node-000496",
       "kind": "point",
-      "parent_id": "node-000496",
+      "parent_id": "node-000494",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -17470,9 +17418,9 @@
       "canonical_path": "chapter:6/article:55/clause:1/point:b"
     },
     {
-      "id": "node-000499",
+      "id": "node-000497",
       "kind": "point",
-      "parent_id": "node-000496",
+      "parent_id": "node-000494",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -17504,9 +17452,9 @@
       "canonical_path": "chapter:6/article:55/clause:1/point:c"
     },
     {
-      "id": "node-000500",
+      "id": "node-000498",
       "kind": "point",
-      "parent_id": "node-000496",
+      "parent_id": "node-000494",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -17538,9 +17486,9 @@
       "canonical_path": "chapter:6/article:55/clause:1/point:d"
     },
     {
-      "id": "node-000501",
+      "id": "node-000499",
       "kind": "point",
-      "parent_id": "node-000496",
+      "parent_id": "node-000494",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -17572,9 +17520,9 @@
       "canonical_path": "chapter:6/article:55/clause:1/point:đ"
     },
     {
-      "id": "node-000502",
+      "id": "node-000500",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -17606,9 +17554,9 @@
       "canonical_path": "chapter:6/article:55/clause:2"
     },
     {
-      "id": "node-000503",
+      "id": "node-000501",
       "kind": "point",
-      "parent_id": "node-000502",
+      "parent_id": "node-000500",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -17640,9 +17588,9 @@
       "canonical_path": "chapter:6/article:55/clause:2/point:a"
     },
     {
-      "id": "node-000504",
+      "id": "node-000502",
       "kind": "point",
-      "parent_id": "node-000502",
+      "parent_id": "node-000500",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -17681,9 +17629,9 @@
       "canonical_path": "chapter:6/article:55/clause:2/point:b"
     },
     {
-      "id": "node-000505",
+      "id": "node-000503",
       "kind": "point",
-      "parent_id": "node-000502",
+      "parent_id": "node-000500",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -17715,9 +17663,9 @@
       "canonical_path": "chapter:6/article:55/clause:2/point:c"
     },
     {
-      "id": "node-000506",
+      "id": "node-000504",
       "kind": "point",
-      "parent_id": "node-000502",
+      "parent_id": "node-000500",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -17756,9 +17704,9 @@
       "canonical_path": "chapter:6/article:55/clause:2/point:d"
     },
     {
-      "id": "node-000507",
+      "id": "node-000505",
       "kind": "point",
-      "parent_id": "node-000502",
+      "parent_id": "node-000500",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -17790,9 +17738,9 @@
       "canonical_path": "chapter:6/article:55/clause:2/point:đ"
     },
     {
-      "id": "node-000508",
+      "id": "node-000506",
       "kind": "point",
-      "parent_id": "node-000502",
+      "parent_id": "node-000500",
       "depth": 4,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -17852,9 +17800,9 @@
       "canonical_path": "chapter:6/article:55/clause:2/point:e"
     },
     {
-      "id": "node-000509",
+      "id": "node-000507",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -17886,9 +17834,9 @@
       "canonical_path": "chapter:6/article:55/clause:3"
     },
     {
-      "id": "node-000510",
+      "id": "node-000508",
       "kind": "point",
-      "parent_id": "node-000509",
+      "parent_id": "node-000507",
       "depth": 4,
       "ordinal_raw": "g",
       "ordinal_key": "g",
@@ -17920,9 +17868,9 @@
       "canonical_path": "chapter:6/article:55/clause:3/point:g"
     },
     {
-      "id": "node-000511",
+      "id": "node-000509",
       "kind": "point",
-      "parent_id": "node-000509",
+      "parent_id": "node-000507",
       "depth": 4,
       "ordinal_raw": "h",
       "ordinal_key": "h",
@@ -17961,9 +17909,9 @@
       "canonical_path": "chapter:6/article:55/clause:3/point:h"
     },
     {
-      "id": "node-000512",
+      "id": "node-000510",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -17995,9 +17943,9 @@
       "canonical_path": "chapter:6/article:55/clause:4"
     },
     {
-      "id": "node-000513",
+      "id": "node-000511",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -18029,9 +17977,9 @@
       "canonical_path": "chapter:6/article:55/clause:5"
     },
     {
-      "id": "node-000514",
+      "id": "node-000512",
       "kind": "point",
-      "parent_id": "node-000513",
+      "parent_id": "node-000511",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -18063,9 +18011,9 @@
       "canonical_path": "chapter:6/article:55/clause:5/point:a"
     },
     {
-      "id": "node-000515",
+      "id": "node-000513",
       "kind": "point",
-      "parent_id": "node-000513",
+      "parent_id": "node-000511",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -18097,9 +18045,9 @@
       "canonical_path": "chapter:6/article:55/clause:5/point:b"
     },
     {
-      "id": "node-000516",
+      "id": "node-000514",
       "kind": "point",
-      "parent_id": "node-000513",
+      "parent_id": "node-000511",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -18131,9 +18079,9 @@
       "canonical_path": "chapter:6/article:55/clause:5/point:c"
     },
     {
-      "id": "node-000517",
+      "id": "node-000515",
       "kind": "point",
-      "parent_id": "node-000513",
+      "parent_id": "node-000511",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -18193,9 +18141,9 @@
       "canonical_path": "chapter:6/article:55/clause:5/point:d"
     },
     {
-      "id": "node-000518",
+      "id": "node-000516",
       "kind": "point",
-      "parent_id": "node-000513",
+      "parent_id": "node-000511",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -18227,9 +18175,9 @@
       "canonical_path": "chapter:6/article:55/clause:5/point:đ"
     },
     {
-      "id": "node-000519",
+      "id": "node-000517",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "6",
       "ordinal_key": "6",
@@ -18261,9 +18209,9 @@
       "canonical_path": "chapter:6/article:55/clause:6"
     },
     {
-      "id": "node-000520",
+      "id": "node-000518",
       "kind": "point",
-      "parent_id": "node-000519",
+      "parent_id": "node-000517",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -18302,9 +18250,9 @@
       "canonical_path": "chapter:6/article:55/clause:6/point:a"
     },
     {
-      "id": "node-000521",
+      "id": "node-000519",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "7",
       "ordinal_key": "7",
@@ -18336,9 +18284,9 @@
       "canonical_path": "chapter:6/article:55/clause:7"
     },
     {
-      "id": "node-000522",
+      "id": "node-000520",
       "kind": "point",
-      "parent_id": "node-000521",
+      "parent_id": "node-000519",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -18370,9 +18318,9 @@
       "canonical_path": "chapter:6/article:55/clause:7/point:a"
     },
     {
-      "id": "node-000523",
+      "id": "node-000521",
       "kind": "point",
-      "parent_id": "node-000521",
+      "parent_id": "node-000519",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -18404,9 +18352,9 @@
       "canonical_path": "chapter:6/article:55/clause:7/point:b"
     },
     {
-      "id": "node-000524",
+      "id": "node-000522",
       "kind": "point",
-      "parent_id": "node-000521",
+      "parent_id": "node-000519",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -18438,9 +18386,9 @@
       "canonical_path": "chapter:6/article:55/clause:7/point:c"
     },
     {
-      "id": "node-000525",
+      "id": "node-000523",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "8",
       "ordinal_key": "8",
@@ -18472,9 +18420,9 @@
       "canonical_path": "chapter:6/article:55/clause:8"
     },
     {
-      "id": "node-000526",
+      "id": "node-000524",
       "kind": "point",
-      "parent_id": "node-000525",
+      "parent_id": "node-000523",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -18513,9 +18461,9 @@
       "canonical_path": "chapter:6/article:55/clause:8/point:a"
     },
     {
-      "id": "node-000527",
+      "id": "node-000525",
       "kind": "point",
-      "parent_id": "node-000525",
+      "parent_id": "node-000523",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -18547,9 +18495,9 @@
       "canonical_path": "chapter:6/article:55/clause:8/point:b"
     },
     {
-      "id": "node-000528",
+      "id": "node-000526",
       "kind": "point",
-      "parent_id": "node-000525",
+      "parent_id": "node-000523",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -18588,9 +18536,9 @@
       "canonical_path": "chapter:6/article:55/clause:8/point:c"
     },
     {
-      "id": "node-000529",
+      "id": "node-000527",
       "kind": "point",
-      "parent_id": "node-000525",
+      "parent_id": "node-000523",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -18622,9 +18570,9 @@
       "canonical_path": "chapter:6/article:55/clause:8/point:d"
     },
     {
-      "id": "node-000530",
+      "id": "node-000528",
       "kind": "point",
-      "parent_id": "node-000525",
+      "parent_id": "node-000523",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -18656,9 +18604,9 @@
       "canonical_path": "chapter:6/article:55/clause:8/point:đ"
     },
     {
-      "id": "node-000531",
+      "id": "node-000529",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "9",
       "ordinal_key": "9",
@@ -18690,9 +18638,9 @@
       "canonical_path": "chapter:6/article:55/clause:9"
     },
     {
-      "id": "node-000532",
+      "id": "node-000530",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "10",
       "ordinal_key": "10",
@@ -18724,9 +18672,9 @@
       "canonical_path": "chapter:6/article:55/clause:10"
     },
     {
-      "id": "node-000533",
+      "id": "node-000531",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "11",
       "ordinal_key": "11",
@@ -18758,9 +18706,9 @@
       "canonical_path": "chapter:6/article:55/clause:11"
     },
     {
-      "id": "node-000534",
+      "id": "node-000532",
       "kind": "point",
-      "parent_id": "node-000533",
+      "parent_id": "node-000531",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -18792,9 +18740,9 @@
       "canonical_path": "chapter:6/article:55/clause:11/point:a"
     },
     {
-      "id": "node-000535",
+      "id": "node-000533",
       "kind": "point",
-      "parent_id": "node-000533",
+      "parent_id": "node-000531",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -18826,9 +18774,9 @@
       "canonical_path": "chapter:6/article:55/clause:11/point:b"
     },
     {
-      "id": "node-000536",
+      "id": "node-000534",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "12",
       "ordinal_key": "12",
@@ -18860,9 +18808,9 @@
       "canonical_path": "chapter:6/article:55/clause:12"
     },
     {
-      "id": "node-000537",
+      "id": "node-000535",
       "kind": "point",
-      "parent_id": "node-000536",
+      "parent_id": "node-000534",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -18894,9 +18842,9 @@
       "canonical_path": "chapter:6/article:55/clause:12/point:a"
     },
     {
-      "id": "node-000538",
+      "id": "node-000536",
       "kind": "point",
-      "parent_id": "node-000536",
+      "parent_id": "node-000534",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -18935,9 +18883,9 @@
       "canonical_path": "chapter:6/article:55/clause:12/point:b"
     },
     {
-      "id": "node-000539",
+      "id": "node-000537",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "13",
       "ordinal_key": "13",
@@ -18969,9 +18917,9 @@
       "canonical_path": "chapter:6/article:55/clause:13"
     },
     {
-      "id": "node-000540",
+      "id": "node-000538",
       "kind": "clause",
-      "parent_id": "node-000495",
+      "parent_id": "node-000493",
       "depth": 3,
       "ordinal_raw": "14",
       "ordinal_key": "14",
@@ -19003,9 +18951,9 @@
       "canonical_path": "chapter:6/article:55/clause:14"
     },
     {
-      "id": "node-000541",
+      "id": "node-000539",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -19037,9 +18985,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:a"
     },
     {
-      "id": "node-000542",
+      "id": "node-000540",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -19078,9 +19026,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:b"
     },
     {
-      "id": "node-000543",
+      "id": "node-000541",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -19126,9 +19074,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:c"
     },
     {
-      "id": "node-000544",
+      "id": "node-000542",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -19160,9 +19108,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:d"
     },
     {
-      "id": "node-000545",
+      "id": "node-000543",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -19215,9 +19163,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:đ"
     },
     {
-      "id": "node-000546",
+      "id": "node-000544",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "g",
       "ordinal_key": "g",
@@ -19249,9 +19197,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:g"
     },
     {
-      "id": "node-000547",
+      "id": "node-000545",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "h",
       "ordinal_key": "h",
@@ -19290,9 +19238,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:h"
     },
     {
-      "id": "node-000548",
+      "id": "node-000546",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "i",
       "ordinal_key": "i",
@@ -19324,9 +19272,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:i"
     },
     {
-      "id": "node-000549",
+      "id": "node-000547",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "k",
       "ordinal_key": "k",
@@ -19358,9 +19306,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:k"
     },
     {
-      "id": "node-000550",
+      "id": "node-000548",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "l",
       "ordinal_key": "l",
@@ -19392,9 +19340,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:l"
     },
     {
-      "id": "node-000551",
+      "id": "node-000549",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "m",
       "ordinal_key": "m",
@@ -19426,9 +19374,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:m"
     },
     {
-      "id": "node-000552",
+      "id": "node-000550",
       "kind": "point",
-      "parent_id": "node-000540",
+      "parent_id": "node-000538",
       "depth": 4,
       "ordinal_raw": "n",
       "ordinal_key": "n",
@@ -19467,9 +19415,9 @@
       "canonical_path": "chapter:6/article:55/clause:14/point:n"
     },
     {
-      "id": "node-000553",
+      "id": "node-000551",
       "kind": "article",
-      "parent_id": "node-000494",
+      "parent_id": "node-000492",
       "depth": 2,
       "ordinal_raw": "56",
       "ordinal_key": "56",
@@ -19500,9 +19448,9 @@
       "canonical_path": "chapter:6/article:56"
     },
     {
-      "id": "node-000554",
+      "id": "node-000552",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -19534,9 +19482,9 @@
       "canonical_path": "chapter:6/article:56/clause:1"
     },
     {
-      "id": "node-000555",
+      "id": "node-000553",
       "kind": "point",
-      "parent_id": "node-000554",
+      "parent_id": "node-000552",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -19568,9 +19516,9 @@
       "canonical_path": "chapter:6/article:56/clause:1/point:a"
     },
     {
-      "id": "node-000556",
+      "id": "node-000554",
       "kind": "point",
-      "parent_id": "node-000554",
+      "parent_id": "node-000552",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -19602,9 +19550,9 @@
       "canonical_path": "chapter:6/article:56/clause:1/point:b"
     },
     {
-      "id": "node-000557",
+      "id": "node-000555",
       "kind": "point",
-      "parent_id": "node-000554",
+      "parent_id": "node-000552",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -19636,9 +19584,9 @@
       "canonical_path": "chapter:6/article:56/clause:1/point:c"
     },
     {
-      "id": "node-000558",
+      "id": "node-000556",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -19670,9 +19618,9 @@
       "canonical_path": "chapter:6/article:56/clause:2"
     },
     {
-      "id": "node-000559",
+      "id": "node-000557",
       "kind": "point",
-      "parent_id": "node-000558",
+      "parent_id": "node-000556",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -19704,9 +19652,9 @@
       "canonical_path": "chapter:6/article:56/clause:2/point:a"
     },
     {
-      "id": "node-000560",
+      "id": "node-000558",
       "kind": "point",
-      "parent_id": "node-000558",
+      "parent_id": "node-000556",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -19745,9 +19693,9 @@
       "canonical_path": "chapter:6/article:56/clause:2/point:b"
     },
     {
-      "id": "node-000561",
+      "id": "node-000559",
       "kind": "point",
-      "parent_id": "node-000558",
+      "parent_id": "node-000556",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -19779,9 +19727,9 @@
       "canonical_path": "chapter:6/article:56/clause:2/point:c"
     },
     {
-      "id": "node-000562",
+      "id": "node-000560",
       "kind": "point",
-      "parent_id": "node-000558",
+      "parent_id": "node-000556",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -19813,9 +19761,9 @@
       "canonical_path": "chapter:6/article:56/clause:2/point:d"
     },
     {
-      "id": "node-000563",
+      "id": "node-000561",
       "kind": "point",
-      "parent_id": "node-000558",
+      "parent_id": "node-000556",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -19847,9 +19795,9 @@
       "canonical_path": "chapter:6/article:56/clause:2/point:đ"
     },
     {
-      "id": "node-000564",
+      "id": "node-000562",
       "kind": "point",
-      "parent_id": "node-000558",
+      "parent_id": "node-000556",
       "depth": 4,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -19881,9 +19829,9 @@
       "canonical_path": "chapter:6/article:56/clause:2/point:e"
     },
     {
-      "id": "node-000565",
+      "id": "node-000563",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -19915,9 +19863,9 @@
       "canonical_path": "chapter:6/article:56/clause:3"
     },
     {
-      "id": "node-000566",
+      "id": "node-000564",
       "kind": "point",
-      "parent_id": "node-000565",
+      "parent_id": "node-000563",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -19949,9 +19897,9 @@
       "canonical_path": "chapter:6/article:56/clause:3/point:a"
     },
     {
-      "id": "node-000567",
+      "id": "node-000565",
       "kind": "point",
-      "parent_id": "node-000565",
+      "parent_id": "node-000563",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -19983,9 +19931,9 @@
       "canonical_path": "chapter:6/article:56/clause:3/point:b"
     },
     {
-      "id": "node-000568",
+      "id": "node-000566",
       "kind": "point",
-      "parent_id": "node-000565",
+      "parent_id": "node-000563",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -20017,9 +19965,9 @@
       "canonical_path": "chapter:6/article:56/clause:3/point:c"
     },
     {
-      "id": "node-000569",
+      "id": "node-000567",
       "kind": "point",
-      "parent_id": "node-000565",
+      "parent_id": "node-000563",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -20051,9 +19999,9 @@
       "canonical_path": "chapter:6/article:56/clause:3/point:d"
     },
     {
-      "id": "node-000570",
+      "id": "node-000568",
       "kind": "point",
-      "parent_id": "node-000565",
+      "parent_id": "node-000563",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -20085,9 +20033,9 @@
       "canonical_path": "chapter:6/article:56/clause:3/point:đ"
     },
     {
-      "id": "node-000571",
+      "id": "node-000569",
       "kind": "point",
-      "parent_id": "node-000565",
+      "parent_id": "node-000563",
       "depth": 4,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -20119,9 +20067,9 @@
       "canonical_path": "chapter:6/article:56/clause:3/point:e"
     },
     {
-      "id": "node-000572",
+      "id": "node-000570",
       "kind": "point",
-      "parent_id": "node-000565",
+      "parent_id": "node-000563",
       "depth": 4,
       "ordinal_raw": "g",
       "ordinal_key": "g",
@@ -20153,9 +20101,9 @@
       "canonical_path": "chapter:6/article:56/clause:3/point:g"
     },
     {
-      "id": "node-000573",
+      "id": "node-000571",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -20187,9 +20135,9 @@
       "canonical_path": "chapter:6/article:56/clause:4"
     },
     {
-      "id": "node-000574",
+      "id": "node-000572",
       "kind": "point",
-      "parent_id": "node-000573",
+      "parent_id": "node-000571",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -20221,9 +20169,9 @@
       "canonical_path": "chapter:6/article:56/clause:4/point:a"
     },
     {
-      "id": "node-000575",
+      "id": "node-000573",
       "kind": "point",
-      "parent_id": "node-000573",
+      "parent_id": "node-000571",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -20255,9 +20203,9 @@
       "canonical_path": "chapter:6/article:56/clause:4/point:b"
     },
     {
-      "id": "node-000576",
+      "id": "node-000574",
       "kind": "point",
-      "parent_id": "node-000573",
+      "parent_id": "node-000571",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -20289,9 +20237,9 @@
       "canonical_path": "chapter:6/article:56/clause:4/point:c"
     },
     {
-      "id": "node-000577",
+      "id": "node-000575",
       "kind": "point",
-      "parent_id": "node-000573",
+      "parent_id": "node-000571",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -20323,9 +20271,9 @@
       "canonical_path": "chapter:6/article:56/clause:4/point:d"
     },
     {
-      "id": "node-000578",
+      "id": "node-000576",
       "kind": "point",
-      "parent_id": "node-000573",
+      "parent_id": "node-000571",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -20357,9 +20305,9 @@
       "canonical_path": "chapter:6/article:56/clause:4/point:đ"
     },
     {
-      "id": "node-000579",
+      "id": "node-000577",
       "kind": "point",
-      "parent_id": "node-000573",
+      "parent_id": "node-000571",
       "depth": 4,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -20391,9 +20339,9 @@
       "canonical_path": "chapter:6/article:56/clause:4/point:e"
     },
     {
-      "id": "node-000580",
+      "id": "node-000578",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -20425,9 +20373,9 @@
       "canonical_path": "chapter:6/article:56/clause:5"
     },
     {
-      "id": "node-000581",
+      "id": "node-000579",
       "kind": "point",
-      "parent_id": "node-000580",
+      "parent_id": "node-000578",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -20459,9 +20407,9 @@
       "canonical_path": "chapter:6/article:56/clause:5/point:a"
     },
     {
-      "id": "node-000582",
+      "id": "node-000580",
       "kind": "point",
-      "parent_id": "node-000580",
+      "parent_id": "node-000578",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -20493,9 +20441,9 @@
       "canonical_path": "chapter:6/article:56/clause:5/point:b"
     },
     {
-      "id": "node-000583",
+      "id": "node-000581",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "6",
       "ordinal_key": "6",
@@ -20527,9 +20475,9 @@
       "canonical_path": "chapter:6/article:56/clause:6"
     },
     {
-      "id": "node-000584",
+      "id": "node-000582",
       "kind": "point",
-      "parent_id": "node-000583",
+      "parent_id": "node-000581",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -20568,9 +20516,9 @@
       "canonical_path": "chapter:6/article:56/clause:6/point:a"
     },
     {
-      "id": "node-000585",
+      "id": "node-000583",
       "kind": "point",
-      "parent_id": "node-000583",
+      "parent_id": "node-000581",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -20616,9 +20564,9 @@
       "canonical_path": "chapter:6/article:56/clause:6/point:b"
     },
     {
-      "id": "node-000586",
+      "id": "node-000584",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "7",
       "ordinal_key": "7",
@@ -20650,9 +20598,9 @@
       "canonical_path": "chapter:6/article:56/clause:7"
     },
     {
-      "id": "node-000587",
+      "id": "node-000585",
       "kind": "point",
-      "parent_id": "node-000586",
+      "parent_id": "node-000584",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -20684,9 +20632,9 @@
       "canonical_path": "chapter:6/article:56/clause:7/point:a"
     },
     {
-      "id": "node-000588",
+      "id": "node-000586",
       "kind": "point",
-      "parent_id": "node-000586",
+      "parent_id": "node-000584",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -20718,9 +20666,9 @@
       "canonical_path": "chapter:6/article:56/clause:7/point:b"
     },
     {
-      "id": "node-000589",
+      "id": "node-000587",
       "kind": "point",
-      "parent_id": "node-000586",
+      "parent_id": "node-000584",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -20752,9 +20700,9 @@
       "canonical_path": "chapter:6/article:56/clause:7/point:c"
     },
     {
-      "id": "node-000590",
+      "id": "node-000588",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "8",
       "ordinal_key": "8",
@@ -20786,9 +20734,9 @@
       "canonical_path": "chapter:6/article:56/clause:8"
     },
     {
-      "id": "node-000591",
+      "id": "node-000589",
       "kind": "point",
-      "parent_id": "node-000590",
+      "parent_id": "node-000588",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -20820,9 +20768,9 @@
       "canonical_path": "chapter:6/article:56/clause:8/point:a"
     },
     {
-      "id": "node-000592",
+      "id": "node-000590",
       "kind": "point",
-      "parent_id": "node-000590",
+      "parent_id": "node-000588",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -20854,9 +20802,9 @@
       "canonical_path": "chapter:6/article:56/clause:8/point:b"
     },
     {
-      "id": "node-000593",
+      "id": "node-000591",
       "kind": "point",
-      "parent_id": "node-000590",
+      "parent_id": "node-000588",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -20888,9 +20836,9 @@
       "canonical_path": "chapter:6/article:56/clause:8/point:c"
     },
     {
-      "id": "node-000594",
+      "id": "node-000592",
       "kind": "point",
-      "parent_id": "node-000590",
+      "parent_id": "node-000588",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -20929,9 +20877,9 @@
       "canonical_path": "chapter:6/article:56/clause:8/point:d"
     },
     {
-      "id": "node-000595",
+      "id": "node-000593",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "9",
       "ordinal_key": "9",
@@ -20963,9 +20911,9 @@
       "canonical_path": "chapter:6/article:56/clause:9"
     },
     {
-      "id": "node-000596",
+      "id": "node-000594",
       "kind": "point",
-      "parent_id": "node-000595",
+      "parent_id": "node-000593",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -20997,9 +20945,9 @@
       "canonical_path": "chapter:6/article:56/clause:9/point:a"
     },
     {
-      "id": "node-000597",
+      "id": "node-000595",
       "kind": "point",
-      "parent_id": "node-000595",
+      "parent_id": "node-000593",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -21031,9 +20979,9 @@
       "canonical_path": "chapter:6/article:56/clause:9/point:b"
     },
     {
-      "id": "node-000598",
+      "id": "node-000596",
       "kind": "point",
-      "parent_id": "node-000595",
+      "parent_id": "node-000593",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -21065,9 +21013,9 @@
       "canonical_path": "chapter:6/article:56/clause:9/point:c"
     },
     {
-      "id": "node-000599",
+      "id": "node-000597",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "10",
       "ordinal_key": "10",
@@ -21099,9 +21047,9 @@
       "canonical_path": "chapter:6/article:56/clause:10"
     },
     {
-      "id": "node-000600",
+      "id": "node-000598",
       "kind": "point",
-      "parent_id": "node-000599",
+      "parent_id": "node-000597",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -21133,9 +21081,9 @@
       "canonical_path": "chapter:6/article:56/clause:10/point:a"
     },
     {
-      "id": "node-000601",
+      "id": "node-000599",
       "kind": "point",
-      "parent_id": "node-000599",
+      "parent_id": "node-000597",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -21167,9 +21115,9 @@
       "canonical_path": "chapter:6/article:56/clause:10/point:b"
     },
     {
-      "id": "node-000602",
+      "id": "node-000600",
       "kind": "point",
-      "parent_id": "node-000599",
+      "parent_id": "node-000597",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -21201,9 +21149,9 @@
       "canonical_path": "chapter:6/article:56/clause:10/point:c"
     },
     {
-      "id": "node-000603",
+      "id": "node-000601",
       "kind": "point",
-      "parent_id": "node-000599",
+      "parent_id": "node-000597",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -21235,9 +21183,9 @@
       "canonical_path": "chapter:6/article:56/clause:10/point:d"
     },
     {
-      "id": "node-000604",
+      "id": "node-000602",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "11",
       "ordinal_key": "11",
@@ -21269,9 +21217,9 @@
       "canonical_path": "chapter:6/article:56/clause:11"
     },
     {
-      "id": "node-000605",
+      "id": "node-000603",
       "kind": "point",
-      "parent_id": "node-000604",
+      "parent_id": "node-000602",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -21303,9 +21251,9 @@
       "canonical_path": "chapter:6/article:56/clause:11/point:a"
     },
     {
-      "id": "node-000606",
+      "id": "node-000604",
       "kind": "point",
-      "parent_id": "node-000604",
+      "parent_id": "node-000602",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -21337,9 +21285,9 @@
       "canonical_path": "chapter:6/article:56/clause:11/point:b"
     },
     {
-      "id": "node-000607",
+      "id": "node-000605",
       "kind": "point",
-      "parent_id": "node-000604",
+      "parent_id": "node-000602",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -21371,9 +21319,9 @@
       "canonical_path": "chapter:6/article:56/clause:11/point:c"
     },
     {
-      "id": "node-000608",
+      "id": "node-000606",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "12",
       "ordinal_key": "12",
@@ -21405,9 +21353,9 @@
       "canonical_path": "chapter:6/article:56/clause:12"
     },
     {
-      "id": "node-000609",
+      "id": "node-000607",
       "kind": "point",
-      "parent_id": "node-000608",
+      "parent_id": "node-000606",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -21439,9 +21387,9 @@
       "canonical_path": "chapter:6/article:56/clause:12/point:a"
     },
     {
-      "id": "node-000610",
+      "id": "node-000608",
       "kind": "point",
-      "parent_id": "node-000608",
+      "parent_id": "node-000606",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -21473,9 +21421,9 @@
       "canonical_path": "chapter:6/article:56/clause:12/point:b"
     },
     {
-      "id": "node-000611",
+      "id": "node-000609",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "13",
       "ordinal_key": "13",
@@ -21507,9 +21455,9 @@
       "canonical_path": "chapter:6/article:56/clause:13"
     },
     {
-      "id": "node-000612",
+      "id": "node-000610",
       "kind": "point",
-      "parent_id": "node-000611",
+      "parent_id": "node-000609",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -21541,9 +21489,9 @@
       "canonical_path": "chapter:6/article:56/clause:13/point:a"
     },
     {
-      "id": "node-000613",
+      "id": "node-000611",
       "kind": "point",
-      "parent_id": "node-000611",
+      "parent_id": "node-000609",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -21575,9 +21523,9 @@
       "canonical_path": "chapter:6/article:56/clause:13/point:b"
     },
     {
-      "id": "node-000614",
+      "id": "node-000612",
       "kind": "point",
-      "parent_id": "node-000611",
+      "parent_id": "node-000609",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -21609,9 +21557,9 @@
       "canonical_path": "chapter:6/article:56/clause:13/point:c"
     },
     {
-      "id": "node-000615",
+      "id": "node-000613",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "14",
       "ordinal_key": "14",
@@ -21643,9 +21591,9 @@
       "canonical_path": "chapter:6/article:56/clause:14"
     },
     {
-      "id": "node-000616",
+      "id": "node-000614",
       "kind": "point",
-      "parent_id": "node-000615",
+      "parent_id": "node-000613",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -21677,9 +21625,9 @@
       "canonical_path": "chapter:6/article:56/clause:14/point:a"
     },
     {
-      "id": "node-000617",
+      "id": "node-000615",
       "kind": "point",
-      "parent_id": "node-000615",
+      "parent_id": "node-000613",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -21711,9 +21659,9 @@
       "canonical_path": "chapter:6/article:56/clause:14/point:b"
     },
     {
-      "id": "node-000618",
+      "id": "node-000616",
       "kind": "point",
-      "parent_id": "node-000615",
+      "parent_id": "node-000613",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -21745,9 +21693,9 @@
       "canonical_path": "chapter:6/article:56/clause:14/point:c"
     },
     {
-      "id": "node-000619",
+      "id": "node-000617",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "15",
       "ordinal_key": "15",
@@ -21779,9 +21727,9 @@
       "canonical_path": "chapter:6/article:56/clause:15"
     },
     {
-      "id": "node-000620",
+      "id": "node-000618",
       "kind": "point",
-      "parent_id": "node-000619",
+      "parent_id": "node-000617",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -21813,9 +21761,9 @@
       "canonical_path": "chapter:6/article:56/clause:15/point:a"
     },
     {
-      "id": "node-000621",
+      "id": "node-000619",
       "kind": "point",
-      "parent_id": "node-000619",
+      "parent_id": "node-000617",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -21847,9 +21795,9 @@
       "canonical_path": "chapter:6/article:56/clause:15/point:b"
     },
     {
-      "id": "node-000622",
+      "id": "node-000620",
       "kind": "point",
-      "parent_id": "node-000619",
+      "parent_id": "node-000617",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -21881,9 +21829,9 @@
       "canonical_path": "chapter:6/article:56/clause:15/point:c"
     },
     {
-      "id": "node-000623",
+      "id": "node-000621",
       "kind": "point",
-      "parent_id": "node-000619",
+      "parent_id": "node-000617",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -21915,9 +21863,9 @@
       "canonical_path": "chapter:6/article:56/clause:15/point:d"
     },
     {
-      "id": "node-000624",
+      "id": "node-000622",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "16",
       "ordinal_key": "16",
@@ -21949,9 +21897,9 @@
       "canonical_path": "chapter:6/article:56/clause:16"
     },
     {
-      "id": "node-000625",
+      "id": "node-000623",
       "kind": "point",
-      "parent_id": "node-000624",
+      "parent_id": "node-000622",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -21983,9 +21931,9 @@
       "canonical_path": "chapter:6/article:56/clause:16/point:a"
     },
     {
-      "id": "node-000626",
+      "id": "node-000624",
       "kind": "point",
-      "parent_id": "node-000624",
+      "parent_id": "node-000622",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -22017,9 +21965,9 @@
       "canonical_path": "chapter:6/article:56/clause:16/point:b"
     },
     {
-      "id": "node-000627",
+      "id": "node-000625",
       "kind": "point",
-      "parent_id": "node-000624",
+      "parent_id": "node-000622",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -22051,9 +21999,9 @@
       "canonical_path": "chapter:6/article:56/clause:16/point:c"
     },
     {
-      "id": "node-000628",
+      "id": "node-000626",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "17",
       "ordinal_key": "17",
@@ -22085,9 +22033,9 @@
       "canonical_path": "chapter:6/article:56/clause:17"
     },
     {
-      "id": "node-000629",
+      "id": "node-000627",
       "kind": "point",
-      "parent_id": "node-000628",
+      "parent_id": "node-000626",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -22119,9 +22067,9 @@
       "canonical_path": "chapter:6/article:56/clause:17/point:a"
     },
     {
-      "id": "node-000630",
+      "id": "node-000628",
       "kind": "point",
-      "parent_id": "node-000628",
+      "parent_id": "node-000626",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -22153,9 +22101,9 @@
       "canonical_path": "chapter:6/article:56/clause:17/point:b"
     },
     {
-      "id": "node-000631",
+      "id": "node-000629",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "18",
       "ordinal_key": "18",
@@ -22187,9 +22135,9 @@
       "canonical_path": "chapter:6/article:56/clause:18"
     },
     {
-      "id": "node-000632",
+      "id": "node-000630",
       "kind": "point",
-      "parent_id": "node-000631",
+      "parent_id": "node-000629",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -22221,9 +22169,9 @@
       "canonical_path": "chapter:6/article:56/clause:18/point:a"
     },
     {
-      "id": "node-000633",
+      "id": "node-000631",
       "kind": "point",
-      "parent_id": "node-000631",
+      "parent_id": "node-000629",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -22255,9 +22203,9 @@
       "canonical_path": "chapter:6/article:56/clause:18/point:b"
     },
     {
-      "id": "node-000634",
+      "id": "node-000632",
       "kind": "point",
-      "parent_id": "node-000631",
+      "parent_id": "node-000629",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -22289,9 +22237,9 @@
       "canonical_path": "chapter:6/article:56/clause:18/point:c"
     },
     {
-      "id": "node-000635",
+      "id": "node-000633",
       "kind": "point",
-      "parent_id": "node-000631",
+      "parent_id": "node-000629",
       "depth": 4,
       "ordinal_raw": "d",
       "ordinal_key": "d",
@@ -22323,9 +22271,9 @@
       "canonical_path": "chapter:6/article:56/clause:18/point:d"
     },
     {
-      "id": "node-000636",
+      "id": "node-000634",
       "kind": "point",
-      "parent_id": "node-000631",
+      "parent_id": "node-000629",
       "depth": 4,
       "ordinal_raw": "đ",
       "ordinal_key": "đ",
@@ -22357,9 +22305,9 @@
       "canonical_path": "chapter:6/article:56/clause:18/point:đ"
     },
     {
-      "id": "node-000637",
+      "id": "node-000635",
       "kind": "point",
-      "parent_id": "node-000631",
+      "parent_id": "node-000629",
       "depth": 4,
       "ordinal_raw": "e",
       "ordinal_key": "e",
@@ -22391,9 +22339,9 @@
       "canonical_path": "chapter:6/article:56/clause:18/point:e"
     },
     {
-      "id": "node-000638",
+      "id": "node-000636",
       "kind": "point",
-      "parent_id": "node-000631",
+      "parent_id": "node-000629",
       "depth": 4,
       "ordinal_raw": "g",
       "ordinal_key": "g",
@@ -22425,9 +22373,9 @@
       "canonical_path": "chapter:6/article:56/clause:18/point:g"
     },
     {
-      "id": "node-000639",
+      "id": "node-000637",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "19",
       "ordinal_key": "19",
@@ -22459,9 +22407,9 @@
       "canonical_path": "chapter:6/article:56/clause:19"
     },
     {
-      "id": "node-000640",
+      "id": "node-000638",
       "kind": "point",
-      "parent_id": "node-000639",
+      "parent_id": "node-000637",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -22493,9 +22441,9 @@
       "canonical_path": "chapter:6/article:56/clause:19/point:a"
     },
     {
-      "id": "node-000641",
+      "id": "node-000639",
       "kind": "point",
-      "parent_id": "node-000639",
+      "parent_id": "node-000637",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -22527,9 +22475,9 @@
       "canonical_path": "chapter:6/article:56/clause:19/point:b"
     },
     {
-      "id": "node-000642",
+      "id": "node-000640",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "20",
       "ordinal_key": "20",
@@ -22561,9 +22509,9 @@
       "canonical_path": "chapter:6/article:56/clause:20"
     },
     {
-      "id": "node-000643",
+      "id": "node-000641",
       "kind": "clause",
-      "parent_id": "node-000553",
+      "parent_id": "node-000551",
       "depth": 3,
       "ordinal_raw": "21",
       "ordinal_key": "21",
@@ -22602,9 +22550,9 @@
       "canonical_path": "chapter:6/article:56/clause:21"
     },
     {
-      "id": "node-000644",
+      "id": "node-000642",
       "kind": "article",
-      "parent_id": "node-000494",
+      "parent_id": "node-000492",
       "depth": 2,
       "ordinal_raw": "57",
       "ordinal_key": "57",
@@ -22635,9 +22583,9 @@
       "canonical_path": "chapter:6/article:57"
     },
     {
-      "id": "node-000645",
+      "id": "node-000643",
       "kind": "clause",
-      "parent_id": "node-000644",
+      "parent_id": "node-000642",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -22669,9 +22617,9 @@
       "canonical_path": "chapter:6/article:57/clause:1"
     },
     {
-      "id": "node-000646",
+      "id": "node-000644",
       "kind": "clause",
-      "parent_id": "node-000644",
+      "parent_id": "node-000642",
       "depth": 3,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -22703,9 +22651,9 @@
       "canonical_path": "chapter:6/article:57/clause:3"
     },
     {
-      "id": "node-000647",
+      "id": "node-000645",
       "kind": "clause",
-      "parent_id": "node-000644",
+      "parent_id": "node-000642",
       "depth": 3,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -22737,9 +22685,9 @@
       "canonical_path": "chapter:6/article:57/clause:4"
     },
     {
-      "id": "node-000648",
+      "id": "node-000646",
       "kind": "clause",
-      "parent_id": "node-000644",
+      "parent_id": "node-000642",
       "depth": 3,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -22771,9 +22719,9 @@
       "canonical_path": "chapter:6/article:57/clause:5"
     },
     {
-      "id": "node-000649",
+      "id": "node-000647",
       "kind": "clause",
-      "parent_id": "node-000644",
+      "parent_id": "node-000642",
       "depth": 3,
       "ordinal_raw": "6",
       "ordinal_key": "6",
@@ -22805,9 +22753,9 @@
       "canonical_path": "chapter:6/article:57/clause:6"
     },
     {
-      "id": "node-000650",
+      "id": "node-000648",
       "kind": "article",
-      "parent_id": "node-000494",
+      "parent_id": "node-000492",
       "depth": 2,
       "ordinal_raw": "58",
       "ordinal_key": "58",
@@ -22838,9 +22786,9 @@
       "canonical_path": "chapter:6/article:58"
     },
     {
-      "id": "node-000651",
+      "id": "node-000649",
       "kind": "clause",
-      "parent_id": "node-000650",
+      "parent_id": "node-000648",
       "depth": 3,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -22872,9 +22820,9 @@
       "canonical_path": "chapter:6/article:58/clause:1"
     },
     {
-      "id": "node-000652",
+      "id": "node-000650",
       "kind": "point",
-      "parent_id": "node-000651",
+      "parent_id": "node-000649",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -22906,9 +22854,9 @@
       "canonical_path": "chapter:6/article:58/clause:1/point:a"
     },
     {
-      "id": "node-000653",
+      "id": "node-000651",
       "kind": "point",
-      "parent_id": "node-000651",
+      "parent_id": "node-000649",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -22940,9 +22888,9 @@
       "canonical_path": "chapter:6/article:58/clause:1/point:b"
     },
     {
-      "id": "node-000654",
+      "id": "node-000652",
       "kind": "clause",
-      "parent_id": "node-000650",
+      "parent_id": "node-000648",
       "depth": 3,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -22974,9 +22922,9 @@
       "canonical_path": "chapter:6/article:58/clause:2"
     },
     {
-      "id": "node-000655",
+      "id": "node-000653",
       "kind": "point",
-      "parent_id": "node-000654",
+      "parent_id": "node-000652",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -23008,9 +22956,9 @@
       "canonical_path": "chapter:6/article:58/clause:2/point:a"
     },
     {
-      "id": "node-000656",
+      "id": "node-000654",
       "kind": "point",
-      "parent_id": "node-000654",
+      "parent_id": "node-000652",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -23042,9 +22990,9 @@
       "canonical_path": "chapter:6/article:58/clause:2/point:b"
     },
     {
-      "id": "node-000657",
+      "id": "node-000655",
       "kind": "clause",
-      "parent_id": "node-000650",
+      "parent_id": "node-000648",
       "depth": 3,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -23076,9 +23024,9 @@
       "canonical_path": "chapter:6/article:58/clause:3"
     },
     {
-      "id": "node-000658",
+      "id": "node-000656",
       "kind": "point",
-      "parent_id": "node-000657",
+      "parent_id": "node-000655",
       "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
@@ -23110,9 +23058,9 @@
       "canonical_path": "chapter:6/article:58/clause:3/point:a"
     },
     {
-      "id": "node-000659",
+      "id": "node-000657",
       "kind": "point",
-      "parent_id": "node-000657",
+      "parent_id": "node-000655",
       "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
@@ -23144,9 +23092,9 @@
       "canonical_path": "chapter:6/article:58/clause:3/point:b"
     },
     {
-      "id": "node-000660",
+      "id": "node-000658",
       "kind": "point",
-      "parent_id": "node-000657",
+      "parent_id": "node-000655",
       "depth": 4,
       "ordinal_raw": "c",
       "ordinal_key": "c",
@@ -23178,9 +23126,9 @@
       "canonical_path": "chapter:6/article:58/clause:3/point:c"
     },
     {
-      "id": "node-000661",
+      "id": "node-000659",
       "kind": "clause",
-      "parent_id": "node-000650",
+      "parent_id": "node-000648",
       "depth": 3,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -23212,9 +23160,9 @@
       "canonical_path": "chapter:6/article:58/clause:4"
     },
     {
-      "id": "node-000662",
+      "id": "node-000660",
       "kind": "clause",
-      "parent_id": "node-000650",
+      "parent_id": "node-000648",
       "depth": 3,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -23267,7 +23215,7 @@
       "canonical_path": "chapter:6/article:58/clause:5"
     },
     {
-      "id": "node-000663",
+      "id": "node-000661",
       "kind": "appendix",
       "parent_id": "node-000000",
       "depth": 1,
@@ -23308,9 +23256,9 @@
       "canonical_path": "appendix:unnumbered"
     },
     {
-      "id": "node-000664",
+      "id": "node-000662",
       "kind": "section",
-      "parent_id": "node-000663",
+      "parent_id": "node-000661",
       "depth": 2,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -24599,14 +24547,41 @@
           "role": "body",
           "char_start": 723,
           "char_end": 766
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_SECTION_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Mục 1"
+      },
+      "canonical_path": "appendix:unnumbered/section:1"
+    },
+    {
+      "id": "node-000663",
+      "kind": "section",
+      "parent_id": "node-000661",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "Mục 2",
+      "title": "QUY HOẠCH CHI TIẾT NGÀNH",
+      "heading_anchors": [
+        {
+          "block_id": "luat-112-2025-qh15_v1_p0050_b0002",
+          "page_index": 50,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 6
         },
         {
           "block_id": "luat-112-2025-qh15_v1_p0050_b0002",
           "page_index": 50,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 6,
           "char_end": 31
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "luat-112-2025-qh15_v1_p0050_b0002",
           "page_index": 50,
@@ -25801,9 +25776,9 @@
       "recognition_evidence": {
         "rule_id": "VI_FORMAL_SECTION_V1",
         "recognition_method": "explicit_legal_marker",
-        "matched_text": "Mục 1"
+        "matched_text": "Mục 2"
       },
-      "canonical_path": "appendix:unnumbered/section:1"
+      "canonical_path": "appendix:unnumbered/section:2"
     }
   ]
 }
