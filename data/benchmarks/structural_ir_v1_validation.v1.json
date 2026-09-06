@@ -1,0 +1,2218 @@
+{
+  "validation_schema_version": 1,
+  "validation_protocol": "structural_ir_v1_retained_corpus",
+  "structural_ir_version": 1,
+  "profile": "vi_legal_planning_v1",
+  "reference_annotation_version": "v1",
+  "extractor_inputs": "PhysicalDocumentV1 only; no raw parser fields or reference labels",
+  "matching_algorithm": "Within each audited page, nodes are paired one-to-one by exact kind, exact ordinal_key, and one-based reading occurrence for that page/kind/key. No fuzzy text or geometry match. Unscored context matches are excluded and predictions outside audited pages are ignored.",
+  "metric_formulas": {
+    "node_precision": "TP / (TP + FP)",
+    "node_recall": "TP / (TP + FN)",
+    "node_f1": "2 * precision * recall / (precision + recall)",
+    "parent_edge": "correct matched scored child-to-parent canonical path; incorrect predicted edge is FP and incorrect or absent reference edge is FN",
+    "canonical_path_exact_rate": "exact full paths / matched scored nodes",
+    "title_normalized_exact_rate": "casefolded whitespace-collapsed exact titles / matched nodes with reference title"
+  },
+  "reference_scope": {
+    "documents": 6,
+    "pages": 46,
+    "pages_by_document": {
+      "hanoi-master-plan-100y": 10,
+      "luat-112-2025-qh15": 10,
+      "qd-23-2008-ubnd-hanoi-vien-quy-hoach": 4,
+      "tt-04-2023-bkhdt-so-do-ban-do": 8,
+      "tt-04-2026-bxd-pl2-dinh-muc": 6,
+      "vbhn-103-2026-quy-hoach-tong-the": 8
+    },
+    "scored_nodes": 188,
+    "scored_nodes_by_kind": {
+      "appendix": 2,
+      "article": 24,
+      "chapter": 2,
+      "clause": 66,
+      "generic_section": 8,
+      "point": 84,
+      "section": 2
+    }
+  },
+  "available_pairs": 10,
+  "all_deterministic": true,
+  "entries": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "parser": "marker",
+      "source_artifact_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "input_physical_ir_sha256": "137baf6376ca1967ac9034c868203d0cf2d4251333dfa420dceaca7ea8df84b8",
+      "output_path": "data/structural_ir/hanoi_master_plan_100y/marker.v1.json",
+      "pages": 80,
+      "node_count": 62,
+      "node_kind_histogram": {
+        "article": 3,
+        "clause": 12,
+        "document": 1,
+        "generic_section": 17,
+        "point": 29
+      },
+      "legal_node_count": 44,
+      "generic_node_count": 17,
+      "depth_histogram": {
+        "0": 1,
+        "1": 3,
+        "2": 13,
+        "3": 45
+      },
+      "content_text_blocks": 1083,
+      "content_object_blocks": 42,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 262110,
+      "sha256_a": "cc0dce4d8e73794ef95b13c261fff7cbc03a771916694930166c1db3252a1ba3",
+      "byte_size_b": 262110,
+      "sha256_b": "cc0dce4d8e73794ef95b13c261fff7cbc03a771916694930166c1db3252a1ba3",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {
+          "marker_like_text_rejected": 2
+        },
+        "examples": {
+          "marker_like_text_rejected": [
+            {
+              "document_id": "hanoi-master-plan-100y",
+              "parser": "marker",
+              "page_index": 71,
+              "excerpt": "Điều tra, khoanh định khu vực hạn chế khai thác nước dưới đất; phục hồi các tầng chứa nước bị suy thoái, cạn kiệt, ô nhiễm; bảo vệ miền cấp nước dưới đất; tăng "
+            },
+            {
+              "document_id": "hanoi-master-plan-100y",
+              "parser": "marker",
+              "page_index": 73,
+              "excerpt": "Điều tra, khảo sát và xây dựng cơ sở dữ liệu về hồ đập trên địa bàn Thành phố để xây dựng đề án, kế hoạch, dự án cải tạo nâng cấp, bảo vệ nghiêm ngặt các hành l"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "version_id": "v1",
+      "parser": "mineru",
+      "source_artifact_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+      "input_physical_ir_sha256": "738a1bd80f481b9436d178844983697c4e6c9b0a6eb6e5aa147f2d1d5ff480de",
+      "output_path": "data/structural_ir/hanoi_master_plan_100y/mineru.v1.json",
+      "pages": 80,
+      "node_count": 65,
+      "node_kind_histogram": {
+        "article": 3,
+        "clause": 13,
+        "document": 1,
+        "generic_section": 18,
+        "point": 30
+      },
+      "legal_node_count": 46,
+      "generic_node_count": 18,
+      "depth_histogram": {
+        "0": 1,
+        "1": 3,
+        "2": 13,
+        "3": 48
+      },
+      "content_text_blocks": 1076,
+      "content_object_blocks": 29,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 258217,
+      "sha256_a": "2c60c01e85a83550d2266571badbcc322e38a1bc24c24f11496d135bd75f490a",
+      "byte_size_b": 258217,
+      "sha256_b": "2c60c01e85a83550d2266571badbcc322e38a1bc24c24f11496d135bd75f490a",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {
+          "marker_like_text_rejected": 2
+        },
+        "examples": {
+          "marker_like_text_rejected": [
+            {
+              "document_id": "hanoi-master-plan-100y",
+              "parser": "mineru",
+              "page_index": 71,
+              "excerpt": "Điều tra, khoanh định khu vực hạn chế khai thác nước dưới đất; phục hồi các tầng chứa nước bị suy thoái, cạn kiệt, ô nhiễm; bảo vệ miền cấp nước dưới đất; tăng "
+            },
+            {
+              "document_id": "hanoi-master-plan-100y",
+              "parser": "mineru",
+              "page_index": 73,
+              "excerpt": "Điều tra, khảo sát và xây dựng cơ sở dữ liệu về hồ đập trên địa bàn Thành phố để xây dựng đề án, kế hoạch, dự án cải tạo nâng cấp, bảo vệ nghiêm ngặt các hành l"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "version_id": "v1",
+      "parser": "marker",
+      "source_artifact_sha256": "8d9208d6105c96a44547f1232af9f2127ba0b4c2661ee08acb7d04573f342e8b",
+      "input_physical_ir_sha256": "7beaa58a0bcbcffa3d995bb6f0b12217bae95297f11dc3b01c1677d8504d392f",
+      "output_path": "data/structural_ir/luat_112_2025_qh15/marker.v1.json",
+      "pages": 52,
+      "node_count": 676,
+      "node_kind_histogram": {
+        "appendix": 1,
+        "article": 58,
+        "chapter": 6,
+        "clause": 273,
+        "document": 1,
+        "point": 331,
+        "section": 6
+      },
+      "legal_node_count": 675,
+      "generic_node_count": 0,
+      "depth_histogram": {
+        "0": 1,
+        "1": 7,
+        "2": 42,
+        "3": 218,
+        "4": 304,
+        "5": 104
+      },
+      "content_text_blocks": 645,
+      "content_object_blocks": 61,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 696142,
+      "sha256_a": "69d292e70d3daf1b955ce2169ac4fef7adfb4ac81e3e64840c63bb541612c746",
+      "byte_size_b": 696142,
+      "sha256_b": "69d292e70d3daf1b955ce2169ac4fef7adfb4ac81e3e64840c63bb541612c746",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {
+          "simple_decimal_without_heading_evidence": 20
+        },
+        "examples": {
+          "simple_decimal_without_heading_evidence": [
+            {
+              "document_id": "luat-112-2025-qh15",
+              "parser": "marker",
+              "page_index": 48,
+              "excerpt": "1."
+            },
+            {
+              "document_id": "luat-112-2025-qh15",
+              "parser": "marker",
+              "page_index": 48,
+              "excerpt": "2."
+            },
+            {
+              "document_id": "luat-112-2025-qh15",
+              "parser": "marker",
+              "page_index": 48,
+              "excerpt": "3."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "version_id": "v1",
+      "parser": "marker",
+      "source_artifact_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+      "input_physical_ir_sha256": "cb1488e94be68a6e6cd2a0926ad8272facb339474808702a00e0a38d05ee3842",
+      "output_path": "data/structural_ir/vbhn_103_2026_quy_hoach_tong_the/marker.v1.json",
+      "pages": 48,
+      "node_count": 105,
+      "node_kind_histogram": {
+        "appendix": 1,
+        "article": 18,
+        "clause": 55,
+        "document": 1,
+        "point": 30
+      },
+      "legal_node_count": 104,
+      "generic_node_count": 0,
+      "depth_histogram": {
+        "0": 1,
+        "1": 19,
+        "2": 55,
+        "3": 30
+      },
+      "content_text_blocks": 374,
+      "content_object_blocks": 17,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 166884,
+      "sha256_a": "df29eddd4059bbdc8c2fee58bcbe557312155f0ddeee58d6a52292c231b2bde9",
+      "byte_size_b": 166884,
+      "sha256_b": "df29eddd4059bbdc8c2fee58bcbe557312155f0ddeee58d6a52292c231b2bde9",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {
+          "letter_item_outside_legal_clause": 9,
+          "marker_like_text_rejected": 1,
+          "simple_decimal_without_heading_evidence": 2
+        },
+        "examples": {
+          "letter_item_outside_legal_clause": [
+            {
+              "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+              "parser": "marker",
+              "page_index": 7,
+              "excerpt": "a) Phân vùng kinh tế xã hội"
+            },
+            {
+              "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+              "parser": "marker",
+              "page_index": 8,
+              "excerpt": "b) Định hướng phát triển vùng và liên kết vùng"
+            },
+            {
+              "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+              "parser": "marker",
+              "page_index": 12,
+              "excerpt": "a) Vùng động lực phía Bắc"
+            }
+          ],
+          "marker_like_text_rejected": [
+            {
+              "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+              "parser": "marker",
+              "page_index": 30,
+              "excerpt": "điều dưỡng và nuôi dưỡng với chăm sóc sức khoẻ, chăm sóc xã hội khác cho người có công."
+            }
+          ],
+          "simple_decimal_without_heading_evidence": [
+            {
+              "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+              "parser": "marker",
+              "page_index": 0,
+              "excerpt": "1. Luật Công nghiệp công nghệ số số 71/2025/QH15 ngày 14 tháng 6 năm 2025 của Quốc hội, có hiệu lực kể từ ngày 01 tháng 01 năm 2026;"
+            },
+            {
+              "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+              "parser": "marker",
+              "page_index": 0,
+              "excerpt": "2. Nghị quyết số 252/2025/QH15 ngày 10 tháng 12 năm 2025 của Quốc hội sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của "
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "parser": "marker",
+      "source_artifact_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "input_physical_ir_sha256": "1deaf7b67b5e86992a6bbae072ac1802528acc7f27245e963e09c2c59fe690ed",
+      "output_path": "data/structural_ir/tt_04_2026_bxd_pl2_dinh_muc/marker.v1.json",
+      "pages": 19,
+      "node_count": 19,
+      "node_kind_histogram": {
+        "appendix": 1,
+        "chapter": 5,
+        "document": 1,
+        "generic_section": 8,
+        "part": 4
+      },
+      "legal_node_count": 10,
+      "generic_node_count": 8,
+      "depth_histogram": {
+        "0": 1,
+        "1": 1,
+        "2": 10,
+        "3": 7
+      },
+      "content_text_blocks": 129,
+      "content_object_blocks": 25,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 274204,
+      "sha256_a": "fb2487b26834d8e84638857147c3e70ac49881d7cec625b9150864efa986fd7f",
+      "byte_size_b": 274204,
+      "sha256_b": "fb2487b26834d8e84638857147c3e70ac49881d7cec625b9150864efa986fd7f",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {
+          "marker_like_text_rejected": 5,
+          "simple_decimal_without_heading_evidence": 3
+        },
+        "examples": {
+          "marker_like_text_rejected": [
+            {
+              "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+              "parser": "marker",
+              "page_index": 1,
+              "excerpt": "Điều"
+            },
+            {
+              "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+              "parser": "marker",
+              "page_index": 1,
+              "excerpt": "điều chỉnh"
+            },
+            {
+              "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+              "parser": "marker",
+              "page_index": 14,
+              "excerpt": "Điều hòa đá, vào đá lòng đường đảm bảo đúng yêu cầu kỹ thuật"
+            }
+          ],
+          "simple_decimal_without_heading_evidence": [
+            {
+              "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+              "parser": "marker",
+              "page_index": 1,
+              "excerpt": "1. Nội dung"
+            },
+            {
+              "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+              "parser": "marker",
+              "page_index": 1,
+              "excerpt": "2. Kết"
+            },
+            {
+              "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+              "parser": "marker",
+              "page_index": 1,
+              "excerpt": "3. Hướng"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "version_id": "v1",
+      "parser": "mineru",
+      "source_artifact_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+      "input_physical_ir_sha256": "5c27e12e74f961958127342dff2a086f968127a1135d97d0a5a65e761e8b2be8",
+      "output_path": "data/structural_ir/tt_04_2026_bxd_pl2_dinh_muc/mineru.v1.json",
+      "pages": 19,
+      "node_count": 20,
+      "node_kind_histogram": {
+        "appendix": 1,
+        "chapter": 8,
+        "document": 1,
+        "generic_section": 4,
+        "part": 6
+      },
+      "legal_node_count": 15,
+      "generic_node_count": 4,
+      "depth_histogram": {
+        "0": 1,
+        "1": 1,
+        "2": 10,
+        "3": 8
+      },
+      "content_text_blocks": 138,
+      "content_object_blocks": 28,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 55895,
+      "sha256_a": "05aec77d1f17a1b425240b382d01cd97214a06ba973170cc5a20c1ba92957f7d",
+      "byte_size_b": 55895,
+      "sha256_b": "05aec77d1f17a1b425240b382d01cd97214a06ba973170cc5a20c1ba92957f7d",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {
+          "simple_decimal_without_heading_evidence": 3
+        },
+        "examples": {
+          "simple_decimal_without_heading_evidence": [
+            {
+              "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+              "parser": "mineru",
+              "page_index": 1,
+              "excerpt": "1. Nội dung định mức bảo dưỡng cầu Thăng Long, tuyến đường sắt Bắc Hồng"
+            },
+            {
+              "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+              "parser": "mineru",
+              "page_index": 1,
+              "excerpt": "2. Kết cấu định mức bảo dưỡng cầu Thăng Long, tuyến đường sắt Bắc Hồng"
+            },
+            {
+              "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+              "parser": "mineru",
+              "page_index": 1,
+              "excerpt": "3. Hướng dẫn áp dụng . 3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "parser": "marker",
+      "source_artifact_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "input_physical_ir_sha256": "45137e123dfad108b946587ca2bb0455ec831655475e5d7874a97117ba404cbe",
+      "output_path": "data/structural_ir/tt_04_2023_bkhdt_so_do_ban_do/marker.v1.json",
+      "pages": 47,
+      "node_count": 96,
+      "node_kind_histogram": {
+        "appendix": 3,
+        "article": 13,
+        "chapter": 4,
+        "clause": 30,
+        "document": 1,
+        "generic_section": 23,
+        "point": 19,
+        "section": 3
+      },
+      "legal_node_count": 72,
+      "generic_node_count": 23,
+      "depth_histogram": {
+        "0": 1,
+        "1": 7,
+        "2": 25,
+        "3": 44,
+        "4": 19
+      },
+      "content_text_blocks": 279,
+      "content_object_blocks": 41,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 264853,
+      "sha256_a": "ae3c6f8f05d6e2f42ce4200fe85ebe81addc0c10e18f7df88df5d212102e30a7",
+      "byte_size_b": 264853,
+      "sha256_b": "ae3c6f8f05d6e2f42ce4200fe85ebe81addc0c10e18f7df88df5d212102e30a7",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {
+          "letter_item_outside_legal_clause": 72,
+          "simple_decimal_without_heading_evidence": 38
+        },
+        "examples": {
+          "letter_item_outside_legal_clause": [
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "marker",
+              "page_index": 9,
+              "excerpt": "a) Hiện trạng phát triển kinh tế, xã hội;"
+            },
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "marker",
+              "page_index": 9,
+              "excerpt": "b) Hiện trạng phát triển hệ thống đô thị, nông thôn; các khu chức năng (khu kinh tế; khu công nghiệp; khu công nghệ cao; khu du lịch, khu thể dục thể thao, di t"
+            },
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "marker",
+              "page_index": 9,
+              "excerpt": "c) Hiện trạng kết cấu hạ tầng xã hội, hạ tầng kỹ thuật cấp quốc gia, cấp vùng, liên tỉnh;"
+            }
+          ],
+          "simple_decimal_without_heading_evidence": [
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "marker",
+              "page_index": 1,
+              "excerpt": "1. Thông tư này quy định về yêu cầu kỹ thuật chung của cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh; yê"
+            },
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "marker",
+              "page_index": 1,
+              "excerpt": "2. Cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh liên quan đến bí mật nhà nước thực hiện theo quy định c"
+            },
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "marker",
+              "page_index": 8,
+              "excerpt": "1. Về vị trí địa lý và mối quan hệ giữa Việt Nam với khu vực và thế giới, bao gồm vị trí địa lý và mối quan hệ về tự nhiên, kinh tế, xã hội và môi trường giữa V"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "version_id": "v1",
+      "parser": "mineru",
+      "source_artifact_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+      "input_physical_ir_sha256": "0e8b3f2ec69f22d77858f9aeec895110e99f5b8b8a3222ab1b2a1f8aea850670",
+      "output_path": "data/structural_ir/tt_04_2023_bkhdt_so_do_ban_do/mineru.v1.json",
+      "pages": 47,
+      "node_count": 99,
+      "node_kind_histogram": {
+        "appendix": 3,
+        "article": 14,
+        "chapter": 4,
+        "clause": 33,
+        "document": 1,
+        "generic_section": 22,
+        "point": 20,
+        "section": 2
+      },
+      "legal_node_count": 76,
+      "generic_node_count": 22,
+      "depth_histogram": {
+        "0": 1,
+        "1": 7,
+        "2": 25,
+        "3": 46,
+        "4": 20
+      },
+      "content_text_blocks": 267,
+      "content_object_blocks": 27,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 133035,
+      "sha256_a": "b5a2d4f73ad78774e0ce368a1495cf04c7b99960b3b5ccb6ed3c3412c0f0505e",
+      "byte_size_b": 133035,
+      "sha256_b": "b5a2d4f73ad78774e0ce368a1495cf04c7b99960b3b5ccb6ed3c3412c0f0505e",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {
+          "letter_item_outside_legal_clause": 75,
+          "simple_decimal_without_heading_evidence": 36
+        },
+        "examples": {
+          "letter_item_outside_legal_clause": [
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "mineru",
+              "page_index": 9,
+              "excerpt": "a) Hiện trạng phát triển kinh tế, xã hội;"
+            },
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "mineru",
+              "page_index": 9,
+              "excerpt": "b) Hiện trạng phát triển hệ thống đô thị, nông thôn; các khu chức năng (khu kinh tế; khu công nghiệp; khu công nghệ cao; khu du lịch, khu thể dục thể thao, di t"
+            },
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "mineru",
+              "page_index": 9,
+              "excerpt": "c) Hiện trạng kết cấu hạ tầng xã hội, hạ tầng kỹ thuật cấp quốc gia, cấp vùng, liên tỉnh;"
+            }
+          ],
+          "simple_decimal_without_heading_evidence": [
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "mineru",
+              "page_index": 8,
+              "excerpt": "1. Về vị trí địa lý và mối quan hệ giữa Việt Nam với khu vực và thế giới, bao gồm vị trí địa lý và mối quan hệ về tự nhiên, kinh tế, xã hội và môi trường giữa V"
+            },
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "mineru",
+              "page_index": 8,
+              "excerpt": "2. Về hiện trạng điều kiện tự nhiên, kinh tế - xã hội, dân cư, hệ thống kết cấu hạ tầng quan trọng cấp quốc gia và liên vùng, các nội dung được thể hiện trên nề"
+            },
+            {
+              "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+              "parser": "mineru",
+              "page_index": 8,
+              "excerpt": "3. Về đánh giá tổng hợp đất đai theo các mục đích sử dụng, các nội dung được thể hiện trên nền bản đồ địa hình quốc gia tỷ lệ 1:1.000.000 và bản đồ hiện trạng s"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "version_id": "v1",
+      "parser": "marker",
+      "source_artifact_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+      "input_physical_ir_sha256": "5a3afaad4af491c748616d8efd37f883de905efa81d76f3873c5515e0b0cd703",
+      "output_path": "data/structural_ir/qd_23_2008_ubnd_hanoi_vien_quy_hoach/marker.v1.json",
+      "pages": 4,
+      "node_count": 1,
+      "node_kind_histogram": {
+        "document": 1
+      },
+      "legal_node_count": 0,
+      "generic_node_count": 0,
+      "depth_histogram": {
+        "0": 1
+      },
+      "content_text_blocks": 0,
+      "content_object_blocks": 71,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 15785,
+      "sha256_a": "1be44c94130821198f3e224375d4a30937316cbb5f714907d0673dec407f95ee",
+      "byte_size_b": 15785,
+      "sha256_b": "1be44c94130821198f3e224375d4a30937316cbb5f714907d0673dec407f95ee",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {},
+        "examples": {}
+      }
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "version_id": "v1",
+      "parser": "mineru",
+      "source_artifact_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+      "input_physical_ir_sha256": "9e32f090643e027b34dd5f83c586a4cba23cd7d28dd35bdb86de075fd5b73a0f",
+      "output_path": "data/structural_ir/qd_23_2008_ubnd_hanoi_vien_quy_hoach/mineru.v1.json",
+      "pages": 4,
+      "node_count": 4,
+      "node_kind_histogram": {
+        "document": 1,
+        "generic_section": 3
+      },
+      "legal_node_count": 0,
+      "generic_node_count": 3,
+      "depth_histogram": {
+        "0": 1,
+        "1": 3
+      },
+      "content_text_blocks": 76,
+      "content_object_blocks": 1,
+      "exact_text_partition": true,
+      "single_object_ownership": true,
+      "byte_size_a": 18763,
+      "sha256_a": "255b2c1fcdb7e626106722dc51c03c444eae55781a398c47f1cb308b20882400",
+      "byte_size_b": 18763,
+      "sha256_b": "255b2c1fcdb7e626106722dc51c03c444eae55781a398c47f1cb308b20882400",
+      "equal": true,
+      "ambiguous_candidates": {
+        "counts": {
+          "letter_item_outside_legal_clause": 17,
+          "simple_decimal_without_heading_evidence": 1
+        },
+        "examples": {
+          "letter_item_outside_legal_clause": [
+            {
+              "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+              "parser": "mineru",
+              "page_index": 0,
+              "excerpt": "a) Tên goi:"
+            },
+            {
+              "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+              "parser": "mineru",
+              "page_index": 0,
+              "excerpt": "b) V trí:"
+            },
+            {
+              "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+              "parser": "mineru",
+              "page_index": 1,
+              "excerpt": "c) Chc nāng:"
+            }
+          ],
+          "simple_decimal_without_heading_evidence": [
+            {
+              "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+              "parser": "mineru",
+              "page_index": 0,
+              "excerpt": "1. Tên goi, v trí, chc năng"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "pages": 400,
+    "nodes": 1147,
+    "node_kind_histogram": {
+      "appendix": 10,
+      "article": 109,
+      "chapter": 27,
+      "clause": 416,
+      "document": 10,
+      "generic_section": 95,
+      "part": 10,
+      "point": 459,
+      "section": 11
+    },
+    "legal_node_count": 1042,
+    "generic_node_count": 95,
+    "depth_histogram": {
+      "0": 10,
+      "1": 51,
+      "2": 193,
+      "3": 446,
+      "4": 343,
+      "5": 104
+    },
+    "content_text_blocks": 4067,
+    "content_object_blocks": 342,
+    "exact_text_partition_pairs": 10,
+    "single_object_ownership_pairs": 10,
+    "output_byte_size": 2145888
+  },
+  "benchmark": {
+    "pair_results": [
+      {
+        "document_id": "hanoi-master-plan-100y",
+        "audited_pages": [
+          0,
+          1,
+          2,
+          3,
+          15,
+          30,
+          45,
+          60,
+          78,
+          79
+        ],
+        "reference_scored_nodes": 19,
+        "reference_context_nodes": 7,
+        "predictions_in_scope": 17,
+        "node_metrics": {
+          "tp": 17,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.8947368421052632,
+          "f1": 0.9444444444444444
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "clause": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1": 0.9090909090909091
+          },
+          "point": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "appendix": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "generic_section": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.8571428571428571,
+            "f1": 0.923076923076923
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 14,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.9333333333333333,
+          "recall": 0.8235294117647058,
+          "f1": 0.8749999999999999
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 17,
+          "exact": 16,
+          "rate": 0.9411764705882353
+        },
+        "title_normalized_exact": {
+          "eligible": 8,
+          "exact": 7,
+          "rate": 0.875
+        },
+        "parser": "marker"
+      },
+      {
+        "document_id": "hanoi-master-plan-100y",
+        "audited_pages": [
+          0,
+          1,
+          2,
+          3,
+          15,
+          30,
+          45,
+          60,
+          78,
+          79
+        ],
+        "reference_scored_nodes": 19,
+        "reference_context_nodes": 7,
+        "predictions_in_scope": 18,
+        "node_metrics": {
+          "tp": 18,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9473684210526315,
+          "f1": 0.972972972972973
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "clause": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "point": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "appendix": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "generic_section": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.8571428571428571,
+            "f1": 0.923076923076923
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 16,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9411764705882353,
+          "f1": 0.9696969696969697
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 18,
+          "exact": 18,
+          "rate": 1.0
+        },
+        "title_normalized_exact": {
+          "eligible": 8,
+          "exact": 7,
+          "rate": 0.875
+        },
+        "parser": "mineru"
+      },
+      {
+        "document_id": "luat-112-2025-qh15",
+        "audited_pages": [
+          0,
+          1,
+          5,
+          12,
+          20,
+          28,
+          35,
+          42,
+          50,
+          51
+        ],
+        "reference_scored_nodes": 110,
+        "reference_context_nodes": 21,
+        "predictions_in_scope": 104,
+        "node_metrics": {
+          "tp": 104,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9454545454545454,
+          "f1": 0.9719626168224299
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "section": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "clause": {
+            "tp": 41,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9761904761904762,
+            "f1": 0.9879518072289156
+          },
+          "point": {
+            "tp": 50,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.9090909090909091,
+            "f1": 0.9523809523809523
+          },
+          "appendix": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "generic_section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 77,
+          "fp": 26,
+          "fn": 32,
+          "precision": 0.7475728155339806,
+          "recall": 0.7064220183486238,
+          "f1": 0.7264150943396226
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 104,
+          "exact": 78,
+          "rate": 0.75
+        },
+        "title_normalized_exact": {
+          "eligible": 10,
+          "exact": 8,
+          "rate": 0.8
+        },
+        "parser": "marker"
+      },
+      {
+        "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+        "audited_pages": [
+          0,
+          1,
+          5,
+          12,
+          20,
+          30,
+          40,
+          47
+        ],
+        "reference_scored_nodes": 17,
+        "reference_context_nodes": 5,
+        "predictions_in_scope": 17,
+        "node_metrics": {
+          "tp": 16,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.9411764705882353,
+          "recall": 0.9411764705882353,
+          "f1": 0.9411764705882353
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "clause": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "point": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8
+          },
+          "appendix": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "generic_section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9166666666666666,
+          "f1": 0.9565217391304348
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 16,
+          "exact": 16,
+          "rate": 1.0
+        },
+        "title_normalized_exact": {
+          "eligible": 5,
+          "exact": 3,
+          "rate": 0.6
+        },
+        "parser": "marker"
+      },
+      {
+        "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+        "audited_pages": [
+          0,
+          1,
+          5,
+          10,
+          15,
+          18
+        ],
+        "reference_scored_nodes": 1,
+        "reference_context_nodes": 0,
+        "predictions_in_scope": 5,
+        "node_metrics": {
+          "tp": 1,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.33333333333333337
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "clause": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "appendix": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "generic_section": {
+            "tp": 0,
+            "fp": 4,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 1,
+          "exact": 1,
+          "rate": 1.0
+        },
+        "title_normalized_exact": {
+          "eligible": 0,
+          "exact": 0,
+          "rate": 0.0
+        },
+        "parser": "marker"
+      },
+      {
+        "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+        "audited_pages": [
+          0,
+          1,
+          5,
+          10,
+          15,
+          18
+        ],
+        "reference_scored_nodes": 1,
+        "reference_context_nodes": 0,
+        "predictions_in_scope": 6,
+        "node_metrics": {
+          "tp": 1,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.16666666666666666,
+          "recall": 1.0,
+          "f1": 0.2857142857142857
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 0,
+            "fp": 3,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "clause": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "appendix": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "generic_section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 1,
+          "exact": 1,
+          "rate": 1.0
+        },
+        "title_normalized_exact": {
+          "eligible": 0,
+          "exact": 0,
+          "rate": 0.0
+        },
+        "parser": "mineru"
+      },
+      {
+        "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+        "audited_pages": [
+          0,
+          5,
+          15,
+          20,
+          21,
+          26,
+          27,
+          46
+        ],
+        "reference_scored_nodes": 20,
+        "reference_context_nodes": 3,
+        "predictions_in_scope": 20,
+        "node_metrics": {
+          "tp": 19,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.95,
+          "recall": 0.95,
+          "f1": 0.9500000000000001
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8
+          },
+          "clause": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "point": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "appendix": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "generic_section": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 17,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9444444444444444,
+          "f1": 0.9714285714285714
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 19,
+          "exact": 19,
+          "rate": 1.0
+        },
+        "title_normalized_exact": {
+          "eligible": 3,
+          "exact": 1,
+          "rate": 0.3333333333333333
+        },
+        "parser": "marker"
+      },
+      {
+        "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+        "audited_pages": [
+          0,
+          5,
+          15,
+          20,
+          21,
+          26,
+          27,
+          46
+        ],
+        "reference_scored_nodes": 20,
+        "reference_context_nodes": 3,
+        "predictions_in_scope": 21,
+        "node_metrics": {
+          "tp": 20,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9523809523809523,
+          "recall": 1.0,
+          "f1": 0.975609756097561
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "clause": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "point": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "appendix": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "generic_section": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 18,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 20,
+          "exact": 20,
+          "rate": 1.0
+        },
+        "title_normalized_exact": {
+          "eligible": 4,
+          "exact": 2,
+          "rate": 0.5
+        },
+        "parser": "mineru"
+      },
+      {
+        "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+        "audited_pages": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "reference_scored_nodes": 21,
+        "reference_context_nodes": 5,
+        "predictions_in_scope": 0,
+        "node_metrics": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 21,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "clause": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 13,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "appendix": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "generic_section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 17,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 0,
+          "exact": 0,
+          "rate": 0.0
+        },
+        "title_normalized_exact": {
+          "eligible": 0,
+          "exact": 0,
+          "rate": 0.0
+        },
+        "parser": "marker"
+      },
+      {
+        "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+        "audited_pages": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "reference_scored_nodes": 21,
+        "reference_context_nodes": 5,
+        "predictions_in_scope": 3,
+        "node_metrics": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 21,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "node_metrics_by_kind": {
+          "part": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "chapter": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "section": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "subsection": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "article": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "clause": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 13,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "appendix": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "generic_section": {
+            "tp": 0,
+            "fp": 3,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "parent_edge_metrics": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 17,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "canonical_path_exact": {
+          "matched_nodes": 0,
+          "exact": 0,
+          "rate": 0.0
+        },
+        "title_normalized_exact": {
+          "eligible": 0,
+          "exact": 0,
+          "rate": 0.0
+        },
+        "parser": "mineru"
+      }
+    ],
+    "aggregate": {
+      "node_metrics": {
+        "tp": 196,
+        "fp": 15,
+        "fn": 53,
+        "precision": 0.9289099526066351,
+        "recall": 0.7871485943775101,
+        "f1": 0.8521739130434783
+      },
+      "node_metrics_by_kind": {
+        "part": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "chapter": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        "section": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "subsection": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "article": {
+          "tp": 24,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.7272727272727273,
+          "f1": 0.8421052631578948
+        },
+        "clause": {
+          "tp": 71,
+          "fp": 0,
+          "fn": 10,
+          "precision": 1.0,
+          "recall": 0.8765432098765432,
+          "f1": 0.9342105263157895
+        },
+        "point": {
+          "tp": 78,
+          "fp": 0,
+          "fn": 32,
+          "precision": 1.0,
+          "recall": 0.7090909090909091,
+          "f1": 0.8297872340425533
+        },
+        "appendix": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.888888888888889
+        },
+        "generic_section": {
+          "tp": 14,
+          "fp": 9,
+          "fn": 2,
+          "precision": 0.6086956521739131,
+          "recall": 0.875,
+          "f1": 0.717948717948718
+        }
+      },
+      "parent_edge_metrics": {
+        "tp": 153,
+        "fp": 27,
+        "fn": 72,
+        "precision": 0.85,
+        "recall": 0.68,
+        "f1": 0.7555555555555556
+      },
+      "canonical_path_exact": {
+        "matched_nodes": 196,
+        "exact": 169,
+        "rate": 0.8622448979591837
+      },
+      "title_normalized_exact": {
+        "eligible": 38,
+        "exact": 28,
+        "rate": 0.7368421052631579
+      }
+    }
+  },
+  "cross_parser_agreement": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "legal": {
+        "marker": 44,
+        "mineru": 46,
+        "intersection": 44,
+        "union": 46,
+        "jaccard": 0.9565217391304348
+      },
+      "generic": {
+        "marker": 17,
+        "mineru": 18,
+        "intersection": 16,
+        "union": 19,
+        "jaccard": 0.8421052631578947
+      },
+      "all": {
+        "marker": 61,
+        "mineru": 64,
+        "intersection": 60,
+        "union": 65,
+        "jaccard": 0.9230769230769231
+      }
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "legal": {
+        "marker": 0,
+        "mineru": 0,
+        "intersection": 0,
+        "union": 0,
+        "jaccard": 1.0
+      },
+      "generic": {
+        "marker": 0,
+        "mineru": 3,
+        "intersection": 0,
+        "union": 3,
+        "jaccard": 0.0
+      },
+      "all": {
+        "marker": 0,
+        "mineru": 3,
+        "intersection": 0,
+        "union": 3,
+        "jaccard": 0.0
+      }
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "legal": {
+        "marker": 72,
+        "mineru": 76,
+        "intersection": 71,
+        "union": 77,
+        "jaccard": 0.922077922077922
+      },
+      "generic": {
+        "marker": 23,
+        "mineru": 22,
+        "intersection": 22,
+        "union": 23,
+        "jaccard": 0.9565217391304348
+      },
+      "all": {
+        "marker": 95,
+        "mineru": 98,
+        "intersection": 93,
+        "union": 100,
+        "jaccard": 0.93
+      }
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "legal": {
+        "marker": 10,
+        "mineru": 15,
+        "intersection": 10,
+        "union": 15,
+        "jaccard": 0.6666666666666666
+      },
+      "generic": {
+        "marker": 8,
+        "mineru": 4,
+        "intersection": 4,
+        "union": 8,
+        "jaccard": 0.5
+      },
+      "all": {
+        "marker": 18,
+        "mineru": 19,
+        "intersection": 14,
+        "union": 23,
+        "jaccard": 0.6086956521739131
+      }
+    }
+  ],
+  "unresolved_candidate_diagnostics": {
+    "counts": {
+      "letter_item_outside_legal_clause": 173,
+      "marker_like_text_rejected": 10,
+      "simple_decimal_without_heading_evidence": 103
+    },
+    "examples": {
+      "letter_item_outside_legal_clause": [
+        {
+          "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+          "parser": "marker",
+          "page_index": 7,
+          "excerpt": "a) Phân vùng kinh tế xã hội"
+        },
+        {
+          "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+          "parser": "marker",
+          "page_index": 8,
+          "excerpt": "b) Định hướng phát triển vùng và liên kết vùng"
+        },
+        {
+          "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+          "parser": "marker",
+          "page_index": 12,
+          "excerpt": "a) Vùng động lực phía Bắc"
+        },
+        {
+          "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+          "parser": "marker",
+          "page_index": 9,
+          "excerpt": "a) Hiện trạng phát triển kinh tế, xã hội;"
+        },
+        {
+          "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+          "parser": "marker",
+          "page_index": 9,
+          "excerpt": "b) Hiện trạng phát triển hệ thống đô thị, nông thôn; các khu chức năng (khu kinh tế; khu công nghiệp; khu công nghệ cao; khu du lịch, khu thể dục thể thao, di t"
+        }
+      ],
+      "marker_like_text_rejected": [
+        {
+          "document_id": "hanoi-master-plan-100y",
+          "parser": "marker",
+          "page_index": 71,
+          "excerpt": "Điều tra, khoanh định khu vực hạn chế khai thác nước dưới đất; phục hồi các tầng chứa nước bị suy thoái, cạn kiệt, ô nhiễm; bảo vệ miền cấp nước dưới đất; tăng "
+        },
+        {
+          "document_id": "hanoi-master-plan-100y",
+          "parser": "marker",
+          "page_index": 73,
+          "excerpt": "Điều tra, khảo sát và xây dựng cơ sở dữ liệu về hồ đập trên địa bàn Thành phố để xây dựng đề án, kế hoạch, dự án cải tạo nâng cấp, bảo vệ nghiêm ngặt các hành l"
+        },
+        {
+          "document_id": "hanoi-master-plan-100y",
+          "parser": "mineru",
+          "page_index": 71,
+          "excerpt": "Điều tra, khoanh định khu vực hạn chế khai thác nước dưới đất; phục hồi các tầng chứa nước bị suy thoái, cạn kiệt, ô nhiễm; bảo vệ miền cấp nước dưới đất; tăng "
+        },
+        {
+          "document_id": "hanoi-master-plan-100y",
+          "parser": "mineru",
+          "page_index": 73,
+          "excerpt": "Điều tra, khảo sát và xây dựng cơ sở dữ liệu về hồ đập trên địa bàn Thành phố để xây dựng đề án, kế hoạch, dự án cải tạo nâng cấp, bảo vệ nghiêm ngặt các hành l"
+        },
+        {
+          "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+          "parser": "marker",
+          "page_index": 30,
+          "excerpt": "điều dưỡng và nuôi dưỡng với chăm sóc sức khoẻ, chăm sóc xã hội khác cho người có công."
+        }
+      ],
+      "simple_decimal_without_heading_evidence": [
+        {
+          "document_id": "luat-112-2025-qh15",
+          "parser": "marker",
+          "page_index": 48,
+          "excerpt": "1."
+        },
+        {
+          "document_id": "luat-112-2025-qh15",
+          "parser": "marker",
+          "page_index": 48,
+          "excerpt": "2."
+        },
+        {
+          "document_id": "luat-112-2025-qh15",
+          "parser": "marker",
+          "page_index": 48,
+          "excerpt": "3."
+        },
+        {
+          "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+          "parser": "marker",
+          "page_index": 0,
+          "excerpt": "1. Luật Công nghiệp công nghệ số số 71/2025/QH15 ngày 14 tháng 6 năm 2025 của Quốc hội, có hiệu lực kể từ ngày 01 tháng 01 năm 2026;"
+        },
+        {
+          "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+          "parser": "marker",
+          "page_index": 0,
+          "excerpt": "2. Nghị quyết số 252/2025/QH15 ngày 10 tháng 12 năm 2025 của Quốc hội sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của "
+        }
+      ]
+    }
+  },
+  "scope_boundary": "Deterministic structural marker detection and physical anchoring only; no semantic legal edges, VLM/LLM, retrieval, RAG, or knowledge graph functionality."
+}

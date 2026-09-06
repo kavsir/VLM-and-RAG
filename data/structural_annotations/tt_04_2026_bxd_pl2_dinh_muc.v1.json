@@ -1,0 +1,67 @@
+{
+  "annotation_schema_version": 1,
+  "annotation_version": "v1",
+  "annotator": "codex",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_structural_audit",
+  "created_at": "2026-09-06T00:00:00+07:00",
+  "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+  "version_id": "v1",
+  "source_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+  "prior_physical_ir_exposure": true,
+  "physical_ir_used_as_reference": false,
+  "selection_rationale": "Pages were stratified across formal legal hierarchy, planning outlines, appendices, cross-page continuity, visual objects, and scanned structure; selection was made from rendered PDFs rather than extractor success.",
+  "audited_pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 0,
+          "pdf_page_number_1_based": 1,
+          "kind": "appendix",
+          "ordinal_raw": "II",
+          "ordinal_key": "2",
+          "marker_text": "PHỤ LỤC II",
+          "title": null,
+          "canonical_path": "appendix:2",
+          "parent_canonical_path": "document",
+          "source_excerpt": "PHỤ LỤC II",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 10,
+      "pdf_page_number_1_based": 11,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 15,
+      "pdf_page_number_1_based": 16,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 18,
+      "pdf_page_number_1_based": 19,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    }
+  ]
+}

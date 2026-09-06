@@ -1,0 +1,4702 @@
+{
+  "structural_ir_version": 1,
+  "profile": "vi_legal_planning_v1",
+  "source_physical_ir_version": 2,
+  "source_physical_ir_sha256": "0e8b3f2ec69f22d77858f9aeec895110e99f5b8b8a3222ab1b2a1f8aea850670",
+  "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+  "version_id": "v1",
+  "source_artifact_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+  "nodes": [
+    {
+      "id": "node-000000",
+      "kind": "document",
+      "parent_id": null,
+      "depth": 0,
+      "ordinal_raw": null,
+      "ordinal_key": null,
+      "marker_text": null,
+      "title": null,
+      "heading_anchors": [],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0000",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0001",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 84
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0002",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 20
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0003",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 32
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0004",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0005",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 144
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0006",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 48
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0007",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 54
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0008",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 61
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0009",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 158
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0010",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 131
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 294
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0012",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 48
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0013",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 195
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "DOCUMENT_ROOT_V1",
+        "recognition_method": "document_root",
+        "matched_text": "DOCUMENT"
+      },
+      "canonical_path": "document"
+    },
+    {
+      "id": "node-000001",
+      "kind": "chapter",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "Chương I",
+      "title": "QUY ĐỊNH CHUNG",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0014",
+          "page_index": 0,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0014",
+          "page_index": 0,
+          "role": "title",
+          "char_start": 9,
+          "char_end": 23
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Chương I"
+      },
+      "canonical_path": "chapter:1"
+    },
+    {
+      "id": "node-000002",
+      "kind": "article",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "Điều 1.",
+      "title": "Phạm vi điều chỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0015",
+          "page_index": 0,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0015",
+          "page_index": 0,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 26
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 1."
+      },
+      "canonical_path": "chapter:1/article:1"
+    },
+    {
+      "id": "node-000003",
+      "kind": "clause",
+      "parent_id": "node-000002",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 318
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:1/article:1/clause:1"
+    },
+    {
+      "id": "node-000004",
+      "kind": "clause",
+      "parent_id": "node-000002",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0001",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0001",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 200
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:1/article:1/clause:2"
+    },
+    {
+      "id": "node-000005",
+      "kind": "article",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "Điều 2.",
+      "title": "Đối tượng áp dụng",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0002",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0002",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 25
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0003",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 260
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 2."
+      },
+      "canonical_path": "chapter:1/article:2"
+    },
+    {
+      "id": "node-000006",
+      "kind": "article",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "Điều 3.",
+      "title": "Giải thích từ ngữ",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0004",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0004",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 25
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 3."
+      },
+      "canonical_path": "chapter:1/article:3"
+    },
+    {
+      "id": "node-000007",
+      "kind": "clause",
+      "parent_id": "node-000006",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0005",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0005",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 145
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:1/article:3/clause:1"
+    },
+    {
+      "id": "node-000008",
+      "kind": "clause",
+      "parent_id": "node-000006",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0006",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0006",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 616
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:1/article:3/clause:2"
+    },
+    {
+      "id": "node-000009",
+      "kind": "clause",
+      "parent_id": "node-000006",
+      "depth": 3,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0007",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0007",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 215
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "chapter:1/article:3/clause:3"
+    },
+    {
+      "id": "node-000010",
+      "kind": "chapter",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "Chương II",
+      "title": "YÊU CẦU KỸ THUẬT CHUNG CỦA CƠ SỞ DỮ LIỆU HỒ SƠ QUY HOẠCH VÀ SƠ ĐỒ, BẢN ĐỒ QUY HOẠCH CẤP QUỐC GIA, QUY HOẠCH VÙNG, QUY HOẠCH TỈNH",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0008",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 10
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0008",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 10,
+          "char_end": 138
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Chương II"
+      },
+      "canonical_path": "chapter:2"
+    },
+    {
+      "id": "node-000011",
+      "kind": "article",
+      "parent_id": "node-000010",
+      "depth": 2,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "Điều 4.",
+      "title": "Định dạng văn bản điện tử của hồ sơ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0009",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0009",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 98
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 4."
+      },
+      "canonical_path": "chapter:2/article:4"
+    },
+    {
+      "id": "node-000012",
+      "kind": "clause",
+      "parent_id": "node-000011",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0000",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0000",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 58
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:2/article:4/clause:1"
+    },
+    {
+      "id": "node-000013",
+      "kind": "clause",
+      "parent_id": "node-000011",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0001",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0001",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 192
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:2/article:4/clause:2"
+    },
+    {
+      "id": "node-000014",
+      "kind": "clause",
+      "parent_id": "node-000011",
+      "depth": 3,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0002",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0002",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 133
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "chapter:2/article:4/clause:3"
+    },
+    {
+      "id": "node-000015",
+      "kind": "clause",
+      "parent_id": "node-000011",
+      "depth": 3,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0003",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0003",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 84
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "4."
+      },
+      "canonical_path": "chapter:2/article:4/clause:4"
+    },
+    {
+      "id": "node-000016",
+      "kind": "article",
+      "parent_id": "node-000010",
+      "depth": 2,
+      "ordinal_raw": "5",
+      "ordinal_key": "5",
+      "marker_text": "Điều 5.",
+      "title": "Định dạng dữ liệu của cơ sở dữ liệu địa lý của quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0004",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0004",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 109
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 5."
+      },
+      "canonical_path": "chapter:2/article:5"
+    },
+    {
+      "id": "node-000017",
+      "kind": "clause",
+      "parent_id": "node-000016",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0005",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0005",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 136
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:2/article:5/clause:1"
+    },
+    {
+      "id": "node-000018",
+      "kind": "clause",
+      "parent_id": "node-000016",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0006",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0006",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 99
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:2/article:5/clause:2"
+    },
+    {
+      "id": "node-000019",
+      "kind": "article",
+      "parent_id": "node-000010",
+      "depth": 2,
+      "ordinal_raw": "6",
+      "ordinal_key": "6",
+      "marker_text": "Điều 6.",
+      "title": "Cơ sở toán học và yêu cầu thể hiện nội dung sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0007",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0007",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 120
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 6."
+      },
+      "canonical_path": "chapter:2/article:6"
+    },
+    {
+      "id": "node-000020",
+      "kind": "clause",
+      "parent_id": "node-000019",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0008",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0008",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 185
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:2/article:6/clause:1"
+    },
+    {
+      "id": "node-000021",
+      "kind": "clause",
+      "parent_id": "node-000019",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0009",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0009",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 285
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:2/article:6/clause:2"
+    },
+    {
+      "id": "node-000022",
+      "kind": "article",
+      "parent_id": "node-000010",
+      "depth": 2,
+      "ordinal_raw": "7",
+      "ordinal_key": "7",
+      "marker_text": "Điều 7.",
+      "title": "Hệ quy chiếu tọa độ, hệ quy chiếu thời gian, siêu dữ liệu của cơ sở dữ liệu địa lý quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0010",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0010",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 145
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 7."
+      },
+      "canonical_path": "chapter:2/article:7"
+    },
+    {
+      "id": "node-000023",
+      "kind": "clause",
+      "parent_id": "node-000022",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0011",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0011",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 261
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:2/article:7/clause:1"
+    },
+    {
+      "id": "node-000024",
+      "kind": "clause",
+      "parent_id": "node-000022",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0000",
+          "page_index": 3,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0000",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 222
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:2/article:7/clause:2"
+    },
+    {
+      "id": "node-000025",
+      "kind": "chapter",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "III",
+      "ordinal_key": "3",
+      "marker_text": "Chương III",
+      "title": "YÊU CẦU VỀ NỘI DUNG CHỦ YẾU VÀ KỸ THUẬT THỂ HIỆN CỦA CƠ SỞ DỮ LIỆU ĐỊA LÝ QUY HOẠCH VÀ SƠ ĐỒ, BẢN ĐỒ QUY HOẠCH TỔNG THỂ QUỐC GIA, QUY HOẠCH VÙNG, QUY HOẠCH TỈNH",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0001",
+          "page_index": 3,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0001",
+          "page_index": 3,
+          "role": "title",
+          "char_start": 11,
+          "char_end": 171
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Chương III"
+      },
+      "canonical_path": "chapter:3"
+    },
+    {
+      "id": "node-000026",
+      "kind": "article",
+      "parent_id": "node-000025",
+      "depth": 2,
+      "ordinal_raw": "8",
+      "ordinal_key": "8",
+      "marker_text": "Điều 8.",
+      "title": "Yêu cầu về nội dung chủ yếu và kỹ thuật thể hiện sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0002",
+          "page_index": 3,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0002",
+          "page_index": 3,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 130
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 8."
+      },
+      "canonical_path": "chapter:3/article:8"
+    },
+    {
+      "id": "node-000027",
+      "kind": "clause",
+      "parent_id": "node-000026",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0003",
+          "page_index": 3,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0003",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 143
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:3/article:8/clause:1"
+    },
+    {
+      "id": "node-000028",
+      "kind": "clause",
+      "parent_id": "node-000026",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0004",
+          "page_index": 3,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0004",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 115
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:3/article:8/clause:2"
+    },
+    {
+      "id": "node-000029",
+      "kind": "point",
+      "parent_id": "node-000028",
+      "depth": 4,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0005",
+          "page_index": 3,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0005",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 1306
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0000",
+          "page_index": 4,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "chapter:3/article:8/clause:2/point:a"
+    },
+    {
+      "id": "node-000030",
+      "kind": "point",
+      "parent_id": "node-000028",
+      "depth": 4,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0001",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0001",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 175
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "chapter:3/article:8/clause:2/point:b"
+    },
+    {
+      "id": "node-000031",
+      "kind": "point",
+      "parent_id": "node-000028",
+      "depth": 4,
+      "ordinal_raw": "c",
+      "ordinal_key": "100",
+      "marker_text": "c)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0002",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0002",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 321
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "c)"
+      },
+      "canonical_path": "chapter:3/article:8/clause:2/point:100"
+    },
+    {
+      "id": "node-000032",
+      "kind": "clause",
+      "parent_id": "node-000026",
+      "depth": 3,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0003",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0003",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 164
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "4."
+      },
+      "canonical_path": "chapter:3/article:8/clause:4"
+    },
+    {
+      "id": "node-000033",
+      "kind": "point",
+      "parent_id": "node-000032",
+      "depth": 4,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0004",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0004",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 107
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "chapter:3/article:8/clause:4/point:a"
+    },
+    {
+      "id": "node-000034",
+      "kind": "point",
+      "parent_id": "node-000032",
+      "depth": 4,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0005",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0005",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 145
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "chapter:3/article:8/clause:4/point:b"
+    },
+    {
+      "id": "node-000035",
+      "kind": "point",
+      "parent_id": "node-000032",
+      "depth": 4,
+      "ordinal_raw": "c",
+      "ordinal_key": "100",
+      "marker_text": "c)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0006",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0006",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 164
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "c)"
+      },
+      "canonical_path": "chapter:3/article:8/clause:4/point:100"
+    },
+    {
+      "id": "node-000036",
+      "kind": "article",
+      "parent_id": "node-000025",
+      "depth": 2,
+      "ordinal_raw": "9",
+      "ordinal_key": "9",
+      "marker_text": "Điều 9.",
+      "title": "Tổ chức dữ liệu của cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0007",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0007",
+          "page_index": 4,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 108
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 9."
+      },
+      "canonical_path": "chapter:3/article:9"
+    },
+    {
+      "id": "node-000037",
+      "kind": "clause",
+      "parent_id": "node-000036",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0008",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0008",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 179
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:3/article:9/clause:1"
+    },
+    {
+      "id": "node-000038",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0009",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0009",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 30
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:a"
+    },
+    {
+      "id": "node-000039",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0010",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0010",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 12
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:b"
+    },
+    {
+      "id": "node-000040",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "c",
+      "ordinal_key": "100",
+      "marker_text": "c)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0011",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0011",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 29
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "c)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:100"
+    },
+    {
+      "id": "node-000041",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "d",
+      "ordinal_key": "500",
+      "marker_text": "d)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0012",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0012",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 39
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "d)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:500"
+    },
+    {
+      "id": "node-000042",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "đ",
+      "ordinal_key": "đ",
+      "marker_text": "đ)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0013",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0013",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 27
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "đ)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:đ"
+    },
+    {
+      "id": "node-000043",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "e",
+      "ordinal_key": "e",
+      "marker_text": "e)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0000",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0000",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 32
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "e)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:e"
+    },
+    {
+      "id": "node-000044",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "g",
+      "ordinal_key": "g",
+      "marker_text": "g)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0001",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0001",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 22
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "g)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:g"
+    },
+    {
+      "id": "node-000045",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "h",
+      "ordinal_key": "h",
+      "marker_text": "h)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0002",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0002",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 29
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "h)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:h"
+    },
+    {
+      "id": "node-000046",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "i",
+      "ordinal_key": "1",
+      "marker_text": "i)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0003",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0003",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 25
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "i)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:1"
+    },
+    {
+      "id": "node-000047",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "k",
+      "ordinal_key": "k",
+      "marker_text": "k)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0004",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0004",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 8
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "k)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:k"
+    },
+    {
+      "id": "node-000048",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "l",
+      "ordinal_key": "50",
+      "marker_text": "l)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0005",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0005",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 23
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "l)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:50"
+    },
+    {
+      "id": "node-000049",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "m",
+      "ordinal_key": "1000",
+      "marker_text": "m)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0006",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0006",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 36
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "m)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:1000"
+    },
+    {
+      "id": "node-000050",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "n",
+      "ordinal_key": "n",
+      "marker_text": "n)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0007",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0007",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 23
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "n)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:n"
+    },
+    {
+      "id": "node-000051",
+      "kind": "point",
+      "parent_id": "node-000037",
+      "depth": 4,
+      "ordinal_raw": "o",
+      "ordinal_key": "o",
+      "marker_text": "o)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0008",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0008",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 14
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "o)"
+      },
+      "canonical_path": "chapter:3/article:9/clause:1/point:o"
+    },
+    {
+      "id": "node-000052",
+      "kind": "clause",
+      "parent_id": "node-000036",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0009",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0009",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 238
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:3/article:9/clause:2"
+    },
+    {
+      "id": "node-000053",
+      "kind": "article",
+      "parent_id": "node-000025",
+      "depth": 2,
+      "ordinal_raw": "10",
+      "ordinal_key": "10",
+      "marker_text": "Điều 10.",
+      "title": "Gán mã nhận dạng của đối tượng địa lý trong cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0010",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0010",
+          "page_index": 5,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 133
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 10."
+      },
+      "canonical_path": "chapter:3/article:10"
+    },
+    {
+      "id": "node-000054",
+      "kind": "clause",
+      "parent_id": "node-000053",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0011",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0011",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 178
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:3/article:10/clause:1"
+    },
+    {
+      "id": "node-000055",
+      "kind": "clause",
+      "parent_id": "node-000053",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0012",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0012",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 209
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:3/article:10/clause:2"
+    },
+    {
+      "id": "node-000056",
+      "kind": "article",
+      "parent_id": "node-000025",
+      "depth": 2,
+      "ordinal_raw": "11",
+      "ordinal_key": "11",
+      "marker_text": "Điều 11.",
+      "title": "Danh mục đối tượng địa lý của cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0013",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0013",
+          "page_index": 5,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 119
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 11."
+      },
+      "canonical_path": "chapter:3/article:11"
+    },
+    {
+      "id": "node-000057",
+      "kind": "clause",
+      "parent_id": "node-000056",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0014",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0014",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 167
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:3/article:11/clause:1"
+    },
+    {
+      "id": "node-000058",
+      "kind": "clause",
+      "parent_id": "node-000056",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0015",
+          "page_index": 5,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0015",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 394
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:3/article:11/clause:2"
+    },
+    {
+      "id": "node-000059",
+      "kind": "chapter",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "IV",
+      "ordinal_key": "4",
+      "marker_text": "Chương IV",
+      "title": "TỔ CHỨC THỰC HIỆN",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0000",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 10
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0000",
+          "page_index": 6,
+          "role": "title",
+          "char_start": 10,
+          "char_end": 27
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Chương IV"
+      },
+      "canonical_path": "chapter:4"
+    },
+    {
+      "id": "node-000060",
+      "kind": "article",
+      "parent_id": "node-000059",
+      "depth": 2,
+      "ordinal_raw": "12",
+      "ordinal_key": "12",
+      "marker_text": "Điều 12.",
+      "title": "Tổ chức thực hiện",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0001",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0001",
+          "page_index": 6,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 26
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 12."
+      },
+      "canonical_path": "chapter:4/article:12"
+    },
+    {
+      "id": "node-000061",
+      "kind": "clause",
+      "parent_id": "node-000060",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0002",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0002",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 408
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:4/article:12/clause:1"
+    },
+    {
+      "id": "node-000062",
+      "kind": "clause",
+      "parent_id": "node-000060",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0003",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0003",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 390
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:4/article:12/clause:2"
+    },
+    {
+      "id": "node-000063",
+      "kind": "clause",
+      "parent_id": "node-000060",
+      "depth": 3,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0004",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0004",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 357
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "chapter:4/article:12/clause:3"
+    },
+    {
+      "id": "node-000064",
+      "kind": "article",
+      "parent_id": "node-000059",
+      "depth": 2,
+      "ordinal_raw": "13",
+      "ordinal_key": "13",
+      "marker_text": "Điều 13.",
+      "title": "Điều khoản chuyển tiếp",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0005",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0005",
+          "page_index": 6,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 31
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 13."
+      },
+      "canonical_path": "chapter:4/article:13"
+    },
+    {
+      "id": "node-000065",
+      "kind": "clause",
+      "parent_id": "node-000064",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0006",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0006",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 665
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:4/article:13/clause:1"
+    },
+    {
+      "id": "node-000066",
+      "kind": "clause",
+      "parent_id": "node-000064",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0000",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0000",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 750
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:4/article:13/clause:2"
+    },
+    {
+      "id": "node-000067",
+      "kind": "clause",
+      "parent_id": "node-000064",
+      "depth": 3,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0001",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0001",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 228
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "chapter:4/article:13/clause:3"
+    },
+    {
+      "id": "node-000068",
+      "kind": "article",
+      "parent_id": "node-000059",
+      "depth": 2,
+      "ordinal_raw": "14",
+      "ordinal_key": "14",
+      "marker_text": "Điều 14.",
+      "title": "Hiệu lực thi hành",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0002",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0002",
+          "page_index": 7,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 26
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 14."
+      },
+      "canonical_path": "chapter:4/article:14"
+    },
+    {
+      "id": "node-000069",
+      "kind": "clause",
+      "parent_id": "node-000068",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0003",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0003",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 68
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "chapter:4/article:14/clause:1"
+    },
+    {
+      "id": "node-000070",
+      "kind": "clause",
+      "parent_id": "node-000068",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0004",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0004",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 161
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "chapter:4/article:14/clause:2"
+    },
+    {
+      "id": "node-000071",
+      "kind": "clause",
+      "parent_id": "node-000068",
+      "depth": 3,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0005",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0005",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 196
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0006",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0007",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 15
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "chapter:4/article:14/clause:3"
+    },
+    {
+      "id": "node-000072",
+      "kind": "appendix",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "Phụ lục I",
+      "title": "NỘI DUNG CHỦ YẾU CỦA SƠ ĐỒ, BẢN ĐỒ QUY HOẠCH TỔNG THỂ QUỐC GIA, QUY HOẠCH VÙNG, QUY HOẠCH TỈNH (Ban hành kèm theo Thông tư số 04/2023/TT-BKHĐT ngày 26 tháng 6 năm 2023 của Bộ Kế hoạch và Đầu tư)",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0000",
+          "page_index": 8,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 10
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0000",
+          "page_index": 8,
+          "role": "title",
+          "char_start": 10,
+          "char_end": 204
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_APPENDIX_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Phụ lục I"
+      },
+      "canonical_path": "appendix:1"
+    },
+    {
+      "id": "node-000073",
+      "kind": "generic_section",
+      "parent_id": "node-000072",
+      "depth": 2,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "I.",
+      "title": "NỘI DUNG CHỦ YẾU CỦA SƠ ĐỒ, BẢN ĐỒ QUY HOẠCH TỔNG THỂ QUỐC GIA",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0001",
+          "page_index": 8,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0001",
+          "page_index": 8,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 65
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0002",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 247
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0003",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 205
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0004",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 183
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0005",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 287
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0006",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 144
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0007",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 142
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0008_b0008",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 325
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0000",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 125
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0001",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 124
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0002",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 153
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0003",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 330
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0004",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 119
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0005",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 214
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "I."
+      },
+      "canonical_path": "appendix:1/generic:1"
+    },
+    {
+      "id": "node-000074",
+      "kind": "generic_section",
+      "parent_id": "node-000072",
+      "depth": 2,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "II.",
+      "title": "NỘI DUNG CHỦ YẾU CỦA SƠ ĐỒ, BẢN ĐỒ QUY HOẠCH VÙNG",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0006",
+          "page_index": 9,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 4
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0006",
+          "page_index": 9,
+          "role": "title",
+          "char_start": 4,
+          "char_end": 53
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0007",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 271
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "II."
+      },
+      "canonical_path": "appendix:1/generic:2"
+    },
+    {
+      "id": "node-000075",
+      "kind": "generic_section",
+      "parent_id": "node-000074",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": "Về hiện trạng phát triển vùng, bao gồm các nội dung chủ yếu sau:",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0008",
+          "page_index": 9,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0008",
+          "page_index": 9,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 67
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0009",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 41
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0010",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 286
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0009_b0011",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 89
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0000",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 264
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0001",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 140
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0002",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 103
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0003",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 329
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0004",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 91
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0005",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 132
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0006",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 139
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0007",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 159
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0008",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 98
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0009",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 138
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0010_b0010",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 95
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0011_b0000",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 137
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0011_b0001",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 405
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0011_b0002",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 96
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0011_b0003",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 138
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0011_b0004",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 87
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0011_b0005",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 459
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0011_b0006",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 409
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0011_b0007",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 89
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0011_b0008",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 153
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0000",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 304
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0001",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 409
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "2."
+      },
+      "canonical_path": "appendix:1/generic:2/generic:2"
+    },
+    {
+      "id": "node-000076",
+      "kind": "generic_section",
+      "parent_id": "node-000074",
+      "depth": 3,
+      "ordinal_raw": "7",
+      "ordinal_key": "7",
+      "marker_text": "7.",
+      "title": "Về phương hướng sử dụng tài nguyên, bao gồm các nội dung chủ yếu sau:",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0002",
+          "page_index": 12,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0002",
+          "page_index": 12,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 72
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0003",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 153
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0004",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 329
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "7."
+      },
+      "canonical_path": "appendix:1/generic:2/generic:7"
+    },
+    {
+      "id": "node-000077",
+      "kind": "generic_section",
+      "parent_id": "node-000074",
+      "depth": 3,
+      "ordinal_raw": "8",
+      "ordinal_key": "8",
+      "marker_text": "8.",
+      "title": "Về phương hướng bảo vệ môi trường, bao gồm các nội dung chủ yếu sau:",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0005",
+          "page_index": 12,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0005",
+          "page_index": 12,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 71
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0006",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 411
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0007",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 209
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0000",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 329
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0001",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 108
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0002",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 244
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0003",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 308
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0004",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 381
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "8."
+      },
+      "canonical_path": "appendix:1/generic:2/generic:8"
+    },
+    {
+      "id": "node-000078",
+      "kind": "generic_section",
+      "parent_id": "node-000072",
+      "depth": 2,
+      "ordinal_raw": "III",
+      "ordinal_key": "3",
+      "marker_text": "III.",
+      "title": "NỘI DUNG CHỦ YẾU CỦA SƠ ĐỒ, BẢN ĐỒ QUY HOẠCH TỈNH",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0005",
+          "page_index": 13,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 5
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0005",
+          "page_index": 13,
+          "role": "title",
+          "char_start": 5,
+          "char_end": 54
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0006",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 300
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "III."
+      },
+      "canonical_path": "appendix:1/generic:3"
+    },
+    {
+      "id": "node-000079",
+      "kind": "generic_section",
+      "parent_id": "node-000078",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": "Về hiện trạng phát triển, bao gồm các nội dung chủ yếu sau:",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0007",
+          "page_index": 13,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0007",
+          "page_index": 13,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 62
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0008",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 41
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0013_b0009",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 71
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0000",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 26
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0001",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 37
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0002",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 39
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0003",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 61
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0004",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 122
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0005",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 342
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0006",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 254
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0007",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 87
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0008",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 76
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0009",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 126
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0010",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 76
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0011",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 151
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0012",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 92
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0014_b0013",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 151
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0015_b0000",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 377
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0015_b0001",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 101
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0015_b0002",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 151
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0015_b0003",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 84
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0015_b0004",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 521
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0015_b0005",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 95
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0015_b0006",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 679
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0016_b0000",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 313
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0016_b0001",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 513
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0016_b0002",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 420
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0016_b0003",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 86
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0016_b0004",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 410
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0016_b0005",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 263
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0000",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 272
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0001",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 216
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0002",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 188
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0003",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 420
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0004",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 98
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0005",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 150
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0006",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 177
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0007",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 304
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0008",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 520
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0000",
+          "page_index": 18,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0001",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 423
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0002",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 233
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0003",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 374
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0004",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 151
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0005",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 97
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0006",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 108
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0007",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 217
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0019_b0000",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 632
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0019_b0001",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 342
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0019_b0002",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 147
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0019_b0003",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 192
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0019_b0004",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 221
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0019_b0005",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 209
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0019_b0006",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 113
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0019_b0007",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 182
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0020_b0000",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 342
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0020_b0001",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 429
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0020_b0002",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 378
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "2."
+      },
+      "canonical_path": "appendix:1/generic:3/generic:2"
+    },
+    {
+      "id": "node-000080",
+      "kind": "appendix",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "Phụ lục II",
+      "title": "BỐ CỤC VÀ HỆ THỐNG KÝ HIỆU CỦA SƠ ĐỒ, BẢN ĐỒ QUY HOẠCH TỔNG THỂ QUỐC GIA, QUY HOẠCH VÙNG VÀ QUY HOẠCH TỈNH (Ban hành kèm theo Thông tư số 04/2023/TT-BKHĐT ngày 26 tháng 6 năm 2023 của Bộ Kế hoạch và Đầu tư)",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0021_b0000",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0021_b0000",
+          "page_index": 21,
+          "role": "title",
+          "char_start": 11,
+          "char_end": 217
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_APPENDIX_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Phụ lục II"
+      },
+      "canonical_path": "appendix:2"
+    },
+    {
+      "id": "node-000081",
+      "kind": "generic_section",
+      "parent_id": "node-000080",
+      "depth": 2,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "I.",
+      "title": "BỐ CỤC",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0021_b0001",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0021_b0001",
+          "page_index": 21,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 9
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "I."
+      },
+      "canonical_path": "appendix:2/generic:1"
+    },
+    {
+      "id": "node-000082",
+      "kind": "generic_section",
+      "parent_id": "node-000081",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": "Bố cục chung",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0021_b0002",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0021_b0002",
+          "page_index": 21,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 15
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0021_b0003",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 134
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0021_b0004",
+          "page_index": 21,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0022_b0000",
+          "page_index": 22,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "1."
+      },
+      "canonical_path": "appendix:2/generic:1/generic:1"
+    },
+    {
+      "id": "node-000083",
+      "kind": "generic_section",
+      "parent_id": "node-000081",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": "Bố cục phần ký xác nhận",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0022_b0001",
+          "page_index": 22,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0022_b0001",
+          "page_index": 22,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 26
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0022_b0002",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 241
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0023_b0000",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 103
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0023_b0001",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 55
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0024_b0000",
+          "page_index": 24,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "2."
+      },
+      "canonical_path": "appendix:2/generic:1/generic:2"
+    },
+    {
+      "id": "node-000084",
+      "kind": "generic_section",
+      "parent_id": "node-000080",
+      "depth": 2,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "II.",
+      "title": "HỆ THỐNG KÝ HIỆU",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0025_b0000",
+          "page_index": 25,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 4
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0025_b0000",
+          "page_index": 25,
+          "role": "title",
+          "char_start": 4,
+          "char_end": 20
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "II."
+      },
+      "canonical_path": "appendix:2/generic:2"
+    },
+    {
+      "id": "node-000085",
+      "kind": "generic_section",
+      "parent_id": "node-000084",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": "Quy định chung",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0025_b0001",
+          "page_index": 25,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0025_b0001",
+          "page_index": 25,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 17
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0025_b0002",
+          "page_index": 25,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 279
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0025_b0003",
+          "page_index": 25,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 125
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0025_b0004",
+          "page_index": 25,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 136
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "1."
+      },
+      "canonical_path": "appendix:2/generic:2/generic:1"
+    },
+    {
+      "id": "node-000086",
+      "kind": "generic_section",
+      "parent_id": "node-000084",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": "Quy định cụ thể: Xem bảng ký hiệu.",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0025_b0005",
+          "page_index": 25,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0025_b0005",
+          "page_index": 25,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 37
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0026_b0000",
+          "page_index": 26,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0027_b0000",
+          "page_index": 27,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0028_b0000",
+          "page_index": 28,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0029_b0000",
+          "page_index": 29,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0030_b0000",
+          "page_index": 30,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0031_b0000",
+          "page_index": 31,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "2."
+      },
+      "canonical_path": "appendix:2/generic:2/generic:2"
+    },
+    {
+      "id": "node-000087",
+      "kind": "appendix",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "III",
+      "ordinal_key": "3",
+      "marker_text": "Phụ lục III",
+      "title": "QUY CÁCH ĐẶT TÊN, GÁN MÃ NHẬN DẠNG VÀ DANH MỤC ĐỐI TƯỢNG ĐỊA LÝ CỦA CƠ SỞ DỮ LIỆU ĐỊA LÝ QUY HOẠCH TỔNG THỂ QUỐC GIA, QUY HOẠCH VÙNG, QUY HOẠCH TỈNH (Kèm theo Thông tư số 04/2023/TT-BKHĐT ngày 26 tháng 6 năm 2023 của Bộ Kế hoạch và Đầu tư)",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0000",
+          "page_index": 32,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 12
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0000",
+          "page_index": 32,
+          "role": "title",
+          "char_start": 12,
+          "char_end": 251
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_APPENDIX_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Phụ lục III"
+      },
+      "canonical_path": "appendix:3"
+    },
+    {
+      "id": "node-000088",
+      "kind": "section",
+      "parent_id": "node-000087",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "Mục 1",
+      "title": "QUY CÁCH ĐẶT TÊN",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0001",
+          "page_index": 32,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 6
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0001",
+          "page_index": 32,
+          "role": "title",
+          "char_start": 6,
+          "char_end": 22
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_SECTION_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Mục 1"
+      },
+      "canonical_path": "appendix:3/section:1"
+    },
+    {
+      "id": "node-000089",
+      "kind": "generic_section",
+      "parent_id": "node-000087",
+      "depth": 2,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "I.",
+      "title": "TÊN GÓI DỮ LIỆU",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0002",
+          "page_index": 32,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0002",
+          "page_index": 32,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 18
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "I."
+      },
+      "canonical_path": "appendix:3/generic:1"
+    },
+    {
+      "id": "node-000090",
+      "kind": "generic_section",
+      "parent_id": "node-000089",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": "Tên gói dữ liệu quy hoạch tổng thể quốc gia, quy hoạch vùng",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0003",
+          "page_index": 32,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0003",
+          "page_index": 32,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 62
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0004",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 68
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0005",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 33
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0006",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 59
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0007",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 93
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0008",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 88
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "1."
+      },
+      "canonical_path": "appendix:3/generic:1/generic:1"
+    },
+    {
+      "id": "node-000091",
+      "kind": "generic_section",
+      "parent_id": "node-000089",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": "Tên gói dữ liệu quy hoạch tỉnh",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0009",
+          "page_index": 32,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0009",
+          "page_index": 32,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 33
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0010",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 92
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0011",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 93
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0012",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 63
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "2."
+      },
+      "canonical_path": "appendix:3/generic:1/generic:2"
+    },
+    {
+      "id": "node-000092",
+      "kind": "generic_section",
+      "parent_id": "node-000087",
+      "depth": 2,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "II.",
+      "title": "TÊN NHÓM LỚP ĐỐI TƯỢNG, LỚP ĐỐI TƯỢNG, TRƯỜNG THÔNG TIN THUỘC TÍNH",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0013",
+          "page_index": 32,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 4
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0013",
+          "page_index": 32,
+          "role": "title",
+          "char_start": 4,
+          "char_end": 70
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "II."
+      },
+      "canonical_path": "appendix:3/generic:2"
+    },
+    {
+      "id": "node-000093",
+      "kind": "generic_section",
+      "parent_id": "node-000092",
+      "depth": 3,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": "Tên nhóm lớp đối tượng",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0014",
+          "page_index": 32,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0014",
+          "page_index": 32,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 25
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0015",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 45
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0016",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 93
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0000",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 131
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0001",
+          "page_index": 33,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "1."
+      },
+      "canonical_path": "appendix:3/generic:2/generic:1"
+    },
+    {
+      "id": "node-000094",
+      "kind": "generic_section",
+      "parent_id": "node-000092",
+      "depth": 3,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": "Tên lớp, nhóm lớp dữ liệu",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0002",
+          "page_index": 33,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0002",
+          "page_index": 33,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 28
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0003",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 51
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0004",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0005",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 109
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0006",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 49
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0007",
+          "page_index": 33,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0000",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 98
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "2."
+      },
+      "canonical_path": "appendix:3/generic:2/generic:2"
+    },
+    {
+      "id": "node-000095",
+      "kind": "generic_section",
+      "parent_id": "node-000092",
+      "depth": 3,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": "Tên trường thông tin thuộc tính",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0001",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0001",
+          "page_index": 34,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 34
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0002",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 168
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0003",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 165
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "3."
+      },
+      "canonical_path": "appendix:3/generic:2/generic:3"
+    },
+    {
+      "id": "node-000096",
+      "kind": "section",
+      "parent_id": "node-000087",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "Mục 2",
+      "title": "QUY TẮC GÁN MÃ NHẬN DẠNG CỦA ĐỐI TƯỢNG ĐỊA LÝ",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0004",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 5
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0005",
+          "page_index": 34,
+          "role": "title",
+          "char_start": 0,
+          "char_end": 45
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0006",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 245
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0007",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 105
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0008",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 127
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0009",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 122
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_SECTION_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Mục 2"
+      },
+      "canonical_path": "appendix:3/section:2"
+    },
+    {
+      "id": "node-000097",
+      "kind": "generic_section",
+      "parent_id": "node-000087",
+      "depth": 2,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "I.",
+      "title": "MÃ CƠ SỞ DỮ LIỆU ĐỊA LÝ QUY HOẠCH",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0010",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0010",
+          "page_index": 34,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 36
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0011",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 89
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0012",
+          "page_index": 34,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0000",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 88
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0001",
+          "page_index": 35,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0002",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 25
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0003",
+          "page_index": 35,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0004",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 161
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "I."
+      },
+      "canonical_path": "appendix:3/generic:1~2"
+    },
+    {
+      "id": "node-000098",
+      "kind": "generic_section",
+      "parent_id": "node-000087",
+      "depth": 2,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "II.",
+      "title": "MÃ TÊN KIỂU ĐỐI TƯỢNG ĐỊA LÝ",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0005",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 4
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0005",
+          "page_index": 35,
+          "role": "title",
+          "char_start": 4,
+          "char_end": 32
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0006",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 184
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0007",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 95
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0008",
+          "page_index": 35,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0000",
+          "page_index": 36,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0001",
+          "page_index": 36,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 110
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0002",
+          "page_index": 36,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0003",
+          "page_index": 36,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 186
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0004",
+          "page_index": 36,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 161
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0037_b0000",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 24
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0037_b0001",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 153
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0037_b0002",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 282
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0037_b0003",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 93
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0038_b0000",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 97
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0038_b0001",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 60
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0038_b0002",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 990
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0038_b0003",
+          "page_index": 38,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0039_b0000",
+          "page_index": 39,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0040_b0000",
+          "page_index": 40,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0041_b0000",
+          "page_index": 41,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0042_b0000",
+          "page_index": 42,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0043_b0000",
+          "page_index": 43,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0044_b0000",
+          "page_index": 44,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0045_b0000",
+          "page_index": 45,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0046_b0000",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 248
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "II."
+      },
+      "canonical_path": "appendix:3/generic:2~2"
+    }
+  ]
+}

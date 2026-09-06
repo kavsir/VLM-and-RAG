@@ -1,0 +1,1972 @@
+{
+  "structural_ir_version": 1,
+  "profile": "vi_legal_planning_v1",
+  "source_physical_ir_version": 2,
+  "source_physical_ir_sha256": "5c27e12e74f961958127342dff2a086f968127a1135d97d0a5a65e761e8b2be8",
+  "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+  "version_id": "v1",
+  "source_artifact_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+  "nodes": [
+    {
+      "id": "node-000000",
+      "kind": "document",
+      "parent_id": null,
+      "depth": 0,
+      "ordinal_raw": null,
+      "ordinal_key": null,
+      "marker_text": null,
+      "title": null,
+      "heading_anchors": [],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "DOCUMENT_ROOT_V1",
+        "recognition_method": "document_root",
+        "matched_text": "DOCUMENT"
+      },
+      "canonical_path": "document"
+    },
+    {
+      "id": "node-000001",
+      "kind": "appendix",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "PHỤ LỤC II",
+      "title": "ĐỊNH MỨC",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0000_b0000",
+          "page_index": 0,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 10
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0000_b0001",
+          "page_index": 0,
+          "role": "title",
+          "char_start": 0,
+          "char_end": 8
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0000_b0002",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 61
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 11,
+          "char_end": 53
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 53,
+          "char_end": 128
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 128,
+          "char_end": 144
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 144,
+          "char_end": 218
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 218,
+          "char_end": 235
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 235,
+          "char_end": 263
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_APPENDIX_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "PHỤ LỤC II"
+      },
+      "canonical_path": "appendix:2"
+    },
+    {
+      "id": "node-000002",
+      "kind": "part",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "PHẦN I.",
+      "title": "TỔNG HỢP KHỐI LƯỢNG CHO CÔNG TÁC BẢO DƯỠNG",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 263,
+          "char_end": 270
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 270,
+          "char_end": 317
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 317,
+          "char_end": 354
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_PART_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "PHẦN I."
+      },
+      "canonical_path": "appendix:2/part:1"
+    },
+    {
+      "id": "node-000003",
+      "kind": "part",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "PHẦN II.",
+      "title": "ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN CẦU",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 354,
+          "char_end": 362
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 362,
+          "char_end": 402
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 402,
+          "char_end": 427
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_PART_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "PHẦN II."
+      },
+      "canonical_path": "appendix:2/part:2"
+    },
+    {
+      "id": "node-000004",
+      "kind": "chapter",
+      "parent_id": "node-000003",
+      "depth": 3,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "CHƯƠNG I.",
+      "title": "CÔNG TÁC QUẢN LÝ ..9",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 427,
+          "char_end": 436
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 436,
+          "char_end": 461
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 461,
+          "char_end": 490
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 490,
+          "char_end": 544
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "CHƯƠNG I."
+      },
+      "canonical_path": "appendix:2/part:2/chapter:1"
+    },
+    {
+      "id": "node-000005",
+      "kind": "chapter",
+      "parent_id": "node-000003",
+      "depth": 3,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "CHƯƠNG II.",
+      "title": "CÔNG TÁC KIỂM TRA. ..10",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 544,
+          "char_end": 554
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 554,
+          "char_end": 582
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 582,
+          "char_end": 634
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 634,
+          "char_end": 701
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 701,
+          "char_end": 780
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 780,
+          "char_end": 861
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "CHƯƠNG II."
+      },
+      "canonical_path": "appendix:2/part:2/chapter:2"
+    },
+    {
+      "id": "node-000006",
+      "kind": "chapter",
+      "parent_id": "node-000003",
+      "depth": 3,
+      "ordinal_raw": "III",
+      "ordinal_key": "3",
+      "marker_text": "CHƯƠNG III.",
+      "title": "ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 861,
+          "char_end": 872
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 872,
+          "char_end": 908
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 908,
+          "char_end": 940
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 940,
+          "char_end": 982
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 982,
+          "char_end": 1046
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1046,
+          "char_end": 1113
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1113,
+          "char_end": 1175
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1175,
+          "char_end": 1239
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1239,
+          "char_end": 1293
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1293,
+          "char_end": 1360
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1360,
+          "char_end": 1422
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1422,
+          "char_end": 1479
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1479,
+          "char_end": 1513
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1513,
+          "char_end": 1564
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1564,
+          "char_end": 1615
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1615,
+          "char_end": 1681
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1681,
+          "char_end": 1759
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1759,
+          "char_end": 1805
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1805,
+          "char_end": 1849
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1849,
+          "char_end": 1885
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1885,
+          "char_end": 1945
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 1945,
+          "char_end": 2012
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0000",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 32
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0001",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 313
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "CHƯƠNG III."
+      },
+      "canonical_path": "appendix:2/part:2/chapter:3"
+    },
+    {
+      "id": "node-000007",
+      "kind": "generic_section",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": "Nội dung định mức bảo dưỡng cầu Thăng Long, tuyến đường sắt Bắc Hồng – Văn Điển",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0002",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0002",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 82
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0003",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 79
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0004",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 312
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0005",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 361
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0006",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 144
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "1."
+      },
+      "canonical_path": "appendix:2/generic:1"
+    },
+    {
+      "id": "node-000008",
+      "kind": "generic_section",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": "Kết cấu định mức bảo dưỡng cầu Thăng Long, tuyến đường sắt Bắc Hồng – Văn Điển",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0007",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0007",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 81
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0008",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 89
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "2."
+      },
+      "canonical_path": "appendix:2/generic:2"
+    },
+    {
+      "id": "node-000009",
+      "kind": "part",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "Phần I.",
+      "title": "Tổng hợp khối lượng cho công tác bảo dưỡng thường xuyên cầu Thăng Long",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0009",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0009",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 78
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_PART_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Phần I."
+      },
+      "canonical_path": "appendix:2/part:1~2"
+    },
+    {
+      "id": "node-000010",
+      "kind": "part",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "Phần II.",
+      "title": "Định mức bảo dưỡng thường xuyên cầu Thăng Long bao gồm các công tác:",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0010",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0010",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 77
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_PART_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Phần II."
+      },
+      "canonical_path": "appendix:2/part:2~2"
+    },
+    {
+      "id": "node-000011",
+      "kind": "chapter",
+      "parent_id": "node-000010",
+      "depth": 3,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "Chương I.",
+      "title": "Công tác quản lý",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0011",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0011",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 9,
+          "char_end": 26
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Chương I."
+      },
+      "canonical_path": "appendix:2/part:2~2/chapter:1"
+    },
+    {
+      "id": "node-000012",
+      "kind": "chapter",
+      "parent_id": "node-000010",
+      "depth": 3,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "Chương II.",
+      "title": "Công tác kiểm tra",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0012",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 10
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0012",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 10,
+          "char_end": 28
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Chương II."
+      },
+      "canonical_path": "appendix:2/part:2~2/chapter:2"
+    },
+    {
+      "id": "node-000013",
+      "kind": "chapter",
+      "parent_id": "node-000010",
+      "depth": 3,
+      "ordinal_raw": "III",
+      "ordinal_key": "3",
+      "marker_text": "Chương III.",
+      "title": "Định mức bảo dưỡng thường xuyên cầu Thăng Long",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0013",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0013",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 11,
+          "char_end": 58
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Chương III."
+      },
+      "canonical_path": "appendix:2/part:2~2/chapter:3"
+    },
+    {
+      "id": "node-000014",
+      "kind": "generic_section",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": "Hướng dẫn áp dụng",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0014",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0014",
+          "page_index": 2,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 20
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0015",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 204
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0016",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 226
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0000",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0001",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 187
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0002",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 300
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0003",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 221
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0004",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 100
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "3."
+      },
+      "canonical_path": "appendix:2/generic:3"
+    },
+    {
+      "id": "node-000015",
+      "kind": "generic_section",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": "Hệ số đặc thù bổ sung",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0005",
+          "page_index": 3,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0005",
+          "page_index": 3,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 24
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0006",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 47
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "4."
+      },
+      "canonical_path": "appendix:2/generic:4"
+    },
+    {
+      "id": "node-000016",
+      "kind": "part",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "PHẦN I.",
+      "title": "TỔNG HỢP KHỐI LƯỢNG CHO CÔNG TÁC BẢO DƯỠNG THƯỜNG XUYÊN CẦU THĂNG LONG",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0004_b0000",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 7
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0004_b0000",
+          "page_index": 4,
+          "role": "title",
+          "char_start": 7,
+          "char_end": 78
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0004_b0001",
+          "page_index": 4,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0005_b0000",
+          "page_index": 5,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0006_b0000",
+          "page_index": 6,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_PART_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "PHẦN I."
+      },
+      "canonical_path": "appendix:2/part:1~3"
+    },
+    {
+      "id": "node-000017",
+      "kind": "part",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "PHẦN II.",
+      "title": "ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN CẦUTHĂNG LONGCHƯƠNG I. CÔNG TÁC QUẢN LÝ",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0000",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0000",
+          "page_index": 7,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 80
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0001",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 19
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0002",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0003",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 817
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0004",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 15
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0005",
+          "page_index": 7,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0006",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 46
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0007",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0008",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 650
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0009",
+          "page_index": 7,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_PART_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "PHẦN II."
+      },
+      "canonical_path": "appendix:2/part:2~3"
+    },
+    {
+      "id": "node-000018",
+      "kind": "chapter",
+      "parent_id": "node-000017",
+      "depth": 3,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "CHƯƠNG II.",
+      "title": "CÔNG TÁC KIỂM TRA",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0000",
+          "page_index": 8,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 10
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0000",
+          "page_index": 8,
+          "role": "title",
+          "char_start": 10,
+          "char_end": 28
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0001",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 43
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0002",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0003",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 229
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0004",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 13
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0005",
+          "page_index": 8,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0006",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 57
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0007",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 73
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0008",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0009",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 124
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0010",
+          "page_index": 8,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0011",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 62
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0012",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0013",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 198
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0014",
+          "page_index": 8,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "CHƯƠNG II."
+      },
+      "canonical_path": "appendix:2/part:2~3/chapter:2"
+    },
+    {
+      "id": "node-000019",
+      "kind": "chapter",
+      "parent_id": "node-000017",
+      "depth": 3,
+      "ordinal_raw": "III",
+      "ordinal_key": "3",
+      "marker_text": "CHƯƠNG III.",
+      "title": "ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN CẦU THĂNG LONG",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0000",
+          "page_index": 9,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0000",
+          "page_index": 9,
+          "role": "title",
+          "char_start": 11,
+          "char_end": 58
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0001",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 32
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0002",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0003",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 37
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0004",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 59
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0005",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 88
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0006",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 16
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0007",
+          "page_index": 9,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0008",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 55
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0009",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0010",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 82
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0010",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 82,
+          "char_end": 112
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0011",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 12
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0012",
+          "page_index": 9,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0000",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 59
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0001",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0002",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 91
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0003",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 12
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0004",
+          "page_index": 10,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0005",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 52
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0006",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0007",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 102
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0008",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 17
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0009",
+          "page_index": 10,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0010",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 98
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0011",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 52
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0000",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 55
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0001",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0002",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 124
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0003",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 17
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0004",
+          "page_index": 11,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0000",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 44
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0001",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0002",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 124
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0003",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0004",
+          "page_index": 12,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0005",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 57
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0006",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0007",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 114
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0008",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0009",
+          "page_index": 12,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0000",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 51
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0001",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0002",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 118
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0003",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0004",
+          "page_index": 13,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0005",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 47
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0006",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0007",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 303
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0008",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 15
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0009",
+          "page_index": 13,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0000",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 23
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0001",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0002",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 37
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0003",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 65
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0004",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 63
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0005",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 33
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0006",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 17
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0007",
+          "page_index": 14,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0008",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 44
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0009",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 32
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0010",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 42
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0011",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0012",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 38
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0013",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 20
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0014",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 62
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0015",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 67
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0016",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 103
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0017",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 33
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0018",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 12
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0019",
+          "page_index": 14,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0000",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 42
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0001",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0002",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 339
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0003",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 15
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0004",
+          "page_index": 15,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0005",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 84
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0006",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 57
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0007",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0008",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 157
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0009",
+          "page_index": 15,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0000",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 63
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0001",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0002",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 148
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0003",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 12
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0004",
+          "page_index": 16,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0005",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 37
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0006",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0007",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 165
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0008",
+          "page_index": 16,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 34
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0010",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0011",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 172
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0012",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0013",
+          "page_index": 16,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0000",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 27
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0001",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0002",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 141
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0003",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 10
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0004",
+          "page_index": 17,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0005",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 51
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0006",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0007",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 227
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0008",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 16
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0009",
+          "page_index": 17,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0018_b0000",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 61
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0018_b0001",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 21
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0018_b0002",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 167
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0018_b0003",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 18
+        },
+        {
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0018_b0004",
+          "page_index": 18,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_CHAPTER_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "CHƯƠNG III."
+      },
+      "canonical_path": "appendix:2/part:2~3/chapter:3"
+    }
+  ]
+}

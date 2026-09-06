@@ -1,0 +1,527 @@
+{
+  "structural_ir_version": 1,
+  "profile": "vi_legal_planning_v1",
+  "source_physical_ir_version": 2,
+  "source_physical_ir_sha256": "5a3afaad4af491c748616d8efd37f883de905efa81d76f3873c5515e0b0cd703",
+  "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+  "version_id": "v1",
+  "source_artifact_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+  "nodes": [
+    {
+      "id": "node-000000",
+      "kind": "document",
+      "parent_id": null,
+      "depth": 0,
+      "ordinal_raw": null,
+      "ordinal_key": null,
+      "marker_text": null,
+      "title": null,
+      "heading_anchors": [],
+      "direct_content_anchors": [
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0000",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0001",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0002",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0003",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0004",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0005",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0006",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0007",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0008",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0009",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0010",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0011",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0012",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0013",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0014",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0015",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0016",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0017",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0018",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0019",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0000_b0020",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0001",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0002",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0003",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0004",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0005",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0006",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0007",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0008",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0009",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0010",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0011",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0012",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0013",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0001_b0014",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0001",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0002",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0003",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0004",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0005",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0006",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0007",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0008",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0009",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0010",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0011",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0012",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0013",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0014",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0015",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0016",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0017",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0018",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0002_b0019",
+          "page_index": 2,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0001",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0002",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0003",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0004",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0005",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0006",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0007",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0008",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0009",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0010",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0011",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0012",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0013",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0014",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0015",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0016",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach_v1_p0003_b0017",
+          "page_index": 3,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "DOCUMENT_ROOT_V1",
+        "recognition_method": "document_root",
+        "matched_text": "DOCUMENT"
+      },
+      "canonical_path": "document"
+    }
+  ]
+}

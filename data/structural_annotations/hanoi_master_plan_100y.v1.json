@@ -1,0 +1,446 @@
+{
+  "annotation_schema_version": 1,
+  "annotation_version": "v1",
+  "annotator": "codex",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_structural_audit",
+  "created_at": "2026-09-06T00:00:00+07:00",
+  "document_id": "hanoi-master-plan-100y",
+  "version_id": "v1",
+  "source_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+  "prior_physical_ir_exposure": true,
+  "physical_ir_used_as_reference": false,
+  "selection_rationale": "Pages were stratified across formal legal hierarchy, planning outlines, appendices, cross-page continuity, visual objects, and scanned structure; selection was made from rendered PDFs rather than extractor success.",
+  "audited_pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "article",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "Điều 1.",
+          "title": "Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm với",
+          "canonical_path": "article:1",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 1. Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm với",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "clause",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "1.",
+          "title": null,
+          "canonical_path": "article:1/clause:1",
+          "parent_canonical_path": "article:1",
+          "source_excerpt": "1.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "pdf_page_number_1_based": 3,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "article",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "Điều 1.",
+          "title": "Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm với",
+          "canonical_path": "article:1",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 1. Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm với",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "clause",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "1.",
+          "title": null,
+          "canonical_path": "article:1/clause:1",
+          "parent_canonical_path": "article:1",
+          "source_excerpt": "1.",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 2,
+          "pdf_page_number_1_based": 3,
+          "kind": "generic_section",
+          "ordinal_raw": "1.1",
+          "ordinal_key": "1.1",
+          "marker_text": "1.1.",
+          "title": "Tên quy hoạch: Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm.",
+          "canonical_path": "article:1/clause:1/generic:1.1",
+          "parent_canonical_path": "article:1/clause:1",
+          "source_excerpt": "1.1. Tên quy hoạch: Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 2,
+          "pdf_page_number_1_based": 3,
+          "kind": "generic_section",
+          "ordinal_raw": "1.2",
+          "ordinal_key": "1.2",
+          "marker_text": "1.2.",
+          "title": "Đơn vị tư vấn lập quy hoạch: Liên danh tư vấn: Viện Quy hoạch xây dựng",
+          "canonical_path": "article:1/clause:1/generic:1.2",
+          "parent_canonical_path": "article:1/clause:1",
+          "source_excerpt": "1.2. Đơn vị tư vấn lập quy hoạch: Liên danh tư vấn: Viện Quy hoạch xây dựng",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 2,
+          "pdf_page_number_1_based": 3,
+          "kind": "clause",
+          "ordinal_raw": "2",
+          "ordinal_key": "2",
+          "marker_text": "2.",
+          "title": null,
+          "canonical_path": "article:1/clause:2",
+          "parent_canonical_path": "article:1",
+          "source_excerpt": "2.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 2,
+          "pdf_page_number_1_based": 3,
+          "kind": "generic_section",
+          "ordinal_raw": "2.1",
+          "ordinal_key": "2.1",
+          "marker_text": "2.1.",
+          "title": "Phạm vi, quy mô, ranh giới lập quy hoạch:",
+          "canonical_path": "article:1/clause:2/generic:2.1",
+          "parent_canonical_path": "article:1/clause:2",
+          "source_excerpt": "2.1. Phạm vi, quy mô, ranh giới lập quy hoạch:",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 2,
+          "pdf_page_number_1_based": 3,
+          "kind": "generic_section",
+          "ordinal_raw": "2.2",
+          "ordinal_key": "2.2",
+          "marker_text": "2.2.",
+          "title": "Dự báo quy mô dân số, đất đai:",
+          "canonical_path": "article:1/clause:2/generic:2.2",
+          "parent_canonical_path": "article:1/clause:2",
+          "source_excerpt": "2.2. Dự báo quy mô dân số, đất đai:",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 2,
+          "pdf_page_number_1_based": 3,
+          "kind": "point",
+          "ordinal_raw": "a",
+          "ordinal_key": "a",
+          "marker_text": "a)",
+          "title": null,
+          "canonical_path": "article:1/clause:2/point:a",
+          "parent_canonical_path": "article:1/clause:2",
+          "source_excerpt": "a)",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 2,
+          "pdf_page_number_1_based": 3,
+          "kind": "point",
+          "ordinal_raw": "b",
+          "ordinal_key": "b",
+          "marker_text": "b)",
+          "title": null,
+          "canonical_path": "article:1/clause:2/point:b",
+          "parent_canonical_path": "article:1/clause:2",
+          "source_excerpt": "b)",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 2,
+          "pdf_page_number_1_based": 3,
+          "kind": "generic_section",
+          "ordinal_raw": "2.3",
+          "ordinal_key": "2.3",
+          "marker_text": "2.3.",
+          "title": "Thời kỳ lập quy hoạch:",
+          "canonical_path": "article:1/clause:2/generic:2.3",
+          "parent_canonical_path": "article:1/clause:2",
+          "source_excerpt": "2.3. Thời kỳ lập quy hoạch:",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "pdf_page_number_1_based": 4,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "article",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "Điều 1.",
+          "title": "Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm với",
+          "canonical_path": "article:1",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 1. Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm với",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 3,
+          "pdf_page_number_1_based": 4,
+          "kind": "clause",
+          "ordinal_raw": "3",
+          "ordinal_key": "3",
+          "marker_text": "3.",
+          "title": null,
+          "canonical_path": "article:1/clause:3",
+          "parent_canonical_path": "article:1",
+          "source_excerpt": "3.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 3,
+          "pdf_page_number_1_based": 4,
+          "kind": "generic_section",
+          "ordinal_raw": "3.1",
+          "ordinal_key": "3.1",
+          "marker_text": "3.1.",
+          "title": "Quan điểm:",
+          "canonical_path": "article:1/clause:3/generic:3.1",
+          "parent_canonical_path": "article:1/clause:3",
+          "source_excerpt": "3.1. Quan điểm:",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 3,
+          "pdf_page_number_1_based": 4,
+          "kind": "generic_section",
+          "ordinal_raw": "3.2",
+          "ordinal_key": "3.2",
+          "marker_text": "3.2.",
+          "title": "Mục tiêu:",
+          "canonical_path": "article:1/clause:3/generic:3.2",
+          "parent_canonical_path": "article:1/clause:3",
+          "source_excerpt": "3.2. Mục tiêu:",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 3,
+          "pdf_page_number_1_based": 4,
+          "kind": "point",
+          "ordinal_raw": "a",
+          "ordinal_key": "a",
+          "marker_text": "a)",
+          "title": null,
+          "canonical_path": "article:1/clause:3/point:a",
+          "parent_canonical_path": "article:1/clause:3",
+          "source_excerpt": "a)",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 15,
+      "pdf_page_number_1_based": 16,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 30,
+      "pdf_page_number_1_based": 31,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "article",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "Điều 1.",
+          "title": "Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm với",
+          "canonical_path": "article:1",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 1. Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm với",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 8,
+          "pdf_page_number_1_based": 9,
+          "kind": "clause",
+          "ordinal_raw": "5",
+          "ordinal_key": "5",
+          "marker_text": "5.",
+          "title": null,
+          "canonical_path": "article:1/clause:5",
+          "parent_canonical_path": "article:1",
+          "source_excerpt": "5.",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 30,
+          "pdf_page_number_1_based": 31,
+          "kind": "point",
+          "ordinal_raw": "d",
+          "ordinal_key": "500",
+          "marker_text": "d)",
+          "title": null,
+          "canonical_path": "article:1/clause:5/point:500",
+          "parent_canonical_path": "article:1/clause:5",
+          "source_excerpt": "d)",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 45,
+      "pdf_page_number_1_based": 46,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 60,
+      "pdf_page_number_1_based": 61,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 78,
+      "pdf_page_number_1_based": 79,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 77,
+          "pdf_page_number_1_based": 78,
+          "kind": "article",
+          "ordinal_raw": "2",
+          "ordinal_key": "2",
+          "marker_text": "Điều 2.",
+          "title": "Tổ chức thực hiện:",
+          "canonical_path": "article:2",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 2. Tổ chức thực hiện:",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 78,
+          "pdf_page_number_1_based": 79,
+          "kind": "clause",
+          "ordinal_raw": "3",
+          "ordinal_key": "3",
+          "marker_text": "3.",
+          "title": null,
+          "canonical_path": "article:2/clause:3",
+          "parent_canonical_path": "article:2",
+          "source_excerpt": "3.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 78,
+          "pdf_page_number_1_based": 79,
+          "kind": "clause",
+          "ordinal_raw": "4",
+          "ordinal_key": "4",
+          "marker_text": "4.",
+          "title": null,
+          "canonical_path": "article:2/clause:4",
+          "parent_canonical_path": "article:2",
+          "source_excerpt": "4.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 79,
+      "pdf_page_number_1_based": 80,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 77,
+          "pdf_page_number_1_based": 78,
+          "kind": "article",
+          "ordinal_raw": "2",
+          "ordinal_key": "2",
+          "marker_text": "Điều 2.",
+          "title": "Tổ chức thực hiện:",
+          "canonical_path": "article:2",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 2. Tổ chức thực hiện:",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 79,
+          "pdf_page_number_1_based": 80,
+          "kind": "clause",
+          "ordinal_raw": "5",
+          "ordinal_key": "5",
+          "marker_text": "5.",
+          "title": null,
+          "canonical_path": "article:2/clause:5",
+          "parent_canonical_path": "article:2",
+          "source_excerpt": "5.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 79,
+          "pdf_page_number_1_based": 80,
+          "kind": "article",
+          "ordinal_raw": "3",
+          "ordinal_key": "3",
+          "marker_text": "Điều 3.",
+          "title": "Điều khoản thi hành",
+          "canonical_path": "article:3",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 3. Điều khoản thi hành",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    }
+  ]
+}

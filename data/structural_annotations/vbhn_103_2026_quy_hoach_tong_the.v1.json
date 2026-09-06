@@ -1,0 +1,377 @@
+{
+  "annotation_schema_version": 1,
+  "annotation_version": "v1",
+  "annotator": "codex",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_structural_audit",
+  "created_at": "2026-09-06T00:00:00+07:00",
+  "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+  "version_id": "v1",
+  "source_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+  "prior_physical_ir_exposure": true,
+  "physical_ir_used_as_reference": false,
+  "selection_rationale": "Pages were stratified across formal legal hierarchy, planning outlines, appendices, cross-page continuity, visual objects, and scanned structure; selection was made from rendered PDFs rather than extractor success.",
+  "audited_pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "article",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "Điều 1.",
+          "title": "Tên quy hoạch, phạm vi ranh giới quy hoạch",
+          "canonical_path": "article:1",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 1. Tên quy hoạch, phạm vi ranh giới quy hoạch",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "clause",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "1.",
+          "title": null,
+          "canonical_path": "article:1/clause:1",
+          "parent_canonical_path": "article:1",
+          "source_excerpt": "1.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "clause",
+          "ordinal_raw": "2",
+          "ordinal_key": "2",
+          "marker_text": "2.",
+          "title": null,
+          "canonical_path": "article:1/clause:2",
+          "parent_canonical_path": "article:1",
+          "source_excerpt": "2.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "article",
+          "ordinal_raw": "2",
+          "ordinal_key": "2",
+          "marker_text": "Điều 2.",
+          "title": "Quan điểm, tầm nhìn, mục tiêu phát triển và những nhiệm vụ",
+          "canonical_path": "article:2",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 2. Quan điểm, tầm nhìn, mục tiêu phát triển và những nhiệm vụ",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "clause",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "1.",
+          "title": null,
+          "canonical_path": "article:2/clause:1",
+          "parent_canonical_path": "article:2",
+          "source_excerpt": "1.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 1,
+          "pdf_page_number_1_based": 2,
+          "kind": "point",
+          "ordinal_raw": "a",
+          "ordinal_key": "a",
+          "marker_text": "a)",
+          "title": null,
+          "canonical_path": "article:2/clause:1/point:a",
+          "parent_canonical_path": "article:2/clause:1",
+          "source_excerpt": "a)",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    },
+    {
+      "page_index": 12,
+      "pdf_page_number_1_based": 13,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 7,
+          "pdf_page_number_1_based": 8,
+          "kind": "article",
+          "ordinal_raw": "3",
+          "ordinal_key": "3",
+          "marker_text": "Điều 3.",
+          "title": "Định hướng phát triển không gian kinh tế - xã hội",
+          "canonical_path": "article:3",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 3. Định hướng phát triển không gian kinh tế - xã hội",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 8,
+          "pdf_page_number_1_based": 9,
+          "kind": "clause",
+          "ordinal_raw": "2030",
+          "ordinal_key": "2030",
+          "marker_text": "2030.",
+          "title": null,
+          "canonical_path": "article:3/clause:2030",
+          "parent_canonical_path": "article:3",
+          "source_excerpt": "2030.",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 12,
+          "pdf_page_number_1_based": 13,
+          "kind": "point",
+          "ordinal_raw": "a",
+          "ordinal_key": "a",
+          "marker_text": "a)",
+          "title": null,
+          "canonical_path": "article:3/clause:2030/point:a",
+          "parent_canonical_path": "article:3/clause:2030",
+          "source_excerpt": "a)",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 17,
+          "pdf_page_number_1_based": 18,
+          "kind": "article",
+          "ordinal_raw": "4",
+          "ordinal_key": "4",
+          "marker_text": "Điều 4.",
+          "title": "Định hướng phát triển hệ thống đô thị và nông thôn quốc gia6",
+          "canonical_path": "article:4",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 4. Định hướng phát triển hệ thống đô thị và nông thôn quốc gia6",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 18,
+          "pdf_page_number_1_based": 19,
+          "kind": "clause",
+          "ordinal_raw": "2",
+          "ordinal_key": "2",
+          "marker_text": "2.",
+          "title": null,
+          "canonical_path": "article:4/clause:2",
+          "parent_canonical_path": "article:4",
+          "source_excerpt": "2.",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 20,
+          "pdf_page_number_1_based": 21,
+          "kind": "point",
+          "ordinal_raw": "d",
+          "ordinal_key": "500",
+          "marker_text": "d)",
+          "title": null,
+          "canonical_path": "article:4/clause:2/point:500",
+          "parent_canonical_path": "article:4/clause:2",
+          "source_excerpt": "d)",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 20,
+          "pdf_page_number_1_based": 21,
+          "kind": "clause",
+          "ordinal_raw": "3",
+          "ordinal_key": "3",
+          "marker_text": "3.",
+          "title": null,
+          "canonical_path": "article:4/clause:3",
+          "parent_canonical_path": "article:4",
+          "source_excerpt": "3.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 30,
+      "pdf_page_number_1_based": 31,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 30,
+          "pdf_page_number_1_based": 31,
+          "kind": "article",
+          "ordinal_raw": "9",
+          "ordinal_key": "9",
+          "marker_text": "Điều 9.",
+          "title": "Định hướng phát triển hạ tầng kỹ thuật cấp quốc gia",
+          "canonical_path": "article:9",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 9. Định hướng phát triển hạ tầng kỹ thuật cấp quốc gia",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 40,
+      "pdf_page_number_1_based": 41,
+      "selection_rationale": "Stratified visual audit page selected for explicit structural markers and hierarchy transitions.",
+      "nodes": [
+        {
+          "page_index": 39,
+          "pdf_page_number_1_based": 40,
+          "kind": "article",
+          "ordinal_raw": "12",
+          "ordinal_key": "12",
+          "marker_text": "Điều 12.",
+          "title": "Định hướng sử dụng đất quốc gia29",
+          "canonical_path": "article:12",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 12. Định hướng sử dụng đất quốc gia29",
+          "visual_evidence_note": "Unscored context ancestor whose marker begins before the audited page.",
+          "scored": false
+        },
+        {
+          "page_index": 40,
+          "pdf_page_number_1_based": 41,
+          "kind": "clause",
+          "ordinal_raw": "4",
+          "ordinal_key": "4",
+          "marker_text": "4.",
+          "title": null,
+          "canonical_path": "article:12/clause:4",
+          "parent_canonical_path": "article:12",
+          "source_excerpt": "4.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 40,
+          "pdf_page_number_1_based": 41,
+          "kind": "clause",
+          "ordinal_raw": "5",
+          "ordinal_key": "5",
+          "marker_text": "5.",
+          "title": null,
+          "canonical_path": "article:12/clause:5",
+          "parent_canonical_path": "article:12",
+          "source_excerpt": "5.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 40,
+          "pdf_page_number_1_based": 41,
+          "kind": "article",
+          "ordinal_raw": "13",
+          "ordinal_key": "13",
+          "marker_text": "Điều 13.",
+          "title": "Danh mục dự kiến các dự án quan trọng quốc gia và thứ tự ưu tiên",
+          "canonical_path": "article:13",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 13. Danh mục dự kiến các dự án quan trọng quốc gia và thứ tự ưu tiên",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 40,
+          "pdf_page_number_1_based": 41,
+          "kind": "clause",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "1.",
+          "title": null,
+          "canonical_path": "article:13/clause:1",
+          "parent_canonical_path": "article:13",
+          "source_excerpt": "1.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 40,
+          "pdf_page_number_1_based": 41,
+          "kind": "clause",
+          "ordinal_raw": "2",
+          "ordinal_key": "2",
+          "marker_text": "2.",
+          "title": null,
+          "canonical_path": "article:13/clause:2",
+          "parent_canonical_path": "article:13",
+          "source_excerpt": "2.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 40,
+          "pdf_page_number_1_based": 41,
+          "kind": "article",
+          "ordinal_raw": "14",
+          "ordinal_key": "14",
+          "marker_text": "Điều 14.",
+          "title": "Giải pháp, nguồn lực thực hiện quy hoạch30",
+          "canonical_path": "article:14",
+          "parent_canonical_path": "document",
+          "source_excerpt": "Điều 14. Giải pháp, nguồn lực thực hiện quy hoạch30",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        },
+        {
+          "page_index": 40,
+          "pdf_page_number_1_based": 41,
+          "kind": "clause",
+          "ordinal_raw": "1",
+          "ordinal_key": "1",
+          "marker_text": "1.",
+          "title": null,
+          "canonical_path": "article:14/clause:1",
+          "parent_canonical_path": "article:14",
+          "source_excerpt": "1.",
+          "visual_evidence_note": "Marker and surrounding hierarchy were visually verified on the rendered source PDF page.",
+          "scored": true
+        }
+      ]
+    },
+    {
+      "page_index": 47,
+      "pdf_page_number_1_based": 48,
+      "selection_rationale": "Stratified visual audit page selected for cross-page continuation or a table/figure inside active structural context.",
+      "nodes": []
+    }
+  ]
+}
