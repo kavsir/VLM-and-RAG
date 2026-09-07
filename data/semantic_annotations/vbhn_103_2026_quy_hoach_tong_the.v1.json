@@ -1,0 +1,1397 @@
+{
+  "annotation_schema_version": 1,
+  "annotation_version": "v1",
+  "annotator_type": "ai_assisted_evidence_audit",
+  "annotation_method": "fixed_visual_page_audit_plus_retained_representation_candidate_audit",
+  "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+  "version_id": "v1",
+  "source_artifact_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+  "prior_physical_ir_exposure": true,
+  "prior_structural_ir_exposure": true,
+  "prior_semantic_extractor_exposure": true,
+  "independent_or_blind_ground_truth": false,
+  "candidate_representations": [
+    "marker"
+  ],
+  "pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-9110fb52bcf5a0bb36cd5bc9",
+          "page_index": 0,
+          "exact_evidence_excerpt": "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+        },
+        {
+          "reference_id": "semantic-reference-statement-bd495143666f03133a4ba509",
+          "page_index": 0,
+          "exact_evidence_excerpt": "NGHỊ QUYẾT Về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050"
+        },
+        {
+          "reference_id": "semantic-reference-statement-c7a4d585bb60ebc7b76bee1e",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 09 tháng 01 năm 2023, được sửa đổi, bổ sung bởi:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-7637cd6036e797d2b24b5a94",
+          "page_index": 0,
+          "exact_evidence_excerpt": "1. Luật Công nghiệp công nghệ số số 71/2025/QH15 ngày 14 tháng 6 năm 2025 của Quốc hội, có hiệu lực kể từ ngày 01 tháng 01 năm 2026;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-dc6d3591e5c7f05b6c86cfc6",
+          "page_index": 0,
+          "exact_evidence_excerpt": "2. Nghị quyết số 252/2025/QH15 ngày 10 tháng 12 năm 2025 của Quốc hội sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025."
+        },
+        {
+          "reference_id": "semantic-reference-statement-99513fcdd004d27c2a457d4d",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-14672ac45f75cee05a43418b",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Luật Tổ chức Quốc hội số 57/2014/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 65/2020/QH14;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-17adeb4e52b599fcbfab8f84",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Luật Quy hoạch số 21/2017/QH14;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-8c975f204a517f66b8ab27bf",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Nghị quyết số 61/2022/QH15 ngày 16 tháng 6 năm 2022 của Quốc hội về tiếp tục tăng cường hiệu lực, hiệu quả thực hiện chính sách, pháp luật về quy hoạch và một số giải pháp tháo gỡ khó khăn, vướng mắc, đẩy nhanh tiến độ lập và nâng cao chất lượng quy hoạch thời kỳ 2021 - 2030;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-863511f96d215de0a7fd9835",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Sau khi xem xét Tờ trình số 506/TTr-CP ngày 27 tháng 12 năm 2022 của Chính phủ về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 1539/BC-UBKT15 ngày 04 tháng 01 năm 2023 của Ủy ban Kinh tế của Quốc hội thẩm tra Hồ sơ Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 399/BC-UBTVQH15 ngày 08 tháng 01 năm 2023 của Ủy ban Thường vụ Quốc hội về tiếp thu, chỉnh lý và giải trình ý kiến đại biểu Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050 và ý kiến của các vị đại biểu Quốc hội;1"
+        },
+        {
+          "reference_id": "semantic-reference-statement-8e4d60d5e0c24334e7bf6f47",
+          "page_index": 0,
+          "exact_evidence_excerpt": "1 Luật Công nghiệp công nghệ số số 71/2025/QH15 có căn cứ ban hành như sau:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-1450bc1b4eca67b4fc4577c8",
+          "page_index": 0,
+          "exact_evidence_excerpt": "&quot;Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-d2fb0ced475bc62a553e5723",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Quốc hội ban hành Luật Công nghiệp công nghệ số.\"."
+        },
+        {
+          "reference_id": "semantic-reference-statement-9ee468046f5e9c89c17e3035",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050 có căn cứ ban hành như sau:"
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-6833953e25464230cb50f177",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "81/2023/QH15",
+          "normalized_value": "81/2023/QH15",
+          "evidence_excerpt": "Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 09 tháng 01 năm 2023, được sửa đổi, bổ sung bởi:",
+          "char_start": 14,
+          "char_end": 26,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-c97b782205b4a54fac08cc33",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 09 tháng 01 năm 2023",
+          "normalized_value": "2023-01-09",
+          "evidence_excerpt": "Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 09 tháng 01 năm 2023, được sửa đổi, bổ sung bởi:",
+          "char_start": 27,
+          "char_end": 52,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-cec69a35fae858e2f56b2841",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Quốc hội",
+          "normalized_value": "Quốc hội",
+          "evidence_excerpt": "Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 09 tháng 01 năm 2023, được sửa đổi, bổ sung bởi:",
+          "char_start": 57,
+          "char_end": 65,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-36a2950aa4d0e47fa0c21898",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "71/2025/QH15",
+          "normalized_value": "71/2025/QH15",
+          "evidence_excerpt": "1. Luật Công nghiệp công nghệ số số 71/2025/QH15 ngày 14 tháng 6 năm 2025 của Quốc hội, có hiệu lực kể từ ngày 01 tháng 01 năm 2026;",
+          "char_start": 36,
+          "char_end": 48,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-18996909655b55bd80810729",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 14 tháng 6 năm 2025",
+          "normalized_value": "2025-06-14",
+          "evidence_excerpt": "1. Luật Công nghiệp công nghệ số số 71/2025/QH15 ngày 14 tháng 6 năm 2025 của Quốc hội, có hiệu lực kể từ ngày 01 tháng 01 năm 2026;",
+          "char_start": 49,
+          "char_end": 73,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-16ebac16840b883072bd218a",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 01 tháng 01 năm 2026",
+          "normalized_value": "2026-01-01",
+          "evidence_excerpt": "1. Luật Công nghiệp công nghệ số số 71/2025/QH15 ngày 14 tháng 6 năm 2025 của Quốc hội, có hiệu lực kể từ ngày 01 tháng 01 năm 2026;",
+          "char_start": 106,
+          "char_end": 131,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-9ed4239ac530c21f0ce2d5b6",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "252/2025/QH15",
+          "normalized_value": "252/2025/QH15",
+          "evidence_excerpt": "2. Nghị quyết số 252/2025/QH15 ngày 10 tháng 12 năm 2025 của Quốc hội sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 17,
+          "char_end": 30,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-94def8206beab1d5f9742861",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 10 tháng 12 năm 2025",
+          "normalized_value": "2025-12-10",
+          "evidence_excerpt": "2. Nghị quyết số 252/2025/QH15 ngày 10 tháng 12 năm 2025 của Quốc hội sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 31,
+          "char_end": 56,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-549b9907f40e29d908fb21b3",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "57/2014/QH13",
+          "normalized_value": "57/2014/QH13",
+          "evidence_excerpt": "Căn cứ Luật Tổ chức Quốc hội số 57/2014/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 65/2020/QH14;",
+          "char_start": 32,
+          "char_end": 44,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-d7b71136e7343c5e5bceeadd",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "65/2020/QH14",
+          "normalized_value": "65/2020/QH14",
+          "evidence_excerpt": "Căn cứ Luật Tổ chức Quốc hội số 57/2014/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 65/2020/QH14;",
+          "char_start": 95,
+          "char_end": 107,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-28f2cda0bce6c808eb5adb42",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "21/2017/QH14",
+          "normalized_value": "21/2017/QH14",
+          "evidence_excerpt": "Căn cứ Luật Quy hoạch số 21/2017/QH14;",
+          "char_start": 25,
+          "char_end": 37,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-c384f20054e15903c2a83410",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "61/2022/QH15",
+          "normalized_value": "61/2022/QH15",
+          "evidence_excerpt": "Căn cứ Nghị quyết số 61/2022/QH15 ngày 16 tháng 6 năm 2022 của Quốc hội về tiếp tục tăng cường hiệu lực, hiệu quả thực hiện chính sách, pháp luật về quy hoạch và một số giải pháp tháo gỡ khó khăn, vướng mắc, đẩy nhanh tiến độ lập và nâng cao chất lượng quy hoạch thời kỳ 2021 - 2030;",
+          "char_start": 21,
+          "char_end": 33,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-c7a19e2657db8482ca58329b",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 16 tháng 6 năm 2022",
+          "normalized_value": "2022-06-16",
+          "evidence_excerpt": "Căn cứ Nghị quyết số 61/2022/QH15 ngày 16 tháng 6 năm 2022 của Quốc hội về tiếp tục tăng cường hiệu lực, hiệu quả thực hiện chính sách, pháp luật về quy hoạch và một số giải pháp tháo gỡ khó khăn, vướng mắc, đẩy nhanh tiến độ lập và nâng cao chất lượng quy hoạch thời kỳ 2021 - 2030;",
+          "char_start": 34,
+          "char_end": 58,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-31c95b68a87402a63c4aa8d5",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 27 tháng 12 năm 2022",
+          "normalized_value": "2022-12-27",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 506/TTr-CP ngày 27 tháng 12 năm 2022 của Chính phủ về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 1539/BC-UBKT15 ngày 04 tháng 01 năm 2023 của Ủy ban Kinh tế của Quốc hội thẩm tra Hồ sơ Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 399/BC-UBTVQH15 ngày 08 tháng 01 năm 2023 của Ủy ban Thường vụ Quốc hội về tiếp thu, chỉnh lý và giải trình ý kiến đại biểu Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050 và ý kiến của các vị đại biểu Quốc hội;1",
+          "char_start": 39,
+          "char_end": 64,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-935a7b7b43fa0e4184273487",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 506/TTr-CP ngày 27 tháng 12 năm 2022 của Chính phủ về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 1539/BC-UBKT15 ngày 04 tháng 01 năm 2023 của Ủy ban Kinh tế của Quốc hội thẩm tra Hồ sơ Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 399/BC-UBTVQH15 ngày 08 tháng 01 năm 2023 của Ủy ban Thường vụ Quốc hội về tiếp thu, chỉnh lý và giải trình ý kiến đại biểu Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050 và ý kiến của các vị đại biểu Quốc hội;1",
+          "char_start": 69,
+          "char_end": 78,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-05a5c434db03b89a66ce38c3",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "1539/BC-UBKT15",
+          "normalized_value": "1539/BC-UBKT15",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 506/TTr-CP ngày 27 tháng 12 năm 2022 của Chính phủ về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 1539/BC-UBKT15 ngày 04 tháng 01 năm 2023 của Ủy ban Kinh tế của Quốc hội thẩm tra Hồ sơ Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 399/BC-UBTVQH15 ngày 08 tháng 01 năm 2023 của Ủy ban Thường vụ Quốc hội về tiếp thu, chỉnh lý và giải trình ý kiến đại biểu Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050 và ý kiến của các vị đại biểu Quốc hội;1",
+          "char_start": 165,
+          "char_end": 179,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-6111ddb7d1efda9f7ce9d1ce",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 04 tháng 01 năm 2023",
+          "normalized_value": "2023-01-04",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 506/TTr-CP ngày 27 tháng 12 năm 2022 của Chính phủ về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 1539/BC-UBKT15 ngày 04 tháng 01 năm 2023 của Ủy ban Kinh tế của Quốc hội thẩm tra Hồ sơ Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 399/BC-UBTVQH15 ngày 08 tháng 01 năm 2023 của Ủy ban Thường vụ Quốc hội về tiếp thu, chỉnh lý và giải trình ý kiến đại biểu Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050 và ý kiến của các vị đại biểu Quốc hội;1",
+          "char_start": 180,
+          "char_end": 205,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-0ec7d301de18345e307a40a3",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "399/BC-UBTVQH15",
+          "normalized_value": "399/BC-UBTVQH15",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 506/TTr-CP ngày 27 tháng 12 năm 2022 của Chính phủ về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 1539/BC-UBKT15 ngày 04 tháng 01 năm 2023 của Ủy ban Kinh tế của Quốc hội thẩm tra Hồ sơ Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 399/BC-UBTVQH15 ngày 08 tháng 01 năm 2023 của Ủy ban Thường vụ Quốc hội về tiếp thu, chỉnh lý và giải trình ý kiến đại biểu Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050 và ý kiến của các vị đại biểu Quốc hội;1",
+          "char_start": 336,
+          "char_end": 351,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-77c40d362dfc914670f47646",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 08 tháng 01 năm 2023",
+          "normalized_value": "2023-01-08",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 506/TTr-CP ngày 27 tháng 12 năm 2022 của Chính phủ về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 1539/BC-UBKT15 ngày 04 tháng 01 năm 2023 của Ủy ban Kinh tế của Quốc hội thẩm tra Hồ sơ Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo số 399/BC-UBTVQH15 ngày 08 tháng 01 năm 2023 của Ủy ban Thường vụ Quốc hội về tiếp thu, chỉnh lý và giải trình ý kiến đại biểu Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050 và ý kiến của các vị đại biểu Quốc hội;1",
+          "char_start": 352,
+          "char_end": 377,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-assistance-4671ae8fdc2d2a0d954dd25b",
+          "page_index": 0,
+          "bbox_normalized_1000": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "task_type": "figure_or_image_observation",
+          "evidence_note": "The frozen #008 visual audit selected this page for a table/figure in active structural context; the full-page label is coarse and is not runtime input."
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-19dbde4ab17d0226c2a7e58c",
+          "page_index": 1,
+          "exact_evidence_excerpt": "QUYẾT NGHỊ:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-10bab44698ebfa93a120f8f5",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Tên quy hoạch: Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050."
+        },
+        {
+          "reference_id": "semantic-reference-statement-a1edd269195eded60f49b752",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Phạm vi ranh giới quy hoạch: toàn bộ lãnh thổ đất liền, các đảo, các quần đảo, lòng đất, vùng biển, vùng trời Việt Nam."
+        },
+        {
+          "reference_id": "semantic-reference-statement-a56dab8dcd09c12225c8460c",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Quan điểm phát triển và tổ chức không gian phát triển thời kỳ 2021 - 2030"
+        },
+        {
+          "reference_id": "semantic-reference-statement-1250f43da9504c80420c5eae",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Quan điểm phát triển"
+        },
+        {
+          "reference_id": "semantic-reference-statement-539065ef7394a635688eb20c",
+          "page_index": 1,
+          "exact_evidence_excerpt": "- Phải có tư duy và tầm nhìn chiến lược, dài hạn, chủ động kiến tạo, đột phá phát triển; lấy phát triển để duy trì ổn định, ổn định để thúc đẩy phát triển. Tiếp tục phát triển nhanh và bền vững đất nước, lấy khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số, chuyển đổi xanh làm động lực chính."
+        },
+        {
+          "reference_id": "semantic-reference-statement-e225c2cac1cb09039ad58c21",
+          "page_index": 1,
+          "exact_evidence_excerpt": "- Phát huy tối đa lợi thế của quốc gia, vùng, địa phương; phát triển hài hòa giữa kinh tế với văn hóa, xã hội, bảo vệ môi trường, thích ứng với biến đổi khí hậu và bảo đảm quốc phòng, an ninh."
+        },
+        {
+          "reference_id": "semantic-reference-statement-487d432639ce88e37bac2974",
+          "page_index": 1,
+          "exact_evidence_excerpt": "- Cải cách, nâng cao chất lượng thể chế và thực thi pháp luật hiệu lực, hiệu quả phải thực sự trở thành đột phá để thúc đẩy phát triển đất nước nhanh, bền vững. Thị trường đóng vai trò quyết định trong huy động, phân bổ và sử dụng hiệu quả các nguồn lực. Phát triển nhanh, hài hòa các khu vực kinh tế và các loại hình doanh nghiệp; kinh tế tư nhân là một động lực quan trọng nhất của nền kinh tế quốc gia."
+        },
+        {
+          "reference_id": "semantic-reference-statement-cba370a744dfc3e5562e2898",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Khơi dậy và hiện thực hóa khát vọng phát triển; phát huy giá trị văn hóa,"
+        },
+        {
+          "reference_id": "semantic-reference-statement-496ce29fcc535f0661dd7278",
+          "page_index": 1,
+          "exact_evidence_excerpt": "&quot;Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam đã được sửa đổi, bổ sung một số điều theo Nghị quyết số 203/2025/QH15;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-ae45614c38c623fdd799aaa9",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ Luật Tổ chức Quốc hội số 57/2014/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 65/2020/QH14 và Luật số 62/2025/QH15;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-5e322ed18fd7219df1b4dd16",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ Luật Quy hoạch số 21/2017/QH14 đã được sửa đổi, bổ sung một số điều theo Luật số 28/2018/QH14, Luật số 35/2018/QH14 và Luật số 57/2024/QH15;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-bf3c5ac9787049238473a4e8",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-fcb974ac17b1f01b093b64e5",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Sau khi xem xét Tờ trình số 1018/TTr-CP ngày 31 tháng 10 năm 2025 của Chính phủ về điều chỉnh Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo thẩm tra số 1427/BC-UBKTTC15 ngày 05 tháng 11 năm 2025 của Ủy ban Kinh tế và Tài chính của Quốc hội; Báo cáo tiếp thu, giải trình số 1197/BC-CP ngày 09 tháng 12 năm 2025 của Chính phủ; ý kiến của các vị đại biểu Quốc hội,\"."
+        },
+        {
+          "reference_id": "semantic-reference-statement-9bd10f0146afd25956878793",
+          "page_index": 1,
+          "exact_evidence_excerpt": "2 Điều này được sửa đổi, bổ sung theo quy định tại khoản 1 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-4462aedd9337520c27dcd825",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "203/2025/QH15",
+          "normalized_value": "203/2025/QH15",
+          "evidence_excerpt": "&quot;Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam đã được sửa đổi, bổ sung một số điều theo Nghị quyết số 203/2025/QH15;",
+          "char_start": 119,
+          "char_end": 132,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-421c48efbd8c8f963b9ac362",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Quốc hội",
+          "normalized_value": "Quốc hội",
+          "evidence_excerpt": "Căn cứ Luật Tổ chức Quốc hội số 57/2014/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 65/2020/QH14 và Luật số 62/2025/QH15;",
+          "char_start": 20,
+          "char_end": 28,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-f655bc0113aa270fa746e4ff",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "57/2014/QH13",
+          "normalized_value": "57/2014/QH13",
+          "evidence_excerpt": "Căn cứ Luật Tổ chức Quốc hội số 57/2014/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 65/2020/QH14 và Luật số 62/2025/QH15;",
+          "char_start": 32,
+          "char_end": 44,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-04fab7891479a5a819b6a17e",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "65/2020/QH14",
+          "normalized_value": "65/2020/QH14",
+          "evidence_excerpt": "Căn cứ Luật Tổ chức Quốc hội số 57/2014/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 65/2020/QH14 và Luật số 62/2025/QH15;",
+          "char_start": 95,
+          "char_end": 107,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-f06248d7da31a03dac65b32d",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "62/2025/QH15",
+          "normalized_value": "62/2025/QH15",
+          "evidence_excerpt": "Căn cứ Luật Tổ chức Quốc hội số 57/2014/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 65/2020/QH14 và Luật số 62/2025/QH15;",
+          "char_start": 119,
+          "char_end": 131,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-8973392ab8cd4812dce16532",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "21/2017/QH14",
+          "normalized_value": "21/2017/QH14",
+          "evidence_excerpt": "Căn cứ Luật Quy hoạch số 21/2017/QH14 đã được sửa đổi, bổ sung một số điều theo Luật số 28/2018/QH14, Luật số 35/2018/QH14 và Luật số 57/2024/QH15;",
+          "char_start": 25,
+          "char_end": 37,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-d7b15f37a5a8386e8d861af3",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "28/2018/QH14",
+          "normalized_value": "28/2018/QH14",
+          "evidence_excerpt": "Căn cứ Luật Quy hoạch số 21/2017/QH14 đã được sửa đổi, bổ sung một số điều theo Luật số 28/2018/QH14, Luật số 35/2018/QH14 và Luật số 57/2024/QH15;",
+          "char_start": 88,
+          "char_end": 100,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-9e5612184725fb75c8b4e2ee",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "35/2018/QH14",
+          "normalized_value": "35/2018/QH14",
+          "evidence_excerpt": "Căn cứ Luật Quy hoạch số 21/2017/QH14 đã được sửa đổi, bổ sung một số điều theo Luật số 28/2018/QH14, Luật số 35/2018/QH14 và Luật số 57/2024/QH15;",
+          "char_start": 110,
+          "char_end": 122,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-0aec5f5eb4ee6726eb9e942e",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "57/2024/QH15",
+          "normalized_value": "57/2024/QH15",
+          "evidence_excerpt": "Căn cứ Luật Quy hoạch số 21/2017/QH14 đã được sửa đổi, bổ sung một số điều theo Luật số 28/2018/QH14, Luật số 35/2018/QH14 và Luật số 57/2024/QH15;",
+          "char_start": 134,
+          "char_end": 146,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-23712297a86485e93358a23b",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "81/2023/QH15",
+          "normalized_value": "81/2023/QH15",
+          "evidence_excerpt": "Căn cứ Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050;",
+          "char_start": 21,
+          "char_end": 33,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-0e039176969fa53b8975ab9a",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 09 tháng 01 năm 2023",
+          "normalized_value": "2023-01-09",
+          "evidence_excerpt": "Căn cứ Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050;",
+          "char_start": 34,
+          "char_end": 59,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-841d952e7a3b35a0bbbf3146",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 31 tháng 10 năm 2025",
+          "normalized_value": "2025-10-31",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 1018/TTr-CP ngày 31 tháng 10 năm 2025 của Chính phủ về điều chỉnh Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo thẩm tra số 1427/BC-UBKTTC15 ngày 05 tháng 11 năm 2025 của Ủy ban Kinh tế và Tài chính của Quốc hội; Báo cáo tiếp thu, giải trình số 1197/BC-CP ngày 09 tháng 12 năm 2025 của Chính phủ; ý kiến của các vị đại biểu Quốc hội,\".",
+          "char_start": 40,
+          "char_end": 65,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-d1cb333d30d4c6aff2a26681",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 1018/TTr-CP ngày 31 tháng 10 năm 2025 của Chính phủ về điều chỉnh Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo thẩm tra số 1427/BC-UBKTTC15 ngày 05 tháng 11 năm 2025 của Ủy ban Kinh tế và Tài chính của Quốc hội; Báo cáo tiếp thu, giải trình số 1197/BC-CP ngày 09 tháng 12 năm 2025 của Chính phủ; ý kiến của các vị đại biểu Quốc hội,\".",
+          "char_start": 70,
+          "char_end": 79,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-5a05573d1aab72cb9b8a81e1",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "1427/BC-UBKTTC15",
+          "normalized_value": "1427/BC-UBKTTC15",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 1018/TTr-CP ngày 31 tháng 10 năm 2025 của Chính phủ về điều chỉnh Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo thẩm tra số 1427/BC-UBKTTC15 ngày 05 tháng 11 năm 2025 của Ủy ban Kinh tế và Tài chính của Quốc hội; Báo cáo tiếp thu, giải trình số 1197/BC-CP ngày 09 tháng 12 năm 2025 của Chính phủ; ý kiến của các vị đại biểu Quốc hội,\".",
+          "char_start": 186,
+          "char_end": 202,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-1916d3f3a665966bb1e99527",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 05 tháng 11 năm 2025",
+          "normalized_value": "2025-11-05",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 1018/TTr-CP ngày 31 tháng 10 năm 2025 của Chính phủ về điều chỉnh Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo thẩm tra số 1427/BC-UBKTTC15 ngày 05 tháng 11 năm 2025 của Ủy ban Kinh tế và Tài chính của Quốc hội; Báo cáo tiếp thu, giải trình số 1197/BC-CP ngày 09 tháng 12 năm 2025 của Chính phủ; ý kiến của các vị đại biểu Quốc hội,\".",
+          "char_start": 203,
+          "char_end": 228,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-50991fd8c3ed5ee091fc40a4",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "1197/BC-CP",
+          "normalized_value": "1197/BC-CP",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 1018/TTr-CP ngày 31 tháng 10 năm 2025 của Chính phủ về điều chỉnh Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo thẩm tra số 1427/BC-UBKTTC15 ngày 05 tháng 11 năm 2025 của Ủy ban Kinh tế và Tài chính của Quốc hội; Báo cáo tiếp thu, giải trình số 1197/BC-CP ngày 09 tháng 12 năm 2025 của Chính phủ; ý kiến của các vị đại biểu Quốc hội,\".",
+          "char_start": 307,
+          "char_end": 317,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-21f362cec5dd5cc1cdc0da0f",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 09 tháng 12 năm 2025",
+          "normalized_value": "2025-12-09",
+          "evidence_excerpt": "Sau khi xem xét Tờ trình số 1018/TTr-CP ngày 31 tháng 10 năm 2025 của Chính phủ về điều chỉnh Quy hoạch tổng thể quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050; Báo cáo thẩm tra số 1427/BC-UBKTTC15 ngày 05 tháng 11 năm 2025 của Ủy ban Kinh tế và Tài chính của Quốc hội; Báo cáo tiếp thu, giải trình số 1197/BC-CP ngày 09 tháng 12 năm 2025 của Chính phủ; ý kiến của các vị đại biểu Quốc hội,\".",
+          "char_start": 318,
+          "char_end": 343,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-de4469d77184fa405b910c1e",
+          "page_index": 1,
+          "kind": "legal_reference",
+          "raw_text": "khoản 1 Điều 1",
+          "normalized_value": null,
+          "evidence_excerpt": "2 Điều này được sửa đổi, bổ sung theo quy định tại khoản 1 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 51,
+          "char_end": 65,
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "1",
+            "clause": "1",
+            "point": null,
+            "scope": "self_document"
+          }
+        },
+        {
+          "reference_id": "semantic-reference-mention-aa5abb6bc2c3493174055a87",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "252/2025/QH15",
+          "normalized_value": "252/2025/QH15",
+          "evidence_excerpt": "2 Điều này được sửa đổi, bổ sung theo quy định tại khoản 1 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 84,
+          "char_end": 97,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-711d4f09dac0dc9c494601e6",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 10 tháng 12 năm 2025",
+          "normalized_value": "2025-12-10",
+          "evidence_excerpt": "2 Điều này được sửa đổi, bổ sung theo quy định tại khoản 1 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 288,
+          "char_end": 313,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-059f4ebb8642ef0cd866acbf",
+          "page_index": 5,
+          "exact_evidence_excerpt": "động lực phía Bắc và phía Nam gắn với 2 cực tăng trưởng là Hà Nội và Thành phố Hồ Chí Minh, hành lang kinh tế Bắc - Nam, hành lang kinh tế Lào Cai - Hà Nội - Hải Phòng - Quảng Ninh, hành lang kinh tế Mộc Bài - Thành phố Hồ Chí Minh - Biên Hòa - Vũng Tàu với kết cấu hạ tầng đồng bộ, hiện đại, có tốc độ tăng trưởng cao, đóng góp lớn vào phát triển chung của đất nước."
+        },
+        {
+          "reference_id": "semantic-reference-statement-008e8ab144c3c48b44466bf1",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Phát triển đô thị bền vững theo mạng lưới; tỷ lệ đô thị hóa đạt trên 50%; phấn đấu từ 3 - 5 đô thị ngang tầm khu vực và quốc tế. Xây dựng nông thôn mới phát triển toàn diện, bền vững và gắn với đô thị hoá."
+        },
+        {
+          "reference_id": "semantic-reference-statement-b2a2fbf2dc426bfb9fb037c6",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Phát triển mạnh hạ tầng số, hạ tầng dữ liệu tạo nền tảng chuyển đổi số quốc gia, phát triển Chính phủ số, kinh tế số, xã hội số; tỷ trọng kinh tế số đạt khoảng 30% GDP."
+        },
+        {
+          "reference_id": "semantic-reference-statement-7293695e01c908a76dc41977",
+          "page_index": 5,
+          "exact_evidence_excerpt": "- Về xã hội"
+        },
+        {
+          "reference_id": "semantic-reference-statement-b3d898fbb2bdc33112dceb70",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Duy trì vững chắc mức sinh thay thế, bình quân mỗi phụ nữ trong độ tuổi sinh đẻ có 2,1 con; quy mô dân số đạt khoảng 105 triệu người. Chỉ số phát triển con người (HDI) đạt khoảng 0,78. Tuổi thọ bình quân đạt khoảng 75,5 tuổi, trong đó thời gian sống khỏe mạnh đạt tối thiểu 68 năm. Tỷ lệ lao động nông nghiệp trong tổng lao động xã hội giảm xuống dưới 20%. Nâng cao chất lượng việc làm, giữ tỷ lệ thất nghiệp ở mức hợp lý."
+        },
+        {
+          "reference_id": "semantic-reference-statement-f8f9f72695aa43a7faf173d5",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Phát triển nền giáo dục Việt Nam đạt trình độ tiên tiến trong khu vực; thuộc nhóm 10 quốc gia có hệ thống giáo dục đại học tốt nhất châu A. Phấn đấu ít nhất 8 cơ sở giáo dục đại học thuộc nhóm 200 đại học hàng đầu châu Á, ít nhất 1 cơ sở giáo dục đại học thuộc nhóm 100 đại học hàng đầu thế giới trong một số lĩnh vực theo các bảng xếp hạng quốc tế uy tín. Tỷ lệ sinh viên đại học đạt 260 trên 1 vạn dân. Tỷ lệ lao động qua đào tạo có bằng cấp, chứng chỉ đạt 35 - 40%."
+        },
+        {
+          "reference_id": "semantic-reference-statement-0816ff2545fd06e1df832ce7",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Nâng cao chất lượng dịch vụ y tế ngang tầm các nước tiên tiến trong khu vực. Phát triển mạng lưới cơ sở y tế quốc gia đáp ứng yêu cầu chăm sóc, bảo vệ, nâng cao sức khỏe toàn dân, hướng tới mục tiêu công bằng, chất lượng, hiệu quả và hội nhập quốc tế. Đến năm 2030, đạt 35 giường bệnh và 19 bác sĩ trên 1 vạn dân; tỷ lệ giường bệnh tư nhân đạt 15%."
+        },
+        {
+          "reference_id": "semantic-reference-statement-2bd1352a7e3177f2e71847fa",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Xây dựng môi trường văn hóa lành mạnh trong các lĩnh vực đời sống xã hội. Phát triển mạng lưới cơ sở văn hóa quốc gia bảo đảm thực hiện tốt nhiệm vụ bảo tồn và phát huy giá trị bản sắc văn hóa dân tộc, thúc đẩy phát triển công nghiệp văn hóa. Phấn đấu 100% đơn vị hành chính cấp tỉnh có đủ 3 loại hình thiết chế văn hóa, gồm: trung tâm văn hóa hoặc trung tâm văn hóa - nghệ thuật, bảo tàng và thư viện."
+        },
+        {
+          "reference_id": "semantic-reference-statement-91120db5b16463717da51a19",
+          "page_index": 5,
+          "exact_evidence_excerpt": "- Về môi trường"
+        },
+        {
+          "reference_id": "semantic-reference-statement-a9af958cc977be947fecba23",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Tỷ lệ che phủ rừng ổn định ở mức 42%; nâng cao chất lượng rừng, tăng diện tích các khu bảo tồn thiên nhiên; bảo vệ, phục hồi các hệ sinh thái tự nhiên quan trọng, nâng cao chất lượng đa dạng sinh học; diện tích các khu bảo tồn biển, ven"
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-bcaa0a20d38c8943c25bb958",
+          "page_index": 5,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "evidence_excerpt": "Phát triển mạnh hạ tầng số, hạ tầng dữ liệu tạo nền tảng chuyển đổi số quốc gia, phát triển Chính phủ số, kinh tế số, xã hội số; tỷ trọng kinh tế số đạt khoảng 30% GDP.",
+          "char_start": 92,
+          "char_end": 101,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-assistance-f4292686064ad290da5ba308",
+          "page_index": 5,
+          "bbox_normalized_1000": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "task_type": "figure_or_image_observation",
+          "evidence_note": "The frozen #008 visual audit selected this page for a table/figure in active structural context; the full-page label is coarse and is not runtime input."
+        }
+      ]
+    },
+    {
+      "page_index": 12,
+      "pdf_page_number_1_based": 13,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-e91c8ab9bc8e1c23ef7d03d4",
+          "page_index": 12,
+          "exact_evidence_excerpt": "- Vùng Đồng bằng sông Cửu Long: phấn đấu tốc độ tăng trưởng GRDP bình quân đạt 9 - 9,5%/năm giai đoạn 2026 - 2030. Phát triển vùng Đồng bằng sông Cửu Long thành trung tâm kinh tế nông nghiệp hiện đại, bền vững, năng động và hiệu quả cao của cả nước, khu vực và thế giới. Tập trung phát triển sản xuất nông nghiệp hàng hóa, hiện đại, quy mô lớn gắn với công nghiệp chế biến và xây dựng thương hiệu sản phẩm; đẩy mạnh phát triển nông nghiệp số, nông nghiệp thông minh. Chuyển đổi cơ cấu sản phẩm chủ lực theo hướng giảm lúa gạo, tăng trái cây và thủy sản; sử dụng đất nông nghiệp linh hoạt, hiệu quả hơn. Triển khai hiệu quả Đề án phát triển bền vững 1 triệu ha chuyên canh lúa chất lượng cao và phát thải thấp gắn với tăng trưởng xanh vùng Đồng bằng sông Cửu Long đến năm 2030. Xây dựng trung tâm khởi nghiệp sáng tạo quốc gia về nông nghiệp trên địa bàn vùng. Phát triển công nghiệp xanh, năng lượng tái tạo; chú trọng phát triển công nghiệp chế biến nông, thủy sản, công nghiệp phục vụ nông nghiệp, công nghiệp hỗ trợ; từng bước phát triển công nghiệp ứng dụng công nghệ cao và công nghiệp công nghệ số. Phát triển mạnh kinh tế biển, trong đó chú trọng phát triển du lịch, dịch vụ biển, kinh tế hàng hải, khai thác dầu khí, năng lượng, nuôi trồng và khai thác thủy sản xa bờ. Phát triển vùng Đồng bằng sông Cửu Long trở thành thương hiệu quốc tế về du lịch nông nghiệp, nông thôn, du lịch sinh thái và du lịch biển, đảo. Chủ động thích ứng với biến đổi khí hậu và nước biển dâng; xây dựng các hồ chứa nước và nghiên cứu các biện pháp, công trình trữ nước trong sông, kênh, rạch; phòng, chống sạt lở, xâm nhập mặn; bảo vệ hệ sinh thái rừng ngập mặn."
+        },
+        {
+          "reference_id": "semantic-reference-statement-36cd2a366d1cc928122e1f89",
+          "page_index": 12,
+          "exact_evidence_excerpt": "Phát triển thành phố Cần Thơ là thành phố sinh thái, văn minh, hiện đại mang đậm bản sắc văn hóa sông nước vùng Đồng bằng sông Cửu Long; là đô thị hạt nhân, trung tâm của vùng về kinh tế, giáo dục và đào tạo, y tế chuyên sâu, khoa học, công nghệ, văn hóa, thể thao."
+        },
+        {
+          "reference_id": "semantic-reference-statement-9bc47b099a111ef65f09363d",
+          "page_index": 12,
+          "exact_evidence_excerpt": "Trên hành lang kinh tế Bắc - Nam, tập trung phát triển đoạn Cần Thơ - Vĩnh Long - Đồng Tháp là hành lang kinh tế - đô thị - công nghiệp động lực của vùng. Hình thành, phát triển một số hành lang kinh tế Đông - Tây, hành lang kinh tế phía Tây, hành lang kinh tế ven biển phía Đông. Tăng cường đầu tư hạ tầng kết nối vùng với Thành phố Hồ Chí Minh và vùng Đông Nam Bộ; hệ thống đường ven biển qua các địa phương. Phát triển kết cấu hạ tầng đường thủy nội địa, cảng biển, hạ tầng logistics; nâng cấp các luồng chính, bao gồm luồng hàng hải cho tàu biển trọng tải lớn. Xây dựng cảng biển Trần Đề là cảng cửa ngõ vùng Đồng bằng sông Cửu Long; xây dựng cảng tổng hợp lưỡng dụng Hòn Khoai và đường nối từ đất liền ra cảng."
+        },
+        {
+          "reference_id": "semantic-reference-statement-547b18cd17afca0c61132a6b",
+          "page_index": 12,
+          "exact_evidence_excerpt": "2.4 Phát triển các vùng động lực, cực tăng trưởng quốc gia\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-9ee2a4fc6a7ae432e49d8cfa",
+          "page_index": 12,
+          "exact_evidence_excerpt": "a) Vùng động lực phía Bắc"
+        },
+        {
+          "reference_id": "semantic-reference-statement-11ad5b5d104b93d4b55558fe",
+          "page_index": 12,
+          "exact_evidence_excerpt": "4 Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 2 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-22e5f1831c888ca6f469caa6",
+          "page_index": 12,
+          "kind": "legal_reference",
+          "raw_text": "điểm b khoản 2 Điều 1",
+          "normalized_value": null,
+          "evidence_excerpt": "4 Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 2 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 52,
+          "char_end": 73,
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "1",
+            "clause": "2",
+            "point": "b",
+            "scope": "self_document"
+          }
+        },
+        {
+          "reference_id": "semantic-reference-mention-a320e0752a7cf3035ba0cef7",
+          "page_index": 12,
+          "kind": "document_identifier",
+          "raw_text": "252/2025/QH15",
+          "normalized_value": "252/2025/QH15",
+          "evidence_excerpt": "4 Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 2 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 92,
+          "char_end": 105,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-7a9215534eba71a1f3f65636",
+          "page_index": 12,
+          "kind": "document_identifier",
+          "raw_text": "81/2023/QH15",
+          "normalized_value": "81/2023/QH15",
+          "evidence_excerpt": "4 Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 2 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 153,
+          "char_end": 165,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-8528557b9ae5fa1ddf7c91b8",
+          "page_index": 12,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 09 tháng 01 năm 2023",
+          "normalized_value": "2023-01-09",
+          "evidence_excerpt": "4 Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 2 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 166,
+          "char_end": 191,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-72d52bfac718148ecdacc048",
+          "page_index": 12,
+          "kind": "organization_or_authority",
+          "raw_text": "Quốc hội",
+          "normalized_value": "Quốc hội",
+          "evidence_excerpt": "4 Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 2 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 196,
+          "char_end": 204,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-85082d55414fa0c7ab5882e6",
+          "page_index": 12,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 10 tháng 12 năm 2025",
+          "normalized_value": "2025-12-10",
+          "evidence_excerpt": "4 Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 2 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 296,
+          "char_end": 321,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-f3bb43b6dafb9330b6a98a7a",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Phát triển thành phố Đà Nẵng là cực tăng trưởng, động lực quan trọng thúc đẩy phát triển kinh tế - xã hội vùng Duyên hải Nam Trung Bộ và Tây Nguyên, cùng với đô thị Huế thúc đẩy phát triển khu vực phía Nam của vùng Bắc Trung Bộ, trở thành chuỗi đô thị động lực quan trọng của khu vực miền Trung và cả nước."
+        },
+        {
+          "reference_id": "semantic-reference-statement-294aa831d1fcd668c857fbb7",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Vùng đô thị Cần Thơ: xây dựng hệ thống đô thị gồm đô thị trung tâm là lõi đô thị của Thành phố Cần Thơ và các đô thị lân cận; phát triển trở thành trung tâm dịch vụ thương mại, du lịch, logistics, công nghiệp chế biến, nông nghiệp ứng dụng công nghệ cao, giáo dục, đào tạo, y tế chuyên sâu, khoa học, công nghệ, văn hóa, thể thao của cả vùng. Khai thác các trục giao thông kết nối Cần Thơ - Mỹ Thuận - Trung Lương - Thành phố Hồ Chí Minh, Châu Đốc - Cần Thơ - Sóc Trăng gắn với cảng biển Trần Đề để tập trung phát triển đô thị, tạo sự lan tỏa tới các khu vực khác trong vùng."
+        },
+        {
+          "reference_id": "semantic-reference-statement-783dbf1cc39a170141364ef1",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Phát triển thành phố Cần Thơ là cực tăng trưởng, đóng vai trò đô thị hạt nhân, động lực thúc đẩy phát triển toàn vùng Đồng bằng sông Cửu Long."
+        },
+        {
+          "reference_id": "semantic-reference-statement-ecd82b5e6f98b9d03d35e5c5",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Định hướng phát triển nông thôn"
+        },
+        {
+          "reference_id": "semantic-reference-statement-e92605d377cbcef0308aa4b8",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Xây dựng nông thôn mới phát triển toàn diện, hiện đại, bền vững, xanh, sạch, đẹp gắn với quá trình đô thị hóa; có cơ sở hạ tầng, dịch vụ xã hội đồng bộ và tiệm cận với khu vực đô thị; bảo đảm nhu cầu thiết yếu về nước sạch của người dân và bảo vệ môi trường; giữ gìn và phát huy bản sắc văn hóa dân tộc; chuyển đổi cơ cấu kinh tế nông thôn và tổ chức sản xuất hợp lý, tiếp tục mở rộng và nâng cao hiệu quả chương trình mỗi xã một sản phẩm (OCOP) trở thành động lực phát triển bản địa, tạo sinh kế bền vững cho người dân; xã hội nông thôn ổn định, dân trí được nâng cao; an ninh, trật tự được bảo đảm. Đầu tư tương xứng vào tăng cường năng lực của chính quyền các xã, số hóa dịch vụ công để bảo đảm đáp ứng yêu cầu đối với cấp cơ sở trong chính quyền địa phương 2 cấp."
+        },
+        {
+          "reference_id": "semantic-reference-statement-a77b89a57d96c6f2d3a16ae4",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Xây dựng các mô hình phân bố dân cư phù hợp với từng vùng sinh thái tự nhiên và đặc điểm văn hóa, dân tộc, điều kiện kinh tế - xã hội. Chủ động di dời, bố trí, sắp xếp lại các điểm dân cư đối với khu vực có nguy cơ cao xảy ra thiên tai, sạt lở."
+        },
+        {
+          "reference_id": "semantic-reference-statement-728325b9eb9bfd62eba31a4c",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Đối với nông thôn ven đô, đẩy mạnh đô thị hóa, phát triển nông nghiệp đô thị, từng bước hoàn thiện cơ sở hạ tầng, phát triển dịch vụ xã hội có chất lượng tiệm cận với thành thị, hình thành các điểm dân cư tập trung nông thôn xanh, sinh thái. Từng bước đưa phát triển đô thị về địa bàn nông thôn."
+        },
+        {
+          "reference_id": "semantic-reference-statement-b72a82f3a9ea82616bb8f216",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Đối với nông thôn ở khu vực miền núi phía Bắc, một số vùng ở Đồng bằng sông Hồng và các vùng miền khác, phát triển các khu dân cư tập trung có quy mô thích hợp liên kết với đô thị; hỗ trợ xây dựng cơ sở hạ tầng thiết yếu đối với nông thôn thuộc vùng khó khăn, vùng đồng bào dân tộc thiểu số và miền núi."
+        },
+        {
+          "reference_id": "semantic-reference-statement-d951c97b38b02b82aa240f2f",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Đối với nông thôn thuộc các vùng sản xuất nông nghiệp tập trung tại vùng Đồng bằng sông Cửu Long, khu vực Tây Nguyên, định hướng phát triển các khu"
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 30,
+      "pdf_page_number_1_based": 31,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-01f1caf0e452e4b29db5a65f",
+          "page_index": 30,
+          "exact_evidence_excerpt": "điều dưỡng và nuôi dưỡng với chăm sóc sức khoẻ, chăm sóc xã hội khác cho người có công."
+        },
+        {
+          "reference_id": "semantic-reference-statement-af962fd5fc1c5f52f8ec453b",
+          "page_index": 30,
+          "exact_evidence_excerpt": "1.20 Phát triển hệ thống kết cấu hạ tầng giao thông đồng bộ, thông minh trên cơ sở phát huy ưu thế của các phương thức vận tải, bảo đảm kết nối rộng khắp tới mọi địa bàn lãnh thổ đất nước, giảm thiểu chi phí logistics, nâng cao năng lực cạnh tranh của nền kinh tế; quan tâm đúng mức phát triển giao thông đường sắt, đường thủy nội địa."
+        },
+        {
+          "reference_id": "semantic-reference-statement-8c0b41809c67f4351545aac6",
+          "page_index": 30,
+          "exact_evidence_excerpt": "Định hướng tổ chức không gian hệ thống giao thông quốc gia: hình thành các hành lang trục dọc quốc gia Bắc - Nam với đủ 5 phương thức vận tải. Đối với khu vực phía Bắc, hình thành các hành lang hướng tâm kết nối với Hà Nội, các hành lang Đông - Tây để kết nối khu vực miền núi phía Tây với các cảng biển khu vực phía Đông. Đối với khu vực miền Trung, hình thành các trục Đông - Tây kết nối khu vực phía Tây với các cảng biển khu vực phía Đông và liên kết đối ngoại với các nước Lào, Campuchia. Đối với khu vực phía Nam, hình thành các hành lang theo trục Đông - Tây và Bắc - Nam, khai thác lợi thế về vận tải đường thủy nội địa và các cảng biển, cảng hàng không lớn, kết nối giao thông quốc tế. Hình thành các tuyến vành đai và các trục hướng tâm từ các tỉnh lân cận kết nối với Hà Nội và Thành phố Hồ Chí Minh."
+        },
+        {
+          "reference_id": "semantic-reference-statement-d69354ab67166188f5e1c51a",
+          "page_index": 30,
+          "exact_evidence_excerpt": "Định hướng phát triển của các loại hình kết cấu hạ tầng giao thông:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-c7f8defcf71d2f8e41f0ae4e",
+          "page_index": 30,
+          "exact_evidence_excerpt": "- Đường bộ: hoàn thành xây dựng đường bộ cao tốc Bắc - Nam phía Đông và các tuyến đường bộ cao tốc kết nối với các trung tâm kinh tế lớn, cực tăng trưởng gắn với các vùng động lực như Hà Nội, Thành phố Hồ Chí Minh, Đà Nẵng, Cần Thơ, kết nối các cảng biển đặc biệt, cảng hàng không quốc tế, các cửa khẩu quốc tế có nhu cầu xuất nhập khẩu hàng hóa lớn, các tuyến kết nối quốc tế quan trọng; mở rộng quy mô các tuyến có lưu lượng vận tải lớn bảo đảm đáp ứng nhu cầu, giảm nhanh tình trạng ùn tắc trên các tuyến quan trọng. Đẩy nhanh xây dựng các tuyến cao tốc gắn với hình thành các hành lang kinh tế Đông - Tây, một số đoạn của cao tốc Bắc - Nam phía Tây. Đẩy nhanh tiến trình đầu tư một số tuyến cao tốc, đường ven biển, quốc lộ quan trọng đáp ứng yêu cầu phát triển các hành lang kinh tế, nhu cầu kết nối vùng, liên vùng, kết nối thông suốt trên địa bàn đơn vị hành chính mới sau sáp nhập, kết nối hạ tầng cửa ngõ (cảng biển, cảng hàng không quốc tế) để mở ra không gian phát triển mới và tạo sức bật mới thúc đẩy tăng trưởng kinh tế."
+        },
+        {
+          "reference_id": "semantic-reference-statement-0fbd8b4a95c7c2c0c49889fa",
+          "page_index": 30,
+          "exact_evidence_excerpt": "- Đường sắt: xây dựng một số đoạn đường sắt tốc độ cao trên trục Bắc - Nam. Xây dựng đường sắt kết nối quốc tế, đường sắt kết nối với cảng biển cửa ngõ quốc"
+        },
+        {
+          "reference_id": "semantic-reference-statement-750fea4c0a188dab3cb2e074",
+          "page_index": 30,
+          "exact_evidence_excerpt": "20 Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 7 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-4c41e2c7240cbaecb7fa8253",
+          "page_index": 30,
+          "kind": "legal_reference",
+          "raw_text": "điểm a khoản 7 Điều 1",
+          "normalized_value": null,
+          "evidence_excerpt": "20 Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 7 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 53,
+          "char_end": 74,
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "1",
+            "clause": "7",
+            "point": "a",
+            "scope": "self_document"
+          }
+        },
+        {
+          "reference_id": "semantic-reference-mention-ca6c393f6e479e8c6c85f201",
+          "page_index": 30,
+          "kind": "document_identifier",
+          "raw_text": "252/2025/QH15",
+          "normalized_value": "252/2025/QH15",
+          "evidence_excerpt": "20 Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 7 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 93,
+          "char_end": 106,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-fd8e2cb352fe181ecdc38fb4",
+          "page_index": 30,
+          "kind": "document_identifier",
+          "raw_text": "81/2023/QH15",
+          "normalized_value": "81/2023/QH15",
+          "evidence_excerpt": "20 Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 7 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 154,
+          "char_end": 166,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-14d118f03d47851befee33f6",
+          "page_index": 30,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 09 tháng 01 năm 2023",
+          "normalized_value": "2023-01-09",
+          "evidence_excerpt": "20 Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 7 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 167,
+          "char_end": 192,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-1f15612b7fee53589df51039",
+          "page_index": 30,
+          "kind": "organization_or_authority",
+          "raw_text": "Quốc hội",
+          "normalized_value": "Quốc hội",
+          "evidence_excerpt": "20 Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 7 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 197,
+          "char_end": 205,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-c1aef6971b4262c0d5b843a5",
+          "page_index": 30,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 10 tháng 12 năm 2025",
+          "normalized_value": "2025-12-10",
+          "evidence_excerpt": "20 Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 7 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 297,
+          "char_end": 322,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 40,
+      "pdf_page_number_1_based": 41,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-fba00e2289e1b97750de2799",
+          "page_index": 40,
+          "exact_evidence_excerpt": "Quản lý chặt chẽ đất rừng phòng hộ, đất rừng đặc dụng, bảo vệ diện tích và phục hồi rừng tự nhiên gắn với bảo tồn đa dạng sinh học, bảo vệ cảnh quan, môi trường sinh thái. Phát triển và nâng cao chất lượng rừng trồng, nhất là rừng trồng gỗ lớn."
+        },
+        {
+          "reference_id": "semantic-reference-statement-f2d3dcf27f2976eebadc26df",
+          "page_index": 40,
+          "exact_evidence_excerpt": "Tiếp tục thực hiện khai hoang, phục hóa, lấn biển, đưa diện tích đất chưa sử dụng vào sử dụng; hạn chế tình trạng suy thoái đất; cải tạo, phục hồi diện tích đất bị thoái hóa gắn với bảo vệ môi trường và phát triển bền vững."
+        },
+        {
+          "reference_id": "semantic-reference-statement-9b074e3d3d52166b5cbf3492",
+          "page_index": 40,
+          "exact_evidence_excerpt": "Danh mục dự kiến các dự án quan trọng quốc gia thời kỳ 2021 - 2030, tầm nhìn đến năm 2050 được quy định tại Phụ lục kèm theo Nghị quyết này."
+        },
+        {
+          "reference_id": "semantic-reference-statement-0679b856f4b8a7d25fe7e3c8",
+          "page_index": 40,
+          "exact_evidence_excerpt": "Trường hợp phát sinh các dự án được Quốc hội quyết định chủ trương đầu tư hoặc chấp thuận chủ trương đầu tư sẽ được bổ sung vào Danh mục này đồng thời với trình tự, thủ tục quyết định chủ trương đầu tư, chấp thuận chủ trương đầu tư theo quy định của pháp luật."
+        },
+        {
+          "reference_id": "semantic-reference-statement-c2bd0d7bd30e361976d3fb64",
+          "page_index": 40,
+          "exact_evidence_excerpt": "Về huy động vốn đầu tư"
+        },
+        {
+          "reference_id": "semantic-reference-statement-cb349a38a3f6171f316866a2",
+          "page_index": 40,
+          "exact_evidence_excerpt": "Tiếp tục cơ cấu lại ngân sách nhà nước, bảo đảm tỷ lệ hợp lý giữa chi thường xuyên và chi đầu tư phát triển theo hướng tăng dần cho chi đầu tư phát triển. Cơ cấu lại chi đầu tư công theo hướng trọng tâm, trọng điểm, nâng cao hiệu quả, hiệu lực phân bổ, giải ngân vốn đầu tư công. Ưu tiên đầu tư công cho mạng lưới hạ tầng quy mô lớn mang tính liên vùng, liên tỉnh và kết nối các vùng động lực quốc gia, các hành lang kinh tế, kết nối mạng lưới giao thông khu vực, quốc tế; đầu tư các công trình có sức lan tỏa cao, giải quyết nhu cầu thiết yếu, các nút thắt của vùng, mang lại hiệu quả kinh tế và hiệu quả xã hội cao cho toàn vùng. Phát huy vai trò dẫn dắt của đầu tư công để kích hoạt, huy động, thu hút mọi nguồn lực xã hội; huy động và sử dụng nguồn lực theo phương thức đối tác công tư, mô hình \"lãnh đạo công - quản trị tư\", \"đầu tư công - quản lý tư\", \"đầu tư tư - sử dụng công\"... để huy động và sử dụng hiệu quả mọi nguồn lực cho nền kinh tế. Tập trung tháo gỡ khó khăn, vướng mắc cho các dự án đầu tư đang tồn đọng, chậm triển khai."
+        },
+        {
+          "reference_id": "semantic-reference-statement-babc328325773f512edf9ca8",
+          "page_index": 40,
+          "exact_evidence_excerpt": "Đẩy mạnh cổ phần hóa doanh nghiệp nhà nước để nâng cao hiệu quả hoạt động của doanh nghiệp thông qua thu hút thêm nguồn lực từ các khu vực kinh tế khác, tăng cường năng lực quản trị, cải thiện công nghệ để doanh nghiệp phát triển sau cổ"
+        },
+        {
+          "reference_id": "semantic-reference-statement-bc0c138f8b3bf7a5177e8d42",
+          "page_index": 40,
+          "exact_evidence_excerpt": "30 Điều này được sửa đổi, bổ sung theo quy định tại khoản 9 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-8248a49b32e97ae079fd324f",
+          "page_index": 40,
+          "kind": "organization_or_authority",
+          "raw_text": "Quốc hội",
+          "normalized_value": "Quốc hội",
+          "evidence_excerpt": "Trường hợp phát sinh các dự án được Quốc hội quyết định chủ trương đầu tư hoặc chấp thuận chủ trương đầu tư sẽ được bổ sung vào Danh mục này đồng thời với trình tự, thủ tục quyết định chủ trương đầu tư, chấp thuận chủ trương đầu tư theo quy định của pháp luật.",
+          "char_start": 36,
+          "char_end": 44,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-da19bad9cc668b029824d3ba",
+          "page_index": 40,
+          "kind": "legal_reference",
+          "raw_text": "khoản 9 Điều 1",
+          "normalized_value": null,
+          "evidence_excerpt": "30 Điều này được sửa đổi, bổ sung theo quy định tại khoản 9 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 52,
+          "char_end": 66,
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "1",
+            "clause": "9",
+            "point": null,
+            "scope": "self_document"
+          }
+        },
+        {
+          "reference_id": "semantic-reference-mention-12697b9d895a48c9c55ad8f2",
+          "page_index": 40,
+          "kind": "document_identifier",
+          "raw_text": "252/2025/QH15",
+          "normalized_value": "252/2025/QH15",
+          "evidence_excerpt": "30 Điều này được sửa đổi, bổ sung theo quy định tại khoản 9 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 85,
+          "char_end": 98,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-130287ba61ce45a0b6f7ed45",
+          "page_index": 40,
+          "kind": "document_identifier",
+          "raw_text": "81/2023/QH15",
+          "normalized_value": "81/2023/QH15",
+          "evidence_excerpt": "30 Điều này được sửa đổi, bổ sung theo quy định tại khoản 9 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 146,
+          "char_end": 158,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-ffbbe9dbdbeb0fc1292f94e6",
+          "page_index": 40,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 09 tháng 01 năm 2023",
+          "normalized_value": "2023-01-09",
+          "evidence_excerpt": "30 Điều này được sửa đổi, bổ sung theo quy định tại khoản 9 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 159,
+          "char_end": 184,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-088c8ff9050e42910c43e74b",
+          "page_index": 40,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 10 tháng 12 năm 2025",
+          "normalized_value": "2025-12-10",
+          "evidence_excerpt": "30 Điều này được sửa đổi, bổ sung theo quy định tại khoản 9 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 289,
+          "char_end": 314,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 47,
+      "pdf_page_number_1_based": 48,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-dbf674b81e7c389280517706",
+          "page_index": 47,
+          "exact_evidence_excerpt": "PHỤ LỤC32 DANH MỤC DỰ KIẾN CÁC DỰ ÁN QUAN TRỌNG QUỐC GIA THỜI KỲ 2021 - 2030, TẦM NHÌN ĐẾN NĂM 2050"
+        },
+        {
+          "reference_id": "semantic-reference-statement-34292d75db97bf7b82a3fcf2",
+          "page_index": 47,
+          "exact_evidence_excerpt": "(Kèm theo Nghị quyết số 252/2025/QH15 ngày 10 tháng 12 năm 2025 của Quốc hội)"
+        },
+        {
+          "reference_id": "semantic-reference-statement-2338b6a94fbb6355430aad1c",
+          "page_index": 47,
+          "exact_evidence_excerpt": "TT\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-1b513ce42fe3f2b45332dd18",
+          "page_index": 47,
+          "exact_evidence_excerpt": "D ự án\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-e73acb0f8bdfcc0e66ba569e",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Giai đoạn\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-63d4d558b48767874acd9feb",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Phân kỳ thực hiện Giai đoạn\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-d0b02ee6b591ce92ec745e67",
+          "page_index": 47,
+          "exact_evidence_excerpt": "2021 2030\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-7369cb5ca41469c79e721e78",
+          "page_index": 47,
+          "exact_evidence_excerpt": "2031-2050\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-e0b40bc53606d0cef181bee6",
+          "page_index": 47,
+          "exact_evidence_excerpt": "1\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-9c185be9f9c55d85931bd826",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Đường bộ cao tốc Bắc\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-58c8ed89561bcdb4d1113a8a",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Nam phía Đông\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-f61b9b46785798153003abd2",
+          "page_index": 47,
+          "exact_evidence_excerpt": "X\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-10e175a53229a357e552592e",
+          "page_index": 47,
+          "exact_evidence_excerpt": "2\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-53c8b1a86c9cd20d5fba8f7d",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Nam phía Tây\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-f75cd09603ac2183b90d1ec3",
+          "page_index": 47,
+          "exact_evidence_excerpt": "3\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-2e524a23e07c0773f210677b",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Đường bộ cao tốc Đông\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-8620f363d3940feb6a85ab87",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Tây\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-9b2623b4accca550a72c6ebc",
+          "page_index": 47,
+          "exact_evidence_excerpt": "4\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-b6f0c0894a8c7ced9fdc190e",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Cảng hàng không quốc tế\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-b43818a7b8eaea8c8a8d2fb6",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Long Th à nh\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-cbbcf912d1520182d939953d",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Đường vành đai\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-bdca813bcdf95da690893c55",
+          "page_index": 47,
+          "exact_evidence_excerpt": "vùng Th ủ đô Hà Nội,\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-dd282922fc68498496d26fb4",
+          "page_index": 47,
+          "exact_evidence_excerpt": "v à nh\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-ced141fa4068b2cc0ac96dfc",
+          "page_index": 47,
+          "exact_evidence_excerpt": "đai Thành phố Hồ Chí Minh\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-35725a09a72e58fbcd3155d8",
+          "page_index": 47,
+          "exact_evidence_excerpt": "6\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-ae281758743d80eaaff15cc0",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Đường sắt tốc độ cao\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-5604b225d4e83846cb367beb",
+          "page_index": 47,
+          "exact_evidence_excerpt": "trên trục Bắc Nam Đường sắt đô thị Hà Nội, đường sắt đô thị\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-4127ecbbb7f0fe0626441af1",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Thành phố Hồ Chí Minh\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-132de4b456cb2f9cb65d8cc8",
+          "page_index": 47,
+          "exact_evidence_excerpt": "C á c tuy ến đườ\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-96cda9c75cfc1735bfee3df8",
+          "page_index": 47,
+          "exact_evidence_excerpt": "ng s ắ t k ế t n ố i v ớ i c ả ng bi\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-a26cc1653420dc3dcdc410cd",
+          "page_index": 47,
+          "exact_evidence_excerpt": "ể n\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-9c03cd13859503905a899582",
+          "page_index": 47,
+          "exact_evidence_excerpt": "c ử a ng õ qu ố\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-232ca9f4f4aedaa17f29bc59",
+          "page_index": 47,
+          "exact_evidence_excerpt": "c t ế\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-bb9c3314c05255bd29ada2c4",
+          "page_index": 47,
+          "exact_evidence_excerpt": "Các nhà máy điện hạt nhân\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-b2721e16ecc0fbf445aad4ec",
+          "page_index": 47,
+          "exact_evidence_excerpt": "X"
+        },
+        {
+          "reference_id": "semantic-reference-statement-9e89251c935fe63853dfbabe",
+          "page_index": 47,
+          "exact_evidence_excerpt": "32 Phụ lục này được sửa đổi, bổ sung theo quy định tại khoản 11 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-5cb2589431ec998d0b0fd958",
+          "page_index": 47,
+          "kind": "document_identifier",
+          "raw_text": "252/2025/QH15",
+          "normalized_value": "252/2025/QH15",
+          "evidence_excerpt": "(Kèm theo Nghị quyết số 252/2025/QH15 ngày 10 tháng 12 năm 2025 của Quốc hội)",
+          "char_start": 24,
+          "char_end": 37,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-b862a69171a652f4c26a93d2",
+          "page_index": 47,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 10 tháng 12 năm 2025",
+          "normalized_value": "2025-12-10",
+          "evidence_excerpt": "(Kèm theo Nghị quyết số 252/2025/QH15 ngày 10 tháng 12 năm 2025 của Quốc hội)",
+          "char_start": 38,
+          "char_end": 63,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-5577e2d24e129faf65804dc5",
+          "page_index": 47,
+          "kind": "organization_or_authority",
+          "raw_text": "Quốc hội",
+          "normalized_value": "Quốc hội",
+          "evidence_excerpt": "(Kèm theo Nghị quyết số 252/2025/QH15 ngày 10 tháng 12 năm 2025 của Quốc hội)",
+          "char_start": 68,
+          "char_end": 76,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-9a7700492279ffabc9b69f6e",
+          "page_index": 47,
+          "kind": "legal_reference",
+          "raw_text": "khoản 11 Điều 1",
+          "normalized_value": null,
+          "evidence_excerpt": "32 Phụ lục này được sửa đổi, bổ sung theo quy định tại khoản 11 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 55,
+          "char_end": 70,
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "1",
+            "clause": "11",
+            "point": null,
+            "scope": "self_document"
+          }
+        },
+        {
+          "reference_id": "semantic-reference-mention-45feecaff26a040f2a85a557",
+          "page_index": 47,
+          "kind": "document_identifier",
+          "raw_text": "81/2023/QH15",
+          "normalized_value": "81/2023/QH15",
+          "evidence_excerpt": "32 Phụ lục này được sửa đổi, bổ sung theo quy định tại khoản 11 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 150,
+          "char_end": 162,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-0ca8b104e2a7a96f21b10e54",
+          "page_index": 47,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 09 tháng 01 năm 2023",
+          "normalized_value": "2023-01-09",
+          "evidence_excerpt": "32 Phụ lục này được sửa đổi, bổ sung theo quy định tại khoản 11 Điều 1 của Nghị quyết số 252/2025/QH15 sửa đổi, bổ sung một số điều của Nghị quyết số 81/2023/QH15 ngày 09 tháng 01 năm 2023 của Quốc hội về Quy hoạch tổng thể quốc gia thời kỳ 2021-2030, tầm nhìn đến năm 2050, có hiệu lực kể từ ngày 10 tháng 12 năm 2025.",
+          "char_start": 163,
+          "char_end": 188,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-assistance-effbfe8af34da3b6e80ebc75",
+          "page_index": 47,
+          "bbox_normalized_1000": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "task_type": "figure_or_image_observation",
+          "evidence_note": "The frozen #008 visual audit selected this page for a table/figure in active structural context; the full-page label is coarse and is not runtime input."
+        }
+      ]
+    }
+  ]
+}

@@ -14,12 +14,13 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Current Project Status
 
-- **Phase**: Structural IR v1 (Issue #008)
+- **Phase**: Domain Semantic IR v1 + Selective VLM Evidence (Issue #009)
 - **Status**: The engineering foundation, golden-document registry, independent external MinerU
   and Marker adapters, frozen Physical Document IR v0 evidence, six-document reference corpus,
   ten-run parser benchmark, Physical Document IR v1, and deterministic Vietnamese legal/planning
-  Structural IR v1 are implemented. Semantic extraction, selective VLM, RAG, knowledge graphs, and
-  retrieval features are not yet implemented.
+  Structural IR v1, parser-independent Semantic IR v1, deterministic semantic mention extraction,
+  and a selective provider-neutral VLM evidence boundary are implemented. No live VLM quality
+  experiment has been completed. RAG, knowledge graphs, and retrieval are not implemented.
 
 ### Current data flow
 
@@ -30,8 +31,32 @@ Parser Raw
                           │
                           └──→ Vietnamese Legal/Planning Structural IR v1
                                       │
-                                      └──→ #009 Semantic IR + Selective VLM [not implemented]
+                                      └──→ Semantic IR v1 + Selective VLM Evidence
+                                                  │
+                                                  └──→ #010 Hierarchical RAG [not implemented]
 ```
+
+## Semantic IR and selective VLM evidence
+
+Semantic IR v1 creates exact evidence-backed statements and controlled Vietnamese legal/planning
+mentions from frozen Physical and Structural IR. It binds canonical source hashes and does not
+modify either upstream IR. The selector emits deterministic, budgeted visual-evidence requests;
+rendering and model execution remain injected external boundaries.
+
+Regenerate the ten retained representations when raw parser runs are available:
+
+```bash
+uv run python scripts/generate_semantic_ir_v1_validation.py
+```
+
+Reproduce the report and verify committed hashes in a clean offline clone:
+
+```bash
+uv run python scripts/generate_semantic_ir_v1_validation.py --render-only
+```
+
+The replay record is a synthetic contract fixture. External model clients require explicit
+`live_vlm=True`; no model server is bundled and no VLM quality improvement is claimed.
 
 ## Prerequisites
 

@@ -54,6 +54,9 @@ data/*
 !data/benchmarks/
 !data/structural_annotations/
 !data/structural_ir/
+!data/semantic_annotations/
+!data/semantic_ir/
+!data/vlm_replay/
 !data/golden/**/
 !data/golden/**/.gitkeep
 !data/manifests/**
@@ -61,6 +64,9 @@ data/*
 !data/benchmarks/**
 !data/structural_annotations/**
 !data/structural_ir/**
+!data/semantic_annotations/**
+!data/semantic_ir/**
+!data/vlm_replay/**
 data/golden/**/*.pdf
 data/golden/**/*.part
 data/golden/**/parser_runs/

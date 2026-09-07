@@ -1,0 +1,482 @@
+{
+  "annotation_schema_version": 1,
+  "annotation_version": "v1",
+  "annotator_type": "ai_assisted_evidence_audit",
+  "annotation_method": "fixed_visual_page_audit_plus_retained_representation_candidate_audit",
+  "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+  "version_id": "v1",
+  "source_artifact_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+  "prior_physical_ir_exposure": true,
+  "prior_structural_ir_exposure": true,
+  "prior_semantic_extractor_exposure": true,
+  "independent_or_blind_ground_truth": false,
+  "candidate_representations": [
+    "marker",
+    "mineru"
+  ],
+  "pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-7d9f774a4e6b55f093f34763",
+          "page_index": 0,
+          "exact_evidence_excerpt": "S: 23 /2008/QD-UBND"
+        },
+        {
+          "reference_id": "semantic-reference-statement-4d6b5c160bf81dca3acf8902",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Hà Nρi, ngày 29 tháng 9 năm 2008"
+        },
+        {
+          "reference_id": "semantic-reference-statement-48f0b1689b1bad1ec88471d7",
+          "page_index": 0,
+          "exact_evidence_excerpt": "QUYÉT DINH V vic thành lâp và quy đnh chc nāng, nhim v, quyn hn, co cu t chc cůa Vin Quy hoch xây dng Hà Ni"
+        },
+        {
+          "reference_id": "semantic-reference-statement-ee97818c445570597a8acbbf",
+          "page_index": 0,
+          "exact_evidence_excerpt": "ÚY BAN NHÂN DÂN THÀNH PH HÀ NI"
+        },
+        {
+          "reference_id": "semantic-reference-statement-d0d06d714bf0624fa87abf38",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn c Lut T chc HĐND và UBND ngày 26 tháng 11 năm 2003;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-0d659a91238748ec7d097bf9",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn c Ngh quyt s 15/2008/QH12 ngày 29 tháng 5 năm 2008 ca Quc hi v điu chinh đa gii hành chính thành ph Hà Ni và mt s tinh có liên quan;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-89b92506636ea437dd174ca2",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Thc hin Thông báo s 11 TB/TU ngày 28 tháng 8 năm 2008 ca Thành úy Hà Ni v vic thành lp Vin Quy hoch xây dng Hà Ni trc thuc UBND thành ph Hà Ni;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-fd034b539fc8868230dfbb7b",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Xét đ ngh ca Giám đc S Ni v ti Tò trình s 236/TTr-SNV ngày 24 tháng 9 năm 2008,"
+        },
+        {
+          "reference_id": "semantic-reference-statement-cf1fd5a41794af6270c44aaf",
+          "page_index": 0,
+          "exact_evidence_excerpt": "QUYÉT ĐNH:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-5886164aba04aa8ee0f2d391",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Điu 1. Thành lp Vin Quy hoch xay dng Hà Ni trc thuc UBND thành ph Hà Ni trên cơ s Vin Quy hoch xay dng Hà Ni trc thuc S Quy hoch - Kin trúc thành ph Hà Ni."
+        },
+        {
+          "reference_id": "semantic-reference-statement-44c5bc7cf46cad866d98075f",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Điu 2. Tên gi, v trí, chc năng, nhim v, quyn hn và cơ cu t chc ca Vin Quy hoch xay dng Hà Ni"
+        },
+        {
+          "reference_id": "semantic-reference-statement-aba02c35539c604040c62d97",
+          "page_index": 0,
+          "exact_evidence_excerpt": "1. Tên goi, v trí, chc năng"
+        },
+        {
+          "reference_id": "semantic-reference-statement-6b4449016db1a792c151f517",
+          "page_index": 0,
+          "exact_evidence_excerpt": "a) Tên goi:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-e96504d1704e5a0058ff6931",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Tēn gi: Vin Quy hoch xây dmg Hà Ni. Ten giao dch quc t: Hanoi Urban Planning Institute (HUPI). Tr s chính đt ti s 52 ph Le Đi Hành, qun Hai Bà Trưng, thành ph Hà Ni."
+        },
+        {
+          "reference_id": "semantic-reference-statement-5d3f048ec8df73fe01e9131d",
+          "page_index": 0,
+          "exact_evidence_excerpt": "b) V trí:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-27c611b1ea25490b8458062d",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Vin Quy hoch xay dng Hà Ni là đơn v s nghip trc thuc UBND thành ph Hà Ni, có tư cách pháp nhân, có con du và tài khon ring đ giao dch, hot đng theo qui đnh ca pháp lut. Vin Quy hoch xây dng Hà Ni chu s chi đo, qun lý v t chc, bien ch và cong tác ca UBND thành ph; đng thi, chu s kim tra, hưóng dn v chuyên môn, nghip v ca B Xay dng và các B, ngành có liên quan."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-24bcbac6a527458c1dab192b",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "evidence_excerpt": "S: 23 /2008/QD-UBND",
+          "char_start": 15,
+          "char_end": 19,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-369e548681432e48629538d9",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 29 tháng 9 năm 2008",
+          "normalized_value": "2008-09-29",
+          "evidence_excerpt": "Hà Nρi, ngày 29 tháng 9 năm 2008",
+          "char_start": 8,
+          "char_end": 32,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-64ef7e9cb79907f79dc32421",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "HĐND",
+          "normalized_value": "HĐND",
+          "evidence_excerpt": "Căn c Lut T chc HĐND và UBND ngày 26 tháng 11 năm 2003;",
+          "char_start": 16,
+          "char_end": 20,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-d1e8d75f324a99de641ad34d",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 26 tháng 11 năm 2003",
+          "normalized_value": "2003-11-26",
+          "evidence_excerpt": "Căn c Lut T chc HĐND và UBND ngày 26 tháng 11 năm 2003;",
+          "char_start": 29,
+          "char_end": 54,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-6c04e1c4ba26c71fbbc4fcb0",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "15/2008/QH12",
+          "normalized_value": "15/2008/QH12",
+          "evidence_excerpt": "Căn c Ngh quyt s 15/2008/QH12 ngày 29 tháng 5 năm 2008 ca Quc hi v điu chinh đa gii hành chính thành ph Hà Ni và mt s tinh có liên quan;",
+          "char_start": 17,
+          "char_end": 29,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-f59b1608ac069a4a658e4377",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 29 tháng 5 năm 2008",
+          "normalized_value": "2008-05-29",
+          "evidence_excerpt": "Căn c Ngh quyt s 15/2008/QH12 ngày 29 tháng 5 năm 2008 ca Quc hi v điu chinh đa gii hành chính thành ph Hà Ni và mt s tinh có liên quan;",
+          "char_start": 30,
+          "char_end": 54,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-eb59441aba84f85082af105a",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 28 tháng 8 năm 2008",
+          "normalized_value": "2008-08-28",
+          "evidence_excerpt": "Thc hin Thông báo s 11 TB/TU ngày 28 tháng 8 năm 2008 ca Thành úy Hà Ni v vic thành lp Vin Quy hoch xây dng Hà Ni trc thuc UBND thành ph Hà Ni;",
+          "char_start": 29,
+          "char_end": 53,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-000cb1f350b21e130760b5ff",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 24 tháng 9 năm 2008",
+          "normalized_value": "2008-09-24",
+          "evidence_excerpt": "Xét đ ngh ca Giám đc S Ni v ti Tò trình s 236/TTr-SNV ngày 24 tháng 9 năm 2008,",
+          "char_start": 54,
+          "char_end": 78,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-0c73af24cf446a7c986a223f",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c) Chc nāng:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-baae338c9824c8daf238a845",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Vin Quy hoch xây dng Hà Ni có chc nāng:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-e9c5cef91e4afdb942399f79",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c.1) Nghiên cu, tư vn vi UBND thành ph v hoch đnh chin lưc quy hoach xay dung tng th, chi tit v phát trin đo thi và nông thôn trên đa bàn Thů đo Hà Noi, quy hoach bo tồn các khu di tích lich s, văn hóa, di tích khu ph c, ph cū mang nét đc trung Hà Ni;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-b4722726d2e2ab43ceee06dc",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c.2) Nghiên cu, tham mưu, đ xuat vi UBND thành ph hoc giúp UBND thành ph trình các co quan Trung ưong và Chính phů nhũng co ch, chính sách đăc thù phc v cho quy hoach xay dng phát trin Thů đo Hà Ni;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-a7249e6b2557daa6c63b8939",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c.3) Xay dmg các đ tài nghiên cu khoa hc hoc tham gia nghiên cu các đ tài phc v cho công tác qun lý chuyên ngành quy hoach và kin trúc hin đi và mang đm nét dan tc;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-1c1a7a3ea08d84f69bf09bf8",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c.4) Tham gia và phc v công tác qun lý nhà nuc v quy hoch xây dng, kin trúc đo th trên đa bàn thành ph Hà Ni;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-138a9d9a8fe83f8d588173dd",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c.5) T chc, phi hp đào to, bi duõng v chuyên ngành quy hoch, kin trúc đo th và nông thôn;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-29922e7bcf5601c804a1e4b1",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c.6) Thc hin các hot đng dch v, tư vn chuyên ngành quy hoch - kin trúc."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-67510e18d9c9022ec94ec7a3",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "evidence_excerpt": "c.1) Nghiên cu, tư vn vi UBND thành ph v hoch đnh chin lưc quy hoach xay dung tng th, chi tit v phát trin đo thi và nông thôn trên đa bàn Thů đo Hà Noi, quy hoach bo tồn các khu di tích lich s, văn hóa, di tích khu ph c, ph cū mang nét đc trung Hà Ni;",
+          "char_start": 25,
+          "char_end": 29,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 2,
+      "pdf_page_number_1_based": 3,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-1fb71e15a74c610b668ede1d",
+          "page_index": 2,
+          "exact_evidence_excerpt": "Vin Quy hoch xây dng Hà Ni có Vin trưng và các Phó Vin trung."
+        },
+        {
+          "reference_id": "semantic-reference-statement-00d7c3219cf8e6684df61e11",
+          "page_index": 2,
+          "exact_evidence_excerpt": "Vin trưng là ngưi đúng đâu Vin, chu trách nhim trưc UBND thành ph, Chů tch UBND thành ph và truc pháp lut trong thc hin chc năng, nhim v, quyn hn ca Vin."
+        },
+        {
+          "reference_id": "semantic-reference-statement-c935930b5dc0d89fbe8663db",
+          "page_index": 2,
+          "exact_evidence_excerpt": "Phó Vin trưng là ngưi giúp Vin trưng ph trách mt hoc mt s līnh vưc công tác và chu trách nhim trưc Vin trung, UBND thành ph và trưc pháp lut v nhim v đưc phan công theo quy đnh ca Nhà nuc."
+        },
+        {
+          "reference_id": "semantic-reference-statement-3b0d92eebfa0061f89a51a2d",
+          "page_index": 2,
+          "exact_evidence_excerpt": "Vic b nhim Vin trưng, Phó Vin trưng Vin Quy hoch xây dmg Hà Ni do Chú tch UBND thành ph quyt đnh theo tiêu chun chuyên môn, nghip v do B Xây dng ban hành và theo quy đnh ca pháp lut."
+        },
+        {
+          "reference_id": "semantic-reference-statement-8a34243e9bcd4d28a303baa7",
+          "page_index": 2,
+          "exact_evidence_excerpt": "Vic min nhim, luân chuyn, cách chc, khen thưng, ký lut và thc hin các ch đ chính sách đi vi Vin trưng, Phó Vin trưng Vin Quy hoch xay dmg Hà Ni thc hin theo quy đnh ca pháp lut."
+        },
+        {
+          "reference_id": "semantic-reference-statement-bb9eaec178a81cf4cdb773b0",
+          "page_index": 2,
+          "exact_evidence_excerpt": "b.1) Phòng T chc - Hành chính;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-3cecb3d2822c9d53d4fdcc3d",
+          "page_index": 2,
+          "exact_evidence_excerpt": "b.2) Phòng K hoch - Tng hp;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-7ad88c34d2e115c558ac8281",
+          "page_index": 2,
+          "exact_evidence_excerpt": "b.3) Phòng Tài chính - K toán;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-8dd8864f06205a4a25c843b0",
+          "page_index": 2,
+          "exact_evidence_excerpt": "b.4) Phòng Cong ngh thông tin và cơ s dū liu;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-ecb477c3ad2d2278e08c1381",
+          "page_index": 2,
+          "exact_evidence_excerpt": "b.5) Phòng Hoch đnh chin lưc quy hoch xay dng phát trin đo th - nông thôn;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-c32fa2dbb3d49132b3476376",
+          "page_index": 2,
+          "exact_evidence_excerpt": "b.6) Phòng Quy hoch xay dng, kin trúc đo th, qun lý k thut và đào to;"
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-28f3b2143a51747a6d4c2181",
+          "page_index": 2,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "evidence_excerpt": "Vin trưng là ngưi đúng đâu Vin, chu trách nhim trưc UBND thành ph, Chů tch UBND thành ph và truc pháp lut trong thc hin chc năng, nhim v, quyn hn ca Vin.",
+          "char_start": 52,
+          "char_end": 56,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 3,
+      "pdf_page_number_1_based": 4,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-c6830fb41df76023c498e845",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Chúc nāng, nhiêm vu, quyn han các phòng chuyên môn, nghip v thuc Viên và trách nhiêm ngui đúng đâu do Vin trung quyt đnh theo quy đnh cúa pháp lut."
+        },
+        {
+          "reference_id": "semantic-reference-statement-88e2eaa68ff1c8673c0a061b",
+          "page_index": 3,
+          "exact_evidence_excerpt": "c.1) Trung tâm Quy hoch - Kin trúc 1;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-11826d6022613e16dcabf1cc",
+          "page_index": 3,
+          "exact_evidence_excerpt": "c.2) Trung tâm Quy hoch - Kin trúc 2;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-b43b3a9f8904f683e8ecf43b",
+          "page_index": 3,
+          "exact_evidence_excerpt": "c.3) Trung tâm Quy hoch - Kin trúc 3;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-1e86d73f6d8efcda1c85bcf7",
+          "page_index": 3,
+          "exact_evidence_excerpt": "c.4) Trung tâm Quy hoch - Kin trúc 4;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-21f25bf0974bbcb929e4b83a",
+          "page_index": 3,
+          "exact_evidence_excerpt": "c.5) Trung tâm Quy hoch - Kin trúc 5."
+        },
+        {
+          "reference_id": "semantic-reference-statement-afc7626ed2dee43e4ddef476",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Vin Quy hoch xây dng Hà Ni có các Hi đông tư vn theo chuyên ngành."
+        },
+        {
+          "reference_id": "semantic-reference-statement-8797263171628363c569c09f",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Điu 2. Quyt đnh này có hiu lc thi hành sau 10 ngày, k t ngày ký. Bāi b các Quyt đnh trưc đây cůa UBND thành ph Hà Ni ban hành trái vi Quyt đnh này."
+        },
+        {
+          "reference_id": "semantic-reference-statement-ebfa8c4d4e6b16e6d75c0d4e",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Điu 3. Chánh Vān phòng UBND thành ph, Giám đc các S: Ni v, Quy hoch - Kin trúc, Vin Quy hoch xây dng Hà Ni, Thů trung các S, Ban, ngành, Ch tch UBND các qun, huyn, thành ph trc thuc và các cơ quan, đon v, cá nhan có liên quan chu trách nhim thi hành Quyt đnh này."
+        },
+        {
+          "reference_id": "semantic-reference-statement-20f848970ada7842c31243cf",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Noi nhn:"
+        },
+        {
+          "reference_id": "semantic-reference-statement-fd7213c6550085b0044f1978",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- B Ni v;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-011d30d5b2673091bd511fa8",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- B Xay dng;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-60b5d08c9f2f60aae523da49",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- B Tư pháp (Cc Kim tra văn bn);"
+        },
+        {
+          "reference_id": "semantic-reference-statement-26e05ed5ad3e753812b2e38b",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- Thưòng trc Thành y, HĐND TP;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-c543b002f4a7a868665e58c1",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- Ch tch , các Phó Ch tch UBND TP;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-4b128e71be05ad913239901b",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- Đoàn ĐBQH TP;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-a4f5cc9f1c9125b57c270570",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- Các Ban HĐND TP;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-062c24215e2974d03d7e7d7d",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- Như Điu 3;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-9de2dc79e17988c27e1c943b",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- Báo Hà Ni mi;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-93e714500c45fb272a55d6fe",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- CVP; Cong báo;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-a1291cf47090975bb2b82e98",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- NC, TH, XDDT, GTHT;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-cb3f16785dd0982bb4a39ab2",
+          "page_index": 3,
+          "exact_evidence_excerpt": "\\- Lunu: Vǎn thu, NC1 (2b)&"
+        },
+        {
+          "reference_id": "semantic-reference-statement-c200b15c519fb84b31a3f068",
+          "page_index": 3,
+          "exact_evidence_excerpt": "TM. ÛY BAN NHÂN DÂN"
+        },
+        {
+          "reference_id": "semantic-reference-statement-2c0d09f584aabc536d26d6f8",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Nguyn Th Tho"
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-06d4fed7fc56538986451031",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "evidence_excerpt": "Điu 2. Quyt đnh này có hiu lc thi hành sau 10 ngày, k t ngày ký. Bāi b các Quyt đnh trưc đây cůa UBND thành ph Hà Ni ban hành trái vi Quyt đnh này.",
+          "char_start": 97,
+          "char_end": 101,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-5fce131694b8da264deceaab",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "HĐND",
+          "normalized_value": "HĐND",
+          "evidence_excerpt": "\\- Thưòng trc Thành y, HĐND TP;",
+          "char_start": 23,
+          "char_end": 27,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    }
+  ]
+}

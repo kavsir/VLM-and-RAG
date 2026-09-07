@@ -1,0 +1,2118 @@
+{
+  "validation_schema_version": 1,
+  "validation_protocol": "semantic_ir_v1_fixed_46_page_reference_v1",
+  "semantic_ir_version": 1,
+  "semantic_profile": "vi_legal_planning_semantic_v1",
+  "runtime_inputs": [
+    "PhysicalDocumentV1",
+    "StructuralDocument v1",
+    "validated VLMObservation records"
+  ],
+  "reference": {
+    "version": "v1",
+    "schema": 1,
+    "documents": 6,
+    "pages": 46,
+    "provenance": "AI-assisted evidence audit with disclosed prior Physical, Structural, and Semantic extractor exposure; not human, blind, or independent ground truth.",
+    "mention_counts_by_kind": {
+      "document_identifier": 82,
+      "legal_reference": 21,
+      "organization_or_authority": 53,
+      "quantity": 20,
+      "temporal_expression": 79
+    }
+  },
+  "representations": 10,
+  "entries": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "output_path": "data/semantic_ir/hanoi_master_plan_100y/marker.v1.json",
+      "sha256_a": "1690863204b64c0dd9914b3f008d4a32b2991d2b82b037c86c1938cd5ba0cd5f",
+      "sha256_b": "1690863204b64c0dd9914b3f008d4a32b2991d2b82b037c86c1938cd5ba0cd5f",
+      "byte_identical": true,
+      "statement_count": 1034,
+      "mention_count": 224,
+      "mention_kind_histogram": {
+        "document_identifier": 36,
+        "legal_reference": 1,
+        "organization_or_authority": 47,
+        "quantity": 86,
+        "temporal_expression": 54
+      },
+      "eligible_vlm_requests": 42,
+      "selected_vlm_requests": 12,
+      "non_selected_vlm_requests": 30
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "output_path": "data/semantic_ir/hanoi_master_plan_100y/mineru.v1.json",
+      "sha256_a": "4080e5fb984f44ef6521c031b63142946d71cc89453626216f014c2c44b1df98",
+      "sha256_b": "4080e5fb984f44ef6521c031b63142946d71cc89453626216f014c2c44b1df98",
+      "byte_identical": true,
+      "statement_count": 1030,
+      "mention_count": 224,
+      "mention_kind_histogram": {
+        "document_identifier": 36,
+        "legal_reference": 1,
+        "organization_or_authority": 47,
+        "quantity": 86,
+        "temporal_expression": 54
+      },
+      "eligible_vlm_requests": 1105,
+      "selected_vlm_requests": 12,
+      "non_selected_vlm_requests": 1093
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "output_path": "data/semantic_ir/luat_112_2025_qh15/marker.v1.json",
+      "sha256_a": "18fc6a28d3daed3dc3b93f2a6204051a7b540d5a37c2b5e5b8a12d2f4fa0b7d6",
+      "sha256_b": "18fc6a28d3daed3dc3b93f2a6204051a7b540d5a37c2b5e5b8a12d2f4fa0b7d6",
+      "byte_identical": true,
+      "statement_count": 1018,
+      "mention_count": 332,
+      "mention_kind_histogram": {
+        "document_identifier": 62,
+        "legal_reference": 124,
+        "organization_or_authority": 136,
+        "temporal_expression": 10
+      },
+      "eligible_vlm_requests": 61,
+      "selected_vlm_requests": 12,
+      "non_selected_vlm_requests": 49
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "parser": "marker",
+      "output_path": "data/semantic_ir/vbhn_103_2026_quy_hoach_tong_the/marker.v1.json",
+      "sha256_a": "50a8a932173a375700085ec0d51880cd8e65df7d6616244756759fffc67d72c7",
+      "sha256_b": "50a8a932173a375700085ec0d51880cd8e65df7d6616244756759fffc67d72c7",
+      "byte_identical": true,
+      "statement_count": 417,
+      "mention_count": 289,
+      "mention_kind_histogram": {
+        "document_identifier": 91,
+        "legal_reference": 37,
+        "organization_or_authority": 73,
+        "quantity": 3,
+        "temporal_expression": 85
+      },
+      "eligible_vlm_requests": 17,
+      "selected_vlm_requests": 12,
+      "non_selected_vlm_requests": 5
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "parser": "marker",
+      "output_path": "data/semantic_ir/tt_04_2026_bxd_pl2_dinh_muc/marker.v1.json",
+      "sha256_a": "447e7ef6f9112ff05339aa204157c99aa811b6f5e32fcfb7274d1776cb799a55",
+      "sha256_b": "447e7ef6f9112ff05339aa204157c99aa811b6f5e32fcfb7274d1776cb799a55",
+      "byte_identical": true,
+      "statement_count": 1282,
+      "mention_count": 34,
+      "mention_kind_histogram": {
+        "quantity": 34
+      },
+      "eligible_vlm_requests": 25,
+      "selected_vlm_requests": 12,
+      "non_selected_vlm_requests": 13
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "parser": "mineru",
+      "output_path": "data/semantic_ir/tt_04_2026_bxd_pl2_dinh_muc/mineru.v1.json",
+      "sha256_a": "9a2cc7ec4f95f80a4ebe5cb44f1d2b6feb7d88eada231c92e74ad81290c0ffd2",
+      "sha256_b": "9a2cc7ec4f95f80a4ebe5cb44f1d2b6feb7d88eada231c92e74ad81290c0ffd2",
+      "byte_identical": true,
+      "statement_count": 168,
+      "mention_count": 19,
+      "mention_kind_histogram": {
+        "quantity": 19
+      },
+      "eligible_vlm_requests": 166,
+      "selected_vlm_requests": 12,
+      "non_selected_vlm_requests": 154
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "parser": "marker",
+      "output_path": "data/semantic_ir/tt_04_2023_bkhdt_so_do_ban_do/marker.v1.json",
+      "sha256_a": "62bba8e96e087262899c9789494ee67e817b9eb399454c0ed3b69dcb313359bc",
+      "sha256_b": "62bba8e96e087262899c9789494ee67e817b9eb399454c0ed3b69dcb313359bc",
+      "byte_identical": true,
+      "statement_count": 773,
+      "mention_count": 49,
+      "mention_kind_histogram": {
+        "document_identifier": 13,
+        "legal_reference": 1,
+        "organization_or_authority": 18,
+        "quantity": 2,
+        "temporal_expression": 15
+      },
+      "eligible_vlm_requests": 41,
+      "selected_vlm_requests": 12,
+      "non_selected_vlm_requests": 29
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "parser": "mineru",
+      "output_path": "data/semantic_ir/tt_04_2023_bkhdt_so_do_ban_do/mineru.v1.json",
+      "sha256_a": "d5c9698231c4707f15d9804625891b5bcf725f1438771b76c6dc65e93065ae12",
+      "sha256_b": "d5c9698231c4707f15d9804625891b5bcf725f1438771b76c6dc65e93065ae12",
+      "byte_identical": true,
+      "statement_count": 110,
+      "mention_count": 40,
+      "mention_kind_histogram": {
+        "document_identifier": 10,
+        "legal_reference": 1,
+        "organization_or_authority": 15,
+        "quantity": 2,
+        "temporal_expression": 12
+      },
+      "eligible_vlm_requests": 294,
+      "selected_vlm_requests": 12,
+      "non_selected_vlm_requests": 282
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "parser": "marker",
+      "output_path": "data/semantic_ir/qd_23_2008_ubnd_hanoi_vien_quy_hoach/marker.v1.json",
+      "sha256_a": "1ea79d429e3be0af4359c5c9fbe1da9f1d2d0ba2230a7593eae30efcab46600c",
+      "sha256_b": "1ea79d429e3be0af4359c5c9fbe1da9f1d2d0ba2230a7593eae30efcab46600c",
+      "byte_identical": true,
+      "statement_count": 0,
+      "mention_count": 0,
+      "mention_kind_histogram": {},
+      "eligible_vlm_requests": 71,
+      "selected_vlm_requests": 8,
+      "non_selected_vlm_requests": 63
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "parser": "mineru",
+      "output_path": "data/semantic_ir/qd_23_2008_ubnd_hanoi_vien_quy_hoach/mineru.v1.json",
+      "sha256_a": "c479ef56d1f72a50c930d16bb7c80ad131c85a0528aca93e4566b8265bae912c",
+      "sha256_b": "c479ef56d1f72a50c930d16bb7c80ad131c85a0528aca93e4566b8265bae912c",
+      "byte_identical": true,
+      "statement_count": 59,
+      "mention_count": 26,
+      "mention_kind_histogram": {
+        "document_identifier": 1,
+        "organization_or_authority": 20,
+        "temporal_expression": 5
+      },
+      "eligible_vlm_requests": 77,
+      "selected_vlm_requests": 8,
+      "non_selected_vlm_requests": 69
+    }
+  ],
+  "text_only": {
+    "mention_metrics": {
+      "tp": 385,
+      "fp": 137,
+      "fn": 23,
+      "precision": 0.7375478927203065,
+      "recall": 0.9436274509803921,
+      "f1": 0.8279569892473119
+    },
+    "mention_metrics_by_kind": {
+      "legal_reference": {
+        "tp": 22,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9565217391304348,
+        "recall": 1.0,
+        "f1": 0.9777777777777777
+      },
+      "document_identifier": {
+        "tp": 122,
+        "fp": 8,
+        "fn": 2,
+        "precision": 0.9384615384615385,
+        "recall": 0.9838709677419355,
+        "f1": 0.9606299212598426
+      },
+      "temporal_expression": {
+        "tp": 131,
+        "fp": 26,
+        "fn": 6,
+        "precision": 0.8343949044585988,
+        "recall": 0.9562043795620438,
+        "f1": 0.8911564625850341
+      },
+      "quantity": {
+        "tp": 34,
+        "fp": 17,
+        "fn": 6,
+        "precision": 0.6666666666666666,
+        "recall": 0.85,
+        "f1": 0.7472527472527473
+      },
+      "organization_or_authority": {
+        "tp": 76,
+        "fp": 85,
+        "fn": 9,
+        "precision": 0.4720496894409938,
+        "recall": 0.8941176470588236,
+        "f1": 0.6178861788617888
+      }
+    },
+    "exact_evidence_span_match": {
+      "matched": 371,
+      "reference": 408,
+      "rate": 0.9093137254901961
+    },
+    "normalized_value_exact_match": {
+      "matched": 385,
+      "reference": 408,
+      "rate": 0.9436274509803921
+    },
+    "legal_reference_component_exact_match": {
+      "matched": 22,
+      "reference": 22,
+      "rate": 1.0
+    },
+    "statement_evidence_coverage": {
+      "covered": 1171,
+      "reference": 1799,
+      "rate": 0.650917176209005
+    }
+  },
+  "selective_vlm": {
+    "mention_metrics": {
+      "tp": 385,
+      "fp": 137,
+      "fn": 23,
+      "precision": 0.7375478927203065,
+      "recall": 0.9436274509803921,
+      "f1": 0.8279569892473119
+    },
+    "mention_metrics_by_kind": {
+      "legal_reference": {
+        "tp": 22,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9565217391304348,
+        "recall": 1.0,
+        "f1": 0.9777777777777777
+      },
+      "document_identifier": {
+        "tp": 122,
+        "fp": 8,
+        "fn": 2,
+        "precision": 0.9384615384615385,
+        "recall": 0.9838709677419355,
+        "f1": 0.9606299212598426
+      },
+      "temporal_expression": {
+        "tp": 131,
+        "fp": 26,
+        "fn": 6,
+        "precision": 0.8343949044585988,
+        "recall": 0.9562043795620438,
+        "f1": 0.8911564625850341
+      },
+      "quantity": {
+        "tp": 34,
+        "fp": 17,
+        "fn": 6,
+        "precision": 0.6666666666666666,
+        "recall": 0.85,
+        "f1": 0.7472527472527473
+      },
+      "organization_or_authority": {
+        "tp": 76,
+        "fp": 85,
+        "fn": 9,
+        "precision": 0.4720496894409938,
+        "recall": 0.8941176470588236,
+        "f1": 0.6178861788617888
+      }
+    },
+    "exact_evidence_span_match": {
+      "matched": 371,
+      "reference": 408,
+      "rate": 0.9093137254901961
+    },
+    "normalized_value_exact_match": {
+      "matched": 385,
+      "reference": 408,
+      "rate": 0.9436274509803921
+    },
+    "legal_reference_component_exact_match": {
+      "matched": 22,
+      "reference": 22,
+      "rate": 1.0
+    },
+    "statement_evidence_coverage": {
+      "covered": 1171,
+      "reference": 1799,
+      "rate": 0.650917176209005
+    },
+    "quality_experiment_completed": false,
+    "executed_requests": 0,
+    "semantic_gain": {
+      "additional_correct_mentions": 0,
+      "new_false_mentions": 0,
+      "mention_f1_net_change": 0.0
+    },
+    "warning": "No real model execution or corpus replay output exists; equality with TEXT_ONLY is an engineering baseline, not evidence of VLM quality."
+  },
+  "all_eligible_vlm": null,
+  "selector": {
+    "tp": 6,
+    "fp": 62,
+    "fn": 12,
+    "precision": 0.08823529411764706,
+    "recall": 0.3333333333333333,
+    "f1": 0.13953488372093023,
+    "selected_requests": 112,
+    "eligible_requests": 1899,
+    "requests_per_parser_representation": 11.2,
+    "evaluation_unit": "document/page; coarse audited visual label"
+  },
+  "marker_metrics": {
+    "mention_metrics": {
+      "tp": 241,
+      "fp": 83,
+      "fn": 14,
+      "precision": 0.7438271604938271,
+      "recall": 0.9450980392156862,
+      "f1": 0.8324697754749567
+    },
+    "mention_metrics_by_kind": {
+      "legal_reference": {
+        "tp": 21,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9545454545454546,
+        "recall": 1.0,
+        "f1": 0.9767441860465117
+      },
+      "document_identifier": {
+        "tp": 81,
+        "fp": 7,
+        "fn": 1,
+        "precision": 0.9204545454545454,
+        "recall": 0.9878048780487805,
+        "f1": 0.9529411764705882
+      },
+      "temporal_expression": {
+        "tp": 74,
+        "fp": 16,
+        "fn": 5,
+        "precision": 0.8222222222222222,
+        "recall": 0.9367088607594937,
+        "f1": 0.8757396449704142
+      },
+      "quantity": {
+        "tp": 19,
+        "fp": 10,
+        "fn": 1,
+        "precision": 0.6551724137931034,
+        "recall": 0.95,
+        "f1": 0.7755102040816326
+      },
+      "organization_or_authority": {
+        "tp": 46,
+        "fp": 49,
+        "fn": 7,
+        "precision": 0.4842105263157895,
+        "recall": 0.8679245283018868,
+        "f1": 0.6216216216216216
+      }
+    },
+    "exact_evidence_span_match": {
+      "matched": 241,
+      "reference": 255,
+      "rate": 0.9450980392156862
+    },
+    "normalized_value_exact_match": {
+      "matched": 241,
+      "reference": 255,
+      "rate": 0.9450980392156862
+    },
+    "legal_reference_component_exact_match": {
+      "matched": 21,
+      "reference": 21,
+      "rate": 1.0
+    },
+    "statement_evidence_coverage": {
+      "covered": 890,
+      "reference": 1074,
+      "rate": 0.8286778398510242
+    }
+  },
+  "mineru_metrics": {
+    "mention_metrics": {
+      "tp": 144,
+      "fp": 54,
+      "fn": 9,
+      "precision": 0.7272727272727273,
+      "recall": 0.9411764705882353,
+      "f1": 0.8205128205128205
+    },
+    "mention_metrics_by_kind": {
+      "legal_reference": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "document_identifier": {
+        "tp": 41,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.9761904761904762,
+        "recall": 0.9761904761904762,
+        "f1": 0.9761904761904762
+      },
+      "temporal_expression": {
+        "tp": 57,
+        "fp": 10,
+        "fn": 1,
+        "precision": 0.8507462686567164,
+        "recall": 0.9827586206896551,
+        "f1": 0.9119999999999999
+      },
+      "quantity": {
+        "tp": 15,
+        "fp": 7,
+        "fn": 5,
+        "precision": 0.6818181818181818,
+        "recall": 0.75,
+        "f1": 0.7142857142857143
+      },
+      "organization_or_authority": {
+        "tp": 30,
+        "fp": 36,
+        "fn": 2,
+        "precision": 0.45454545454545453,
+        "recall": 0.9375,
+        "f1": 0.6122448979591837
+      }
+    },
+    "exact_evidence_span_match": {
+      "matched": 130,
+      "reference": 153,
+      "rate": 0.8496732026143791
+    },
+    "normalized_value_exact_match": {
+      "matched": 144,
+      "reference": 153,
+      "rate": 0.9411764705882353
+    },
+    "legal_reference_component_exact_match": {
+      "matched": 1,
+      "reference": 1,
+      "rate": 1.0
+    },
+    "statement_evidence_coverage": {
+      "covered": 281,
+      "reference": 725,
+      "rate": 0.3875862068965517
+    }
+  },
+  "combined_representation_weighted": {
+    "mention_metrics": {
+      "tp": 385,
+      "fp": 137,
+      "fn": 23,
+      "precision": 0.7375478927203065,
+      "recall": 0.9436274509803921,
+      "f1": 0.8279569892473119
+    },
+    "mention_metrics_by_kind": {
+      "legal_reference": {
+        "tp": 22,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9565217391304348,
+        "recall": 1.0,
+        "f1": 0.9777777777777777
+      },
+      "document_identifier": {
+        "tp": 122,
+        "fp": 8,
+        "fn": 2,
+        "precision": 0.9384615384615385,
+        "recall": 0.9838709677419355,
+        "f1": 0.9606299212598426
+      },
+      "temporal_expression": {
+        "tp": 131,
+        "fp": 26,
+        "fn": 6,
+        "precision": 0.8343949044585988,
+        "recall": 0.9562043795620438,
+        "f1": 0.8911564625850341
+      },
+      "quantity": {
+        "tp": 34,
+        "fp": 17,
+        "fn": 6,
+        "precision": 0.6666666666666666,
+        "recall": 0.85,
+        "f1": 0.7472527472527473
+      },
+      "organization_or_authority": {
+        "tp": 76,
+        "fp": 85,
+        "fn": 9,
+        "precision": 0.4720496894409938,
+        "recall": 0.8941176470588236,
+        "f1": 0.6178861788617888
+      }
+    },
+    "exact_evidence_span_match": {
+      "matched": 371,
+      "reference": 408,
+      "rate": 0.9093137254901961
+    },
+    "normalized_value_exact_match": {
+      "matched": 385,
+      "reference": 408,
+      "rate": 0.9436274509803921
+    },
+    "legal_reference_component_exact_match": {
+      "matched": 22,
+      "reference": 22,
+      "rate": 1.0
+    },
+    "statement_evidence_coverage": {
+      "covered": 1171,
+      "reference": 1799,
+      "rate": 0.650917176209005
+    }
+  },
+  "cross_parser_consistency": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "marker_mentions": 187,
+      "mineru_mentions": 188,
+      "intersection": 103,
+      "union": 272,
+      "jaccard_consistency": 0.3786764705882353
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "marker_mentions": 0,
+      "mineru_mentions": 11,
+      "intersection": 0,
+      "union": 11,
+      "jaccard_consistency": 0.0
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "marker_mentions": 45,
+      "mineru_mentions": 36,
+      "intersection": 35,
+      "union": 46,
+      "jaccard_consistency": 0.7608695652173914
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "marker_mentions": 15,
+      "mineru_mentions": 11,
+      "intersection": 10,
+      "union": 16,
+      "jaccard_consistency": 0.625
+    }
+  ],
+  "false_positive_trace": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "HĐND",
+      "normalized_value": "HĐND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "01/4/2026",
+      "normalized_value": "2026-04-01",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "13/3/2026",
+      "normalized_value": "2026-03-13",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "17/4/2026",
+      "normalized_value": "2026-04-17",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "19/3/2026",
+      "normalized_value": "2026-03-19",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "27/3/2026",
+      "normalized_value": "2026-03-27",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "27/3/2026",
+      "normalized_value": "2026-03-27",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "27/3/2026",
+      "normalized_value": "2026-03-27",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "28/3/2026",
+      "normalized_value": "2026-03-28",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "28/3/2026",
+      "normalized_value": "2026-03-28",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 15,
+      "semantic_kind": "quantity",
+      "raw_evidence": "3.000m",
+      "normalized_value": null,
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 15,
+      "semantic_kind": "quantity",
+      "raw_evidence": "30m",
+      "normalized_value": "30 m",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 15,
+      "semantic_kind": "quantity",
+      "raw_evidence": "50m",
+      "normalized_value": "50 m",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 60,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1.500 ha",
+      "normalized_value": null,
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "1668/QĐ",
+      "normalized_value": "1668/QĐ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Sở Quy hoạch - Kiến trúc",
+      "normalized_value": "Sở Quy hoạch - Kiến trúc",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Sở Quy hoạch - Kiến trúc",
+      "normalized_value": "Sở Quy hoạch - Kiến trúc",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Sở Tài chính",
+      "normalized_value": "Sở Tài chính",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Sở Tài chính",
+      "normalized_value": "Sở Tài chính",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "27/12/2024",
+      "normalized_value": "2024-12-27",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "HĐND",
+      "normalized_value": "HĐND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "01/4/2026",
+      "normalized_value": "2026-04-01",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "13/3/2026",
+      "normalized_value": "2026-03-13",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "17/4/2026",
+      "normalized_value": "2026-04-17",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "19/3/2026",
+      "normalized_value": "2026-03-19",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "27/3/2026",
+      "normalized_value": "2026-03-27",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "27/3/2026",
+      "normalized_value": "2026-03-27",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "27/3/2026",
+      "normalized_value": "2026-03-27",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "28/3/2026",
+      "normalized_value": "2026-03-28",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "28/3/2026",
+      "normalized_value": "2026-03-28",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 15,
+      "semantic_kind": "quantity",
+      "raw_evidence": "3.000m",
+      "normalized_value": null,
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 15,
+      "semantic_kind": "quantity",
+      "raw_evidence": "30m",
+      "normalized_value": "30 m",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 15,
+      "semantic_kind": "quantity",
+      "raw_evidence": "50m",
+      "normalized_value": "50 m",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 60,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1.500 ha",
+      "normalized_value": null,
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "1668/QĐ",
+      "normalized_value": "1668/QĐ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Sở Quy hoạch - Kiến trúc",
+      "normalized_value": "Sở Quy hoạch - Kiến trúc",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Sở Quy hoạch - Kiến trúc",
+      "normalized_value": "Sở Quy hoạch - Kiến trúc",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Sở Tài chính",
+      "normalized_value": "Sở Tài chính",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Sở Tài chính",
+      "normalized_value": "Sở Tài chính",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "27/12/2024",
+      "normalized_value": "2024-12-27",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 5,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 5,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 5,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 12,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 28,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 35,
+      "semantic_kind": "legal_reference",
+      "raw_evidence": "Điều 63",
+      "normalized_value": null,
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 42,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 42,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 42,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 42,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "252/2025/QH15",
+      "normalized_value": "252/2025/QH15",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "71/2025/QH15",
+      "normalized_value": "71/2025/QH15",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "81/2023/QH15",
+      "normalized_value": "81/2023/QH15",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "81/2023/QH15",
+      "normalized_value": "81/2023/QH15",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 09 tháng 01 năm 2023",
+      "normalized_value": "2023-01-09",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 09 tháng 01 năm 2023",
+      "normalized_value": "2023-01-09",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 09 tháng 01 năm 2023",
+      "normalized_value": "2023-01-09",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 10 tháng 12 năm 2025",
+      "normalized_value": "2025-12-10",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 1,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "81/2023/QH15",
+      "normalized_value": "81/2023/QH15",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 1,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 09 tháng 01 năm 2023",
+      "normalized_value": "2023-01-09",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 40,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 47,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "252/2025/QH15",
+      "normalized_value": "252/2025/QH15",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 47,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Quốc hội",
+      "normalized_value": "Quốc hội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 47,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 10 tháng 12 năm 2025",
+      "normalized_value": "2025-12-10",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 1,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1,435 m",
+      "normalized_value": "1.435 m",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 1,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1m",
+      "normalized_value": "1 m",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 5,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1,435 m",
+      "normalized_value": "1.435 m",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 5,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1m",
+      "normalized_value": "1 m",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 10,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1 m2",
+      "normalized_value": "1 m²",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 15,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1m",
+      "normalized_value": "1 m",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 1,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1,435 m",
+      "normalized_value": "1.435 m",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 1,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1m",
+      "normalized_value": "1 m",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 10,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1 m2",
+      "normalized_value": "1 m²",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Bộ Kế hoạch và Đầu tư",
+      "normalized_value": "Bộ Kế hoạch và Đầu tư",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Bộ Kế hoạch và Đầu tư",
+      "normalized_value": "Bộ Kế hoạch và Đầu tư",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 2,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 2,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 2,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 3,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "HĐND",
+      "normalized_value": "HĐND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 3,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 3,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 3,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "mineru"
+    }
+  ],
+  "false_negative_trace": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 2,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Viện Quy hoạch xây dựng Hà Nội",
+      "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 2,
+      "semantic_kind": "quantity",
+      "raw_evidence": "359,84 km",
+      "normalized_value": "359.84 km",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 2,
+      "semantic_kind": "quantity",
+      "raw_evidence": "359,84 km2",
+      "normalized_value": "359.84 km²",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 60,
+      "semantic_kind": "quantity",
+      "raw_evidence": "979km",
+      "normalized_value": "979 km",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 5,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1,435 m",
+      "normalized_value": "1.435 m",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 5,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1m",
+      "normalized_value": "1 m",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 15,
+      "semantic_kind": "quantity",
+      "raw_evidence": "1,435m",
+      "normalized_value": "1.435 m",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 21,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "04/2023/TT-BKHĐT",
+      "normalized_value": "04/2023/TT-BKHĐT",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 21,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "Bộ Kế hoạch và Đầu tư",
+      "normalized_value": "Bộ Kế hoạch và Đầu tư",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 21,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 26 tháng 6 năm 2023",
+      "normalized_value": "2023-06-26",
+      "reason": "unresolved",
+      "parser": "mineru"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "document_identifier",
+      "raw_evidence": "15/2008/QH12",
+      "normalized_value": "15/2008/QH12",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "HĐND",
+      "normalized_value": "HĐND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 24 tháng 9 năm 2008",
+      "normalized_value": "2008-09-24",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 26 tháng 11 năm 2003",
+      "normalized_value": "2003-11-26",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 28 tháng 8 năm 2008",
+      "normalized_value": "2008-08-28",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 29 tháng 5 năm 2008",
+      "normalized_value": "2008-05-29",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "semantic_kind": "temporal_expression",
+      "raw_evidence": "ngày 29 tháng 9 năm 2008",
+      "normalized_value": "2008-09-29",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 1,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 2,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 3,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "HĐND",
+      "normalized_value": "HĐND",
+      "reason": "unresolved",
+      "parser": "marker"
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 3,
+      "semantic_kind": "organization_or_authority",
+      "raw_evidence": "UBND",
+      "normalized_value": "UBND",
+      "reason": "unresolved",
+      "parser": "marker"
+    }
+  ],
+  "vlm_failure_trace": {
+    "selector_miss": 12,
+    "render_failure": 0,
+    "hash_mismatch": 0,
+    "vlm_request_failure": 0,
+    "malformed_output": 0,
+    "normalization_failure": 0,
+    "unsupported_observation": 0
+  },
+  "vlm_transcription_quality": null,
+  "real_vlm_experiment": {
+    "completed": false,
+    "model_id": null,
+    "endpoint_type": null,
+    "prompt_version": "semantic-evidence-v1",
+    "temperature": null,
+    "request_count": 0,
+    "latency_ms": null,
+    "statement": "REAL VLM QUALITY EXPERIMENT NOT COMPLETED"
+  },
+  "semantic_determinism": {
+    "byte_identical": 10,
+    "required": 10,
+    "all_passed": true
+  },
+  "structural_hash_freeze": {
+    "unchanged": true,
+    "files": 10,
+    "sha256_by_path": {
+      "data/structural_ir/hanoi_master_plan_100y/marker.v1.json": "b52749f6635fe257a4910eb083c600f460b5692c6a8b50e09e1b9a71b411443e",
+      "data/structural_ir/hanoi_master_plan_100y/mineru.v1.json": "dfe4ad4be1dd20d75eb6339548c9a0c3490251b20416251e5312d1b09ea33060",
+      "data/structural_ir/luat_112_2025_qh15/marker.v1.json": "27fa3570d6ffe12bd3960723f4fde174964496c105a4fad3d2839f77b819ab39",
+      "data/structural_ir/qd_23_2008_ubnd_hanoi_vien_quy_hoach/marker.v1.json": "1be44c94130821198f3e224375d4a30937316cbb5f714907d0673dec407f95ee",
+      "data/structural_ir/qd_23_2008_ubnd_hanoi_vien_quy_hoach/mineru.v1.json": "607dc5f31beead9c2ca754b86768c8604e3b58730810af2718a649c0285c5ce8",
+      "data/structural_ir/tt_04_2023_bkhdt_so_do_ban_do/marker.v1.json": "e075f67f0904ec421db5ffb051323a29bd56cb90faef8cbf2136a111fd50632b",
+      "data/structural_ir/tt_04_2023_bkhdt_so_do_ban_do/mineru.v1.json": "df6ef39f3548de0a526b354c357469ef187626db4c98021c2b8b601fad3bd923",
+      "data/structural_ir/tt_04_2026_bxd_pl2_dinh_muc/marker.v1.json": "fbfb13e3dc1cf60f6faaa55dfd04bc5278486cd5a52f615f8098ff11a76cf654",
+      "data/structural_ir/tt_04_2026_bxd_pl2_dinh_muc/mineru.v1.json": "e0bfce12273846b0505c04673eb343b24602ad0042db17a3994ce48a25283512",
+      "data/structural_ir/vbhn_103_2026_quy_hoach_tong_the/marker.v1.json": "5bec975c44ccdd1b02024b0540c04e82768b7d9ff996f9d563fa4ecb73ec300c"
+    }
+  },
+  "physical_hash_freeze": {
+    "unchanged": true,
+    "evidence_path": "data/benchmarks/physical_ir_v1_validation.v1.json",
+    "evidence_sha256": "b0b379e8147ff2896eb78ffc3d7689e1642b5591d256a6b309f984195fc1f68b",
+    "all_v0_hashes_preserved": true
+  },
+  "source_structural_validation_evidence_sha256": "0b529953179921d9f62a39720a94ce13bc1be19dea30c8db5799dfb6e80560a4"
+}

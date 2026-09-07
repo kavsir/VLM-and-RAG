@@ -1,0 +1,583 @@
+{
+  "annotation_schema_version": 1,
+  "annotation_version": "v1",
+  "annotator_type": "ai_assisted_evidence_audit",
+  "annotation_method": "fixed_visual_page_audit_plus_retained_representation_candidate_audit",
+  "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+  "version_id": "v1",
+  "source_artifact_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+  "prior_physical_ir_exposure": true,
+  "prior_structural_ir_exposure": true,
+  "prior_semantic_extractor_exposure": true,
+  "independent_or_blind_ground_truth": false,
+  "candidate_representations": [
+    "marker",
+    "mineru"
+  ],
+  "pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-92cd221bfb0d508e745ccfb0",
+          "page_index": 0,
+          "exact_evidence_excerpt": "BỘ KẾ HOẠCH VÀ ĐẦU TƯ"
+        },
+        {
+          "reference_id": "semantic-reference-statement-022914c8bea839f4535d6432",
+          "page_index": 0,
+          "exact_evidence_excerpt": "BỘ KẾ HOẠCH VÀ ĐẦU TƯ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+        },
+        {
+          "reference_id": "semantic-reference-statement-658a0ee25500f69fdeee466d",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Số: 04/2023/TT-BKHĐT Hà Nội, ngày 26 tháng 6 năm 2023"
+        },
+        {
+          "reference_id": "semantic-reference-statement-c68331c76bfed056127aac89",
+          "page_index": 0,
+          "exact_evidence_excerpt": "THÔNG TƯ"
+        },
+        {
+          "reference_id": "semantic-reference-statement-a536bd32528344e1529f0544",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Hướng dẫn yêu cầu nội dung và kỹ thuật của cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh"
+        },
+        {
+          "reference_id": "semantic-reference-statement-4c81870efb2cd8dd552afcee",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Luật Quy hoạch ngày 24 tháng 11 năm 2017;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-e953ec30ab628232e0b638a8",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Luật Đo đạc và bản đồ ngày 14 tháng 6 năm 2018;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-d1dbb1ca2f416beb74c78092",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Luật Bảo vệ bí mật nhà nước ngày 15 tháng 11 năm 2018;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-2fe5b3f0060dad5e95b106f1",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Nghị định số 89/2022/NĐ-CP ngày 28 tháng 10 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Kế hoạch và Đầu tư;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-6d2603f1cd5bed320a6f4cf1",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Nghị định số 37/2019/NĐ-CP ngày 07 tháng 5 năm 2019 của Chính phủ quy định chi tiết thi hành một số điều của Luật Quy hoạch;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-f77478076251e5391f6d73de",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ đã được sửa đổi, bổ sung một số điều theo Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 và Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-1ae037c8b516e7a98810e156",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Theo đề nghị của Vụ trưởng Vụ Quản lý quy hoạch;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-b3590172b681b440e43848df",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Bộ trưởng Bộ Kế hoạch và Đầu tư ban hành Thông tư hướng dẫn yêu cầu nội dung và kỹ thuật của cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh."
+        },
+        {
+          "reference_id": "semantic-reference-statement-491e43fb77eec3917e561c23",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Số: 04/2023/TT-BKHĐT"
+        },
+        {
+          "reference_id": "semantic-reference-statement-3bcc36819e226bf0beb39862",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Hà Nội, ngày 26 tháng 6 năm 2023"
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-006b86018a4c2f1abeb05edf",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "04/2023/TT-BKHĐT",
+          "normalized_value": "04/2023/TT-BKHĐT",
+          "evidence_excerpt": "Số: 04/2023/TT-BKHĐT Hà Nội, ngày 26 tháng 6 năm 2023",
+          "char_start": 4,
+          "char_end": 20,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-769363159ef9c256af1bfa37",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 26 tháng 6 năm 2023",
+          "normalized_value": "2023-06-26",
+          "evidence_excerpt": "Số: 04/2023/TT-BKHĐT Hà Nội, ngày 26 tháng 6 năm 2023",
+          "char_start": 29,
+          "char_end": 53,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-59571981d546c625d7cfd2a7",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 24 tháng 11 năm 2017",
+          "normalized_value": "2017-11-24",
+          "evidence_excerpt": "Căn cứ Luật Quy hoạch ngày 24 tháng 11 năm 2017;",
+          "char_start": 22,
+          "char_end": 47,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-feac28164df8752faf15d083",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 14 tháng 6 năm 2018",
+          "normalized_value": "2018-06-14",
+          "evidence_excerpt": "Căn cứ Luật Đo đạc và bản đồ ngày 14 tháng 6 năm 2018;",
+          "char_start": 29,
+          "char_end": 53,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-213d91c1b3bfc8409cfac982",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 15 tháng 11 năm 2018",
+          "normalized_value": "2018-11-15",
+          "evidence_excerpt": "Căn cứ Luật Bảo vệ bí mật nhà nước ngày 15 tháng 11 năm 2018;",
+          "char_start": 35,
+          "char_end": 60,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-0f5a92d987419156d113ccf2",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "89/2022/NĐ-CP",
+          "normalized_value": "89/2022/NĐ-CP",
+          "evidence_excerpt": "Căn cứ Nghị định số 89/2022/NĐ-CP ngày 28 tháng 10 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Kế hoạch và Đầu tư;",
+          "char_start": 20,
+          "char_end": 33,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-7d7409b32a4105c720b792ee",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 28 tháng 10 năm 2022",
+          "normalized_value": "2022-10-28",
+          "evidence_excerpt": "Căn cứ Nghị định số 89/2022/NĐ-CP ngày 28 tháng 10 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Kế hoạch và Đầu tư;",
+          "char_start": 34,
+          "char_end": 59,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-dad60aaad409cdbe7f90c996",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "evidence_excerpt": "Căn cứ Nghị định số 89/2022/NĐ-CP ngày 28 tháng 10 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Kế hoạch và Đầu tư;",
+          "char_start": 64,
+          "char_end": 73,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-cc2cc33f3f17e973b416f4cc",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Bộ Kế hoạch và Đầu tư",
+          "normalized_value": "Bộ Kế hoạch và Đầu tư",
+          "evidence_excerpt": "Căn cứ Nghị định số 89/2022/NĐ-CP ngày 28 tháng 10 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Kế hoạch và Đầu tư;",
+          "char_start": 136,
+          "char_end": 157,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-abfe58d069a85279534f5ccc",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "37/2019/NĐ-CP",
+          "normalized_value": "37/2019/NĐ-CP",
+          "evidence_excerpt": "Căn cứ Nghị định số 37/2019/NĐ-CP ngày 07 tháng 5 năm 2019 của Chính phủ quy định chi tiết thi hành một số điều của Luật Quy hoạch;",
+          "char_start": 20,
+          "char_end": 33,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-fa3f1a3cda344379665c45e0",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 07 tháng 5 năm 2019",
+          "normalized_value": "2019-05-07",
+          "evidence_excerpt": "Căn cứ Nghị định số 37/2019/NĐ-CP ngày 07 tháng 5 năm 2019 của Chính phủ quy định chi tiết thi hành một số điều của Luật Quy hoạch;",
+          "char_start": 34,
+          "char_end": 58,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-7ae593176136b49fed5a30fe",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "27/2019/NĐ-CP",
+          "normalized_value": "27/2019/NĐ-CP",
+          "evidence_excerpt": "Căn cứ Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ đã được sửa đổi, bổ sung một số điều theo Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 và Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ;",
+          "char_start": 20,
+          "char_end": 33,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-8c92617d84f13bce6adb0abf",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 13 tháng 3 năm 2019",
+          "normalized_value": "2019-03-13",
+          "evidence_excerpt": "Căn cứ Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ đã được sửa đổi, bổ sung một số điều theo Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 và Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ;",
+          "char_start": 34,
+          "char_end": 58,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-12764f195f80e3d6991fcb4c",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "136/2021/NĐ-CP",
+          "normalized_value": "136/2021/NĐ-CP",
+          "evidence_excerpt": "Căn cứ Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ đã được sửa đổi, bổ sung một số điều theo Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 và Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ;",
+          "char_start": 184,
+          "char_end": 198,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-74e1b6c54a0d33395c712c4f",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 31 tháng 12 năm 2021",
+          "normalized_value": "2021-12-31",
+          "evidence_excerpt": "Căn cứ Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ đã được sửa đổi, bổ sung một số điều theo Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 và Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ;",
+          "char_start": 199,
+          "char_end": 224,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-4b8e3c9c177b9e39c7b86a9b",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "22/2023/NĐ-CP",
+          "normalized_value": "22/2023/NĐ-CP",
+          "evidence_excerpt": "Căn cứ Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ đã được sửa đổi, bổ sung một số điều theo Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 và Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ;",
+          "char_start": 241,
+          "char_end": 254,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-b3a9212a94c4ea419b48d960",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 12 tháng 5 năm 2023",
+          "normalized_value": "2023-05-12",
+          "evidence_excerpt": "Căn cứ Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ đã được sửa đổi, bổ sung một số điều theo Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 và Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ;",
+          "char_start": 255,
+          "char_end": 279,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-b2e1cc4d07a7e32fb9211956",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Văn hóa, thể thao và du lịch;\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-fcdb59aac915685b9b51163d",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Giao thông vận tải;\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-8cc9dcd0b08da554df99304f",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Thông tin và truyền thông;\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-2cd515dbed2d379326246496",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Khoa học và công nghệ;\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-b54f9a826edc2e5787ba63d2",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Y tế;\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-8e98e658ed841e21b94d9019",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Giáo dục và đào tạo;\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-6d16c50b90745244006b9565",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Lao động Thương binh và xã hội;\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-8d3670a1475ad89024026ede",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Quốc phòng, an ninh;\n"
+        },
+        {
+          "reference_id": "semantic-reference-statement-84323c98c92913cae37e480e",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Ngoại giao."
+        },
+        {
+          "reference_id": "semantic-reference-statement-18aa7e1375226815c7009c23",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Quy cách đặt tên gói dữ liệu, chủ đề dữ liệu, lớp dữ liệu và trường thông tin của cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh thực hiện theo quy định tại mục 1 của Phụ lục III kèm theo Thông tư này."
+        },
+        {
+          "reference_id": "semantic-reference-statement-04f2ea979df1e442965d37d6",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh phải thực hiện việc gán mã nhận dạng là dãy mã số duy nhất xác định cho từng đối tượng địa lý."
+        },
+        {
+          "reference_id": "semantic-reference-statement-f6b6b064e300b8a756949ea9",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Quy tắc gán mã nhận dạng của từng đối tượng địa lý trong cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh thực hiện theo quy định tại mục 2 Phụ lục III kèm theo Thông tư này."
+        },
+        {
+          "reference_id": "semantic-reference-statement-5adefbe93ce88e31ec96adb5",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Danh mục đối tượng địa lý của cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh quy định tại mục 3 Phụ lục III kèm theo Thông tư này."
+        },
+        {
+          "reference_id": "semantic-reference-statement-610edaf184c974f2c6d2ee24",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Các Bộ, cơ quan ngang Bộ, Ủy ban nhân dân cấp tỉnh được bổ sung các đối tượng địa lý mới, hoặc bổ sung kiểu dữ liệu, thuộc tính, quan hệ, miền giá trị cho các đối tượng địa lý đã có trong danh mục tại mục 3 Phụ lục III kèm theo Thông tư này để thể hiện nội dung quy hoạch đã được quyết định hoặc phê duyệt và bảo đảm tuân thủ quy định của pháp luật về quy hoạch, pháp luật khác có liên quan."
+        },
+        {
+          "reference_id": "semantic-reference-statement-5bdcc97253a111431bac8b83",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Văn hóa, thể thao và du lịch;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-3af5bebd80bc920d5742a4ba",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Giao thông vận tải;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-a7b7f0f247898f612eb125e1",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Thông tin và truyền thông;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-782ff6e929daa4afe483fdf8",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Khoa học và công nghệ;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-e4df5200037e24c9dcac9fb3",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Y tế;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-9d41028c154cbbed5433b2d3",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Giáo dục và đào tạo;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-5783a2b6f9a103fe3b32e62c",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Lao động - Thương binh và xã hội;"
+        },
+        {
+          "reference_id": "semantic-reference-statement-728242a8959804ec18fea72e",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Quốc phòng, an ninh;"
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-056febb36464c6d6cb7e6988",
+          "page_index": 5,
+          "kind": "organization_or_authority",
+          "raw_text": "Ủy ban nhân dân",
+          "normalized_value": "Ủy ban nhân dân",
+          "evidence_excerpt": "Các Bộ, cơ quan ngang Bộ, Ủy ban nhân dân cấp tỉnh được bổ sung các đối tượng địa lý mới, hoặc bổ sung kiểu dữ liệu, thuộc tính, quan hệ, miền giá trị cho các đối tượng địa lý đã có trong danh mục tại mục 3 Phụ lục III kèm theo Thông tư này để thể hiện nội dung quy hoạch đã được quyết định hoặc phê duyệt và bảo đảm tuân thủ quy định của pháp luật về quy hoạch, pháp luật khác có liên quan.",
+          "char_start": 26,
+          "char_end": 41,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 15,
+      "pdf_page_number_1_based": 16,
+      "statements": [],
+      "mentions": [],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-assistance-ed5fab34bd52b97c1e0d68f5",
+          "page_index": 15,
+          "bbox_normalized_1000": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "task_type": "figure_or_image_observation",
+          "evidence_note": "The frozen #008 visual audit selected this page for a table/figure in active structural context; the full-page label is coarse and is not runtime input."
+        }
+      ]
+    },
+    {
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "statements": [],
+      "mentions": [],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-assistance-76d618fe30da634d6ee8ddf7",
+          "page_index": 20,
+          "bbox_normalized_1000": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "task_type": "figure_or_image_observation",
+          "evidence_note": "The frozen #008 visual audit selected this page for a table/figure in active structural context; the full-page label is coarse and is not runtime input."
+        }
+      ]
+    },
+    {
+      "page_index": 21,
+      "pdf_page_number_1_based": 22,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-551703e9d869158133064176",
+          "page_index": 21,
+          "exact_evidence_excerpt": "TỔNG THỂ QUỐC GIA, QUY HOẠCH VÙNG VÀ QUY HOẠCH TỈNH"
+        },
+        {
+          "reference_id": "semantic-reference-statement-325e4eb9d72e0935107a67f9",
+          "page_index": 21,
+          "exact_evidence_excerpt": "(Ban hành kèm theo Thông tư số 04/2023/TT-BKHĐT ngày 26 tháng 6 năm 2023 của Bộ Kế hoạch và Đầu tư)"
+        },
+        {
+          "reference_id": "semantic-reference-statement-a27b6f46b54372b6f8dcc67f",
+          "page_index": 21,
+          "exact_evidence_excerpt": "Bố cục sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng và quy hoạch tỉnh bao gồm 06 thành phần nội dung được bố trí như sau:"
+        }
+      ],
+      "mentions": [
+        {
+          "reference_id": "semantic-reference-mention-f04d68224ac44b4de9e65c2e",
+          "page_index": 21,
+          "kind": "document_identifier",
+          "raw_text": "04/2023/TT-BKHĐT",
+          "normalized_value": "04/2023/TT-BKHĐT",
+          "evidence_excerpt": "(Ban hành kèm theo Thông tư số 04/2023/TT-BKHĐT ngày 26 tháng 6 năm 2023 của Bộ Kế hoạch và Đầu tư)",
+          "char_start": 31,
+          "char_end": 47,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-9c107838f33f3adcb531f060",
+          "page_index": 21,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 26 tháng 6 năm 2023",
+          "normalized_value": "2023-06-26",
+          "evidence_excerpt": "(Ban hành kèm theo Thông tư số 04/2023/TT-BKHĐT ngày 26 tháng 6 năm 2023 của Bộ Kế hoạch và Đầu tư)",
+          "char_start": 48,
+          "char_end": 72,
+          "legal_reference": null
+        },
+        {
+          "reference_id": "semantic-reference-mention-2ce0c89a9c3bd4cb05b8da6b",
+          "page_index": 21,
+          "kind": "organization_or_authority",
+          "raw_text": "Bộ Kế hoạch và Đầu tư",
+          "normalized_value": "Bộ Kế hoạch và Đầu tư",
+          "evidence_excerpt": "(Ban hành kèm theo Thông tư số 04/2023/TT-BKHĐT ngày 26 tháng 6 năm 2023 của Bộ Kế hoạch và Đầu tư)",
+          "char_start": 77,
+          "char_end": 98,
+          "legal_reference": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 26,
+      "pdf_page_number_1_based": 27,
+      "statements": [],
+      "mentions": [],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-assistance-df064423d64e5cf509c1198e",
+          "page_index": 26,
+          "bbox_normalized_1000": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "task_type": "figure_or_image_observation",
+          "evidence_note": "The frozen #008 visual audit selected this page for a table/figure in active structural context; the full-page label is coarse and is not runtime input."
+        }
+      ]
+    },
+    {
+      "page_index": 27,
+      "pdf_page_number_1_based": 28,
+      "statements": [],
+      "mentions": [],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-assistance-e7c4e2414f63a741cad000fb",
+          "page_index": 27,
+          "bbox_normalized_1000": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "task_type": "figure_or_image_observation",
+          "evidence_note": "The frozen #008 visual audit selected this page for a table/figure in active structural context; the full-page label is coarse and is not runtime input."
+        }
+      ]
+    },
+    {
+      "page_index": 46,
+      "pdf_page_number_1_based": 47,
+      "statements": [
+        {
+          "reference_id": "semantic-reference-statement-a551449dbd9ae09d7a7d7c0a",
+          "page_index": 46,
+          "exact_evidence_excerpt": "VĂN PHÒNG CHÍNH PH XUÁT BÅN Đia chi: S 1, Hoàng Hoa Thám, Ba Đinh, Hà Ni Đin thoi liên h: - Ni dung: 080.44417; Fax: 080.44517 - Phát hành: 080.48543 Email: congbao@chinhphu.vn Website: http://congbao.chinhphu.vn In ti: Xí nghip Bn đ 1- B Quc phòng"
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-assistance-aee05f09759711a12851113c",
+          "page_index": 46,
+          "bbox_normalized_1000": [
+            0,
+            0,
+            1000,
+            1000
+          ],
+          "task_type": "figure_or_image_observation",
+          "evidence_note": "The frozen #008 visual audit selected this page for a table/figure in active structural context; the full-page label is coarse and is not runtime input."
+        }
+      ]
+    }
+  ]
+}

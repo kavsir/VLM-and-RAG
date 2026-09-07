@@ -1,0 +1,3360 @@
+{
+  "semantic_ir_version": 1,
+  "profile": "vi_legal_planning_semantic_v1",
+  "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+  "version_id": "v1",
+  "source_artifact_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+  "source_physical_ir_sha256": "5c27e12e74f961958127342dff2a086f968127a1135d97d0a5a65e761e8b2be8",
+  "source_structural_ir_sha256": "e0bfce12273846b0505c04673eb343b24602ad0042db17a3994ce48a25283512",
+  "statements": [
+    {
+      "id": "statement-00000000",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BẢO DƯỠNG CẦU THĂNG LONG, TUYẾN ĐƯỜNG SẮT BẮC HỒNG – VĂN ĐIỂN",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0000_b0002",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 61
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000001",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "MỤC LỤC   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 0,
+          "char_end": 11
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000002",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "THUYẾT MINH VÀ HƯỚNG DẪN ÁP DỤNG......   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 11,
+          "char_end": 53
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000003",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "1. Nội dung định mức bảo dưỡng cầu Thăng Long, tuyến đường sắt Bắc Hồng   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 53,
+          "char_end": 128
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000004",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "Văn Điển.. 3   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 128,
+          "char_end": 144
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000005",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "2. Kết cấu định mức bảo dưỡng cầu Thăng Long, tuyến đường sắt Bắc Hồng   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 144,
+          "char_end": 218
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000006",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "Văn Điển.. .3   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 218,
+          "char_end": 235
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000007",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "3. Hướng dẫn áp dụng . 3   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 235,
+          "char_end": 263
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000008",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "PHẦN I. TỔNG HỢP KHỐI LƯỢNG CHO CÔNG TÁC BẢO DƯỠNG   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 263,
+          "char_end": 317
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000009",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "THƯỜNG XUYÊN CẦU THĂNG LONG... .5   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 317,
+          "char_end": 354
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000010",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "PHẦN II. ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN CẦU   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 354,
+          "char_end": 402
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000011",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "THĂNG LONG....... ..9   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 402,
+          "char_end": 427
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000012",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "CHƯƠNG I. CÔNG TÁC QUẢN LÝ ..9   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 427,
+          "char_end": 461
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000013",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "QLTL.10000 Tuần cầu . ..9   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 461,
+          "char_end": 490
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000014",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "QLTL.10100 Bảo vệ cầu (tuần tra, canh gác cầu) ..9   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 490,
+          "char_end": 544
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000015",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "CHƯƠNG II. CÔNG TÁC KIỂM TRA. ..10   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 544,
+          "char_end": 582
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000016",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "KTTL.10000 Kiểm tra tình trạng kỹ thuật cầu. .10   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 582,
+          "char_end": 634
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000017",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "KTTL.10100 Kiểm tra phần điện sản xuất và điện chiếu sáng . .10   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 634,
+          "char_end": 701
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000018",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "KTTL.10110 Kiểm tra đường điện sản xuất và chiếu sáng 2 bên cầu đường sắt10   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 701,
+          "char_end": 780
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000019",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "KTTL.10120 Kiểm tra đường điện xuống 2 trạm điện Mố O và Mố 15.............11   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 780,
+          "char_end": 861
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000020",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "CHƯƠNG III. ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 861,
+          "char_end": 908
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000021",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "CẦU THĂNG LONG........ ...12   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 908,
+          "char_end": 940
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000022",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.10000 Sơn kẻ số mố, trụ cầu. ..12   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 940,
+          "char_end": 982
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000023",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.10200 Vệ sinh dầm thép bằng hệ thống vận hành điện ..12   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 982,
+          "char_end": 1046
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000024",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.10300 Vệ sinh dầm thép bằng hệ thống vận hành thủ công .13   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1046,
+          "char_end": 1113
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000025",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.10410 Tẩy rỉ dầm thép bằng phương pháp phun cát.. .13   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1113,
+          "char_end": 1175
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000026",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.10420 Sơn dầm thép 4 nước và 5 nước bằng sơn Epoxy ..14   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1175,
+          "char_end": 1239
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000027",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.10500 Sơn gối cố định cầu trên dầm thép. ..15   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1239,
+          "char_end": 1293
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000028",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL. 10600. Bảo dưỡng gối cầu trên dầm thép (gối di động) ..15   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1293,
+          "char_end": 1360
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000029",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.10700. Bảo dưỡng gối cầu trên đường ô tô tầng 2.. .16   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1360,
+          "char_end": 1422
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000030",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.10800 Thay tà vẹt bê tông 4 ray hỏng lẻ tẻ. ..17   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1422,
+          "char_end": 1479
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000031",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL. 10900. Điều hòa đá . .17   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1479,
+          "char_end": 1513
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000032",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.11000. Dồn ray trên cầu thép tà vẹt gỗ .18   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1513,
+          "char_end": 1564
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000033",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL. 11100 Thay tà vẹt cầu bằng composite. .18   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1564,
+          "char_end": 1615
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000034",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL. 11200 Bảo dưỡng khe co giãn đường sắt 1m và 1,435 m. .19   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1615,
+          "char_end": 1681
+        }
+      ],
+      "mention_ids": [
+        "mention-00000000",
+        "mention-00000001"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000035",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.11300 Bảo dưỡng cơ cấu điều chỉnh nhịp đường 1m và 1,435 m .. .....19   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1681,
+          "char_end": 1759
+        }
+      ],
+      "mention_ids": [
+        "mention-00000002",
+        "mention-00000003"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000036",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.11400 Bảo dưỡng tà vẹt thép treo ..20   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1759,
+          "char_end": 1805
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000037",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.11500 Bảo dưỡng đường công vụ. ..20   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1805,
+          "char_end": 1849
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000038",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.11600 Sơn lưới chắn đá ..21   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1849,
+          "char_end": 1885
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000039",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.11700 Bảo dưỡng khe co giãn lớn mặt cầu thô sơ. .21   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1885,
+          "char_end": 1945
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000040",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "BDTL.11800 Sửa chữa, bảo dưỡng khe co giãn nhỏ mặt cầu thô sơ. ..22",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1945,
+          "char_end": 2012
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000041",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "THUYẾT MINH VÀ HƯỚNG DẪN ÁP DỤNG",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0000",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 32
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000042",
+      "structural_node_id": "node-000001",
+      "structural_canonical_path": "appendix:2",
+      "text": "Bảo trì cầu Thăng Long, tuyến đường sắt Bắc Hồng – Văn Điển là các hoạt động theo dõi, bảo dưỡng, sửa chữa, thay thế vật tư trong ngành đường sắt, được tiến hành thường xuyên, định kỳ hoặc đột xuất để duy trì kết cấu cầu Thăng Long ở trạng thái khai thác, sử dụng bình thường và hạn chế phát sinh các hư hỏng cầu.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0001",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 313
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000043",
+      "structural_node_id": "node-000002",
+      "structural_canonical_path": "appendix:2/generic:1",
+      "text": "Định mức bảo dưỡng cầu Thăng Long, tuyến đường sắt Bắc Hồng - Văn Điển bao gồm:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0003",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 79
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000044",
+      "structural_node_id": "node-000002",
+      "structural_canonical_path": "appendix:2/generic:1",
+      "text": "\\- Mức hao phí vật liệu: Là số lượng vật liệu chính, vật liệu khác cần thiết cho việc hoàn thành một đơn vị khối lượng công tác bảo dưỡng. Mức hao phí vật liệu khác được tính bằng tỉ lệ % trên chi phí vật liệu chính. Mức hao phí vật liệu trong định mức này đã bao gồm hao hụt vật liệu ở khâu thực hiện bảo dưỡng.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0004",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 312
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000045",
+      "structural_node_id": "node-000002",
+      "structural_canonical_path": "appendix:2/generic:1",
+      "text": "\\- Mức hao phí lao động: Là số ngày công lao động của công nhân trực tiếp cần thiết để hoàn thành một đơn vị khối lượng công tác bảo dưỡng. Số lượng ngày công đã bao gồm cả công tác chuẩn bị, kết thúc, thu dọn hiện trường. Cấp bậc công nhân trong định mức là cấp bậc bình quân của công nhân trực tiếp tham gia thực hiện một đơn vị khối lượng công tác bảo dưỡng.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0005",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 361
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000046",
+      "structural_node_id": "node-000002",
+      "structural_canonical_path": "appendix:2/generic:1",
+      "text": "\\- Mức hao phí máy thi công: Là số ca sử dụng máy và thiết bị thi công trực tiếp phục vụ để hoàn thành một đơn vị khối lượng công tác bảo dưỡng.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0006",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 144
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000047",
+      "structural_node_id": "node-000003",
+      "structural_canonical_path": "appendix:2/generic:2",
+      "text": "Tập định mức bảo trì cầu Thăng Long, tuyến đường sắt Bắc Hồng – Văn Điển bao gồm 02 phần.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0008",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 89
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000048",
+      "structural_node_id": "node-000003",
+      "structural_canonical_path": "appendix:2/generic:2",
+      "text": "Phần I. Tổng hợp khối lượng cho công tác bảo dưỡng thường xuyên cầu Thăng Long",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0009",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 78
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000049",
+      "structural_node_id": "node-000003",
+      "structural_canonical_path": "appendix:2/generic:2",
+      "text": "Phần II. Định mức bảo dưỡng thường xuyên cầu Thăng Long bao gồm các công tác:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0010",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 77
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000050",
+      "structural_node_id": "node-000003",
+      "structural_canonical_path": "appendix:2/generic:2",
+      "text": "Chương I. Công tác quản lý",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0011",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 26
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000051",
+      "structural_node_id": "node-000003",
+      "structural_canonical_path": "appendix:2/generic:2",
+      "text": "Chương II. Công tác kiểm tra",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0012",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 28
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000052",
+      "structural_node_id": "node-000003",
+      "structural_canonical_path": "appendix:2/generic:2",
+      "text": "Chương III. Định mức bảo dưỡng thường xuyên cầu Thăng Long",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0013",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 58
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000053",
+      "structural_node_id": "node-000004",
+      "structural_canonical_path": "appendix:2/generic:3",
+      "text": "Định mức bảo dưỡng cầu Thăng Long làm cơ sở để lập dự toán, đơn giá, giá dịch vụ sự nghiệp công bảo dưỡng thường xuyên cầu Thăng Long phải thực hiện trong năm, xây dựng kế hoạch quản lý vốn theo quy định.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0015",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 204
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000054",
+      "structural_node_id": "node-000004",
+      "structural_canonical_path": "appendix:2/generic:3",
+      "text": "Khối lượng công tác bảo dưỡng thường xuyên cầu Thăng Long là giới hạn tối đa để lập dự toán, khối lượng cụ thể sẽ được xác định khi đơn vị duy tu, quản lý cầu thực hiện điều tra hiện trạng và được cấp có thẩm quyền chấp thuận.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0002_b0016",
+          "page_index": 2,
+          "char_start": 0,
+          "char_end": 226
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000055",
+      "structural_node_id": "node-000004",
+      "structural_canonical_path": "appendix:2/generic:3",
+      "text": "Định mức bảo dưỡng cầu Thăng Long chưa bao gồm các công tác đưa, đón công nhân, vận chuyển vật liệu, thiết bị đến công trường, vận chuyển vật liệu bị thay thế ra khỏi phạm vi công trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0001",
+          "page_index": 3,
+          "char_start": 0,
+          "char_end": 187
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000056",
+      "structural_node_id": "node-000004",
+      "structural_canonical_path": "appendix:2/generic:3",
+      "text": "Trong quá trình sử dụng định mức, nếu công việc có trong định mức nhưng thực tế không làm thì không đưa vào dự toán, nếu công việc không có trong định mức nhưng thực tế phải làm thì áp dụng định mức có cùng tính chất đã được cơ quan có thẩm quyền ban hành tại các bộ định mức khác để đưa vào dự toán.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0002",
+          "page_index": 3,
+          "char_start": 0,
+          "char_end": 300
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000057",
+      "structural_node_id": "node-000004",
+      "structural_canonical_path": "appendix:2/generic:3",
+      "text": "Hoạt động bảo dưỡng công trình trình bao gồm: bảo dưỡng bảo quản và bảo dưỡng tổng hợp. Công tác bảo dưỡng bảo quản 03 lần/năm và bảo dưỡng tổng hợp 01 lần/năm. Các lần bảo dưỡng này không được trùng với nhau trong 1 quý.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0003",
+          "page_index": 3,
+          "char_start": 0,
+          "char_end": 221
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000058",
+      "structural_node_id": "node-000004",
+      "structural_canonical_path": "appendix:2/generic:3",
+      "text": "Công tác tuần, gác cầu chưa bao gồm công tác tuần, gác cầu tăng cường vào những ngày lễ tết, bão lũ.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0004",
+          "page_index": 3,
+          "char_start": 0,
+          "char_end": 100
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000059",
+      "structural_node_id": "node-000005",
+      "structural_canonical_path": "appendix:2/generic:4",
+      "text": "\\- Bảo quản cầu 3 lần/năm: 20% tổng công duy tu",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0003_b0006",
+          "page_index": 3,
+          "char_start": 0,
+          "char_end": 47
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000060",
+      "structural_node_id": "node-000007",
+      "structural_canonical_path": "appendix:2/part:2",
+      "text": "QLTL.10000 Tuần cầu",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0001",
+          "page_index": 7,
+          "char_start": 0,
+          "char_end": 19
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000061",
+      "structural_node_id": "node-000007",
+      "structural_canonical_path": "appendix:2/part:2",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0002",
+          "page_index": 7,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000062",
+      "structural_node_id": "node-000007",
+      "structural_canonical_path": "appendix:2/part:2",
+      "text": "Chuẩn bị dụng cụ, kiểm tra theo dõi thường xuyên trạng thái các bộ phận kết cấu công trình cầu bao gồm mặt cầu, dầm cầu, dàn thép cầu, gối cầu, mố trụ cầu, tường đầu, tường cánh, hộ mố, kiểm tra theo dõi tình hình dòng chảy qua cầu, sửa chữa bảo dưỡng những hư hỏng nhỏ và các tài sản trên cầu theo đúng yêu cầu kỹ thuật. Khi phát hiện trên công trình có những hư hỏng nặng, hoặc tai nạn, chướng ngại vật không đảm bảo an toàn chạy tầu mà mình không giải quyết được thì phải lập tức phòng vệ cầu, báo cho hai ga đầu, cung trưởng hoặc đội trưởng, báo cáo về xí nghiệp, công ty để biết và kịp thời xử lý, khắc phục; khi có xe cộ, tầu, thuyền, bè...làm hư hỏng mố trụ cầu hoặc gây trở ngại thì phải phối hợp với cơ quan chức năng trong việc lập biên bản, tạm giữ người và phương tiện vi phạm theo quy định của pháp luật.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0003",
+          "page_index": 7,
+          "char_start": 0,
+          "char_end": 817
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000063",
+      "structural_node_id": "node-000007",
+      "structural_canonical_path": "appendix:2/part:2",
+      "text": "Đơn vị: cầu/năm",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0004",
+          "page_index": 7,
+          "char_start": 0,
+          "char_end": 15
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000064",
+      "structural_node_id": "node-000007",
+      "structural_canonical_path": "appendix:2/part:2",
+      "text": "QLTL.10100 Bảo vệ cầu (tuần tra, canh gác cầu)",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0006",
+          "page_index": 7,
+          "char_start": 0,
+          "char_end": 46
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000065",
+      "structural_node_id": "node-000007",
+      "structural_canonical_path": "appendix:2/part:2",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0007",
+          "page_index": 7,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000066",
+      "structural_node_id": "node-000007",
+      "structural_canonical_path": "appendix:2/part:2",
+      "text": "Chuẩn bị dụng cụ, kiểm tra, xem xét giấy tờ của tất cả những người đến nghiên cứu, quan sát trên cầu và xung quanh khu vực cầu, ngăn ngừa và xử lý các hoạt động trộm cắp, giữ gìn trật tự, an ninh khu vực cầu, các hành vi gây hư hại cho cầu và tài sản của ngành đường sắt khu vực xung quanh cầu; trong mùa mưa lũ theo dõi lý lịch trình mực nước lên xuống và báo cáo kịp thời; đo và ghi chép mức nước vào sổ, theo giờ quy định 6 giờ, 12 giờ, 18 giờ và báo cáo lên cấp trên, đánh dấu chấm sơn mực nước cao nhất hàng năm vào thân trụ; theo dõi các tầu, thuyền, bè, cây cối... trên sông và kịp thời xử lý khi có tầu, thuyền, bè, cây cối...đâm vào trụ cầu.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0007_b0008",
+          "page_index": 7,
+          "char_start": 0,
+          "char_end": 650
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000067",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "KTTL.10000 Kiểm tra tình trạng kỹ thuật cầu",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0001",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 43
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000068",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0002",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000069",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "Kiểm tra tình trạng kỹ thuật kết cấu phần trên: mặt, thoát nước, lan can, khe co dãn…; Kiểm tra tình trạng kỹ thuật kết cấu phần dưới: dầm, mố, trụ, gối cầu…; Kiểm tra tình trạng kỹ thuật công trình phòng hộ, điều tiết dòng chảy.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0003",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 229
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000070",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "Đơn vị: 100 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0004",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 13
+        }
+      ],
+      "mention_ids": [
+        "mention-00000004"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000071",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "KTTL.10100 Kiểm tra phần điện sản xuất và điện chiếu sáng",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0006",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 57
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000072",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "KTTL.10110 Kiểm tra đường điện sản xuất và chiếu sáng 2 bên cầu đường sắt",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0007",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 73
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000073",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0008",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000074",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "Chuẩn bị dụng cụ. Mở nắp máng cáp, lật tấm bê tông kiểm tra đường điện theo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0009",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 124
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000075",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "KTTL.10120 Kiểm tra đường điện xuống 2 trạm điện Mố O và Mố 15",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0011",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 62
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000076",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0012",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000077",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "appendix:2/part:2/chapter:2",
+      "text": "Chuẩn bị dụng cụ. Kiểm tra hệ thống điện trong trạm điện, kiểm tra đường điện điểm lên xuống đường sắt, kiểm tra đường điện điểm trên đường ô tô theo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0013",
+          "page_index": 8,
+          "char_start": 0,
+          "char_end": 198
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000078",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.10000 Sơn kẻ số mố, trụ cầu",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0001",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 32
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000079",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0002",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000080",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Chuẩn bị dụng cụ mặt bằng thi công",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0003",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 37
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000081",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Lắp dựng dàn giáo, cạo bỏ lớp sơn cũ, làm vệ sinh bề mặt",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0004",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 59
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000082",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Sơn mố, trụ cầu đảm bảo yêu cầu kỹ thuật. Đảm bảo an toàn giao thông khu vực thi công",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0005",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 88
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000083",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị tính: 1m2",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0006",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 16
+        }
+      ],
+      "mention_ids": [
+        "mention-00000005"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000084",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.10200 Vệ sinh dầm thép bằng hệ thống vận hành điện",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0008",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 55
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000085",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0009",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000086",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị dụng cụ, rải dây đấu điện. Vệ sinh dầm thép đảm bảo yêu cầu kỹ thuật.   \n",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0010",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 82
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000087",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0010",
+          "page_index": 9,
+          "char_start": 82,
+          "char_end": 112
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000088",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: 1 m2",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0011",
+          "page_index": 9,
+          "char_start": 0,
+          "char_end": 12
+        }
+      ],
+      "mention_ids": [
+        "mention-00000006"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000089",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.10300 Vệ sinh dầm thép bằng hệ thống vận hành thủ công",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0000",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 59
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000090",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0001",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000091",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị dụng cụ. Vệ sinh dầm thép đảm bảo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0002",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 91
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000092",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: 1 m2",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0003",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 12
+        }
+      ],
+      "mention_ids": [
+        "mention-00000007"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000093",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.10410 Tẩy rỉ dầm thép bằng phương pháp phun cát",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0005",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 52
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000094",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0006",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000095",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị mặt bằng, dụng cụ, làm sạch bề mặt kim loại bằng thiết bị phun cát theo đúng yêu cầu kỹ thuật",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0007",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 102
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000096",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị tính: 1 m2",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0008",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 17
+        }
+      ],
+      "mention_ids": [
+        "mention-00000008"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000097",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Ghi chú: - Trường hợp không sử dụng cần cẩu 25T thì không tính hao phí cần cẩu 25T trong định mức.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0010",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 98
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000098",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Định mức chưa bao gồm hao phí lắp dựng giàn giáo.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0011",
+          "page_index": 10,
+          "char_start": 0,
+          "char_end": 52
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000099",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.10400 Sơn dầm thép 4 nước và 5 nước bằng sơn Epoxy",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0000",
+          "page_index": 11,
+          "char_start": 0,
+          "char_end": 55
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000100",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0001",
+          "page_index": 11,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000101",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn mặt bằng, dụng cụ. Sơn dầm thép 4 nước hoặc 5 nước bằng sơn Epoxy theo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0002",
+          "page_index": 11,
+          "char_start": 0,
+          "char_end": 124
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000102",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị tính: 1 m2",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0003",
+          "page_index": 11,
+          "char_start": 0,
+          "char_end": 17
+        }
+      ],
+      "mention_ids": [
+        "mention-00000009"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000103",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.10500 Sơn gối cố định cầu trên dầm thép",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0000",
+          "page_index": 12,
+          "char_start": 0,
+          "char_end": 44
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000104",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0001",
+          "page_index": 12,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000105",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Chuẩn bị mặt bằng, dụng cụ. Gõ, cạo rỉ, sơn gối cố định cầu đảm bảo đúng yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0002",
+          "page_index": 12,
+          "char_start": 0,
+          "char_end": 124
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000106",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: 1m2",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0003",
+          "page_index": 12,
+          "char_start": 0,
+          "char_end": 11
+        }
+      ],
+      "mention_ids": [
+        "mention-00000010"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000107",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL. 10600 Bảo dưỡng gối cầu trên dầm thép (gối di động)",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0005",
+          "page_index": 12,
+          "char_start": 0,
+          "char_end": 57
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000108",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0006",
+          "page_index": 12,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000109",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị mặt bằng, dụng cụ. Vệ sinh dầu mỡ cũ, tra mỡ gối đảm bảo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0007",
+          "page_index": 12,
+          "char_start": 0,
+          "char_end": 114
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000110",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: gối",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0008",
+          "page_index": 12,
+          "char_start": 0,
+          "char_end": 11
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000111",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.10700 Bảo dưỡng gối cầu trên đường ô tô tầng 2",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0000",
+          "page_index": 13,
+          "char_start": 0,
+          "char_end": 51
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000112",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0001",
+          "page_index": 13,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000113",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị mặt bằng, dụng cụ. Vệ sinh dầu mỡ cũ, tra mỡ gối cầu đảm bảo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0002",
+          "page_index": 13,
+          "char_start": 0,
+          "char_end": 118
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000114",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: gối",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0003",
+          "page_index": 13,
+          "char_start": 0,
+          "char_end": 11
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000115",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.10800 Thay tà vẹt bê tông 4 ray hỏng lẻ tẻ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0005",
+          "page_index": 13,
+          "char_start": 0,
+          "char_end": 47
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000116",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0006",
+          "page_index": 13,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000117",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị mặt bằng, dụng cụ. Ra đá phá cốt, tháo phối kiện liên kết giữa tà vẹt và ray. Kéo tà vẹt cũ ra vị trí bên ngoài ray, đưa tà vẹt mới vào đúng vị trị trí. Thay, lắp siết lại phối kiện liên kết giữa ray với tà vẹt. Vào đá, xăm lòng tà vẹt theo đúng yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0007",
+          "page_index": 13,
+          "char_start": 0,
+          "char_end": 303
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000118",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: 1 thanh",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0013_b0008",
+          "page_index": 13,
+          "char_start": 0,
+          "char_end": 15
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000119",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL. 10900 Điều hòa đá",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0000",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 23
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000120",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0001",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000121",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Chuẩn bị dụng cụ mặt bằng thi công",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0002",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 37
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000122",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Xúc đá lên goòng, vận chuyển đá đến vị trí thi công bằng goòng",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0003",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 65
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000123",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Điều hòa đá, vào đá lòng đường đảm bảo đúng yêu cầu kỹ thuật",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0004",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 63
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000124",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0005",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 33
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000125",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị tính: 1 m3",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0006",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 17
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000126",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Ghi chú: - Cự ly vận chuyển trung bình 1000m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0008",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 44
+        }
+      ],
+      "mention_ids": [
+        "mention-00000011"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000127",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Vận chuyển bằng goòng bàn đôi",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0009",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 32
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000128",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.11000 Dồn ray trên cầu thép tà vẹt gỗ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0010",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 42
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000129",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0011",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000130",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Chuẩn bị mặt bằng, dụng cụ thi công",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0012",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 38
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000131",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Phòng vệ tàu chạy",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0013",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 20
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000132",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Nới lỏng phối kiện liên kết giữa tà vẹt và ray, ray với ray",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0014",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 62
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000133",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Dịch chuyển ray theo chiều dọc để đảm bảo khe hở đúng tiêu chuẩn",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0015",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 67
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000134",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Kiểm tra lại cự ly thủy bình, phương hướng, lắp lại phối kiện liên kết đảm bảo đúng yêu cầu kỹ thuật",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0016",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 103
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000135",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Kết thục, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0017",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 33
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000136",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: 100m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0018",
+          "page_index": 14,
+          "char_start": 0,
+          "char_end": 12
+        }
+      ],
+      "mention_ids": [
+        "mention-00000012"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000137",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL. 11100 Thay tà vẹt cầu bằng composite",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0000",
+          "page_index": 15,
+          "char_start": 0,
+          "char_end": 42
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000138",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0001",
+          "page_index": 15,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000139",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị công cụ, dụng cụ. Tháo bu lông liên kết giữa tà vẹt và ray. Lắp dàn giáo và kéo tà vẹt ra vị trí bên ngoài ray. Đưa tà vẹt mới vào đúng vị trí, thay bộ phận liên kết ray với tà vẹt. Lắp bu lông liên kết giữa ray và tà vẹt đảm bảo đúng yêu cầu kỹ thuật. Vận chuyển vật tư thiết bị trong phạm vi 50m. Thu dọn hoàn thiện hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0002",
+          "page_index": 15,
+          "char_start": 0,
+          "char_end": 339
+        }
+      ],
+      "mention_ids": [
+        "mention-00000013"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000140",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: 1 thanh",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0003",
+          "page_index": 15,
+          "char_start": 0,
+          "char_end": 15
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000141",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Ghi chú: Định mức chưa bao gồm công tác vận chuyển tà vẹt từ kho đến vị trí thi công",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0005",
+          "page_index": 15,
+          "char_start": 0,
+          "char_end": 84
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000142",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL. 11200 Bảo dưỡng khe co giãn đường sắt 1m và 1,435 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0006",
+          "page_index": 15,
+          "char_start": 0,
+          "char_end": 57
+        }
+      ],
+      "mention_ids": [
+        "mention-00000014",
+        "mention-00000015"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000143",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0007",
+          "page_index": 15,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000144",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị dụng cụ. Phòng vệ tàu chạy. Tháo bu lông liên kết khe co giãn, vệ sinh, lắp siết lại, chấm dầu theo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0008",
+          "page_index": 15,
+          "char_start": 0,
+          "char_end": 157
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000145",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.11300 Bảo dưỡng cơ cấu điều chỉnh nhịp đường 1m và 1,435 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0000",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 63
+        }
+      ],
+      "mention_ids": [
+        "mention-00000016",
+        "mention-00000017"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000146",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0001",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000147",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị dụng cụ. Phòng vệ tàu chạy. Lắp dựng dàn giáo, vệ sinh, tra mỡ cơ cấu điều chỉnh nhịp theo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0002",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 148
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000148",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: 1 bộ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0003",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 12
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000149",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.11400 Bảo dưỡng tà vẹt thép treo",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0005",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 37
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000150",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0006",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000151",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị dụng cụ. Tháo bu lông tà vẹt thép treo, cạo rỉ, sơn 3 nước, lắp lại tà vẹt thép treo, siết lại bu lông theo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0007",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 165
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000152",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.11500 Bảo dưỡng đường công vụ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0009",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 34
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000153",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0010",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000154",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "\\- Chuẩn bị mặt bằng, dụng cụ thi công; kê chỉnh tấm đan, sơn đánh dấu đảm bảo yêu cầu kỹ thuật, đảm bảo an toàn giao thông khu vực thi công - Kết thúc, thu dọn hiện trường",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0011",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 172
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000155",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: 1 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0012",
+          "page_index": 16,
+          "char_start": 0,
+          "char_end": 11
+        }
+      ],
+      "mention_ids": [
+        "mention-00000018"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000156",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.11600 Sơn lưới chắn đá",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0000",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 27
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000157",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0001",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000158",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị mặt bằng, dụng cụ. Tháo bu lông, gõ, cạo rỉ, sơn lưới chắn đá, lắp lại đảm bảo đúng yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0002",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 141
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000159",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị: m2",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0003",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 10
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000160",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.11700 Bảo dưỡng khe co giãn lớn mặt cầu thô sơ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0005",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 51
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000161",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0006",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000162",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị mặt bằng, dụng cụ thi công. Lắp dựng giàn giáo. Tháo lắp cốc khe co giãn, vệ sinh lò xo, tra mỡ và lắp lại đảm bảo theo đúng yêu cầu kỹ thuật. Đảm bảo an toàn giao thông khu vực thi công. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0007",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 227
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000163",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị tính: khe",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0017_b0008",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 16
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000164",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "BDTL.11800 Sửa chữa, bảo dưỡng khe co giãn nhỏ mặt cầu thô sơ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0018_b0000",
+          "page_index": 18,
+          "char_start": 0,
+          "char_end": 61
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000165",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Thành phần công việc:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0018_b0001",
+          "page_index": 18,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000166",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Chuẩn bị mặt bằng, dụng cụ. Đục bê tông, vệ sinh khe co giãn, tưới nhựa đường vào khe nứt, đổ bê tông carbonco đảm bảo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0018_b0002",
+          "page_index": 18,
+          "char_start": 0,
+          "char_end": 167
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000167",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "appendix:2/part:2/chapter:3",
+      "text": "Đơn vị tính: 1 khe",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0018_b0003",
+          "page_index": 18,
+          "char_start": 0,
+          "char_end": 18
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    }
+  ],
+  "mentions": [
+    {
+      "id": "mention-00000000",
+      "kind": "quantity",
+      "statement_id": "statement-00000034",
+      "raw_text": "1m",
+      "normalized_value": "1 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1659,
+          "char_end": 1661
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000001",
+      "kind": "quantity",
+      "statement_id": "statement-00000034",
+      "raw_text": "1,435 m",
+      "normalized_value": "1.435 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1665,
+          "char_end": 1672
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1,435",
+        "normalized_numeric_value": "1.435",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000002",
+      "kind": "quantity",
+      "statement_id": "statement-00000035",
+      "raw_text": "1m",
+      "normalized_value": "1 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1731,
+          "char_end": 1733
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000003",
+      "kind": "quantity",
+      "statement_id": "statement-00000035",
+      "raw_text": "1,435 m",
+      "normalized_value": "1.435 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 1737,
+          "char_end": 1744
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1,435",
+        "normalized_numeric_value": "1.435",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000004",
+      "kind": "quantity",
+      "statement_id": "statement-00000070",
+      "raw_text": "100 m",
+      "normalized_value": "100 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0008_b0004",
+          "page_index": 8,
+          "char_start": 8,
+          "char_end": 13
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "100",
+        "normalized_numeric_value": "100",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000005",
+      "kind": "quantity",
+      "statement_id": "statement-00000083",
+      "raw_text": "1m2",
+      "normalized_value": "1 m²",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0006",
+          "page_index": 9,
+          "char_start": 13,
+          "char_end": 16
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m2",
+        "normalized_unit": "m²"
+      }
+    },
+    {
+      "id": "mention-00000006",
+      "kind": "quantity",
+      "statement_id": "statement-00000088",
+      "raw_text": "1 m2",
+      "normalized_value": "1 m²",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0009_b0011",
+          "page_index": 9,
+          "char_start": 8,
+          "char_end": 12
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m2",
+        "normalized_unit": "m²"
+      }
+    },
+    {
+      "id": "mention-00000007",
+      "kind": "quantity",
+      "statement_id": "statement-00000092",
+      "raw_text": "1 m2",
+      "normalized_value": "1 m²",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0003",
+          "page_index": 10,
+          "char_start": 8,
+          "char_end": 12
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m2",
+        "normalized_unit": "m²"
+      }
+    },
+    {
+      "id": "mention-00000008",
+      "kind": "quantity",
+      "statement_id": "statement-00000096",
+      "raw_text": "1 m2",
+      "normalized_value": "1 m²",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0010_b0008",
+          "page_index": 10,
+          "char_start": 13,
+          "char_end": 17
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m2",
+        "normalized_unit": "m²"
+      }
+    },
+    {
+      "id": "mention-00000009",
+      "kind": "quantity",
+      "statement_id": "statement-00000102",
+      "raw_text": "1 m2",
+      "normalized_value": "1 m²",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0011_b0003",
+          "page_index": 11,
+          "char_start": 13,
+          "char_end": 17
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m2",
+        "normalized_unit": "m²"
+      }
+    },
+    {
+      "id": "mention-00000010",
+      "kind": "quantity",
+      "statement_id": "statement-00000106",
+      "raw_text": "1m2",
+      "normalized_value": "1 m²",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0012_b0003",
+          "page_index": 12,
+          "char_start": 8,
+          "char_end": 11
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m2",
+        "normalized_unit": "m²"
+      }
+    },
+    {
+      "id": "mention-00000011",
+      "kind": "quantity",
+      "statement_id": "statement-00000126",
+      "raw_text": "1000m",
+      "normalized_value": "1000 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0008",
+          "page_index": 14,
+          "char_start": 39,
+          "char_end": 44
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1000",
+        "normalized_numeric_value": "1000",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000012",
+      "kind": "quantity",
+      "statement_id": "statement-00000136",
+      "raw_text": "100m",
+      "normalized_value": "100 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0014_b0018",
+          "page_index": 14,
+          "char_start": 8,
+          "char_end": 12
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "100",
+        "normalized_numeric_value": "100",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000013",
+      "kind": "quantity",
+      "statement_id": "statement-00000139",
+      "raw_text": "50m",
+      "normalized_value": "50 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0002",
+          "page_index": 15,
+          "char_start": 303,
+          "char_end": 306
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "50",
+        "normalized_numeric_value": "50",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000014",
+      "kind": "quantity",
+      "statement_id": "statement-00000142",
+      "raw_text": "1m",
+      "normalized_value": "1 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0006",
+          "page_index": 15,
+          "char_start": 44,
+          "char_end": 46
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000015",
+      "kind": "quantity",
+      "statement_id": "statement-00000142",
+      "raw_text": "1,435 m",
+      "normalized_value": "1.435 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0015_b0006",
+          "page_index": 15,
+          "char_start": 50,
+          "char_end": 57
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1,435",
+        "normalized_numeric_value": "1.435",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000016",
+      "kind": "quantity",
+      "statement_id": "statement-00000145",
+      "raw_text": "1m",
+      "normalized_value": "1 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0000",
+          "page_index": 16,
+          "char_start": 50,
+          "char_end": 52
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000017",
+      "kind": "quantity",
+      "statement_id": "statement-00000145",
+      "raw_text": "1,435 m",
+      "normalized_value": "1.435 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0000",
+          "page_index": 16,
+          "char_start": 56,
+          "char_end": 63
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1,435",
+        "normalized_numeric_value": "1.435",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    },
+    {
+      "id": "mention-00000018",
+      "kind": "quantity",
+      "statement_id": "statement-00000155",
+      "raw_text": "1 m",
+      "normalized_value": "1 m",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2026-bxd-pl2-dinh-muc_v1_p0016_b0012",
+          "page_index": 16,
+          "char_start": 8,
+          "char_end": 11
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "1",
+        "normalized_numeric_value": "1",
+        "raw_unit": "m",
+        "normalized_unit": "m"
+      }
+    }
+  ],
+  "visual_observations": []
+}

@@ -1,0 +1,2723 @@
+{
+  "semantic_ir_version": 1,
+  "profile": "vi_legal_planning_semantic_v1",
+  "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+  "version_id": "v1",
+  "source_artifact_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+  "source_physical_ir_sha256": "0e8b3f2ec69f22d77858f9aeec895110e99f5b8b8a3222ab1b2a1f8aea850670",
+  "source_structural_ir_sha256": "df6ef39f3548de0a526b354c357469ef187626db4c98021c2b8b601fad3bd923",
+  "statements": [
+    {
+      "id": "statement-00000000",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "BỘ KẾ HOẠCH VÀ ĐẦU TƯ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0000",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 21
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000001",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "BỘ KẾ HOẠCH VÀ ĐẦU TƯ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0001",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 84
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000002",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Số: 04/2023/TT-BKHĐT",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0002",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 20
+        }
+      ],
+      "mention_ids": [
+        "mention-00000000"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000003",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Hà Nội, ngày 26 tháng 6 năm 2023",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0003",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 32
+        }
+      ],
+      "mention_ids": [
+        "mention-00000001"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000004",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "THÔNG TƯ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0004",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 8
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000005",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Hướng dẫn yêu cầu nội dung và kỹ thuật của cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0005",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 144
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000006",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Căn cứ Luật Quy hoạch ngày 24 tháng 11 năm 2017;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0006",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 48
+        }
+      ],
+      "mention_ids": [
+        "mention-00000002"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000007",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Căn cứ Luật Đo đạc và bản đồ ngày 14 tháng 6 năm 2018;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0007",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 54
+        }
+      ],
+      "mention_ids": [
+        "mention-00000003"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000008",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Căn cứ Luật Bảo vệ bí mật nhà nước ngày 15 tháng 11 năm 2018;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0008",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 61
+        }
+      ],
+      "mention_ids": [
+        "mention-00000004"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000009",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Căn cứ Nghị định số 89/2022/NĐ-CP ngày 28 tháng 10 năm 2022 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Kế hoạch và Đầu tư;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0009",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 158
+        }
+      ],
+      "mention_ids": [
+        "mention-00000005",
+        "mention-00000006",
+        "mention-00000007",
+        "mention-00000008"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000010",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Căn cứ Nghị định số 37/2019/NĐ-CP ngày 07 tháng 5 năm 2019 của Chính phủ quy định chi tiết thi hành một số điều của Luật Quy hoạch;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0010",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 131
+        }
+      ],
+      "mention_ids": [
+        "mention-00000009",
+        "mention-00000010",
+        "mention-00000011"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000011",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Căn cứ Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ đã được sửa đổi, bổ sung một số điều theo Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 và Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 294
+        }
+      ],
+      "mention_ids": [
+        "mention-00000012",
+        "mention-00000013",
+        "mention-00000014",
+        "mention-00000015",
+        "mention-00000016",
+        "mention-00000017",
+        "mention-00000018",
+        "mention-00000019"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000012",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Theo đề nghị của Vụ trưởng Vụ Quản lý quy hoạch;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0012",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 48
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000013",
+      "structural_node_id": "node-000000",
+      "structural_canonical_path": "document",
+      "text": "Bộ trưởng Bộ Kế hoạch và Đầu tư ban hành Thông tư hướng dẫn yêu cầu nội dung và kỹ thuật của cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0013",
+          "page_index": 0,
+          "char_start": 0,
+          "char_end": 195
+        }
+      ],
+      "mention_ids": [
+        "mention-00000020"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000014",
+      "structural_node_id": "node-000003",
+      "structural_canonical_path": "chapter:1/article:1/clause:1",
+      "text": "Thông tư này quy định về yêu cầu kỹ thuật chung của cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh; yêu cầu về nội dung chủ yếu và yêu cầu kỹ thuật của cơ sở dữ liệu địa lý quy hoạch và sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0000",
+          "page_index": 1,
+          "char_start": 3,
+          "char_end": 318
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000015",
+      "structural_node_id": "node-000004",
+      "structural_canonical_path": "chapter:1/article:1/clause:2",
+      "text": "Cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh liên quan đến bí mật nhà nước thực hiện theo quy định của pháp luật của bảo vệ bí mật nhà nước.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0001",
+          "page_index": 1,
+          "char_start": 3,
+          "char_end": 200
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000016",
+      "structural_node_id": "node-000005",
+      "structural_canonical_path": "chapter:1/article:2",
+      "text": "Thông tư này áp dụng đối với các cơ quan, tổ chức, cá nhân thực hiện việc xây dựng, cập nhật, quản lý, sử dụng cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh và cơ quan, tổ chức, cá nhân khác có liên quan.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0003",
+          "page_index": 1,
+          "char_start": 0,
+          "char_end": 260
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000017",
+      "structural_node_id": "node-000007",
+      "structural_canonical_path": "chapter:1/article:3/clause:1",
+      "text": "Cơ sở dữ liệu hồ sơ quy hoạch bao gồm văn bản điện tử của hồ sơ quy hoạch đã được quyết định hoặc phê duyệt và cơ sở dữ liệu địa lý quy hoạch.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0005",
+          "page_index": 1,
+          "char_start": 3,
+          "char_end": 145
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000018",
+      "structural_node_id": "node-000008",
+      "structural_canonical_path": "chapter:1/article:3/clause:2",
+      "text": "Văn bản điện tử của hồ sơ quy hoạch đã được quyết định hoặc phê duyệt là các tài liệu, văn bản điện tử dưới dạng thông điệp dữ liệu được tạo lập hoặc được số hóa từ văn bản giấy của hồ sơ quy hoạch đã được quyết định hoặc phê duyệt bao gồm: Tờ trình quyết định hoặc phê duyệt quy hoạch; văn bản quyết định hoặc phê duyệt quy hoạch; báo cáo quy hoạch (báo cáo tổng hợp và báo cáo tóm tắt) và báo cáo đánh giá môi trường chiến lược (nếu có), sơ đồ, bản đồ quy hoạch đã được cơ quan tổ chức lập quy hoạch rà soát, hoàn thiện thống nhất với văn bản quyết định hoặc phê duyệt quy hoạch; tài liệu văn bản khác (nếu có).",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0006",
+          "page_index": 1,
+          "char_start": 3,
+          "char_end": 616
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000019",
+      "structural_node_id": "node-000009",
+      "structural_canonical_path": "chapter:1/article:3/clause:3",
+      "text": "Cơ sở dữ liệu địa lý quy hoạch là tập hợp có tổ chức các dữ liệu về vị trí địa lý và thuộc tính của đối tượng địa lý thể hiện nội dung cơ bản về quy hoạch được xây dựng trên nền cơ sở dữ liệu nền địa lý quốc gia.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0001_b0007",
+          "page_index": 1,
+          "char_start": 3,
+          "char_end": 215
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000020",
+      "structural_node_id": "node-000012",
+      "structural_canonical_path": "chapter:2/article:4/clause:1",
+      "text": "Tệp văn bản, báo cáo định dạng \\*.doc; \\*.docx; \\*.odt;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0000",
+          "page_index": 2,
+          "char_start": 3,
+          "char_end": 58
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000021",
+      "structural_node_id": "node-000013",
+      "structural_canonical_path": "chapter:2/article:4/clause:2",
+      "text": "Văn bản, báo cáo được số hóa từ tài liệu dạng giấy: định dạng Portable Document Fomart (\\*.pdf) phiên bản 1.4 trở lên; ảnh màu (nếu có); độ phân giải tối thiểu: 200 dpi; tỷ lệ số hóa: 100%.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0001",
+          "page_index": 2,
+          "char_start": 3,
+          "char_end": 192
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000022",
+      "structural_node_id": "node-000014",
+      "structural_canonical_path": "chapter:2/article:4/clause:3",
+      "text": "Sơ đồ, bản đồ quy hoạch dạng giấy được số hóa định dạng GeoTIFF, GeoPDF độ phân giải tối thiểu từ 300 dpi trở lên, tỷ lệ quét 1:1.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0002",
+          "page_index": 2,
+          "char_start": 3,
+          "char_end": 133
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000023",
+      "structural_node_id": "node-000015",
+      "structural_canonical_path": "chapter:2/article:4/clause:4",
+      "text": "Định dạng của tài liệu khác (nếu có) thực hiện theo quy định pháp luật liên quan.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0003",
+          "page_index": 2,
+          "char_start": 3,
+          "char_end": 84
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000024",
+      "structural_node_id": "node-000017",
+      "structural_canonical_path": "chapter:2/article:5/clause:1",
+      "text": "Cơ sở dữ liệu địa lý quy hoạch được đóng gói ở định dạng Geodatabase (\\*.gdb) hoặc theo chuẩn trao đổi dữ liệu địa lý \\*.xml, \\*.gml.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0005",
+          "page_index": 2,
+          "char_start": 3,
+          "char_end": 136
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000025",
+      "structural_node_id": "node-000018",
+      "structural_canonical_path": "chapter:2/article:5/clause:2",
+      "text": "Kết quả trình bày dữ liệu không gian địa lý về quy hoạch theo định dạng: \\*.mxd, \\*.mpk, \\*.qgz.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0006",
+          "page_index": 2,
+          "char_start": 3,
+          "char_end": 99
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000026",
+      "structural_node_id": "node-000020",
+      "structural_canonical_path": "chapter:2/article:6/clause:1",
+      "text": "Sơ đồ, bản đồ quy hoạch được thành lập trong hệ quy chiếu, hệ tọa độ quốc gia VN-2000 và trên nền bản đồ địa hình quốc gia theo tỷ lệ tương ứng với tỷ lệ của sơ đồ, bản đồ quy hoạch.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0008",
+          "page_index": 2,
+          "char_start": 3,
+          "char_end": 185
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000027",
+      "structural_node_id": "node-000021",
+      "structural_canonical_path": "chapter:2/article:6/clause:2",
+      "text": "Nội dung sơ đồ, bản đồ quy hoạch bảo đảm phù hợp với văn bản quyết định hoặc phê duyệt quy hoạch và tài liệu có liên quan trong hồ sơ quy hoạch; thể hiện đúng, đầy đủ chủ quyền lãnh thổ quốc gia, phù hợp với điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0009",
+          "page_index": 2,
+          "char_start": 3,
+          "char_end": 285
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000028",
+      "structural_node_id": "node-000023",
+      "structural_canonical_path": "chapter:2/article:7/clause:1",
+      "text": "Hệ quy chiếu tọa độ, hệ quy chiếu thời gian thực hiện theo Quy chuẩn kỹ thuật quốc gia về chuẩn thông tin địa lý cơ sở mã số QCVN 42:2020/BTNMT ban hành kèm theo Thông tư số 06/2020/TT-BTNMT ngày 31 tháng 8 năm 2020 của Bộ trưởng Bộ Tài nguyên và Môi trường.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0011",
+          "page_index": 2,
+          "char_start": 3,
+          "char_end": 261
+        }
+      ],
+      "mention_ids": [
+        "mention-00000021",
+        "mention-00000022",
+        "mention-00000023",
+        "mention-00000024"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000029",
+      "structural_node_id": "node-000024",
+      "structural_canonical_path": "chapter:2/article:7/clause:2",
+      "text": "Siêu dữ liệu của cơ sở dữ liệu địa lý về quy hoạch được xây dựng theo quy định tại khoản 4 Điều 45 Luật Đo đạc và bản đồ, Phụ lục I của QCVN 42:2020/BTNMT và TCVN 12687:2019 Cơ sở dữ liệu địa lý - Xây dựng siêu dữ liệu.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0000",
+          "page_index": 3,
+          "char_start": 3,
+          "char_end": 222
+        }
+      ],
+      "mention_ids": [
+        "mention-00000025",
+        "mention-00000026"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000030",
+      "structural_node_id": "node-000027",
+      "structural_canonical_path": "chapter:3/article:8/clause:1",
+      "text": "Nội dung chủ yếu của sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh quy định tại Phụ lục I kèm theo Thông tư này.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0003",
+          "page_index": 3,
+          "char_start": 3,
+          "char_end": 143
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000031",
+      "structural_node_id": "node-000028",
+      "structural_canonical_path": "chapter:3/article:8/clause:2",
+      "text": "Sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh phải đáp ứng các yêu cầu kỹ thuật sau:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0004",
+          "page_index": 3,
+          "char_start": 3,
+          "char_end": 115
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000032",
+      "structural_node_id": "node-000029",
+      "structural_canonical_path": "chapter:3/article:8/clause:2/point:a",
+      "text": "Vị trí, phạm vi ranh giới, hướng tuyến của các đối tượng địa lý được thể hiện trên sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh phải bảo bảm phù hợp với các căn cứ pháp lý có liên quan theo quy định của pháp luật và tuân thủ quy định của pháp luật về bảo vệ bí mật nhà nước và các quy định có liên quan. Trường hợp chưa đủ căn cứ pháp lý xác định chính xác vị trí, phạm vi ranh giới, hướng tuyến của đối tượng địa lý quy hoạch, thì thể hiện ký hiệu về vị trí, phạm vi ranh giới, hướng tuyến dự kiến của đối tượng địa lý trên sơ đồ, bản đồ của quy hoạch. Vị trí, phạm vi ranh giới, hướng huyến chính xác của đối tượng địa lý trong quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh được cụ thể hóa trong quy hoạch đô thị, quy hoạch nông thôn, quy hoạch, kế hoạch sử dụng đất cấp huyện, quy hoạch có tính chất kỹ thuật, chuyên ngành, hoặc trong giai đoạn lập, thẩm định, chấp thuận hoặc quyết định chủ trương đầu tư, quyết định đầu tư của các chương trình, dự án. Các Bộ, cơ quan ngang Bộ, Ủy ban nhân dân cấp tỉnh được phân công nhiệm vụ lập quy hoạch chịu trách nhiệm về tính chính xác, tính đầy đủ và tuân thủ quy định của nội dung và kỹ thuật thể hiện sơ đồ, bản đồ quy hoạch thuộc phạm vi quản lý, bảo đảm phù hợp với văn bản quyết định hoặc phê duyệt quy hoạch;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0005",
+          "page_index": 3,
+          "char_start": 3,
+          "char_end": 1306
+        }
+      ],
+      "mention_ids": [
+        "mention-00000027"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000033",
+      "structural_node_id": "node-000030",
+      "structural_canonical_path": "chapter:3/article:8/clause:2/point:b",
+      "text": "Bố cục trình bày và hệ thống ký hiệu sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh thực hiện theo quy định tại Phụ lục II kèm theo Thông tư này;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0001",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 175
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000034",
+      "structural_node_id": "node-000031",
+      "structural_canonical_path": "chapter:3/article:8/clause:2/point:c",
+      "text": "Các Bộ, cơ quan ngang Bộ, Ủy ban nhân dân cấp tỉnh được bổ sung các nội dung của sơ đồ, bản đồ và ký hiệu, chú giải thuyết minh của Phụ lục I và Phụ lục II của Thông tư này để thể hiện nội dung quy hoạch đã được quyết định hoặc phê duyệt và bảo đảm tuân thủ quy định của pháp luật về quy hoạch, pháp luật có liên quan.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0002",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 321
+        }
+      ],
+      "mention_ids": [
+        "mention-00000028"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000035",
+      "structural_node_id": "node-000032",
+      "structural_canonical_path": "chapter:3/article:8/clause:4",
+      "text": "Việc xác định mức độ ưu tiên các đối tượng địa lý thể hiện trên sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh bảo đảm nguyên tắc sau:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0003",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 164
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000036",
+      "structural_node_id": "node-000033",
+      "structural_canonical_path": "chapter:3/article:8/clause:4/point:a",
+      "text": "Các đối tượng địa lý về nội dung chính của quy hoạch được ưu tiên thể hiện trên sơ đồ, bản đồ quy hoạch;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0004",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 107
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000037",
+      "structural_node_id": "node-000034",
+      "structural_canonical_path": "chapter:3/article:8/clause:4/point:b",
+      "text": "Thứ tự ưu tiên thể hiện các đối tượng địa lý: các đối tượng địa lý dạng điểm, các đối tượng địa lý dạng tuyến, các đối tượng địa lý dạng vùng;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0005",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 145
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000038",
+      "structural_node_id": "node-000035",
+      "structural_canonical_path": "chapter:3/article:8/clause:4/point:c",
+      "text": "Ký hiệu trên bản đồ của đối tượng địa lý có mức độ ưu tiên thấp hơn được dịch chuyển sang vị trí bên cạnh ký hiệu của đối tượng địa lý có mức độ ưu tiên cao hơn.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0006",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 164
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000039",
+      "structural_node_id": "node-000037",
+      "structural_canonical_path": "chapter:3/article:9/clause:1",
+      "text": "Cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh được đóng gói thành 01 gói Geodatabase (\\*.gdb) và được tổ chức theo 14 chủ đề dữ liệu như sau:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0008",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 179
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000040",
+      "structural_node_id": "node-000038",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:a",
+      "text": "Kinh tế - xã hội và đầu tư;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0009",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 30
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000041",
+      "structural_node_id": "node-000039",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:b",
+      "text": "Xây dựng;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0010",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 12
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000042",
+      "structural_node_id": "node-000040",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:c",
+      "text": "Công nghiệp và thương mại;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0011",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 29
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000043",
+      "structural_node_id": "node-000041",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:d",
+      "text": "Nông nghiệp và phát triển nông thôn;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0012",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 39
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000044",
+      "structural_node_id": "node-000042",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:đ",
+      "text": "Tài nguyên và môi trường",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0013",
+          "page_index": 4,
+          "char_start": 3,
+          "char_end": 27
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000045",
+      "structural_node_id": "node-000043",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:e",
+      "text": "Văn hóa, thể thao và du lịch;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0000",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 32
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000046",
+      "structural_node_id": "node-000044",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:g",
+      "text": "Giao thông vận tải;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0001",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 22
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000047",
+      "structural_node_id": "node-000045",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:h",
+      "text": "Thông tin và truyền thông;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0002",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 29
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000048",
+      "structural_node_id": "node-000046",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:i",
+      "text": "Khoa học và công nghệ;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0003",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 25
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000049",
+      "structural_node_id": "node-000047",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:k",
+      "text": "Y tế;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0004",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 8
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000050",
+      "structural_node_id": "node-000048",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:l",
+      "text": "Giáo dục và đào tạo;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0005",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 23
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000051",
+      "structural_node_id": "node-000049",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:m",
+      "text": "Lao động - Thương binh và xã hội;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0006",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 36
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000052",
+      "structural_node_id": "node-000050",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:n",
+      "text": "Quốc phòng, an ninh;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0007",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 23
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000053",
+      "structural_node_id": "node-000051",
+      "structural_canonical_path": "chapter:3/article:9/clause:1/point:o",
+      "text": "Ngoại giao.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0008",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 14
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000054",
+      "structural_node_id": "node-000052",
+      "structural_canonical_path": "chapter:3/article:9/clause:2",
+      "text": "Quy cách đặt tên gói dữ liệu, chủ đề dữ liệu, lớp dữ liệu và trường thông tin của cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh thực hiện theo quy định tại mục 1 của Phụ lục III kèm theo Thông tư này.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0009",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 238
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000055",
+      "structural_node_id": "node-000054",
+      "structural_canonical_path": "chapter:3/article:10/clause:1",
+      "text": "Cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh phải thực hiện việc gán mã nhận dạng là dãy mã số duy nhất xác định cho từng đối tượng địa lý.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0011",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 178
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000056",
+      "structural_node_id": "node-000055",
+      "structural_canonical_path": "chapter:3/article:10/clause:2",
+      "text": "Quy tắc gán mã nhận dạng của từng đối tượng địa lý trong cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh thực hiện theo quy định tại mục 2 Phụ lục III kèm theo Thông tư này.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0012",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 209
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000057",
+      "structural_node_id": "node-000057",
+      "structural_canonical_path": "chapter:3/article:11/clause:1",
+      "text": "Danh mục đối tượng địa lý của cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh quy định tại mục 3 Phụ lục III kèm theo Thông tư này.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0014",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 167
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000058",
+      "structural_node_id": "node-000058",
+      "structural_canonical_path": "chapter:3/article:11/clause:2",
+      "text": "Các Bộ, cơ quan ngang Bộ, Ủy ban nhân dân cấp tỉnh được bổ sung các đối tượng địa lý mới, hoặc bổ sung kiểu dữ liệu, thuộc tính, quan hệ, miền giá trị cho các đối tượng địa lý đã có trong danh mục tại mục 3 Phụ lục III kèm theo Thông tư này để thể hiện nội dung quy hoạch đã được quyết định hoặc phê duyệt và bảo đảm tuân thủ quy định của pháp luật về quy hoạch, pháp luật khác có liên quan.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0015",
+          "page_index": 5,
+          "char_start": 3,
+          "char_end": 394
+        }
+      ],
+      "mention_ids": [
+        "mention-00000029"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000059",
+      "structural_node_id": "node-000061",
+      "structural_canonical_path": "chapter:4/article:12/clause:1",
+      "text": "Bộ Kế hoạch và Đầu tư tổ chức xây dựng cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng đáp ứng yêu cầu nội dung và kỹ thuật được quy định tại Chương II, Chương III Thông tư này; cập nhật cơ sở dữ liệu hồ sơ quy hoạch tổng thể quốc gia, quy hoạch vùng lên hệ thống thông tin và cơ sở dữ liệu quốc gia về quy hoạch sau khi quy hoạch được quyết định hoặc phê duyệt.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0002",
+          "page_index": 6,
+          "char_start": 3,
+          "char_end": 408
+        }
+      ],
+      "mention_ids": [
+        "mention-00000030"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000060",
+      "structural_node_id": "node-000062",
+      "structural_canonical_path": "chapter:4/article:12/clause:2",
+      "text": "Các Bộ, cơ quan ngang Bộ tổ chức xây dựng cơ sở dữ liệu hồ sơ quy hoạch, sơ đồ, bản đồ quy hoạch thuộc phạm vi quản lý đáp ứng yêu cầu kỹ thuật được quy định tại Chương II Thông tư này và các quy định có liên quan; cập nhật cơ sở dữ liệu hồ sơ quy hoạch thuộc phạm vi quản lý lên hệ thống thông tin và cơ sở dữ liệu quốc gia về quy hoạch sau khi quy hoạch được quyết định hoặc phê duyệt.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0003",
+          "page_index": 6,
+          "char_start": 3,
+          "char_end": 390
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000061",
+      "structural_node_id": "node-000063",
+      "structural_canonical_path": "chapter:4/article:12/clause:3",
+      "text": "Ủy ban nhân dân cấp tỉnh tổ chức xây dựng cơ sở dữ liệu hồ sơ quy hoạch, sơ đồ, bản đồ quy hoạch tỉnh thuộc phạm vi quản lý đáp ứng yêu cầu nội dung và kỹ thuật được quy định tại Chương II, Chương III Thông tư này; cập nhật cơ sở dữ liệu hồ sơ quy hoạch tỉnh lên hệ thống thông tin và cơ sở dữ liệu quốc gia về quy hoạch sau khi quy hoạch được phê duyệt.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0004",
+          "page_index": 6,
+          "char_start": 3,
+          "char_end": 357
+        }
+      ],
+      "mention_ids": [
+        "mention-00000031"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000062",
+      "structural_node_id": "node-000065",
+      "structural_canonical_path": "chapter:4/article:13/clause:1",
+      "text": "Đối với các quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh đã được quyết định hoặc phê duyệt trước ngày Thông tư này có hiệu lực, thì cơ sở dữ liệu hồ sơ quy hoạch, sơ đồ, bản đồ quy hoạch thực hiện theo văn bản hướng dẫn trước ngày Thông tư này có hiệu lực. Trường hợp cơ sở dữ liệu hồ sơ quy hoạch chưa được cập nhật lên hệ thống thông tin và cơ sở dữ liệu quốc gia về quy hoạch, thì hoàn thiện cơ sở dữ liệu hồ sơ quy hoạch, sơ đồ, bản đồ quy hoạch bảo đảm thống nhất với văn bản quyết định hoặc phê duyệt quy hoạch theo quy định của Thông tư này và cập nhật cơ sở dữ liệu hồ sơ quy hoạch lên hệ thống thông tin và cơ sở dữ liệu quốc gia về quy hoạch.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0006",
+          "page_index": 6,
+          "char_start": 3,
+          "char_end": 665
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000063",
+      "structural_node_id": "node-000066",
+      "structural_canonical_path": "chapter:4/article:13/clause:2",
+      "text": "Đối với quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh đã trình thẩm định nhưng chưa được Hội đồng thẩm định quy hoạch thông qua, hoặc đã được Hội đồng thẩm định quy hoạch thông qua nhưng chưa được quyết định hoặc phê duyệt quy hoạch trước ngày Thông tư này có hiệu lực, thì cơ sở dữ liệu hồ sơ quy hoạch, sơ đồ, bản đồ quy hoạch của hồ sơ trình quyết định hoặc phê duyệt quy hoạch thực hiện theo văn bản hướng dẫn trước ngày Thông tư này có hiệu lực. Sau khi quy hoạch được quyết định hoặc phê duyệt, các Bộ, cơ quan ngang Bộ, Ủy ban nhân dân cấp tỉnh có trách nhiệm hoàn thiện cơ sở dữ liệu hồ sơ quy hoạch, sơ đồ, bản đồ quy hoạch bảo đảm thống nhất với văn bản quyết định hoặc phê duyệt quy hoạch và tuân thủ quy định của Thông tư này.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0000",
+          "page_index": 7,
+          "char_start": 3,
+          "char_end": 750
+        }
+      ],
+      "mention_ids": [
+        "mention-00000032"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000064",
+      "structural_node_id": "node-000067",
+      "structural_canonical_path": "chapter:4/article:13/clause:3",
+      "text": "Đối với các quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh chưa trình thẩm định kể từ ngày Thông tư này có hiệu lực, thì cơ sở dữ liệu hồ sơ quy hoạch, sơ đồ, bản đồ quy hoạch thực hiện theo quy định của Thông tư này.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0001",
+          "page_index": 7,
+          "char_start": 3,
+          "char_end": 228
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000065",
+      "structural_node_id": "node-000069",
+      "structural_canonical_path": "chapter:4/article:14/clause:1",
+      "text": "Thông tư này có hiệu lực thi hành kể từ ngày 10 tháng 8 năm 2023.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0003",
+          "page_index": 7,
+          "char_start": 3,
+          "char_end": 68
+        }
+      ],
+      "mention_ids": [
+        "mention-00000033"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000066",
+      "structural_node_id": "node-000070",
+      "structural_canonical_path": "chapter:4/article:14/clause:2",
+      "text": "Trường hợp các văn bản quy phạm pháp luật viện dẫn trong Thông tư này được sửa đổi, bổ sung, thay thế thì áp dụng theo các văn bản sửa đổi, bổ sung, thay thế.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0004",
+          "page_index": 7,
+          "char_start": 3,
+          "char_end": 161
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000067",
+      "structural_node_id": "node-000071",
+      "structural_canonical_path": "chapter:4/article:14/clause:3",
+      "text": "Trong quá trình thực hiện, nếu có khó khăn, vướng mắc hoặc phát sinh những điểm chưa phù hợp, đề nghị các cơ quan, đơn vị phản ánh về Bộ Kế hoạch và Đầu tư để xem xét, điều chỉnh cho phù hợp./.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0005",
+          "page_index": 7,
+          "char_start": 3,
+          "char_end": 196
+        }
+      ],
+      "mention_ids": [
+        "mention-00000034"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000068",
+      "structural_node_id": "node-000071",
+      "structural_canonical_path": "chapter:4/article:14/clause:3",
+      "text": "BỘ TRƯỞNG",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0006",
+          "page_index": 7,
+          "char_start": 0,
+          "char_end": 9
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000069",
+      "structural_node_id": "node-000071",
+      "structural_canonical_path": "chapter:4/article:14/clause:3",
+      "text": "Nguyễn Chí Dũng",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0007",
+          "page_index": 7,
+          "char_start": 0,
+          "char_end": 15
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000070",
+      "structural_node_id": "node-000112",
+      "structural_canonical_path": "appendix:1/generic:2/generic:6/generic:a",
+      "text": "phương hướng phát triển kết cấu hạ tầng kỹ thuật cấp vùng, liên tỉnh bao gồm: mạng lưới giao thông; mạng lưới cấp điện, cung cấp năng lượng; mạng lưới thủy lợi; hệ thống cảng cá và khu neo đậu tránh trú bão cho tàu cá; mạng lưới cấp nước; khu xử lý chất thải và công trình hạ tầng kỹ thuật cấp vùng khác;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0012_b0000",
+          "page_index": 12,
+          "char_start": 0,
+          "char_end": 304
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000071",
+      "structural_node_id": "node-000162",
+      "structural_canonical_path": "appendix:1/generic:3/generic:8/generic:a",
+      "text": "\\- Trong trường hợp có căn cứ pháp lý theo quy định pháp luật, khoanh vùng dự kiến theo chỉ tiêu sử dụng đất khu công nghiệp, đất khu kinh tế, đất khu công nghệ cao, đất đô thị;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0006",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 177
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000072",
+      "structural_node_id": "node-000162",
+      "structural_canonical_path": "appendix:1/generic:3/generic:8/generic:a",
+      "text": "\\- Trong trường hợp chưa có đầy đủ các căn cứ pháp lý để khoanh vùng đất khu công nghiệp, đất khu kinh tế, đất khu công nghệ cao, đất đô thị theo quy định pháp luật, thể hiện ký hiệu về vị trí dự kiến của khu công nghiệp, khu kinh tế, khu công nghệ cao và đô thị quy định tại Phụ lục II của Thông tư này.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0017_b0007",
+          "page_index": 17,
+          "char_start": 0,
+          "char_end": 304
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000073",
+      "structural_node_id": "node-000163",
+      "structural_canonical_path": "appendix:1/generic:3/generic:8/generic:b",
+      "text": "\\- Khoanh vùng dự kiến theo các chỉ tiêu sử dụng đất được khái quát hóa, làm trơn, bảo đảm diện tích tối thiểu mỗi khoanh vùng là 12,5 ha đối với tỷ lệ 1:25.000 và 50 ha đối với tỷ lệ 1:50.000 và 1:100.000; ưu tiên khoanh vùng dự kiến theo đường trục chính đô thị, đường huyện trở lên. Khoanh vùng dự kiến theo các chỉ tiêu sử dụng đất có diện tích nhỏ hơn diện tích tối thiểu thì được ghép vào khoanh vùng lớn hơn liền kề;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0001",
+          "page_index": 18,
+          "char_start": 0,
+          "char_end": 423
+        }
+      ],
+      "mention_ids": [
+        "mention-00000035",
+        "mention-00000036"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000074",
+      "structural_node_id": "node-000163",
+      "structural_canonical_path": "appendix:1/generic:3/generic:8/generic:b",
+      "text": "\\- Đối với các khu vực quan trọng của tỉnh có căn cứ pháp lý để xác định phạm vi ranh giới và các đảo có diện tích nhỏ hơn quy định trên đây thì thể hiện khoanh vùng kèm theo ghi chú tên khu vực, đảo mà không thực hiện khái quát hóa;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0002",
+          "page_index": 18,
+          "char_start": 0,
+          "char_end": 233
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000075",
+      "structural_node_id": "node-000182",
+      "structural_canonical_path": "appendix:2/generic:1/generic:1",
+      "text": "Bố cục sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng và quy hoạch tỉnh bao gồm 06 thành phần nội dung được bố trí như sau:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0021_b0003",
+          "page_index": 21,
+          "char_start": 0,
+          "char_end": 134
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000076",
+      "structural_node_id": "node-000183",
+      "structural_canonical_path": "appendix:2/generic:1/generic:2",
+      "text": "Bố cục phần ký xác nhận của sơ đồ, bản đồ quy hoạch kèm theo hồ sơ trình thẩm định quy hoạch, hồ sơ trình phê duyệt quy hoạch, hồ sơ quy hoạch đã cập nhật, bổ sung hoàn thiện theo văn bản quyết định hoặc phê duyệt quy hoạch quy định như sau:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0022_b0002",
+          "page_index": 22,
+          "char_start": 0,
+          "char_end": 241
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000077",
+      "structural_node_id": "node-000183",
+      "structural_canonical_path": "appendix:2/generic:1/generic:2",
+      "text": "<sub>tọa</sub> <sub>độ:</sub> <sub>V</sub><sup>N-2</sup> <sub>uồ</sub>n <sup>tài</sup> <sup>liệu:</sup>",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0023_b0000",
+          "page_index": 23,
+          "char_start": 0,
+          "char_end": 103
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000078",
+      "structural_node_id": "node-000196",
+      "structural_canonical_path": "appendix:3/section:1/generic:1/generic:1/generic:b",
+      "text": "\\- Cách đặt tên: [Tên quy hoạch viết tắt theo tên vùng].gdb",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0006",
+          "page_index": 32,
+          "char_start": 0,
+          "char_end": 59
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000079",
+      "structural_node_id": "node-000196",
+      "structural_canonical_path": "appendix:3/section:1/generic:1/generic:1/generic:b",
+      "text": "\\- Quy ước: Viết hoa chữ cái đầu của từng từ, viết liền không dấu và không có ký tự đặc biệt.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0007",
+          "page_index": 32,
+          "char_start": 0,
+          "char_end": 93
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000080",
+      "structural_node_id": "node-000196",
+      "structural_canonical_path": "appendix:3/section:1/generic:1/generic:1/generic:b",
+      "text": "Ví dụ: Tên gói dữ liệu Quy hoạch vùng Đồng bằng sông Cửu Long là DongBangSongCuuLong.gdb",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0008",
+          "page_index": 32,
+          "char_start": 0,
+          "char_end": 88
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000081",
+      "structural_node_id": "node-000197",
+      "structural_canonical_path": "appendix:3/section:1/generic:1/generic:2",
+      "text": "\\- Cách đặt tên: [Tên quy hoạch viết tắt theo tên tỉnh, thành phố trực thuộc Trung ương].gdb",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0010",
+          "page_index": 32,
+          "char_start": 0,
+          "char_end": 92
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000082",
+      "structural_node_id": "node-000197",
+      "structural_canonical_path": "appendix:3/section:1/generic:1/generic:2",
+      "text": "\\- Quy ước: Viết hoa chữ cái đầu của từng từ, viết liền không dấu và không có ký tự đặc biệt.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0011",
+          "page_index": 32,
+          "char_start": 0,
+          "char_end": 93
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000083",
+      "structural_node_id": "node-000197",
+      "structural_canonical_path": "appendix:3/section:1/generic:1/generic:2",
+      "text": "Ví dụ: Tên gói dữ liệu Quy hoạch tỉnh Bắc Giang là BacGiang.gdb",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0012",
+          "page_index": 32,
+          "char_start": 0,
+          "char_end": 63
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000084",
+      "structural_node_id": "node-000199",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:1",
+      "text": "\\- Cách đặt tên: [Tên nhóm lớp đối tượng].gdb",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0015",
+          "page_index": 32,
+          "char_start": 0,
+          "char_end": 45
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000085",
+      "structural_node_id": "node-000199",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:1",
+      "text": "\\- Quy ước: Viết hoa chữ cái đầu của từng từ, viết liền không dấu và không có ký tự đặc biệt.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0032_b0016",
+          "page_index": 32,
+          "char_start": 0,
+          "char_end": 93
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000086",
+      "structural_node_id": "node-000199",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:1",
+      "text": "Tên nhóm lớp đối tượng chính của cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh quy định như sau:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0000",
+          "page_index": 33,
+          "char_start": 0,
+          "char_end": 131
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000087",
+      "structural_node_id": "node-000200",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:2",
+      "text": "\\- Cách đặt tên: [Tên lớp dữ liệu]\\_[kiểu hình học]",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0003",
+          "page_index": 33,
+          "char_start": 0,
+          "char_end": 51
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000088",
+      "structural_node_id": "node-000200",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:2",
+      "text": "\\- Quy ước:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0004",
+          "page_index": 33,
+          "char_start": 0,
+          "char_end": 11
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000089",
+      "structural_node_id": "node-000200",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:2",
+      "text": "\\+ Đối với tên lớp dữ liệu: Viết hoa chữ cái đầu của từng từ, viết liền không dấu và không có ký tự đặc biệt.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0005",
+          "page_index": 33,
+          "char_start": 0,
+          "char_end": 109
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000090",
+      "structural_node_id": "node-000200",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:2",
+      "text": "\\+ Đối với kiểu dữ liệu hình học quy ước như sau:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0033_b0006",
+          "page_index": 33,
+          "char_start": 0,
+          "char_end": 49
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000091",
+      "structural_node_id": "node-000200",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:2",
+      "text": "Ví dụ: Lớp Hiện trạng hệ thống đô thị có kiểu dữ liệu hình học dạng điểm đặt tên HienTrangDoThi\\_P",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0000",
+          "page_index": 34,
+          "char_start": 0,
+          "char_end": 98
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000092",
+      "structural_node_id": "node-000201",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:3",
+      "text": "Quy ước: Viết hoa chữ cái đầu của từng ngoại trừ từ đầu tiên; viết liền không dấu và không có ký tự đặc biệt. Ví dụ: Trường thông tin mã đối tượng đặt tên là maDoiTuong",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0002",
+          "page_index": 34,
+          "char_start": 0,
+          "char_end": 168
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000093",
+      "structural_node_id": "node-000201",
+      "structural_canonical_path": "appendix:3/section:1/generic:2/generic:3",
+      "text": "Tên các lớp dữ liệu, trường thông tin chính của cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh được quy định tại Mục 3 Phụ lục này.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0003",
+          "page_index": 34,
+          "char_start": 0,
+          "char_end": 165
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000094",
+      "structural_node_id": "node-000202",
+      "structural_canonical_path": "appendix:3/section:2",
+      "text": "Mã nhận dạng của mỗi đối tượng địa lý trong danh mục đối tượng địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh là dãy mã số duy nhất xác định từng đối tượng địa lý, bao gồm ba (03) phần được đặt liên tiếp nhau, cụ thể như sau:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0006",
+          "page_index": 34,
+          "char_start": 0,
+          "char_end": 245
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000095",
+      "structural_node_id": "node-000202",
+      "structural_canonical_path": "appendix:3/section:2",
+      "text": "\\- Phần thứ nhất là mã cơ sở dữ liệu địa lý quy hoạch, bao gồm 03 ký tự được quy định tại phần I Mục này;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0007",
+          "page_index": 34,
+          "char_start": 0,
+          "char_end": 105
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000096",
+      "structural_node_id": "node-000202",
+      "structural_canonical_path": "appendix:3/section:2",
+      "text": "\\- Phần thứ hai là mã tên kiểu đối tượng địa lý trong danh mục đối tượng địa lý, bao gồm 04 ký tự quy định tại phần II Mục này;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0008",
+          "page_index": 34,
+          "char_start": 0,
+          "char_end": 127
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000097",
+      "structural_node_id": "node-000202",
+      "structural_canonical_path": "appendix:3/section:2",
+      "text": "\\- Phần thứ ba là số thứ tự của đối tượng địa lý cùng kiểu trong tập dữ liệu, bao gồm 08 chữ số Ả rập bắt đầu từ 00000001.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0009",
+          "page_index": 34,
+          "char_start": 0,
+          "char_end": 122
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000098",
+      "structural_node_id": "node-000205",
+      "structural_canonical_path": "appendix:3/section:2/generic:1/generic:2",
+      "text": "\\- Đối với quy hoạch vùng",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0002",
+          "page_index": 35,
+          "char_start": 0,
+          "char_end": 25
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000099",
+      "structural_node_id": "node-000205",
+      "structural_canonical_path": "appendix:3/section:2/generic:1/generic:2",
+      "text": "\\- Đối với quy hoạch tỉnh, được gán theo mã số đơn vị hành chính Việt Nam ban hành kèm theo Quyết định số 124/2004/QĐ-TTg ngày 08/7/2004 của Thủ tướng Chính phủ.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0004",
+          "page_index": 35,
+          "char_start": 0,
+          "char_end": 161
+        }
+      ],
+      "mention_ids": [
+        "mention-00000037",
+        "mention-00000038",
+        "mention-00000039"
+      ],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000100",
+      "structural_node_id": "node-000206",
+      "structural_canonical_path": "appendix:3/section:2/generic:2",
+      "text": "Mã tên kiểu đối tượng địa lý trong danh mục đối tượng địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh bao gồm 05 ký tự được đặt liên tiếp nhau theo quy định như sau:",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0006",
+          "page_index": 35,
+          "char_start": 0,
+          "char_end": 184
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000101",
+      "structural_node_id": "node-000209",
+      "structural_canonical_path": "appendix:3/section:2/generic:2/generic:4",
+      "text": "Mã tên của các kiểu đối tượng địa lý chính của cơ sở dữ liệu quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh được quy định tại Mục 3 của Phụ lục này.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0004",
+          "page_index": 36,
+          "char_start": 0,
+          "char_end": 161
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000102",
+      "structural_node_id": "node-000209",
+      "structural_canonical_path": "appendix:3/section:2/generic:2/generic:4",
+      "text": "Ví dụ: T19-MH02-00000001",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0037_b0000",
+          "page_index": 37,
+          "char_start": 0,
+          "char_end": 24
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000103",
+      "structural_node_id": "node-000209",
+      "structural_canonical_path": "appendix:3/section:2/generic:2/generic:4",
+      "text": "- T19 là mã cơ sở dữ liệu địa lý quy hoạch tỉnh Thái Nguyên, trong đó: T là ký tự viết tắt cho quy hoạch tỉnh; 19 là ký tự viết tắt cho tỉnh Thái Nguyên;",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0037_b0001",
+          "page_index": 37,
+          "char_start": 0,
+          "char_end": 153
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000104",
+      "structural_node_id": "node-000209",
+      "structural_canonical_path": "appendix:3/section:2/generic:2/generic:4",
+      "text": "- MH01 là mã tên kiểu đối tượng địa lý về Hiện trạng hệ thống đô thị, trong đó: M là ký tự viết tắt cho chủ đề dữ liệu về Xây dựng; H là ký tự viết tắt cho nhóm dữ liệu hiện trạng; 01 là số thứ tự của kiểu đối tượng địa lý (Hiện trạng hệ thống đô thị) trong nhóm dữ liệu hiện trạng.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0037_b0002",
+          "page_index": 37,
+          "char_start": 0,
+          "char_end": 282
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000105",
+      "structural_node_id": "node-000209",
+      "structural_canonical_path": "appendix:3/section:2/generic:2/generic:4",
+      "text": "\\- 00000001 là số thứ tự của đô thị thứ nhất trong tập dữ liệu về Hiện trạng hệ thống đô thị.",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0037_b0003",
+          "page_index": 37,
+          "char_start": 0,
+          "char_end": 93
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000106",
+      "structural_node_id": "node-000209",
+      "structural_canonical_path": "appendix:3/section:2/generic:2/generic:4",
+      "text": "<sub>nh</sub> <sub>tế</sub> <sub>-</sub> <sub>xã</sub> <sup>hội</sup> <sup>và</sup> <sup>đầ</sup>",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0038_b0000",
+          "page_index": 38,
+          "char_start": 0,
+          "char_end": 97
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000107",
+      "structural_node_id": "node-000209",
+      "structural_canonical_path": "appendix:3/section:2/generic:2/generic:4",
+      "text": "M<sup>ỤC</sup> <sup>ĐỐI</sup> <sup>TƯỢNG</sup> <sup>ĐỊ</sup>",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0038_b0001",
+          "page_index": 38,
+          "char_start": 0,
+          "char_end": 60
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000108",
+      "structural_node_id": "node-000209",
+      "structural_canonical_path": "appendix:3/section:2/generic:2/generic:4",
+      "text": "<sub>c</sub> <sub>đối</sub> <sub>tượ</sub>n<sup>g</sup> <sup>địa</sup> <sup>lý</sup> <sup>không</sup> <sup>bắ</sup> <sub>hi</sub> <sub>c</sub>h<sup>ú</sup> <sub>u</sub> <sub>d</sub>ữ <sup>liệu</sup> <sup>số</sup> <sup>th</sup> <sub>e</sub><sup>al</sup> ữ liệu số nguyên lớn (kích thước 4 byte, giá trị từ -2,147,483,648 tới 2,147,483,647) <sub>ong</sub> <sup>Integ</sup> <sub>u</sub> <sub>dữ</sub> <sub>liệ</sub>u <sup>số</sup> <sup>nguy</sup> <sub>nt</sub><sup>ege</sup> <sub>dữ</sub> <sub>liệu</sub> <sup>ngày</sup> <sup>-</sup> <sup>tháng</sup> <sup>-</sup> <sub>a</sub>t<sup>e</sup> <sub>u</sub> <sub>dữ</sub> <sub>liệ</sub>u <sup>xâu</sup> <sup>ký</sup> <sub>ar</sub>a<sup>cterStri</sup> <sub>tượ</sub>n<sup>g</sup> <sup>dạng</sup> <sup>đư</sup> M <sup>\\_Polylin</sup> <sub>tượ</sub>n<sup>g</sup> <sup>dạng</sup> <sup>vù</sup> M <sup>\\_Polygo</sup> <sub>tượ</sub><sup>ng</sup> <sup>dạng</sup> <sup>đi</sup> M <sup>\\_Poin</sup> <sub>nh</sub> m<sup>ục</sup> <sup>từ</sup> <sup>viết</sup>",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0038_b0002",
+          "page_index": 38,
+          "char_start": 0,
+          "char_end": 990
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    },
+    {
+      "id": "statement-00000109",
+      "structural_node_id": "node-000209",
+      "structural_canonical_path": "appendix:3/section:2/generic:2/generic:4",
+      "text": "VĂN PHÒNG CHÍNH PH XUÁT BÅN Đia chi: S 1, Hoàng Hoa Thám, Ba Đinh, Hà Ni Đin thoi liên h: - Ni dung: 080.44417; Fax: 080.44517 - Phát hành: 080.48543 Email: congbao@chinhphu.vn Website: http://congbao.chinhphu.vn In ti: Xí nghip Bn đ 1- B Quc phòng",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0046_b0000",
+          "page_index": 46,
+          "char_start": 0,
+          "char_end": 248
+        }
+      ],
+      "mention_ids": [],
+      "provenance": "rule_based_text"
+    }
+  ],
+  "mentions": [
+    {
+      "id": "mention-00000000",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000002",
+      "raw_text": "04/2023/TT-BKHĐT",
+      "normalized_value": "04/2023/TT-BKHĐT",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0002",
+          "page_index": 0,
+          "char_start": 4,
+          "char_end": 20
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000001",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000003",
+      "raw_text": "ngày 26 tháng 6 năm 2023",
+      "normalized_value": "2023-06-26",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0003",
+          "page_index": 0,
+          "char_start": 8,
+          "char_end": 32
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000002",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000006",
+      "raw_text": "ngày 24 tháng 11 năm 2017",
+      "normalized_value": "2017-11-24",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0006",
+          "page_index": 0,
+          "char_start": 22,
+          "char_end": 47
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000003",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000007",
+      "raw_text": "ngày 14 tháng 6 năm 2018",
+      "normalized_value": "2018-06-14",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0007",
+          "page_index": 0,
+          "char_start": 29,
+          "char_end": 53
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000004",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000008",
+      "raw_text": "ngày 15 tháng 11 năm 2018",
+      "normalized_value": "2018-11-15",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0008",
+          "page_index": 0,
+          "char_start": 35,
+          "char_end": 60
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000005",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000009",
+      "raw_text": "89/2022/NĐ-CP",
+      "normalized_value": "89/2022/NĐ-CP",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0009",
+          "page_index": 0,
+          "char_start": 20,
+          "char_end": 33
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000006",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000009",
+      "raw_text": "ngày 28 tháng 10 năm 2022",
+      "normalized_value": "2022-10-28",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0009",
+          "page_index": 0,
+          "char_start": 34,
+          "char_end": 59
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000007",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000009",
+      "raw_text": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0009",
+          "page_index": 0,
+          "char_start": 64,
+          "char_end": 73
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000008",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000009",
+      "raw_text": "Bộ Kế hoạch và Đầu tư",
+      "normalized_value": "Bộ Kế hoạch và Đầu tư",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0009",
+          "page_index": 0,
+          "char_start": 136,
+          "char_end": 157
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000009",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000010",
+      "raw_text": "37/2019/NĐ-CP",
+      "normalized_value": "37/2019/NĐ-CP",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0010",
+          "page_index": 0,
+          "char_start": 20,
+          "char_end": 33
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000010",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000010",
+      "raw_text": "ngày 07 tháng 5 năm 2019",
+      "normalized_value": "2019-05-07",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0010",
+          "page_index": 0,
+          "char_start": 34,
+          "char_end": 58
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000011",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000010",
+      "raw_text": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0010",
+          "page_index": 0,
+          "char_start": 63,
+          "char_end": 72
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000012",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000011",
+      "raw_text": "27/2019/NĐ-CP",
+      "normalized_value": "27/2019/NĐ-CP",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "char_start": 20,
+          "char_end": 33
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000013",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000011",
+      "raw_text": "ngày 13 tháng 3 năm 2019",
+      "normalized_value": "2019-03-13",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "char_start": 34,
+          "char_end": 58
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000014",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000011",
+      "raw_text": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "char_start": 63,
+          "char_end": 72
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000015",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000011",
+      "raw_text": "136/2021/NĐ-CP",
+      "normalized_value": "136/2021/NĐ-CP",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "char_start": 184,
+          "char_end": 198
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000016",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000011",
+      "raw_text": "ngày 31 tháng 12 năm 2021",
+      "normalized_value": "2021-12-31",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "char_start": 199,
+          "char_end": 224
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000017",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000011",
+      "raw_text": "22/2023/NĐ-CP",
+      "normalized_value": "22/2023/NĐ-CP",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "char_start": 241,
+          "char_end": 254
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000018",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000011",
+      "raw_text": "ngày 12 tháng 5 năm 2023",
+      "normalized_value": "2023-05-12",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "char_start": 255,
+          "char_end": 279
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000019",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000011",
+      "raw_text": "Chính phủ",
+      "normalized_value": "Chính phủ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0011",
+          "page_index": 0,
+          "char_start": 284,
+          "char_end": 293
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000020",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000013",
+      "raw_text": "Bộ Kế hoạch và Đầu tư",
+      "normalized_value": "Bộ Kế hoạch và Đầu tư",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0000_b0013",
+          "page_index": 0,
+          "char_start": 10,
+          "char_end": 31
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000021",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000028",
+      "raw_text": "2020/BTNMT",
+      "normalized_value": "2020/BTNMT",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0011",
+          "page_index": 2,
+          "char_start": 136,
+          "char_end": 146
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000022",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000028",
+      "raw_text": "06/2020/TT-BTNMT",
+      "normalized_value": "06/2020/TT-BTNMT",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0011",
+          "page_index": 2,
+          "char_start": 177,
+          "char_end": 193
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000023",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000028",
+      "raw_text": "ngày 31 tháng 8 năm 2020",
+      "normalized_value": "2020-08-31",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0011",
+          "page_index": 2,
+          "char_start": 194,
+          "char_end": 218
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000024",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000028",
+      "raw_text": "Bộ Tài nguyên và Môi trường",
+      "normalized_value": "Bộ Tài nguyên và Môi trường",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0002_b0011",
+          "page_index": 2,
+          "char_start": 233,
+          "char_end": 260
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000025",
+      "kind": "legal_reference",
+      "statement_id": "statement-00000029",
+      "raw_text": "khoản 4 Điều 45",
+      "normalized_value": null,
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0000",
+          "page_index": 3,
+          "char_start": 86,
+          "char_end": 101
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": {
+        "instrument_type": null,
+        "instrument_number_raw": null,
+        "instrument_number_normalized": null,
+        "article": "45",
+        "clause": "4",
+        "point": null,
+        "scope": "self_document"
+      },
+      "quantity": null
+    },
+    {
+      "id": "mention-00000026",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000029",
+      "raw_text": "2020/BTNMT",
+      "normalized_value": "2020/BTNMT",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0000",
+          "page_index": 3,
+          "char_start": 147,
+          "char_end": 157
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000027",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000032",
+      "raw_text": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0003_b0005",
+          "page_index": 3,
+          "char_start": 1029,
+          "char_end": 1044
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000028",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000034",
+      "raw_text": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0004_b0002",
+          "page_index": 4,
+          "char_start": 29,
+          "char_end": 44
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000029",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000058",
+      "raw_text": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0005_b0015",
+          "page_index": 5,
+          "char_start": 29,
+          "char_end": 44
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000030",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000059",
+      "raw_text": "Bộ Kế hoạch và Đầu tư",
+      "normalized_value": "Bộ Kế hoạch và Đầu tư",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0002",
+          "page_index": 6,
+          "char_start": 3,
+          "char_end": 24
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000031",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000061",
+      "raw_text": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0006_b0004",
+          "page_index": 6,
+          "char_start": 3,
+          "char_end": 18
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000032",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000063",
+      "raw_text": "Ủy ban nhân dân",
+      "normalized_value": "Ủy ban nhân dân",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0000",
+          "page_index": 7,
+          "char_start": 539,
+          "char_end": 554
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000033",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000065",
+      "raw_text": "ngày 10 tháng 8 năm 2023",
+      "normalized_value": "2023-08-10",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0003",
+          "page_index": 7,
+          "char_start": 43,
+          "char_end": 67
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000034",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000067",
+      "raw_text": "Bộ Kế hoạch và Đầu tư",
+      "normalized_value": "Bộ Kế hoạch và Đầu tư",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0007_b0005",
+          "page_index": 7,
+          "char_start": 137,
+          "char_end": 158
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000035",
+      "kind": "quantity",
+      "statement_id": "statement-00000073",
+      "raw_text": "12,5 ha",
+      "normalized_value": "12.5 ha",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0001",
+          "page_index": 18,
+          "char_start": 130,
+          "char_end": 137
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "12,5",
+        "normalized_numeric_value": "12.5",
+        "raw_unit": "ha",
+        "normalized_unit": "ha"
+      }
+    },
+    {
+      "id": "mention-00000036",
+      "kind": "quantity",
+      "statement_id": "statement-00000073",
+      "raw_text": "50 ha",
+      "normalized_value": "50 ha",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0018_b0001",
+          "page_index": 18,
+          "char_start": 164,
+          "char_end": 169
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": {
+        "raw_value": "50",
+        "normalized_numeric_value": "50",
+        "raw_unit": "ha",
+        "normalized_unit": "ha"
+      }
+    },
+    {
+      "id": "mention-00000037",
+      "kind": "document_identifier",
+      "statement_id": "statement-00000099",
+      "raw_text": "124/2004/QĐ",
+      "normalized_value": "124/2004/QĐ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0004",
+          "page_index": 35,
+          "char_start": 106,
+          "char_end": 117
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000038",
+      "kind": "temporal_expression",
+      "statement_id": "statement-00000099",
+      "raw_text": "08/7/2004",
+      "normalized_value": "2004-07-08",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0004",
+          "page_index": 35,
+          "char_start": 127,
+          "char_end": 136
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    },
+    {
+      "id": "mention-00000039",
+      "kind": "organization_or_authority",
+      "statement_id": "statement-00000099",
+      "raw_text": "Thủ tướng Chính phủ",
+      "normalized_value": "Thủ tướng Chính phủ",
+      "evidence_anchors": [
+        {
+          "anchor_type": "text",
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0004",
+          "page_index": 35,
+          "char_start": 141,
+          "char_end": 160
+        }
+      ],
+      "provenance": "rule_based_text",
+      "legal_reference": null,
+      "quantity": null
+    }
+  ],
+  "visual_observations": []
+}
