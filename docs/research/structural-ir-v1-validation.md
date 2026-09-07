@@ -12,7 +12,7 @@ Structural IR wire version 1 binds to the exact deterministic Physical IR v1 (wi
 
 ## Reference annotation policy
 
-Reference v4/schema 4 is an AI visual PDF structural re-audit of 46 pages across 6 PDFs and 187 scored structural instances over 173 canonical paths. A stable reference_instance_id identifies a visual structural instance, reference_record_id identifies each page-local annotation record, and parent_reference_instance_id binds the exact visual parent. Prior Physical IR and Structural extractor exposure is disclosed; neither Physical IR nor extractor output was used as reference truth.
+Reference v4/schema 4 is an AI visual PDF structural re-audit of 46 pages across 6 PDFs and 187 scored structural instances over 173 canonical paths. A stable reference_instance_id identifies a visual structural instance, reference_record_id identifies each page-local annotation record, and parent_reference_instance_id binds the exact visual parent. Each parent marker must begin on or before its child marker; 188 unique non-root instance assignments satisfy this ordering invariant. Prior Physical IR and Structural extractor exposure is disclosed; neither Physical IR nor extractor output was used as reference truth.
 
 The machine-readable re-audit log is `data/structural_annotations/reference_structural_audit.v4.json` (SHA-256 `4a3c6d1faecf9d2c0b31206a6eb6f0eac1e0ffff79dcfeb87e7cbdc61a99c68b`), with 30 retained point-ordinal corrections and 1 genuine node restored after v2 incorrectly removed it to accommodate extractor limitations.
 
@@ -109,7 +109,7 @@ Canonical occurrence suffixes after regeneration: 0. Duplicate structural keys a
 
 ## Limitations
 
-Reference v4 changes no visual truth from v3. It separates structural-instance identity from page-record identity and explicitly binds QD23 Clause 1-4 descendants to the first Article 2 instance; the second Article 2 remains a distinct scored instance and false negative when unsupported. Parent-edge scoring remains canonical-path based because predictions have no reference identity. The reference is a partial-page AI visual re-audit, not human ground truth. Combined metrics are representation-weighted. Matching has no fuzzy recovery. APPENDIX is terminal in profile v1. Eight quoted/nested-legislation duplicates remain a conservative v1 limitation; no occurrence suffixes are invented.
+Reference v4 changes no visual truth from v3. It separates structural-instance identity from page-record identity and explicitly binds QD23 Clause 1-4 descendants to the first Article 2 instance; the second Article 2 remains a distinct scored instance and false negative when unsupported. Parent-instance validation proves only existence, kind/path agreement, acyclicity, and that a parent marker does not begin after its child. Same-page duplicated canonical parents remain visually ambiguous when no other existing non-title structural evidence distinguishes them; no geometry or reading-order inference is fabricated. Parent-edge scoring remains canonical-path based because predictions have no reference identity. The reference is a partial-page AI visual re-audit, not human ground truth. Combined metrics are representation-weighted. Matching has no fuzzy recovery. APPENDIX is terminal in profile v1. Eight quoted/nested-legislation duplicates remain a conservative v1 limitation; no occurrence suffixes are invented.
 
 ## Evidence for #009 Selective VLM
 

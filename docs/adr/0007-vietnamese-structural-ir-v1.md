@@ -119,7 +119,11 @@ records reuse it. A separate `reference_record_id` identifies each page-local an
 `parent_reference_instance_id` binds the exact visual parent and must agree with
 `parent_canonical_path`; QD23 Clause 1–4 records therefore explicitly belong to the first of its two
 Article 2 instances. Repeated scored canonical paths remain legal, while record IDs are unique,
-instance definitions are consistent, parents resolve, and instance cycles are forbidden. The 46-page
+instance definitions (including the source marker page) are consistent, parents resolve, parent
+markers cannot begin after their children, and instance cycles are forbidden. Page ordering does not
+disambiguate duplicated canonical parents that begin on the same page; without other existing
+non-title structural evidence, either explicit same-page assignment remains an acknowledged v4
+limitation. No geometry, bounding-box containment, or reading-order inference is claimed. The 46-page
 log and render hashes are committed in
 `data/structural_annotations/reference_structural_audit.v4.json`.
 

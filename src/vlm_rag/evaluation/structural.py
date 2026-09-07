@@ -267,6 +267,7 @@ class StructuralReferenceAnnotation(StructuralEvaluationModel):
                     raise ValueError("duplicate reference_record_id")
                 record_ids.add(node.reference_record_id)
                 definition = (
+                    node.page_index,
                     node.kind,
                     node.ordinal_raw,
                     node.ordinal_key,
@@ -296,6 +297,8 @@ class StructuralReferenceAnnotation(StructuralEvaluationModel):
                 parent_kind = parent.kind
                 if parent.canonical_path != node.parent_canonical_path:
                     raise ValueError("parent reference instance and canonical path disagree")
+                if parent.page_index > node.page_index:
+                    raise ValueError("parent structural instance cannot begin after child")
             if parent_kind not in _REFERENCE_ALLOWED_PARENTS[node.kind]:
                 parent_name = "document" if parent_kind is None else parent_kind.value
                 raise ValueError(
@@ -1085,6 +1088,12 @@ def collect_structural_ir_v1_validation(root: Path) -> dict[str, Any]:
         for page in annotation.audited_pages
         for node in page.nodes
     ]
+    unique_reference_instances = {
+        (annotation.document_id, node.reference_instance_id): node
+        for annotation in annotations.values()
+        for page in annotation.audited_pages
+        for node in page.nodes
+    }
     return {
         "validation_schema_version": 4,
         "validation_protocol": "structural_ir_v1_retained_corpus_reference_v4",
@@ -1148,6 +1157,10 @@ def collect_structural_ir_v1_validation(root: Path) -> dict[str, Any]:
             ),
             "parent_instance_assignments": sum(
                 node.parent_reference_instance_id is not None for node in all_reference_nodes
+            ),
+            "unique_parent_instance_assignments": sum(
+                node.parent_reference_instance_id is not None
+                for node in unique_reference_instances.values()
             ),
             "unique_scored_nodes": unique_scored_nodes,
             "unique_scored_canonical_paths": unique_scored_canonical_paths,
@@ -1344,7 +1357,7 @@ def render_structural_ir_v1_validation(evidence: dict[str, Any]) -> str:
         "",
         "## Reference annotation policy",
         "",
-        f"Reference v4/schema 4 is an AI visual PDF structural re-audit of {evidence['reference_scope']['pages']} pages across {evidence['reference_scope']['documents']} PDFs and {evidence['reference_scope']['unique_scored_nodes']} scored structural instances over {evidence['reference_scope']['unique_scored_canonical_paths']} canonical paths. A stable reference_instance_id identifies a visual structural instance, reference_record_id identifies each page-local annotation record, and parent_reference_instance_id binds the exact visual parent. Prior Physical IR and Structural extractor exposure is disclosed; neither Physical IR nor extractor output was used as reference truth.",
+        f"Reference v4/schema 4 is an AI visual PDF structural re-audit of {evidence['reference_scope']['pages']} pages across {evidence['reference_scope']['documents']} PDFs and {evidence['reference_scope']['unique_scored_nodes']} scored structural instances over {evidence['reference_scope']['unique_scored_canonical_paths']} canonical paths. A stable reference_instance_id identifies a visual structural instance, reference_record_id identifies each page-local annotation record, and parent_reference_instance_id binds the exact visual parent. Each parent marker must begin on or before its child marker; {evidence['reference_scope']['unique_parent_instance_assignments']} unique non-root instance assignments satisfy this ordering invariant. Prior Physical IR and Structural extractor exposure is disclosed; neither Physical IR nor extractor output was used as reference truth.",
         "",
         f"The machine-readable re-audit log is `{evidence['reference_reaudit']['artifact_path']}` (SHA-256 `{evidence['reference_reaudit']['sha256']}`), with {evidence['reference_reaudit']['corrected_point_ordinal_records']} retained point-ordinal corrections and {evidence['reference_reaudit']['restored_genuine_node_records']} genuine node restored after v2 incorrectly removed it to accommodate extractor limitations.",
         "",
@@ -1459,7 +1472,7 @@ def render_structural_ir_v1_validation(evidence: dict[str, Any]) -> str:
             "",
             "## Limitations",
             "",
-            "Reference v4 changes no visual truth from v3. It separates structural-instance identity from page-record identity and explicitly binds QD23 Clause 1-4 descendants to the first Article 2 instance; the second Article 2 remains a distinct scored instance and false negative when unsupported. Parent-edge scoring remains canonical-path based because predictions have no reference identity. The reference is a partial-page AI visual re-audit, not human ground truth. Combined metrics are representation-weighted. Matching has no fuzzy recovery. APPENDIX is terminal in profile v1. Eight quoted/nested-legislation duplicates remain a conservative v1 limitation; no occurrence suffixes are invented.",
+            "Reference v4 changes no visual truth from v3. It separates structural-instance identity from page-record identity and explicitly binds QD23 Clause 1-4 descendants to the first Article 2 instance; the second Article 2 remains a distinct scored instance and false negative when unsupported. Parent-instance validation proves only existence, kind/path agreement, acyclicity, and that a parent marker does not begin after its child. Same-page duplicated canonical parents remain visually ambiguous when no other existing non-title structural evidence distinguishes them; no geometry or reading-order inference is fabricated. Parent-edge scoring remains canonical-path based because predictions have no reference identity. The reference is a partial-page AI visual re-audit, not human ground truth. Combined metrics are representation-weighted. Matching has no fuzzy recovery. APPENDIX is terminal in profile v1. Eight quoted/nested-legislation duplicates remain a conservative v1 limitation; no occurrence suffixes are invented.",
             "",
             "## Evidence for #009 Selective VLM",
             "",

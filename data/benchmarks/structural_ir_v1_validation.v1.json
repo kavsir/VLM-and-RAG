@@ -33,6 +33,7 @@
     "annotation_records": 227,
     "unique_structural_instance_ids": 211,
     "parent_instance_assignments": 192,
+    "unique_parent_instance_assignments": 188,
     "unique_scored_nodes": 187,
     "unique_scored_canonical_paths": 173,
     "parser_evaluation_instances": 248,

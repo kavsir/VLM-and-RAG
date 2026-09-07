@@ -182,6 +182,63 @@ def _annotation(
     )
 
 
+def _duplicate_canonical_parent_payload(
+    *, second_parent_page: int, include_context_copy: bool = False
+) -> tuple[dict[str, Any], str, str]:
+    raw = _annotation(
+        [
+            (StructuralNodeKind.ARTICLE, "2", "document"),
+            (StructuralNodeKind.CLAUSE, "1", "article:2"),
+        ]
+    ).model_dump(mode="json")
+    parent_a, child = raw["audited_pages"][0]["nodes"]
+    parent_a_id = parent_a["reference_instance_id"]
+    parent_b = deepcopy(parent_a)
+    parent_b["reference_record_id"] = "record-test-parent-b"
+    parent_b["reference_instance_id"] = "ref-test-parent-b"
+    parent_b["page_index"] = second_parent_page
+    parent_b["pdf_page_number_1_based"] = second_parent_page + 1
+    parent_b_id = parent_b["reference_instance_id"]
+    child["page_index"] = 1
+    child["pdf_page_number_1_based"] = 2
+
+    page_zero_nodes = [parent_a]
+    later_pages: list[dict[str, Any]] = []
+    if second_parent_page == 0:
+        page_zero_nodes.append(parent_b)
+    else:
+        later_pages.append(
+            {
+                "page_index": second_parent_page,
+                "pdf_page_number_1_based": second_parent_page + 1,
+                "selection_rationale": "Second duplicate parent marker.",
+                "nodes": [parent_b],
+            }
+        )
+    child_page_nodes = [child]
+    if include_context_copy:
+        context = deepcopy(parent_a)
+        context["reference_record_id"] = "record-test-parent-a-context"
+        context["scored"] = False
+        child_page_nodes.insert(0, context)
+    raw["audited_pages"] = [
+        {
+            "page_index": 0,
+            "pdf_page_number_1_based": 1,
+            "selection_rationale": "First duplicate parent marker.",
+            "nodes": page_zero_nodes,
+        },
+        {
+            "page_index": 1,
+            "pdf_page_number_1_based": 2,
+            "selection_rationale": "Child marker.",
+            "nodes": child_page_nodes,
+        },
+        *later_pages,
+    ]
+    return raw, parent_a_id, parent_b_id
+
+
 def test_reference_annotations_have_required_scope_and_disclosed_identity() -> None:
     annotations = load_structural_annotations(ROOT)
     assert len(annotations) == 6
@@ -202,6 +259,26 @@ def test_reference_annotations_have_required_scope_and_disclosed_identity() -> N
         assert annotation.structural_extractor_output_used_as_reference is False
         assert annotation.annotation_schema_version == 4
         assert annotation.annotation_version == "v4"
+
+
+def test_all_reference_parent_instances_begin_on_or_before_children() -> None:
+    checked_assignments = 0
+    for annotation in load_structural_annotations(ROOT).values():
+        instances = {
+            node.reference_instance_id: node
+            for page in annotation.audited_pages
+            for node in page.nodes
+        }
+        for child in instances.values():
+            if child.parent_reference_instance_id is None:
+                continue
+            parent = instances[child.parent_reference_instance_id]
+            assert parent.page_index <= child.page_index
+            checked_assignments += 1
+    assert checked_assignments > 0
+    assert (
+        _evidence()["reference_scope"]["unique_parent_instance_assignments"] == checked_assignments
+    )
 
 
 def test_reference_reaudit_log_covers_all_selected_pages() -> None:
@@ -270,11 +347,9 @@ def test_reference_schema_accepts_duplicate_scored_path_with_unique_instance_ide
 
 
 def test_reference_schema_rejects_duplicate_reference_instance_identity() -> None:
-    raw = _first_reference_payload()
-    scored = next(node for page in raw["audited_pages"] for node in page["nodes"] if node["scored"])
+    raw = _annotation([(StructuralNodeKind.ARTICLE, "1", "document")]).model_dump(mode="json")
+    scored = raw["audited_pages"][0]["nodes"][0]
     raw["audited_pages"][0]["nodes"].append(deepcopy(scored))
-    raw["audited_pages"][0]["nodes"][-1]["page_index"] = 0
-    raw["audited_pages"][0]["nodes"][-1]["pdf_page_number_1_based"] = 1
     raw["audited_pages"][0]["nodes"][-1]["reference_record_id"] += "-duplicate"
     with pytest.raises(ValidationError, match="duplicate scored reference_instance_id"):
         StructuralReferenceAnnotation.model_validate(raw)
@@ -477,6 +552,41 @@ def test_reference_schema_rejects_wrong_parent_instance() -> None:
         StructuralReferenceAnnotation.model_validate(raw)
 
 
+def test_duplicate_canonical_parent_requires_parent_not_to_begin_after_child() -> None:
+    raw, earlier_parent_id, future_parent_id = _duplicate_canonical_parent_payload(
+        second_parent_page=3
+    )
+    child = raw["audited_pages"][1]["nodes"][0]
+    child["parent_reference_instance_id"] = earlier_parent_id
+    StructuralReferenceAnnotation.model_validate(raw)
+    child["parent_reference_instance_id"] = future_parent_id
+    with pytest.raises(
+        ValidationError, match="parent structural instance cannot begin after child"
+    ):
+        StructuralReferenceAnnotation.model_validate(raw)
+
+
+def test_same_page_duplicate_canonical_parents_remain_explicitly_assignable() -> None:
+    raw, _, same_page_parent_id = _duplicate_canonical_parent_payload(second_parent_page=0)
+    raw["audited_pages"][1]["nodes"][0]["parent_reference_instance_id"] = same_page_parent_id
+    StructuralReferenceAnnotation.model_validate(raw)
+
+
+def test_context_copy_retains_structural_instance_marker_page() -> None:
+    raw, earlier_parent_id, _ = _duplicate_canonical_parent_payload(
+        second_parent_page=3, include_context_copy=True
+    )
+    context, child = raw["audited_pages"][1]["nodes"]
+    assert context["page_index"] == 0
+    assert context["reference_instance_id"] == earlier_parent_id
+    assert child["page_index"] == 1
+    StructuralReferenceAnnotation.model_validate(raw)
+    context["page_index"] = 1
+    context["pdf_page_number_1_based"] = 2
+    with pytest.raises(ValidationError, match="contradictory repeated reference instance"):
+        StructuralReferenceAnnotation.model_validate(raw)
+
+
 def test_reference_schema_rejects_contradictory_context_definition() -> None:
     raw = _annotation([(StructuralNodeKind.CHAPTER, "1", "document")]).model_dump(mode="json")
     node = deepcopy(raw["audited_pages"][0]["nodes"][0])
@@ -631,6 +741,23 @@ def test_v4_preserves_qd23_repeated_article_as_false_negative() -> None:
     ]
     assert clauses
     assert {node.parent_reference_instance_id for node in clauses} == {first_article_id}
+    instances = {
+        node.reference_instance_id: node for page in qd.audited_pages for node in page.nodes
+    }
+    assert all(instances[first_article_id].page_index <= clause.page_index for clause in clauses)
+    second_article_id = repeated[1].reference_instance_id
+    raw = qd.model_dump(mode="json")
+    earlier_clause = next(
+        node
+        for page in raw["audited_pages"]
+        for node in page["nodes"]
+        if node["kind"] == "clause" and node["parent_reference_instance_id"] == first_article_id
+    )
+    earlier_clause["parent_reference_instance_id"] = second_article_id
+    with pytest.raises(
+        ValidationError, match="parent structural instance cannot begin after child"
+    ):
+        StructuralReferenceAnnotation.model_validate(raw)
     evidence = _evidence()
     restored_false_negatives = [
         item
