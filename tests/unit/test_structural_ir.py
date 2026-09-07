@@ -166,6 +166,16 @@ def test_toc_suppression_is_event_scoped_on_mixed_page() -> None:
     assert {node.canonical_path for node in result.nodes} >= {"chapter:1", "chapter:1/article:1"}
 
 
+def test_toc_region_stops_before_body_and_later_unrelated_leader() -> None:
+    result = _extract(
+        "MỤC LỤC\nCHƯƠNG I .... 2\n\nCHƯƠNG I\nĐiều 1. Real body\nunrelated line .... 20"
+    )
+    assert [node.canonical_path for node in result.nodes[1:]] == [
+        "chapter:1",
+        "chapter:1/article:1",
+    ]
+
+
 def test_two_leader_lines_do_not_suppress_real_hierarchy() -> None:
     result = _extract(
         "Hạng mục A ........ 10\n"
@@ -330,6 +340,34 @@ def test_toc_pages_do_not_reserve_real_structural_paths() -> None:
     }
 
 
+def test_toc_continuation_is_event_scoped_and_preserves_later_body() -> None:
+    heading = _block("toc", "MỤC LỤC\nCHƯƠNG I .... 2", page_index=0)
+    continuation = _block(
+        "continued",
+        "CHƯƠNG II .... 8\nCHƯƠNG I\nĐiều 1. Nội dung",
+        page_index=1,
+    )
+    physical = PhysicalDocumentV1(
+        document_id="test-document",
+        version_id="v1",
+        source_artifact_sha256=SOURCE_SHA,
+        parser="test",
+        parser_version="1",
+        parser_backend="fixture",
+        page_count=2,
+        pages=(
+            PhysicalPageV1(page_index=0, width=100.0, height=200.0, blocks=(heading,)),
+            PhysicalPageV1(page_index=1, width=100.0, height=200.0, blocks=(continuation,)),
+        ),
+    )
+    result = VietnameseStructuralExtractor().extract(physical)
+    assert [node.canonical_path for node in result.nodes[1:]] == [
+        "chapter:1",
+        "chapter:1/article:1",
+    ]
+    validate_against_physical(result, physical)
+
+
 def test_plain_muc_luc_phrase_does_not_suppress_real_heading() -> None:
     result = _extract("mục lục\nCHƯƠNG I")
     assert [node.canonical_path for node in result.nodes[1:]] == ["chapter:1"]
@@ -449,6 +487,113 @@ def test_appendix_can_contain_part_chapter_and_section() -> None:
     assert chapter.parent_id == part.id
     assert section.parent_id == chapter.id
     assert section.canonical_path == "appendix:2/part:1/chapter:1/section:1"
+
+
+def test_generic_outline_uses_deepest_formal_parent_and_can_restart() -> None:
+    result = _extract(
+        "PHỤ LỤC I\nMục 1\nI. NHÓM A\nMục 2\nI. NHÓM B",
+        kind=BlockKindV1.TITLE,
+    )
+    assert [node.canonical_path for node in result.nodes[1:]] == [
+        "appendix:1",
+        "appendix:1/section:1",
+        "appendix:1/section:1/generic:1",
+        "appendix:1/section:2",
+        "appendix:1/section:2/generic:1",
+    ]
+
+
+def test_same_section_number_under_different_chapters_does_not_collide() -> None:
+    result = _extract("CHƯƠNG I\nMục 2\nCHƯƠNG II\nMục 2", kind=BlockKindV1.TITLE)
+    assert [node.canonical_path for node in result.nodes[1:]] == [
+        "chapter:1",
+        "chapter:1/section:2",
+        "chapter:2",
+        "chapter:2/section:2",
+    ]
+
+
+def test_planning_outline_overrides_stale_legal_point_context_then_clause_reenters() -> None:
+    result = _extract(
+        "Điều 1. Nội dung\n"
+        "5. Khoản pháp lý\n"
+        "5.2. PHƯƠNG ÁN QUY HOẠCH\n"
+        "a) Hạ tầng kỹ thuật\n"
+        "6. Khoản pháp lý tiếp theo",
+        kind=BlockKindV1.TITLE,
+    )
+    assert [node.kind for node in result.nodes[1:]] == [
+        StructuralNodeKind.ARTICLE,
+        StructuralNodeKind.CLAUSE,
+        StructuralNodeKind.GENERIC_SECTION,
+        StructuralNodeKind.GENERIC_SECTION,
+        StructuralNodeKind.CLAUSE,
+    ]
+    assert result.nodes[4].canonical_path.endswith("generic:5.2/generic:a")
+    assert result.nodes[5].canonical_path == "article:1/clause:6"
+
+
+def test_inline_second_clause_and_points_preserve_exact_source_partition() -> None:
+    text = (
+        "Điều 20. Đề cương lập quy hoạch\n"
+        "1. Đề cương lập quy hoạch bao gồm những nội dung chủ yếu sau đây:\n"
+        "a) Sự cần thiết lập quy hoạch; căn cứ lập quy hoạch; định hướng, yêu cầu "
+        "của quy hoạch có liên quan, quy hoạch được cụ thể hóa đối với quy hoạch "
+        "cần lập (nếu có); b) Phạm vi, ranh giới lập quy hoạch; thời kỳ, tầm nhìn "
+        "của quy hoạch;\n"
+        "c) Yêu cầu về nội dung quy hoạch; hồ sơ quy hoạch;\n"
+        "d) Thời gian, tiến độ lập quy hoạch; đ) Trách nhiệm của các cơ quan, tổ "
+        "chức, cá nhân có liên quan trong việc lập quy hoạch. 2. Thẩm quyền tổ chức "
+        "lập, phê duyệt đề cương lập quy hoạch như sau:\n"
+        "a) Cơ quan lập quy hoạch tổng thể quốc gia, quy hoạch không gian biển quốc "
+        "gia, quy hoạch sử dụng đất quốc gia xây dựng đề cương lập quy hoạch, trình "
+        "Chính phủ quyết định;\n"
+        "b) Cơ quan tổ chức lập quy hoạch vùng xây dựng đề cương lập quy hoạch, "
+        "trình Thủ tướng Chính phủ phê duyệt;\n"
+        "c) Cơ quan lập quy hoạch ngành xây dựng đề cương lập quy hoạch ngành, báo "
+        "cáo cơ quan tổ chức lập quy hoạch, trình cơ quan, người có thẩm quyền phê "
+        "duyệt quy hoạch xem xét, phê duyệt đề cương lập quy hoạch ngành; d) Cơ quan "
+        "tổ chức lập quy hoạch tỉnh tổ chức lập và phê duyệt đề cương"
+    )
+    physical = _physical(_block("b0", text))
+    diagnostics: list[StructuralDiagnostic] = []
+    result = VietnameseStructuralExtractor().extract(physical, diagnostics=diagnostics)
+    clause_two = next(node for node in result.nodes if node.canonical_path.endswith("clause:2"))
+    points = [node for node in result.nodes if node.parent_id == clause_two.id]
+    assert [node.ordinal_key for node in points] == ["a", "b", "c", "d"]
+    assert clause_two.heading_anchors[0].char_start == text.index("2. Thẩm quyền")
+    assert not any(item.category == "duplicate_structural_key_rejected" for item in diagnostics)
+    validate_against_physical(result, physical)
+    assert reconstruction_by_block(result, physical)["b0"] == text
+
+
+def test_inline_segmentation_does_not_split_cross_reference_prose() -> None:
+    result = _extract(
+        "Điều 1. Nội dung\n1. Áp dụng quy định tại khoản 2. Trường hợp khác thực hiện theo Điều 3."
+    )
+    clauses = [node for node in result.nodes if node.kind == StructuralNodeKind.CLAUSE]
+    assert [node.ordinal_key for node in clauses] == ["1"]
+
+
+def test_inline_formal_container_recovers_section_under_new_chapter() -> None:
+    result = _extract(
+        "CHƯƠNG III QUY ĐỊNH Mục 1 NỘI DUNG\nMục 2 THỰC HIỆN",
+        kind=BlockKindV1.TITLE,
+    )
+    assert [node.canonical_path for node in result.nodes[1:]] == [
+        "chapter:3",
+        "chapter:3/section:1",
+        "chapter:3/section:2",
+    ]
+
+
+def test_unnumbered_node_requires_literal_unnumbered_path_segment() -> None:
+    node = _extract("PHỤ LỤC").nodes[1]
+    assert node.canonical_path == "appendix:unnumbered"
+    raw = node.model_dump(mode="json")
+    raw["canonical_path"] = "appendix:999"
+    with pytest.raises(ValidationError, match="canonical path ordinal"):
+        StructuralNode.model_validate(raw)
 
 
 def test_ambiguous_generic_decimal_inside_clause_remains_body_and_preserves_context() -> None:

@@ -1,0 +1,1154 @@
+{
+  "audit_schema_version": 1,
+  "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+  "purpose": "Evaluation-only traceability; the runtime extractor does not read this artifact.",
+  "controlled_classifications": [
+    "GENUINE_STRUCTURE_RECOVERED",
+    "QUOTED_NESTED_LEGISLATION_LIMITATION",
+    "FALSE_CANDIDATE",
+    "UNSUPPORTED_REPEATED_IDENTITY",
+    "AMBIGUOUS",
+    "UNRESOLVED"
+  ],
+  "summary": {
+    "total": 43,
+    "by_classification": {
+      "GENUINE_STRUCTURE_RECOVERED": 35,
+      "QUOTED_NESTED_LEGISLATION_LIMITATION": 8
+    }
+  },
+  "records": [
+    {
+      "audit_record_id": "duplicate-38d1042-001",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 33,
+      "pdf_page_number_1_based": 34,
+      "block_id": "hanoi-master-plan-100y_v1_p0033_b0009",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Phương án liên kết quốc tế:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.2/generic:a",
+        "node_id": "node-000026",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0033_b0009",
+          "page_index": 33,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-002",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 34,
+      "pdf_page_number_1_based": 35,
+      "block_id": "hanoi-master-plan-100y_v1_p0034_b0005",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Phương án tổ chức liên kết Thủ đô Hà Nội với các địa phương khác trong nước:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.2/generic:b",
+        "node_id": "node-000027",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0034_b0005",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-003",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 42,
+      "pdf_page_number_1_based": 43,
+      "block_id": "hanoi-master-plan-100y_v1_p0042_b0002",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Phương hướng phát triển các ngành, lĩnh vực khác:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.3/generic:b",
+        "node_id": "node-000030",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0042_b0002",
+          "page_index": 42,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-004",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 49,
+      "pdf_page_number_1_based": 50,
+      "block_id": "hanoi-master-plan-100y_v1_p0049_b0003",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Chỉ tiêu sử dụng đất và phân bổ dân số theo các giai đoạn:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.4/generic:a",
+        "node_id": "node-000032",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0049_b0003",
+          "page_index": 49,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-005",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 49,
+      "pdf_page_number_1_based": 50,
+      "block_id": "hanoi-master-plan-100y_v1_p0049_b0014",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Chỉ tiêu phân bổ đất cho các công trình hạ tầng xã hội, hạ tầng kỹ thuật thiết yếu:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.4/generic:b",
+        "node_id": "node-000033",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0049_b0014",
+          "page_index": 49,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-006",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 50,
+      "pdf_page_number_1_based": 51,
+      "block_id": "hanoi-master-plan-100y_v1_p0050_b0009",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Công nghệ cao, công nghệ số tập trung:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.5/generic:a",
+        "node_id": "node-000035",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0050_b0009",
+          "page_index": 50,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-007",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 50,
+      "pdf_page_number_1_based": 51,
+      "block_id": "hanoi-master-plan-100y_v1_p0050_b0011",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Công nghiệp:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.5/generic:b",
+        "node_id": "node-000036",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0050_b0011",
+          "page_index": 50,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-008",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 51,
+      "pdf_page_number_1_based": 52,
+      "block_id": "hanoi-master-plan-100y_v1_p0051_b0002",
+      "kind": "point",
+      "ordinal": "c",
+      "current_canonical_candidate": "article:1/clause:5/point:c",
+      "source_excerpt": "c) Các khu du lịch:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.5/generic:c",
+        "node_id": "node-000037",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0051_b0002",
+          "page_index": 51,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-009",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 51,
+      "pdf_page_number_1_based": 52,
+      "block_id": "hanoi-master-plan-100y_v1_p0051_b0016",
+      "kind": "point",
+      "ordinal": "d",
+      "current_canonical_candidate": "article:1/clause:5/point:d",
+      "source_excerpt": "d) Hệ thống trụ sở làm việc và cơ quan hành chính:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.5/generic:d",
+        "node_id": "node-000038",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0051_b0016",
+          "page_index": 51,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-010",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 56,
+      "pdf_page_number_1_based": 57,
+      "block_id": "hanoi-master-plan-100y_v1_p0056_b0019",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Định hướng phát triển hệ thống hạ tầng kỹ thuật:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.6/generic:a",
+        "node_id": "node-000048",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0056_b0019",
+          "page_index": 56,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-011",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 66,
+      "pdf_page_number_1_based": 67,
+      "block_id": "hanoi-master-plan-100y_v1_p0066_b0016",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Định hướng phát triển không gian ngầm:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.6/generic:b",
+        "node_id": "node-000049",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0066_b0016",
+          "page_index": 66,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-012",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 68,
+      "pdf_page_number_1_based": 69,
+      "block_id": "hanoi-master-plan-100y_v1_p0068_b0004",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Phương án bảo vệ môi trường, bảo tồn thiên nhiên và đa dạng sinh học:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.7/generic:a",
+        "node_id": "node-000051",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0068_b0004",
+          "page_index": 68,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-013",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "marker",
+      "page_index": 72,
+      "pdf_page_number_1_based": 73,
+      "block_id": "hanoi-master-plan-100y_v1_p0072_b0006",
+      "kind": "point",
+      "ordinal": "c",
+      "current_canonical_candidate": "article:1/clause:5/point:c",
+      "source_excerpt": "c) Phương án phòng, chống thiên tai và ứng phó với biến đổi khí hậu:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/generic:5/generic:5.7/generic:c",
+        "node_id": "node-000052",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0072_b0006",
+          "page_index": 72,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-014",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 33,
+      "pdf_page_number_1_based": 34,
+      "block_id": "hanoi-master-plan-100y_v1_p0033_b0008",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Phương án liên kết quốc tế:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.2/generic:a",
+        "node_id": "node-000024",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0033_b0008",
+          "page_index": 33,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-015",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 34,
+      "pdf_page_number_1_based": 35,
+      "block_id": "hanoi-master-plan-100y_v1_p0034_b0004",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Phương án tổ chức liên kết Thủ đô Hà Nội với các địa phương khác trong nước:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.2/generic:b",
+        "node_id": "node-000025",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0034_b0004",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-016",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 37,
+      "pdf_page_number_1_based": 38,
+      "block_id": "hanoi-master-plan-100y_v1_p0037_b0003",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Phương hướng phát triển các ngành quan trọng:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.3/generic:a",
+        "node_id": "node-000027",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0037_b0003",
+          "page_index": 37,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-017",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 42,
+      "pdf_page_number_1_based": 43,
+      "block_id": "hanoi-master-plan-100y_v1_p0042_b0001",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Phương hướng phát triển các ngành, lĩnh vực khác:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.3/generic:b",
+        "node_id": "node-000028",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0042_b0001",
+          "page_index": 42,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-018",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 49,
+      "pdf_page_number_1_based": 50,
+      "block_id": "hanoi-master-plan-100y_v1_p0049_b0002",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Chỉ tiêu sử dụng đất và phân bổ dân số theo các giai đoạn:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.4/generic:a",
+        "node_id": "node-000030",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0049_b0002",
+          "page_index": 49,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-019",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 49,
+      "pdf_page_number_1_based": 50,
+      "block_id": "hanoi-master-plan-100y_v1_p0049_b0012",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Chỉ tiêu phân bổ đất cho các công trình hạ tầng xã hội, hạ tầng kỹ thuật thiết yếu:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.4/generic:b",
+        "node_id": "node-000031",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0049_b0012",
+          "page_index": 49,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-020",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 50,
+      "pdf_page_number_1_based": 51,
+      "block_id": "hanoi-master-plan-100y_v1_p0050_b0008",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Công nghệ cao, công nghệ số tập trung:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.5/generic:a",
+        "node_id": "node-000033",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0050_b0008",
+          "page_index": 50,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-021",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 50,
+      "pdf_page_number_1_based": 51,
+      "block_id": "hanoi-master-plan-100y_v1_p0050_b0010",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Công nghiệp:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.5/generic:b",
+        "node_id": "node-000034",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0050_b0010",
+          "page_index": 50,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-022",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 51,
+      "pdf_page_number_1_based": 52,
+      "block_id": "hanoi-master-plan-100y_v1_p0051_b0001",
+      "kind": "point",
+      "ordinal": "c",
+      "current_canonical_candidate": "article:1/clause:5/point:c",
+      "source_excerpt": "c) Các khu du lịch:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.5/generic:c",
+        "node_id": "node-000035",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0051_b0001",
+          "page_index": 51,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-023",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 51,
+      "pdf_page_number_1_based": 52,
+      "block_id": "hanoi-master-plan-100y_v1_p0051_b0015",
+      "kind": "point",
+      "ordinal": "d",
+      "current_canonical_candidate": "article:1/clause:5/point:d",
+      "source_excerpt": "d) Hệ thống trụ sở làm việc và cơ quan hành chính:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.5/generic:d",
+        "node_id": "node-000036",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0051_b0015",
+          "page_index": 51,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-024",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 56,
+      "pdf_page_number_1_based": 57,
+      "block_id": "hanoi-master-plan-100y_v1_p0056_b0017",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Định hướng phát triển hệ thống hạ tầng kỹ thuật:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.6/generic:a",
+        "node_id": "node-000046",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0056_b0017",
+          "page_index": 56,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-025",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 66,
+      "pdf_page_number_1_based": 67,
+      "block_id": "hanoi-master-plan-100y_v1_p0066_b0014",
+      "kind": "point",
+      "ordinal": "b",
+      "current_canonical_candidate": "article:1/clause:5/point:b",
+      "source_excerpt": "b) Định hướng phát triển không gian ngầm:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.6/generic:b",
+        "node_id": "node-000047",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0066_b0014",
+          "page_index": 66,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-026",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 68,
+      "pdf_page_number_1_based": 69,
+      "block_id": "hanoi-master-plan-100y_v1_p0068_b0003",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "article:1/clause:5/point:a",
+      "source_excerpt": "a) Phương án bảo vệ môi trường, bảo tồn thiên nhiên và đa dạng sinh học:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.7/generic:a",
+        "node_id": "node-000049",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0068_b0003",
+          "page_index": 68,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-027",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "hanoi-master-plan-100y",
+      "parser": "mineru",
+      "page_index": 72,
+      "pdf_page_number_1_based": 73,
+      "block_id": "hanoi-master-plan-100y_v1_p0072_b0005",
+      "kind": "point",
+      "ordinal": "c",
+      "current_canonical_candidate": "article:1/clause:5/point:c",
+      "source_excerpt": "c) Phương án phòng, chống thiên tai và ứng phó với biến đổi khí hậu:",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible planning-outline child recovered after a non-legal generic decimal parent now closes stale legal point precedence.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "article:1/clause:5/generic:5.7/generic:c",
+        "node_id": "node-000050",
+        "marker_anchor": {
+          "block_id": "hanoi-master-plan-100y_v1_p0072_b0005",
+          "page_index": 72,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-028",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 12,
+      "pdf_page_number_1_based": 13,
+      "block_id": "luat-112-2025-qh15_v1_p0012_b0011",
+      "kind": "point",
+      "ordinal": "a",
+      "current_canonical_candidate": "chapter:2/section:1/article:20/clause:1/point:a",
+      "source_excerpt": "a) Cơ quan lập quy hoạch tổng thể quốc gia, quy hoạch không gian biển quốc gia, quy hoạch sử dụng đất quốc gia xây dựng đề cương lập quy hoạch, trình Chính phủ quyết định;",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible point belongs to the inline second clause recovered with exact source offsets.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "point",
+        "canonical_path": "chapter:2/section:1/article:20/clause:2/point:a",
+        "node_id": "node-000174",
+        "marker_anchor": {
+          "block_id": "luat-112-2025-qh15_v1_p0012_b0011",
+          "page_index": 12,
+          "role": "marker",
+          "char_start": 544,
+          "char_end": 547
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-029",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 12,
+      "pdf_page_number_1_based": 13,
+      "block_id": "luat-112-2025-qh15_v1_p0012_b0011",
+      "kind": "point",
+      "ordinal": "c",
+      "current_canonical_candidate": "chapter:2/section:1/article:20/clause:1/point:c",
+      "source_excerpt": "c) Cơ quan lập quy hoạch ngành xây dựng đề cương lập quy hoạch ngành, báo cáo cơ quan tổ chức lập quy hoạch, trình cơ quan, người có thẩm quyền phê duyệt quy hoạch xem xét, phê duyệt đề cương lập quy hoạch ngành; d) Cơ quan tổ chức lập quy ",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible point belongs to the inline second clause recovered with exact source offsets.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "point",
+        "canonical_path": "chapter:2/section:1/article:20/clause:2/point:c",
+        "node_id": "node-000176",
+        "marker_anchor": {
+          "block_id": "luat-112-2025-qh15_v1_p0012_b0011",
+          "page_index": 12,
+          "role": "marker",
+          "char_start": 824,
+          "char_end": 827
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-030",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 23,
+      "pdf_page_number_1_based": 24,
+      "block_id": "luat-112-2025-qh15_v1_p0023_b0003",
+      "kind": "section",
+      "ordinal": "2",
+      "current_canonical_candidate": "chapter:2/section:2",
+      "source_excerpt": "Mục 2 QUYẾT ĐỊNH HOẶC PHÊ DUYỆT QUY HOẠCH",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible Mục 2 recovered below its inline Chapter III/IV container.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "section",
+        "canonical_path": "chapter:3/section:2",
+        "node_id": "node-000354",
+        "marker_anchor": {
+          "block_id": "luat-112-2025-qh15_v1_p0023_b0003",
+          "page_index": 23,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 6
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-031",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 28,
+      "pdf_page_number_1_based": 29,
+      "block_id": "luat-112-2025-qh15_v1_p0028_b0012",
+      "kind": "section",
+      "ordinal": "2",
+      "current_canonical_candidate": "chapter:2/section:2",
+      "source_excerpt": "Mục 2 THỰC HIỆN QUY HOẠCH",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible Mục 2 recovered below its inline Chapter III/IV container.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "section",
+        "canonical_path": "chapter:4/section:2",
+        "node_id": "node-000445",
+        "marker_anchor": {
+          "block_id": "luat-112-2025-qh15_v1_p0028_b0012",
+          "page_index": 28,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 6
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-032",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 34,
+      "pdf_page_number_1_based": 35,
+      "block_id": "luat-112-2025-qh15_v1_p0034_b0015",
+      "kind": "clause",
+      "ordinal": "1",
+      "current_canonical_candidate": "chapter:6/article:55/clause:1",
+      "source_excerpt": "1. Quy hoạch chi tiết kết cấu hạ tầng đường thủy nội địa là quy hoạch chi tiết ngành, cụ thể hoá quy hoạch tổng thể kết cấu hạ tầng đường thủy nội địa.",
+      "visual_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION",
+      "classification_evidence_note": "Visual review identifies quoted or nested amended legislation rather than a new primary-document structural instance; v1 conservatively retains the text as BODY.",
+      "post_correction_outcome": {
+        "status": "body_rejected",
+        "remaining_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION"
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-033",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 34,
+      "pdf_page_number_1_based": 35,
+      "block_id": "luat-112-2025-qh15_v1_p0034_b0016",
+      "kind": "clause",
+      "ordinal": "2",
+      "current_canonical_candidate": "chapter:6/article:55/clause:2",
+      "source_excerpt": "2. Bộ Xây dựng tổ chức lập và phê duyệt quy hoạch chi tiết kết cấu hạ tầng đường thủy nội địa.",
+      "visual_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION",
+      "classification_evidence_note": "Visual review identifies quoted or nested amended legislation rather than a new primary-document structural instance; v1 conservatively retains the text as BODY.",
+      "post_correction_outcome": {
+        "status": "body_rejected",
+        "remaining_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION"
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-034",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 35,
+      "pdf_page_number_1_based": 36,
+      "block_id": "luat-112-2025-qh15_v1_p0035_b0003",
+      "kind": "clause",
+      "ordinal": "3",
+      "current_canonical_candidate": "chapter:6/article:55/clause:3",
+      "source_excerpt": "3. Thay thế cụm từ \"quy hoạch ngành quốc gia\" bằng cụm từ \"quy hoạch ngành\" tại khoản 2 Điều 6 của Luật Sử dụng năng lượng tiết kiệm và hiệu quả số 50/2010/QH12 đã được sửa đổi, bổ sung một số điều theo Luật số 28/2018/QH14 và Luật số 77/20",
+      "visual_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION",
+      "classification_evidence_note": "Visual review identifies quoted or nested amended legislation rather than a new primary-document structural instance; v1 conservatively retains the text as BODY.",
+      "post_correction_outcome": {
+        "status": "body_rejected",
+        "remaining_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION"
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-035",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 35,
+      "pdf_page_number_1_based": 36,
+      "block_id": "luat-112-2025-qh15_v1_p0035_b0012",
+      "kind": "clause",
+      "ordinal": "1",
+      "current_canonical_candidate": "chapter:6/article:55/clause:1",
+      "source_excerpt": "1. Phương hướng phát triển hạ tầng kỹ thuật viễn thông thụ động trong quy hoạch tỉnh phải phù hợp với quy hoạch hạ tầng thông tin và truyền thông.",
+      "visual_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION",
+      "classification_evidence_note": "Visual review identifies quoted or nested amended legislation rather than a new primary-document structural instance; v1 conservatively retains the text as BODY.",
+      "post_correction_outcome": {
+        "status": "body_rejected",
+        "remaining_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION"
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-036",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 35,
+      "pdf_page_number_1_based": 36,
+      "block_id": "luat-112-2025-qh15_v1_p0035_b0013",
+      "kind": "clause",
+      "ordinal": "2",
+      "current_canonical_candidate": "chapter:6/article:55/clause:2",
+      "source_excerpt": "2. Quy hoạch theo pháp luật về quy hoạch đô thị và nông thôn đối với khu đô thị, khu dân cư, khu chức năng, cụm công nghiệp phải bảo đảm tính thống nhất, đồng bộ với phương hướng phát triển hạ tầng kỹ thuật viễn thông thụ động trong quy hoạ",
+      "visual_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION",
+      "classification_evidence_note": "Visual review identifies quoted or nested amended legislation rather than a new primary-document structural instance; v1 conservatively retains the text as BODY.",
+      "post_correction_outcome": {
+        "status": "body_rejected",
+        "remaining_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION"
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-037",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "luat-112-2025-qh15",
+      "parser": "marker",
+      "page_index": 37,
+      "pdf_page_number_1_based": 38,
+      "block_id": "luat-112-2025-qh15_v1_p0037_b0014",
+      "kind": "clause",
+      "ordinal": "2",
+      "current_canonical_candidate": "chapter:6/article:55/clause:2",
+      "source_excerpt": "2. Việc lập quy hoạch tổng thể kết cấu hạ tầng hàng hải phải tuân thủ quy định của pháp luật về quy hoạch và căn cứ vào nhiệm vụ quốc phòng, an ninh, nhu cầu, nguồn lực và xu thế phát triển hàng hải thế giới.\";",
+      "visual_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION",
+      "classification_evidence_note": "Visual review identifies quoted or nested amended legislation rather than a new primary-document structural instance; v1 conservatively retains the text as BODY.",
+      "post_correction_outcome": {
+        "status": "body_rejected",
+        "remaining_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION"
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-038",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "parser": "marker",
+      "page_index": 45,
+      "pdf_page_number_1_based": 46,
+      "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0012",
+      "kind": "clause",
+      "ordinal": "2",
+      "current_canonical_candidate": "article:15/clause:2",
+      "source_excerpt": "2. Các điều 11, 28 và 29 của Luật này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2025.",
+      "visual_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION",
+      "classification_evidence_note": "Visual review identifies quoted or nested amended legislation rather than a new primary-document structural instance; v1 conservatively retains the text as BODY.",
+      "post_correction_outcome": {
+        "status": "body_rejected",
+        "remaining_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION"
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-039",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "parser": "marker",
+      "page_index": 45,
+      "pdf_page_number_1_based": 46,
+      "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0013",
+      "kind": "clause",
+      "ordinal": "3",
+      "current_canonical_candidate": "article:15/clause:3",
+      "source_excerpt": "3. Trường hợp có quy định khác nhau về cùng một vấn đề giữa Luật này với luật, nghị quyết khác của Quốc hội thì áp dụng quy định của Luật này. Trừ trường hợp văn bản quy phạm pháp luật khác có quy định cơ chế, chính sách ưu đãi hoặc thuận l",
+      "visual_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION",
+      "classification_evidence_note": "Visual review identifies quoted or nested amended legislation rather than a new primary-document structural instance; v1 conservatively retains the text as BODY.",
+      "post_correction_outcome": {
+        "status": "body_rejected",
+        "remaining_classification": "QUOTED_NESTED_LEGISLATION_LIMITATION"
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-040",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "parser": "marker",
+      "page_index": 34,
+      "pdf_page_number_1_based": 35,
+      "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0011",
+      "kind": "generic_section",
+      "ordinal": "I",
+      "current_canonical_candidate": "appendix:3/generic:1",
+      "source_excerpt": "I. MÃ CƠ SỞ DỮ LIỆU ĐỊA LÝ QUY HOẠCH",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible Roman generic heading recovered below the deepest active formal SECTION, separating repeated Mục 1/Mục 2 outlines.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "appendix:3/section:2/generic:1",
+        "node_id": "node-000199",
+        "marker_anchor": {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0011",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-041",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "parser": "marker",
+      "page_index": 35,
+      "pdf_page_number_1_based": 36,
+      "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0008",
+      "kind": "generic_section",
+      "ordinal": "II",
+      "current_canonical_candidate": "appendix:3/generic:2",
+      "source_excerpt": "II. MÃ TÊN KIỂU ĐỐI TƯỢNG ĐỊA LÝ",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible Roman generic heading recovered below the deepest active formal SECTION, separating repeated Mục 1/Mục 2 outlines.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "appendix:3/section:2/generic:2",
+        "node_id": "node-000202",
+        "marker_anchor": {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0008",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 4
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-042",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "parser": "mineru",
+      "page_index": 34,
+      "pdf_page_number_1_based": 35,
+      "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0010",
+      "kind": "generic_section",
+      "ordinal": "I",
+      "current_canonical_candidate": "appendix:3/generic:1",
+      "source_excerpt": "I. MÃ CƠ SỞ DỮ LIỆU ĐỊA LÝ QUY HOẠCH",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible Roman generic heading recovered below the deepest active formal SECTION, separating repeated Mục 1/Mục 2 outlines.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "appendix:3/section:2/generic:1",
+        "node_id": "node-000203",
+        "marker_anchor": {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0010",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      }
+    },
+    {
+      "audit_record_id": "duplicate-38d1042-043",
+      "reviewed_head": "38d1042775ba60ef6097c068d0453bba29075a21",
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "parser": "mineru",
+      "page_index": 35,
+      "pdf_page_number_1_based": 36,
+      "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0005",
+      "kind": "generic_section",
+      "ordinal": "II",
+      "current_canonical_candidate": "appendix:3/generic:2",
+      "source_excerpt": "II. MÃ TÊN KIỂU ĐỐI TƯỢNG ĐỊA LÝ",
+      "visual_classification": "GENUINE_STRUCTURE_RECOVERED",
+      "classification_evidence_note": "Visible Roman generic heading recovered below the deepest active formal SECTION, separating repeated Mục 1/Mục 2 outlines.",
+      "post_correction_outcome": {
+        "status": "represented",
+        "kind": "generic_section",
+        "canonical_path": "appendix:3/section:2/generic:2",
+        "node_id": "node-000206",
+        "marker_anchor": {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0005",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 4
+        }
+      }
+    }
+  ]
+}

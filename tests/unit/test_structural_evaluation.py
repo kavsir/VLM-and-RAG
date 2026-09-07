@@ -119,6 +119,7 @@ def _annotation(
 ) -> StructuralReferenceAnnotation:
     context_paths = context_paths or set()
     nodes: list[dict[str, Any]] = []
+    instance_by_path: dict[str, str] = {}
     for kind, key, parent_path in specs:
         path = (
             f"{parent_path}/{_segment(kind, key)}"
@@ -131,9 +132,12 @@ def _annotation(
             StructuralNodeKind.POINT: OrdinalSystem.POINT,
             StructuralNodeKind.GENERIC_SECTION: OrdinalSystem.GENERIC_DECIMAL,
         }.get(kind, OrdinalSystem.FORMAL_CONTAINER)
+        instance_id = f"ref-test-{len(nodes):04d}"
         nodes.append(
             {
-                "reference_instance_id": f"ref-test-{len(nodes):04d}",
+                "reference_record_id": f"record-test-{len(nodes):04d}",
+                "reference_instance_id": instance_id,
+                "parent_reference_instance_id": instance_by_path.get(parent_path),
                 "page_index": 0,
                 "pdf_page_number_1_based": 1,
                 "kind": kind.value,
@@ -149,10 +153,11 @@ def _annotation(
                 "scored": path not in context_paths,
             }
         )
+        instance_by_path[path] = instance_id
     return StructuralReferenceAnnotation.model_validate(
         {
-            "annotation_schema_version": 3,
-            "annotation_version": "v3",
+            "annotation_schema_version": 4,
+            "annotation_version": "v4",
             "annotator": "codex",
             "annotator_type": "ai_visual_audit",
             "annotation_method": "visual_pdf_structural_reaudit",
@@ -195,13 +200,13 @@ def test_reference_annotations_have_required_scope_and_disclosed_identity() -> N
         assert annotation.prior_structural_extractor_exposure is True
         assert annotation.physical_ir_used_as_reference is False
         assert annotation.structural_extractor_output_used_as_reference is False
-        assert annotation.annotation_schema_version == 3
-        assert annotation.annotation_version == "v3"
+        assert annotation.annotation_schema_version == 4
+        assert annotation.annotation_version == "v4"
 
 
 def test_reference_reaudit_log_covers_all_selected_pages() -> None:
     audit = json.loads(
-        (ROOT / "data/structural_annotations/reference_structural_audit.v3.json").read_text(
+        (ROOT / "data/structural_annotations/reference_structural_audit.v4.json").read_text(
             encoding="utf-8"
         )
     )
@@ -225,6 +230,11 @@ def test_reference_reaudit_log_covers_all_selected_pages() -> None:
         "restored_genuine_node_records": 1,
         "v2_to_v3_changed_node_records": 1,
         "pages_reverified_for_v3": 46,
+        "v3_to_v4_visual_changes": 0,
+        "pages_reverified_for_v4": 46,
+        "annotation_record_count": 227,
+        "unique_structural_instance_ids": 211,
+        "parent_instance_assignments": 192,
     }
 
 
@@ -254,6 +264,7 @@ def test_reference_schema_accepts_duplicate_scored_path_with_unique_instance_ide
     raw["audited_pages"][0]["nodes"].append(deepcopy(scored))
     raw["audited_pages"][0]["nodes"][-1]["page_index"] = 0
     raw["audited_pages"][0]["nodes"][-1]["pdf_page_number_1_based"] = 1
+    raw["audited_pages"][0]["nodes"][-1]["reference_record_id"] += "-duplicate"
     raw["audited_pages"][0]["nodes"][-1]["reference_instance_id"] += "-duplicate"
     StructuralReferenceAnnotation.model_validate(raw)
 
@@ -264,7 +275,18 @@ def test_reference_schema_rejects_duplicate_reference_instance_identity() -> Non
     raw["audited_pages"][0]["nodes"].append(deepcopy(scored))
     raw["audited_pages"][0]["nodes"][-1]["page_index"] = 0
     raw["audited_pages"][0]["nodes"][-1]["pdf_page_number_1_based"] = 1
-    with pytest.raises(ValidationError, match="duplicate reference_instance_id"):
+    raw["audited_pages"][0]["nodes"][-1]["reference_record_id"] += "-duplicate"
+    with pytest.raises(ValidationError, match="duplicate scored reference_instance_id"):
+        StructuralReferenceAnnotation.model_validate(raw)
+
+
+def test_reference_schema_rejects_duplicate_record_identity() -> None:
+    raw = _first_reference_payload()
+    original = next(node for page in raw["audited_pages"] for node in page["nodes"])
+    node = deepcopy(original)
+    node["reference_instance_id"] += "-second-instance"
+    next(page for page in raw["audited_pages"] if page["nodes"])["nodes"].append(node)
+    with pytest.raises(ValidationError, match="duplicate reference_record_id"):
         StructuralReferenceAnnotation.model_validate(raw)
 
 
@@ -289,6 +311,18 @@ def test_reference_schema_rejects_ordinal_path_disagreement() -> None:
     )
     node["ordinal_key"] = "999"
     with pytest.raises(ValidationError, match="ordinal_key disagrees"):
+        StructuralReferenceAnnotation.model_validate(raw)
+
+
+def test_reference_unnumbered_node_requires_literal_unnumbered_segment() -> None:
+    raw = _annotation([(StructuralNodeKind.APPENDIX, "1", "document")]).model_dump(mode="json")
+    node = raw["audited_pages"][0]["nodes"][0]
+    node["ordinal_raw"] = None
+    node["ordinal_key"] = None
+    node["canonical_path"] = "appendix:unnumbered"
+    StructuralReferenceAnnotation.model_validate(raw)
+    node["canonical_path"] = "appendix:999"
+    with pytest.raises(ValidationError, match="ordinal_key disagrees with canonical path"):
         StructuralReferenceAnnotation.model_validate(raw)
 
 
@@ -346,6 +380,45 @@ def test_duplicate_reference_instances_are_counted_one_to_one() -> None:
     assert result["false_negative_trace"][0]["reference_instance_id"].startswith("ref-test-")
 
 
+def test_ambiguous_duplicate_title_pairing_is_id_order_independent() -> None:
+    article = (StructuralNodeKind.ARTICLE, "2", "document")
+    prediction_raw = _document([article]).model_dump(mode="json")
+    prediction_raw["nodes"][1]["title"] = "First visible title"
+    prediction = StructuralDocument.model_validate(prediction_raw)
+    annotation_raw = _annotation([article, article]).model_dump(mode="json")
+    references = annotation_raw["audited_pages"][0]["nodes"]
+    references[0]["title"] = "First visible title"
+    references[1]["title"] = "Second visible title"
+    annotation_a = StructuralReferenceAnnotation.model_validate(annotation_raw)
+    result_a = evaluate_structural_document(prediction, annotation_a)
+    references[0]["reference_instance_id"], references[1]["reference_instance_id"] = (
+        references[1]["reference_instance_id"],
+        references[0]["reference_instance_id"],
+    )
+    annotation_b = StructuralReferenceAnnotation.model_validate(annotation_raw)
+    result_b = evaluate_structural_document(prediction, annotation_b)
+    for metric_field in (
+        "node_metrics",
+        "node_metrics_by_kind",
+        "parent_edge_metrics",
+        "canonical_path_exact",
+    ):
+        assert result_a[metric_field] == result_b[metric_field]
+    assert (
+        result_a["title_normalized_exact"]
+        == result_b["title_normalized_exact"]
+        == {
+            "eligible": 0,
+            "exact": 0,
+            "rate": None,
+            "ambiguous_title_pairing_count": 1,
+        }
+    )
+    assert result_a["matching_diagnostics"][0]["reason"] == (
+        "ambiguous_duplicate_identity_title_excluded"
+    )
+
+
 @pytest.mark.parametrize(
     ("child_kind", "invalid_parent_kind"),
     [
@@ -369,30 +442,49 @@ def test_reference_schema_rejects_invalid_parent_relationship(
         "chapter:1" if invalid_parent_kind == StructuralNodeKind.CHAPTER else "chapter:1/section:1"
     )
     child["parent_canonical_path"] = parent_path
+    child["parent_reference_instance_id"] = next(
+        node["reference_instance_id"]
+        for node in raw["audited_pages"][0]["nodes"]
+        if node["canonical_path"] == parent_path
+    )
     child["canonical_path"] = f"{parent_path}/{_segment(child_kind, child['ordinal_key'])}"
     with pytest.raises(ValidationError, match="invalid reference hierarchy"):
         StructuralReferenceAnnotation.model_validate(raw)
 
 
 def test_reference_schema_rejects_phantom_parent() -> None:
-    raw = _first_reference_payload()
-    node = next(
-        node for page in raw["audited_pages"] for node in page["nodes"] if node["kind"] == "article"
-    )
+    raw = _annotation([(StructuralNodeKind.ARTICLE, "1", "document")]).model_dump(mode="json")
+    node = raw["audited_pages"][0]["nodes"][0]
     node["parent_canonical_path"] = "chapter:999"
     node["canonical_path"] = f"chapter:999/{node['canonical_path'].rsplit('/', 1)[-1]}"
-    with pytest.raises(ValidationError, match="phantom parent_canonical_path"):
+    node["parent_reference_instance_id"] = "ref-missing-parent"
+    with pytest.raises(ValidationError, match="phantom parent_reference_instance_id"):
+        StructuralReferenceAnnotation.model_validate(raw)
+
+
+def test_reference_schema_rejects_wrong_parent_instance() -> None:
+    specs = [
+        (StructuralNodeKind.ARTICLE, "1", "document"),
+        (StructuralNodeKind.ARTICLE, "2", "document"),
+        (StructuralNodeKind.CLAUSE, "1", "article:2"),
+    ]
+    raw = _annotation(specs).model_dump(mode="json")
+    article_one, _, clause = raw["audited_pages"][0]["nodes"]
+    clause["parent_reference_instance_id"] = article_one["reference_instance_id"]
+    with pytest.raises(
+        ValidationError, match="parent reference instance and canonical path disagree"
+    ):
         StructuralReferenceAnnotation.model_validate(raw)
 
 
 def test_reference_schema_rejects_contradictory_context_definition() -> None:
     raw = _annotation([(StructuralNodeKind.CHAPTER, "1", "document")]).model_dump(mode="json")
     node = deepcopy(raw["audited_pages"][0]["nodes"][0])
-    node["reference_instance_id"] += "-context"
-    node["ordinal_raw"] = "I"
+    node["reference_record_id"] += "-context"
+    node["title"] = "Conflicting title"
     node["scored"] = False
     raw["audited_pages"][0]["nodes"].append(node)
-    with pytest.raises(ValidationError, match="contradictory repeated reference context"):
+    with pytest.raises(ValidationError, match="contradictory repeated reference instance"):
         StructuralReferenceAnnotation.model_validate(raw)
 
 
@@ -516,7 +608,7 @@ def test_committed_outputs_are_strict_and_bound_to_issue_007_hashes() -> None:
         assert entry["equal"] is True
 
 
-def test_v3_restores_qd23_repeated_article_as_false_negative() -> None:
+def test_v4_preserves_qd23_repeated_article_as_false_negative() -> None:
     annotations = load_structural_annotations(ROOT)
     qd = annotations["qd-23-2008-ubnd-hanoi-vien-quy-hoach"]
     repeated = [
@@ -530,6 +622,15 @@ def test_v3_restores_qd23_repeated_article_as_false_negative() -> None:
         (3, "article:2"),
     ]
     assert len({node.reference_instance_id for node in repeated}) == 2
+    first_article_id = repeated[0].reference_instance_id
+    clauses = [
+        node
+        for page in qd.audited_pages
+        for node in page.nodes
+        if node.kind == StructuralNodeKind.CLAUSE and node.canonical_path.startswith("article:2/")
+    ]
+    assert clauses
+    assert {node.parent_reference_instance_id for node in clauses} == {first_article_id}
     evidence = _evidence()
     restored_false_negatives = [
         item
@@ -546,8 +647,13 @@ def test_retained_tt04_stack_and_toc_corrections_are_measured() -> None:
     evidence = _evidence()
     duplicate_audit = evidence["duplicate_rejection_audit"]
     assert duplicate_audit["after_fix"]["total"] < duplicate_audit["before_fix"]["total"]
-    assert duplicate_audit["after_fix"]["by_document"]["tt-04-2023-bkhdt-so-do-ban-do"] == 4
+    assert "tt-04-2023-bkhdt-so-do-ban-do" not in duplicate_audit["after_fix"]["by_document"]
     assert "tt-04-2026-bxd-pl2-dinh-muc" not in duplicate_audit["after_fix"]["by_document"]
+    assert duplicate_audit["after_fix"]["total"] == 8
+    assert duplicate_audit["remaining_classification"] == {
+        "QUOTED_NESTED_LEGISLATION_LIMITATION": 8,
+        "GENUINE_STRUCTURE_RECOVERED": 0,
+    }
     assert evidence["toc_corpus_audit"]["rejected_entries"] == 15
     for parser in ("marker", "mineru"):
         path = ROOT / "data/structural_ir/tt_04_2023_bkhdt_so_do_ban_do" / f"{parser}.v1.json"
@@ -566,6 +672,29 @@ def test_retained_tt04_stack_and_toc_corrections_are_measured() -> None:
         )
 
 
+def test_historical_duplicate_audit_is_complete_and_current_remainder_is_classified() -> None:
+    audit = json.loads(
+        (ROOT / "data/benchmarks/structural_duplicate_audit.38d1042.v1.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert audit["summary"] == {
+        "total": 43,
+        "by_classification": {
+            "GENUINE_STRUCTURE_RECOVERED": 35,
+            "QUOTED_NESTED_LEGISLATION_LIMITATION": 8,
+        },
+    }
+    recovered = [
+        item
+        for item in audit["records"]
+        if item["visual_classification"] == "GENUINE_STRUCTURE_RECOVERED"
+    ]
+    assert all(item["post_correction_outcome"]["status"] == "represented" for item in recovered)
+    evidence = _evidence()
+    assert evidence["duplicate_rejection_audit"]["after_fix"]["total"] == 8
+
+
 def test_structural_evidence_and_report_reproduce_offline() -> None:
     evidence = _evidence()
     verify_committed_structural_evidence(ROOT, evidence)
@@ -577,9 +706,9 @@ def test_structural_evidence_and_report_reproduce_offline() -> None:
 
 def test_machine_evidence_records_exact_partition_and_metric_formulas() -> None:
     evidence = _evidence()
-    assert evidence["validation_schema_version"] == 3
-    assert evidence["reference_annotation_schema_version"] == 3
-    assert evidence["reference_annotation_version"] == "v3"
+    assert evidence["validation_schema_version"] == 4
+    assert evidence["reference_annotation_schema_version"] == 4
+    assert evidence["reference_annotation_version"] == "v4"
     assert evidence["available_pairs"] == 10
     assert evidence["all_deterministic"] is True
     aggregate = evidence["aggregate"]

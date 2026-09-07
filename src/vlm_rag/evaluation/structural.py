@@ -91,6 +91,10 @@ _REFERENCE_ALLOWED_PARENTS: dict[StructuralNodeKind, frozenset[StructuralNodeKin
     StructuralNodeKind.GENERIC_SECTION: frozenset(
         {
             None,
+            StructuralNodeKind.PART,
+            StructuralNodeKind.CHAPTER,
+            StructuralNodeKind.SECTION,
+            StructuralNodeKind.SUBSECTION,
             StructuralNodeKind.APPENDIX,
             StructuralNodeKind.ARTICLE,
             StructuralNodeKind.CLAUSE,
@@ -103,7 +107,11 @@ _REFERENCE_ALLOWED_PARENTS: dict[StructuralNodeKind, frozenset[StructuralNodeKin
 class StructuralReferenceNode(StructuralEvaluationModel):
     """One PDF-based structural marker, independent from parser block identity."""
 
+    reference_record_id: str = Field(min_length=1, pattern=r"^[a-z0-9][a-z0-9._:-]+$")
     reference_instance_id: str = Field(min_length=1, pattern=r"^[a-z0-9][a-z0-9._:-]+$")
+    parent_reference_instance_id: str | None = Field(
+        default=None, pattern=r"^[a-z0-9][a-z0-9._:-]+$"
+    )
     page_index: NonNegativeInt
     pdf_page_number_1_based: int = Field(ge=1)
     kind: StructuralNodeKind
@@ -170,7 +178,8 @@ class StructuralReferenceNode(StructuralEvaluationModel):
         match = re.fullmatch(rf"{expected_name}:(?P<value>[^/~]+)", segment)
         if match is None:
             raise ValueError("canonical path segment does not match reference kind")
-        if self.ordinal_key is not None and match.group("value") != self.ordinal_key:
+        expected_segment_value = self.ordinal_key or "unnumbered"
+        if match.group("value") != expected_segment_value:
             raise ValueError("reference ordinal_key disagrees with canonical path")
         expected_path = (
             segment
@@ -179,6 +188,12 @@ class StructuralReferenceNode(StructuralEvaluationModel):
         )
         if self.canonical_path != expected_path:
             raise ValueError("canonical_path must exactly extend parent_canonical_path")
+        if (self.parent_canonical_path == "document") != (
+            self.parent_reference_instance_id is None
+        ):
+            raise ValueError(
+                "parent_reference_instance_id must be null exactly for document-root children"
+            )
         return self
 
 
@@ -209,8 +224,8 @@ class StructuralReferencePage(StructuralEvaluationModel):
 class StructuralReferenceAnnotation(StructuralEvaluationModel):
     """Versioned AI visual structural reference annotation for one PDF."""
 
-    annotation_schema_version: Literal[3]
-    annotation_version: Literal["v3"]
+    annotation_schema_version: Literal[4]
+    annotation_version: Literal["v4"]
     annotator: str = Field(min_length=1)
     annotator_type: Literal["ai_visual_audit"]
     annotation_method: Literal["visual_pdf_structural_reaudit"]
@@ -242,46 +257,60 @@ class StructuralReferenceAnnotation(StructuralEvaluationModel):
         pages = [page.page_index for page in self.audited_pages]
         if pages != sorted(set(pages)):
             raise ValueError("audited page indices must be unique and sorted")
-        definitions: dict[
-            str, tuple[StructuralNodeKind, str | None, str | None, OrdinalSystem, str]
-        ] = {}
-        instance_ids: set[str] = set()
+        definitions: dict[str, tuple[object, ...]] = {}
+        instances: dict[str, StructuralReferenceNode] = {}
+        record_ids: set[str] = set()
+        scored_instance_ids: set[str] = set()
         for page in self.audited_pages:
             for node in page.nodes:
-                if node.reference_instance_id in instance_ids:
-                    raise ValueError("duplicate reference_instance_id")
-                instance_ids.add(node.reference_instance_id)
+                if node.reference_record_id in record_ids:
+                    raise ValueError("duplicate reference_record_id")
+                record_ids.add(node.reference_record_id)
                 definition = (
                     node.kind,
                     node.ordinal_raw,
                     node.ordinal_key,
                     node.ordinal_system,
+                    node.marker_text,
+                    node.title,
+                    node.canonical_path,
                     node.parent_canonical_path,
+                    node.parent_reference_instance_id,
                 )
-                prior = definitions.setdefault(node.canonical_path, definition)
+                prior = definitions.setdefault(node.reference_instance_id, definition)
                 if prior != definition:
-                    raise ValueError("contradictory repeated reference context definition")
-        for path, (kind, _, _, _, parent_path) in definitions.items():
-            if parent_path == "document":
+                    raise ValueError("contradictory repeated reference instance definition")
+                instances.setdefault(node.reference_instance_id, node)
+                if node.scored:
+                    if node.reference_instance_id in scored_instance_ids:
+                        raise ValueError("duplicate scored reference_instance_id")
+                    scored_instance_ids.add(node.reference_instance_id)
+        for instance_id, node in instances.items():
+            parent_id = node.parent_reference_instance_id
+            parent = instances.get(parent_id or "")
+            if parent_id is None:
                 parent_kind = None
+            elif parent is None:
+                raise ValueError(f"phantom parent_reference_instance_id: {parent_id}")
             else:
-                parent_definition = definitions.get(parent_path)
-                if parent_definition is None:
-                    raise ValueError(f"phantom parent_canonical_path: {parent_path}")
-                parent_kind = parent_definition[0]
-            if parent_kind not in _REFERENCE_ALLOWED_PARENTS[kind]:
+                parent_kind = parent.kind
+                if parent.canonical_path != node.parent_canonical_path:
+                    raise ValueError("parent reference instance and canonical path disagree")
+            if parent_kind not in _REFERENCE_ALLOWED_PARENTS[node.kind]:
                 parent_name = "document" if parent_kind is None else parent_kind.value
-                raise ValueError(f"invalid reference hierarchy: {kind.value} under {parent_name}")
-            visited = {path}
-            cursor = parent_path
-            while cursor != "document":
+                raise ValueError(
+                    f"invalid reference hierarchy: {node.kind.value} under {parent_name}"
+                )
+            visited = {instance_id}
+            cursor = parent_id
+            while cursor is not None:
                 if cursor in visited:
                     raise ValueError("cycle in reference hierarchy")
                 visited.add(cursor)
-                parent = definitions.get(cursor)
-                if parent is None:
-                    break
-                cursor = parent[4]
+                cursor_node = instances.get(cursor)
+                if cursor_node is None:
+                    raise ValueError(f"phantom parent_reference_instance_id: {cursor}")
+                cursor = cursor_node.parent_reference_instance_id
         return self
 
 
@@ -294,12 +323,12 @@ def load_structural_annotation(path: Path) -> StructuralReferenceAnnotation:
 
 
 def load_structural_annotations(root: Path) -> dict[str, StructuralReferenceAnnotation]:
-    """Load and identity-index every authoritative v3 structural reference annotation."""
+    """Load and identity-index every authoritative v4 structural reference annotation."""
     directory = root / "data/structural_annotations"
     paths = [
         path
-        for path in sorted(directory.glob("*.v3.json"))
-        if path.name != "reference_structural_audit.v3.json"
+        for path in sorted(directory.glob("*.v4.json"))
+        if path.name != "reference_structural_audit.v4.json"
     ]
     annotations = [load_structural_annotation(path) for path in paths]
     result = {annotation.document_id: annotation for annotation in annotations}
@@ -344,6 +373,7 @@ def _hierarchy_aware_matches(
     list[StructuralReferenceNode],
     list[StructuralNode],
     list[dict[str, Any]],
+    set[int],
 ]:
     """Match exact page/kind/ordinal groups; duplicate groups require exact parent context."""
     reference_groups: dict[tuple[int, str, str | None], list[StructuralReferenceNode]] = (
@@ -364,6 +394,7 @@ def _hierarchy_aware_matches(
     unmatched_references: list[StructuralReferenceNode] = []
     unmatched_predictions: list[StructuralNode] = []
     ambiguity: list[dict[str, Any]] = []
+    ambiguous_title_prediction_ids: set[int] = set()
     group_keys = reference_groups.keys() | prediction_groups.keys()
     for key in sorted(group_keys, key=lambda item: (item[0], item[1], item[2] or "")):
         refs = reference_groups.get(key, [])
@@ -390,11 +421,24 @@ def _hierarchy_aware_matches(
             ].append(prediction)
         exact_matches: list[tuple[StructuralReferenceNode, StructuralNode]] = []
         for identity in sorted(exact_reference_groups.keys() & exact_prediction_groups.keys()):
-            identity_refs = sorted(
-                exact_reference_groups[identity], key=lambda item: item.reference_instance_id
-            )
+            identity_refs = exact_reference_groups[identity]
             identity_preds = exact_prediction_groups[identity]
-            exact_matches.extend(zip(identity_refs, identity_preds, strict=False))
+            identity_matches = list(zip(identity_refs, identity_preds, strict=False))
+            exact_matches.extend(identity_matches)
+            if len(identity_refs) > 1 or len(identity_preds) > 1:
+                ambiguous_title_prediction_ids.update(
+                    id(prediction) for _, prediction in identity_matches
+                )
+                ambiguity.append(
+                    {
+                        "page_index": key[0],
+                        "kind": key[1],
+                        "ordinal_key": key[2],
+                        "reference_candidates": len(identity_refs),
+                        "prediction_candidates": len(identity_preds),
+                        "reason": "ambiguous_duplicate_identity_title_excluded",
+                    }
+                )
         if exact_matches:
             matched_reference_ids = {id(reference) for reference, _ in exact_matches}
             matched_prediction_ids = {id(prediction) for _, prediction in exact_matches}
@@ -461,7 +505,13 @@ def _hierarchy_aware_matches(
                         "reason": "ambiguous_duplicate_group_unmatched",
                     }
                 )
-    return matches, unmatched_references, unmatched_predictions, ambiguity
+    return (
+        matches,
+        unmatched_references,
+        unmatched_predictions,
+        ambiguity,
+        ambiguous_title_prediction_ids,
+    )
 
 
 def _normalized_title(value: str) -> str:
@@ -497,9 +547,13 @@ def evaluate_structural_document(
         node for node in raw_predictions if node.canonical_path not in context_only_paths
     ]
     predicted_by_id = {node.id: node for node in document.nodes}
-    matches, unmatched_references, unmatched_predictions, matching_ambiguity = (
-        _hierarchy_aware_matches(references, predictions, predicted_by_id)
-    )
+    (
+        matches,
+        unmatched_references,
+        unmatched_predictions,
+        matching_ambiguity,
+        ambiguous_title_prediction_ids,
+    ) = _hierarchy_aware_matches(references, predictions, predicted_by_id)
 
     per_kind: dict[str, dict[str, int | float | None]] = {}
     for kind in StructuralNodeKind:
@@ -523,7 +577,7 @@ def evaluate_structural_document(
     for reference, prediction in matches:
         if prediction.canonical_path == reference.canonical_path:
             path_exact += 1
-        if reference.title is not None:
+        if reference.title is not None and id(prediction) not in ambiguous_title_prediction_ids:
             title_total += 1
             if prediction.title is not None and _normalized_title(
                 prediction.title
@@ -569,7 +623,9 @@ def evaluate_structural_document(
         {
             "document_id": document.document_id,
             "parser": parser,
+            "reference_record_id": reference.reference_record_id,
             "reference_instance_id": reference.reference_instance_id,
+            "parent_reference_instance_id": reference.parent_reference_instance_id,
             "page_index": reference.page_index,
             "pdf_page_number_1_based": reference.pdf_page_number_1_based,
             "kind": reference.kind.value,
@@ -600,6 +656,7 @@ def evaluate_structural_document(
             "eligible": title_total,
             "exact": title_exact,
             "rate": title_exact / title_total if title_total else None,
+            "ambiguous_title_pairing_count": len(ambiguous_title_prediction_ids),
         },
         "matching_diagnostics": matching_ambiguity,
         "false_positive_trace": false_positives,
@@ -630,6 +687,9 @@ def _aggregate_evaluation(results: list[dict[str, Any]]) -> dict[str, Any]:
     path_exact = sum(int(result["canonical_path_exact"]["exact"]) for result in results)
     title_eligible = sum(int(result["title_normalized_exact"]["eligible"]) for result in results)
     title_exact = sum(int(result["title_normalized_exact"]["exact"]) for result in results)
+    ambiguous_title = sum(
+        int(result["title_normalized_exact"]["ambiguous_title_pairing_count"]) for result in results
+    )
     return {
         "node_metrics": _sum_metrics(results, "node_metrics"),
         "node_metrics_by_kind": by_kind,
@@ -643,6 +703,7 @@ def _aggregate_evaluation(results: list[dict[str, Any]]) -> dict[str, Any]:
             "eligible": title_eligible,
             "exact": title_exact,
             "rate": title_exact / title_eligible if title_eligible else None,
+            "ambiguous_title_pairing_count": ambiguous_title,
         },
     }
 
@@ -810,14 +871,27 @@ def collect_structural_ir_v1_validation(root: Path) -> dict[str, Any]:
         raise ValueError("physical validation evidence has no entries")
     annotations = load_structural_annotations(root)
     reference_audit_relative = Path(
-        "data/structural_annotations/reference_structural_audit.v3.json"
+        "data/structural_annotations/reference_structural_audit.v4.json"
     )
     reference_audit_bytes = (root / reference_audit_relative).read_bytes()
     reference_audit = _read_json_object(root / reference_audit_relative)
     if reference_audit.get("page_count") != sum(
         len(annotation.audited_pages) for annotation in annotations.values()
     ):
-        raise ValueError("reference audit page count does not match v3 annotations")
+        raise ValueError("reference audit page count does not match v4 annotations")
+    historical_duplicate_relative = Path(
+        "data/benchmarks/structural_duplicate_audit.38d1042.v1.json"
+    )
+    historical_duplicate_bytes = (root / historical_duplicate_relative).read_bytes()
+    historical_duplicate_audit = _read_json_object(root / historical_duplicate_relative)
+    if historical_duplicate_audit.get("summary") != {
+        "total": 43,
+        "by_classification": {
+            "GENUINE_STRUCTURE_RECOVERED": 35,
+            "QUOTED_NESTED_LEGISLATION_LIMITATION": 8,
+        },
+    }:
+        raise ValueError("historical duplicate audit does not preserve the reviewed 35/8 split")
     output_entries: list[dict[str, Any]] = []
     evaluations: list[dict[str, Any]] = []
     documents: dict[tuple[str, str], StructuralDocument] = {}
@@ -967,18 +1041,64 @@ def collect_structural_ir_v1_validation(root: Path) -> dict[str, Any]:
         if item["category"] == "line_start_prose_reference_rejected"
     ]
     duplicate_after = _duplicate_rejection_summary(rejection_records)
+    limitation_records = {
+        (
+            item["document_id"],
+            item["parser"],
+            item["page_index"],
+            item["kind"],
+            item["ordinal"],
+            item["source_excerpt"],
+        ): item
+        for item in historical_duplicate_audit["records"]
+        if item["visual_classification"] == "QUOTED_NESTED_LEGISLATION_LIMITATION"
+    }
+    current_duplicate_records = [
+        item
+        for item in rejection_records
+        if item["category"] == "duplicate_structural_key_rejected"
+    ]
+    classified_current_duplicates: list[dict[str, Any]] = []
+    for item in current_duplicate_records:
+        key = (
+            item["document_id"],
+            item["parser"],
+            item["page_index"],
+            item["candidate_kind"],
+            item["candidate_ordinal"],
+            item["excerpt"],
+        )
+        historical_record = limitation_records.get(key)
+        if historical_record is None:
+            raise ValueError("current duplicate lacks an evidence-backed accepted classification")
+        classified_current_duplicates.append(
+            {
+                **item,
+                "evidence_classification": historical_record["visual_classification"],
+                "classification_evidence_note": historical_record["classification_evidence_note"],
+                "historical_audit_record_id": historical_record["audit_record_id"],
+            }
+        )
+    all_reference_nodes = [
+        node
+        for annotation in annotations.values()
+        for page in annotation.audited_pages
+        for node in page.nodes
+    ]
     return {
-        "validation_schema_version": 3,
-        "validation_protocol": "structural_ir_v1_retained_corpus_reference_v3",
+        "validation_schema_version": 4,
+        "validation_protocol": "structural_ir_v1_retained_corpus_reference_v4",
         "structural_ir_version": 1,
         "profile": "vi_legal_planning_v1",
-        "reference_annotation_schema_version": 3,
-        "reference_annotation_version": "v3",
+        "reference_annotation_schema_version": 4,
+        "reference_annotation_version": "v4",
         "extractor_inputs": "PhysicalDocumentV1 only; no raw parser fields or reference labels",
         "matching_algorithm": (
             "Candidates require exact audited page, kind, and ordinal_key. Singleton groups match "
             "directly. Multiplicity groups match only uniquely resolvable exact parent canonical paths; "
-            "remaining ambiguity is left unmatched. Matching is one-to-one and uses no occurrence shift, "
+            "remaining ambiguity is left unmatched. Indistinguishable exact duplicate identities may "
+            "contribute conservative detection TP/FN counts, but their title pairs are excluded. Matching "
+            "is one-to-one and uses no occurrence shift, "
             "fuzzy text, geometry, parser IDs, or hidden reference labels. Predictions outside audited "
             "pages and context-only ancestor paths are excluded. Reference instance IDs distinguish "
             "visually genuine duplicate references but never participate in prediction identity."
@@ -997,7 +1117,8 @@ def collect_structural_ir_v1_validation(root: Path) -> dict[str, Any]:
             ),
             "canonical_path_exact_rate": "exact full paths / matched scored nodes",
             "title_normalized_exact_rate": (
-                "casefolded whitespace-collapsed exact titles / matched nodes with reference title"
+                "casefolded whitespace-collapsed exact titles / uniquely paired matched nodes with "
+                "reference title; ambiguous duplicate identity pairings are excluded"
             ),
             "cross_parser_jaccard": (
                 "intersection / union of corrected canonical path identities; null for an empty union"
@@ -1015,6 +1136,18 @@ def collect_structural_ir_v1_validation(root: Path) -> dict[str, Any]:
                 for annotation in annotations.values()
                 for page in annotation.audited_pages
                 for node in page.nodes
+            ),
+            "annotation_records": len(all_reference_nodes),
+            "unique_structural_instance_ids": len(
+                {
+                    (annotation.document_id, node.reference_instance_id)
+                    for annotation in annotations.values()
+                    for page in annotation.audited_pages
+                    for node in page.nodes
+                }
+            ),
+            "parent_instance_assignments": sum(
+                node.parent_reference_instance_id is not None for node in all_reference_nodes
             ),
             "unique_scored_nodes": unique_scored_nodes,
             "unique_scored_canonical_paths": unique_scored_canonical_paths,
@@ -1099,18 +1232,23 @@ def collect_structural_ir_v1_validation(root: Path) -> dict[str, Any]:
             ],
         },
         "duplicate_rejection_audit": {
-            "before_fix_head": "ec1970ffbb91f409f01f3e3548b29e1981a5f8bd",
+            "historical_review": {
+                "reviewed_head": historical_duplicate_audit["reviewed_head"],
+                "artifact_path": historical_duplicate_relative.as_posix(),
+                "sha256": _sha(historical_duplicate_bytes),
+                **dict(historical_duplicate_audit["summary"]),
+            },
             "before_fix": duplicate_before,
             "after_fix": duplicate_after,
+            "current_records": classified_current_duplicates,
             "remaining_classification": {
-                "unresolved": duplicate_after["total"],
+                "QUOTED_NESTED_LEGISLATION_LIMITATION": duplicate_after["total"],
+                "GENUINE_STRUCTURE_RECOVERED": 0,
             },
             "tt04_2023_root_cause": (
-                "Long no-separator APPENDIX headings were rejected, leaving Article 14 / Clause 13 "
-                "active; appendix Roman, decimal, and letter outlines were then assigned to stale legal "
-                "state. The correction recognizes the appendix boundary and models its evidenced outline "
-                "as nested generic sections. Remaining duplicates are not assigned a causal category "
-                "without page-level visual evidence."
+                "Repeated Roman outlines below Mục 1 and Mục 2 collided because GENERIC_SECTION did not "
+                "use the deepest active formal container. The corrected paths include distinct SECTION "
+                "parents for all four historical records."
             ),
         },
         "matching_ambiguities": matching_ambiguities,
@@ -1148,6 +1286,10 @@ def verify_committed_structural_evidence(root: Path, evidence: dict[str, Any]) -
     audit_payload = (root / audit["artifact_path"]).read_bytes()
     if _sha(audit_payload) != audit["sha256"]:
         raise ValueError("reference structural audit artifact changed")
+    duplicate_audit = evidence["duplicate_rejection_audit"]["historical_review"]
+    duplicate_audit_payload = (root / duplicate_audit["artifact_path"]).read_bytes()
+    if _sha(duplicate_audit_payload) != duplicate_audit["sha256"]:
+        raise ValueError("historical duplicate audit artifact changed")
     evaluations: list[dict[str, Any]] = []
     for entry in evidence["entries"]:
         path = root / entry["output_path"]
@@ -1202,7 +1344,7 @@ def render_structural_ir_v1_validation(evidence: dict[str, Any]) -> str:
         "",
         "## Reference annotation policy",
         "",
-        f"Reference v3/schema 3 is an AI visual PDF structural re-audit of {evidence['reference_scope']['pages']} pages across {evidence['reference_scope']['documents']} PDFs and {evidence['reference_scope']['unique_scored_nodes']} scored reference instances over {evidence['reference_scope']['unique_scored_canonical_paths']} canonical paths. Prior Physical IR and Structural extractor exposure is disclosed; neither Physical IR nor extractor output was used as reference truth.",
+        f"Reference v4/schema 4 is an AI visual PDF structural re-audit of {evidence['reference_scope']['pages']} pages across {evidence['reference_scope']['documents']} PDFs and {evidence['reference_scope']['unique_scored_nodes']} scored structural instances over {evidence['reference_scope']['unique_scored_canonical_paths']} canonical paths. A stable reference_instance_id identifies a visual structural instance, reference_record_id identifies each page-local annotation record, and parent_reference_instance_id binds the exact visual parent. Prior Physical IR and Structural extractor exposure is disclosed; neither Physical IR nor extractor output was used as reference truth.",
         "",
         f"The machine-readable re-audit log is `{evidence['reference_reaudit']['artifact_path']}` (SHA-256 `{evidence['reference_reaudit']['sha256']}`), with {evidence['reference_reaudit']['corrected_point_ordinal_records']} retained point-ordinal corrections and {evidence['reference_reaudit']['restored_genuine_node_records']} genuine node restored after v2 incorrectly removed it to accommodate extractor limitations.",
         "",
@@ -1212,11 +1354,11 @@ def render_structural_ir_v1_validation(evidence: dict[str, Any]) -> str:
         "",
         "## Legal marker rules",
         "",
-        "Line-start PHẦN, CHƯƠNG, MỤC, TIỂU MỤC, ĐIỀU, and PHỤ LỤC markers take precedence. Roman conversion and raw-to-key validation are strict and kind-aware at extractor and schema boundaries; Vietnamese POINT letters remain letters. TOC leader events and line-start prose citations are suppressed before canonical-key reservation while their text remains BODY, independently of parser TITLE classification.",
+        "Line-start PHẦN, CHƯƠNG, MỤC, TIỂU MỤC, ĐIỀU, and PHỤ LỤC markers take precedence. Roman conversion and raw-to-key validation are strict and kind-aware at extractor and schema boundaries; unnumbered nodes use the literal `unnumbered` final path segment and Vietnamese POINT letters remain letters. Explicit TOCs suppress only locally contiguous entries ending in dotted page leaders; a real formal body heading terminates the region. Multi-page continuation suppression remains event-scoped.",
         "",
         "## Planning generic rules",
         "",
-        "Heading-like Roman and decimal outlines become GENERIC_SECTION nodes conservatively. Within an evidenced non-legal appendix outline, decimal and letter children may become generic sections and close incompatible stale ARTICLE/CLAUSE state. Outside compatible generic or legal context, letter lists remain body text.",
+        "Heading-like Roman and decimal outlines become GENERIC_SECTION nodes conservatively. Generic nodes select an exact numeric prefix, then a lower generic level, then the deepest compatible formal container. An active planning outline takes precedence over stale legal CLAUSE/POINT state; only a sequential legal clause marker re-enters legal context. Corpus-evidenced inline boundaries recover flattened formal headings and the Law 112 second-clause list with exact, gap-free source offsets.",
         "",
         "## Content anchoring coverage",
         "",
@@ -1275,7 +1417,7 @@ def render_structural_ir_v1_validation(evidence: dict[str, Any]) -> str:
             "",
             f"Canonical-path exact rate: {_format_optional_metric(path['rate'])} ({path['exact']}/{path['matched_nodes']} matched nodes).",
             "",
-            f"Whitespace/case-normalized exact title rate: {_format_optional_metric(title['rate'])} ({title['exact']}/{title['eligible']}). No semantic title similarity is used.",
+            f"Whitespace/case-normalized exact title rate: {_format_optional_metric(title['rate'])} ({title['exact']}/{title['eligible']}); {title['ambiguous_title_pairing_count']} indistinguishable duplicate pairings are excluded. Reference IDs never choose a metric-bearing title pairing, and no semantic title similarity is used.",
             "",
             "## Cross-parser agreement",
             "",
@@ -1311,13 +1453,13 @@ def render_structural_ir_v1_validation(evidence: dict[str, Any]) -> str:
             "",
             f"Rejected candidate counts: `{json.dumps(evidence['unresolved_candidate_diagnostics']['counts'], ensure_ascii=False, sort_keys=True)}`.",
             "",
-            f"Corpus TOC audit rejected {evidence['toc_corpus_audit']['rejected_entries']} marker-shaped leader events across {len(evidence['toc_corpus_audit']['parser_page_instances'])} parser/page instances before key reservation; no page is suppressed wholesale. Line-start prose audit rejected {evidence['prose_false_positive_audit']['rejected_candidates']} candidates. Duplicate-key rejections changed from {evidence['duplicate_rejection_audit']['before_fix']['total']} before the stack correction to {evidence['duplicate_rejection_audit']['after_fix']['total']} after it; unclassified remainder stays `unresolved`. Outside-clause letter items left as BODY total {evidence['stale_context_audit']['letter_items_outside_legal_clause_left_as_body']}.",
+            f"Corpus TOC audit rejected {evidence['toc_corpus_audit']['rejected_entries']} marker-shaped entry events across {len(evidence['toc_corpus_audit']['parser_page_instances'])} parser/page instances before key reservation; no page is suppressed wholesale. Line-start prose audit rejected {evidence['prose_false_positive_audit']['rejected_candidates']} candidates. The committed historical audit at `{evidence['duplicate_rejection_audit']['historical_review']['artifact_path']}` (SHA-256 `{evidence['duplicate_rejection_audit']['historical_review']['sha256']}`) covers all 43 diagnostics at 38d1042: 35 genuine structures are recovered and 8 quoted/nested-legislation limitations remain BODY. Current duplicate rejections total {evidence['duplicate_rejection_audit']['after_fix']['total']}, with zero representable genuine structures unresolved. Outside-clause letter items left as BODY total {evidence['stale_context_audit']['letter_items_outside_legal_clause_left_as_body']}.",
             "",
             f"Canonical occurrence suffixes after regeneration: {evidence['canonical_path_correction']['regenerated_suffix_paths']}. Duplicate structural keys are rejected to BODY with a machine diagnostic.",
             "",
             "## Limitations",
             "",
-            "Reference v2 was invalidated because it removed a visually genuine repeated QD23 Article 2 to fit extractor capability. Reference v3 restores that PDF-based instance with a parser-independent reference instance ID; if unsupported it remains a false negative. The reference is a partial-page AI visual re-audit, not human ground truth, and prior system exposure is disclosed. Combined metrics are representation-weighted. Matching has no fuzzy recovery. APPENDIX is terminal in profile v1. Structural IR v1 still rejects indistinguishable duplicate canonical keys rather than inventing occurrence suffixes.",
+            "Reference v4 changes no visual truth from v3. It separates structural-instance identity from page-record identity and explicitly binds QD23 Clause 1-4 descendants to the first Article 2 instance; the second Article 2 remains a distinct scored instance and false negative when unsupported. Parent-edge scoring remains canonical-path based because predictions have no reference identity. The reference is a partial-page AI visual re-audit, not human ground truth. Combined metrics are representation-weighted. Matching has no fuzzy recovery. APPENDIX is terminal in profile v1. Eight quoted/nested-legislation duplicates remain a conservative v1 limitation; no occurrence suffixes are invented.",
             "",
             "## Evidence for #009 Selective VLM",
             "",

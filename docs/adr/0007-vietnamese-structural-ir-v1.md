@@ -36,13 +36,16 @@ Unclassified front matter remains direct root content; no speculative preamble n
 Legal levels may be omitted. Articles can be children of the document, part, chapter, section,
 subsection, or appendix. Clauses require an article and points require a clause. Appendices are
 document-level. Corpus evidence also requires appendix-contained parts and sections. Generic outline
-nodes may nest below an appendix, another generic node, or an active article/clause when a planning
-outline is physically embedded in a decision article.
+nodes may nest below an appendix, another generic node, an active article/clause when a planning
+outline is physically embedded in a decision article, or the deepest active compatible formal
+container (`SUBSECTION`, `SECTION`, `CHAPTER`, then `PART`).
 
 State transitions are deterministic. A new legal sibling closes its descendants; an appendix closes
-the legal and generic stacks. A generic child nested inside a legal ARTICLE/CLAUSE preserves that
-legal context. A generic outline selected under APPENDIX or another non-legal generic parent closes
-incompatible stale ARTICLE/CLAUSE/POINT state before later numbering is interpreted.
+the legal and generic stacks. A generic child may be rooted under a legal ARTICLE/CLAUSE, but once a
+planning outline is active its decimal and letter children take precedence over stale legal
+CLAUSE/POINT state. A sequential Arabic clause marker may explicitly re-enter the active article. A
+generic outline selected under a formal non-legal container closes incompatible stale
+ARTICLE/CLAUSE/POINT state.
 
 ### Deterministic identity and path
 
@@ -56,6 +59,8 @@ ordinals preserve lowercase amendment suffixes, POINT ordinals preserve Vietname
 conversion. Non-canonical Roman spellings such as `IIII`, `IC`, `VX`, `IIV`, and `MMMM` are rejected.
 
 Canonical paths use controlled kind/ordinal segments and never raw parser IDs or occurrence suffixes.
+A non-root node without an ordinal must end in the exact `<kind>:unnumbered` segment (or
+`generic:unnumbered`); marker/title text cannot invent another value.
 A duplicate parent/kind/ordinal key is rejected before node creation, retained as BODY, and recorded as
 `duplicate_structural_key_rejected`; the extractor does not invent `~2` identities. A path represents
 the recovered hierarchical key for that exact physical input; cross-parser equality is measured rather
@@ -93,29 +98,36 @@ continuation is accepted only for a physical title or a short uppercase heading-
 The rules are anchored at line start. Embedded phrases such as “theo Điều 3”, “tại điểm a khoản 2”,
 or “thực hiện Chương II” do not create nodes. Formal no-separator prose is rejected before
 parser TITLE evidence is considered; a no-separator container title requires uppercase structural
-form. An explicit `MỤC LỤC` starts a bounded TOC event range ending at the last leader/page-number
-entry on that page. Without the explicit heading, only individual strong marker-shaped leader events
-are suppressed. TOC text remains BODY and cannot reserve a key; later same-page body structure is
-still eligible. No fuzzy edit distance or synthetic confidence is used.
+form. An explicit `MỤC LỤC` starts a locally contiguous sequence of entries ending in dotted page
+leaders. Pending fragments are committed only when a nearby entry terminator exists, the search is
+bounded, and a genuine formal heading without a leader terminates the region. Without the explicit
+heading, only individual strong marker-shaped leader events are suppressed, including multi-page TOC
+continuations. TOC text remains BODY and cannot reserve a key; later same-page body structure is still
+eligible. Corpus-evidenced inline segmentation may recover combined formal headings or a flattened
+second legal clause/list, while retaining original half-open offsets with no gaps or overlap.
 
 APPENDIX is terminal in profile v1. The retained corpus does not require returning from an appendix to
 the outer legal hierarchy; a future profile must add evidence for such a transition rather than infer it.
 
 ### Evaluation and reproducibility
 
-Reference annotation v3/schema 3 is an AI visual PDF structural re-audit, not human ground truth. It
+Reference annotation v4/schema 4 is an AI visual PDF structural re-audit, not human ground truth. It
 discloses prior Physical IR and Structural extractor exposure, states that neither output was used as
-reference truth, and contains no parser/block identity. V2 was invalidated after it removed a genuine
-repeated QD23 Article 2 to accommodate extractor limitations. V3 restores that scored instance.
-Canonical path remains hierarchical identity; a separate deterministic PDF-based
-`reference_instance_id` distinguishes genuine visual instances and never participates in prediction
-identity. Repeated scored paths are allowed with unique instance IDs, while conflicting context
-definitions remain invalid. The 46-page log and render hashes are committed in
-`data/structural_annotations/reference_structural_audit.v3.json`.
+reference truth, and contains no parser/block identity. V4 changes no visual truth from v3. A stable
+`reference_instance_id` identifies the actual visual structural instance; repeated unscored context
+records reuse it. A separate `reference_record_id` identifies each page-local annotation record.
+`parent_reference_instance_id` binds the exact visual parent and must agree with
+`parent_canonical_path`; QD23 Clause 1–4 records therefore explicitly belong to the first of its two
+Article 2 instances. Repeated scored canonical paths remain legal, while record IDs are unique,
+instance definitions are consistent, parents resolve, and instance cycles are forbidden. The 46-page
+log and render hashes are committed in
+`data/structural_annotations/reference_structural_audit.v4.json`.
 
 Matching requires exact audited page, kind, and ordinal. Singleton groups match directly; duplicate
-groups match only through a uniquely resolvable exact parent canonical path. Ambiguous groups remain
-unmatched, so occurrence shifting cannot create a false true-positive. Full parent-edge metrics include
+groups match only through exact parent canonical paths. Indistinguishable duplicates may contribute
+the conservative `min(N, M)` detection count, but reference IDs never determine their pairing and all
+such pairs are excluded from title accuracy. Residual ambiguous groups remain unmatched, so occurrence
+shifting cannot create a false true-positive. Full parent-edge metrics include
 document-root edges, all unmatched predicted/reference edges, and count a wrong parent as one FP plus
 one FN. Zero-denominator metrics and empty-union Jaccard are `null`/N/A. Marker, MinerU, and the combined
 parser-representation-weighted aggregate are reported separately.

@@ -6678,8 +6678,8 @@
     {
       "id": "node-000193",
       "kind": "generic_section",
-      "parent_id": "node-000191",
-      "depth": 2,
+      "parent_id": "node-000192",
+      "depth": 3,
       "ordinal_raw": "I",
       "ordinal_key": "1",
       "marker_text": "I.",
@@ -6706,13 +6706,13 @@
         "recognition_method": "generic_roman_heading",
         "matched_text": "I."
       },
-      "canonical_path": "appendix:3/generic:1"
+      "canonical_path": "appendix:3/section:1/generic:1"
     },
     {
       "id": "node-000194",
       "kind": "generic_section",
       "parent_id": "node-000193",
-      "depth": 3,
+      "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
       "marker_text": "1.",
@@ -6739,13 +6739,13 @@
         "recognition_method": "generic_decimal_heading",
         "matched_text": "1."
       },
-      "canonical_path": "appendix:3/generic:1/generic:1"
+      "canonical_path": "appendix:3/section:1/generic:1/generic:1"
     },
     {
       "id": "node-000195",
       "kind": "generic_section",
       "parent_id": "node-000194",
-      "depth": 4,
+      "depth": 5,
       "ordinal_raw": "a",
       "ordinal_key": "a",
       "marker_text": "a)",
@@ -6772,13 +6772,13 @@
         "recognition_method": "generic_letter_heading",
         "matched_text": "a)"
       },
-      "canonical_path": "appendix:3/generic:1/generic:1/generic:a"
+      "canonical_path": "appendix:3/section:1/generic:1/generic:1/generic:a"
     },
     {
       "id": "node-000196",
       "kind": "generic_section",
       "parent_id": "node-000194",
-      "depth": 4,
+      "depth": 5,
       "ordinal_raw": "b",
       "ordinal_key": "b",
       "marker_text": "b)",
@@ -6827,13 +6827,13 @@
         "recognition_method": "generic_letter_heading",
         "matched_text": "b)"
       },
-      "canonical_path": "appendix:3/generic:1/generic:1/generic:b"
+      "canonical_path": "appendix:3/section:1/generic:1/generic:1/generic:b"
     },
     {
       "id": "node-000197",
       "kind": "generic_section",
       "parent_id": "node-000193",
-      "depth": 3,
+      "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
       "marker_text": "2.",
@@ -6882,13 +6882,13 @@
         "recognition_method": "generic_decimal_heading",
         "matched_text": "2."
       },
-      "canonical_path": "appendix:3/generic:1/generic:2"
+      "canonical_path": "appendix:3/section:1/generic:1/generic:2"
     },
     {
       "id": "node-000198",
       "kind": "generic_section",
-      "parent_id": "node-000191",
-      "depth": 2,
+      "parent_id": "node-000192",
+      "depth": 3,
       "ordinal_raw": "II",
       "ordinal_key": "2",
       "marker_text": "II.",
@@ -6915,13 +6915,13 @@
         "recognition_method": "generic_roman_heading",
         "matched_text": "II."
       },
-      "canonical_path": "appendix:3/generic:2"
+      "canonical_path": "appendix:3/section:1/generic:2"
     },
     {
       "id": "node-000199",
       "kind": "generic_section",
       "parent_id": "node-000198",
-      "depth": 3,
+      "depth": 4,
       "ordinal_raw": "1",
       "ordinal_key": "1",
       "marker_text": "1.",
@@ -6977,13 +6977,13 @@
         "recognition_method": "generic_decimal_heading",
         "matched_text": "1."
       },
-      "canonical_path": "appendix:3/generic:2/generic:1"
+      "canonical_path": "appendix:3/section:1/generic:2/generic:1"
     },
     {
       "id": "node-000200",
       "kind": "generic_section",
       "parent_id": "node-000198",
-      "depth": 3,
+      "depth": 4,
       "ordinal_raw": "2",
       "ordinal_key": "2",
       "marker_text": "2.",
@@ -7053,13 +7053,13 @@
         "recognition_method": "generic_decimal_heading",
         "matched_text": "2."
       },
-      "canonical_path": "appendix:3/generic:2/generic:2"
+      "canonical_path": "appendix:3/section:1/generic:2/generic:2"
     },
     {
       "id": "node-000201",
       "kind": "generic_section",
       "parent_id": "node-000198",
-      "depth": 3,
+      "depth": 4,
       "ordinal_raw": "3",
       "ordinal_key": "3",
       "marker_text": "3.",
@@ -7101,7 +7101,7 @@
         "recognition_method": "generic_decimal_heading",
         "matched_text": "3."
       },
-      "canonical_path": "appendix:3/generic:2/generic:3"
+      "canonical_path": "appendix:3/section:1/generic:2/generic:3"
     },
     {
       "id": "node-000202",
@@ -7156,35 +7156,115 @@
           "role": "body",
           "char_start": 0,
           "char_end": 122
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_SECTION_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Mục 2"
+      },
+      "canonical_path": "appendix:3/section:2"
+    },
+    {
+      "id": "node-000203",
+      "kind": "generic_section",
+      "parent_id": "node-000202",
+      "depth": 3,
+      "ordinal_raw": "I",
+      "ordinal_key": "1",
+      "marker_text": "I.",
+      "title": "MÃ CƠ SỞ DỮ LIỆU ĐỊA LÝ QUY HOẠCH",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0010",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0010",
           "page_index": 34,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 36
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "I."
+      },
+      "canonical_path": "appendix:3/section:2/generic:1"
+    },
+    {
+      "id": "node-000204",
+      "kind": "generic_section",
+      "parent_id": "node-000203",
+      "depth": 4,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": "Ký tự thứ nhất là chữ cái Latinh viết hoa thay cho tên cấp quy hoạch quy định như sau:",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0011",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0011",
           "page_index": 34,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 89
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0034_b0012",
           "page_index": 34,
           "role": "object",
           "char_start": null,
           "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "1."
+      },
+      "canonical_path": "appendix:3/section:2/generic:1/generic:1"
+    },
+    {
+      "id": "node-000205",
+      "kind": "generic_section",
+      "parent_id": "node-000203",
+      "depth": 4,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": "Hai ký tự tiếp theo là hai chữ số Ả rập thay cho tên quy hoạch được quy định như sau:",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0000",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0000",
           "page_index": 35,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 88
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0001",
           "page_index": 35,
@@ -7212,28 +7292,82 @@
           "role": "body",
           "char_start": 0,
           "char_end": 161
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "2."
+      },
+      "canonical_path": "appendix:3/section:2/generic:1/generic:2"
+    },
+    {
+      "id": "node-000206",
+      "kind": "generic_section",
+      "parent_id": "node-000202",
+      "depth": 3,
+      "ordinal_raw": "II",
+      "ordinal_key": "2",
+      "marker_text": "II.",
+      "title": "MÃ TÊN KIỂU ĐỐI TƯỢNG ĐỊA LÝ",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0005",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 4
         },
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0005",
           "page_index": 35,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 4,
           "char_end": 32
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0006",
           "page_index": 35,
           "role": "body",
           "char_start": 0,
           "char_end": 184
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_ROMAN_HEADING_V1",
+        "recognition_method": "generic_roman_heading",
+        "matched_text": "II."
+      },
+      "canonical_path": "appendix:3/section:2/generic:2"
+    },
+    {
+      "id": "node-000207",
+      "kind": "generic_section",
+      "parent_id": "node-000206",
+      "depth": 4,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": "Ký tự thứ nhất là chữ cái Latinh viết hoa thay cho tên chủ đề dữ liệu được quy định như sau:",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0007",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0007",
           "page_index": 35,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 95
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0035_b0008",
           "page_index": 35,
@@ -7247,28 +7381,82 @@
           "role": "object",
           "char_start": null,
           "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "1."
+      },
+      "canonical_path": "appendix:3/section:2/generic:2/generic:1"
+    },
+    {
+      "id": "node-000208",
+      "kind": "generic_section",
+      "parent_id": "node-000206",
+      "depth": 4,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": "Ký tự tiếp theo là chữ cái Latinh viết hoa thay cho phân loại nhóm đối tượng dữ liệu được quy định như sau:",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0001",
+          "page_index": 36,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0001",
           "page_index": 36,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 110
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0002",
           "page_index": 36,
           "role": "object",
           "char_start": null,
           "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "3."
+      },
+      "canonical_path": "appendix:3/section:2/generic:2/generic:3"
+    },
+    {
+      "id": "node-000209",
+      "kind": "generic_section",
+      "parent_id": "node-000206",
+      "depth": 4,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": "Hai ký tự tiếp theo là hai chữ số Ả rập bắt đầu từ 01 lần lượt theo thứ tự của tên kiểu đối tượng trong nhóm đối tượng dữ liệu hiện trạng, dữ liệu định hướng phát triển, dữ liệu khác.",
+      "heading_anchors": [
+        {
+          "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0003",
+          "page_index": 36,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0003",
           "page_index": 36,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 186
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "tt-04-2023-bkhdt-so-do-ban-do_v1_p0036_b0004",
           "page_index": 36,
@@ -7390,11 +7578,11 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_FORMAL_SECTION_V1",
-        "recognition_method": "explicit_legal_marker",
-        "matched_text": "Mục 2"
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "4."
       },
-      "canonical_path": "appendix:3/section:2"
+      "canonical_path": "appendix:3/section:2/generic:2/generic:4"
     }
   ]
 }

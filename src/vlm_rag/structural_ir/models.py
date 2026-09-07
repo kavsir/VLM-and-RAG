@@ -194,7 +194,8 @@ class StructuralNode(StructuralModel):
             match = re.fullmatch(rf"{expected_name}:(?P<value>[^/~]+)", segment)
             if match is None:
                 raise ValueError("canonical path segment does not match node kind")
-            if self.ordinal_key is not None and match.group("value") != self.ordinal_key:
+            expected_segment_value = self.ordinal_key or "unnumbered"
+            if match.group("value") != expected_segment_value:
                 raise ValueError("canonical path ordinal does not match ordinal_key")
         return self
 
@@ -261,6 +262,10 @@ _ALLOWED_PARENTS: dict[StructuralNodeKind, frozenset[StructuralNodeKind]] = {
     StructuralNodeKind.GENERIC_SECTION: frozenset(
         {
             StructuralNodeKind.DOCUMENT,
+            StructuralNodeKind.PART,
+            StructuralNodeKind.CHAPTER,
+            StructuralNodeKind.SECTION,
+            StructuralNodeKind.SUBSECTION,
             StructuralNodeKind.APPENDIX,
             StructuralNodeKind.ARTICLE,
             StructuralNodeKind.CLAUSE,

@@ -385,13 +385,13 @@
     },
     {
       "id": "node-000006",
-      "kind": "point",
-      "parent_id": "node-000003",
-      "depth": 3,
+      "kind": "generic_section",
+      "parent_id": "node-000005",
+      "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
       "marker_text": "a)",
-      "title": null,
+      "title": "Quy mô dân số:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0002_b0009",
@@ -399,16 +399,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0002_b0009",
           "page_index": 2,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 17
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0002_b0010",
           "page_index": 2,
@@ -439,21 +439,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "a)"
       },
-      "canonical_path": "article:1/clause:2/point:a"
+      "canonical_path": "article:1/clause:2/generic:2.2/generic:a"
     },
     {
       "id": "node-000007",
-      "kind": "point",
-      "parent_id": "node-000003",
-      "depth": 3,
+      "kind": "generic_section",
+      "parent_id": "node-000005",
+      "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
       "marker_text": "b)",
-      "title": null,
+      "title": "Quy mô đất đai (tỷ lệ đất xây dựng đô thị):",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0002_b0014",
@@ -461,16 +461,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0002_b0014",
           "page_index": 2,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 46
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0002_b0015",
           "page_index": 2,
@@ -501,11 +501,11 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "b)"
       },
-      "canonical_path": "article:1/clause:2/point:b"
+      "canonical_path": "article:1/clause:2/generic:2.2/generic:b"
     },
     {
       "id": "node-000008",
@@ -672,13 +672,13 @@
     },
     {
       "id": "node-000012",
-      "kind": "point",
-      "parent_id": "node-000009",
-      "depth": 3,
+      "kind": "generic_section",
+      "parent_id": "node-000011",
+      "depth": 4,
       "ordinal_raw": "a",
       "ordinal_key": "a",
       "marker_text": "a)",
-      "title": null,
+      "title": "Mục tiêu tổng quát:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0003_b0007",
@@ -686,16 +686,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0003_b0007",
           "page_index": 3,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 22
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0003_b0008",
           "page_index": 3,
@@ -733,21 +733,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "a)"
       },
-      "canonical_path": "article:1/clause:3/point:a"
+      "canonical_path": "article:1/clause:3/generic:3.2/generic:a"
     },
     {
       "id": "node-000013",
-      "kind": "point",
-      "parent_id": "node-000009",
-      "depth": 3,
+      "kind": "generic_section",
+      "parent_id": "node-000011",
+      "depth": 4,
       "ordinal_raw": "b",
       "ordinal_key": "b",
       "marker_text": "b)",
-      "title": null,
+      "title": "Các mục tiêu cụ thể theo lộ trình:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0004_b0001",
@@ -755,16 +755,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0004_b0001",
           "page_index": 4,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 37
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0004_b0002",
           "page_index": 4,
@@ -872,11 +872,11 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "b)"
       },
-      "canonical_path": "article:1/clause:3/point:b"
+      "canonical_path": "article:1/clause:3/generic:3.2/generic:b"
     },
     {
       "id": "node-000014",
@@ -3827,14 +3827,40 @@
           "char_end": 55
         }
       ],
-      "direct_content_anchors": [
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.2."
+      },
+      "canonical_path": "article:1/clause:5/generic:5.2"
+    },
+    {
+      "id": "node-000024",
+      "kind": "generic_section",
+      "parent_id": "node-000023",
+      "depth": 4,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": "Phương án liên kết quốc tế:",
+      "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0033_b0008",
           "page_index": 33,
-          "role": "body",
+          "role": "marker",
           "char_start": 0,
-          "char_end": 30
+          "char_end": 3
         },
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0033_b0008",
+          "page_index": 33,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 30
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0033_b0009",
           "page_index": 33,
@@ -3890,14 +3916,41 @@
           "role": "body",
           "char_start": 0,
           "char_end": 217
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.2/generic:a"
+    },
+    {
+      "id": "node-000025",
+      "kind": "generic_section",
+      "parent_id": "node-000023",
+      "depth": 4,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": "Phương án tổ chức liên kết Thủ đô Hà Nội với các địa phương khác trong nước:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0034_b0004",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0034_b0004",
           "page_index": 34,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 79
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0034_b0005",
           "page_index": 34,
@@ -4145,14 +4198,14 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.2."
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "b)"
       },
-      "canonical_path": "article:1/clause:5/generic:5.2"
+      "canonical_path": "article:1/clause:5/generic:5.2/generic:b"
     },
     {
-      "id": "node-000024",
+      "id": "node-000026",
       "kind": "generic_section",
       "parent_id": "node-000018",
       "depth": 3,
@@ -4176,14 +4229,40 @@
           "char_end": 48
         }
       ],
-      "direct_content_anchors": [
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.3."
+      },
+      "canonical_path": "article:1/clause:5/generic:5.3"
+    },
+    {
+      "id": "node-000027",
+      "kind": "generic_section",
+      "parent_id": "node-000026",
+      "depth": 4,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": "Phương hướng phát triển các ngành quan trọng:",
+      "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0037_b0003",
           "page_index": 37,
-          "role": "body",
+          "role": "marker",
           "char_start": 0,
-          "char_end": 48
+          "char_end": 3
         },
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0037_b0003",
+          "page_index": 37,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 48
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0037_b0004",
           "page_index": 37,
@@ -4610,14 +4689,41 @@
           "role": "body",
           "char_start": 0,
           "char_end": 442
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.3/generic:a"
+    },
+    {
+      "id": "node-000028",
+      "kind": "generic_section",
+      "parent_id": "node-000026",
+      "depth": 4,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": "Phương hướng phát triển các ngành, lĩnh vực khác:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0042_b0001",
+          "page_index": 42,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0042_b0001",
           "page_index": 42,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 52
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0042_b0002",
           "page_index": 42,
@@ -5065,21 +5171,74 @@
           "role": "object",
           "char_start": null,
           "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.3/generic:b"
+    },
+    {
+      "id": "node-000029",
+      "kind": "generic_section",
+      "parent_id": "node-000018",
+      "depth": 3,
+      "ordinal_raw": "5.4",
+      "ordinal_key": "5.4",
+      "marker_text": "5.4.",
+      "title": "Định hướng khung quy hoạch sử dụng đất và quy mô dân số:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0049_b0001",
+          "page_index": 49,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 5
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0049_b0001",
           "page_index": 49,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 5,
           "char_end": 61
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.4."
+      },
+      "canonical_path": "article:1/clause:5/generic:5.4"
+    },
+    {
+      "id": "node-000030",
+      "kind": "generic_section",
+      "parent_id": "node-000029",
+      "depth": 4,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": "Chỉ tiêu sử dụng đất và phân bổ dân số theo các giai đoạn:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0049_b0002",
+          "page_index": 49,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0049_b0002",
           "page_index": 49,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 61
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0049_b0003",
           "page_index": 49,
@@ -5142,14 +5301,41 @@
           "role": "body",
           "char_start": 0,
           "char_end": 145
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.4/generic:a"
+    },
+    {
+      "id": "node-000031",
+      "kind": "generic_section",
+      "parent_id": "node-000029",
+      "depth": 4,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": "Chỉ tiêu phân bổ đất cho các công trình hạ tầng xã hội, hạ tầng kỹ thuật thiết yếu:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0049_b0012",
+          "page_index": 49,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0049_b0012",
           "page_index": 49,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 86
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0049_b0013",
           "page_index": 49,
@@ -5229,14 +5415,14 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.3."
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "b)"
       },
-      "canonical_path": "article:1/clause:5/generic:5.3"
+      "canonical_path": "article:1/clause:5/generic:5.4/generic:b"
     },
     {
-      "id": "node-000025",
+      "id": "node-000032",
       "kind": "generic_section",
       "parent_id": "node-000018",
       "depth": 3,
@@ -5260,28 +5446,81 @@
           "char_end": 45
         }
       ],
-      "direct_content_anchors": [
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.5."
+      },
+      "canonical_path": "article:1/clause:5/generic:5.5"
+    },
+    {
+      "id": "node-000033",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": "Công nghệ cao, công nghệ số tập trung:",
+      "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0050_b0008",
           "page_index": 50,
-          "role": "body",
+          "role": "marker",
           "char_start": 0,
-          "char_end": 41
+          "char_end": 3
         },
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0050_b0008",
+          "page_index": 50,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 41
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0050_b0009",
           "page_index": 50,
           "role": "body",
           "char_start": 0,
           "char_end": 484
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:a"
+    },
+    {
+      "id": "node-000034",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": "Công nghiệp:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0050_b0010",
+          "page_index": 50,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0050_b0010",
           "page_index": 50,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 15
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0050_b0011",
           "page_index": 50,
@@ -5316,14 +5555,41 @@
           "role": "object",
           "char_start": null,
           "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:b"
+    },
+    {
+      "id": "node-000035",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
+      "ordinal_raw": "c",
+      "ordinal_key": "c",
+      "marker_text": "c)",
+      "title": "Các khu du lịch:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0051_b0001",
+          "page_index": 51,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0051_b0001",
           "page_index": 51,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 19
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0051_b0002",
           "page_index": 51,
@@ -5414,14 +5680,41 @@
           "role": "body",
           "char_start": 0,
           "char_end": 133
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "c)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:c"
+    },
+    {
+      "id": "node-000036",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
+      "ordinal_raw": "d",
+      "ordinal_key": "d",
+      "marker_text": "d)",
+      "title": "Hệ thống trụ sở làm việc và cơ quan hành chính:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0051_b0015",
+          "page_index": 51,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0051_b0015",
           "page_index": 51,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 50
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0051_b0016",
           "page_index": 51,
@@ -5487,21 +5780,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.5."
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "d)"
       },
-      "canonical_path": "article:1/clause:5/generic:5.5"
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:d"
     },
     {
-      "id": "node-000026",
-      "kind": "point",
-      "parent_id": "node-000018",
-      "depth": 3,
+      "id": "node-000037",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
       "ordinal_raw": "e",
       "ordinal_key": "e",
       "marker_text": "e)",
-      "title": null,
+      "title": "Y tế và Chăm sóc sức khỏe Nhân dân:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0052_b0004",
@@ -5509,16 +5802,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0052_b0004",
           "page_index": 52,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 38
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0052_b0005",
           "page_index": 52,
@@ -5591,21 +5884,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "e)"
       },
-      "canonical_path": "article:1/clause:5/point:e"
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:e"
     },
     {
-      "id": "node-000027",
-      "kind": "point",
-      "parent_id": "node-000018",
-      "depth": 3,
+      "id": "node-000038",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
       "ordinal_raw": "g",
       "ordinal_key": "g",
       "marker_text": "g)",
-      "title": null,
+      "title": "Giáo dục, đào tạo:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0052_b0015",
@@ -5613,16 +5906,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0052_b0015",
           "page_index": 52,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 21
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0052_b0016",
           "page_index": 52,
@@ -5674,21 +5967,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "g)"
       },
-      "canonical_path": "article:1/clause:5/point:g"
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:g"
     },
     {
-      "id": "node-000028",
-      "kind": "point",
-      "parent_id": "node-000018",
-      "depth": 3,
+      "id": "node-000039",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
       "ordinal_raw": "h",
       "ordinal_key": "h",
       "marker_text": "h)",
-      "title": null,
+      "title": "Văn hóa và Công nghiệp sáng tạo:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0053_b0003",
@@ -5696,16 +5989,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0053_b0003",
           "page_index": 53,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 35
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0053_b0004",
           "page_index": 53,
@@ -5729,21 +6022,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "h)"
       },
-      "canonical_path": "article:1/clause:5/point:h"
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:h"
     },
     {
-      "id": "node-000029",
-      "kind": "point",
-      "parent_id": "node-000018",
-      "depth": 3,
+      "id": "node-000040",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
       "ordinal_raw": "i",
       "ordinal_key": "i",
       "marker_text": "i)",
-      "title": null,
+      "title": "Bảo tồn, di tích lịch sử - văn hóa, danh lam thắng cảnh:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0053_b0007",
@@ -5751,16 +6044,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0053_b0007",
           "page_index": 53,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 59
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0053_b0008",
           "page_index": 53,
@@ -5854,21 +6147,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "i)"
       },
-      "canonical_path": "article:1/clause:5/point:i"
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:i"
     },
     {
-      "id": "node-000030",
-      "kind": "point",
-      "parent_id": "node-000018",
-      "depth": 3,
+      "id": "node-000041",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
       "ordinal_raw": "k",
       "ordinal_key": "k",
       "marker_text": "k)",
-      "title": null,
+      "title": "Khu thể dục thể thao:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0054_b0001",
@@ -5876,16 +6169,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0054_b0001",
           "page_index": 54,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 24
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0054_b0002",
           "page_index": 54,
@@ -6028,21 +6321,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "k)"
       },
-      "canonical_path": "article:1/clause:5/point:k"
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:k"
     },
     {
-      "id": "node-000031",
-      "kind": "point",
-      "parent_id": "node-000018",
-      "depth": 3,
+      "id": "node-000042",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
       "ordinal_raw": "l",
       "ordinal_key": "l",
       "marker_text": "l)",
-      "title": null,
+      "title": "Nhà ở, bất động sản:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0054_b0022",
@@ -6050,16 +6343,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0054_b0022",
           "page_index": 54,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 23
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0054_b0023",
           "page_index": 54,
@@ -6132,21 +6425,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "l)"
       },
-      "canonical_path": "article:1/clause:5/point:l"
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:l"
     },
     {
-      "id": "node-000032",
-      "kind": "point",
-      "parent_id": "node-000018",
-      "depth": 3,
+      "id": "node-000043",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
       "ordinal_raw": "m",
       "ordinal_key": "m",
       "marker_text": "m)",
-      "title": null,
+      "title": "Nông, lâm, ngư nghiệp:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0055_b0009",
@@ -6154,16 +6447,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0055_b0009",
           "page_index": 55,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 25
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0055_b0010",
           "page_index": 55,
@@ -6278,21 +6571,21 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "m)"
       },
-      "canonical_path": "article:1/clause:5/point:m"
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:m"
     },
     {
-      "id": "node-000033",
-      "kind": "point",
-      "parent_id": "node-000018",
-      "depth": 3,
+      "id": "node-000044",
+      "kind": "generic_section",
+      "parent_id": "node-000032",
+      "depth": 4,
       "ordinal_raw": "n",
       "ordinal_key": "n",
       "marker_text": "n)",
-      "title": null,
+      "title": "Quốc phòng, an ninh:",
       "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0056_b0010",
@@ -6300,16 +6593,16 @@
           "role": "marker",
           "char_start": 0,
           "char_end": 3
-        }
-      ],
-      "direct_content_anchors": [
+        },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0056_b0010",
           "page_index": 56,
-          "role": "body",
+          "role": "title",
           "char_start": 3,
           "char_end": 23
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0056_b0011",
           "page_index": 56,
@@ -6347,14 +6640,14 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_CONTEXTUAL_POINT_V1",
-        "recognition_method": "contextual_point",
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
         "matched_text": "n)"
       },
-      "canonical_path": "article:1/clause:5/point:n"
+      "canonical_path": "article:1/clause:5/generic:5.5/generic:n"
     },
     {
-      "id": "node-000034",
+      "id": "node-000045",
       "kind": "generic_section",
       "parent_id": "node-000018",
       "depth": 3,
@@ -6378,14 +6671,40 @@
           "char_end": 70
         }
       ],
-      "direct_content_anchors": [
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.6."
+      },
+      "canonical_path": "article:1/clause:5/generic:5.6"
+    },
+    {
+      "id": "node-000046",
+      "kind": "generic_section",
+      "parent_id": "node-000045",
+      "depth": 4,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": "Định hướng phát triển hệ thống hạ tầng kỹ thuật:",
+      "heading_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0056_b0017",
           "page_index": 56,
-          "role": "body",
+          "role": "marker",
           "char_start": 0,
-          "char_end": 51
+          "char_end": 3
         },
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0056_b0017",
+          "page_index": 56,
+          "role": "title",
+          "char_start": 3,
+          "char_end": 51
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0056_b0018",
           "page_index": 56,
@@ -7351,14 +7670,41 @@
           "role": "body",
           "char_start": 0,
           "char_end": 159
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.6/generic:a"
+    },
+    {
+      "id": "node-000047",
+      "kind": "generic_section",
+      "parent_id": "node-000045",
+      "depth": 4,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": "Định hướng phát triển không gian ngầm:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0066_b0014",
+          "page_index": 66,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0066_b0014",
           "page_index": 66,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 41
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0066_b0015",
           "page_index": 66,
@@ -7491,21 +7837,74 @@
           "role": "body",
           "char_start": 0,
           "char_end": 203
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.6/generic:b"
+    },
+    {
+      "id": "node-000048",
+      "kind": "generic_section",
+      "parent_id": "node-000018",
+      "depth": 3,
+      "ordinal_raw": "5.7",
+      "ordinal_key": "5.7",
+      "marker_text": "5.7.",
+      "title": "Phương án bảo vệ môi trường, bảo tồn thiên nhiên và đa dạng sinh học; khai thác, sử dụng và bảo vệ tài nguyên; phòng, chống thiên tai và ứng phó với biến đổi khí hậu:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0068_b0002",
+          "page_index": 68,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 5
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0068_b0002",
           "page_index": 68,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 5,
           "char_end": 171
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "5.7."
+      },
+      "canonical_path": "article:1/clause:5/generic:5.7"
+    },
+    {
+      "id": "node-000049",
+      "kind": "generic_section",
+      "parent_id": "node-000048",
+      "depth": 4,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": "Phương án bảo vệ môi trường, bảo tồn thiên nhiên và đa dạng sinh học:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0068_b0003",
+          "page_index": 68,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0068_b0003",
           "page_index": 68,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 72
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0068_b0004",
           "page_index": 68,
@@ -7911,14 +8310,41 @@
           "role": "body",
           "char_start": 0,
           "char_end": 233
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:1/clause:5/generic:5.7/generic:a"
+    },
+    {
+      "id": "node-000050",
+      "kind": "generic_section",
+      "parent_id": "node-000048",
+      "depth": 4,
+      "ordinal_raw": "c",
+      "ordinal_key": "c",
+      "marker_text": "c)",
+      "title": "Phương án phòng, chống thiên tai và ứng phó với biến đổi khí hậu:",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0072_b0005",
+          "page_index": 72,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
         },
         {
           "block_id": "hanoi-master-plan-100y_v1_p0072_b0005",
           "page_index": 72,
-          "role": "body",
-          "char_start": 0,
+          "role": "title",
+          "char_start": 3,
           "char_end": 68
-        },
+        }
+      ],
+      "direct_content_anchors": [
         {
           "block_id": "hanoi-master-plan-100y_v1_p0072_b0006",
           "page_index": 72,
@@ -8117,14 +8543,14 @@
         }
       ],
       "recognition_evidence": {
-        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
-        "recognition_method": "generic_decimal_heading",
-        "matched_text": "5.6."
+        "rule_id": "VI_GENERIC_LETTER_HEADING_V1",
+        "recognition_method": "generic_letter_heading",
+        "matched_text": "c)"
       },
-      "canonical_path": "article:1/clause:5/generic:5.6"
+      "canonical_path": "article:1/clause:5/generic:5.7/generic:c"
     },
     {
-      "id": "node-000035",
+      "id": "node-000051",
       "kind": "generic_section",
       "parent_id": "node-000018",
       "depth": 3,
@@ -8277,7 +8703,7 @@
       "canonical_path": "article:1/clause:5/generic:5.8"
     },
     {
-      "id": "node-000036",
+      "id": "node-000052",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -8339,9 +8765,9 @@
       "canonical_path": "article:1/clause:6"
     },
     {
-      "id": "node-000037",
+      "id": "node-000053",
       "kind": "generic_section",
-      "parent_id": "node-000036",
+      "parent_id": "node-000052",
       "depth": 3,
       "ordinal_raw": "6.2",
       "ordinal_key": "6.2",
@@ -8384,13 +8810,6 @@
           "role": "body",
           "char_start": 0,
           "char_end": 86
-        },
-        {
-          "block_id": "hanoi-master-plan-100y_v1_p0075_b0012",
-          "page_index": 75,
-          "role": "body",
-          "char_start": 0,
-          "char_end": 193
         }
       ],
       "recognition_evidence": {
@@ -8401,7 +8820,40 @@
       "canonical_path": "article:1/clause:6/generic:6.2"
     },
     {
-      "id": "node-000038",
+      "id": "node-000054",
+      "kind": "generic_section",
+      "parent_id": "node-000052",
+      "depth": 3,
+      "ordinal_raw": "6.3",
+      "ordinal_key": "6.3",
+      "marker_text": "6.3.",
+      "title": "Giai đoạn 2046 - 2065: Đầu tư hoàn chỉnh mạng lưới giao thông không gian tầm thấp, các không gian văn hóa mang tính biểu tượng thế kỷ và các dự án đô thị sinh thái phát thải ròng bằng “0”.",
+      "heading_anchors": [
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0075_b0012",
+          "page_index": 75,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 5
+        },
+        {
+          "block_id": "hanoi-master-plan-100y_v1_p0075_b0012",
+          "page_index": 75,
+          "role": "title",
+          "char_start": 5,
+          "char_end": 193
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_GENERIC_DECIMAL_HEADING_V1",
+        "recognition_method": "generic_decimal_heading",
+        "matched_text": "6.3."
+      },
+      "canonical_path": "article:1/clause:6/generic:6.3"
+    },
+    {
+      "id": "node-000055",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -8526,7 +8978,7 @@
       "canonical_path": "article:1/clause:7"
     },
     {
-      "id": "node-000039",
+      "id": "node-000056",
       "kind": "clause",
       "parent_id": "node-000001",
       "depth": 2,
@@ -8574,7 +9026,7 @@
       "canonical_path": "article:1/clause:8"
     },
     {
-      "id": "node-000040",
+      "id": "node-000057",
       "kind": "article",
       "parent_id": "node-000000",
       "depth": 1,
@@ -8607,9 +9059,9 @@
       "canonical_path": "article:2"
     },
     {
-      "id": "node-000041",
+      "id": "node-000058",
       "kind": "clause",
-      "parent_id": "node-000040",
+      "parent_id": "node-000057",
       "depth": 2,
       "ordinal_raw": "1",
       "ordinal_key": "1",
@@ -8641,9 +9093,9 @@
       "canonical_path": "article:2/clause:1"
     },
     {
-      "id": "node-000042",
+      "id": "node-000059",
       "kind": "clause",
-      "parent_id": "node-000040",
+      "parent_id": "node-000057",
       "depth": 2,
       "ordinal_raw": "2",
       "ordinal_key": "2",
@@ -8689,9 +9141,9 @@
       "canonical_path": "article:2/clause:2"
     },
     {
-      "id": "node-000043",
+      "id": "node-000060",
       "kind": "clause",
-      "parent_id": "node-000040",
+      "parent_id": "node-000057",
       "depth": 2,
       "ordinal_raw": "3",
       "ordinal_key": "3",
@@ -8744,9 +9196,9 @@
       "canonical_path": "article:2/clause:3"
     },
     {
-      "id": "node-000044",
+      "id": "node-000061",
       "kind": "clause",
-      "parent_id": "node-000040",
+      "parent_id": "node-000057",
       "depth": 2,
       "ordinal_raw": "4",
       "ordinal_key": "4",
@@ -8806,9 +9258,9 @@
       "canonical_path": "article:2/clause:4"
     },
     {
-      "id": "node-000045",
+      "id": "node-000062",
       "kind": "clause",
-      "parent_id": "node-000040",
+      "parent_id": "node-000057",
       "depth": 2,
       "ordinal_raw": "5",
       "ordinal_key": "5",
@@ -8840,7 +9292,7 @@
       "canonical_path": "article:2/clause:5"
     },
     {
-      "id": "node-000046",
+      "id": "node-000063",
       "kind": "article",
       "parent_id": "node-000000",
       "depth": 1,

@@ -3,6 +3,7 @@
 import hashlib
 import re
 from dataclasses import dataclass, field
+from itertools import pairwise
 
 from vlm_rag.physical_ir.models import BlockDisposition
 from vlm_rag.physical_ir.serialization_v1 import physical_document_v1_to_json
@@ -85,7 +86,19 @@ _GENERIC_LETTER = _POINT
 _GENERIC_ROMAN = re.compile(r"^\s*(?P<ordinal>[IVXLCDM]+)\.\s+", re.IGNORECASE)
 _GENERIC_DECIMAL = re.compile(r"^\s*(?P<ordinal>\d+(?:\.\d+)*)\.(?:\s+|$)", re.IGNORECASE)
 _TOC_HEADING = re.compile(r"^\s*(?:mục\s+lục|muc\s+luc)\s*$", re.IGNORECASE)
-_TOC_LEADER_ENTRY = re.compile(r"(?:\.{3,}|…{2,})\s*(?:trang\s*)?\d+\s*$", re.IGNORECASE)
+_TOC_LEADER_ENTRY = re.compile(r"(?:(?:\.\s*){2,}|…{2,})\s*(?:trang\s*)?\d+\s*$", re.IGNORECASE)
+_TOC_ENTRY_END = re.compile(r"(?:\.\s*)+(?:trang\s*)?\d+\s*$", re.IGNORECASE)
+_MAX_TOC_ENTRY_EVENTS = 24
+_INLINE_FORMAL_MARKER = re.compile(
+    r"(?<!^)\s+(?=(?:tiểu\s+mục|tieu\s+muc|phụ\s+lục|phu\s+luc|"
+    r"chương|chuong|điều|dieu|phần|phan|mục|muc)\s+"
+    r"(?:[IVXLCDM]+|\d+[a-zđ]?)(?:[.\-:]?(?=\s|$)))",
+    re.IGNORECASE,
+)
+_INLINE_POINT_MARKER = re.compile(r"(?<=[;:])\s+(?P<ordinal>[a-zđ])\)\s+", re.IGNORECASE)
+_INLINE_CLAUSE_MARKER = re.compile(
+    r"(?<=[.;:])\s+(?P<ordinal>\d+[a-zđ]?)\.\s+(?P<remainder>\S)", re.IGNORECASE
+)
 _PROSE_CONTINUATION = re.compile(
     r"^(?:của|cua|nêu\s+trên|neu\s+tren|kèm\s+theo|kem\s+theo)\b",
     re.IGNORECASE,
@@ -240,8 +253,16 @@ class VietnameseStructuralExtractor:
                     )
                     document_order += 1
                     continue
-                for event in iter_block_lines(block, document_order):
+                event_queue = list(iter_block_lines(block, document_order))
+                while event_queue:
+                    event = event_queue.pop(0)
                     event_key = (event.block_id, event.char_start, event.char_end)
+                    if event_key not in toc_events:
+                        inline_events = self._inline_events(event, active, by_id)
+                        if len(inline_events) > 1:
+                            event = inline_events[0]
+                            event_queue[0:0] = inline_events[1:]
+                            event_key = (event.block_id, event.char_start, event.char_end)
                     if event_key in toc_events:
                         candidate_kind, candidate_ordinal = self._candidate_shape(event.text)
                         if candidate_kind is not None:
@@ -258,7 +279,7 @@ class VietnameseStructuralExtractor:
                         )
                         pending_title_id = None
                         continue
-                    detection = self._detect(event, active, generic_stack)
+                    detection = self._detect(event, active, generic_stack, by_id)
                     if detection is None and pending_title_id is not None:
                         if _heading_like(event.text, event.block_kind):
                             title_node = by_id[pending_title_id]
@@ -475,7 +496,7 @@ class VietnameseStructuralExtractor:
 
     @staticmethod
     def _toc_events(physical: PhysicalDocumentV1) -> frozenset[tuple[str, int, int]]:
-        """Identify a bounded explicit TOC range or isolated strong leader entries."""
+        """Identify contiguous explicit TOC entries or isolated strong leader entries."""
         events_by_page: dict[int, list[PhysicalLineEvent]] = {}
         for event in physical_text_events(physical):
             events_by_page.setdefault(event.page_index, []).append(event)
@@ -490,19 +511,146 @@ class VietnameseStructuralExtractor:
                 for index, text in enumerate(normalized)
                 if _TOC_LEADER_ENTRY.search(text) is not None
             ]
-            if heading_indices:
-                start = heading_indices[0]
-                later_leaders = [index for index in leader_indices if index >= start]
-                if later_leaders:
-                    for event in events[start : max(later_leaders) + 1]:
-                        result.add((event.block_id, event.char_start, event.char_end))
-                    continue
+            for start in heading_indices:
+                heading = events[start]
+                result.add((heading.block_id, heading.char_start, heading.char_end))
+                cursor = start + 1
+                pending: list[PhysicalLineEvent] = []
+                while cursor < len(events):
+                    text = normalized[cursor]
+                    event = events[cursor]
+                    candidate_kind, _ = VietnameseStructuralExtractor._candidate_shape(event.text)
+                    is_formal_boundary = candidate_kind in {
+                        StructuralNodeKind.PART,
+                        StructuralNodeKind.CHAPTER,
+                        StructuralNodeKind.SECTION,
+                        StructuralNodeKind.SUBSECTION,
+                        StructuralNodeKind.ARTICLE,
+                        StructuralNodeKind.APPENDIX,
+                    }
+                    if is_formal_boundary and _TOC_ENTRY_END.search(text) is None:
+                        nearby_entry_end = any(
+                            _TOC_ENTRY_END.search(normalized[lookahead]) is not None
+                            for lookahead in range(cursor + 1, min(cursor + 3, len(events)))
+                        )
+                        if pending or not nearby_entry_end:
+                            break
+                    pending.append(event)
+                    if len(pending) > _MAX_TOC_ENTRY_EVENTS:
+                        break
+                    if _TOC_ENTRY_END.search(text) is not None:
+                        result.update(
+                            (item.block_id, item.char_start, item.char_end) for item in pending
+                        )
+                        pending.clear()
+                    cursor += 1
             for index in leader_indices:
                 event = events[index]
                 candidate_kind, _ = VietnameseStructuralExtractor._candidate_shape(event.text)
                 if candidate_kind is not None:
                     result.add((event.block_id, event.char_start, event.char_end))
         return frozenset(result)
+
+    @staticmethod
+    def _inline_events(
+        event: PhysicalLineEvent,
+        active: dict[StructuralNodeKind, str],
+        by_id: dict[str, _NodeDraft],
+    ) -> tuple[PhysicalLineEvent, ...]:
+        """Split only corpus-evidenced inline structural boundaries at original offsets."""
+        text = event.text
+        boundaries: set[int] = set()
+        starts_with_kind, _ = VietnameseStructuralExtractor._candidate_shape(text)
+        if event.block_kind == BlockKindV1.TITLE and starts_with_kind in {
+            StructuralNodeKind.PART,
+            StructuralNodeKind.CHAPTER,
+            StructuralNodeKind.SECTION,
+            StructuralNodeKind.SUBSECTION,
+            StructuralNodeKind.APPENDIX,
+        }:
+            boundaries.update(match.end() for match in _INLINE_FORMAL_MARKER.finditer(text))
+
+        starts_with_point = _POINT.match(text)
+        starts_with_generic = _GENERIC_DECIMAL.match(text)
+        if starts_with_point is not None or starts_with_generic is not None:
+            previous_point = (
+                starts_with_point.group("ordinal").casefold()
+                if starts_with_point is not None
+                else None
+            )
+            point_order = (
+                "a",
+                "b",
+                "c",
+                "d",
+                "đ",
+                "e",
+                "g",
+                "h",
+                "i",
+                "k",
+                "l",
+                "m",
+                "n",
+                "o",
+                "p",
+                "q",
+                "r",
+                "s",
+                "t",
+                "u",
+                "v",
+                "x",
+                "y",
+            )
+            for match in _INLINE_POINT_MARKER.finditer(text):
+                ordinal = match.group("ordinal").casefold()
+                if previous_point is None:
+                    if ordinal != "a":
+                        continue
+                else:
+                    try:
+                        expected = point_order[point_order.index(previous_point) + 1]
+                    except (ValueError, IndexError):
+                        continue
+                    if ordinal != expected:
+                        continue
+                boundaries.add(match.start("ordinal"))
+                previous_point = ordinal
+
+        active_clause = by_id.get(active.get(StructuralNodeKind.CLAUSE, ""))
+        if starts_with_point is not None and active_clause is not None:
+            try:
+                expected_clause = str(int(active_clause.ordinal_key or "") + 1)
+            except ValueError:
+                expected_clause = ""
+            for match in _INLINE_CLAUSE_MARKER.finditer(text):
+                if match.group("ordinal").casefold() != expected_clause:
+                    continue
+                if not match.group("remainder").isupper():
+                    continue
+                boundaries.add(match.start("ordinal"))
+
+        if not boundaries:
+            return (event,)
+        offsets = [0, *sorted(boundaries), len(text)]
+        result: list[PhysicalLineEvent] = []
+        for start, end in pairwise(offsets):
+            if start == end:
+                continue
+            result.append(
+                PhysicalLineEvent(
+                    block_id=event.block_id,
+                    page_index=event.page_index,
+                    block_kind=event.block_kind,
+                    document_order=event.document_order,
+                    line_order=event.line_order,
+                    char_start=event.char_start + start,
+                    char_end=event.char_start + end,
+                    text=text[start:end],
+                )
+            )
+        return tuple(result)
 
     @staticmethod
     def _formal_key(kind: StructuralNodeKind, raw: str | None) -> str | None:
@@ -550,9 +698,10 @@ class VietnameseStructuralExtractor:
         event: PhysicalLineEvent,
         active: dict[StructuralNodeKind, str],
         generic_stack: list[tuple[int, str, str, RecognitionMethod, bool]],
+        by_id: dict[str, _NodeDraft],
     ) -> _Detection | None:
         candidate = event.text.replace("\u00a0", " ").rstrip("\r\n")
-        nonlegal_generic_context = bool(generic_stack and not generic_stack[-1][4])
+        generic_outline_context = bool(generic_stack)
         for kind, pattern, rule_id in _FORMAL_PATTERNS:
             match = pattern.match(candidate)
             if match is not None:
@@ -566,7 +715,7 @@ class VietnameseStructuralExtractor:
                 ):
                     continue
                 if (
-                    nonlegal_generic_context
+                    generic_outline_context
                     and event.block_kind != BlockKindV1.TITLE
                     and kind in {StructuralNodeKind.PART, StructuralNodeKind.CHAPTER}
                 ):
@@ -580,7 +729,7 @@ class VietnameseStructuralExtractor:
                     rule_id=rule_id,
                 )
 
-        if StructuralNodeKind.CLAUSE in active and not nonlegal_generic_context:
+        if StructuralNodeKind.CLAUSE in active and not generic_outline_context:
             point_match = _POINT.match(candidate)
             if point_match is not None:
                 raw = point_match.group("ordinal")
@@ -592,18 +741,29 @@ class VietnameseStructuralExtractor:
                     method=RecognitionMethod.CONTEXTUAL_POINT,
                     rule_id="VI_CONTEXTUAL_POINT_V1",
                 )
-        if StructuralNodeKind.ARTICLE in active and not nonlegal_generic_context:
+        if StructuralNodeKind.ARTICLE in active:
             clause_match = _CLAUSE.match(candidate)
             if clause_match is not None:
                 raw = clause_match.group("ordinal")
-                return _Detection(
-                    kind=StructuralNodeKind.CLAUSE,
-                    ordinal_raw=raw,
-                    ordinal_key=clause_ordinal_key(raw),
-                    marker_end=clause_match.end(),
-                    method=RecognitionMethod.CONTEXTUAL_CLAUSE,
-                    rule_id="VI_CONTEXTUAL_CLAUSE_V1",
-                )
+                active_clause_id = active.get(StructuralNodeKind.CLAUSE)
+                sequential_legal_reentry = not generic_outline_context
+                if generic_outline_context and active_clause_id is not None:
+                    active_clause = by_id[active_clause_id]
+                    try:
+                        sequential_legal_reentry = (
+                            int(raw) == int(active_clause.ordinal_key or "") + 1
+                        )
+                    except ValueError:
+                        sequential_legal_reentry = False
+                if sequential_legal_reentry:
+                    return _Detection(
+                        kind=StructuralNodeKind.CLAUSE,
+                        ordinal_raw=raw,
+                        ordinal_key=clause_ordinal_key(raw),
+                        marker_end=clause_match.end(),
+                        method=RecognitionMethod.CONTEXTUAL_CLAUSE,
+                        rule_id="VI_CONTEXTUAL_CLAUSE_V1",
+                    )
 
         roman_match = _GENERIC_ROMAN.match(candidate)
         if roman_match is not None and _heading_like(candidate, event.block_kind):
@@ -624,7 +784,7 @@ class VietnameseStructuralExtractor:
         letter_match = _GENERIC_LETTER.match(candidate)
         if (
             letter_match is not None
-            and nonlegal_generic_context
+            and generic_outline_context
             and _starts_with_uppercase_word(candidate[letter_match.end() :])
         ):
             raw = letter_match.group("ordinal")
@@ -652,7 +812,7 @@ class VietnameseStructuralExtractor:
             method == RecognitionMethod.GENERIC_ROMAN_HEADING
             for _, _, _, method, _ in generic_stack
         )
-        contextual_outline_supported = nonlegal_generic_context and _starts_with_uppercase_word(
+        contextual_outline_supported = generic_outline_context and _starts_with_uppercase_word(
             candidate[decimal_match.end() :]
         )
         simple_supported = contextual_outline_supported or _heading_like(
@@ -742,6 +902,15 @@ class VietnameseStructuralExtractor:
         for candidate_level, node_id, _, _, _ in reversed(generic_stack):
             if candidate_level < level:
                 return node_id, level
+        for parent_kind in (
+            StructuralNodeKind.SUBSECTION,
+            StructuralNodeKind.SECTION,
+            StructuralNodeKind.CHAPTER,
+            StructuralNodeKind.PART,
+            StructuralNodeKind.APPENDIX,
+        ):
+            if parent_kind in active:
+                return active[parent_kind], level
         clause_id = active.get(StructuralNodeKind.CLAUSE)
         if clause_id is not None:
             return clause_id, level
