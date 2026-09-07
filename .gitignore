@@ -52,12 +52,15 @@ data/*
 !data/manifests/
 !data/annotations/
 !data/benchmarks/
+!data/structural_annotations/
+!data/structural_ir/
 !data/golden/**/
 !data/golden/**/.gitkeep
 !data/manifests/**
 !data/annotations/**
 !data/benchmarks/**
+!data/structural_annotations/**
+!data/structural_ir/**
 data/golden/**/*.pdf
 data/golden/**/*.part
 data/golden/**/parser_runs/
-

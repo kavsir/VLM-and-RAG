@@ -1,0 +1,5842 @@
+{
+  "structural_ir_version": 1,
+  "profile": "vi_legal_planning_v1",
+  "source_physical_ir_version": 2,
+  "source_physical_ir_sha256": "cb1488e94be68a6e6cd2a0926ad8272facb339474808702a00e0a38d05ee3842",
+  "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+  "version_id": "v1",
+  "source_artifact_sha256": "342b4f13dbd6eb644c9b73201d3951d85968cb316656969ace0b74a50a3ae109",
+  "nodes": [
+    {
+      "id": "node-000000",
+      "kind": "document",
+      "parent_id": null,
+      "depth": 0,
+      "ordinal_raw": null,
+      "ordinal_key": null,
+      "marker_text": null,
+      "title": null,
+      "heading_anchors": [],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0004",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 62
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0005",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 84
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0006",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 212
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0007",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 132
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0008",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 286
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0009",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 57
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0010",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 108
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0011",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 38
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0012",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 283
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0013",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 583
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0014",
+          "page_index": 0,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0015",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 75
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0016",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 63
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0017",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 50
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0000_b0018",
+          "page_index": 0,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 226
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0002",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 11
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "DOCUMENT_ROOT_V1",
+        "recognition_method": "document_root",
+        "matched_text": "DOCUMENT"
+      },
+      "canonical_path": "document"
+    },
+    {
+      "id": "node-000001",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "Điều 1.",
+      "title": "Tên quy hoạch, phạm vi ranh giới quy hoạch",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0003",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0003",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 50
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 1."
+      },
+      "canonical_path": "article:1"
+    },
+    {
+      "id": "node-000002",
+      "kind": "clause",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0004",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0004",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 89
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:1/clause:1"
+    },
+    {
+      "id": "node-000003",
+      "kind": "clause",
+      "parent_id": "node-000001",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0005",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0005",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 122
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:1/clause:2"
+    },
+    {
+      "id": "node-000004",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "Điều 2.",
+      "title": "Quan điểm, tầm nhìn, mục tiêu phát triển và những nhiệm vụ trọng tâm trong thời kỳ quy hoạch2",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0006",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0006",
+          "page_index": 1,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 101
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0007",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 2."
+      },
+      "canonical_path": "article:2"
+    },
+    {
+      "id": "node-000005",
+      "kind": "clause",
+      "parent_id": "node-000004",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0008",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0008",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 76
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:2/clause:1"
+    },
+    {
+      "id": "node-000006",
+      "kind": "point",
+      "parent_id": "node-000005",
+      "depth": 3,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0009",
+          "page_index": 1,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0009",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 23
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0010",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 297
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0011",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 192
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0012",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 405
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0013",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 73
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0014",
+          "page_index": 1,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0015",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 133
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0016",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 132
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0017",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 147
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0018",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 147
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0019",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 397
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0001_b0020",
+          "page_index": 1,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 314
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0002_b0002",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 594
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0002_b0003",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 759
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:2/clause:1/point:a"
+    },
+    {
+      "id": "node-000007",
+      "kind": "point",
+      "parent_id": "node-000005",
+      "depth": 3,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0002_b0004",
+          "page_index": 2,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0002_b0004",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 45
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0002_b0005",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 492
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0002_b0006",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 680
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0002_b0007",
+          "page_index": 2,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 396
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0003_b0002",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 329
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0003_b0003",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 529
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:2/clause:1/point:b"
+    },
+    {
+      "id": "node-000008",
+      "kind": "clause",
+      "parent_id": "node-000004",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0003_b0004",
+          "page_index": 3,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0003_b0004",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 24
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0003_b0005",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 950
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0003_b0006",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 440
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0003_b0007",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 198
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0003_b0008",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 326
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0003_b0009",
+          "page_index": 3,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 121
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0002",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 319
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0003",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 247
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:2/clause:2"
+    },
+    {
+      "id": "node-000009",
+      "kind": "clause",
+      "parent_id": "node-000004",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0004",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0004",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 35
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:2/clause:3"
+    },
+    {
+      "id": "node-000010",
+      "kind": "point",
+      "parent_id": "node-000009",
+      "depth": 3,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0005",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0005",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 21
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0006",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 902
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:2/clause:3/point:a"
+    },
+    {
+      "id": "node-000011",
+      "kind": "point",
+      "parent_id": "node-000009",
+      "depth": 3,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0007",
+          "page_index": 4,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0007",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 28
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0008",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 12
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0009",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 638
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0010",
+          "page_index": 4,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 352
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0004_b0011",
+          "page_index": 4,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0002",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 367
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0003",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 205
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0004",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 168
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0005",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 11
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0006",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 422
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0007",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 468
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0008",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 348
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0009",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 402
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0010",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 15
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0005_b0011",
+          "page_index": 5,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 236
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0002",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 123
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0003",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 915
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0004",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 31
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0005",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 751
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0006",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 24
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0007",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 260
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:2/clause:3/point:b"
+    },
+    {
+      "id": "node-000012",
+      "kind": "clause",
+      "parent_id": "node-000004",
+      "depth": 2,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0008",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0008",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 45
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "4."
+      },
+      "canonical_path": "article:2/clause:4"
+    },
+    {
+      "id": "node-000013",
+      "kind": "point",
+      "parent_id": "node-000012",
+      "depth": 3,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0009",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0009",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 199
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:2/clause:4/point:a"
+    },
+    {
+      "id": "node-000014",
+      "kind": "point",
+      "parent_id": "node-000012",
+      "depth": 3,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0010",
+          "page_index": 6,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0010",
+          "page_index": 6,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 272
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0011",
+          "page_index": 6,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0006_b0012",
+          "page_index": 6,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0002",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 525
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:2/clause:4/point:b"
+    },
+    {
+      "id": "node-000015",
+      "kind": "point",
+      "parent_id": "node-000012",
+      "depth": 3,
+      "ordinal_raw": "d",
+      "ordinal_key": "d",
+      "marker_text": "d)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0003",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0003",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 564
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "d)"
+      },
+      "canonical_path": "article:2/clause:4/point:d"
+    },
+    {
+      "id": "node-000016",
+      "kind": "point",
+      "parent_id": "node-000012",
+      "depth": 3,
+      "ordinal_raw": "đ",
+      "ordinal_key": "đ",
+      "marker_text": "đ)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0004",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0004",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 305
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "đ)"
+      },
+      "canonical_path": "article:2/clause:4/point:đ"
+    },
+    {
+      "id": "node-000017",
+      "kind": "point",
+      "parent_id": "node-000012",
+      "depth": 3,
+      "ordinal_raw": "e",
+      "ordinal_key": "e",
+      "marker_text": "e)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0005",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0005",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 223
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "e)"
+      },
+      "canonical_path": "article:2/clause:4/point:e"
+    },
+    {
+      "id": "node-000018",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "Điều 3.",
+      "title": "Định hướng phát triển không gian kinh tế - xã hội",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0006",
+          "page_index": 7,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0006",
+          "page_index": 7,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 57
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0007",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 69
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0007",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 69,
+          "char_end": 96
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0008",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 222
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0009",
+          "page_index": 7,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0010",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 140
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0010",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 140,
+          "char_end": 250
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0010",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 250,
+          "char_end": 336
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0010",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 336,
+          "char_end": 460
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0011",
+          "page_index": 7,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0012",
+          "page_index": 7,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0013",
+          "page_index": 7,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0007_b0014",
+          "page_index": 7,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 322
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0008_b0002",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 84
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0008_b0003",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 102
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0008_b0004",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 46
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0008_b0005",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 419
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0008_b0006",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 498
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0008_b0007",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 663
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0008_b0008",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 292
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0008_b0009",
+          "page_index": 8,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 712
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0009_b0002",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1071
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0009_b0003",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 695
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0009_b0004",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 755
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0009_b0005",
+          "page_index": 9,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 485
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0010_b0002",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 199
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0010_b0003",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 135
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0010_b0004",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 489
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0010_b0005",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 473
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0010_b0006",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 529
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0010_b0007",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 406
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0010_b0008",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 504
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0010_b0009",
+          "page_index": 10,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 140
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0011_b0002",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1913
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0011_b0003",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 222
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0011_b0004",
+          "page_index": 11,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1025
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0012_b0002",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1649
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0012_b0003",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 265
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0012_b0004",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 715
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0012_b0005",
+          "page_index": 12,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0012_b0006",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 59
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0012_b0006",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 59,
+          "char_end": 84
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0012_b0007",
+          "page_index": 12,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 322
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0013_b0002",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 494
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0013_b0003",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 894
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0013_b0004",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 25
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0013_b0005",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 344
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0013_b0006",
+          "page_index": 13,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1166
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0013_b0007",
+          "page_index": 13,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0014_b0002",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 327
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0014_b0003",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 893
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0014_b0004",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 40
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0014_b0005",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 580
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0014_b0006",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 784
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0014_b0007",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 29
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0014_b0008",
+          "page_index": 14,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0014_b0009",
+          "page_index": 14,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 190
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0002",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 517
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0003",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 129
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0004",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 36
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0005",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 61
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0006",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 527
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0007",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 407
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0008",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 232
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0009",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 73
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0010",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 429
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0011",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 55
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0015_b0012",
+          "page_index": 15,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 322
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0002",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 183
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0003",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 177
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0004",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 377
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0005",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 206
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0006",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 288
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0007",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 242
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0008",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 184
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 3."
+      },
+      "canonical_path": "article:3"
+    },
+    {
+      "id": "node-000019",
+      "kind": "clause",
+      "parent_id": "node-000018",
+      "depth": 2,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 61
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "4."
+      },
+      "canonical_path": "article:3/clause:4"
+    },
+    {
+      "id": "node-000020",
+      "kind": "point",
+      "parent_id": "node-000019",
+      "depth": 3,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "marker",
+          "char_start": 61,
+          "char_end": 64
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 64,
+          "char_end": 97
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 97,
+          "char_end": 239
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 239,
+          "char_end": 409
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:3/clause:4/point:a"
+    },
+    {
+      "id": "node-000021",
+      "kind": "point",
+      "parent_id": "node-000019",
+      "depth": 3,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "marker",
+          "char_start": 409,
+          "char_end": 412
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 412,
+          "char_end": 440
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0016_b0009",
+          "page_index": 16,
+          "role": "body",
+          "char_start": 440,
+          "char_end": 566
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0002",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 152
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0002",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 152,
+          "char_end": 280
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0002",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 280,
+          "char_end": 427
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:3/clause:4/point:b"
+    },
+    {
+      "id": "node-000022",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "Điều 4.",
+      "title": "Định hướng phát triển hệ thống đô thị và nông thôn quốc gia6",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0003",
+          "page_index": 17,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0003",
+          "page_index": 17,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 68
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 4."
+      },
+      "canonical_path": "article:4"
+    },
+    {
+      "id": "node-000023",
+      "kind": "clause",
+      "parent_id": "node-000022",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0004",
+          "page_index": 17,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0004",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 49
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0005",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 770
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0006",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1127
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0017_b0007",
+          "page_index": 17,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 314
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0002",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 264
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0003",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 472
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0004",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 261
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0005",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 412
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0006",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 418
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:4/clause:1"
+    },
+    {
+      "id": "node-000024",
+      "kind": "clause",
+      "parent_id": "node-000022",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0007",
+          "page_index": 18,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0007",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 41
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0008",
+          "page_index": 18,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:4/clause:2"
+    },
+    {
+      "id": "node-000025",
+      "kind": "point",
+      "parent_id": "node-000024",
+      "depth": 3,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0009",
+          "page_index": 18,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0009",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 345
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0010",
+          "page_index": 18,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 484
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0018_b0011",
+          "page_index": 18,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0019_b0002",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 609
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0019_b0003",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 231
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:4/clause:2/point:a"
+    },
+    {
+      "id": "node-000026",
+      "kind": "point",
+      "parent_id": "node-000024",
+      "depth": 3,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0019_b0004",
+          "page_index": 19,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0019_b0004",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 343
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0019_b0005",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 659
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0019_b0006",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 583
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:4/clause:2/point:b"
+    },
+    {
+      "id": "node-000027",
+      "kind": "point",
+      "parent_id": "node-000024",
+      "depth": 3,
+      "ordinal_raw": "c",
+      "ordinal_key": "c",
+      "marker_text": "c)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0019_b0007",
+          "page_index": 19,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0019_b0007",
+          "page_index": 19,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 497
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0002",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 306
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "c)"
+      },
+      "canonical_path": "article:4/clause:2/point:c"
+    },
+    {
+      "id": "node-000028",
+      "kind": "point",
+      "parent_id": "node-000024",
+      "depth": 3,
+      "ordinal_raw": "d",
+      "ordinal_key": "d",
+      "marker_text": "d)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0003",
+          "page_index": 20,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0003",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 578
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0004",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 142
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "d)"
+      },
+      "canonical_path": "article:4/clause:2/point:d"
+    },
+    {
+      "id": "node-000029",
+      "kind": "clause",
+      "parent_id": "node-000022",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0005",
+          "page_index": 20,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0005",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 34
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0006",
+          "page_index": 20,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0007",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 767
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0008",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 244
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0009",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 295
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0010",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 303
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0020_b0011",
+          "page_index": 20,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 147
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0002",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 162
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0003",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 338
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:4/clause:3"
+    },
+    {
+      "id": "node-000030",
+      "kind": "clause",
+      "parent_id": "node-000022",
+      "depth": 2,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0004",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0004",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 205
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "4."
+      },
+      "canonical_path": "article:4/clause:4"
+    },
+    {
+      "id": "node-000031",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "5",
+      "ordinal_key": "5",
+      "marker_text": "Điều 5.",
+      "title": "Định hướng phát triển không gian biển",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0005",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0005",
+          "page_index": 21,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 45
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 5."
+      },
+      "canonical_path": "article:5"
+    },
+    {
+      "id": "node-000032",
+      "kind": "clause",
+      "parent_id": "node-000031",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0006",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0006",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 107
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:5/clause:1"
+    },
+    {
+      "id": "node-000033",
+      "kind": "clause",
+      "parent_id": "node-000031",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0007",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0007",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 532
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:5/clause:2"
+    },
+    {
+      "id": "node-000034",
+      "kind": "clause",
+      "parent_id": "node-000031",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0008",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0008",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 328
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:5/clause:3"
+    },
+    {
+      "id": "node-000035",
+      "kind": "clause",
+      "parent_id": "node-000031",
+      "depth": 2,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0009",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0009",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 398
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "4."
+      },
+      "canonical_path": "article:5/clause:4"
+    },
+    {
+      "id": "node-000036",
+      "kind": "point",
+      "parent_id": "node-000035",
+      "depth": 3,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0010",
+          "page_index": 21,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0021_b0010",
+          "page_index": 21,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 544
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:5/clause:4/point:a"
+    },
+    {
+      "id": "node-000037",
+      "kind": "point",
+      "parent_id": "node-000035",
+      "depth": 3,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0002",
+          "page_index": 22,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0002",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 595
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:5/clause:4/point:b"
+    },
+    {
+      "id": "node-000038",
+      "kind": "point",
+      "parent_id": "node-000035",
+      "depth": 3,
+      "ordinal_raw": "c",
+      "ordinal_key": "c",
+      "marker_text": "c)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0003",
+          "page_index": 22,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0003",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 405
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "c)"
+      },
+      "canonical_path": "article:5/clause:4/point:c"
+    },
+    {
+      "id": "node-000039",
+      "kind": "point",
+      "parent_id": "node-000035",
+      "depth": 3,
+      "ordinal_raw": "d",
+      "ordinal_key": "d",
+      "marker_text": "d)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0004",
+          "page_index": 22,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0004",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 329
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0005",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 376
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0006",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 348
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0007",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 328
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0008",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 350
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0009",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 349
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0022_b0010",
+          "page_index": 22,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 365
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "d)"
+      },
+      "canonical_path": "article:5/clause:4/point:d"
+    },
+    {
+      "id": "node-000040",
+      "kind": "clause",
+      "parent_id": "node-000031",
+      "depth": 2,
+      "ordinal_raw": "5",
+      "ordinal_key": "5",
+      "marker_text": "5.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0002",
+          "page_index": 23,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0002",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 41
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0003",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 226
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0004",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 489
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "5."
+      },
+      "canonical_path": "article:5/clause:5"
+    },
+    {
+      "id": "node-000041",
+      "kind": "clause",
+      "parent_id": "node-000031",
+      "depth": 2,
+      "ordinal_raw": "6",
+      "ordinal_key": "6",
+      "marker_text": "6.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0005",
+          "page_index": 23,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0005",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 285
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "6."
+      },
+      "canonical_path": "article:5/clause:6"
+    },
+    {
+      "id": "node-000042",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "6",
+      "ordinal_key": "6",
+      "marker_text": "Điều 6.",
+      "title": "Định hướng khai thác và sử dụng vùng trời",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0006",
+          "page_index": 23,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0006",
+          "page_index": 23,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 49
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 6."
+      },
+      "canonical_path": "article:6"
+    },
+    {
+      "id": "node-000043",
+      "kind": "clause",
+      "parent_id": "node-000042",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0007",
+          "page_index": 23,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0007",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 304
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:6/clause:1"
+    },
+    {
+      "id": "node-000044",
+      "kind": "clause",
+      "parent_id": "node-000042",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0008",
+          "page_index": 23,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0008",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 344
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:6/clause:2"
+    },
+    {
+      "id": "node-000045",
+      "kind": "clause",
+      "parent_id": "node-000042",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0009",
+          "page_index": 23,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0009",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 458
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0010",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 308
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0023_b0011",
+          "page_index": 23,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 307
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0002",
+          "page_index": 24,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 118
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:6/clause:3"
+    },
+    {
+      "id": "node-000046",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "7",
+      "ordinal_key": "7",
+      "marker_text": "Điều 7.",
+      "title": "Định hướng phát triển và phân bố không gian các ngành quan trọng14",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0003",
+          "page_index": 24,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0003",
+          "page_index": 24,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 74
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 7."
+      },
+      "canonical_path": "article:7"
+    },
+    {
+      "id": "node-000047",
+      "kind": "clause",
+      "parent_id": "node-000046",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0004",
+          "page_index": 24,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0004",
+          "page_index": 24,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 249
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0005",
+          "page_index": 24,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1225
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0006",
+          "page_index": 24,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 516
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0007",
+          "page_index": 24,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 534
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0024_b0008",
+          "page_index": 24,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 315
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0025_b0002",
+          "page_index": 25,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 363
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:7/clause:1"
+    },
+    {
+      "id": "node-000048",
+      "kind": "clause",
+      "parent_id": "node-000046",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0025_b0003",
+          "page_index": 25,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0025_b0003",
+          "page_index": 25,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 710
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0025_b0004",
+          "page_index": 25,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1150
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:7/clause:2"
+    },
+    {
+      "id": "node-000049",
+      "kind": "clause",
+      "parent_id": "node-000046",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0025_b0005",
+          "page_index": 25,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0025_b0005",
+          "page_index": 25,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 750
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0025_b0006",
+          "page_index": 25,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 159
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0026_b0002",
+          "page_index": 26,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1553
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:7/clause:3"
+    },
+    {
+      "id": "node-000050",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "8",
+      "ordinal_key": "8",
+      "marker_text": "Điều 8.",
+      "title": "Định hướng phát triển hạ tầng xã hội cấp quốc gia",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0026_b0003",
+          "page_index": 26,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0026_b0003",
+          "page_index": 26,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 57
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0026_b0004",
+          "page_index": 26,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1243
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0026_b0005",
+          "page_index": 26,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 323
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0027_b0002",
+          "page_index": 27,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 597
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0027_b0003",
+          "page_index": 27,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1100
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0027_b0004",
+          "page_index": 27,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 251
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0027_b0005",
+          "page_index": 27,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 660
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0027_b0006",
+          "page_index": 27,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 70
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0027_b0007",
+          "page_index": 27,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 323
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0028_b0002",
+          "page_index": 28,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 694
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0028_b0003",
+          "page_index": 28,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1753
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0028_b0004",
+          "page_index": 28,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 233
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0028_b0005",
+          "page_index": 28,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 323
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0028_b0006",
+          "page_index": 28,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 323
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0029_b0002",
+          "page_index": 29,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 729
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0029_b0003",
+          "page_index": 29,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1206
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0029_b0004",
+          "page_index": 29,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 279
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 8."
+      },
+      "canonical_path": "article:8"
+    },
+    {
+      "id": "node-000051",
+      "kind": "clause",
+      "parent_id": "node-000050",
+      "depth": 2,
+      "ordinal_raw": "6",
+      "ordinal_key": "6",
+      "marker_text": "6.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0029_b0005",
+          "page_index": 29,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0029_b0005",
+          "page_index": 29,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 351
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "6."
+      },
+      "canonical_path": "article:8/clause:6"
+    },
+    {
+      "id": "node-000052",
+      "kind": "clause",
+      "parent_id": "node-000050",
+      "depth": 2,
+      "ordinal_raw": "7",
+      "ordinal_key": "7",
+      "marker_text": "7.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0029_b0006",
+          "page_index": 29,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0029_b0006",
+          "page_index": 29,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 145
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0029_b0007",
+          "page_index": 29,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 323
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0002",
+          "page_index": 30,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 87
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "7."
+      },
+      "canonical_path": "article:8/clause:7"
+    },
+    {
+      "id": "node-000053",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "9",
+      "ordinal_key": "9",
+      "marker_text": "Điều 9.",
+      "title": "Định hướng phát triển hạ tầng kỹ thuật cấp quốc gia",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0003",
+          "page_index": 30,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 8
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0003",
+          "page_index": 30,
+          "role": "title",
+          "char_start": 8,
+          "char_end": 59
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0004",
+          "page_index": 30,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 335
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0005",
+          "page_index": 30,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 811
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0006",
+          "page_index": 30,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 67
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0007",
+          "page_index": 30,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1034
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0008",
+          "page_index": 30,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 156
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0030_b0009",
+          "page_index": 30,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 323
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0031_b0002",
+          "page_index": 31,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 647
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0031_b0003",
+          "page_index": 31,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 353
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0031_b0004",
+          "page_index": 31,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 372
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0031_b0005",
+          "page_index": 31,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 269
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0031_b0006",
+          "page_index": 31,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 329
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0031_b0007",
+          "page_index": 31,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 531
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0031_b0008",
+          "page_index": 31,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 75
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0031_b0009",
+          "page_index": 31,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 323
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0032_b0002",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1237
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0032_b0003",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 451
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0032_b0004",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 807
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0032_b0005",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 322
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0032_b0006",
+          "page_index": 32,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 323
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0033_b0002",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 188
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0033_b0003",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1381
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0033_b0004",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 590
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0033_b0005",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 426
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0033_b0006",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 156
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0033_b0007",
+          "page_index": 33,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 323
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0034_b0002",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 261
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0034_b0003",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 530
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0034_b0004",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 591
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0034_b0005",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 497
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 9."
+      },
+      "canonical_path": "article:9"
+    },
+    {
+      "id": "node-000054",
+      "kind": "clause",
+      "parent_id": "node-000053",
+      "depth": 2,
+      "ordinal_raw": "5",
+      "ordinal_key": "5",
+      "marker_text": "5.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0034_b0006",
+          "page_index": 34,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0034_b0006",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 506
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0034_b0007",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 369
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0034_b0008",
+          "page_index": 34,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 349
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "5."
+      },
+      "canonical_path": "article:9/clause:5"
+    },
+    {
+      "id": "node-000055",
+      "kind": "clause",
+      "parent_id": "node-000053",
+      "depth": 2,
+      "ordinal_raw": "6",
+      "ordinal_key": "6",
+      "marker_text": "6.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0002",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0002",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 306
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0003",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 658
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "6."
+      },
+      "canonical_path": "article:9/clause:6"
+    },
+    {
+      "id": "node-000056",
+      "kind": "clause",
+      "parent_id": "node-000053",
+      "depth": 2,
+      "ordinal_raw": "7",
+      "ordinal_key": "7",
+      "marker_text": "7.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0004",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0004",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 211
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "7."
+      },
+      "canonical_path": "article:9/clause:7"
+    },
+    {
+      "id": "node-000057",
+      "kind": "clause",
+      "parent_id": "node-000053",
+      "depth": 2,
+      "ordinal_raw": "8",
+      "ordinal_key": "8",
+      "marker_text": "8.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0005",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0005",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 542
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "8."
+      },
+      "canonical_path": "article:9/clause:8"
+    },
+    {
+      "id": "node-000058",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "10",
+      "ordinal_key": "10",
+      "marker_text": "Điều 10.",
+      "title": "Định hướng sử dụng tài nguyên, bảo vệ môi trường, phòng, chống thiên tai và ứng phó với biến đổi khí hậu",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0006",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0006",
+          "page_index": 35,
+          "role": "title",
+          "char_start": 9,
+          "char_end": 113
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 10."
+      },
+      "canonical_path": "article:10"
+    },
+    {
+      "id": "node-000059",
+      "kind": "clause",
+      "parent_id": "node-000058",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0007",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0007",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 32
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:10/clause:1"
+    },
+    {
+      "id": "node-000060",
+      "kind": "point",
+      "parent_id": "node-000059",
+      "depth": 3,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0008",
+          "page_index": 35,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0035_b0008",
+          "page_index": 35,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 1100
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0036_b0002",
+          "page_index": 36,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 154
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:10/clause:1/point:a"
+    },
+    {
+      "id": "node-000061",
+      "kind": "point",
+      "parent_id": "node-000059",
+      "depth": 3,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0036_b0003",
+          "page_index": 36,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0036_b0003",
+          "page_index": 36,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 818
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:10/clause:1/point:b"
+    },
+    {
+      "id": "node-000062",
+      "kind": "point",
+      "parent_id": "node-000059",
+      "depth": 3,
+      "ordinal_raw": "c",
+      "ordinal_key": "c",
+      "marker_text": "c)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0036_b0004",
+          "page_index": 36,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0036_b0004",
+          "page_index": 36,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 772
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "c)"
+      },
+      "canonical_path": "article:10/clause:1/point:c"
+    },
+    {
+      "id": "node-000063",
+      "kind": "point",
+      "parent_id": "node-000059",
+      "depth": 3,
+      "ordinal_raw": "d",
+      "ordinal_key": "d",
+      "marker_text": "d)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0036_b0005",
+          "page_index": 36,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0036_b0005",
+          "page_index": 36,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 723
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0036_b0006",
+          "page_index": 36,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 334
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0036_b0007",
+          "page_index": 36,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 291
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "d)"
+      },
+      "canonical_path": "article:10/clause:1/point:d"
+    },
+    {
+      "id": "node-000064",
+      "kind": "clause",
+      "parent_id": "node-000058",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0037_b0002",
+          "page_index": 37,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0037_b0002",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 34
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0037_b0003",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 484
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0037_b0004",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 543
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0037_b0005",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 688
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0037_b0006",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 820
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:10/clause:2"
+    },
+    {
+      "id": "node-000065",
+      "kind": "clause",
+      "parent_id": "node-000058",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0037_b0007",
+          "page_index": 37,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0037_b0007",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 59
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0037_b0008",
+          "page_index": 37,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 394
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0002",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 107
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0003",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 382
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0004",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 309
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0005",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 533
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:10/clause:3"
+    },
+    {
+      "id": "node-000066",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "11",
+      "ordinal_key": "11",
+      "marker_text": "Điều 11.",
+      "title": "Định hướng củng cố, tăng cường quốc phòng, bảo đảm an ninh quốc gia",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0006",
+          "page_index": 38,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0006",
+          "page_index": 38,
+          "role": "title",
+          "char_start": 9,
+          "char_end": 76
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 11."
+      },
+      "canonical_path": "article:11"
+    },
+    {
+      "id": "node-000067",
+      "kind": "clause",
+      "parent_id": "node-000066",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0007",
+          "page_index": 38,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0007",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 609
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:11/clause:1"
+    },
+    {
+      "id": "node-000068",
+      "kind": "clause",
+      "parent_id": "node-000066",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0008",
+          "page_index": 38,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0008",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 396
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0009",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 353
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0038_b0010",
+          "page_index": 38,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 338
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0002",
+          "page_index": 39,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 242
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:11/clause:2"
+    },
+    {
+      "id": "node-000069",
+      "kind": "clause",
+      "parent_id": "node-000066",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0003",
+          "page_index": 39,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0003",
+          "page_index": 39,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 719
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:11/clause:3"
+    },
+    {
+      "id": "node-000070",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "12",
+      "ordinal_key": "12",
+      "marker_text": "Điều 12.",
+      "title": "Định hướng sử dụng đất quốc gia29",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0004",
+          "page_index": 39,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0004",
+          "page_index": 39,
+          "role": "title",
+          "char_start": 9,
+          "char_end": 42
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 12."
+      },
+      "canonical_path": "article:12"
+    },
+    {
+      "id": "node-000071",
+      "kind": "clause",
+      "parent_id": "node-000070",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0005",
+          "page_index": 39,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0005",
+          "page_index": 39,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 421
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:12/clause:1"
+    },
+    {
+      "id": "node-000072",
+      "kind": "clause",
+      "parent_id": "node-000070",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0006",
+          "page_index": 39,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0006",
+          "page_index": 39,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 449
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:12/clause:2"
+    },
+    {
+      "id": "node-000073",
+      "kind": "clause",
+      "parent_id": "node-000070",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0007",
+          "page_index": 39,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0007",
+          "page_index": 39,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 605
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0008",
+          "page_index": 39,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 354
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0039_b0009",
+          "page_index": 39,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 315
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:12/clause:3"
+    },
+    {
+      "id": "node-000074",
+      "kind": "clause",
+      "parent_id": "node-000070",
+      "depth": 2,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0002",
+          "page_index": 40,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0002",
+          "page_index": 40,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 247
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "4."
+      },
+      "canonical_path": "article:12/clause:4"
+    },
+    {
+      "id": "node-000075",
+      "kind": "clause",
+      "parent_id": "node-000070",
+      "depth": 2,
+      "ordinal_raw": "5",
+      "ordinal_key": "5",
+      "marker_text": "5.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0003",
+          "page_index": 40,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0003",
+          "page_index": 40,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 226
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "5."
+      },
+      "canonical_path": "article:12/clause:5"
+    },
+    {
+      "id": "node-000076",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "13",
+      "ordinal_key": "13",
+      "marker_text": "Điều 13.",
+      "title": "Danh mục dự kiến các dự án quan trọng quốc gia và thứ tự ưu tiên thực hiện",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0004",
+          "page_index": 40,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0004",
+          "page_index": 40,
+          "role": "title",
+          "char_start": 9,
+          "char_end": 83
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 13."
+      },
+      "canonical_path": "article:13"
+    },
+    {
+      "id": "node-000077",
+      "kind": "clause",
+      "parent_id": "node-000076",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0005",
+          "page_index": 40,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0005",
+          "page_index": 40,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 143
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:13/clause:1"
+    },
+    {
+      "id": "node-000078",
+      "kind": "clause",
+      "parent_id": "node-000076",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0006",
+          "page_index": 40,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0006",
+          "page_index": 40,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 263
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:13/clause:2"
+    },
+    {
+      "id": "node-000079",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "14",
+      "ordinal_key": "14",
+      "marker_text": "Điều 14.",
+      "title": "Giải pháp, nguồn lực thực hiện quy hoạch30",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0007",
+          "page_index": 40,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0007",
+          "page_index": 40,
+          "role": "title",
+          "char_start": 9,
+          "char_end": 51
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 14."
+      },
+      "canonical_path": "article:14"
+    },
+    {
+      "id": "node-000080",
+      "kind": "clause",
+      "parent_id": "node-000079",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0008",
+          "page_index": 40,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0008",
+          "page_index": 40,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 25
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0009",
+          "page_index": 40,
+          "role": "object",
+          "char_start": null,
+          "char_end": null
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0010",
+          "page_index": 40,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1041
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0011",
+          "page_index": 40,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 236
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0040_b0012",
+          "page_index": 40,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 315
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0041_b0002",
+          "page_index": 41,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 159
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0041_b0003",
+          "page_index": 41,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 564
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0041_b0004",
+          "page_index": 41,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 1179
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0041_b0005",
+          "page_index": 41,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 555
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0041_b0006",
+          "page_index": 41,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 389
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:14/clause:1"
+    },
+    {
+      "id": "node-000081",
+      "kind": "clause",
+      "parent_id": "node-000079",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0041_b0007",
+          "page_index": 41,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0041_b0007",
+          "page_index": 41,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 24
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0041_b0008",
+          "page_index": 41,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 153
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0042_b0002",
+          "page_index": 42,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 184
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0042_b0003",
+          "page_index": 42,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 539
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0042_b0004",
+          "page_index": 42,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 485
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0042_b0005",
+          "page_index": 42,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 805
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:14/clause:2"
+    },
+    {
+      "id": "node-000082",
+      "kind": "clause",
+      "parent_id": "node-000079",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0042_b0006",
+          "page_index": 42,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0042_b0006",
+          "page_index": 42,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 39
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0042_b0007",
+          "page_index": 42,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 821
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0002",
+          "page_index": 43,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 623
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:14/clause:3"
+    },
+    {
+      "id": "node-000083",
+      "kind": "clause",
+      "parent_id": "node-000079",
+      "depth": 2,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0003",
+          "page_index": 43,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0003",
+          "page_index": 43,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 31
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0004",
+          "page_index": 43,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 865
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0005",
+          "page_index": 43,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 472
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "4."
+      },
+      "canonical_path": "article:14/clause:4"
+    },
+    {
+      "id": "node-000084",
+      "kind": "clause",
+      "parent_id": "node-000079",
+      "depth": 2,
+      "ordinal_raw": "5",
+      "ordinal_key": "5",
+      "marker_text": "5.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0006",
+          "page_index": 43,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0006",
+          "page_index": 43,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 21
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0007",
+          "page_index": 43,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 285
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0008",
+          "page_index": 43,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 332
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0043_b0009",
+          "page_index": 43,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 237
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0002",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 191
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0003",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 267
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0004",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 289
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0005",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 176
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "5."
+      },
+      "canonical_path": "article:14/clause:5"
+    },
+    {
+      "id": "node-000085",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "15",
+      "ordinal_key": "15",
+      "marker_text": "Điều 15.",
+      "title": "Tổ chức thực hiện quy hoạch",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0006",
+          "page_index": 44,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0006",
+          "page_index": 44,
+          "role": "title",
+          "char_start": 9,
+          "char_end": 36
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0007",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 444
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 15."
+      },
+      "canonical_path": "article:15"
+    },
+    {
+      "id": "node-000086",
+      "kind": "clause",
+      "parent_id": "node-000085",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0008",
+          "page_index": 44,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0008",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 70
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:15/clause:2"
+    },
+    {
+      "id": "node-000087",
+      "kind": "point",
+      "parent_id": "node-000086",
+      "depth": 3,
+      "ordinal_raw": "a",
+      "ordinal_key": "a",
+      "marker_text": "a)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0009",
+          "page_index": 44,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0009",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 193
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "a)"
+      },
+      "canonical_path": "article:15/clause:2/point:a"
+    },
+    {
+      "id": "node-000088",
+      "kind": "point",
+      "parent_id": "node-000086",
+      "depth": 3,
+      "ordinal_raw": "b",
+      "ordinal_key": "b",
+      "marker_text": "b)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0010",
+          "page_index": 44,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0010",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 353
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "b)"
+      },
+      "canonical_path": "article:15/clause:2/point:b"
+    },
+    {
+      "id": "node-000089",
+      "kind": "point",
+      "parent_id": "node-000086",
+      "depth": 3,
+      "ordinal_raw": "c",
+      "ordinal_key": "c",
+      "marker_text": "c)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0011",
+          "page_index": 44,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0011",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 155
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "c)"
+      },
+      "canonical_path": "article:15/clause:2/point:c"
+    },
+    {
+      "id": "node-000090",
+      "kind": "point",
+      "parent_id": "node-000086",
+      "depth": 3,
+      "ordinal_raw": "d",
+      "ordinal_key": "d",
+      "marker_text": "d)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0012",
+          "page_index": 44,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0012",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 314
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0044_b0013",
+          "page_index": 44,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 317
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "d)"
+      },
+      "canonical_path": "article:15/clause:2/point:d"
+    },
+    {
+      "id": "node-000091",
+      "kind": "point",
+      "parent_id": "node-000086",
+      "depth": 3,
+      "ordinal_raw": "đ",
+      "ordinal_key": "đ",
+      "marker_text": "đ)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0002",
+          "page_index": 45,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0002",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 170
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "đ)"
+      },
+      "canonical_path": "article:15/clause:2/point:đ"
+    },
+    {
+      "id": "node-000092",
+      "kind": "point",
+      "parent_id": "node-000086",
+      "depth": 3,
+      "ordinal_raw": "e",
+      "ordinal_key": "e",
+      "marker_text": "e)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0003",
+          "page_index": 45,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0003",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 120
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "e)"
+      },
+      "canonical_path": "article:15/clause:2/point:e"
+    },
+    {
+      "id": "node-000093",
+      "kind": "point",
+      "parent_id": "node-000086",
+      "depth": 3,
+      "ordinal_raw": "g",
+      "ordinal_key": "g",
+      "marker_text": "g)",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0004",
+          "page_index": 45,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0004",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 167
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_POINT_V1",
+        "recognition_method": "contextual_point",
+        "matched_text": "g)"
+      },
+      "canonical_path": "article:15/clause:2/point:g"
+    },
+    {
+      "id": "node-000094",
+      "kind": "clause",
+      "parent_id": "node-000085",
+      "depth": 2,
+      "ordinal_raw": "3",
+      "ordinal_key": "3",
+      "marker_text": "3.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0005",
+          "page_index": 45,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0005",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 154
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "3."
+      },
+      "canonical_path": "article:15/clause:3"
+    },
+    {
+      "id": "node-000095",
+      "kind": "clause",
+      "parent_id": "node-000085",
+      "depth": 2,
+      "ordinal_raw": "4",
+      "ordinal_key": "4",
+      "marker_text": "4.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0006",
+          "page_index": 45,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0006",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 250
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0007",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 68
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0008",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 26
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0009",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 131
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0010",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 27
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "4."
+      },
+      "canonical_path": "article:15/clause:4"
+    },
+    {
+      "id": "node-000096",
+      "kind": "clause",
+      "parent_id": "node-000085",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0011",
+          "page_index": 45,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0011",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 108
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0012",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 87
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0013",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 318
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:15/clause:1"
+    },
+    {
+      "id": "node-000097",
+      "kind": "article",
+      "parent_id": "node-000000",
+      "depth": 1,
+      "ordinal_raw": "51",
+      "ordinal_key": "51",
+      "marker_text": "Điều 51.",
+      "title": "Quy định chuyển tiếp",
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0014",
+          "page_index": 45,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0014",
+          "page_index": 45,
+          "role": "title",
+          "char_start": 9,
+          "char_end": 29
+        }
+      ],
+      "direct_content_anchors": [],
+      "recognition_evidence": {
+        "rule_id": "VI_FORMAL_ARTICLE_V1",
+        "recognition_method": "explicit_legal_marker",
+        "matched_text": "Điều 51."
+      },
+      "canonical_path": "article:51"
+    },
+    {
+      "id": "node-000098",
+      "kind": "clause",
+      "parent_id": "node-000097",
+      "depth": 2,
+      "ordinal_raw": "1",
+      "ordinal_key": "1",
+      "marker_text": "1.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0015",
+          "page_index": 45,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0015",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 223
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "1."
+      },
+      "canonical_path": "article:51/clause:1"
+    },
+    {
+      "id": "node-000099",
+      "kind": "clause",
+      "parent_id": "node-000097",
+      "depth": 2,
+      "ordinal_raw": "2",
+      "ordinal_key": "2",
+      "marker_text": "2.",
+      "title": null,
+      "heading_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0016",
+          "page_index": 45,
+          "role": "marker",
+          "char_start": 0,
+          "char_end": 3
+        }
+      ],
+      "direct_content_anchors": [
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0045_b0016",
+          "page_index": 45,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 461
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0002",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 129
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0003",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 272
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0004",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 28
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0005",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 56
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0006",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 18
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0007",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 17
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0008",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 25
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0009",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 32
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0010",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 9
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0046_b0011",
+          "page_index": 46,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 13
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0002",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 99
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0003",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 77
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 3
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 3,
+          "char_end": 10
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 10,
+          "char_end": 20
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 20,
+          "char_end": 48
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 48,
+          "char_end": 58
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 58,
+          "char_end": 68
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 68,
+          "char_end": 70
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 70,
+          "char_end": 91
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 91,
+          "char_end": 105
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 105,
+          "char_end": 107
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 107,
+          "char_end": 109
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 109,
+          "char_end": 130
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 130,
+          "char_end": 143
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 143,
+          "char_end": 145
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 145,
+          "char_end": 147
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 147,
+          "char_end": 149
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 149,
+          "char_end": 171
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 171,
+          "char_end": 175
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 175,
+          "char_end": 177
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 177,
+          "char_end": 179
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 179,
+          "char_end": 181
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 181,
+          "char_end": 205
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 205,
+          "char_end": 218
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 218,
+          "char_end": 220
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 220,
+          "char_end": 222
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 222,
+          "char_end": 237
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 237,
+          "char_end": 258
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 258,
+          "char_end": 265
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 265,
+          "char_end": 291
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 291,
+          "char_end": 293
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 293,
+          "char_end": 295
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 295,
+          "char_end": 316
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 316,
+          "char_end": 376
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 376,
+          "char_end": 378
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 378,
+          "char_end": 380
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 380,
+          "char_end": 402
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 402,
+          "char_end": 404
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 404,
+          "char_end": 406
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 406,
+          "char_end": 423
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 423,
+          "char_end": 460
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 460,
+          "char_end": 464
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 464,
+          "char_end": 480
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 480,
+          "char_end": 486
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 486,
+          "char_end": 488
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 488,
+          "char_end": 490
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 490,
+          "char_end": 516
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 516,
+          "char_end": 518
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0004",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 518,
+          "char_end": 519
+        },
+        {
+          "block_id": "vbhn-103-2026-quy-hoach-tong-the_v1_p0047_b0005",
+          "page_index": 47,
+          "role": "body",
+          "char_start": 0,
+          "char_end": 319
+        }
+      ],
+      "recognition_evidence": {
+        "rule_id": "VI_CONTEXTUAL_CLAUSE_V1",
+        "recognition_method": "contextual_clause",
+        "matched_text": "2."
+      },
+      "canonical_path": "article:51/clause:2"
+    }
+  ]
+}

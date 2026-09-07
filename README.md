@@ -14,20 +14,23 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Current Project Status
 
-- **Phase**: Physical Document IR v1 (Issue #007)
+- **Phase**: Structural IR v1 (Issue #008)
 - **Status**: The engineering foundation, golden-document registry, independent external MinerU
   and Marker adapters, frozen Physical Document IR v0 evidence, six-document reference corpus,
-  ten-run parser benchmark, and Physical Document IR v1 are implemented. Structural extraction,
-  semantic extraction, RAG, and retrieval features are not yet implemented.
+  ten-run parser benchmark, Physical Document IR v1, and deterministic Vietnamese legal/planning
+  Structural IR v1 are implemented. Semantic extraction, selective VLM, RAG, knowledge graphs, and
+  retrieval features are not yet implemented.
 
 ### Current data flow
 
 ```text
 Parser Raw
 ├── v0 normalizer → Physical IR v0 [research frozen; wire version 1]
-└── v1 normalizer → Physical IR v1 [current physical representation; wire version 2]
+└── v1 normalizer → Physical IR v1 [wire version 2]
                           │
-                          └──→ #008 Structural IR [not implemented]
+                          └──→ Vietnamese Legal/Planning Structural IR v1
+                                      │
+                                      └──→ #009 Semantic IR + Selective VLM [not implemented]
 ```
 
 ## Prerequisites
@@ -304,6 +307,40 @@ uv run python scripts/generate_physical_ir_v1_validation.py --render-only
 
 See [ADR 0006](docs/adr/0006-physical-ir-v1-evolution.md) and the generated
 [Physical IR v1 validation report](docs/research/physical-ir-v1-validation.md).
+
+## Vietnamese Legal/Planning Structural IR v1
+
+Structural IR v1 consumes only `PhysicalDocumentV1`. It recovers conservative Vietnamese legal and
+planning hierarchy, while every marker, title, body span, table, figure, or image remains anchored to
+the exact Physical IR input. It does not resolve legal citations or add semantic entities/relations.
+
+Recollect all ten retained parser/document pairs twice, write deterministic derived outputs, and
+refresh machine evidence plus the research report:
+
+```bash
+uv run python scripts/generate_structural_ir_v1_validation.py
+```
+
+A clean clone can validate all committed structural annotations and outputs, recompute benchmark
+metrics, and render the report without source PDFs or raw parser evidence:
+
+```bash
+uv run python scripts/generate_structural_ir_v1_validation.py --render-only
+```
+
+The approximately 2.1 MB of derived Structural IR JSON is committed under `data/structural_ir/` to
+make that offline boundary reproducible. See [ADR 0007](docs/adr/0007-vietnamese-structural-ir-v1.md)
+and the generated [Structural IR v1 validation report](docs/research/structural-ir-v1-validation.md).
+
+Structural reference annotation v4/schema 4 is a 46-page AI visual PDF re-audit with prior Physical
+IR and Structural extractor exposure disclosed. It is not human ground truth, and neither system
+output was used as reference truth. Page-level render hashes, corrections, and ambiguities are in
+`data/structural_annotations/reference_structural_audit.v4.json`. V4 preserves v3 visual truth while
+separating stable visual `reference_instance_id` values from page-local `reference_record_id` values
+and binding every non-root record to its exact `parent_reference_instance_id`. Ordinals are kind-aware
+at extraction and schema boundaries, unnumbered nodes use the literal `unnumbered` path segment,
+canonical paths contain no occurrence suffixes, and unsupported duplicate structural keys remain BODY
+with evidence-classified diagnostics.
 
 ## Corpus Benchmark Reproducibility
 

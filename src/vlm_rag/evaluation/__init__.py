@@ -1,4 +1,4 @@
-"""Parser-neutral evaluation package for physical document extraction."""
+"""Parser-neutral evaluation for physical extraction and structural recovery."""
 
 from vlm_rag.evaluation.evaluator import (
     DocumentEvaluationReport,
