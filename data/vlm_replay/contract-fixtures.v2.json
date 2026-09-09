@@ -1,5 +1,5 @@
 {
-  "replay_evidence_schema_version": 1,
+  "replay_evidence_schema_version": 2,
   "purpose": "synthetic_contract_only",
   "quality_claim_permitted": false,
   "request_record": {
@@ -8,6 +8,10 @@
       "document_id": "contract-document",
       "version_id": "v1",
       "source_artifact_sha256": "ba14b894f62ff09152f8d10c4dde385a74bc88ebc0555d14ae0745df6adb354e",
+      "source_physical_ir_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "source_structural_ir_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "structural_node_id": "structural-node-contract-001",
+      "structural_canonical_path": "document",
       "page_index": 0,
       "bbox": {
         "x0": 0.0,
@@ -40,8 +44,8 @@
     "timestamp": null
   },
   "fixture": {
-    "fixture_version": 1,
-    "request_sha256": "ed55cd7c41114a5d2ae8a09d6372a215c17521692e55976dcfac8ae5ab91f0a3",
+    "fixture_version": 2,
+    "request_record_sha256": "fa7ae3af4995b18f0f0f84b9bb74eb32534cc7252b7c902ce0747089457d36e5",
     "response": {
       "request_id": "vlm-request-contract-001",
       "model_id": "synthetic-replay-contract-v1",

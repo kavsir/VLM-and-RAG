@@ -185,3 +185,15 @@ def test_semantic_generation_does_not_mutate_physical_or_structural_ir() -> None
     assert semantic_document_to_json(first) == semantic_document_to_json(second)
     assert physical_document_v1_to_json(physical) == physical_before
     assert structural_document_to_json(structural) == structural_before
+
+
+def test_orphan_vlm_semantic_derivation_is_rejected() -> None:
+    _, _, semantic = _semantic("Nội dung có Quốc hội")
+    raw = semantic.model_dump(mode="json")
+    raw["statements"][0]["provenance"] = "vlm_transcription"
+    raw["statements"][0]["source_visual_observation_id"] = "missing-observation"
+    for mention in raw["mentions"]:
+        mention["provenance"] = "vlm_transcription"
+        mention["source_visual_observation_id"] = "missing-observation"
+    with pytest.raises(ValidationError, match="missing visual observation"):
+        SemanticDocument.model_validate(raw)

@@ -97,15 +97,15 @@ def build_semantic_document(
                     provenance=SemanticProvenanceKind.RULE_BASED_TEXT,
                 )
             )
-    owner_by_block = {
-        anchor.block_id: node for node in structural.nodes for anchor in node.direct_content_anchors
-    }
+    node_by_id = {node.id: node for node in structural.nodes}
     for observation in visual_observations:
         if (
             observation.document_id != physical.document_id
             or observation.version_id != physical.version_id
             or observation.source_artifact_sha256 != physical.source_artifact_sha256
             or observation.evidence_anchor.source_artifact_sha256 != physical.source_artifact_sha256
+            or observation.source_physical_ir_sha256 != physical_sha
+            or observation.source_structural_ir_sha256 != structural_sha
         ):
             raise SemanticSourceIntegrityError("VLM observation source identity mismatch")
         if (
@@ -113,9 +113,16 @@ def build_semantic_document(
             or observation.text is None
         ):
             continue
-        owner = owner_by_block.get(observation.source_block_ids[0])
-        if owner is None:
-            raise SemanticSourceIntegrityError("VLM observation has no structural owner")
+        owner = node_by_id.get(observation.structural_node_id)
+        if owner is None or owner.canonical_path != observation.structural_canonical_path:
+            raise SemanticSourceIntegrityError("VLM observation structural context mismatch")
+        owned_block_ids = {anchor.block_id for anchor in owner.direct_content_anchors}
+        if any(block_id not in owned_block_ids for block_id in observation.source_block_ids):
+            raise SemanticSourceIntegrityError(
+                "VLM observation source blocks are incompatible with structural context"
+            )
+        if any(block_id not in blocks for block_id in observation.source_block_ids):
+            raise SemanticSourceIntegrityError("VLM observation references missing physical block")
         statement_id = f"statement-{statement_index:08d}"
         statement_index += 1
         statement_mention_ids = []
@@ -132,6 +139,7 @@ def build_semantic_document(
                     normalized_value=candidate.normalized_value,
                     evidence_anchors=(observation.evidence_anchor,),
                     provenance=SemanticProvenanceKind.VLM_TRANSCRIPTION,
+                    source_visual_observation_id=observation.id,
                     legal_reference=candidate.legal_reference,
                     quantity=candidate.quantity,
                 )
@@ -145,6 +153,7 @@ def build_semantic_document(
                 evidence_anchors=(observation.evidence_anchor,),
                 mention_ids=tuple(statement_mention_ids),
                 provenance=SemanticProvenanceKind.VLM_TRANSCRIPTION,
+                source_visual_observation_id=observation.id,
             )
         )
     return SemanticDocument(

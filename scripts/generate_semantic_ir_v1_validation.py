@@ -4,17 +4,23 @@ import argparse
 from pathlib import Path
 
 from vlm_rag.evaluation.semantic import (
+    load_semantic_reference_annotations,
     write_semantic_ir_v1_validation,
-    write_semantic_reference_annotations,
+    write_semantic_reference_candidates,
 )
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--create-references",
+        "--export-candidates",
         action="store_true",
-        help="create disclosed reference v1 from the frozen #008 visual-audit excerpts",
+        help="export non-authoritative parser/extractor candidates for an explicit visual audit",
+    )
+    parser.add_argument(
+        "--validate-reference",
+        action="store_true",
+        help="validate committed authoritative reference v2 without generating or changing truth",
     )
     parser.add_argument(
         "--render-only",
@@ -22,8 +28,11 @@ def main() -> None:
         help="verify committed outputs and reproduce the report without raw parser artifacts",
     )
     args = parser.parse_args()
-    if args.create_references:
-        write_semantic_reference_annotations(Path.cwd())
+    if args.export_candidates:
+        write_semantic_reference_candidates(Path.cwd())
+        return
+    if args.validate_reference:
+        load_semantic_reference_annotations(Path.cwd())
         return
     write_semantic_ir_v1_validation(Path.cwd(), collect=not args.render_only)
 

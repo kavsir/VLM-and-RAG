@@ -112,6 +112,7 @@ class SemanticMention(SemanticModel):
     normalized_value: str | None = Field(default=None, min_length=1)
     evidence_anchors: tuple[TextSemanticAnchor | VisualSemanticAnchor, ...]
     provenance: SemanticProvenanceKind
+    source_visual_observation_id: str | None = Field(default=None, min_length=1)
     legal_reference: LegalReferenceComponents | None = None
     quantity: QuantityComponents | None = None
 
@@ -138,6 +139,13 @@ class SemanticMention(SemanticModel):
             raise ValueError("legal_reference details are required exactly for LEGAL_REFERENCE")
         if (self.kind == SemanticMentionKind.QUANTITY) != (self.quantity is not None):
             raise ValueError("quantity details are required exactly for QUANTITY")
+        is_vlm = self.provenance in {
+            SemanticProvenanceKind.VLM_TRANSCRIPTION,
+            SemanticProvenanceKind.VLM_TABLE_RECOVERY,
+            SemanticProvenanceKind.VLM_VISUAL_OBSERVATION,
+        }
+        if is_vlm != (self.source_visual_observation_id is not None):
+            raise ValueError("source_visual_observation_id is required exactly for VLM provenance")
         return self
 
 
@@ -149,6 +157,7 @@ class SemanticStatement(SemanticModel):
     evidence_anchors: tuple[TextSemanticAnchor | VisualSemanticAnchor, ...]
     mention_ids: tuple[str, ...] = Field(default_factory=tuple)
     provenance: SemanticProvenanceKind
+    source_visual_observation_id: str | None = Field(default=None, min_length=1)
 
     @field_validator("evidence_anchors", "mention_ids", mode="before")
     @classmethod
@@ -164,6 +173,13 @@ class SemanticStatement(SemanticModel):
     def validate_evidence(self) -> Self:
         if not self.evidence_anchors:
             raise ValueError("semantic statement requires evidence")
+        is_vlm = self.provenance in {
+            SemanticProvenanceKind.VLM_TRANSCRIPTION,
+            SemanticProvenanceKind.VLM_TABLE_RECOVERY,
+            SemanticProvenanceKind.VLM_VISUAL_OBSERVATION,
+        }
+        if is_vlm != (self.source_visual_observation_id is not None):
+            raise ValueError("source_visual_observation_id is required exactly for VLM provenance")
         return self
 
 
@@ -173,6 +189,16 @@ class VisualObservation(SemanticModel):
     document_id: Identifier
     version_id: VersionIdentifier
     source_artifact_sha256: Sha256Digest
+    source_physical_ir_sha256: Sha256Digest
+    source_structural_ir_sha256: Sha256Digest
+    structural_node_id: str = Field(min_length=1)
+    structural_canonical_path: str = Field(min_length=1)
+    request_record_sha256: Sha256Digest
+    model_id: str = Field(min_length=1)
+    provider_protocol: str = Field(min_length=1)
+    prompt_version: str = Field(min_length=1)
+    raw_response_sha256: Sha256Digest
+    image_sha256: Sha256Digest
     task_type: Literal[
         "region_transcription",
         "ocr_recovery",
@@ -215,6 +241,8 @@ class VisualObservation(SemanticModel):
             SemanticProvenanceKind.VLM_VISUAL_OBSERVATION,
         }:
             raise ValueError("visual observation requires VLM provenance")
+        if self.image_sha256 != self.evidence_anchor.render_or_asset_sha256:
+            raise ValueError("visual observation image SHA-256 differs from evidence anchor")
         return self
 
 
@@ -244,13 +272,26 @@ class SemanticDocument(SemanticModel):
     def validate_graph(self) -> Self:
         statement_by_id = {statement.id: statement for statement in self.statements}
         mention_by_id = {mention.id: mention for mention in self.mentions}
-        observation_ids = {observation.id for observation in self.visual_observations}
+        observation_by_id = {
+            observation.id: observation for observation in self.visual_observations
+        }
         if len(statement_by_id) != len(self.statements):
             raise ValueError("duplicate semantic statement id")
         if len(mention_by_id) != len(self.mentions):
             raise ValueError("duplicate semantic mention id")
-        if len(observation_ids) != len(self.visual_observations):
+        if len(observation_by_id) != len(self.visual_observations):
             raise ValueError("duplicate visual observation id")
+        for observation in self.visual_observations:
+            if (
+                observation.document_id != self.document_id
+                or observation.version_id != self.version_id
+                or observation.source_artifact_sha256 != self.source_artifact_sha256
+                or observation.source_physical_ir_sha256 != self.source_physical_ir_sha256
+                or observation.source_structural_ir_sha256 != self.source_structural_ir_sha256
+            ):
+                raise ValueError(
+                    "visual observation source identity differs from semantic document"
+                )
         referenced_mentions: list[str] = []
         for statement in self.statements:
             referenced_mentions.extend(statement.mention_ids)
@@ -265,6 +306,31 @@ class SemanticDocument(SemanticModel):
                 raise ValueError("semantic mention references missing statement")
             if mention.id not in statement_by_id[mention.statement_id].mention_ids:
                 raise ValueError("semantic mention ownership is inconsistent")
+            statement = statement_by_id[mention.statement_id]
+            if mention.source_visual_observation_id != statement.source_visual_observation_id:
+                raise ValueError("semantic mention and statement VLM derivation differ")
+        for statement_item in self.statements:
+            observation_id = statement_item.source_visual_observation_id
+            if observation_id is None:
+                continue
+            linked_observation = observation_by_id.get(observation_id)
+            if linked_observation is None:
+                raise ValueError("VLM semantic object references missing visual observation")
+            if statement_item.provenance != linked_observation.provenance:
+                raise ValueError("VLM semantic object provenance differs from visual observation")
+            if linked_observation.evidence_anchor not in statement_item.evidence_anchors:
+                raise ValueError("VLM semantic statement evidence differs from visual observation")
+        for mention_item in self.mentions:
+            observation_id = mention_item.source_visual_observation_id
+            if observation_id is None:
+                continue
+            linked_mention_observation = observation_by_id.get(observation_id)
+            if linked_mention_observation is None:
+                raise ValueError("VLM semantic object references missing visual observation")
+            if mention_item.provenance != linked_mention_observation.provenance:
+                raise ValueError("VLM semantic object provenance differs from visual observation")
+            if linked_mention_observation.evidence_anchor not in mention_item.evidence_anchors:
+                raise ValueError("VLM semantic mention evidence differs from visual observation")
         return self
 
 

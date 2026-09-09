@@ -41,12 +41,32 @@ Parser Raw
 Semantic IR v1 creates exact evidence-backed statements and controlled Vietnamese legal/planning
 mentions from frozen Physical and Structural IR. It binds canonical source hashes and does not
 modify either upstream IR. The selector emits deterministic, budgeted visual-evidence requests;
-rendering and model execution remain injected external boundaries.
+rendering and model execution remain injected external boundaries. VLM-derived statements and
+mentions retain their exact observation lineage, including request/response/image and upstream IR
+hashes plus model, provider, prompt, and Structural node/path metadata.
+
+The authoritative semantic reference is v2/schema 2: an AI visual audit of the same fixed 46 source
+PDF pages used by the Structural IR evaluation. It preserves occurrence-level excerpts and spans,
+strict normalized/legal/quantity details, per-page render hashes, and audited visual regions/tasks.
+It discloses prior extractor exposure and is not human, blind, or independent ground truth. Runtime
+extractor candidates are non-authoritative and live outside the reference directory.
 
 Regenerate the ten retained representations when raw parser runs are available:
 
 ```bash
 uv run python scripts/generate_semantic_ir_v1_validation.py
+```
+
+Validate the committed reference without reading runtime candidate truth:
+
+```bash
+uv run python scripts/generate_semantic_ir_v1_validation.py --validate-reference
+```
+
+Export parser/extractor suggestions for a future audit without treating them as truth:
+
+```bash
+uv run python scripts/generate_semantic_ir_v1_validation.py --export-candidates
 ```
 
 Reproduce the report and verify committed hashes in a clean offline clone:

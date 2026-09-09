@@ -38,6 +38,7 @@ from vlm_rag.vlm import (
     VLMRequestRecord,
     VLMTaskType,
     build_visual_evidence_prompt,
+    canonical_request_record_sha256,
     canonical_request_sha256,
     execute_vlm_request,
     load_replay_evidence,
@@ -93,6 +94,10 @@ def _request(asset: RetainedVisualAsset | None = None) -> VisualEvidenceRequest:
         document_id="test-document",
         version_id="v1",
         source_artifact_sha256=SOURCE_SHA,
+        source_physical_ir_sha256="f" * 64,
+        source_structural_ir_sha256="e" * 64,
+        structural_node_id="structural-node-test",
+        structural_canonical_path="document",
         page_index=0,
         bbox=BoundingBox(x0=0.0, y0=0.0, x1=100.0, y1=100.0),
         source_block_ids=("b0",),
@@ -100,6 +105,17 @@ def _request(asset: RetainedVisualAsset | None = None) -> VisualEvidenceRequest:
         selection_reason=SelectionReason.UNKNOWN_TEXT_EXTRACTION,
         priority=10,
         retained_visual_asset=asset,
+    )
+
+
+def _record(request: VisualEvidenceRequest) -> VLMRequestRecord:
+    return VLMRequestRecord(
+        request=request,
+        model_id="replay-model",
+        provider_protocol="replay-v1",
+        prompt_version=PROMPT_VERSION,
+        image_sha256=IMAGE_SHA,
+        image_byte_size=len(IMAGE_BYTES),
     )
 
 
@@ -187,7 +203,7 @@ def test_prompt_injection_is_untrusted_content_and_transcription_is_preserved() 
             "transcription": injected,
         },
     )
-    observation = normalize_vlm_response(request, response, _image())
+    observation = normalize_vlm_response(_record(request), response, _image())
     assert observation.transcription == injected
     prompt = build_visual_evidence_prompt(request.task_type)
     assert "untrusted data" in prompt
@@ -204,7 +220,7 @@ def test_malformed_unknown_and_unsupported_vlm_output_fail_closed() -> None:
         }
     )
     with pytest.raises(VLMObservationError, match="malformed VLM JSON"):
-        normalize_vlm_response(request, malformed_raw, _image())
+        normalize_vlm_response(_record(request), malformed_raw, _image())
     unsupported = _raw(
         request,
         {
@@ -216,11 +232,11 @@ def test_malformed_unknown_and_unsupported_vlm_output_fail_closed() -> None:
         },
     )
     with pytest.raises(VLMObservationError, match="unsupported or missing"):
-        normalize_vlm_response(request, unsupported, _image())
+        normalize_vlm_response(_record(request), unsupported, _image())
     with pytest.raises(ValidationError, match="task_type"):
         VLMObservationRecord.model_validate(
             {
-                "observation_schema_version": 1,
+                "observation_schema_version": 2,
                 "request_id": "x",
                 "task_type": "invented_task",
                 "document_id": "test-document",
@@ -269,17 +285,17 @@ def test_raw_hash_and_replay_request_identity_mismatch_fail() -> None:
         },
     )
     replay = ReplayVLMClient(
-        (ReplayFixture(fixture_version=1, request_sha256="0" * 64, response=response),)
+        (
+            ReplayFixture(
+                fixture_version=2,
+                request_record_sha256="0" * 64,
+                response=response,
+            ),
+        )
     )
-    record = VLMRequestRecord(
-        request=request,
-        model_id="replay-model",
-        provider_protocol="replay-v1",
-        prompt_version=PROMPT_VERSION,
-        image_sha256=IMAGE_SHA,
-        image_byte_size=len(IMAGE_BYTES),
-    )
+    record = _record(request)
     assert canonical_request_sha256(request) != "0" * 64
+    assert canonical_request_record_sha256(record) != "0" * 64
     with pytest.raises(ValueError, match="fixture/request identity mismatch"):
         replay.invoke(record)
 
@@ -287,7 +303,7 @@ def test_raw_hash_and_replay_request_identity_mismatch_fail() -> None:
 def test_vlm_transcription_uses_same_deterministic_mention_extractor() -> None:
     physical = _document()
     structural = VietnameseStructuralExtractor().extract(physical)
-    request = _request()
+    request = select_visual_evidence(physical, structural=structural).requests[0]
     response = _raw(
         request,
         {
@@ -297,7 +313,7 @@ def test_vlm_transcription_uses_same_deterministic_mention_extractor() -> None:
             "transcription": "Quốc hội ban hành 112/2025/QH15",
         },
     )
-    record = normalize_vlm_response(request, response, _image())
+    record = normalize_vlm_response(_record(request), response, _image())
     observation = to_visual_observation(record)
     semantic = build_semantic_document(physical, structural, visual_observations=(observation,))
     vlm_statements = [
@@ -314,8 +330,82 @@ def test_vlm_transcription_uses_same_deterministic_mention_extractor() -> None:
         build_semantic_document(physical, structural, visual_observations=(mismatched,))
 
 
+def test_selector_rejects_whole_block_with_multiple_structural_owners() -> None:
+    text = "Điều 1. Tiêu đề\nNội dung thân\n1. Khoản một\nNội dung khoản"
+    physical = _document().model_copy(
+        update={"pages": (_document().pages[0].model_copy(update={"blocks": (_block(0, text),)}),)}
+    )
+    structural = VietnameseStructuralExtractor().extract(physical)
+    owners = {
+        node.id
+        for node in structural.nodes
+        if any(anchor.block_id == "b0" for anchor in node.direct_content_anchors)
+    }
+    assert len(owners) > 1
+    selection = select_visual_evidence(physical, structural=structural)
+    assert selection.requests == ()
+    assert [item.reason.value for item in selection.non_selections] == [
+        "ambiguous_structural_owner"
+    ]
+
+
+def test_wrong_structural_context_and_incompatible_multiblock_fail() -> None:
+    physical = _document(2)
+    structural = VietnameseStructuralExtractor().extract(physical)
+    request = select_visual_evidence(physical, structural=structural).requests[0]
+    response = _raw(
+        request,
+        {
+            "schema_version": 1,
+            "request_id": request.request_id,
+            "task_type": request.task_type.value,
+            "transcription": "Quốc hội",
+        },
+    )
+    observation = to_visual_observation(
+        normalize_vlm_response(_record(request), response, _image())
+    )
+    wrong_context = observation.model_copy(
+        update={"structural_node_id": "missing-node", "structural_canonical_path": "wrong"}
+    )
+    with pytest.raises(ValueError, match="structural context mismatch"):
+        build_semantic_document(physical, structural, visual_observations=(wrong_context,))
+    incompatible = observation.model_copy(update={"source_block_ids": ("b0", "missing-block")})
+    with pytest.raises(ValueError, match="incompatible with structural context"):
+        build_semantic_document(physical, structural, visual_observations=(incompatible,))
+
+
+def test_normalization_rejects_model_provider_and_raw_lineage_mismatch() -> None:
+    request = _request()
+    response = _raw(
+        request,
+        {
+            "schema_version": 1,
+            "request_id": request.request_id,
+            "task_type": request.task_type.value,
+            "transcription": "text",
+        },
+    )
+    with pytest.raises(VLMObservationError, match="model identity mismatch"):
+        normalize_vlm_response(
+            _record(request), response.model_copy(update={"model_id": "wrong-model"}), _image()
+        )
+    with pytest.raises(VLMObservationError, match="provider protocol mismatch"):
+        normalize_vlm_response(
+            _record(request),
+            response.model_copy(update={"provider_protocol": "wrong-provider"}),
+            _image(),
+        )
+    record = normalize_vlm_response(_record(request), response, _image())
+    assert record.request_record_sha256 == canonical_request_record_sha256(_record(request))
+    assert record.raw_response_sha256 == response.raw_response_sha256
+    assert record.model_id == "replay-model"
+    assert record.provider_protocol == "replay-v1"
+    assert record.prompt_version == PROMPT_VERSION
+
+
 def test_committed_replay_evidence_is_strict_offline_and_injection_is_data() -> None:
-    evidence = load_replay_evidence(Path("data/vlm_replay/contract-fixtures.v1.json"))
+    evidence = load_replay_evidence(Path("data/vlm_replay/contract-fixtures.v2.json"))
     client = ReplayVLMClient((evidence.fixture,))
     response = execute_vlm_request(evidence.request_record, client)
     assert "Ignore previous instructions" in response.raw_response

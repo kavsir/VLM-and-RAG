@@ -50,6 +50,7 @@ class NonSelectionReason(StrEnum):
     LOWER_PRIORITY = "lower_priority"
     INSUFFICIENT_EVIDENCE = "insufficient_evidence"
     UNSUPPORTED_VISUAL_SOURCE = "unsupported_visual_source"
+    AMBIGUOUS_STRUCTURAL_OWNER = "ambiguous_structural_owner"
 
 
 class RenderSpecification(VLMModel):
@@ -85,6 +86,10 @@ class VisualEvidenceRequest(VLMModel):
     document_id: Identifier
     version_id: VersionIdentifier
     source_artifact_sha256: Sha256Digest
+    source_physical_ir_sha256: Sha256Digest | None = None
+    source_structural_ir_sha256: Sha256Digest | None = None
+    structural_node_id: str | None = Field(default=None, min_length=1)
+    structural_canonical_path: str | None = Field(default=None, min_length=1)
     page_index: NonNegativeInt
     bbox: BoundingBox
     source_block_ids: tuple[str, ...]
@@ -115,6 +120,16 @@ class VisualEvidenceRequest(VLMModel):
             self.source_block_ids
         ):
             raise ValueError("request requires unique source_block_ids")
+        context = (
+            self.source_physical_ir_sha256,
+            self.source_structural_ir_sha256,
+            self.structural_node_id,
+            self.structural_canonical_path,
+        )
+        if any(value is not None for value in context) and not all(
+            value is not None for value in context
+        ):
+            raise ValueError("structural request context fields must be supplied together")
         return self
 
 
@@ -209,12 +224,22 @@ class RawVLMResponse(VLMModel):
 
 
 class VLMObservationRecord(VLMModel):
-    observation_schema_version: Literal[1] = 1
+    observation_schema_version: Literal[2] = 2
     request_id: str = Field(min_length=1)
     task_type: VLMTaskType
     document_id: Identifier
     version_id: VersionIdentifier
     source_artifact_sha256: Sha256Digest
+    source_physical_ir_sha256: Sha256Digest
+    source_structural_ir_sha256: Sha256Digest
+    structural_node_id: str = Field(min_length=1)
+    structural_canonical_path: str = Field(min_length=1)
+    request_record_sha256: Sha256Digest
+    model_id: str = Field(min_length=1)
+    provider_protocol: str = Field(min_length=1)
+    prompt_version: str = Field(min_length=1)
+    raw_response_sha256: Sha256Digest
+    image_sha256: Sha256Digest
     source_block_ids: tuple[str, ...]
     transcription: str | None = Field(default=None, min_length=1)
     table_rows: tuple[tuple[str, ...], ...] | None = None
@@ -283,6 +308,18 @@ def canonical_request_sha256(request: VisualEvidenceRequest) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
+def canonical_request_record_sha256(record: VLMRequestRecord) -> str:
+    """Hash deterministic request/model/prompt/image/parameter identity, excluding timestamp."""
+    payload = json.dumps(
+        record.model_dump(mode="json", exclude={"timestamp"}),
+        ensure_ascii=False,
+        separators=(",", ":"),
+        allow_nan=False,
+        sort_keys=True,
+    )
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
 __all__ = [
     "NonSelectionReason",
     "ParameterValue",
@@ -296,5 +333,6 @@ __all__ = [
     "VLMSelectionResult",
     "VLMTaskType",
     "VisualEvidenceRequest",
+    "canonical_request_record_sha256",
     "canonical_request_sha256",
 ]

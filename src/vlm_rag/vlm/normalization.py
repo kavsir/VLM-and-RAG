@@ -14,9 +14,10 @@ from vlm_rag.semantic_ir.models import (
 from vlm_rag.vlm.evidence import ResolvedVisualEvidence
 from vlm_rag.vlm.models import (
     RawVLMResponse,
-    VisualEvidenceRequest,
     VLMObservationRecord,
+    VLMRequestRecord,
     VLMTaskType,
+    canonical_request_record_sha256,
 )
 
 
@@ -25,10 +26,11 @@ class VLMObservationError(ValueError):
 
 
 def normalize_vlm_response(
-    request: VisualEvidenceRequest,
+    request_record: VLMRequestRecord,
     response: RawVLMResponse,
     image: ResolvedVisualEvidence,
 ) -> VLMObservationRecord:
+    request = request_record.request
     if hashlib.sha256(image.data).hexdigest() != image.sha256 or len(image.data) != image.byte_size:
         raise VLMObservationError("resolved visual evidence integrity mismatch")
     asset = request.retained_visual_asset
@@ -42,6 +44,22 @@ def normalize_vlm_response(
         raise VLMObservationError("cannot normalize failed VLM response")
     if response.request_id != request.request_id:
         raise VLMObservationError("raw response/request identity mismatch")
+    if response.model_id != request_record.model_id:
+        raise VLMObservationError("raw response/request model identity mismatch")
+    if response.provider_protocol != request_record.provider_protocol:
+        raise VLMObservationError("raw response/request provider protocol mismatch")
+    if (
+        image.sha256 != request_record.image_sha256
+        or image.byte_size != request_record.image_byte_size
+    ):
+        raise VLMObservationError("resolved image/request record identity mismatch")
+    if (
+        request.source_physical_ir_sha256 is None
+        or request.source_structural_ir_sha256 is None
+        or request.structural_node_id is None
+        or request.structural_canonical_path is None
+    ):
+        raise VLMObservationError("semantic VLM normalization requires structural request context")
     try:
         raw: object = json.loads(response.raw_response)
     except json.JSONDecodeError as exc:
@@ -84,12 +102,22 @@ def normalize_vlm_response(
     try:
         return VLMObservationRecord.model_validate(
             {
-                "observation_schema_version": 1,
+                "observation_schema_version": 2,
                 "request_id": request.request_id,
                 "task_type": request.task_type.value,
                 "document_id": request.document_id,
                 "version_id": request.version_id,
                 "source_artifact_sha256": request.source_artifact_sha256,
+                "source_physical_ir_sha256": request.source_physical_ir_sha256,
+                "source_structural_ir_sha256": request.source_structural_ir_sha256,
+                "structural_node_id": request.structural_node_id,
+                "structural_canonical_path": request.structural_canonical_path,
+                "request_record_sha256": canonical_request_record_sha256(request_record),
+                "model_id": request_record.model_id,
+                "provider_protocol": request_record.provider_protocol,
+                "prompt_version": request_record.prompt_version,
+                "raw_response_sha256": response.raw_response_sha256,
+                "image_sha256": image.sha256,
                 "source_block_ids": request.source_block_ids,
                 payload_name: payload[payload_name],
                 "evidence_anchor": anchor.model_dump(mode="json"),
@@ -108,6 +136,16 @@ def to_visual_observation(record: VLMObservationRecord) -> VisualObservation:
         document_id=record.document_id,
         version_id=record.version_id,
         source_artifact_sha256=record.source_artifact_sha256,
+        source_physical_ir_sha256=record.source_physical_ir_sha256,
+        source_structural_ir_sha256=record.source_structural_ir_sha256,
+        structural_node_id=record.structural_node_id,
+        structural_canonical_path=record.structural_canonical_path,
+        request_record_sha256=record.request_record_sha256,
+        model_id=record.model_id,
+        provider_protocol=record.provider_protocol,
+        prompt_version=record.prompt_version,
+        raw_response_sha256=record.raw_response_sha256,
+        image_sha256=record.image_sha256,
         task_type=record.task_type.value,
         source_block_ids=record.source_block_ids,
         text=text,

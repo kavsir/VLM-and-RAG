@@ -1,0 +1,1072 @@
+{
+  "annotation_schema_version": 2,
+  "annotation_version": "v2",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_semantic_reaudit",
+  "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+  "version_id": "v1",
+  "source_artifact_sha256": "196c79b3399e78787528a513ef6efd6d659f5e083845cd43d6b435b920c51f1b",
+  "prior_physical_ir_exposure": true,
+  "prior_structural_ir_exposure": true,
+  "prior_semantic_extractor_exposure": true,
+  "semantic_extractor_candidates_seen": true,
+  "semantic_extractor_output_used_as_reference_truth": false,
+  "independent_or_blind_ground_truth": false,
+  "pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "render_sha256": "cd7b7815429c9296eb243312e9379279f9754bab848fbd1142b2f601fe2e45a1",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-6effe08dc1e471d287d5b802",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Người ký: Cổng Thông tin điện tử Chính phủ\nEmail: thongtinchinhphu@chinhphu.vn\nCơ quan: Văn phòng Chính phủ\nThời gian ký: 13.07.2023 14:44:45 +07:00",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2fea92920c4ec03b52d338ca",
+          "page_index": 0,
+          "exact_evidence_excerpt": "50 \nCÔNG BÁO/Số 815 + 816/Ngày 12-7-2023",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5067364317af6728d3cd39b6",
+          "page_index": 0,
+          "exact_evidence_excerpt": "BỘ KẾ HOẠCH VÀ ĐẦU TƯ",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-14b02e5d3b351391b4842f98",
+          "page_index": 0,
+          "exact_evidence_excerpt": "BỘ KẾ HOẠCH VÀ ĐẦU TƯ \nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fd6c885a5feb4a665a808e0c",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Độc lập - Tự do - Hạnh phúc",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-7f57f78130964c33bedc51b7",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Số: 04/2023/TT-BKHĐT \nHà Nội, ngày 26 tháng 6 năm 2023",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8e61929ba9ebc3ae8e21d3ba",
+          "page_index": 0,
+          "exact_evidence_excerpt": "THÔNG TƯ \nHướng dẫn yêu cầu nội dung và kỹ thuật của cơ sở dữ liệu hồ sơ quy hoạch",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-3f4f506fc53969078e0f7185",
+          "page_index": 0,
+          "exact_evidence_excerpt": "và sơ đồ, bản đồ quy hoạch cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-1b011e1e8c3b99b0b95c459e",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Luật Quy hoạch ngày 24 tháng 11 năm 2017;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ea59741a400a0d9d03afea14",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Luật Đo đạc và bản đồ ngày 14 tháng 6 năm 2018;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fd2a40355420cc9b5971d49c",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Luật Bảo vệ bí mật nhà nước ngày 15 tháng 11 năm 2018;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-178ab6bed88ed66f09894965",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Nghị định số 89/2022/NĐ-CP ngày 28 tháng 10 năm 2022 của Chính \nphủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Kế hoạch \nvà Đầu tư;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f8a1b3a71b2bdf2d040c004d",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Nghị định số 37/2019/NĐ-CP ngày 07 tháng 5 năm 2019 của Chính \nphủ quy định chi tiết thi hành một số điều của Luật Quy hoạch;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5e90097dac901a5b088909b0",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính \nphủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ đã được sửa đổi, bổ \nsung một số điều theo Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 \nvà Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-71cb15852e908420f2557a11",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Theo đề nghị của Vụ trưởng Vụ Quản lý quy hoạch;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-725a01cf73d6c611c0fe2781",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Bộ trưởng Bộ Kế hoạch và Đầu tư ban hành Thông tư hướng dẫn yêu cầu nội",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2a065a4dc858f97d0979df58",
+          "page_index": 0,
+          "exact_evidence_excerpt": "dung và kỹ thuật của cơ sở dữ liệu hồ sơ quy hoạch và sơ đồ, bản đồ quy hoạch",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-7e44d21d123cc1a0dee72bf6",
+          "page_index": 0,
+          "exact_evidence_excerpt": "cấp quốc gia, quy hoạch vùng, quy hoạch tỉnh.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fec6824f7762464f27168212",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Chương I \nQUY ĐỊNH CHUNG",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-4e02a71c60faaf64844a5790",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Điều 1. Phạm vi điều chỉnh",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-7965b62936acdcf734dc4f78",
+          "reference_statement_id": "ref-statement-6effe08dc1e471d287d5b802",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 33,
+          "char_end": 42,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-1a93ce2e222de566de01c403",
+          "reference_statement_id": "ref-statement-6effe08dc1e471d287d5b802",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 98,
+          "char_end": 107,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-494421934c3167b71303e485",
+          "reference_statement_id": "ref-statement-7f57f78130964c33bedc51b7",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "04/2023/TT-BKHĐT",
+          "normalized_value": "04/2023/TT-BKHĐT",
+          "char_start": 4,
+          "char_end": 20,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-fb3dd4ee341d4a6b3dc233ae",
+          "reference_statement_id": "ref-statement-7f57f78130964c33bedc51b7",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 26 tháng 6 năm 2023",
+          "normalized_value": "2023-06-26",
+          "char_start": 30,
+          "char_end": 54,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-082643b2530909795ed78470",
+          "reference_statement_id": "ref-statement-1b011e1e8c3b99b0b95c459e",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 24 tháng 11 năm 2017",
+          "normalized_value": "2017-11-24",
+          "char_start": 22,
+          "char_end": 47,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-e5d13e279ca7bd3614374488",
+          "reference_statement_id": "ref-statement-ea59741a400a0d9d03afea14",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 14 tháng 6 năm 2018",
+          "normalized_value": "2018-06-14",
+          "char_start": 29,
+          "char_end": 53,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-16f28225a9f60295100696c9",
+          "reference_statement_id": "ref-statement-fd2a40355420cc9b5971d49c",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 15 tháng 11 năm 2018",
+          "normalized_value": "2018-11-15",
+          "char_start": 35,
+          "char_end": 60,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-aecb7bf5ce67794ce0409ddc",
+          "reference_statement_id": "ref-statement-178ab6bed88ed66f09894965",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "89/2022/NĐ-CP",
+          "normalized_value": "89/2022/NĐ-CP",
+          "char_start": 20,
+          "char_end": 33,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-db009516201b57417f529dce",
+          "reference_statement_id": "ref-statement-178ab6bed88ed66f09894965",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 28 tháng 10 năm 2022",
+          "normalized_value": "2022-10-28",
+          "char_start": 34,
+          "char_end": 59,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-ea3c3e586e0aac2962d905e5",
+          "reference_statement_id": "ref-statement-f8a1b3a71b2bdf2d040c004d",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "37/2019/NĐ-CP",
+          "normalized_value": "37/2019/NĐ-CP",
+          "char_start": 20,
+          "char_end": 33,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-a69257c96b92dca02c37715c",
+          "reference_statement_id": "ref-statement-f8a1b3a71b2bdf2d040c004d",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 07 tháng 5 năm 2019",
+          "normalized_value": "2019-05-07",
+          "char_start": 34,
+          "char_end": 58,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-60d2aab45e5f259dcf7ae94b",
+          "reference_statement_id": "ref-statement-5e90097dac901a5b088909b0",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "27/2019/NĐ-CP",
+          "normalized_value": "27/2019/NĐ-CP",
+          "char_start": 20,
+          "char_end": 33,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-3b6173bf1db9f133bc6a48b9",
+          "reference_statement_id": "ref-statement-5e90097dac901a5b088909b0",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 13 tháng 3 năm 2019",
+          "normalized_value": "2019-03-13",
+          "char_start": 34,
+          "char_end": 58,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-ab7e6df80715899ba9aab85c",
+          "reference_statement_id": "ref-statement-5e90097dac901a5b088909b0",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "136/2021/NĐ-CP",
+          "normalized_value": "136/2021/NĐ-CP",
+          "char_start": 186,
+          "char_end": 200,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-bdb4be960d6f54e124ca09ef",
+          "reference_statement_id": "ref-statement-5e90097dac901a5b088909b0",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 31 tháng 12 năm 2021",
+          "normalized_value": "2021-12-31",
+          "char_start": 201,
+          "char_end": 226,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-22041a2cbb57f8750d18033b",
+          "reference_statement_id": "ref-statement-5e90097dac901a5b088909b0",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "22/2023/NĐ-CP",
+          "normalized_value": "22/2023/NĐ-CP",
+          "char_start": 244,
+          "char_end": 257,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-aedfe6d04db8427ba701fe43",
+          "reference_statement_id": "ref-statement-5e90097dac901a5b088909b0",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 12 tháng 5 năm 2023",
+          "normalized_value": "2023-05-12",
+          "char_start": 258,
+          "char_end": 282,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-48db4fda8e3e19d7846012cd",
+          "reference_statement_id": "ref-statement-5e90097dac901a5b088909b0",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 287,
+          "char_end": 296,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5e003c23e28757d54e06cbd4",
+          "reference_statement_id": "ref-statement-725a01cf73d6c611c0fe2781",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Bộ Kế hoạch và Đầu tư",
+          "normalized_value": "Bộ Kế hoạch và Đầu tư",
+          "char_start": 10,
+          "char_end": 31,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-9c802f32602ecedee019fe73",
+          "reference_statement_id": "ref-statement-4e02a71c60faaf64844a5790",
+          "page_index": 0,
+          "kind": "legal_reference",
+          "raw_text": "Điều 1",
+          "normalized_value": null,
+          "char_start": 0,
+          "char_end": 6,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "1",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "render_sha256": "1df6e047ec9e9b03b579e64c04fda558bc062a4b69a5000aaf0dc8ef37e06964",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-df2e45396ab01caaf79ee89a",
+          "page_index": 5,
+          "exact_evidence_excerpt": "CÔNG BÁO/Số 815 + 816/Ngày 12-7-2023 \n55",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-d44c6e4f0a99346da4428002",
+          "page_index": 5,
+          "exact_evidence_excerpt": "e) Văn hóa, thể thao và du lịch;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fb29b0e20bf4755048f88d2c",
+          "page_index": 5,
+          "exact_evidence_excerpt": "g) Giao thông vận tải;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-1b7dd30f5d7084eb636f1ab6",
+          "page_index": 5,
+          "exact_evidence_excerpt": "h) Thông tin và truyền thông;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-76e2866370f05a57c4956df7",
+          "page_index": 5,
+          "exact_evidence_excerpt": "i) Khoa học và công nghệ;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-0b99845d05f3b892fceff6ec",
+          "page_index": 5,
+          "exact_evidence_excerpt": "k) Y tế;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-b0001acd906b5ea79a1a9ba7",
+          "page_index": 5,
+          "exact_evidence_excerpt": "l) Giáo dục và đào tạo;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-878520681ba03624222a6b5b",
+          "page_index": 5,
+          "exact_evidence_excerpt": "m) Lao động - Thương binh và xã hội;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-492b0f2b91bef2919600e7b5",
+          "page_index": 5,
+          "exact_evidence_excerpt": "n) Quốc phòng, an ninh;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-c699daf2ffbd640220851c27",
+          "page_index": 5,
+          "exact_evidence_excerpt": "o) Ngoại giao.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a30ced3a1011ba7a1be09619",
+          "page_index": 5,
+          "exact_evidence_excerpt": "2. Quy cách đặt tên gói dữ liệu, chủ đề dữ liệu, lớp dữ liệu và trường thông tin \ncủa cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch \ntỉnh thực hiện theo quy định tại mục 1 của Phụ lục III kèm theo Thông tư này.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-789ad782e213f109914c018b",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Điều 10. Gán mã nhận dạng của đối tượng địa lý trong cơ sở dữ liệu địa lý \nquy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ab26f2347488a852ac7c4b78",
+          "page_index": 5,
+          "exact_evidence_excerpt": "1. Cơ sở dữ liệu địa lý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy \nhoạch tỉnh phải thực hiện việc gán mã nhận dạng là dãy mã số duy nhất xác định \ncho từng đối tượng địa lý.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-6806134f8d7ac35c683b66a2",
+          "page_index": 5,
+          "exact_evidence_excerpt": "2. Quy tắc gán mã nhận dạng của từng đối tượng địa lý trong cơ sở dữ liệu địa \nlý quy hoạch tổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh thực hiện theo quy \nđịnh tại mục 2 Phụ lục III kèm theo Thông tư này.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8fd57dc3247efdfbe864d9c3",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Điều 11. Danh mục đối tượng địa lý của cơ sở dữ liệu địa lý quy hoạch \ntổng thể quốc gia, quy hoạch vùng, quy hoạch tỉnh",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-3535d41bd260cf3e5dc15f5f",
+          "page_index": 5,
+          "exact_evidence_excerpt": "1. Danh mục đối tượng địa lý của cơ sở dữ liệu địa lý quy hoạch tổng thể quốc \ngia, quy hoạch vùng, quy hoạch tỉnh quy định tại mục 3 Phụ lục III kèm theo \nThông tư này.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-445811fcd91a989004083aa6",
+          "page_index": 5,
+          "exact_evidence_excerpt": "2. Các Bộ, cơ quan ngang Bộ, Ủy ban nhân dân cấp tỉnh được bổ sung các đối \ntượng địa lý mới, hoặc bổ sung kiểu dữ liệu, thuộc tính, quan hệ, miền giá trị cho \ncác đối tượng địa lý đã có trong danh mục tại mục 3 Phụ lục III kèm theo Thông tư \nnày để thể hiện nội dung quy hoạch đã được quyết định hoặc phê duyệt và bảo đảm \ntuân thủ quy định của pháp luật về quy hoạch, pháp luật khác có liên quan.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-08bbd040b86cc9cd9f4f2205",
+          "reference_statement_id": "ref-statement-789ad782e213f109914c018b",
+          "page_index": 5,
+          "kind": "legal_reference",
+          "raw_text": "Điều 10",
+          "normalized_value": null,
+          "char_start": 0,
+          "char_end": 7,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "10",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-92d2b386a50f39bad600ad79",
+          "reference_statement_id": "ref-statement-8fd57dc3247efdfbe864d9c3",
+          "page_index": 5,
+          "kind": "legal_reference",
+          "raw_text": "Điều 11",
+          "normalized_value": null,
+          "char_start": 0,
+          "char_end": 7,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "11",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-830fe3a17cd0e3d8e3acb599",
+          "reference_statement_id": "ref-statement-445811fcd91a989004083aa6",
+          "page_index": 5,
+          "kind": "organization_or_authority",
+          "raw_text": "Ủy ban nhân dân",
+          "normalized_value": "Ủy ban nhân dân",
+          "char_start": 29,
+          "char_end": 44,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 15,
+      "pdf_page_number_1_based": 16,
+      "render_sha256": "2c2c8770901c841efa9ff8449a85cab9e43af4abd77417cf796bfd5489376c7b",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-d497c9350713aa6e99868fea",
+          "page_index": 15,
+          "exact_evidence_excerpt": "CÔNG BÁO/Số 815 + 816/Ngày 12-7-2023 \n65",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-179128e97b750581823c5fcf",
+          "page_index": 15,
+          "exact_evidence_excerpt": "b) Phương án phân vùng chức năng bao gồm định hướng phát triển hệ thống",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-7a22b2561c89124e27371ac1",
+          "page_index": 15,
+          "exact_evidence_excerpt": "khu kinh tế; khu công nghiệp, khu chế xuất, khu công nghệ cao; khu du lịch; khu",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f67fb256d631e676407e4b4d",
+          "page_index": 15,
+          "exact_evidence_excerpt": "nghiên cứu, đào tạo; khu thể dục thể thao; khu bảo tồn, khu vực cần được bảo",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ec4aa25a1b569d016eac4524",
+          "page_index": 15,
+          "exact_evidence_excerpt": "quản, tu bổ, phục hồi di tích lịch sử - văn hóa, danh lam thắng cảnh và đối tượng",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-c30e7180fab7a009d3292386",
+          "page_index": 15,
+          "exact_evidence_excerpt": "đã được kiểm kê di tích; phương án phát triển các cụm công nghiệp;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-defd70c6e5adea4f9577d7c1",
+          "page_index": 15,
+          "exact_evidence_excerpt": "c) Phương án kết nối hệ thống kết cấu hạ tầng của tỉnh với hệ thống kết cấu hạ",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f5a453e54637679b6390dccd",
+          "page_index": 15,
+          "exact_evidence_excerpt": "tầng quốc gia và vùng;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-d6b62ade04bfa4964900727b",
+          "page_index": 15,
+          "exact_evidence_excerpt": "d) Các nội dung được thể hiện trên nền bản đồ địa hình quốc gia tỷ lệ 1:25.000",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-bc93e35f524705d033e9c25e",
+          "page_index": 15,
+          "exact_evidence_excerpt": "hoặc 1:50.000 hoặc 1:100.000 (tùy theo hình dạng và diện tích của tỉnh).",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-197d5cdeedd2a0ae755883c3",
+          "page_index": 15,
+          "exact_evidence_excerpt": "6. Về phương án phát triển kết cấu hạ tầng xã hội, bao gồm các nội dung chủ",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-0681457454c82d8008bed990",
+          "page_index": 15,
+          "exact_evidence_excerpt": "yếu sau:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-89d59d43456f7ebbfcb9d3fb",
+          "page_index": 15,
+          "exact_evidence_excerpt": "a) Kết cấu hạ tầng văn hóa, thể dục, thể thao bao gồm: hạ tầng văn hóa, thể",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f4f8bf216568eb8f4d716ee0",
+          "page_index": 15,
+          "exact_evidence_excerpt": "dục, thể thao đã được xác định ở quy hoạch cấp quốc gia, quy hoạch vùng trên địa",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-887640d6a5bfa4675c342fe6",
+          "page_index": 15,
+          "exact_evidence_excerpt": "bàn tỉnh; cơ sở văn hóa (trung tâm văn hóa; cung thiếu nhi hoặc nhà thiếu nhi hoặc",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-d2c213da5cae8becddfffe57",
+          "page_index": 15,
+          "exact_evidence_excerpt": "trung tâm hoạt động thanh thiếu nhi; cung văn hóa lao động, nhà văn hóa lao động;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fa48ca37b7c3ee86b7a4aa8a",
+          "page_index": 15,
+          "exact_evidence_excerpt": "bảo tàng, triển lãm, thư viện; nhà hát...); cơ sở thể dục, thể thao (khu liên hợp thể",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-20831131b546147c3778a835",
+          "page_index": 15,
+          "exact_evidence_excerpt": "thao, trung tâm thể thao, sân vận động, cơ sở tập luyện, huấn luyện, thi đấu thể",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ffdd07bb6602d00d8d33ff6f",
+          "page_index": 15,
+          "exact_evidence_excerpt": "dục, thể thao khác...) cấp tỉnh;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-601cb7d2462116e845ea2a73",
+          "page_index": 15,
+          "exact_evidence_excerpt": "b) Kết cấu hạ tầng thương mại, bao gồm: chợ hạng I; trung tâm logistics cấp",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-93bf5110a8e602784ca029bd",
+          "page_index": 15,
+          "exact_evidence_excerpt": "quốc gia, cấp tỉnh;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8f4d2e02ce44ff70870b4c2c",
+          "page_index": 15,
+          "exact_evidence_excerpt": "c) Kết cấu hạ tầng giáo dục và đào tạo, cơ sở giáo dục nghề nghiệp công lập",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-29040b7a1e141f174ac2a754",
+          "page_index": 15,
+          "exact_evidence_excerpt": "bao gồm: cơ sở giáo dục đại học (đại học, trường đại học, học viện), cơ sở giáo dục",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-31556c85b6835af7e3acddee",
+          "page_index": 15,
+          "exact_evidence_excerpt": "nghề nghiệp (trung tâm giáo dục nghề nghiệp, trường trung cấp, trường cao đẳng)",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-41330425525a679f3c05e7cb",
+          "page_index": 15,
+          "exact_evidence_excerpt": "được xác định trong quy hoạch cấp quốc gia, quy hoạch vùng; cơ sở giáo dục",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-86faf06b7f09fce18aabd856",
+          "page_index": 15,
+          "exact_evidence_excerpt": "phổng thông, trường chuyên biệt cấp tỉnh, liên huyện trở lên (trường trung học phổ",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-182df60e16a8695f6c9fbb8b",
+          "page_index": 15,
+          "exact_evidence_excerpt": "thông; trường liên cấp trung học cơ sở và trung học phổ thông, trường liên cấp tiểu",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5b5906af53e7a9cbf88a5dcd",
+          "page_index": 15,
+          "exact_evidence_excerpt": "học, trung học cơ sở và trung học phổ thông; trường phổ thông dân tộc nội trú,",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8b86f7aa4e743e3d52beade1",
+          "page_index": 15,
+          "exact_evidence_excerpt": "trường dự bị đại học; trường chuyên, trường năng khiếu; trường dành cho người",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a5c2d45968301aacdaf68193",
+          "page_index": 15,
+          "exact_evidence_excerpt": "tàn tật, khuyết tật; trường giáo dưỡng);",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 20,
+      "pdf_page_number_1_based": 21,
+      "render_sha256": "cdfa06e482d94cd99c34cafe09a7d105bd04c4dae4dd12839aefb17658423972",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-4c1a990b7f51d24e10585c4a",
+          "page_index": 20,
+          "exact_evidence_excerpt": "70 \nCÔNG BÁO/Số 815 + 816/Ngày 12-7-2023",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-84a6d76980cc11965b9278b9",
+          "page_index": 20,
+          "exact_evidence_excerpt": "e) Các nội dung được thể hiện trên nền bản đồ địa hình quốc gia tỷ lệ 1:25.000",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-379ba81c66e185a4387837f7",
+          "page_index": 20,
+          "exact_evidence_excerpt": "hoặc 1:50.000 hoặc 1:100.000 (tùy theo hình dạng và diện tích của tỉnh). Tùy vào",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-198e519063e937583c48467f",
+          "page_index": 20,
+          "exact_evidence_excerpt": "điều kiện riêng biệt của từng tỉnh có thể lập các sơ đồ, bản đồ riêng cho các đối",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e08bc007eb7ecbf59998599b",
+          "page_index": 20,
+          "exact_evidence_excerpt": "tượng của ngành hoặc loại tài nguyên để đảm bảo thể hiện được nội dung quy",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-50f8edf64a22858a277a401c",
+          "page_index": 20,
+          "exact_evidence_excerpt": "hoạch trên sơ đồ, bản đồ.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-80de9e437bd73332bdea8e0f",
+          "page_index": 20,
+          "exact_evidence_excerpt": "11. Về phương án quy hoạch xây dựng vùng liên huyện, vùng huyện, bao gồm:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-63efc04167e0ab67b6cea59e",
+          "page_index": 20,
+          "exact_evidence_excerpt": "Phạm vi vùng liên huyện, vùng huyện; định hướng hệ thống các thị trấn; định",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-544e34e61d0818cf61eedbba",
+          "page_index": 20,
+          "exact_evidence_excerpt": "hướng phát triển mạng lưới giao thông từ cấp huyện trở lên; thể hiện trên nền bản",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-938445c242571a8b42615edf",
+          "page_index": 20,
+          "exact_evidence_excerpt": "đồ địa hình quốc gia tỷ lệ 1:25.000 hoặc 1:50.000 hoặc 1:100.000 (tùy theo hình",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5caa06df518a93d7e2964717",
+          "page_index": 20,
+          "exact_evidence_excerpt": "dạng và diện tích của tỉnh) và phương án quy hoạch hệ thống đô thị, nông thôn quy",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e721c7af1ff899b865f37373",
+          "page_index": 20,
+          "exact_evidence_excerpt": "định tại mục III.4 của Phụ lục này.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f0f30df1f177f1254e40694a",
+          "page_index": 20,
+          "exact_evidence_excerpt": "12. Về vị trí các dự án và thứ tự ưu tiên thực hiện, bao gồm danh mục dự án dự",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-33effd2ecb9321a45e342411",
+          "page_index": 20,
+          "exact_evidence_excerpt": "kiến ưu tiên đầu tư của tỉnh và ký hiệu thể hiện vị trí dự kiến của dự án; thể hiện",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ad09af903e3eb18acb44b769",
+          "page_index": 20,
+          "exact_evidence_excerpt": "trên nền bản đồ địa hình quốc gia tỷ lệ 1:25.000 hoặc 1:50.000 hoặc 1:100.000 (tùy",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-75d8428280aea652178735b9",
+          "page_index": 20,
+          "exact_evidence_excerpt": "theo hình dạng và diện tích của tỉnh) và phương án tổ chức không gian và phân",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-354b4d5b3c1121b574fcaa25",
+          "page_index": 20,
+          "exact_evidence_excerpt": "vùng chức năng quy định tại mục III.5 của Phụ lục này.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 21,
+      "pdf_page_number_1_based": 22,
+      "render_sha256": "6e2b1e83379a80790fc00e224e52c387efd7da1bd1912bcdcead164ec9bfc141",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-0aab85647202266c89fd986f",
+          "page_index": 21,
+          "exact_evidence_excerpt": "CÔNG BÁO/Số 815 + 816/Ngày 12-7-2023 \n71",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e3bc723efa288508b9fe8901",
+          "page_index": 21,
+          "exact_evidence_excerpt": "Phụ lục II \nBỐ CỤC VÀ HỆ THỐNG KÝ HIỆU CỦA SƠ ĐỒ, BẢN ĐỒ QUY HOẠCH",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-54b1d57f97a6a44aab1dd127",
+          "page_index": 21,
+          "exact_evidence_excerpt": "TỔNG THỂ QUỐC GIA, QUY HOẠCH VÙNG VÀ QUY HOẠCH TỈNH \n(Ban hành kèm theo Thông tư số 04/2023/TT-BKHĐT ngày 26 tháng 6 năm 2023",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-73eef768030d040b34f6c8f4",
+          "page_index": 21,
+          "exact_evidence_excerpt": "của Bộ Kế hoạch và Đầu tư)",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-cc4963ceaf49e8a34de3032b",
+          "page_index": 21,
+          "exact_evidence_excerpt": "I. BỐ CỤC",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-282f818b737013d957968479",
+          "page_index": 21,
+          "exact_evidence_excerpt": "1. Bố cục chung",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-b47c8be2ac7fb38fa510a169",
+          "page_index": 21,
+          "exact_evidence_excerpt": "Bố cục sơ đồ, bản đồ quy hoạch tổng thể quốc gia, quy hoạch vùng và quy \nhoạch tỉnh bao gồm 06 thành phần nội dung được bố trí như sau:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-0da629f94cd2f978cba179e0",
+          "reference_statement_id": "ref-statement-54b1d57f97a6a44aab1dd127",
+          "page_index": 21,
+          "kind": "document_identifier",
+          "raw_text": "04/2023/TT-BKHĐT",
+          "normalized_value": "04/2023/TT-BKHĐT",
+          "char_start": 84,
+          "char_end": 100,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-3ca2f3f9ed12ff4bd1875bfc",
+          "reference_statement_id": "ref-statement-54b1d57f97a6a44aab1dd127",
+          "page_index": 21,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 26 tháng 6 năm 2023",
+          "normalized_value": "2023-06-26",
+          "char_start": 101,
+          "char_end": 125,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-b7726abd8c5abd4462aed7c3",
+          "reference_statement_id": "ref-statement-73eef768030d040b34f6c8f4",
+          "page_index": 21,
+          "kind": "organization_or_authority",
+          "raw_text": "Bộ Kế hoạch và Đầu tư",
+          "normalized_value": "Bộ Kế hoạch và Đầu tư",
+          "char_start": 4,
+          "char_end": 25,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-475a0097b79cf7b61056d9e3",
+          "page_index": 21,
+          "bbox_normalized_1000": [
+            100,
+            280,
+            900,
+            900
+          ],
+          "task_type": "figure_or_image_observation",
+          "need_reason": "map_layout_figure",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    },
+    {
+      "page_index": 26,
+      "pdf_page_number_1_based": 27,
+      "render_sha256": "a8935cf8edc4a9e00cb53dd6ee2c0406ad892d08f4133d6bac08eb439d5f85a7",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-8993e1d9ab7ffc10dc24166f",
+          "page_index": 26,
+          "exact_evidence_excerpt": "76 \nCÔNG BÁO/Số 815 + 816/Ngày 12-7-2023",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e594bf6d68967603b839ca6e",
+          "page_index": 26,
+          "exact_evidence_excerpt": "76",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-6bc27a2e42376f0aa1342c6b",
+          "page_index": 26,
+          "bbox_normalized_1000": [
+            60,
+            80,
+            950,
+            940
+          ],
+          "task_type": "table_text_recovery",
+          "need_reason": "symbol_legend_table",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        },
+        {
+          "reference_id": "visual-ref-942c82c6bb9c912b7b834682",
+          "page_index": 26,
+          "bbox_normalized_1000": [
+            60,
+            80,
+            950,
+            210
+          ],
+          "task_type": "table_header_recovery",
+          "need_reason": "symbol_legend_header",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    },
+    {
+      "page_index": 27,
+      "pdf_page_number_1_based": 28,
+      "render_sha256": "4bc2420848b9e161f2f07d22d3a377d258ced5e84717c96b833258d0ddb4f7a2",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-02dc27c1e6e915a1df594da4",
+          "page_index": 27,
+          "exact_evidence_excerpt": "CÔNG BÁO/Số 815 + 816/Ngày 12-7-2023 \n77",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-5c797051a35c596a3669e080",
+          "page_index": 27,
+          "bbox_normalized_1000": [
+            40,
+            40,
+            560,
+            960
+          ],
+          "task_type": "table_text_recovery",
+          "need_reason": "continued_symbol_table",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    },
+    {
+      "page_index": 46,
+      "pdf_page_number_1_based": 47,
+      "render_sha256": "458e1bd0aeb87c735843ccc14f28649895bc23629f65568c10ce3e7e5680b82c",
+      "statements": [],
+      "mentions": [],
+      "visual_assistance": []
+    }
+  ]
+}

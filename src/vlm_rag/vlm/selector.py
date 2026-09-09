@@ -6,12 +6,18 @@ import unicodedata
 from dataclasses import dataclass
 
 from vlm_rag.physical_ir.models import BlockDisposition
+from vlm_rag.physical_ir.serialization_v1 import physical_document_v1_to_json
 from vlm_rag.physical_ir.v1 import (
     BlockKindV1,
     PhysicalBlockV1,
     PhysicalDocumentV1,
     TextExtractionMethod,
     VisualAssetStorage,
+)
+from vlm_rag.structural_ir import (
+    StructuralDocument,
+    structural_document_to_json,
+    validate_against_physical,
 )
 from vlm_rag.vlm.models import (
     NonSelectionReason,
@@ -118,23 +124,68 @@ def _request_id(
 
 
 def select_visual_evidence(
-    document: PhysicalDocumentV1, *, budget: SelectionBudget | None = None
+    document: PhysicalDocumentV1,
+    *,
+    structural: StructuralDocument | None = None,
+    budget: SelectionBudget | None = None,
 ) -> VLMSelectionResult:
     """Select requests before invocation with stable priorities and budget traces."""
     budget = budget or SelectionBudget()
+    owners_by_block: dict[str, set[tuple[str, str]]] = {}
+    physical_sha: str | None = None
+    structural_sha: str | None = None
+    if structural is not None:
+        validate_against_physical(structural, document)
+        physical_sha = hashlib.sha256(
+            physical_document_v1_to_json(document).encode("utf-8")
+        ).hexdigest()
+        structural_sha = hashlib.sha256(
+            structural_document_to_json(structural).encode("utf-8")
+        ).hexdigest()
+        for node in structural.nodes:
+            for anchor in node.direct_content_anchors:
+                owners_by_block.setdefault(anchor.block_id, set()).add(
+                    (node.id, node.canonical_path)
+                )
     candidates: list[VisualEvidenceRequest] = []
+    ownership_non_selections: list[VLMNonSelection] = []
     for page in document.pages:
         for block in page.blocks:
             evidence = _candidate(block)
             if evidence is None:
                 continue
             reason, task = evidence
+            owner: tuple[str, str] | None = None
+            if structural is not None:
+                owners = owners_by_block.get(block.id, set())
+                if len(owners) != 1:
+                    ownership_non_selections.append(
+                        VLMNonSelection(
+                            request_id=_request_id(document, block, reason, task),
+                            page_index=block.page_index,
+                            source_block_ids=(block.id,),
+                            task_type=task,
+                            selection_reason=reason,
+                            priority=_PRIORITY[reason],
+                            reason=(
+                                NonSelectionReason.AMBIGUOUS_STRUCTURAL_OWNER
+                                if len(owners) > 1
+                                else NonSelectionReason.UNSUPPORTED_VISUAL_SOURCE
+                            ),
+                        )
+                    )
+                    continue
+                owner = next(iter(owners))
             candidates.append(
                 VisualEvidenceRequest(
                     request_id=_request_id(document, block, reason, task),
                     document_id=document.document_id,
                     version_id=document.version_id,
                     source_artifact_sha256=document.source_artifact_sha256,
+                    source_physical_ir_sha256=physical_sha,
+                    source_structural_ir_sha256=structural_sha,
+                    structural_node_id=owner[0] if owner else None,
+                    structural_canonical_path=owner[1] if owner else None,
                     page_index=block.page_index,
                     bbox=block.bbox,
                     source_block_ids=(block.id,),
@@ -148,7 +199,7 @@ def select_visual_evidence(
         key=lambda item: (item.priority, item.page_index, item.source_block_ids, item.request_id)
     )
     selected: list[VisualEvidenceRequest] = []
-    non_selected: list[VLMNonSelection] = []
+    non_selected: list[VLMNonSelection] = list(ownership_non_selections)
     per_page: dict[int, int] = {}
     for request in candidates:
         if len(selected) >= budget.max_requests_per_document:

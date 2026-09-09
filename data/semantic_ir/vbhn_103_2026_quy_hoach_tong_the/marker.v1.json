@@ -22,7 +22,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000001",
@@ -39,7 +40,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000002",
@@ -61,7 +63,8 @@
         "mention-00000002",
         "mention-00000003"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000003",
@@ -83,7 +86,8 @@
         "mention-00000006",
         "mention-00000007"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000004",
@@ -108,7 +112,8 @@
         "mention-00000013",
         "mention-00000014"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000005",
@@ -125,7 +130,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000006",
@@ -146,7 +152,8 @@
         "mention-00000016",
         "mention-00000017"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000007",
@@ -165,7 +172,8 @@
       "mention_ids": [
         "mention-00000018"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000008",
@@ -186,7 +194,8 @@
         "mention-00000020",
         "mention-00000021"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000009",
@@ -214,7 +223,8 @@
         "mention-00000030",
         "mention-00000031"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000010",
@@ -233,7 +243,8 @@
       "mention_ids": [
         "mention-00000032"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000011",
@@ -250,7 +261,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000012",
@@ -269,7 +281,8 @@
       "mention_ids": [
         "mention-00000033"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000013",
@@ -291,7 +304,8 @@
         "mention-00000036",
         "mention-00000037"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000014",
@@ -308,7 +322,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000015",
@@ -325,7 +340,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000016",
@@ -342,7 +358,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000017",
@@ -359,7 +376,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000018",
@@ -376,7 +394,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000019",
@@ -393,7 +412,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000020",
@@ -410,7 +430,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000021",
@@ -427,7 +448,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000022",
@@ -444,7 +466,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000023",
@@ -463,7 +486,8 @@
       "mention_ids": [
         "mention-00000038"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000024",
@@ -485,7 +509,8 @@
         "mention-00000041",
         "mention-00000042"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000025",
@@ -507,7 +532,8 @@
         "mention-00000045",
         "mention-00000046"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000026",
@@ -528,7 +554,8 @@
         "mention-00000048",
         "mention-00000049"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000027",
@@ -555,7 +582,8 @@
         "mention-00000057",
         "mention-00000058"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000028",
@@ -579,7 +607,8 @@
         "mention-00000063",
         "mention-00000064"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000029",
@@ -596,7 +625,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000030",
@@ -613,7 +643,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000031",
@@ -630,7 +661,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000032",
@@ -647,7 +679,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000033",
@@ -664,7 +697,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000034",
@@ -681,7 +715,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000035",
@@ -698,7 +733,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000036",
@@ -715,7 +751,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000037",
@@ -732,7 +769,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000038",
@@ -749,7 +787,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000039",
@@ -766,7 +805,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000040",
@@ -783,7 +823,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000041",
@@ -800,7 +841,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000042",
@@ -817,7 +859,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000043",
@@ -834,7 +877,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000044",
@@ -851,7 +895,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000045",
@@ -868,7 +913,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000046",
@@ -885,7 +931,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000047",
@@ -902,7 +949,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000048",
@@ -919,7 +967,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000049",
@@ -936,7 +985,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000050",
@@ -953,7 +1003,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000051",
@@ -972,7 +1023,8 @@
       "mention_ids": [
         "mention-00000065"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000052",
@@ -989,7 +1041,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000053",
@@ -1006,7 +1059,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000054",
@@ -1025,7 +1079,8 @@
       "mention_ids": [
         "mention-00000066"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000055",
@@ -1042,7 +1097,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000056",
@@ -1059,7 +1115,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000057",
@@ -1076,7 +1133,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000058",
@@ -1093,7 +1151,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000059",
@@ -1110,7 +1169,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000060",
@@ -1127,7 +1187,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000061",
@@ -1144,7 +1205,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000062",
@@ -1161,7 +1223,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000063",
@@ -1178,7 +1241,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000064",
@@ -1195,7 +1259,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000065",
@@ -1214,7 +1279,8 @@
       "mention_ids": [
         "mention-00000067"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000066",
@@ -1231,7 +1297,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000067",
@@ -1248,7 +1315,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000068",
@@ -1265,7 +1333,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000069",
@@ -1282,7 +1351,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000070",
@@ -1299,7 +1369,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000071",
@@ -1316,7 +1387,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000072",
@@ -1333,7 +1405,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000073",
@@ -1350,7 +1423,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000074",
@@ -1367,7 +1441,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000075",
@@ -1384,7 +1459,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000076",
@@ -1401,7 +1477,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000077",
@@ -1418,7 +1495,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000078",
@@ -1435,7 +1513,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000079",
@@ -1452,7 +1531,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000080",
@@ -1469,7 +1549,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000081",
@@ -1486,7 +1567,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000082",
@@ -1510,7 +1592,8 @@
         "mention-00000072",
         "mention-00000073"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000083",
@@ -1527,7 +1610,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000084",
@@ -1544,7 +1628,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000085",
@@ -1561,7 +1646,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000086",
@@ -1578,7 +1664,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000087",
@@ -1595,7 +1682,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000088",
@@ -1612,7 +1700,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000089",
@@ -1629,7 +1718,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000090",
@@ -1646,7 +1736,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000091",
@@ -1663,7 +1754,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000092",
@@ -1680,7 +1772,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000093",
@@ -1697,7 +1790,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000094",
@@ -1714,7 +1808,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000095",
@@ -1731,7 +1826,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000096",
@@ -1748,7 +1844,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000097",
@@ -1765,7 +1862,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000098",
@@ -1782,7 +1880,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000099",
@@ -1799,7 +1898,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000100",
@@ -1816,7 +1916,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000101",
@@ -1833,7 +1934,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000102",
@@ -1850,7 +1952,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000103",
@@ -1867,7 +1970,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000104",
@@ -1884,7 +1988,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000105",
@@ -1901,7 +2006,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000106",
@@ -1918,7 +2024,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000107",
@@ -1935,7 +2042,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000108",
@@ -1952,7 +2060,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000109",
@@ -1969,7 +2078,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000110",
@@ -1986,7 +2096,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000111",
@@ -2010,7 +2121,8 @@
         "mention-00000078",
         "mention-00000079"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000112",
@@ -2027,7 +2139,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000113",
@@ -2044,7 +2157,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000114",
@@ -2061,7 +2175,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000115",
@@ -2078,7 +2193,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000116",
@@ -2095,7 +2211,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000117",
@@ -2112,7 +2229,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000118",
@@ -2129,7 +2247,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000119",
@@ -2146,7 +2265,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000120",
@@ -2163,7 +2283,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000121",
@@ -2180,7 +2301,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000122",
@@ -2197,7 +2319,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000123",
@@ -2214,7 +2337,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000124",
@@ -2231,7 +2355,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000125",
@@ -2248,7 +2373,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000126",
@@ -2265,7 +2391,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000127",
@@ -2282,7 +2409,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000128",
@@ -2299,7 +2427,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000129",
@@ -2316,7 +2445,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000130",
@@ -2333,7 +2463,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000131",
@@ -2350,7 +2481,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000132",
@@ -2367,7 +2499,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000133",
@@ -2384,7 +2517,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000134",
@@ -2408,7 +2542,8 @@
         "mention-00000084",
         "mention-00000085"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000135",
@@ -2425,7 +2560,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000136",
@@ -2442,7 +2578,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000137",
@@ -2459,7 +2596,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000138",
@@ -2476,7 +2614,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000139",
@@ -2493,7 +2632,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000140",
@@ -2510,7 +2650,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000141",
@@ -2527,7 +2668,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000142",
@@ -2544,7 +2686,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000143",
@@ -2561,7 +2704,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000144",
@@ -2578,7 +2722,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000145",
@@ -2595,7 +2740,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000146",
@@ -2612,7 +2758,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000147",
@@ -2629,7 +2776,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000148",
@@ -2646,7 +2794,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000149",
@@ -2663,7 +2812,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000150",
@@ -2680,7 +2830,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000151",
@@ -2697,7 +2848,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000152",
@@ -2714,7 +2866,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000153",
@@ -2731,7 +2884,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000154",
@@ -2755,7 +2909,8 @@
         "mention-00000090",
         "mention-00000091"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000155",
@@ -2772,7 +2927,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000156",
@@ -2789,7 +2945,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000157",
@@ -2806,7 +2963,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000158",
@@ -2823,7 +2981,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000159",
@@ -2840,7 +2999,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000160",
@@ -2857,7 +3017,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000161",
@@ -2874,7 +3035,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000162",
@@ -2891,7 +3053,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000163",
@@ -2908,7 +3071,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000164",
@@ -2925,7 +3089,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000165",
@@ -2942,7 +3107,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000166",
@@ -2959,7 +3125,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000167",
@@ -2976,7 +3143,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000168",
@@ -2993,7 +3161,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000169",
@@ -3010,7 +3179,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000170",
@@ -3027,7 +3197,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000171",
@@ -3044,7 +3215,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000172",
@@ -3061,7 +3233,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000173",
@@ -3078,7 +3251,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000174",
@@ -3095,7 +3269,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000175",
@@ -3112,7 +3287,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000176",
@@ -3129,7 +3305,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000177",
@@ -3146,7 +3323,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000178",
@@ -3163,7 +3341,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000179",
@@ -3180,7 +3359,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000180",
@@ -3197,7 +3377,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000181",
@@ -3214,7 +3395,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000182",
@@ -3231,7 +3413,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000183",
@@ -3248,7 +3431,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000184",
@@ -3265,7 +3449,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000185",
@@ -3282,7 +3467,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000186",
@@ -3299,7 +3485,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000187",
@@ -3316,7 +3503,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000188",
@@ -3333,7 +3521,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000189",
@@ -3357,7 +3546,8 @@
         "mention-00000096",
         "mention-00000097"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000190",
@@ -3381,7 +3571,8 @@
         "mention-00000102",
         "mention-00000103"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000191",
@@ -3405,7 +3596,8 @@
         "mention-00000108",
         "mention-00000109"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000192",
@@ -3429,7 +3621,8 @@
         "mention-00000114",
         "mention-00000115"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000193",
@@ -3453,7 +3646,8 @@
         "mention-00000120",
         "mention-00000121"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000194",
@@ -3477,7 +3671,8 @@
         "mention-00000126",
         "mention-00000127"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000195",
@@ -3494,7 +3689,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000196",
@@ -3511,7 +3707,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000197",
@@ -3528,7 +3725,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000198",
@@ -3545,7 +3743,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000199",
@@ -3562,7 +3761,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000200",
@@ -3579,7 +3779,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000201",
@@ -3596,7 +3797,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000202",
@@ -3613,7 +3815,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000203",
@@ -3637,7 +3840,8 @@
         "mention-00000132",
         "mention-00000133"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000204",
@@ -3654,7 +3858,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000205",
@@ -3671,7 +3876,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000206",
@@ -3688,7 +3894,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000207",
@@ -3705,7 +3912,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000208",
@@ -3722,7 +3930,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000209",
@@ -3746,7 +3955,8 @@
         "mention-00000138",
         "mention-00000139"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000210",
@@ -3763,7 +3973,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000211",
@@ -3780,7 +3991,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000212",
@@ -3797,7 +4009,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000213",
@@ -3814,7 +4027,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000214",
@@ -3831,7 +4045,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000215",
@@ -3848,7 +4063,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000216",
@@ -3865,7 +4081,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000217",
@@ -3889,7 +4106,8 @@
         "mention-00000144",
         "mention-00000145"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000218",
@@ -3906,7 +4124,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000219",
@@ -3923,7 +4142,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000220",
@@ -3940,7 +4160,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000221",
@@ -3957,7 +4178,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000222",
@@ -3974,7 +4196,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000223",
@@ -3998,7 +4221,8 @@
         "mention-00000150",
         "mention-00000151"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000224",
@@ -4015,7 +4239,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000225",
@@ -4032,7 +4257,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000226",
@@ -4049,7 +4275,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000227",
@@ -4073,7 +4300,8 @@
         "mention-00000156",
         "mention-00000157"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000228",
@@ -4097,7 +4325,8 @@
         "mention-00000162",
         "mention-00000163"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000229",
@@ -4114,7 +4343,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000230",
@@ -4131,7 +4361,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000231",
@@ -4148,7 +4379,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000232",
@@ -4165,7 +4397,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000233",
@@ -4182,7 +4415,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000234",
@@ -4206,7 +4440,8 @@
         "mention-00000168",
         "mention-00000169"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000235",
@@ -4223,7 +4458,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000236",
@@ -4240,7 +4476,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000237",
@@ -4257,7 +4494,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000238",
@@ -4274,7 +4512,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000239",
@@ -4291,7 +4530,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000240",
@@ -4308,7 +4548,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000241",
@@ -4332,7 +4573,8 @@
         "mention-00000174",
         "mention-00000175"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000242",
@@ -4349,7 +4591,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000243",
@@ -4366,7 +4609,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000244",
@@ -4385,7 +4629,8 @@
       "mention_ids": [
         "mention-00000176"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000245",
@@ -4402,7 +4647,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000246",
@@ -4419,7 +4665,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000247",
@@ -4436,7 +4683,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000248",
@@ -4453,7 +4701,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000249",
@@ -4477,7 +4726,8 @@
         "mention-00000181",
         "mention-00000182"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000250",
@@ -4494,7 +4744,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000251",
@@ -4511,7 +4762,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000252",
@@ -4528,7 +4780,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000253",
@@ -4545,7 +4798,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000254",
@@ -4569,7 +4823,8 @@
         "mention-00000187",
         "mention-00000188"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000255",
@@ -4588,7 +4843,8 @@
       "mention_ids": [
         "mention-00000189"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000256",
@@ -4605,7 +4861,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000257",
@@ -4624,7 +4881,8 @@
       "mention_ids": [
         "mention-00000190"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000258",
@@ -4641,7 +4899,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000259",
@@ -4658,7 +4917,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000260",
@@ -4682,7 +4942,8 @@
         "mention-00000195",
         "mention-00000196"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000261",
@@ -4699,7 +4960,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000262",
@@ -4716,7 +4978,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000263",
@@ -4733,7 +4996,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000264",
@@ -4750,7 +5014,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000265",
@@ -4767,7 +5032,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000266",
@@ -4791,7 +5057,8 @@
         "mention-00000201",
         "mention-00000202"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000267",
@@ -4815,7 +5082,8 @@
         "mention-00000207",
         "mention-00000208"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000268",
@@ -4832,7 +5100,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000269",
@@ -4849,7 +5118,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000270",
@@ -4866,7 +5136,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000271",
@@ -4883,7 +5154,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000272",
@@ -4900,7 +5172,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000273",
@@ -4917,7 +5190,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000274",
@@ -4934,7 +5208,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000275",
@@ -4951,7 +5226,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000276",
@@ -4968,7 +5244,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000277",
@@ -4985,7 +5262,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000278",
@@ -5002,7 +5280,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000279",
@@ -5019,7 +5298,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000280",
@@ -5036,7 +5316,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000281",
@@ -5053,7 +5334,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000282",
@@ -5070,7 +5352,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000283",
@@ -5087,7 +5370,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000284",
@@ -5104,7 +5388,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000285",
@@ -5121,7 +5406,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000286",
@@ -5138,7 +5424,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000287",
@@ -5155,7 +5442,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000288",
@@ -5172,7 +5460,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000289",
@@ -5189,7 +5478,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000290",
@@ -5206,7 +5496,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000291",
@@ -5223,7 +5514,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000292",
@@ -5240,7 +5532,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000293",
@@ -5264,7 +5557,8 @@
         "mention-00000213",
         "mention-00000214"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000294",
@@ -5288,7 +5582,8 @@
         "mention-00000219",
         "mention-00000220"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000295",
@@ -5305,7 +5600,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000296",
@@ -5322,7 +5618,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000297",
@@ -5339,7 +5636,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000298",
@@ -5356,7 +5654,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000299",
@@ -5373,7 +5672,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000300",
@@ -5397,7 +5697,8 @@
         "mention-00000225",
         "mention-00000226"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000301",
@@ -5421,7 +5722,8 @@
         "mention-00000231",
         "mention-00000232"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000302",
@@ -5438,7 +5740,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000303",
@@ -5455,7 +5758,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000304",
@@ -5472,7 +5776,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000305",
@@ -5491,7 +5796,8 @@
       "mention_ids": [
         "mention-00000233"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000306",
@@ -5508,7 +5814,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000307",
@@ -5525,7 +5832,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000308",
@@ -5542,7 +5850,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000309",
@@ -5566,7 +5875,8 @@
         "mention-00000238",
         "mention-00000239"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000310",
@@ -5583,7 +5893,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000311",
@@ -5602,7 +5913,8 @@
       "mention_ids": [
         "mention-00000240"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000312",
@@ -5619,7 +5931,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000313",
@@ -5636,7 +5949,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000314",
@@ -5653,7 +5967,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000315",
@@ -5670,7 +5985,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000316",
@@ -5687,7 +6003,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000317",
@@ -5704,7 +6021,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000318",
@@ -5721,7 +6039,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000319",
@@ -5738,7 +6057,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000320",
@@ -5755,7 +6075,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000321",
@@ -5772,7 +6093,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000322",
@@ -5789,7 +6111,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000323",
@@ -5806,7 +6129,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000324",
@@ -5823,7 +6147,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000325",
@@ -5840,7 +6165,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000326",
@@ -5857,7 +6183,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000327",
@@ -5874,7 +6201,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000328",
@@ -5891,7 +6219,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000329",
@@ -5908,7 +6237,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000330",
@@ -5925,7 +6255,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000331",
@@ -5942,7 +6273,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000332",
@@ -5959,7 +6291,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000333",
@@ -5976,7 +6309,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000334",
@@ -5993,7 +6327,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000335",
@@ -6010,7 +6345,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000336",
@@ -6030,7 +6366,8 @@
         "mention-00000241",
         "mention-00000242"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000337",
@@ -6047,7 +6384,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000338",
@@ -6064,7 +6402,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000339",
@@ -6081,7 +6420,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000340",
@@ -6098,7 +6438,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000341",
@@ -6122,7 +6463,8 @@
         "mention-00000247",
         "mention-00000248"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000342",
@@ -6139,7 +6481,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000343",
@@ -6156,7 +6499,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000344",
@@ -6175,7 +6519,8 @@
       "mention_ids": [
         "mention-00000249"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000345",
@@ -6197,7 +6542,8 @@
         "mention-00000252",
         "mention-00000253"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000346",
@@ -6214,7 +6560,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000347",
@@ -6231,7 +6578,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000348",
@@ -6248,7 +6596,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000349",
@@ -6270,7 +6619,8 @@
         "mention-00000256",
         "mention-00000257"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000350",
@@ -6289,7 +6639,8 @@
       "mention_ids": [
         "mention-00000258"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000351",
@@ -6308,7 +6659,8 @@
       "mention_ids": [
         "mention-00000259"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000352",
@@ -6328,7 +6680,8 @@
         "mention-00000260",
         "mention-00000261"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000353",
@@ -6347,7 +6700,8 @@
       "mention_ids": [
         "mention-00000262"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000354",
@@ -6364,7 +6718,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000355",
@@ -6387,7 +6742,8 @@
         "mention-00000266",
         "mention-00000267"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000356",
@@ -6408,7 +6764,8 @@
         "mention-00000269",
         "mention-00000270"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000357",
@@ -6432,7 +6789,8 @@
         "mention-00000275",
         "mention-00000276"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000358",
@@ -6451,7 +6809,8 @@
       "mention_ids": [
         "mention-00000277"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000359",
@@ -6468,7 +6827,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000360",
@@ -6485,7 +6845,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000361",
@@ -6504,7 +6865,8 @@
       "mention_ids": [
         "mention-00000278"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000362",
@@ -6521,7 +6883,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000363",
@@ -6540,7 +6903,8 @@
       "mention_ids": [
         "mention-00000279"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000364",
@@ -6557,7 +6921,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000365",
@@ -6574,7 +6939,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000366",
@@ -6591,7 +6957,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000367",
@@ -6612,7 +6979,8 @@
         "mention-00000281",
         "mention-00000282"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000368",
@@ -6629,7 +6997,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000369",
@@ -6646,7 +7015,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000370",
@@ -6663,7 +7033,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000371",
@@ -6680,7 +7051,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000372",
@@ -6697,7 +7069,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000373",
@@ -6714,7 +7087,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000374",
@@ -6731,7 +7105,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000375",
@@ -6748,7 +7123,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000376",
@@ -6765,7 +7141,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000377",
@@ -6782,7 +7159,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000378",
@@ -6799,7 +7177,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000379",
@@ -6816,7 +7195,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000380",
@@ -6833,7 +7213,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000381",
@@ -6850,7 +7231,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000382",
@@ -6867,7 +7249,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000383",
@@ -6884,7 +7267,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000384",
@@ -6901,7 +7285,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000385",
@@ -6918,7 +7303,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000386",
@@ -6935,7 +7321,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000387",
@@ -6952,7 +7339,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000388",
@@ -6969,7 +7357,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000389",
@@ -6986,7 +7375,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000390",
@@ -7003,7 +7393,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000391",
@@ -7020,7 +7411,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000392",
@@ -7037,7 +7429,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000393",
@@ -7054,7 +7447,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000394",
@@ -7071,7 +7465,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000395",
@@ -7088,7 +7483,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000396",
@@ -7105,7 +7501,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000397",
@@ -7122,7 +7519,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000398",
@@ -7139,7 +7537,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000399",
@@ -7156,7 +7555,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000400",
@@ -7173,7 +7573,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000401",
@@ -7190,7 +7591,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000402",
@@ -7207,7 +7609,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000403",
@@ -7224,7 +7627,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000404",
@@ -7241,7 +7645,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000405",
@@ -7258,7 +7663,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000406",
@@ -7275,7 +7681,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000407",
@@ -7292,7 +7699,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000408",
@@ -7309,7 +7717,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000409",
@@ -7326,7 +7735,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000410",
@@ -7343,7 +7753,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000411",
@@ -7360,7 +7771,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000412",
@@ -7377,7 +7789,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000413",
@@ -7394,7 +7807,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000414",
@@ -7411,7 +7825,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000415",
@@ -7428,7 +7843,8 @@
         }
       ],
       "mention_ids": [],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     },
     {
       "id": "statement-00000416",
@@ -7452,7 +7868,8 @@
         "mention-00000287",
         "mention-00000288"
       ],
-      "provenance": "rule_based_text"
+      "provenance": "rule_based_text",
+      "source_visual_observation_id": null
     }
   ],
   "mentions": [
@@ -7472,6 +7889,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7491,6 +7909,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7510,6 +7929,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7529,6 +7949,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7548,6 +7969,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7567,6 +7989,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7586,6 +8009,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7605,6 +8029,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7624,6 +8049,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7643,6 +8069,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7662,6 +8089,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7681,6 +8109,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7700,6 +8129,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7719,6 +8149,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7738,6 +8169,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7757,6 +8189,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7776,6 +8209,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7795,6 +8229,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7814,6 +8249,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7833,6 +8269,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7852,6 +8289,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7871,6 +8309,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7890,6 +8329,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7909,6 +8349,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7928,6 +8369,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7947,6 +8389,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7966,6 +8409,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -7985,6 +8429,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8004,6 +8449,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8023,6 +8469,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8042,6 +8489,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8061,6 +8509,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8080,6 +8529,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8099,6 +8549,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8118,6 +8569,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8137,6 +8589,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8156,6 +8609,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8175,6 +8629,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8194,6 +8649,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8213,6 +8669,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8232,6 +8689,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8251,6 +8709,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8270,6 +8729,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8289,6 +8749,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8308,6 +8769,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8327,6 +8789,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8346,6 +8809,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8365,6 +8829,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8384,6 +8849,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8403,6 +8869,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8422,6 +8889,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8441,6 +8909,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8460,6 +8929,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8479,6 +8949,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8498,6 +8969,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8517,6 +8989,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8536,6 +9009,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8555,6 +9029,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8574,6 +9049,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8593,6 +9069,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -8620,6 +9097,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8639,6 +9117,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8658,6 +9137,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8677,6 +9157,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8696,6 +9177,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8715,6 +9197,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": {
         "raw_value": "12",
@@ -8739,6 +9222,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8758,6 +9242,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": {
         "raw_value": "5.000",
@@ -8782,6 +9267,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -8809,6 +9295,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8828,6 +9315,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8847,6 +9335,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8866,6 +9355,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8885,6 +9375,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8904,6 +9395,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -8931,6 +9423,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8950,6 +9443,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8969,6 +9463,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -8988,6 +9483,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9007,6 +9503,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9026,6 +9523,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -9053,6 +9551,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9072,6 +9571,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9091,6 +9591,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9110,6 +9611,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9129,6 +9631,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9148,6 +9651,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -9175,6 +9679,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9194,6 +9699,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9213,6 +9719,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9232,6 +9739,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9251,6 +9759,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9270,6 +9779,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -9297,6 +9807,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9316,6 +9827,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9335,6 +9847,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9354,6 +9867,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9373,6 +9887,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9392,6 +9907,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -9419,6 +9935,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9438,6 +9955,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9457,6 +9975,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9476,6 +9995,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9495,6 +10015,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9514,6 +10035,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -9541,6 +10063,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9560,6 +10083,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9579,6 +10103,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9598,6 +10123,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9617,6 +10143,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9636,6 +10163,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -9663,6 +10191,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9682,6 +10211,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9701,6 +10231,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9720,6 +10251,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9739,6 +10271,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9758,6 +10291,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -9785,6 +10319,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9804,6 +10339,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9823,6 +10359,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9842,6 +10379,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9861,6 +10399,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9880,6 +10419,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -9907,6 +10447,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9926,6 +10467,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9945,6 +10487,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9964,6 +10507,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -9983,6 +10527,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10002,6 +10547,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -10029,6 +10575,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10048,6 +10595,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10067,6 +10615,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10086,6 +10635,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10105,6 +10655,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10124,6 +10675,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -10151,6 +10703,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10170,6 +10723,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10189,6 +10743,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10208,6 +10763,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10227,6 +10783,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10246,6 +10803,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -10273,6 +10831,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10292,6 +10851,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10311,6 +10871,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10330,6 +10891,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10349,6 +10911,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10368,6 +10931,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -10395,6 +10959,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10414,6 +10979,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10433,6 +10999,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10452,6 +11019,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10471,6 +11039,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10490,6 +11059,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -10517,6 +11087,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10536,6 +11107,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10555,6 +11127,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10574,6 +11147,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10593,6 +11167,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10612,6 +11187,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -10639,6 +11215,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10658,6 +11235,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10677,6 +11255,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10696,6 +11275,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10715,6 +11295,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10734,6 +11315,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -10761,6 +11343,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10780,6 +11363,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10799,6 +11383,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10818,6 +11403,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10837,6 +11423,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10856,6 +11443,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -10883,6 +11471,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10902,6 +11491,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10921,6 +11511,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10940,6 +11531,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10959,6 +11551,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -10978,6 +11571,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": {
         "raw_value": "100",
@@ -11002,6 +11596,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -11029,6 +11624,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11048,6 +11644,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11067,6 +11664,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11086,6 +11684,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11105,6 +11704,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11124,6 +11724,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -11151,6 +11752,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11170,6 +11772,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11189,6 +11792,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11208,6 +11812,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11227,6 +11832,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11246,6 +11852,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11265,6 +11872,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11284,6 +11892,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -11311,6 +11920,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11330,6 +11940,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11349,6 +11960,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11368,6 +11980,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11387,6 +12000,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11406,6 +12020,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -11433,6 +12048,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11452,6 +12068,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11471,6 +12088,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11490,6 +12108,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11509,6 +12128,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11528,6 +12148,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -11555,6 +12176,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11574,6 +12196,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11593,6 +12216,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11612,6 +12236,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11631,6 +12256,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11650,6 +12276,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -11677,6 +12304,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11696,6 +12324,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11715,6 +12344,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11734,6 +12364,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11753,6 +12384,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11772,6 +12404,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -11799,6 +12432,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11818,6 +12452,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11837,6 +12472,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11856,6 +12492,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11875,6 +12512,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11894,6 +12532,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -11921,6 +12560,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11940,6 +12580,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11959,6 +12600,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11978,6 +12620,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -11997,6 +12640,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12016,6 +12660,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -12043,6 +12688,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12062,6 +12708,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12081,6 +12728,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12100,6 +12748,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12119,6 +12768,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12138,6 +12788,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12157,6 +12808,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -12184,6 +12836,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12203,6 +12856,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12222,6 +12876,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12241,6 +12896,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12260,6 +12916,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12279,6 +12936,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12298,6 +12956,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12317,6 +12976,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12336,6 +12996,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -12363,6 +13024,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12382,6 +13044,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12401,6 +13064,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12420,6 +13084,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12439,6 +13104,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12458,6 +13124,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12477,6 +13144,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12496,6 +13164,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12515,6 +13184,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12534,6 +13204,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12553,6 +13224,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -12580,6 +13252,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -12607,6 +13280,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12626,6 +13300,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12645,6 +13320,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -12672,6 +13348,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12691,6 +13368,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -12718,6 +13396,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12737,6 +13416,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12756,6 +13436,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12775,6 +13456,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12794,6 +13476,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12813,6 +13496,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12832,6 +13516,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12851,6 +13536,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12870,6 +13556,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12889,6 +13576,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12908,6 +13596,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -12935,6 +13624,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12954,6 +13644,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12973,6 +13664,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -12992,6 +13684,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13011,6 +13704,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13030,6 +13724,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -13057,6 +13752,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13076,6 +13772,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13095,6 +13792,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13114,6 +13812,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13133,6 +13832,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13152,6 +13852,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": {
         "instrument_type": null,
         "instrument_number_raw": null,
@@ -13179,6 +13880,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13198,6 +13900,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13217,6 +13920,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13236,6 +13940,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     },
@@ -13255,6 +13960,7 @@
         }
       ],
       "provenance": "rule_based_text",
+      "source_visual_observation_id": null,
       "legal_reference": null,
       "quantity": null
     }

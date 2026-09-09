@@ -1,0 +1,559 @@
+{
+  "audit_schema_version": 2,
+  "reference_version": "v2",
+  "reference_schema": 2,
+  "method": "AI visual re-audit of exact fixed 46 rendered PDF pages; candidates visible but not authoritative.",
+  "pages": 46,
+  "statements": 586,
+  "mentions_by_kind": {
+    "document_identifier": 90,
+    "legal_reference": 47,
+    "organization_or_authority": 130,
+    "quantity": 29,
+    "temporal_expression": 89
+  },
+  "visual_assistance_regions": 17,
+  "v1_to_v2": {
+    "v1_status": "invalidated_candidate_derived_diagnostic_only",
+    "authoritative_records_regenerated": 971,
+    "removed_parser_corruption_records": 59,
+    "added_visually_transcribed_qd23_statements": 28
+  },
+  "qd23": {
+    "pages_exhaustively_reaudited": 4,
+    "parser_corrupted_candidates_rejected": true,
+    "visual_assistance_regions": 4,
+    "task_type": "ocr_recovery"
+  },
+  "prior_exposure": {
+    "physical_ir": true,
+    "structural_ir": true,
+    "semantic_extractor": true,
+    "candidates_seen": true,
+    "semantic_extractor_output_used_as_reference_truth": false,
+    "independent_or_blind_ground_truth": false
+  },
+  "page_records": [
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 0,
+      "render_sha256": "bda5d825e0cc363ebd0fb494117ef610ff08052532026d79553f6f52e3f8d5a0",
+      "statement_count": 11,
+      "mention_count_by_kind": {
+        "document_identifier": 8,
+        "organization_or_authority": 5,
+        "temporal_expression": 20
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 1,
+      "render_sha256": "ed40ca8acc0cd263e890198339a8e9bdf4e620e53d64eeefd7c12c40aba981dc",
+      "statement_count": 12,
+      "mention_count_by_kind": {
+        "document_identifier": 23,
+        "legal_reference": 1,
+        "organization_or_authority": 9,
+        "temporal_expression": 30
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 2,
+      "render_sha256": "16be07737ce7ce3cd85af6b8d2ff2a0aab15836bb1fa438169561d8193dbcf2b",
+      "statement_count": 12,
+      "mention_count_by_kind": {
+        "quantity": 2
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 3,
+      "render_sha256": "a94c73e36aeb5d16011f4f88a2a00897e7f2a8522cd2822aab56d694d6c7fca8",
+      "statement_count": 9,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 15,
+      "render_sha256": "6e2e924ec33148f2ee9fd28ec70b7f88187ce9d41c0ebe9473c881001eef6357",
+      "statement_count": 15,
+      "mention_count_by_kind": {
+        "quantity": 7
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 30,
+      "render_sha256": "dc3ddf352e1bc72845185df6b51bddc15b81834553a12086aae4e814dda4dd36",
+      "statement_count": 14,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 45,
+      "render_sha256": "9cb25f27edefe5e565d955470469a962e69262018c8b693aa1be84e99bfd9f2d",
+      "statement_count": 8,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 60,
+      "render_sha256": "79973d34522e186aa51d8b2b0d977cc742dc3c69c007317870533904de372bf6",
+      "statement_count": 13,
+      "mention_count_by_kind": {
+        "document_identifier": 1,
+        "quantity": 5
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 78,
+      "render_sha256": "3170769c1d1becf8e83eb65e72c54d95c67b85ffc483a7bddb0a5c667268d696",
+      "statement_count": 9,
+      "mention_count_by_kind": {
+        "document_identifier": 3,
+        "organization_or_authority": 11,
+        "temporal_expression": 3
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "hanoi-master-plan-100y",
+      "page_index": 79,
+      "render_sha256": "e29866182d32f740cf901fec6b707cc5e9e2666eaf1188747c5ce2cbb198adab",
+      "statement_count": 7,
+      "mention_count_by_kind": {
+        "legal_reference": 2,
+        "organization_or_authority": 12
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 0,
+      "render_sha256": "ddf2a6236881925d8c9b7215dec2821e37b029a5c54890a96ac9712245c794c3",
+      "statement_count": 19,
+      "mention_count_by_kind": {
+        "document_identifier": 2,
+        "legal_reference": 3,
+        "organization_or_authority": 1
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 1,
+      "render_sha256": "e2fa3b453df5917eb407a12d7ada7ed9aa70d3c178580181f5b6bc49ee5858e4",
+      "statement_count": 10,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 5,
+      "render_sha256": "9439f8650a7c1c705843e3078ffde74abefddc1ad700b62d27f12ff2257d0e58",
+      "statement_count": 12,
+      "mention_count_by_kind": {
+        "legal_reference": 1,
+        "organization_or_authority": 4
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 12,
+      "render_sha256": "12e7dd2da5d63f2cb9b5b13c77fa3fad9443d682a407873324a816f8ea2407ef",
+      "statement_count": 21,
+      "mention_count_by_kind": {
+        "legal_reference": 3,
+        "organization_or_authority": 3
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 20,
+      "render_sha256": "762bee17d31992ef8ef14442c57100038d4017c9bed07e31ccd34298b0305fd3",
+      "statement_count": 9,
+      "mention_count_by_kind": {
+        "legal_reference": 1,
+        "organization_or_authority": 1
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 28,
+      "render_sha256": "08afd771acde2b0b98b8841cb69b234576ae4475e35b3260f063dbc2940a9ee0",
+      "statement_count": 18,
+      "mention_count_by_kind": {
+        "legal_reference": 2,
+        "organization_or_authority": 5
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 35,
+      "render_sha256": "ccbd8d7aef573667eb5701d28505647b52c1a83559429c4c1e3425b42e61ef95",
+      "statement_count": 16,
+      "mention_count_by_kind": {
+        "document_identifier": 9,
+        "legal_reference": 17
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 42,
+      "render_sha256": "9013db386433c363711c2d30c5de2b3f7e936d99a18617b4919906ad7918446d",
+      "statement_count": 13,
+      "mention_count_by_kind": {
+        "organization_or_authority": 5
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 50,
+      "render_sha256": "18d6ba7508fa2735c879467a935f36f0221627ae73717556442147442431c6fd",
+      "statement_count": 29,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 2,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "luat-112-2025-qh15",
+      "page_index": 51,
+      "render_sha256": "97bb34741c3b5afbb7b9e896cf2ccf490ffba0532ff3ce50a37cd22bc35ace60",
+      "statement_count": 21,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 2,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 0,
+      "render_sha256": "c34aefd7bdeda9635fb7b313ff5308cc0cf911e6115014d33140a25455f5deca",
+      "statement_count": 15,
+      "mention_count_by_kind": {
+        "document_identifier": 2,
+        "legal_reference": 2,
+        "organization_or_authority": 21,
+        "temporal_expression": 5
+      },
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 1,
+      "render_sha256": "53d13f61389d575b5381d5274d3f8921fb8953113f697d481ae50c7a23a5f84a",
+      "statement_count": 4,
+      "mention_count_by_kind": {
+        "organization_or_authority": 5
+      },
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 2,
+      "render_sha256": "f8285036152ba8a3cb2dd39a850bc9c797c90d84315c9902c5e8906f99878c06",
+      "statement_count": 4,
+      "mention_count_by_kind": {
+        "organization_or_authority": 6
+      },
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+      "page_index": 3,
+      "render_sha256": "b87125ecf58e0b796810e1f0650667e2ef157232b511ff7f4505c6ce4946aada",
+      "statement_count": 5,
+      "mention_count_by_kind": {
+        "legal_reference": 2,
+        "organization_or_authority": 12
+      },
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 0,
+      "render_sha256": "cd7b7815429c9296eb243312e9379279f9754bab848fbd1142b2f601fe2e45a1",
+      "statement_count": 20,
+      "mention_count_by_kind": {
+        "document_identifier": 6,
+        "legal_reference": 1,
+        "organization_or_authority": 4,
+        "temporal_expression": 9
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 5,
+      "render_sha256": "1df6e047ec9e9b03b579e64c04fda558bc062a4b69a5000aaf0dc8ef37e06964",
+      "statement_count": 17,
+      "mention_count_by_kind": {
+        "legal_reference": 2,
+        "organization_or_authority": 1
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 15,
+      "render_sha256": "2c2c8770901c841efa9ff8449a85cab9e43af4abd77417cf796bfd5489376c7b",
+      "statement_count": 30,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 20,
+      "render_sha256": "cdfa06e482d94cd99c34cafe09a7d105bd04c4dae4dd12839aefb17658423972",
+      "statement_count": 17,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 21,
+      "render_sha256": "6e2b1e83379a80790fc00e224e52c387efd7da1bd1912bcdcead164ec9bfc141",
+      "statement_count": 7,
+      "mention_count_by_kind": {
+        "document_identifier": 1,
+        "organization_or_authority": 1,
+        "temporal_expression": 1
+      },
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 26,
+      "render_sha256": "a8935cf8edc4a9e00cb53dd6ee2c0406ad892d08f4133d6bac08eb439d5f85a7",
+      "statement_count": 2,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 2,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 27,
+      "render_sha256": "4bc2420848b9e161f2f07d22d3a377d258ced5e84717c96b833258d0ddb4f7a2",
+      "statement_count": 1,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2023-bkhdt-so-do-ban-do",
+      "page_index": 46,
+      "render_sha256": "458e1bd0aeb87c735843ccc14f28649895bc23629f65568c10ce3e7e5680b82c",
+      "statement_count": 0,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 0,
+      "render_sha256": "c77f0fddbd69e0af75614e800e9a327c1ce9b983e6af2af217b50658b4745411",
+      "statement_count": 6,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 1,
+      "render_sha256": "9ddf43654c0e2a91a68b30c2b1a36def0f348ad95e01417f12f679382fc15935",
+      "statement_count": 1,
+      "mention_count_by_kind": {
+        "quantity": 4
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 5,
+      "render_sha256": "70d0ad7564a5c3bb47a89d0fcac10f7384024097fc5e716299940563ae30a2ed",
+      "statement_count": 27,
+      "mention_count_by_kind": {
+        "quantity": 4
+      },
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 10,
+      "render_sha256": "585a481357387c8203c9756154daa22da86dafd3cdea9ed7436f465c8d716039",
+      "statement_count": 27,
+      "mention_count_by_kind": {
+        "quantity": 2
+      },
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 15,
+      "render_sha256": "30f09763d664a2df94be03cd34e159ac257379f87101d83f86f850ca5a170b49",
+      "statement_count": 29,
+      "mention_count_by_kind": {
+        "quantity": 5
+      },
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+      "page_index": 18,
+      "render_sha256": "ad5bc41d98b358c77682f23b6aecd39535d1447095e0e6e89c75954992da0259",
+      "statement_count": 8,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 0,
+      "render_sha256": "ff6b39874913fc757e654dfc398c6bbb745f5694dd3da7560c22fec73e97cbd9",
+      "statement_count": 14,
+      "mention_count_by_kind": {
+        "document_identifier": 13,
+        "organization_or_authority": 12,
+        "temporal_expression": 10
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 1,
+      "render_sha256": "c0242d471daed5db0d62fe50847adae37cff1233c2845655cad9faa7f536c913",
+      "statement_count": 14,
+      "mention_count_by_kind": {
+        "document_identifier": 13,
+        "legal_reference": 3,
+        "organization_or_authority": 5,
+        "temporal_expression": 2
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 5,
+      "render_sha256": "45234856a85451c41f90571784d38ad0e5ba434fd47f2c9896652aff514b6dd3",
+      "statement_count": 11,
+      "mention_count_by_kind": {
+        "organization_or_authority": 1
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 12,
+      "render_sha256": "aa1160161eac4ed5ae8b69cc434a90195563cab6276ccb21dae3a7873400d112",
+      "statement_count": 7,
+      "mention_count_by_kind": {
+        "document_identifier": 2,
+        "legal_reference": 1,
+        "organization_or_authority": 1,
+        "temporal_expression": 2
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 20,
+      "render_sha256": "b9ab67cd95e10f4d00daf6855a7ed1b7c3d71165a6abe21071e236cc67206657",
+      "statement_count": 10,
+      "mention_count_by_kind": {},
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 30,
+      "render_sha256": "051900fff21cc2a511f82a46e54cf82dbcaa582f1aaa44a0a6f95e4c5c4df57d",
+      "statement_count": 7,
+      "mention_count_by_kind": {
+        "document_identifier": 2,
+        "legal_reference": 2,
+        "organization_or_authority": 1,
+        "temporal_expression": 2
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 40,
+      "render_sha256": "fdc16e300eb01ebc957fdd220d3ab4400fb9516da7a975203ac80ed381af0bef",
+      "statement_count": 11,
+      "mention_count_by_kind": {
+        "document_identifier": 2,
+        "legal_reference": 3,
+        "organization_or_authority": 2,
+        "temporal_expression": 2
+      },
+      "visual_assistance_region_count": 0,
+      "visually_reaudited": true
+    },
+    {
+      "document_id": "vbhn-103-2026-quy-hoach-tong-the",
+      "page_index": 47,
+      "render_sha256": "7654c94f0833d3a1cfca832871572bf7584457765361da8391f8969251417c85",
+      "statement_count": 14,
+      "mention_count_by_kind": {
+        "document_identifier": 3,
+        "legal_reference": 1,
+        "organization_or_authority": 2,
+        "temporal_expression": 3
+      },
+      "visual_assistance_region_count": 1,
+      "visually_reaudited": true
+    }
+  ]
+}

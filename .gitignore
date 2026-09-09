@@ -55,6 +55,7 @@ data/*
 !data/structural_annotations/
 !data/structural_ir/
 !data/semantic_annotations/
+!data/semantic_candidates/
 !data/semantic_ir/
 !data/vlm_replay/
 !data/golden/**/
@@ -65,6 +66,7 @@ data/*
 !data/structural_annotations/**
 !data/structural_ir/**
 !data/semantic_annotations/**
+!data/semantic_candidates/**
 !data/semantic_ir/**
 !data/vlm_replay/**
 data/golden/**/*.pdf

@@ -1,0 +1,989 @@
+{
+  "annotation_schema_version": 2,
+  "annotation_version": "v2",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_semantic_reaudit",
+  "document_id": "tt-04-2026-bxd-pl2-dinh-muc",
+  "version_id": "v1",
+  "source_artifact_sha256": "f1725709e9df7135c729b2fcc8905638bdd6312af8656459a7475a8c504c0b25",
+  "prior_physical_ir_exposure": true,
+  "prior_structural_ir_exposure": true,
+  "prior_semantic_extractor_exposure": true,
+  "semantic_extractor_candidates_seen": true,
+  "semantic_extractor_output_used_as_reference_truth": false,
+  "independent_or_blind_ground_truth": false,
+  "pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "render_sha256": "c77f0fddbd69e0af75614e800e9a327c1ce9b983e6af2af217b50658b4745411",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-6f2a4292ecef142e2d41e126",
+          "page_index": 0,
+          "exact_evidence_excerpt": "BỘ XÂY DỰNG",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a1ddeeede63a3a762b49bd94",
+          "page_index": 0,
+          "exact_evidence_excerpt": "PHỤ LỤC II",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-50421b1e606d23f1f9684087",
+          "page_index": 0,
+          "exact_evidence_excerpt": "ĐỊNH MỨC",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-00aa6f5d6f038a9d44b03965",
+          "page_index": 0,
+          "exact_evidence_excerpt": "BẢO DƯỠNG CẦU THĂNG LONG, TUYẾN ĐƯỜNG SẮT",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-bf61b36af1637fb5903b1ea0",
+          "page_index": 0,
+          "exact_evidence_excerpt": "BẮC HỒNG – VĂN ĐIỂN",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-1f2df1412b1c74c8c472a4c8",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Năm 2026",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "render_sha256": "9ddf43654c0e2a91a68b30c2b1a36def0f348ad95e01417f12f679382fc15935",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-29c80aa5c517fc5450652b2f",
+          "page_index": 1,
+          "exact_evidence_excerpt": "MỤC LỤC\nTHUYẾT MINH VÀ HƯỚNG DẪN ÁP DỤNG..............................................3\n1. Nội dung định mức bảo dưỡng cầu Thăng Long, tuyến đường sắt Bắc Hồng – \nVăn Điển................................................................................................................3\n2. Kết cấu định mức bảo dưỡng cầu Thăng Long, tuyến đường sắt Bắc Hồng – \nVăn Điển................................................................................................................3\n3. Hướng dẫn áp dụng ...........................................................................................3\nPHẦN I. TỔNG HỢP KHỐI LƯỢNG CHO CÔNG TÁC BẢO DƯỠNG \nTHƯỜNG XUYÊN CẦU THĂNG LONG........................................................5\nPHẦN II. ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN CẦU        \nTHĂNG LONG....................................................................................................9\nCHƯƠNG I. CÔNG TÁC QUẢN LÝ ..................................................................9\nQLTL.10000  Tuần cầu .........................................................................................9\nQLTL.10100 Bảo vệ cầu (tuần tra, canh gác cầu).................................................9\nCHƯƠNG II. CÔNG TÁC KIỂM TRA..............................................................10\nKTTL.10000 Kiểm tra tình trạng kỹ thuật cầu....................................................10\nKTTL.10100 Kiểm tra phần điện sản xuất và điện chiếu sáng ...........................10\nKTTL.10110 Kiểm tra đường điện sản xuất và chiếu sáng 2 bên cầu đường sắt10\nKTTL.10120 Kiểm tra đường điện xuống 2 trạm điện Mố O và Mố 15.............11\nCHƯƠNG III. ĐỊNH MỨC BẢO DƯỠNG THƯỜNG XUYÊN                 \nCẦU THĂNG LONG........................................................................................12\nBDTL.10000 Sơn kẻ số mố, trụ cầu....................................................................12\nBDTL.10200 Vệ sinh dầm thép bằng hệ thống vận hành điện ...........................12\nBDTL.10300 Vệ sinh dầm thép bằng hệ thống vận hành thủ công ....................13\nBDTL.10410 Tẩy rỉ dầm thép bằng phương pháp phun cát................................13\nBDTL.10420 Sơn dầm thép 4 nước và 5 nước bằng sơn Epoxy.........................14\nBDTL.10500 Sơn gối cố định cầu trên dầm thép................................................15\nBDTL. 10600. Bảo dưỡng gối cầu trên dầm thép (gối di động) .........................15\nBDTL.10700. Bảo dưỡng gối cầu trên đường ô tô tầng 2...................................16\nBDTL.10800 Thay tà vẹt bê tông 4 ray hỏng lẻ tẻ..............................................17\nBDTL. 10900. Điều hòa đá .................................................................................17\nBDTL.11000. Dồn ray trên cầu thép tà vẹt gỗ....................................................18\nBDTL. 11100 Thay tà vẹt cầu bằng composite...................................................18\nBDTL. 11200  Bảo dưỡng khe co giãn đường sắt 1m và 1,435 m......................19\nBDTL.11300 Bảo dưỡng cơ cấu điều chỉnh nhịp đường 1m và 1,435 m ...........19\nBDTL.11400 Bảo dưỡng tà vẹt thép treo............................................................20\nBDTL.11500 Bảo dưỡng đường công vụ............................................................20\nBDTL.11600 Sơn lưới chắn đá ...........................................................................21\nBDTL.11700 Bảo dưỡng khe co giãn lớn mặt cầu thô sơ...................................21\nBDTL.11800 Sửa chữa, bảo dưỡng khe co giãn nhỏ mặt cầu thô sơ..................22",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-ff812085718465890d1d0caa",
+          "reference_statement_id": "ref-statement-29c80aa5c517fc5450652b2f",
+          "page_index": 1,
+          "kind": "quantity",
+          "raw_text": "1m",
+          "normalized_value": "1 m",
+          "char_start": 2958,
+          "char_end": 2960,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1",
+            "normalized_numeric_value": "1",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-322a5d92d046e8c5b0687fcf",
+          "reference_statement_id": "ref-statement-29c80aa5c517fc5450652b2f",
+          "page_index": 1,
+          "kind": "quantity",
+          "raw_text": "1,435 m",
+          "normalized_value": "1.435 m",
+          "char_start": 2964,
+          "char_end": 2971,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1,435",
+            "normalized_numeric_value": "1.435",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-793366714f3745a5a7eb4b10",
+          "reference_statement_id": "ref-statement-29c80aa5c517fc5450652b2f",
+          "page_index": 1,
+          "kind": "quantity",
+          "raw_text": "1m",
+          "normalized_value": "1 m",
+          "char_start": 3046,
+          "char_end": 3048,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1",
+            "normalized_numeric_value": "1",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-272d1d4dc08a694e2e4b5cc3",
+          "reference_statement_id": "ref-statement-29c80aa5c517fc5450652b2f",
+          "page_index": 1,
+          "kind": "quantity",
+          "raw_text": "1,435 m",
+          "normalized_value": "1.435 m",
+          "char_start": 3052,
+          "char_end": 3059,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1,435",
+            "normalized_numeric_value": "1.435",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 5,
+      "pdf_page_number_1_based": 6,
+      "render_sha256": "70d0ad7564a5c3bb47a89d0fcac10f7384024097fc5e716299940563ae30a2ed",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-45b816001937bb567aa758dd",
+          "page_index": 5,
+          "exact_evidence_excerpt": "TT\nMã hiệu\nTên công việc\nĐơn vị\nKhối \nlượng\n Ghi chú",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-3aba6d82d5c68498246bb569",
+          "page_index": 5,
+          "exact_evidence_excerpt": "RC.12200\nBắt xiết các loại bu lông\ncái\n25.320",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e3a601fa9f5e3fc947f27496",
+          "page_index": 5,
+          "exact_evidence_excerpt": "II.3\nBảo dưỡng phần gối cầu",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2457933f83bc0a72c216acad",
+          "page_index": 5,
+          "exact_evidence_excerpt": "BDTL.10500\nSơn gối cố định cầu trên dầm \nthép\nm2\n200",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a5a17e09b970b239d1755b00",
+          "page_index": 5,
+          "exact_evidence_excerpt": "BDTL.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-7cf6a3db0205c79b252fd7b9",
+          "page_index": 5,
+          "exact_evidence_excerpt": "10600\nBảo dưỡng gối cầu trên dầm \nthép (gối di động)\ngối\n40",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a2a282b91fff348140de1b84",
+          "page_index": 5,
+          "exact_evidence_excerpt": "RC.12700\nBảo dưỡng gối cầu trên dầm \nBTCT\ngối\n1.176",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-470a14d16e667ab7d4d299e0",
+          "page_index": 5,
+          "exact_evidence_excerpt": "BDTL.10700\nBảo dưỡng gối cầu trên đường ô \ntô tầng 2\ngối\n700",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f8efd3480023e68e6b717558",
+          "page_index": 5,
+          "exact_evidence_excerpt": "II.4\nBảo dưỡng đường trên cầu phần \nmặt cầu máng đá ba lát",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-65ab344d283ae1b11df5ae20",
+          "page_index": 5,
+          "exact_evidence_excerpt": "1\nTH\nBảo dưỡng đường trên cầu phần \nmặt cầu máng đá ba lát\nm\n3.827",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-459dcd55a6a2fc885544acfb",
+          "page_index": 5,
+          "exact_evidence_excerpt": "2\nRC.13900\nBảo dưỡng hệ thống phòng hỏa \n(xới cát phòng hỏa)\nbể\n58",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-9a0862031445407d40112512",
+          "page_index": 5,
+          "exact_evidence_excerpt": "II.5",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-09f0f2ddce9c6139b667b4b4",
+          "page_index": 5,
+          "exact_evidence_excerpt": "Bảo dưỡng đường trên cầu phần \nmặt cầu đường sắt trên cầu dầm \nthép",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-042572646f6f76d95ee2c2f7",
+          "page_index": 5,
+          "exact_evidence_excerpt": "RC.10800\nSửa chữa phương hướng cự ly, \nthuỷ bình\nm\n1.688",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-65217c2a18837fb1c7bc9efb",
+          "page_index": 5,
+          "exact_evidence_excerpt": "RC.10900\nBảo dưỡng bu lông móc\ncái\n9.398",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-1f431533c7e5bbde74e3bc6b",
+          "page_index": 5,
+          "exact_evidence_excerpt": "RC.11000\nThay bu lông móc cộng vòng \nđệm\ncái\n940",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ea89154705171860cd5c1daa",
+          "page_index": 5,
+          "exact_evidence_excerpt": "BDTL.11100\nThay tà vẹt cầu",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-39fb0b2a0ee49751204a7800",
+          "page_index": 5,
+          "exact_evidence_excerpt": "- Tà vẹt gỗ\nthanh\n15% số \ntà vẹt",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-dffe4a97f05c955c4175a3f9",
+          "page_index": 5,
+          "exact_evidence_excerpt": "- Tà vẹt composit\nthanh\n2% số tà \nvẹt",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-dfddf1672b015df28b1f6d2e",
+          "page_index": 5,
+          "exact_evidence_excerpt": "BDTL.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5309b614bc21753075ae1f4a",
+          "page_index": 5,
+          "exact_evidence_excerpt": "11200  \nBảo dưỡng khe co giãn đường \nsắt 1m và 1,435 m\nkhe\n10",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-445572e4cc699f3abb0e6b91",
+          "page_index": 5,
+          "exact_evidence_excerpt": "BDTL.11300\nBảo dưỡng cơ cấu điều chỉnh \nnhịp đường 1m và 1,435 m\nbộ\n40",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-9101dc12b6b67dd3dd8fcd55",
+          "page_index": 5,
+          "exact_evidence_excerpt": "RC.13200\nBảo dưỡng ván tuần cầu\nm\n1.688",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e0dfd2bbb483cfd4eb713550",
+          "page_index": 5,
+          "exact_evidence_excerpt": "BDTL.11400\nBảo dưỡng tà vẹt thép treo\nbộ\n180",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-cabffc1611b7eab4a89ef45d",
+          "page_index": 5,
+          "exact_evidence_excerpt": "BDTL.11000\nDồn ray trên cầu thép tà vẹt gỗ\nm\n336",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-90b6d21742d1e76168bb6bae",
+          "page_index": 5,
+          "exact_evidence_excerpt": "RC.11500\nBảo dưỡng ray gờ, sắt góc gờ\nm\n1.688",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-0c75717201f4b977c6122cff",
+          "page_index": 5,
+          "exact_evidence_excerpt": "RC.11300\nXiết chặt đinh tiaropong\ncái\n66.180",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-db827ab760553773007c35c4",
+          "reference_statement_id": "ref-statement-5309b614bc21753075ae1f4a",
+          "page_index": 5,
+          "kind": "quantity",
+          "raw_text": "1m",
+          "normalized_value": "1 m",
+          "char_start": 41,
+          "char_end": 43,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1",
+            "normalized_numeric_value": "1",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-9ac06476e652a6c1b3d0bad7",
+          "reference_statement_id": "ref-statement-5309b614bc21753075ae1f4a",
+          "page_index": 5,
+          "kind": "quantity",
+          "raw_text": "1,435 m",
+          "normalized_value": "1.435 m",
+          "char_start": 47,
+          "char_end": 54,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1,435",
+            "normalized_numeric_value": "1.435",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-3908149ce4d9833a69a00c56",
+          "reference_statement_id": "ref-statement-445572e4cc699f3abb0e6b91",
+          "page_index": 5,
+          "kind": "quantity",
+          "raw_text": "1m",
+          "normalized_value": "1 m",
+          "char_start": 51,
+          "char_end": 53,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1",
+            "normalized_numeric_value": "1",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-befcb97dca3bb39e6e4766f7",
+          "reference_statement_id": "ref-statement-445572e4cc699f3abb0e6b91",
+          "page_index": 5,
+          "kind": "quantity",
+          "raw_text": "1,435 m",
+          "normalized_value": "1.435 m",
+          "char_start": 57,
+          "char_end": 64,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1,435",
+            "normalized_numeric_value": "1.435",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-550a9e1373f7cbbd93aa5e83",
+          "page_index": 5,
+          "bbox_normalized_1000": [
+            70,
+            80,
+            760,
+            930
+          ],
+          "task_type": "table_text_recovery",
+          "need_reason": "quantity_table",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    },
+    {
+      "page_index": 10,
+      "pdf_page_number_1_based": 11,
+      "render_sha256": "585a481357387c8203c9756154daa22da86dafd3cdea9ed7436f465c8d716039",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-a1f5f82647094d158beb65d9",
+          "page_index": 10,
+          "exact_evidence_excerpt": "BDTL.10300 Vệ sinh dầm thép bằng hệ thống vận hành thủ công",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2e3aca079271b18d826fca76",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Thành phần công việc:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-01efbd6b37bd0d4dc37d0b7d",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Chuẩn bị dụng cụ. Vệ sinh dầm thép đảm bảo yêu cầu kỹ thuật. Kết thúc, thu dọn \nhiện trường.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-642911a61af4f7d908c17750",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Đơn vị: 1 m2",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-dd0bb4ed6167a060532a105f",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Mã hiệu\nCông tác bảo",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2dff2e4c43aa7871ae76370f",
+          "page_index": 10,
+          "exact_evidence_excerpt": "dưỡng\nThành phần hao phí\nĐơn",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-6cecfb56700ea90efade470b",
+          "page_index": 10,
+          "exact_evidence_excerpt": "vị\n Số lượng",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f0170ab35d6b7e62bc03059f",
+          "page_index": 10,
+          "exact_evidence_excerpt": "BDTL.103",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-71a8f21fd39714de30c47093",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Nhân công bậc 3,5/7\ncông\n0,023",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-979bc4bda8ad091a49519785",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Vệ sinh dầm \nthép bằng hệ \nthống vận hành",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5a8c9871b344464185cbc4fd",
+          "page_index": 10,
+          "exact_evidence_excerpt": "thủ công",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-cb1c64d725c78e6ed442c514",
+          "page_index": 10,
+          "exact_evidence_excerpt": "10",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-afbfb31dc3703c9218cfafc0",
+          "page_index": 10,
+          "exact_evidence_excerpt": "BDTL.10410 Tẩy rỉ dầm thép bằng phương pháp phun cát",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-353406874803068821619303",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Thành phần công việc:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-20f795cf10fbb9acbe6e0c3d",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Chuẩn bị mặt bằng, dụng cụ, làm sạch bề mặt kim loại bằng thiết bị phun cát \ntheo đúng yêu cầu kỹ thuật",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-61d1c9eb1c9e4e21d6c3d2c9",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Đơn vị tính: 1 m2",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8ca3deeb4f313f98fdac7928",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Mã hiệu\nCông tác bảo",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-0ccfd3491d7aa9355f4913c8",
+          "page_index": 10,
+          "exact_evidence_excerpt": "dưỡng\nThành phần hao phí\nĐơn",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-130bbad856a6464e0837226b",
+          "page_index": 10,
+          "exact_evidence_excerpt": "vị\nSố lượng",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-bb33ea201fdd61a59699ae11",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Tẩy rỉ dầm",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-19c9cbf115fb5b1239f174c2",
+          "page_index": 10,
+          "exact_evidence_excerpt": "BDTL.104",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ca9e8c8cf9aa24614317ed13",
+          "page_index": 10,
+          "exact_evidence_excerpt": "thép bằng \nphương pháp",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-b7a0dac2f0de7a8c7ae67a3b",
+          "page_index": 10,
+          "exact_evidence_excerpt": "phun cát",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-1d85798e125d4331feff60de",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Vật liệu\n \n \nCát chuẩn \nm3\n0,057\nVật liệu khác\n%\n2\nNhân công bậc 4,0/7\ncông\n0,39\nMáy thi công\n \n \nCần cẩu 25T\nca\n0,004\nMáy nén khí 600m3/h\nca\n0,03\nThiết bị phun cát\nca\n0,03",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f718fe4d1d1ee47d5e3df7eb",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Máy khác\n%\n1\n10",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-b12118258fb834f938e16eb9",
+          "page_index": 10,
+          "exact_evidence_excerpt": "Ghi chú: - Trường hợp không sử dụng cần cẩu 25T thì không tính hao phí cần \ncẩu 25T trong định mức.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-097918f3a6d4487c9eaffe23",
+          "page_index": 10,
+          "exact_evidence_excerpt": "- Định mức chưa bao gồm hao phí lắp dựng giàn giáo.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-57ef8c876d92d5e5c0f7e0b6",
+          "reference_statement_id": "ref-statement-642911a61af4f7d908c17750",
+          "page_index": 10,
+          "kind": "quantity",
+          "raw_text": "1 m2",
+          "normalized_value": "1 m²",
+          "char_start": 8,
+          "char_end": 12,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1",
+            "normalized_numeric_value": "1",
+            "raw_unit": "m2",
+            "normalized_unit": "m²"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-2d170a7c7152750b68f69e8f",
+          "reference_statement_id": "ref-statement-61d1c9eb1c9e4e21d6c3d2c9",
+          "page_index": 10,
+          "kind": "quantity",
+          "raw_text": "1 m2",
+          "normalized_value": "1 m²",
+          "char_start": 13,
+          "char_end": 17,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1",
+            "normalized_numeric_value": "1",
+            "raw_unit": "m2",
+            "normalized_unit": "m²"
+          }
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-106291f81d3ec03cacdc7c5e",
+          "page_index": 10,
+          "bbox_normalized_1000": [
+            90,
+            250,
+            900,
+            780
+          ],
+          "task_type": "table_text_recovery",
+          "need_reason": "resource_quantity_tables",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    },
+    {
+      "page_index": 15,
+      "pdf_page_number_1_based": 16,
+      "render_sha256": "30f09763d664a2df94be03cd34e159ac257379f87101d83f86f850ca5a170b49",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-91a069e4d0dc5ddf8d0084bd",
+          "page_index": 15,
+          "exact_evidence_excerpt": "BDTL. 11100 Thay tà vẹt cầu bằng composite",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-635a980c4c4bac2e7ed3b958",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Thành phần công việc:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8cf1a16e06731d8ba21e902a",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Chuẩn bị công cụ, dụng cụ. Tháo bu lông liên kết giữa tà vẹt và ray. Lắp dàn giáo \nvà kéo tà vẹt ra vị trí bên ngoài ray. Đưa tà vẹt mới vào đúng vị trí, thay bộ phận \nliên kết ray với tà vẹt. Lắp bu lông liên kết giữa ray và tà vẹt đảm bảo đúng yêu \ncầu kỹ thuật. Vận chuyển vật tư thiết bị trong phạm vi 50m. Thu dọn hoàn thiện \nhiện trường.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-842468c7b9a3890dc0eb8f58",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Công tác",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-0a0f3c4952eea46f803f588c",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Đơn vị: 1 thanh\n TV Composite  \nMã hiệu",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2b59b5aa885db12d067e32cd",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Thành phần hao phí\nĐơn",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e30c5e3aa26a389398de71a0",
+          "page_index": 15,
+          "exact_evidence_excerpt": "L>2,85",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-864b0d38e169f02ce1f3aab2",
+          "page_index": 15,
+          "exact_evidence_excerpt": "vị\nL ≤2,85",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-249aaeb00c8a454aa52be772",
+          "page_index": 15,
+          "exact_evidence_excerpt": "bảo \ndưỡng",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-31e2ce543dc1dd6ab2267ae2",
+          "page_index": 15,
+          "exact_evidence_excerpt": "(m)",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5807b0c28b66376667973c45",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Thay tà",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5a4e2217ada0508438d4d503",
+          "page_index": 15,
+          "exact_evidence_excerpt": "vẹt cầu",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8acb72b48ff27ae5eefbfe28",
+          "page_index": 15,
+          "exact_evidence_excerpt": "BDTL.111",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f7593c3210ff5b81bd82ffdc",
+          "page_index": 15,
+          "exact_evidence_excerpt": "(m)\nVật liệu\n \n \nTà vẹt composite\nthanh\n1\n1\nPhụ kiện tà vẹt composite \nđồng bộ\nthanh\n1\n1",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-c074e78c05ec46e25a7dc407",
+          "page_index": 15,
+          "exact_evidence_excerpt": "bằng \ncomposite",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-21444c5e0011a9e779eb1709",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Vật liệu khác\n%\n0,5\n0,5",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5fe683e64a1c1effbba04d56",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Nhân công bậc 4,7/7\ncông\n3,333\n3,576\nMáy thi công\nMáy khoan 0,8kw\nca\n0,053\n0,053\nKích 15 tấn\nca\n0,317\n0,317\nMáy khác\n%\n2,5\n2,5\n10\n20",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-48e1cbc56ba5b7e3a77b047a",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Ghi chú: Định mức chưa bao gồm công tác vận chuyển tà vẹt từ kho đến \nvị trí thi công",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-7027b2b75f99388cf16fea00",
+          "page_index": 15,
+          "exact_evidence_excerpt": "BDTL. 11200  Bảo dưỡng khe co giãn đường sắt 1m và 1,435 m",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-410159ae94820ade240ce520",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Thành phần công việc:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-34d21428bea7693491c3320e",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Chuẩn bị dụng cụ. Phòng vệ tàu chạy. Tháo bu lông liên kết khe co giãn, vệ sinh, \nlắp siết lại, chấm dầu theo yêu cầu kỹ thuật. Kết thúc, thu dọn hiện trường.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-28d297d399a43df55235685c",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Đơn vị: 1 khe",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-c58e0d8a85dcdf0cadda3c63",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Mã hiệu\nCông tác bảo",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-34805588e6ffe2ba4a729b66",
+          "page_index": 15,
+          "exact_evidence_excerpt": "dưỡng\nThành phần hao phí\nĐơn",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-06d5ff9c55dc9a3b486efc03",
+          "page_index": 15,
+          "exact_evidence_excerpt": "vị",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-1dbfe730ac895016fa0edc6b",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Bảo dưỡng khe",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a8e7f660941f3f441a1298dc",
+          "page_index": 15,
+          "exact_evidence_excerpt": "co giãn đường \nsắt đường 1m và",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-27836874f8f786b11ecacfac",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Số \nlượng \nVật liệu\n \n \nDầu nhờn\nlít\n10,33\nVật liệu khác\n%\n1\n BDTL.112",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fb088ad7ecf12f99e2bf0d9d",
+          "page_index": 15,
+          "exact_evidence_excerpt": "đường 1,435m\nNhân công bậc 3,7/7\ncông\n12,898\n10",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-50a7fd43432737e126b3c7f6",
+          "reference_statement_id": "ref-statement-8cf1a16e06731d8ba21e902a",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "50m",
+          "normalized_value": "50 m",
+          "char_start": 306,
+          "char_end": 309,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "50",
+            "normalized_numeric_value": "50",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-b682665abda9e4cd33f11889",
+          "reference_statement_id": "ref-statement-7027b2b75f99388cf16fea00",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "1m",
+          "normalized_value": "1 m",
+          "char_start": 45,
+          "char_end": 47,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1",
+            "normalized_numeric_value": "1",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-fee04db32c359de9f61402c5",
+          "reference_statement_id": "ref-statement-7027b2b75f99388cf16fea00",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "1,435 m",
+          "normalized_value": "1.435 m",
+          "char_start": 51,
+          "char_end": 58,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1,435",
+            "normalized_numeric_value": "1.435",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-73e0b3a6841be3f61f139c7d",
+          "reference_statement_id": "ref-statement-a8e7f660941f3f441a1298dc",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "1m",
+          "normalized_value": "1 m",
+          "char_start": 25,
+          "char_end": 27,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1",
+            "normalized_numeric_value": "1",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-998e328c0953de3fbf3860a9",
+          "reference_statement_id": "ref-statement-fb088ad7ecf12f99e2bf0d9d",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "1,435m",
+          "normalized_value": "1.435 m",
+          "char_start": 6,
+          "char_end": 12,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1,435",
+            "normalized_numeric_value": "1.435",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-35e41d82c7d108317e0df6bf",
+          "page_index": 15,
+          "bbox_normalized_1000": [
+            70,
+            350,
+            860,
+            940
+          ],
+          "task_type": "table_text_recovery",
+          "need_reason": "resource_quantity_tables",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    },
+    {
+      "page_index": 18,
+      "pdf_page_number_1_based": 19,
+      "render_sha256": "ad5bc41d98b358c77682f23b6aecd39535d1447095e0e6e89c75954992da0259",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-25c8023b629f2459c063f974",
+          "page_index": 18,
+          "exact_evidence_excerpt": "BDTL.11800 Sửa chữa, bảo dưỡng khe co giãn nhỏ mặt cầu thô sơ",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-236406c82fda3dff616d4f27",
+          "page_index": 18,
+          "exact_evidence_excerpt": "Thành phần công việc:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2013dcc9037ff451ab6487f1",
+          "page_index": 18,
+          "exact_evidence_excerpt": "Chuẩn bị mặt bằng, dụng cụ. Đục bê tông, vệ sinh khe co giãn, tưới nhựa đường \nvào khe nứt, đổ bê tông carbonco đảm bảo yêu cầu kỹ thuật. Kết thúc, thu dọn \nhiện trường.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8f4e634941506c078ac9470e",
+          "page_index": 18,
+          "exact_evidence_excerpt": "Sửa chữa, bảo dưỡng",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-d7b1d4c8191a9243c50e6914",
+          "page_index": 18,
+          "exact_evidence_excerpt": "khe co giãn nhỏ mặt",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f681b6a388e0fd8a340e3205",
+          "page_index": 18,
+          "exact_evidence_excerpt": "cầu thô sơ",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-dd4a80f60b79c110d462b212",
+          "page_index": 18,
+          "exact_evidence_excerpt": "Đơn vị tính: 1 khe \nMã hiệu\nCông tác bảo dưỡng\nThành phần hao phí\nĐơn vị\nSố lượng\nVật liệu\n \n \nCarbonco\nkg\n168,7\nNhựa đường\nkg\n4,529 \nVật liệu khác\n%\n1\n BDTL.118",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-212fb64e90a4781b434fd50f",
+          "page_index": 18,
+          "exact_evidence_excerpt": "Nhân công bậc 3,5/7\ncông\n1,146\n10",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-1e92662be9982cca67ae3ae2",
+          "page_index": 18,
+          "bbox_normalized_1000": [
+            90,
+            300,
+            870,
+            680
+          ],
+          "task_type": "table_text_recovery",
+          "need_reason": "resource_quantity_table",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    }
+  ]
+}

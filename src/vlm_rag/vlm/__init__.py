@@ -28,6 +28,7 @@ from vlm_rag.vlm.models import (
     VLMRequestRecord,
     VLMSelectionResult,
     VLMTaskType,
+    canonical_request_record_sha256,
     canonical_request_sha256,
 )
 from vlm_rag.vlm.normalization import (
@@ -64,6 +65,7 @@ __all__ = [
     "VisualEvidenceRequest",
     "VisualEvidenceResolver",
     "build_visual_evidence_prompt",
+    "canonical_request_record_sha256",
     "canonical_request_sha256",
     "execute_vlm_request",
     "load_replay_evidence",

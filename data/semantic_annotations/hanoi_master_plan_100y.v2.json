@@ -1,0 +1,2714 @@
+{
+  "annotation_schema_version": 2,
+  "annotation_version": "v2",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_semantic_reaudit",
+  "document_id": "hanoi-master-plan-100y",
+  "version_id": "v1",
+  "source_artifact_sha256": "ce87f7f636ca1c0518d237bcca9f92e184e478d0321a0ad580122c15500d6028",
+  "prior_physical_ir_exposure": true,
+  "prior_structural_ir_exposure": true,
+  "prior_semantic_extractor_exposure": true,
+  "semantic_extractor_candidates_seen": true,
+  "semantic_extractor_output_used_as_reference_truth": false,
+  "independent_or_blind_ground_truth": false,
+  "pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "render_sha256": "bda5d825e0cc363ebd0fb494117ef610ff08052532026d79553f6f52e3f8d5a0",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-9054828f866f0e839f08103d",
+          "page_index": 0,
+          "exact_evidence_excerpt": "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-4c9b529bc34c9cd2de8b010a",
+          "page_index": 0,
+          "exact_evidence_excerpt": "ỦY BAN NHÂN DÂN \nTHÀNH PHỐ HÀ NỘI",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-cbffe2a963d4c4373bc2aab5",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Độc lập - Tự do - Hạnh phúc",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-6ffb1d2ae536d6e868d016be",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Số:          /QĐ-UBND",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fe022114cb31cbfa2063e0a2",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Hà Nội, ngày       tháng      năm 2026",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f9cb643840c7441e538c39e8",
+          "page_index": 0,
+          "exact_evidence_excerpt": "2512\n13\n5",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-b0f3f9bb45884c4fb02529fb",
+          "page_index": 0,
+          "exact_evidence_excerpt": "QUYẾT ĐỊNH \nPhê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "exact_evidence_excerpt": "CHỦ TỊCH ỦY BAN NHÂN DÂN THÀNH PHỐ HÀ NỘI \n \nCăn cứ Luật Tổ chức chính quyền địa phương số 72/2025/QH15; \nCăn cứ các Nghị quyết của Bộ Chính trị: Số 57-NQ/TW ngày 22/12/2024 về đột \nphá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia; Số \n59-NQ/TW ngày 24/01/2025 về hội nhập quốc tế trong tình hình mới; Số 66-NQ/TW \nngày 30/4/2025 về đổi mới công tác xây dựng và thi hành pháp luật đáp ứng yêu cầu \nphát triển đất nước trong kỷ nguyên mới; số 68-NQ/TW ngày 04/5/2025 về phát triển \nkinh tế tư nhân; Số 70-NQ/TW ngày 20/8/2025 về bảo đảm an ninh năng lượng quốc \ngia đến năm 2030, tầm nhìn đến năm 2045; Số 71-NQ/TW ngày 22/8/2025 về đột phá \nphát triển giáo dục và đào tạo; Số 72-NQ/TW ngày 09/9/2025 về một số giải pháp đột \nphá, tăng cường bảo vệ, chăm sóc và nâng cao sức khỏe nhân dân; Số 79-NQ/TW \nngày 06/1/2026 về phát triển kinh tế nhà nước; Số 80-NQ/TW ngày 07/01/2026, về \nphát triển văn hoá Việt Nam; Số 02-NQ/TW ngày 17/3/2026 về xây dựng và phát triển \nThủ đô Hà Nội trong kỷ nguyên mới;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f20cc1a32b302279269ed395",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Thông báo số 491-TB/VPTW ngày 13/01/2026 của Văn phòng Trung \nương Đảng thông báo kết luận làm việc của đồng chí Tổng Bí thư Tô Lâm với Ban \nThường vụ Thành ủy Hà Nội; Công văn số 829-CV/VPTW ngày 09/3/2026 của Văn \nphòng Trung ương Đảng về ý kiến của Bộ Chính trị, Ban Bí thư đối với Đề án đánh \ngiá 3 năm thực hiện Nghị quyết số 15-NQ/TW của Bộ Chính trị do Ban Thường vụ \nThành ủy Hà Nội xây dựng;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-387eaf32f164eebfeb2be239",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ các Nghị quyết của Quốc hội: Số 81/2023/QH15 ngày 09/01/2023 về Quy \nhoạch tổng thể quốc gia thời kỳ 2021- 2030, tầm nhìn đến năm 2050, được sửa đổi, bổ \nsung một số điều bởi Nghị quyết số 252/2025/NQ-QH15 ngày 10/12/2025; Số \n258/2025/QH15 ngày 11/12/2025 về thí điểm một số cơ chế, chính sách đặc thù để \nthực hiện các dự án lớn, quan trọng trên địa bàn Thủ đô;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ các Quyết định của Thủ tướng Chính phủ: Số 1569/QĐ-TTg ngày \n12/12/2024 về việc phê duyệt Quy hoạch Thủ đô Hà Nội thời kỳ 2021 - 2030, tầm nhìn đến \nnăm 2050; Số 1668/QĐ-TTg ngày 27/12/2024 về việc phê duyệt Điều chỉnh Quy hoạch \nchung Thủ đô Hà Nội đến năm 2045, tầm nhìn đến năm 2065; Số 612/QĐ-TTg ngày \n04/4/2026 về phê duyệt điều chỉnh Quy hoạch vùng đồng bằng sông Hồng thời kỳ 2021 - \n2030, tầm nhìn đến năm 2050; \nCăn cứ các chỉ đạo của Thủ tướng Chính phủ, Thường trực Chính phủ tại các \nVăn bản: Số 1531/TTg-CN ngày 28/11/2025 về việc rà soát, điều chỉnh các quy hoạch \ncủa thành phố Hà Nội; Số 1634/TTg-CN ngày 25/12/2025 về việc đẩy nhanh tiến độ \nlập, thẩm định, phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội; Số 709/TB-VPCP ngày",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-5da3b6b423d469671e043212",
+          "reference_statement_id": "ref-statement-6ffb1d2ae536d6e868d016be",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 17,
+          "char_end": 21,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-0e431d0ccce2dcb701231f7a",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "72/2025/QH15",
+          "normalized_value": "72/2025/QH15",
+          "char_start": 91,
+          "char_end": 103,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-dc4ee50335f5e7cfe0bd628d",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "22/12/2024",
+          "normalized_value": "2024-12-22",
+          "char_start": 163,
+          "char_end": 173,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-9d2099c35553861891264595",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "24/01/2025",
+          "normalized_value": "2025-01-24",
+          "char_start": 280,
+          "char_end": 290,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-14be7870846da60fcbfeca24",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "30/4/2025",
+          "normalized_value": "2025-04-30",
+          "char_start": 350,
+          "char_end": 359,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-b937b48bf481704facb552f9",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "04/5/2025",
+          "normalized_value": "2025-05-04",
+          "char_start": 486,
+          "char_end": 495,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-4322118b6e3754f58de5dd0d",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "20/8/2025",
+          "normalized_value": "2025-08-20",
+          "char_start": 545,
+          "char_end": 554,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-a636edc926d56937756c29db",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "22/8/2025",
+          "normalized_value": "2025-08-22",
+          "char_start": 649,
+          "char_end": 658,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-d47bdb9e2a8a41a26807626d",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "09/9/2025",
+          "normalized_value": "2025-09-09",
+          "char_start": 720,
+          "char_end": 729,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-c1d4785029a67ccb581bab02",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "06/1/2026",
+          "normalized_value": "2026-01-06",
+          "char_start": 837,
+          "char_end": 846,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-185e56904054e201005dfa9c",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "07/01/2026",
+          "normalized_value": "2026-01-07",
+          "char_start": 896,
+          "char_end": 906,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-1965e7c74edcf657357e0720",
+          "reference_statement_id": "ref-statement-d54d529a5a17f0dee19cb607",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "17/3/2026",
+          "normalized_value": "2026-03-17",
+          "char_start": 958,
+          "char_end": 967,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-84a52f8d64a0b5d024ada2e9",
+          "reference_statement_id": "ref-statement-f20cc1a32b302279269ed395",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "13/01/2026",
+          "normalized_value": "2026-01-13",
+          "char_start": 37,
+          "char_end": 47,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-437968e575a40053e0910348",
+          "reference_statement_id": "ref-statement-f20cc1a32b302279269ed395",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "09/3/2026",
+          "normalized_value": "2026-03-09",
+          "char_start": 204,
+          "char_end": 213,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-8ffdbb1acd117acf3b87bbf7",
+          "reference_statement_id": "ref-statement-387eaf32f164eebfeb2be239",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Quốc hội",
+          "normalized_value": "Quốc hội",
+          "char_start": 26,
+          "char_end": 34,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-b751a5aa428031ec810f0e98",
+          "reference_statement_id": "ref-statement-387eaf32f164eebfeb2be239",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "81/2023/QH15",
+          "normalized_value": "81/2023/QH15",
+          "char_start": 39,
+          "char_end": 51,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-f629cba09e638ddc34971361",
+          "reference_statement_id": "ref-statement-387eaf32f164eebfeb2be239",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "09/01/2023",
+          "normalized_value": "2023-01-09",
+          "char_start": 57,
+          "char_end": 67,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-419384b13edda95a7a5d2891",
+          "reference_statement_id": "ref-statement-387eaf32f164eebfeb2be239",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "252/2025/NQ-QH15",
+          "normalized_value": "252/2025/NQ-QH15",
+          "char_start": 196,
+          "char_end": 212,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-f453e2d1d04315f3f81a19be",
+          "reference_statement_id": "ref-statement-387eaf32f164eebfeb2be239",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "10/12/2025",
+          "normalized_value": "2025-12-10",
+          "char_start": 218,
+          "char_end": 228,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-1ef30ccfc1ba90db51f1d1a0",
+          "reference_statement_id": "ref-statement-387eaf32f164eebfeb2be239",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "258/2025/QH15",
+          "normalized_value": "258/2025/QH15",
+          "char_start": 234,
+          "char_end": 247,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5c46776015a71e72754d9e03",
+          "reference_statement_id": "ref-statement-387eaf32f164eebfeb2be239",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "11/12/2025",
+          "normalized_value": "2025-12-11",
+          "char_start": 253,
+          "char_end": 263,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-08f9aa12afb92e0d2d64b318",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Thủ tướng Chính phủ",
+          "normalized_value": "Thủ tướng Chính phủ",
+          "char_start": 26,
+          "char_end": 45,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5259f0014073c0e255a0b1a8",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "1569/QĐ",
+          "normalized_value": "1569/QĐ",
+          "char_start": 50,
+          "char_end": 57,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-79570b3c64503431e47612da",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "12/12/2024",
+          "normalized_value": "2024-12-12",
+          "char_start": 68,
+          "char_end": 78,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-00e2c69c186d5feb332fb969",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "1668/QĐ",
+          "normalized_value": "1668/QĐ",
+          "char_start": 169,
+          "char_end": 176,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-2605db07b10271f48e870fd5",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "27/12/2024",
+          "normalized_value": "2024-12-27",
+          "char_start": 186,
+          "char_end": 196,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-46c4a9635cc5d07809198f76",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "612/QĐ",
+          "normalized_value": "612/QĐ",
+          "char_start": 297,
+          "char_end": 303,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-4db025816f77bd058c7d2dae",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "04/4/2026",
+          "normalized_value": "2026-04-04",
+          "char_start": 314,
+          "char_end": 323,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-b0ceb5e7f9f71c47d2b0df92",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Thủ tướng Chính phủ",
+          "normalized_value": "Thủ tướng Chính phủ",
+          "char_start": 452,
+          "char_end": 471,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-0d75df26b532b3b8959b4f10",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 485,
+          "char_end": 494,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-978524f7fc10a3f10053da3e",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "28/11/2025",
+          "normalized_value": "2025-11-28",
+          "char_start": 533,
+          "char_end": 543,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-532d9b1f47b6b2ba3d6e55ad",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "25/12/2025",
+          "normalized_value": "2025-12-25",
+          "char_start": 629,
+          "char_end": 639,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-e9254bec87292bd2993dc4e4",
+          "reference_statement_id": "ref-statement-898ebcc2ad032ce17edcf019",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "709/TB-VPCP",
+          "normalized_value": "709/TB-VPCP",
+          "char_start": 730,
+          "char_end": 741,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "render_sha256": "ed40ca8acc0cd263e890198339a8e9bdf4e620e53d64eeefd7c12c40aba981dc",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-21656a0340949cc4ffffe7af",
+          "page_index": 1,
+          "exact_evidence_excerpt": "2",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e70de31ea657586b37c3ff28",
+          "page_index": 1,
+          "exact_evidence_excerpt": "19/12/2025 của Văn phòng Chính phủ thông báo kết luận của Thường trực Chính phủ \nvề ý tưởng, định hướng lớn Quy hoạch tổng thể Thủ đô Hà Nội; Số 147/TB-VPCP ngày \n23/3/2026 của Văn phòng Chính phủ về kết luận của Thường trực Chính phủ về Quy hoạch \ntổng thể Thủ đô;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ các Văn bản góp ý kiến của các Bộ, ngành TW: Ngoại Giao (số 1040/BNG-\nNGKT ngày 14/02/2026); Xây dựng (số 4005/BXD-QHKT ngày 13/3/2026 và số \n4855/BXD-QHKT ngày 01/4/2026); Nông nghiệp và Môi trường (số 2564/BNNMT-\nKHTC ngày 19/3/2026); Quốc phòng (số 1898/BQP-TM ngày 25/3/2026); Tài chính (số \n3713/BTC-QLQH ngày 26/3/2026); Công thương (số 2097/BCT-KHTC ngày 27/3/2026); \nVăn hóa, thể thao và Du lịch (số 1598/BVHTTDL-KHTC ngày 27/3/2026); Khoa học và \nCông nghệ (số 1842/BKHCN-HVCL ngày 28/3/2026 ); Y tế (số 2125/BYT-PC ngày \n28/3/2026); Nội vụ (số 2895/BNV-CQĐP ngày 30/3/2026); Dân tộc và Tôn giáo (số \n808/BDTTG-KHTC ngày 31/3/2026); Tư pháp (số 2029/BTP-PLDSKT  ngày 01/4/2026); \nBộ Công an (số 6381/ANKT-ANTCĐT ngày 15/4/2026);",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5a494d7558b241d15c67ae15",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ các chỉ đạo, góp ý của Thường trực Thành ủy, Ban Thường vụ Thành ủy \ntại các Văn bản: Số 300-TB/TU ngày 13/3/2026; Số 434-CV/TU ngày 14/3/2026; Số \n453-TB/TU ngày 18/3/2026; Số 312-TB/TU ngày 19/3/2026; \nCăn cứ Nghị quyết số 08-NQ/TU ngày 27/3/2026 Hội nghị lần thứ năm Ban Chấp \nhành Đảng bộ Thành phố khoá XVIII (nhiệm kỳ 2025 – 2030);",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-17115112b6bb0a7cd59a5f52",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ Nghị quyết số 03/NQ-HĐND ngày 28/3/2026 của HĐND Thành phố về \nviệc thông qua Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-687f400c294119a03ba495af",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ Nghị quyết số 84/2025/NQ-HĐND ngày 13/12/2025 của HĐND Thành \nphố quy định nội dung, định mức chi phí, đơn giá, thành phần hồ sơ, trình tự, thủ tục \nlập, thẩm định, phê duyệt, điều chỉnh Quy hoạch tổng thể Thủ đô;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-9069d0a54baacf28c6dcc8b0",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ Quyết định số 813/QĐ-UBND ngày 21/02/2026 của UBND Thành phố \nvề việc phê duyệt Nhiệm vụ quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-269c7cb5d2f9466bd425662b",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ Thông báo số 1971/TB-HĐTĐ ngày 27/3/2026 của Hội đồng thẩm định \nNhiệm vụ quy hoạch, Quy hoạch tổng thể Thủ đô về Kết luận của Hội đồng thẩm định \nNhiệm vụ quy hoạch, Quy hoạch tổng thể Thủ đô;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ef5ded749bdb745878297f66",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Căn cứ Thông báo số 480/TB-UBND ngày 7/5/2026 về việc Kết luận của Ủy ban \nnhân dân Thành phố về chủ trương phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội, tầm \nnhìn 100 năm;",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Xét đề nghị của: Viện Quy hoạch xây dựng Hà Nội (đại diện Liên danh tư vấn) tại \nVăn bản số 547/VQH-TT2 ngày 17/4/2026; Ban Quản lý đồ án quy hoạch kiến trúc tại \nVăn bản số 114/BQLĐA-QHKT-KT&DV ngày 17/4/2026, Sở Quy hoạch - Kiến trúc tại \nTờ trình số 2544/TTr-QHKT ngày 19/4/2026 và Văn bản số 2921/QHKT-QKĐ ngày \n8/5/2026,",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-c2701150a73d141a877007fb",
+          "page_index": 1,
+          "exact_evidence_excerpt": "QUYẾT ĐỊNH: \nĐiều 1. Phê duyệt Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm với \nnhững nội dung chủ yếu như sau:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e24507be0aa28944d92db81d",
+          "page_index": 1,
+          "exact_evidence_excerpt": "1. Tên quy hoạch và đơn vị tư vấn lập quy hoạch:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-f57e6f3bd9b973eca4cc7446",
+          "reference_statement_id": "ref-statement-e70de31ea657586b37c3ff28",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "19/12/2025",
+          "normalized_value": "2025-12-19",
+          "char_start": 0,
+          "char_end": 10,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-378cf3535c070fdfaa688e59",
+          "reference_statement_id": "ref-statement-e70de31ea657586b37c3ff28",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 25,
+          "char_end": 34,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-2bb34f46096437c5cae27083",
+          "reference_statement_id": "ref-statement-e70de31ea657586b37c3ff28",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 70,
+          "char_end": 79,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-071b0644fd7511ef07e031a8",
+          "reference_statement_id": "ref-statement-e70de31ea657586b37c3ff28",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "147/TB-VPCP",
+          "normalized_value": "147/TB-VPCP",
+          "char_start": 145,
+          "char_end": 156,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-9d14acd82bef12e63ddd26d0",
+          "reference_statement_id": "ref-statement-e70de31ea657586b37c3ff28",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "23/3/2026",
+          "normalized_value": "2026-03-23",
+          "char_start": 163,
+          "char_end": 172,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-86500cf9c104233132abc7d2",
+          "reference_statement_id": "ref-statement-e70de31ea657586b37c3ff28",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 187,
+          "char_end": 196,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-d423011a424ee247435284b6",
+          "reference_statement_id": "ref-statement-e70de31ea657586b37c3ff28",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 225,
+          "char_end": 234,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-35e7a6b3ea8a0fb37b8338bb",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "1040/BNG",
+          "normalized_value": "1040/BNG",
+          "char_start": 67,
+          "char_end": 75,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-7f7d58729b827d639fd00c9b",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "14/02/2026",
+          "normalized_value": "2026-02-14",
+          "char_start": 87,
+          "char_end": 97,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-bc33d38a625f9ed2083092b8",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "4005/BXD-QHKT",
+          "normalized_value": "4005/BXD-QHKT",
+          "char_start": 113,
+          "char_end": 126,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-87476406d1a2e249a2f72d7c",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "13/3/2026",
+          "normalized_value": "2026-03-13",
+          "char_start": 132,
+          "char_end": 141,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-d1545bd16337d41c5932d38a",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "4855/BXD-QHKT",
+          "normalized_value": "4855/BXD-QHKT",
+          "char_start": 149,
+          "char_end": 162,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-c077949e469f7282ed19c8b1",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "01/4/2026",
+          "normalized_value": "2026-04-01",
+          "char_start": 168,
+          "char_end": 177,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-433560c29bd440e4264ba16b",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "2564/BNNMT",
+          "normalized_value": "2564/BNNMT",
+          "char_start": 210,
+          "char_end": 220,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-476d0211d8603c2697275c7a",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "19/3/2026",
+          "normalized_value": "2026-03-19",
+          "char_start": 232,
+          "char_end": 241,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-89f7fd591c19b2320b6ef6d8",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "1898/BQP-TM",
+          "normalized_value": "1898/BQP-TM",
+          "char_start": 259,
+          "char_end": 270,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-d69806431b66cbc2e13445d1",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "25/3/2026",
+          "normalized_value": "2026-03-25",
+          "char_start": 276,
+          "char_end": 285,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-8cd39810ee8895342c7d374e",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "3713/BTC-QLQH",
+          "normalized_value": "3713/BTC-QLQH",
+          "char_start": 303,
+          "char_end": 316,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-8d514ebd2d9d5c97d404ccbb",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "26/3/2026",
+          "normalized_value": "2026-03-26",
+          "char_start": 322,
+          "char_end": 331,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-0d023334801682dedeb965d6",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "2097/BCT-KHTC",
+          "normalized_value": "2097/BCT-KHTC",
+          "char_start": 350,
+          "char_end": 363,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-2e9cb46b5ca2f53c8ee82f2d",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "27/3/2026",
+          "normalized_value": "2026-03-27",
+          "char_start": 369,
+          "char_end": 378,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-3c5cc02fb84b8e045baed04c",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "1598/BVHTTDL-KHTC",
+          "normalized_value": "1598/BVHTTDL-KHTC",
+          "char_start": 415,
+          "char_end": 432,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-0d2b005de3796df7878e6e51",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "27/3/2026",
+          "normalized_value": "2026-03-27",
+          "char_start": 438,
+          "char_end": 447,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-394e7c510174aabdc12c207b",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "1842/BKHCN-HVCL",
+          "normalized_value": "1842/BKHCN-HVCL",
+          "char_start": 477,
+          "char_end": 492,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-283679efb35aa7ee45c82a26",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "28/3/2026",
+          "normalized_value": "2026-03-28",
+          "char_start": 498,
+          "char_end": 507,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-3cc6809814ef240742f8ce1f",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "2125/BYT-PC",
+          "normalized_value": "2125/BYT-PC",
+          "char_start": 520,
+          "char_end": 531,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-ca285d63a3571407d65bc890",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "28/3/2026",
+          "normalized_value": "2026-03-28",
+          "char_start": 538,
+          "char_end": 547,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-1654d9cdd6ebe6e8c4c1c6ab",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "2895/BNV-CQĐP",
+          "normalized_value": "2895/BNV-CQĐP",
+          "char_start": 561,
+          "char_end": 574,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-9e4e00e28327c83aaaa27f94",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "30/3/2026",
+          "normalized_value": "2026-03-30",
+          "char_start": 580,
+          "char_end": 589,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-7fde10d9fe91e7087509cea3",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "808/BDTTG-KHTC",
+          "normalized_value": "808/BDTTG-KHTC",
+          "char_start": 617,
+          "char_end": 631,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-e9b09ceee95496dec60b1624",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "31/3/2026",
+          "normalized_value": "2026-03-31",
+          "char_start": 637,
+          "char_end": 646,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-2ecfa8d300f22236b6a5b231",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "2029/BTP-PLDSKT",
+          "normalized_value": "2029/BTP-PLDSKT",
+          "char_start": 661,
+          "char_end": 676,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5c74f302ee898f3738187893",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "01/4/2026",
+          "normalized_value": "2026-04-01",
+          "char_start": 683,
+          "char_end": 692,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5d40c58532167a93dea5face",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "6381/ANKT-ANTCĐT",
+          "normalized_value": "6381/ANKT-ANTCĐT",
+          "char_start": 711,
+          "char_end": 727,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-f1b3e43161b54bb67664c000",
+          "reference_statement_id": "ref-statement-97975f366c45d5b3589ba187",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "15/4/2026",
+          "normalized_value": "2026-04-15",
+          "char_start": 733,
+          "char_end": 742,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-55d1dff50ff928a592e20b77",
+          "reference_statement_id": "ref-statement-5a494d7558b241d15c67ae15",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "13/3/2026",
+          "normalized_value": "2026-03-13",
+          "char_start": 111,
+          "char_end": 120,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-b236d94a3471bd8f3ece6465",
+          "reference_statement_id": "ref-statement-5a494d7558b241d15c67ae15",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "14/3/2026",
+          "normalized_value": "2026-03-14",
+          "char_start": 140,
+          "char_end": 149,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-ca66d0edca36eeb3cf535e97",
+          "reference_statement_id": "ref-statement-5a494d7558b241d15c67ae15",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "18/3/2026",
+          "normalized_value": "2026-03-18",
+          "char_start": 170,
+          "char_end": 179,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-c3459bf9885d6c11ccca6f9a",
+          "reference_statement_id": "ref-statement-5a494d7558b241d15c67ae15",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "19/3/2026",
+          "normalized_value": "2026-03-19",
+          "char_start": 199,
+          "char_end": 208,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-4623c23967660d71f81946c7",
+          "reference_statement_id": "ref-statement-5a494d7558b241d15c67ae15",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "27/3/2026",
+          "normalized_value": "2026-03-27",
+          "char_start": 246,
+          "char_end": 255,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-99e47a2e05949a5bd85330b0",
+          "reference_statement_id": "ref-statement-17115112b6bb0a7cd59a5f52",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "03/NQ-HĐND",
+          "normalized_value": "03/NQ-HĐND",
+          "char_start": 21,
+          "char_end": 31,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-f8e224ad129f8c9090ee61a4",
+          "reference_statement_id": "ref-statement-17115112b6bb0a7cd59a5f52",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "28/3/2026",
+          "normalized_value": "2026-03-28",
+          "char_start": 37,
+          "char_end": 46,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-bf1b64e22f1ebfe4e18822eb",
+          "reference_statement_id": "ref-statement-17115112b6bb0a7cd59a5f52",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "HĐND",
+          "normalized_value": "HĐND",
+          "char_start": 51,
+          "char_end": 55,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-7cd022a227aaef2079d58e71",
+          "reference_statement_id": "ref-statement-687f400c294119a03ba495af",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "84/2025/NQ-HĐND",
+          "normalized_value": "84/2025/NQ-HĐND",
+          "char_start": 21,
+          "char_end": 36,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-a86fb8ace1ed298ee7bce857",
+          "reference_statement_id": "ref-statement-687f400c294119a03ba495af",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "13/12/2025",
+          "normalized_value": "2025-12-13",
+          "char_start": 42,
+          "char_end": 52,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-fe48bdb56e3f403716a7392d",
+          "reference_statement_id": "ref-statement-687f400c294119a03ba495af",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "HĐND",
+          "normalized_value": "HĐND",
+          "char_start": 57,
+          "char_end": 61,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-ca026bd2e978787b14e3f319",
+          "reference_statement_id": "ref-statement-9069d0a54baacf28c6dcc8b0",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "813/QĐ-UBND",
+          "normalized_value": "813/QĐ-UBND",
+          "char_start": 21,
+          "char_end": 32,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-fc65cceafccb45ff9e041563",
+          "reference_statement_id": "ref-statement-9069d0a54baacf28c6dcc8b0",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "21/02/2026",
+          "normalized_value": "2026-02-21",
+          "char_start": 38,
+          "char_end": 48,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-47feb3c9033de67f9a14cc39",
+          "reference_statement_id": "ref-statement-9069d0a54baacf28c6dcc8b0",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 53,
+          "char_end": 57,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-9600e58f3e5ec8c819b6dd22",
+          "reference_statement_id": "ref-statement-269c7cb5d2f9466bd425662b",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "1971/TB-HĐTĐ",
+          "normalized_value": "1971/TB-HĐTĐ",
+          "char_start": 20,
+          "char_end": 32,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-b07150019508335a2bf0a8d6",
+          "reference_statement_id": "ref-statement-269c7cb5d2f9466bd425662b",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "27/3/2026",
+          "normalized_value": "2026-03-27",
+          "char_start": 38,
+          "char_end": 47,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-ea4ac7611cbb16757e04133c",
+          "reference_statement_id": "ref-statement-ef5ded749bdb745878297f66",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "480/TB-UBND",
+          "normalized_value": "480/TB-UBND",
+          "char_start": 20,
+          "char_end": 31,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-af0607e9463203c8c946d2dd",
+          "reference_statement_id": "ref-statement-ef5ded749bdb745878297f66",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "7/5/2026",
+          "normalized_value": "2026-05-07",
+          "char_start": 37,
+          "char_end": 45,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-8f669587924a794b5e4ae110",
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 17,
+          "char_end": 47,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-1b1399057aaafd9df1b28b84",
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "547/VQH-TT2",
+          "normalized_value": "547/VQH-TT2",
+          "char_start": 92,
+          "char_end": 103,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-8d8233f3a54bfac685488fe5",
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "17/4/2026",
+          "normalized_value": "2026-04-17",
+          "char_start": 109,
+          "char_end": 118,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-37b00f62af1bd2b9f861a2b8",
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "114/BQLĐA-QHKT-KT",
+          "normalized_value": "114/BQLĐA-QHKT-KT",
+          "char_start": 174,
+          "char_end": 191,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5d902da8c0a7e0ee582b004c",
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "17/4/2026",
+          "normalized_value": "2026-04-17",
+          "char_start": 200,
+          "char_end": 209,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-e3dfddb2a7adf9b75a3128e7",
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Sở Quy hoạch - Kiến trúc",
+          "normalized_value": "Sở Quy hoạch - Kiến trúc",
+          "char_start": 211,
+          "char_end": 235,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-8658d7db209e7b97e5457347",
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "19/4/2026",
+          "normalized_value": "2026-04-19",
+          "char_start": 272,
+          "char_end": 281,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-fd7afe6e0a64d2a40c69a391",
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "kind": "document_identifier",
+          "raw_text": "2921/QHKT-QKĐ",
+          "normalized_value": "2921/QHKT-QKĐ",
+          "char_start": 296,
+          "char_end": 309,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-f5dffb1c8b9c2c9153c85d96",
+          "reference_statement_id": "ref-statement-c8255715a339edccdd3f27b5",
+          "page_index": 1,
+          "kind": "temporal_expression",
+          "raw_text": "8/5/2026",
+          "normalized_value": "2026-05-08",
+          "char_start": 316,
+          "char_end": 324,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-9eea611c7cf3cd581f51b6d0",
+          "reference_statement_id": "ref-statement-c2701150a73d141a877007fb",
+          "page_index": 1,
+          "kind": "legal_reference",
+          "raw_text": "Điều 1",
+          "normalized_value": null,
+          "char_start": 13,
+          "char_end": 19,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "1",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 2,
+      "pdf_page_number_1_based": 3,
+      "render_sha256": "16be07737ce7ce3cd85af6b8d2ff2a0aab15836bb1fa438169561d8193dbcf2b",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-bc4d01185dee716eb8728541",
+          "page_index": 2,
+          "exact_evidence_excerpt": "3",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ac8f4c815ff249eb9e8ac9dd",
+          "page_index": 2,
+          "exact_evidence_excerpt": "1.1. Tên quy hoạch: Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm. \n1.2. Đơn vị tư vấn lập quy hoạch: Liên danh tư vấn: Viện Quy hoạch xây dựng \nHà Nội, Viện Nghiên cứu phát triển kinh tế - xã hội Hà Nội, Công ty TNHH Viện Quy \nhoạch và Thiết kế đô thị Đồng Tế Thượng Hải, DHI China, Công ty TNHH The Boston \nConsulting Group, Công ty Encity Urban Solutions PTE.LTD.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-06195e6dcfdd654b558a46fd",
+          "page_index": 2,
+          "exact_evidence_excerpt": "2. Phạm vi, quy mô, ranh giới và thời kỳ lập quy hoạch \n2.1. Phạm vi, quy mô, ranh giới lập quy hoạch: \n+ Phạm vi quy hoạch gồm toàn bộ địa giới hành chính Thủ đô Hà Nội, với 126 \nđơn vị hành chính cấp xã (51 phường, 75 xã).",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-42e80a0c941c02438c9c322e",
+          "page_index": 2,
+          "exact_evidence_excerpt": "+ Quy mô lập quy hoạch: khoảng 3.359,84 km2 (335.984 ha).  \n+ Ranh giới lập quy hoạch: Phía Bắc giáp tỉnh Thái Nguyên, tỉnh Phú Thọ; Phía \nNam và Tây Nam giáp tỉnh Ninh Bình, tỉnh Phú Thọ; Phía Đông giáp tỉnh Bắc Ninh, \ntỉnh Hưng Yên; Phía Tây và Tây Bắc giáp tỉnh Phú Thọ.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-bbe787555c4f3167e04145ba",
+          "page_index": 2,
+          "exact_evidence_excerpt": "+ Phạm vi nghiên cứu không gian vùng: Mở rộng nghiên cứu kết nối với Vùng \nThủ đô Hà Nội (gồm Hà Nội và 05 tỉnh: Phú Thọ, Thái Nguyên, Bắc Ninh, Hưng Yên, \nNinh Bình), Vùng Đồng bằng sông Hồng, Vùng Trung du và miền núi phía Bắc và \ncác tuyến hành lang kinh tế quốc gia, quốc tế để xác lập cấu trúc chùm đô thị Vùng, \ntrong đó Hà Nội đóng vai trò hạt nhân dẫn dắt toàn vùng.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fd0f5db1b99995c59d878cf4",
+          "page_index": 2,
+          "exact_evidence_excerpt": "2.2. Dự báo quy mô dân số, đất đai:  \na) Quy mô dân số: \n+ Giai đoạn đến năm 2035: dự báo khoảng 14  15 triệu người. \n+ Giai đoạn đến năm 2045: dự báo khoảng 15  16 triệu người. \n+ Giai đoạn đến năm 2065: dự báo khoảng 17  19 triệu người. \n+ Giai đoạn dài hạn đến năm 2085 và xa hơn: Cơ bản giữ ổn định, khống chế \nquy mô dân số tối đa không quá 20 triệu người; đảm bảo quy chuẩn về mật độ dân số \n(Đô thị có thể đáp ứng ngưỡng chịu tải tối đa khoảng 22  25 triệu người với dự báo \nphát triển gia tăng tạm trú, khách vãng lai, làm việc, học tập, giao thương, khách nghỉ \ndưỡng, chăm sóc sức khỏe, khách du lịch).",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2c16c79e28b872a3f4dffb94",
+          "page_index": 2,
+          "exact_evidence_excerpt": "b) Quy mô đất đai (tỷ lệ đất xây dựng đô thị):",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-864ab61780b37ae217b659a7",
+          "page_index": 2,
+          "exact_evidence_excerpt": "+ Đến năm 2035: Tỷ lệ đất xây dựng đô thị chiếm khoảng 40% - 45% tổng diện \ntích tự nhiên.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-0760ad067e787a838abe5c7e",
+          "page_index": 2,
+          "exact_evidence_excerpt": "+ Đến năm 2045: Nâng tỷ lệ đất xây dựng đô thị lên khoảng 45% - 50% tổng \ndiện tích tự nhiên, phát triển theo mô hình “nén – xanh”.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-7e3173820fa3ca20a099fa2e",
+          "page_index": 2,
+          "exact_evidence_excerpt": "+ Đến năm 2065: Tỷ lệ đất xây dựng đô thị chiếm khoảng 55% - 60% tổng diện \ntích tự nhiên. Phần quỹ đất còn lại được bảo vệ nghiêm ngặt để duy trì tỷ lệ rừng, phát \ntriển rừng (>6,2% tổng diện tích đất toàn thành phố) và cấu trúc hành lang xanh của \nThủ đô.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-6ee75b8c3f256dbdc80dbd31",
+          "page_index": 2,
+          "exact_evidence_excerpt": "+ Đến năm 2085 và xa hơn: Giữ phát triển ổn định; tập trung hoàn thiện, hoàn \nchỉnh, nâng cao chất lượng theo cấu trúc quy hoạch được duyệt.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ad10803413c5fc8740e1f641",
+          "page_index": 2,
+          "exact_evidence_excerpt": "2.3. Thời kỳ lập quy hoạch:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-26c820e546c87084e4529a58",
+          "reference_statement_id": "ref-statement-42e80a0c941c02438c9c322e",
+          "page_index": 2,
+          "kind": "quantity",
+          "raw_text": "359,84 km2",
+          "normalized_value": "359.84 km²",
+          "char_start": 33,
+          "char_end": 43,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "359,84",
+            "normalized_numeric_value": "359.84",
+            "raw_unit": "km2",
+            "normalized_unit": "km²"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-d9ad558b0fa3497033211175",
+          "reference_statement_id": "ref-statement-42e80a0c941c02438c9c322e",
+          "page_index": 2,
+          "kind": "quantity",
+          "raw_text": "335.984 ha",
+          "normalized_value": null,
+          "char_start": 45,
+          "char_end": 55,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "335.984",
+            "normalized_numeric_value": null,
+            "raw_unit": "ha",
+            "normalized_unit": "ha"
+          }
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 3,
+      "pdf_page_number_1_based": 4,
+      "render_sha256": "a94c73e36aeb5d16011f4f88a2a00897e7f2a8522cd2822aab56d694d6c7fca8",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-303a985396e82049481c8c36",
+          "page_index": 3,
+          "exact_evidence_excerpt": "4",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-c844bdffb12f94c8cd45eea5",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Giai đoạn ngắn hạn: Đến năm 2035; Giai đoạn trung hạn: Đến năm 2045; Giai \nđoạn dài hạn: Đến năm 2065 và đến năm 2085; Tầm nhìn chiến lược: Tầm nhìn dài \nhạn 100 năm.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e161eae799cd14d571afa0f0",
+          "page_index": 3,
+          "exact_evidence_excerpt": "3. Quan điểm, mục tiêu, tầm nhìn dài hạn của quy hoạch: \n3.1. Quan điểm: \nXây dựng và phát triển Thủ đô \"Văn hiến - Văn minh - Hiện đại - Hạnh phúc\"; \nlấy con người làm trung tâm, chủ thể, mục tiêu và động lực của phát triển. Đặt văn \nhoá ở vị trí trung tâm của chiến lược phát triển kinh tế - xã hội, \"Văn hiến - Bản sắc - \nSáng tạo\" là giá trị cốt lõi xuyên suốt, nguồn lực nội sinh và sức mạnh mềm, nền tảng \nhình thành bản lĩnh, trí tuệ và động lực phát triển. Phát triển Thủ đô nhanh, bền vững, \nthông minh, hiện đại, bao trùm gắn với chuyển đổi số, chuyển đổi xanh, kinh tế tuần \nhoàn, thích ứng với biến đổi khí hậu; giữ vững quốc phòng, an ninh, bảo đảm trật tự, \nan toàn xã hội.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-4343c7d1dbcd6a74e2346b03",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm, ổn định theo không gian \nphát triển mở, cấu trúc đô thị \"đa tầng, đa lớp, đa cực, đa trung tâm\", lấy Sông Hồng \nlàm trục cảnh quan sinh thái - văn hoá chủ đạo; gắn kết chặt chẽ với vùng Thủ đô, \nvùng đồng bằng Sông Hồng, vùng Trung du và miền núi phía Bắc và các hành lang \nkinh tế quốc gia, quốc tế.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-481be809edbc34f0cdcf6ca6",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Bảo vệ môi trường, bảo tồn thiên nhiên và đa dạng sinh học, chủ động ứng phó \nvới thiên tai và biến đổi khí hậu; Phát triển theo hướng phù hợp điều kiện tự nhiên và \nsử dụng hiệu quả tài nguyên. Thủ đô đóng vai trò điều phối trung tâm kiểm soát các \nvấn đề ô nhiễm môi trường vùng.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-424e16b684125426ef55e1f9",
+          "page_index": 3,
+          "exact_evidence_excerpt": "3.2. Mục tiêu: \na) Mục tiêu tổng quát: \nĐến năm 2035: Thủ đô Hà Nội trở thành đô thị xanh, thông minh, hiện đại; hội \ntụ tinh hoa văn hoá, hội nhập quốc tế ngày càng sâu rộng; có năng lực cạnh tranh cao, \nchính trị - xã hội ổn định, thành phố thanh bình, người dân hạnh phúc, trở thành điểm \nđến an toàn, thân thiện và hấp dẫn. Hình thành một số trung tâm giáo dục - đào tạo, y \ntế chất lượng cao thuộc nhóm dẫn đầu trong khu vực châu Á - Thái Bình Dương; trung \ntâm dịch vụ tài chính, thương mại và đổi mới sáng tạo quan trọng cấp quốc gia, khu \nvực và quốc tế; trung tâm nghiên cứu, phát triển; giữ vai trò hạt nhân trong các chuỗi \nliên kết phát triển vùng Thủ đô, vùng đồng bằng Sông Hồng, vùng Trung du và miền \nnúi phía Bắc.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-05f279c5a6798c737f601200",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Đến năm 2045: Hà Nội trở thành một trung tâm đổi mới sáng tạo quan trọng của \nkhu vực châu Á - Thái Bình Dương, nơi hội tụ tri thức và công nghệ; hạ tầng, quản trị \nđô thị hiện đại; người dân có chất lượng sống cao; xã hội văn minh, an toàn, đáng \nsống, hạnh phúc.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-ade1a594ceff622684e11261",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Đến năm 2065: Thủ đô Hà Nội là thành phố toàn cầu, có trình độ phát triển cao \nvà bền vững; thuộc nhóm các thủ đô có chất lượng sống và hạnh phúc cao trên thế \ngiới.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2d0ba49cc4e4eb27641830e5",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Đến năm 2085 và xa hơn: Một trong những trung tâm có tầm ảnh hưởng lớn \ntrong mạng lưới các thành phố khu vực Châu Á - Thái Bình Dương và toàn cầu, dẫn \ndắt các xu hướng phát triển đô thị thông minh, kinh tế tri thức và đổi mới sáng tạo, là",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 15,
+      "pdf_page_number_1_based": 16,
+      "render_sha256": "6e2e924ec33148f2ee9fd28ec70b7f88187ce9d41c0ebe9473c881001eef6357",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-47fc85db5e547fc5e9eb5143",
+          "page_index": 15,
+          "exact_evidence_excerpt": "16",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-abe0454801d53a93dfc9adb6",
+          "page_index": 15,
+          "exact_evidence_excerpt": "+ Tầng trung (độ sâu -15m đến -30m): Bố trí đầu mối giao thông đường sắt đô \nthị, hệ thống kho bãi ngầm, hào kỹ thuật tổng hợp, công trình phòng tránh thiên tai và \nkho dự trữ chiến lược.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-872edde2191385984c8bb099",
+          "page_index": 15,
+          "exact_evidence_excerpt": "+ Tầng cận sâu (độ sâu -30m đến -50m): Dành cho các trục hạ tầng kỹ thuật \nchính, hệ thống trữ nước ngầm quy mô lớn và các công trình phục vụ an ninh - quốc \nphòng.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-6dfd9a36905c61773960e53b",
+          "page_index": 15,
+          "exact_evidence_excerpt": "+ Tầng sâu (dưới -50m): Bảo vệ nghiêm ngặt làm không gian dự trữ chiến lược, \nchưa khai thác trong thời kỳ quy hoạch.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a5ed2448ff4007d23879e9d7",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Chỉ tiêu thực hiện: Phấn đấu tỷ lệ xây dựng không gian ngầm tại khu vực đô thị \ntrung tâm đạt ≥ 20% diện tích đất vào năm 2045 và đạt ≥ 40% vào năm 2065.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-b86e8bd8ee9495a7a33c8d8f",
+          "page_index": 15,
+          "exact_evidence_excerpt": "Các thông số về độ sâu và phạm vi cụ thể sẽ được chuẩn hóa trong Quy hoạch \nchung không gian ngầm đô thị và các quy hoạch phân khu dựa trên dữ liệu điều tra địa \nchất, thủy văn của từng khu vực.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-0d81b43653b73a09deeeed77",
+          "page_index": 15,
+          "exact_evidence_excerpt": "* Không gian tầm thấp (dưới 3.000m): \n+ Mặt đất: Không gian ưu tiên cho con người và hệ sinh thái tự nhiên. Phát triển \nhệ thống đi bộ an toàn, công viên, mặt nước và bảo tồn cấu trúc không gian di sản phố \ncổ, phố cũ.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5a59534efcd3229c3ccda32b",
+          "page_index": 15,
+          "exact_evidence_excerpt": "+ Không gian trên cao: Phát triển các tổ hợp cao ốc mật độ cao tại các nút giao \nthông TOD và hành lang vành đai để tiết kiệm đất. Thiết lập hệ thống cầu đi bộ trên \ncao kết nối liên hoàn các công trình.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-86d18e41bc06366fbaa5d558",
+          "page_index": 15,
+          "exact_evidence_excerpt": "+ Kinh tế tầm thấp: Quy hoạch các vùng tiên phong khai thác giao thương, vận \nchuyển bằng taxi bay (eVTOL), thiết bị bay không người lái (drone) và giám sát đô \nthị thông minh.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e852f68a494dd1957fea24a5",
+          "page_index": 15,
+          "exact_evidence_excerpt": "* Không gian tầm cao (trên 3.000m): Kiểm soát hành lang bay quốc tế, nội địa \nvà quản lý khoảng không phục vụ viễn thông, quan trắc khí hậu, an ninh - quốc phòng.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-0f03b61bcec0169019094abc",
+          "page_index": 15,
+          "exact_evidence_excerpt": "(2) Cấu trúc đô thị đa lớp (Tích hợp giá trị và công năng): \nXây dựng đô thị dựa trên sự chồng lớp các giá trị để tạo nên bản sắc và sự thịnh \nvượng bền vững:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5923eb4b3150c854b4b3d6de",
+          "page_index": 15,
+          "exact_evidence_excerpt": "+ Lớp Di sản - Văn hóa: Nền tảng định hình bản sắc, bảo tồn nguyên trạng và \nphát huy giá trị các cấu trúc thành cổ (Hoàng thành Thăng Long, Cổ Loa), khu phố \ncổ, phố cũ, làng nghề truyền thống và các dấu ấn kiến trúc lịch sử qua các thời kỳ.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-be0319d8fed1d967c01c7401",
+          "page_index": 15,
+          "exact_evidence_excerpt": "+ Lớp Sinh thái và Tự nhiên: Hệ thống công viên, mặt nước,… theo mô hình \n“Rừng trong Thành phố”. Tích hợp không gian xanh vào từng công trình kiến trúc và \ntuyến đường, tạo hệ sinh thái tuần hoàn trong lòng đô thị.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-434b3541fd71d500840c98f4",
+          "page_index": 15,
+          "exact_evidence_excerpt": "+ Lớp Xã hội - Cộng đồng: Thiết lập mạng lưới không gian công cộng, thiết \nchế văn hóa - y tế - giáo dục đa năng, bảo đảm quyền tiếp cận bình đẳng và nâng cao \nchất lượng sống cho cư dân.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e2efb840c1ff1c24651d9533",
+          "page_index": 15,
+          "exact_evidence_excerpt": "+ Lớp Kinh tế và Hạ tầng số: Phát triển các hoạt động thương mại, đổi mới sáng \ntạo trên nền tảng hạ tầng số và dữ liệu thông minh, tạo điều kiện cho các mô hình kinh \ntế chia sẻ và kinh tế tri thức; ứng dụng công nghệ thông minh (AI, Big Data, IoT) và \nBản sao số (Digital Twin) làm công cụ điều khiển, giám sát thời gian thực toàn bộ các \nhoạt động vận hành đô thị tự động hóa.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-656af0c53adeb3669f04e48f",
+          "reference_statement_id": "ref-statement-abe0454801d53a93dfc9adb6",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "15m",
+          "normalized_value": "15 m",
+          "char_start": 22,
+          "char_end": 25,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "15",
+            "normalized_numeric_value": "15",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-8764d9d2ed11cb1fbdd659c6",
+          "reference_statement_id": "ref-statement-abe0454801d53a93dfc9adb6",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "30m",
+          "normalized_value": "30 m",
+          "char_start": 31,
+          "char_end": 34,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "30",
+            "normalized_numeric_value": "30",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-6bd22ac69840a177833425d7",
+          "reference_statement_id": "ref-statement-872edde2191385984c8bb099",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "30m",
+          "normalized_value": "30 m",
+          "char_start": 24,
+          "char_end": 27,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "30",
+            "normalized_numeric_value": "30",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-2f2dd77967d1359736c0f321",
+          "reference_statement_id": "ref-statement-872edde2191385984c8bb099",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "50m",
+          "normalized_value": "50 m",
+          "char_start": 33,
+          "char_end": 36,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "50",
+            "normalized_numeric_value": "50",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-ff5b2b37fd7a135ea54aee44",
+          "reference_statement_id": "ref-statement-6dfd9a36905c61773960e53b",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "50m",
+          "normalized_value": "50 m",
+          "char_start": 18,
+          "char_end": 21,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "50",
+            "normalized_numeric_value": "50",
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-55d5f12be3cf454773b9d85e",
+          "reference_statement_id": "ref-statement-0d81b43653b73a09deeeed77",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "3.000m",
+          "normalized_value": null,
+          "char_start": 28,
+          "char_end": 34,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "3.000",
+            "normalized_numeric_value": null,
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-11e539bb15ac14116c5aeb17",
+          "reference_statement_id": "ref-statement-e852f68a494dd1957fea24a5",
+          "page_index": 15,
+          "kind": "quantity",
+          "raw_text": "3.000m",
+          "normalized_value": null,
+          "char_start": 27,
+          "char_end": 33,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "3.000",
+            "normalized_numeric_value": null,
+            "raw_unit": "m",
+            "normalized_unit": "m"
+          }
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 30,
+      "pdf_page_number_1_based": 31,
+      "render_sha256": "dc3ddf352e1bc72845185df6b51bddc15b81834553a12086aae4e814dda4dd36",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-f351068adb7465029f04e180",
+          "page_index": 30,
+          "exact_evidence_excerpt": "31",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a6db081fe9ddab5f423be3eb",
+          "page_index": 30,
+          "exact_evidence_excerpt": "+ Phát triển không gian hai bên các tuyến sông: sông Hồng, sông Đuống, sông \nĐà, sông Nhuệ, sông Đáy, sông Tích, sông Cà Lồ, sông Thiếp - Đầm Vân Trì,… thành \ncác hành lang xanh và vành đai xanh chiến lược.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5562df17c4fa09acee985007",
+          "page_index": 30,
+          "exact_evidence_excerpt": "+ Xác lập trục không gian hai bên sông Hồng là trục xương sống cảnh quan Thủ \nđô; tập trung bố trí các công trình công cộng, công viên văn hóa, dịch vụ du lịch, giải \ntrí và các công trình biểu tượng của Thành phố.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a8b77fac5d05ddf89017af22",
+          "page_index": 30,
+          "exact_evidence_excerpt": "Phát triển lâm nghiệp và mô hình “Thành phố trong rừng”: \n+ Bảo vệ tuyệt đối diện tích rừng hiện hữu và thực hiện lộ trình phát triển mở \nrộng diện tích rừng toàn Thành phố.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-85ae54fead035dbacb54a0ae",
+          "page_index": 30,
+          "exact_evidence_excerpt": "+ Triển khai mô hình “Rừng trong thành phố - Thành phố trong rừng” với hệ \nsinh thái rừng làm chủ đạo; xác lập rõ vùng lõi bảo tồn rừng tự nhiên, rừng phòng hộ \nvà vùng đệm phát triển công viên rừng, du lịch sinh thái mật độ thấp, thân thiện môi \ntrường.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-57fad2f4da959cc079227fc1",
+          "page_index": 30,
+          "exact_evidence_excerpt": "+ Thiết lập hệ thống hành lang xanh liên thông kết nối rừng với mạng lưới sông, \nhồ, không gian nông nghiệp và các vùng sinh thái đặc thù.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-afe961abcb7cae049ce88746",
+          "page_index": 30,
+          "exact_evidence_excerpt": "Hệ thống công viên và không gian xanh nội đô: \n+ Nâng cấp các không gian xanh hiện hữu; ưu tiên dành quỹ đất sau khi di dời \ncác công sở, cơ sở sản xuất công nghiệp để bổ sung công viên, vườn hoa và tiện ích \ncông cộng.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a2551b05b6ee65044673ac68",
+          "page_index": 30,
+          "exact_evidence_excerpt": "+ Rà soát và triển khai các dự án công viên trọng điểm tại khu vực nội đô (Thủ \nLệ, Núi Cung, Đống Đa, Đầm Hồng, Hạ Đình,...) đảm bảo tính khả thi và phù hợp \nhiện trạng.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-b44e6a0bf67287e3ba301f24",
+          "page_index": 30,
+          "exact_evidence_excerpt": "+ Phát triển các công viên chuyên đề, công viên sinh thái gắn với hoạt động thể \nthao, giải trí; hình thành mạng lưới kết nối liên hoàn với hệ thống cây xanh tự nhiên \ntại các cực Sóc Sơn, Ba Vì, Hương Tích và các lưu vực sông, hồ.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-6ad9bcb4f8d9805ff05dba97",
+          "page_index": 30,
+          "exact_evidence_excerpt": "Quản lý nông thôn và mặt nước sinh thái: \n+ Tối ưu hóa vành đai xanh nông nghiệp theo mô hình canh tác hữu cơ, hiện đại \nhóa sản xuất gắn với bảo vệ môi trường.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-23e24e23cb982d451a0629af",
+          "page_index": 30,
+          "exact_evidence_excerpt": "+ Giữ gìn, khôi phục hệ thống sông, hồ, đầm nước để bảo đảm khả năng tiêu \nthoát nước đô thị, cân bằng môi trường sinh thái và phát triển kinh tế - xã hội; thiết lập \ncác tuyến hành lang bảo vệ nghiêm ngặt cho hệ thống nguồn nước và đập thủy lợi.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-9d6b701049774b191bd2c10e",
+          "page_index": 30,
+          "exact_evidence_excerpt": "+ Quy hoạch không gian cảnh quan sinh thái dọc các tuyến sông kết nối với các \ntrung tâm kinh tế, văn hóa lớn để xác lập đặc trưng môi trường văn hóa - sinh thái Thủ \nđô.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8723cef0e14c953e19bd04b5",
+          "page_index": 30,
+          "exact_evidence_excerpt": "+ Khai thác hiệu quả không gian mặt nước cho các hoạt động kinh tế dịch vụ, \ndu lịch và vận tải thủy.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-2ccdb831e17324121c8c9dbb",
+          "page_index": 30,
+          "exact_evidence_excerpt": "d) Định hướng kiến trúc cảnh quan – thiết kế đô thị tổng thể: \n* Định hướng kiến trúc cảnh quan:  \n+ Xây dựng hình ảnh và bản sắc của Thủ đô Hà Nội theo mục tiêu Văn hiến - \nVăn minh - Hiện đại - Hạnh phúc dựa trên bảo tồn và phát huy các giá trị di sản không \ngian, kiến trúc, cảnh quan, văn hóa, lịch sử, kết hợp xây dựng phát triển đô thị hiện \nđại, xanh và sáng tạo.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 45,
+      "pdf_page_number_1_based": 46,
+      "render_sha256": "9cb25f27edefe5e565d955470469a962e69262018c8b693aa1be84e99bfd9f2d",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-026350379b7912935c581905",
+          "page_index": 45,
+          "exact_evidence_excerpt": "46",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-bf7f924d5016a655c968a775",
+          "page_index": 45,
+          "exact_evidence_excerpt": "Thủ đô. Phát triển giáo dục phổ thông đạt chuẩn quốc tế; đột phá trong phát triển giáo \ndục thông minh. Phát triển hệ thống trường có nhiều cấp học, trường chất lượng cao, \ncác loại hình liên kết đào tạo trong nước và quốc tế.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-e7f69ba4fb290dd9ec1f4d43",
+          "page_index": 45,
+          "exact_evidence_excerpt": "Phát triển mạnh giáo dục thường xuyên và học tập suốt đời, củng cố và nâng cao \nhiệu quả hoạt động của các trung tâm giáo dục thường xuyên, trung tâm học tập cộng \nđồng tại các phường, xã, góp phần xây dựng xã hội học tập suốt đời.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-63b5eded5eba88c22c72c7eb",
+          "page_index": 45,
+          "exact_evidence_excerpt": "Phát triển giáo dục chuyên biệt và giáo dục hòa nhập, bảo đảm đầu tư đồng bộ \nvề cơ sở vật chất, trang thiết bị và đội ngũ giáo viên; tạo điều kiện để người khuyết tật \nvà các đối tượng đặc thù được tiếp cận giáo dục phù hợp, bình đẳng, chất lượng. Ưu \ntiên bố trí quỹ đất, hoàn thiện xây dựng trường phổ thông chuyên biệt cho trẻ khuyết \ntật thành phố Hà Nội.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-1fc6c1b865deb62afe103fad",
+          "page_index": 45,
+          "exact_evidence_excerpt": "Phát triển mạng lưới, quy mô cơ sở giáo dục các cấp theo hướng hiện đại, chuẩn \nhóa; chú trọng các địa bàn đông dân cư, khu đô thị, khu công nghiệp,… Giải quyết \ntriệt để tình trạng thiếu trường, lớp. Với khu vực nội đô không còn quỹ đất mở rộng, \ncó chính sách đặc thù cho phép nâng tầng và tăng mật độ xây dựng đối với các trường \nkhông còn quỹ đất; ưu tiên sử dụng quỹ đất sau khi di dời các trụ sở để xây dựng \ntrường phổ thông.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f13a6d5b1103ad72f70a647e",
+          "page_index": 45,
+          "exact_evidence_excerpt": "Bảo đảm mỗi xã/phường/đơn vị ở có trường mầm non công lập, trường tiểu học \ncông lập, trung học cơ sở công lập; 3-5 vạn dân có một trường trung học phổ thông \ncông lập phù hợp với nhu cầu thực tế; phân bố các trường trung học phổ thông phù \nhợp với nhu cầu người học tại các khu vực dân cư. Phát triển trường có nhiều cấp học \ntiên tiến, hiện đại tại những nơi có điều kiện kinh tế phát triển; trường phổ thông liên \ncấp tiên tiến, hiện đại, chất lượng cao. Xây dựng hệ thống trường chuyên tiệm cận \nquốc tế; xây dựng hệ thống trường chuyên, trường quốc tế tại khu vực phía Bắc Thủ \nđô.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-b9673777b2eae1cb93e238c1",
+          "page_index": 45,
+          "exact_evidence_excerpt": "Thực hiện lộ trình di dời các cơ sở giáo dục đại học, giáo dục nghề nghiệp từ \nkhu vực nội đô lịch sử ra các cực tăng trưởng để hình thành các đô thị đại học tập \ntrung, hiện đại và đồng bộ về hạ tầng kỹ thuật, hạ tầng xã hội. Đối với cơ sở phải di \ndời toàn bộ, ưu tiên chuyển đổi công năng quỹ đất cũ tại nội đô để bổ sung hạ tầng \ncho giáo dục phổ thông, các công trình tiện ích công cộng và không gian xanh. Thành \nphố có cơ chế hỗ trợ đầu tư xây dựng hạ tầng đồng bộ tại địa điểm mới. Đối với cơ sở \nkhông thuộc diện di dời toàn bộ, khuyến khích mở rộng quy mô tại các cơ sở mới; \nphần diện tích tại nội đô thực hiện tái cấu trúc, ưu tiên phục vụ nghiên cứu khoa học, \nchuyển giao công nghệ, đổi mới sáng tạo, đào tạo sau đại học và đào tạo nghề chất \nlượng cao.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-bdd679409babbb4d06b1dee7",
+          "page_index": 45,
+          "exact_evidence_excerpt": "Phát triển hệ thống giáo dục nghề nghiệp theo hướng mở, đa dạng, linh hoạt, \nphù hợp với yêu cầu phát triển của trên địa bàn Thủ đô Hà Nội, đáp ứng nhu cầu của \nthị trường lao động, ưu tiên phát triển các ngành nghề trọng điểm, có phân tầng chất \nlượng. Sắp xếp, tổ chức lại cơ sở giáo dục nghề nghiệp công lập theo hướng tinh gọn, \nhiệu quả, đảm bảo quy mô, cơ cấu, chất lượng đào tạo. Hình thành các trường trung \nhọc nghề trên cơ sở sắp xếp lại các trung tâm giáo dục nghề nghiệp - giáo dục thường \nxuyên tại những xã chưa có điều kiện kinh tế - xã hội phát triển, những nơi có số lượng \ndân số đông hoặc khu vực liên phường, xã chưa có trường cao đẳng, trung cấp trên địa \nbàn để phục vụ nhu cầu học tập tại chỗ, thuận lợi trong việc tiếp cận với giáo dục của",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 60,
+      "pdf_page_number_1_based": 61,
+      "render_sha256": "79973d34522e186aa51d8b2b0d977cc742dc3c69c007317870533904de372bf6",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-b5bc778adeadc7c9fb58d051",
+          "page_index": 60,
+          "exact_evidence_excerpt": "61",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f5be0bba1bf5efceebd7adf7",
+          "page_index": 60,
+          "exact_evidence_excerpt": "dài khoảng 979km được nghiên cứu dự kiến phân kỳ đầu tư như sau:",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-4d3b094b26e3eec2040da323",
+          "page_index": 60,
+          "exact_evidence_excerpt": "Giai đoạn 2026-2035: Nghiên cứu, xây dựng kế hoạch đầu tư khoảng 500km \nđường sắt đô thị, trong đó ưu tiên tập trung hoàn thành trước các tuyến trong giai đoạn \n2026-2030 của Nghị quyết 188/2025/QH15 và tuyến số 1 (Nội Bài - Yên Viên - ga Hà \nNội - Ngọc Hồi).",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fe9aad85df9f7ee111a25ea9",
+          "page_index": 60,
+          "exact_evidence_excerpt": "Giai đoạn 2036-2045: Kế hoạch đầu tư hoàn thiện mạng lưới và kéo dài... với \nchiều dài khoảng 479km.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-6c08699fb064cf7af0ec979f",
+          "page_index": 60,
+          "exact_evidence_excerpt": "Cụ thể sẽ được nghiên cứu, xây dựng lộ trình phát triển trong kế hoạch triển \nkhai quy hoạch trên cơ sở đánh giá, xây dựng nguồn lực, xác định các phương thức \ntriển khai đối với từng tuyến; các giai đoạn nêu trên có thể triển khai song song đồng \nthời với những tuyến có điều kiện thuận lợi và có đề xuất của các đối tác có năng lực; \nứng dụng các giải pháp triển khai, ứng dụng khoa học công nghệ tiên tiến trên thế \ngiới để rút ngắn tối đa tiến độ hoàn thành.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-23f80b61bfa92e3268a10dce",
+          "page_index": 60,
+          "exact_evidence_excerpt": "* Hệ thống hàng không:  \nNâng cấp Cảng hàng không quốc tế Nội Bài (cực phía Bắc) đạt công suất khoảng \n50 triệu hành khách/năm, mở rộng quy mô khoảng 1.500 ha về phía Nam. Xây dựng \nCảng hàng không thứ 2 Vùng Thủ đô tại cực phía Nam (khu vực xã Ứng Hòa, Chuyên \nMỹ) với quy mô khoảng 1.500 ha, công suất dự kiến khoảng 30-50 triệu khách/năm \nđạt tiêu chuẩn quốc tế, phát triển theo mô hình đô thị sân bay. Nâng cấp, mở rộng, bổ \nsung chức năng lưỡng dụng cho các sân bay quân sự Gia Lâm, Hoà Lạc.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-fe7e92443fde64c97f5b5d5c",
+          "page_index": 60,
+          "exact_evidence_excerpt": "Thiết lập các điểm đầu mối cất/hạ tại khu vực Hòa Lạc, Sóc Sơn, trên các tòa \nnhà cao tầng, các khu vực bến, bãi phù hợp để phục vụ phương tiện công nghệ mới \n(drone, taxi bay,…) phục vụ dịch vụ vận chuyển công nghệ.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-58060f1dd0eb415e3bb726f0",
+          "page_index": 60,
+          "exact_evidence_excerpt": "* Hệ thống giao thông công cộng: \nPhấn đấu tỷ lệ đảm nhận của giao thông công cộng đạt 25%-30% vào năm 2035; \n40%-45% vào năm 2045 và 55-60% vào năm 2065. \nThiết lập các vùng hạn chế phương tiện cá nhân vào khu vực nội đô lịch sử theo \ncác lớp vành đai đồng bộ với các vùng phát thải thấp; chuyển đổi theo lộ trình, hướng \ntới 100% phương tiện xe buýt, taxi sử dụng năng lượng xanh.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-c06d6cbfad48e46d42d7cb43",
+          "page_index": 60,
+          "exact_evidence_excerpt": "Ưu tiên quỹ đất để phát triển các trung tâm trung chuyển đa phương tiện kết hợp \nvới việc tái thiết và phát triển đô thị theo mô hình TOD.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-f0399325769cad289fe03577",
+          "page_index": 60,
+          "exact_evidence_excerpt": "Dành đủ đất cho hạ tầng giao thông công cộng như bãi đỗ - trạm sạc, trạm bảo \ndưỡng sửa chữa xe buýt.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-144eae85d9da6ee2e73a84d5",
+          "page_index": 60,
+          "exact_evidence_excerpt": "Dành đủ quỹ đất cho đỗ xe theo hướng tiết kiệm đất đai bằng việc khai thác \nkhông gian đa tầng.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-419717cb9fdec2a184e9503c",
+          "page_index": 60,
+          "exact_evidence_excerpt": "Xây dựng cơ sở dữ liệu, ứng dụng chuyển đổi số, trí tuệ nhân tạo để quản lý, \nkhai thác tối đa năng lực của hệ thống giao thông; phục vụ công tác dự báo, xây dựng \nđề án, kế hoạch phát triển hạ tầng giao thông.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-68c23f7abf9f1f59a4a6ea10",
+          "page_index": 60,
+          "exact_evidence_excerpt": "* Hệ thống đường thủy:  \nCảng đầu mối đường thủy nội địa: Nâng cấp, cải tạo, phát triển một số cảng đầu \nmối kết hợp để gánh vác vai trò logistics đường thủy: Cảng container Phù Đổng, Cảng \nGiang Biên (cực phía Đông); Cảng Hồng Hà, Cảng Sơn Tây, Cảng Ba Vì (cực phía",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-b63bca9e0177bad945b2c4d0",
+          "reference_statement_id": "ref-statement-f5be0bba1bf5efceebd7adf7",
+          "page_index": 60,
+          "kind": "quantity",
+          "raw_text": "979km",
+          "normalized_value": "979 km",
+          "char_start": 11,
+          "char_end": 16,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "979",
+            "normalized_numeric_value": "979",
+            "raw_unit": "km",
+            "normalized_unit": "km"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-a4988ce5532d0148392b8b96",
+          "reference_statement_id": "ref-statement-4d3b094b26e3eec2040da323",
+          "page_index": 60,
+          "kind": "quantity",
+          "raw_text": "500km",
+          "normalized_value": "500 km",
+          "char_start": 65,
+          "char_end": 70,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "500",
+            "normalized_numeric_value": "500",
+            "raw_unit": "km",
+            "normalized_unit": "km"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-29fa1aa8673395bccc11990c",
+          "reference_statement_id": "ref-statement-4d3b094b26e3eec2040da323",
+          "page_index": 60,
+          "kind": "document_identifier",
+          "raw_text": "188/2025/QH15",
+          "normalized_value": "188/2025/QH15",
+          "char_start": 186,
+          "char_end": 199,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-887c35e67ec9503dae656d10",
+          "reference_statement_id": "ref-statement-fe9aad85df9f7ee111a25ea9",
+          "page_index": 60,
+          "kind": "quantity",
+          "raw_text": "479km",
+          "normalized_value": "479 km",
+          "char_start": 94,
+          "char_end": 99,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "479",
+            "normalized_numeric_value": "479",
+            "raw_unit": "km",
+            "normalized_unit": "km"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-63d3cb5253a6209561efe9cb",
+          "reference_statement_id": "ref-statement-23f80b61bfa92e3268a10dce",
+          "page_index": 60,
+          "kind": "quantity",
+          "raw_text": "1.500 ha",
+          "normalized_value": null,
+          "char_start": 150,
+          "char_end": 158,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1.500",
+            "normalized_numeric_value": null,
+            "raw_unit": "ha",
+            "normalized_unit": "ha"
+          }
+        },
+        {
+          "reference_mention_id": "ref-mention-3b0d5fbcc80fae103e63a759",
+          "reference_statement_id": "ref-statement-23f80b61bfa92e3268a10dce",
+          "page_index": 60,
+          "kind": "quantity",
+          "raw_text": "1.500 ha",
+          "normalized_value": null,
+          "char_start": 284,
+          "char_end": 292,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": {
+            "raw_value": "1.500",
+            "normalized_numeric_value": null,
+            "raw_unit": "ha",
+            "normalized_unit": "ha"
+          }
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 78,
+      "pdf_page_number_1_based": 79,
+      "render_sha256": "3170769c1d1becf8e83eb65e72c54d95c67b85ffc483a7bddb0a5c667268d696",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-a0acf7606615dbe102a80fca",
+          "page_index": 78,
+          "exact_evidence_excerpt": "79",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8ab043dc8fe04fd74703e430",
+          "page_index": 78,
+          "exact_evidence_excerpt": "Chịu trách nhiệm về tính chính xác của số liệu, tài liệu, hệ thống cơ sở dữ liệu, \nbản đồ, sơ đồ trong hồ sơ Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm theo \nquy định của pháp luật; sự thống nhất của toàn bộ hồ sơ quy hoạch tại Thuyết minh, \nhồ sơ bản vẽ và Quy định quản lý.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-c05eb326fb9388136b60509e",
+          "page_index": 78,
+          "exact_evidence_excerpt": "Phối hợp với các đơn vị tư vấn nước ngoài trong Liên danh tư vấn hoàn thiện hồ \nsơ Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm theo đúng quy định, gửi Sở \nQuy hoạch - Kiến trúc xác nhận và lưu trữ, lưu giữ theo quy định.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-96353d51d8b6ba41c981b302",
+          "page_index": 78,
+          "exact_evidence_excerpt": "3. Sở Quy hoạch - Kiến trúc:  \nChịu trách nhiệm rà soát, đóng dấu xác nhận tại Báo cáo thuyết minh quy hoạch, \nBản vẽ trong hồ sơ Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm đảm bảo \nphù hợp với Quyết định phê duyệt của UBND Thành phố và uỷ quyền cho Sở Quy \nhoạch - Kiến trúc ban hành Quy định quản lý theo quy hoạch được duyệt; tổ chức công \nbố và lưu trữ hồ sơ quy hoạch theo quy định.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-33567639eb26d11bbebfe3c9",
+          "page_index": 78,
+          "exact_evidence_excerpt": "Chủ trì, phối hợp với Sở Tài chính và các cơ quan, đơn vị liên quan tham mưu \nUBND Thành phố ban hành Kế hoạch thực hiện Quy hoạch tổng thể Thủ đô Hà Nội \ntầm nhìn 100 năm.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-5f50b9073deee458b8fe606b",
+          "page_index": 78,
+          "exact_evidence_excerpt": "Chỉ đạo rà soát các nhiệm vụ, quy hoạch, dự án đầu tư đang được tổ chức lập, \nthẩm định hoặc đã được cấp thẩm quyền phê duyệt, chấp thuận chủ trương theo Điều \nchỉnh Quy hoạch chung Thủ đô Hà Nội đến năm 2045, tầm nhìn đến năm 2065 đã được \nThủ tướng Chính phủ phê duyệt tại Quyết định số 1668/QĐ-TTg ngày 27/12/2024 và \ncác quy hoạch chuyên ngành đã được duyệt để xác định các nội dung còn phù hợp, kế \nthừa phát triển, thực hiện phù hợp với Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 \nnăm được duyệt.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-a584bb42c4ff2cf259eb64fc",
+          "page_index": 78,
+          "exact_evidence_excerpt": "4. Sở Tài chính: \nNghiên cứu xây dựng, trình UBND Thành phố ban hành cơ chế, chính sách, giải \npháp phù hợp với yêu cầu phát triển Thủ đô và quy định của pháp luật để huy động các \nnguồn lực thực hiện quy hoạch.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-0e98e51a27762519ea25d4f7",
+          "page_index": 78,
+          "exact_evidence_excerpt": "Chỉ đạo rà soát các dự án đầu tư đang được tổ chức thẩm định hoặc đã được cấp \nthẩm quyển chấp thuận chủ trương theo Quy hoạch Thủ đô Hà Nội thời kỳ 2021 - 2030, \ntầm nhìn đến năm 2050 được Thủ tướng Chính phủ phê duyệt tại Quyết định số \n1569/QĐ-TTg ngày 12/12/2024, Điều chỉnh Quy hoạch chung Thủ đô Hà Nội đến năm \n2045, tầm nhìn đến năm 2065 được Thủ tướng Chính phủ phê duyệt tại Quyết định số \n1668/QĐ-TTg ngày 27/12/2024 và các quy hoạch chuyên ngành đã được duyệt để xác \nđịnh các nội dung còn phù hợp, kế thừa phát triển, thực hiện phù hợp với Quy hoạch \ntổng thể Thủ đô Hà Nội tầm nhìn 100 năm được duyệt.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-8c5e50cf8bd5093f7201b4c8",
+          "page_index": 78,
+          "exact_evidence_excerpt": "Yêu cầu Sở Quy hoạch – Kiến trúc và Sở Tài chính trong quá trình triển khai thực \nhiên quy hoạch: Trường hợp các nhiệm vụ, quy hoạch, các chương trình, đề án, dự án \nđầu tư,.. không phù hợp với Quy hoạch tổng thể Thủ đô Hà Nội tầm nhìn 100 năm, cần \nxác định cụ thể các vấn đề, nguyên nhân và xử lý theo thẩm quyền, đúng trình tự, quy \nđịnh của pháp luật ngành và pháp luật có liên quan, bảo đảm không hợp thức hóa các \nsai phạm. Các chương trình, dự án, công trình,… đang được rà soát, xử lý theo các kết \nluận thanh tra, kiểm tra, điều tra, kiểm toán và thi hành các bản án (nếu có) chỉ được \ntriển khai đầu tư sau khi đã thực hiện đầy đủ các nội dung theo kết luận thanh tra, kiểm",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-d5d1cf7ba6161a5c4bf8b564",
+          "reference_statement_id": "ref-statement-c05eb326fb9388136b60509e",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "Sở \nQuy hoạch - Kiến trúc",
+          "normalized_value": "Sở \nQuy hoạch - Kiến trúc",
+          "char_start": 157,
+          "char_end": 182,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-bf296fd5400f55e7263bc098",
+          "reference_statement_id": "ref-statement-96353d51d8b6ba41c981b302",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "Sở Quy hoạch - Kiến trúc",
+          "normalized_value": "Sở Quy hoạch - Kiến trúc",
+          "char_start": 3,
+          "char_end": 27,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-c8c0e26aa6d75c9a6f44b69d",
+          "reference_statement_id": "ref-statement-96353d51d8b6ba41c981b302",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 226,
+          "char_end": 230,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-c9984a6b63369dd036776a69",
+          "reference_statement_id": "ref-statement-33567639eb26d11bbebfe3c9",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "Sở Tài chính",
+          "normalized_value": "Sở Tài chính",
+          "char_start": 22,
+          "char_end": 34,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-aac6456d59a36bb7363521e6",
+          "reference_statement_id": "ref-statement-33567639eb26d11bbebfe3c9",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 78,
+          "char_end": 82,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-664d5a01609e0c4d1cf5ac3a",
+          "reference_statement_id": "ref-statement-5f50b9073deee458b8fe606b",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "Thủ tướng Chính phủ",
+          "normalized_value": "Thủ tướng Chính phủ",
+          "char_start": 241,
+          "char_end": 260,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-e2ffe53f6f1a98d07a82733e",
+          "reference_statement_id": "ref-statement-5f50b9073deee458b8fe606b",
+          "page_index": 78,
+          "kind": "document_identifier",
+          "raw_text": "1668/QĐ",
+          "normalized_value": "1668/QĐ",
+          "char_start": 289,
+          "char_end": 296,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-238e0908ac2bec682d192e57",
+          "reference_statement_id": "ref-statement-5f50b9073deee458b8fe606b",
+          "page_index": 78,
+          "kind": "temporal_expression",
+          "raw_text": "27/12/2024",
+          "normalized_value": "2024-12-27",
+          "char_start": 306,
+          "char_end": 316,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-e450939a8a35b7bef650c6fa",
+          "reference_statement_id": "ref-statement-a584bb42c4ff2cf259eb64fc",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "Sở Tài chính",
+          "normalized_value": "Sở Tài chính",
+          "char_start": 3,
+          "char_end": 15,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-e41af8b2cca59e212c4d5207",
+          "reference_statement_id": "ref-statement-a584bb42c4ff2cf259eb64fc",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 45,
+          "char_end": 49,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-c4908e26811fe976b4e7fc64",
+          "reference_statement_id": "ref-statement-0e98e51a27762519ea25d4f7",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "Thủ tướng Chính phủ",
+          "normalized_value": "Thủ tướng Chính phủ",
+          "char_start": 190,
+          "char_end": 209,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-04272fa2db3b4542b9fdeee9",
+          "reference_statement_id": "ref-statement-0e98e51a27762519ea25d4f7",
+          "page_index": 78,
+          "kind": "document_identifier",
+          "raw_text": "1569/QĐ",
+          "normalized_value": "1569/QĐ",
+          "char_start": 239,
+          "char_end": 246,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-7953333f4d4dfd449565d427",
+          "reference_statement_id": "ref-statement-0e98e51a27762519ea25d4f7",
+          "page_index": 78,
+          "kind": "temporal_expression",
+          "raw_text": "12/12/2024",
+          "normalized_value": "2024-12-12",
+          "char_start": 256,
+          "char_end": 266,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-93ae3d2da0aa5f97d0ab5c8e",
+          "reference_statement_id": "ref-statement-0e98e51a27762519ea25d4f7",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "Thủ tướng Chính phủ",
+          "normalized_value": "Thủ tướng Chính phủ",
+          "char_start": 351,
+          "char_end": 370,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5de89515d7b7727ea11e7858",
+          "reference_statement_id": "ref-statement-0e98e51a27762519ea25d4f7",
+          "page_index": 78,
+          "kind": "document_identifier",
+          "raw_text": "1668/QĐ",
+          "normalized_value": "1668/QĐ",
+          "char_start": 400,
+          "char_end": 407,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-cada6eea7c783599e3751e3c",
+          "reference_statement_id": "ref-statement-0e98e51a27762519ea25d4f7",
+          "page_index": 78,
+          "kind": "temporal_expression",
+          "raw_text": "27/12/2024",
+          "normalized_value": "2024-12-27",
+          "char_start": 417,
+          "char_end": 427,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-d75bd97b88ff46d6f21feef2",
+          "reference_statement_id": "ref-statement-8c5e50cf8bd5093f7201b4c8",
+          "page_index": 78,
+          "kind": "organization_or_authority",
+          "raw_text": "Sở Tài chính",
+          "normalized_value": "Sở Tài chính",
+          "char_start": 36,
+          "char_end": 48,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        }
+      ],
+      "visual_assistance": []
+    },
+    {
+      "page_index": 79,
+      "pdf_page_number_1_based": 80,
+      "render_sha256": "e29866182d32f740cf901fec6b707cc5e9e2666eaf1188747c5ce2cbb198adab",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-39beb3e8e0d264be061380f3",
+          "page_index": 79,
+          "exact_evidence_excerpt": "80",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-13726e9d745100021a238c87",
+          "page_index": 79,
+          "exact_evidence_excerpt": "tra, điều tra, kiểm toán, bản án (nếu có) và được cấp có thẩm quyền chấp thuận, đảm \nbảo phù hợp các quy định pháp luật và các quy định khác có liên quan.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-84216ba73af9e9b90b64b62c",
+          "page_index": 79,
+          "exact_evidence_excerpt": "5. Các Sở, ban, ngành của Thành phố, UBND các xã, phường trên địa bàn Thành \nphố: Kiểm tra, giám sát, quản lý các hoạt động xây dựng, phát triển đô thị, kinh tế - xã \nhội và các hoạt động có liên quan theo đúng quy hoạch; xử lý các trường hợp sai phạm \ntheo thẩm quyền và quy định của pháp luật.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-76bec60ae8adb8a747aa8c9c",
+          "page_index": 79,
+          "exact_evidence_excerpt": "Điều 3. Điều khoản thi hành \nQuyết định này có hiệu lực thi hành kể từ ngày ký.  \nChánh Văn phòng UBND Thành phố, Giám đốc các Sở: Quy hoạch - Kiến trúc, \nTài chính, Viện trưởng Viện Quy hoạch xây dựng Hà Nội, Viện trưởng Viện Nghiên \ncứu phát triển kinh tế - xã hội Hà Nội, Giám đốc Ban Quản lý đồ án quy hoạch kiến trúc \n(thuộc Sở Quy hoạch - Kiến trúc); Giám đốc, thủ trưởng các Sở, ban, ngành Thành phố, \nChủ tịch UBND các phường, xã trên địa bàn Thành phố và thủ trưởng các cơ quan, đơn \nvị, cá nhân có liên quan chịu trách nhiệm thi hành Quyết định này./.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-b6635709dde4b899c204c035",
+          "page_index": 79,
+          "exact_evidence_excerpt": "CHỦ TỊCH",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-1b051b2840f65ada6e240d13",
+          "page_index": 79,
+          "exact_evidence_excerpt": "Vũ Đại Thắng",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        },
+        {
+          "reference_statement_id": "ref-statement-909d22ff31e68f049c649b9f",
+          "page_index": 79,
+          "exact_evidence_excerpt": "Nơi nhận: \n- Như Điều 3; \n- UBTV Quốc hội; \n- Thủ tướng Chính phủ; \n- Các Phó Thủ tướng Chính phủ;       (để b/cáo) \n- Thường trực Thành ủy; \n- Thường trực HĐND Thành phố; \n- Các bộ, cơ quan ngang bộ,  \n  cơ quan thuộc Chính phủ; \n- UBND các tỉnh, thành phố trực thuộc  \n  trung ương; các tỉnh, thành phố thuộc Vùng  \n  Thủ đô, Vùng ĐBSH, vùng TD&MNPB;  \n- Chủ tịch, các PCT UBND Thành phố; \n- VP UBTP: CVP, các PCVP, \n  các phòng chuyên môn; \n- Trung tâm TT, Dữ liệu và công nghệ số TP, \n- Lưu VT, ĐT.",
+          "audit_note": "Text-layer wording accepted only after visual comparison with the rendered PDF page."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-73267de8372385d6002405dd",
+          "reference_statement_id": "ref-statement-84216ba73af9e9b90b64b62c",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 37,
+          "char_end": 41,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-2bd09fd90a982456cca49ac9",
+          "reference_statement_id": "ref-statement-76bec60ae8adb8a747aa8c9c",
+          "page_index": 79,
+          "kind": "legal_reference",
+          "raw_text": "Điều 3",
+          "normalized_value": null,
+          "char_start": 0,
+          "char_end": 6,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "3",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-dfda5e30c2964eaac18fd069",
+          "reference_statement_id": "ref-statement-76bec60ae8adb8a747aa8c9c",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 98,
+          "char_end": 102,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-9191b8c2207b81b01b63094d",
+          "reference_statement_id": "ref-statement-76bec60ae8adb8a747aa8c9c",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 178,
+          "char_end": 208,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-22908ec35c0f6097bd4c132b",
+          "reference_statement_id": "ref-statement-76bec60ae8adb8a747aa8c9c",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "Sở Quy hoạch - Kiến trúc",
+          "normalized_value": "Sở Quy hoạch - Kiến trúc",
+          "char_start": 330,
+          "char_end": 354,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-506bf1895cd7efc75a709a69",
+          "reference_statement_id": "ref-statement-76bec60ae8adb8a747aa8c9c",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 418,
+          "char_end": 422,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-82b904e2d2e8cea63f7aae09",
+          "reference_statement_id": "ref-statement-909d22ff31e68f049c649b9f",
+          "page_index": 79,
+          "kind": "legal_reference",
+          "raw_text": "Điều 3",
+          "normalized_value": null,
+          "char_start": 17,
+          "char_end": 23,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "3",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5188013a1ded0e23c8acd976",
+          "reference_statement_id": "ref-statement-909d22ff31e68f049c649b9f",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "Quốc hội",
+          "normalized_value": "Quốc hội",
+          "char_start": 33,
+          "char_end": 41,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-c118dc3ed9051a91665fd648",
+          "reference_statement_id": "ref-statement-909d22ff31e68f049c649b9f",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "Thủ tướng Chính phủ",
+          "normalized_value": "Thủ tướng Chính phủ",
+          "char_start": 46,
+          "char_end": 65,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-dc7a17e1f83fbfbd8738d636",
+          "reference_statement_id": "ref-statement-909d22ff31e68f049c649b9f",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "Thủ tướng Chính phủ",
+          "normalized_value": "Thủ tướng Chính phủ",
+          "char_start": 78,
+          "char_end": 97,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-3c6633916476bf1c03369f9c",
+          "reference_statement_id": "ref-statement-909d22ff31e68f049c649b9f",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "HĐND",
+          "normalized_value": "HĐND",
+          "char_start": 156,
+          "char_end": 160,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-323f1916988b39ff62e2d958",
+          "reference_statement_id": "ref-statement-909d22ff31e68f049c649b9f",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 219,
+          "char_end": 228,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-8d99a1ae05ebf13e2440d868",
+          "reference_statement_id": "ref-statement-909d22ff31e68f049c649b9f",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 233,
+          "char_end": 237,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-466d8ceeebf36095f1837e5b",
+          "reference_statement_id": "ref-statement-909d22ff31e68f049c649b9f",
+          "page_index": 79,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 375,
+          "char_end": 379,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        }
+      ],
+      "visual_assistance": []
+    }
+  ]
+}
