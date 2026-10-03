@@ -8,8 +8,9 @@ import json
 import unicodedata
 from collections import Counter
 from datetime import date
+from math import fsum
 from pathlib import Path
-from typing import TYPE_CHECKING, Any, Literal, Self
+from typing import TYPE_CHECKING, Any, Literal, Self, cast
 
 from pydantic import (
     BaseModel,
@@ -21,6 +22,7 @@ from pydantic import (
     model_validator,
 )
 
+from vlm_rag.evaluation.matching import _find_max_cardinality_max_weight_matching
 from vlm_rag.normalizers.marker_v1 import MarkerPhysicalNormalizerV1
 from vlm_rag.normalizers.mineru_v1 import MinerUPhysicalNormalizerV1
 from vlm_rag.semantic_ir import (
@@ -444,6 +446,195 @@ def _prediction_order(item: SemanticMention) -> tuple[int, str, int, int, str]:
     )
 
 
+def _relative_prediction_span(mention: SemanticMention, statement: Any) -> tuple[int, int] | None:
+    anchor = mention.evidence_anchors[0]
+    statement_anchor = statement.evidence_anchors[0]
+    if anchor.anchor_type != "text" or statement_anchor.anchor_type != "text":
+        return None
+    return (
+        anchor.char_start - statement_anchor.char_start,
+        anchor.char_end - statement_anchor.char_start,
+    )
+
+
+def _pair_occurrence_group(
+    references: list[SemanticReferenceMention],
+    predictions: list[SemanticMention],
+    *,
+    reference_statement_by_id: dict[str, SemanticReferenceStatement],
+    prediction_statement_by_id: dict[str, Any],
+) -> tuple[
+    list[tuple[SemanticReferenceMention, SemanticMention]],
+    list[
+        tuple[
+            list[SemanticReferenceMention],
+            list[SemanticMention],
+            int,
+            list[tuple[int, int]],
+        ]
+    ],
+    list[SemanticReferenceMention],
+    list[SemanticMention],
+]:
+    """Pair one raw-occurrence group without using any scored target field."""
+    if not references or not predictions:
+        return [], [], list(references), list(predictions)
+    common = min(len(references), len(predictions))
+    statement_weight = common + 1
+    candidate_edges: list[tuple[int, int, float]] = []
+    for reference_index, reference in enumerate(references):
+        reference_statement = reference_statement_by_id[reference.reference_statement_id]
+        reference_span = (reference.char_start, reference.char_end)
+        for prediction_index, prediction in enumerate(predictions):
+            prediction_statement = prediction_statement_by_id[prediction.statement_id]
+            same_statement = prediction_statement.text == reference_statement.exact_evidence_excerpt
+            same_span = (
+                same_statement
+                and _relative_prediction_span(prediction, prediction_statement) == reference_span
+            )
+            quality = float(statement_weight * int(same_statement) + int(same_span))
+            candidate_edges.append((reference_index, prediction_index, quality))
+
+    matched = _find_max_cardinality_max_weight_matching(
+        len(references), len(predictions), candidate_edges
+    )
+    optimum_score = sum(edge[2] for edge in matched)
+    possible_edges: list[tuple[int, int]] = []
+    for reference_index, prediction_index, quality in candidate_edges:
+        residual = [
+            edge
+            for edge in candidate_edges
+            if edge[0] != reference_index and edge[1] != prediction_index
+        ]
+        residual_match = _find_max_cardinality_max_weight_matching(
+            len(references), len(predictions), residual
+        )
+        if (
+            len(residual_match) + 1 == len(matched)
+            and sum(edge[2] for edge in residual_match) + quality == optimum_score
+        ):
+            possible_edges.append((reference_index, prediction_index))
+
+    reference_neighbors: dict[int, set[int]] = {}
+    prediction_neighbors: dict[int, set[int]] = {}
+    for reference_index, prediction_index in possible_edges:
+        reference_neighbors.setdefault(reference_index, set()).add(prediction_index)
+        prediction_neighbors.setdefault(prediction_index, set()).add(reference_index)
+    matched_pairs = {
+        (reference_index, prediction_index) for reference_index, prediction_index, _ in matched
+    }
+    resolved: list[tuple[SemanticReferenceMention, SemanticMention]] = []
+    ambiguous: list[
+        tuple[
+            list[SemanticReferenceMention],
+            list[SemanticMention],
+            int,
+            list[tuple[int, int]],
+        ]
+    ] = []
+    visited_references: set[int] = set()
+    for start in range(len(references)):
+        if start in visited_references or start not in reference_neighbors:
+            continue
+        component_references: set[int] = set()
+        component_predictions: set[int] = set()
+        pending_references = [start]
+        while pending_references:
+            reference_index = pending_references.pop()
+            if reference_index in component_references:
+                continue
+            component_references.add(reference_index)
+            visited_references.add(reference_index)
+            for prediction_index in reference_neighbors[reference_index]:
+                if prediction_index in component_predictions:
+                    continue
+                component_predictions.add(prediction_index)
+                pending_references.extend(prediction_neighbors[prediction_index])
+        component_edges = [
+            edge
+            for edge in possible_edges
+            if edge[0] in component_references and edge[1] in component_predictions
+        ]
+        component_matches = [
+            edge
+            for edge in matched_pairs
+            if edge[0] in component_references and edge[1] in component_predictions
+        ]
+        is_resolved = all(
+            len(reference_neighbors[reference_index]) == 1
+            and len(prediction_neighbors[prediction_index]) == 1
+            for reference_index, prediction_index in component_matches
+        )
+        if is_resolved:
+            resolved.extend(
+                (references[reference_index], predictions[prediction_index])
+                for reference_index, prediction_index in component_matches
+            )
+        else:
+            reference_indexes = sorted(component_references)
+            prediction_indexes = sorted(component_predictions)
+            reference_positions = {
+                original: local for local, original in enumerate(reference_indexes)
+            }
+            prediction_positions = {
+                original: local for local, original in enumerate(prediction_indexes)
+            }
+            ambiguous.append(
+                (
+                    [references[index] for index in reference_indexes],
+                    [predictions[index] for index in prediction_indexes],
+                    len(component_matches),
+                    [
+                        (
+                            reference_positions[reference_index],
+                            prediction_positions[prediction_index],
+                        )
+                        for reference_index, prediction_index in component_edges
+                    ],
+                )
+            )
+
+    used_references = {edge[0] for edge in matched_pairs}
+    used_predictions = {edge[1] for edge in matched_pairs}
+    unmatched_references = [
+        reference for index, reference in enumerate(references) if index not in used_references
+    ]
+    unmatched_predictions = [
+        prediction for index, prediction in enumerate(predictions) if index not in used_predictions
+    ]
+    return resolved, ambiguous, unmatched_references, unmatched_predictions
+
+
+def _exact_span_outcome(
+    reference: SemanticReferenceMention,
+    prediction: SemanticMention,
+    reference_statement_by_id: dict[str, SemanticReferenceStatement],
+    prediction_statement_by_id: dict[str, Any],
+) -> bool:
+    statement = prediction_statement_by_id[prediction.statement_id]
+    return statement.text == reference_statement_by_id[
+        reference.reference_statement_id
+    ].exact_evidence_excerpt and _relative_prediction_span(prediction, statement) == (
+        reference.char_start,
+        reference.char_end,
+    )
+
+
+def _legal_outcome(
+    reference: SemanticReferenceMention,
+    prediction: SemanticMention,
+    field: str | None = None,
+) -> bool:
+    if reference.legal_reference is None or prediction.legal_reference is None:
+        return False
+    if field is None:
+        return reference.legal_reference == prediction.legal_reference
+    return cast(
+        "bool",
+        getattr(reference.legal_reference, field) == getattr(prediction.legal_reference, field),
+    )
+
+
 def _evaluate_document(
     document: SemanticDocument, annotation: SemanticReferenceAnnotation
 ) -> dict[str, Any]:
@@ -451,10 +642,6 @@ def _evaluate_document(
     reference_statements = [statement for page in annotation.pages for statement in page.statements]
     reference_statement_by_id = {
         statement.reference_statement_id: statement for statement in reference_statements
-    }
-    reference_statement_order = {
-        statement.reference_statement_id: index
-        for index, statement in enumerate(reference_statements)
     }
     reference_mentions = [mention for page in annotation.pages for mention in page.mentions]
     predictions = [
@@ -482,72 +669,68 @@ def _evaluate_document(
             ),
             [],
         ).append(prediction_item)
-    for reference_values in references_by_key.values():
-        reference_values.sort(
-            key=lambda item: (
-                reference_statement_order[item.reference_statement_id],
-                item.char_start,
-                item.char_end,
-                item.reference_mention_id,
-            )
-        )
-    for prediction_values in predictions_by_key.values():
-        prediction_values.sort(key=_prediction_order)
-    pairs: list[tuple[SemanticReferenceMention, SemanticMention]] = []
+    statements_by_id = {statement.id: statement for statement in document.statements}
+    resolved_pairs: list[tuple[SemanticReferenceMention, SemanticMention]] = []
+    ambiguous_groups: list[
+        tuple[
+            list[SemanticReferenceMention],
+            list[SemanticMention],
+            int,
+            list[tuple[int, int]],
+        ]
+    ] = []
     unmatched_references: list[SemanticReferenceMention] = []
     unmatched_predictions: list[SemanticMention] = []
+    matched_by_kind: Counter[str] = Counter()
     for key in sorted(set(references_by_key) | set(predictions_by_key)):
         references = references_by_key.get(key, [])
         predicted = predictions_by_key.get(key, [])
-        common = min(len(references), len(predicted))
-        pairs.extend(zip(references[:common], predicted[:common], strict=True))
-        unmatched_references.extend(references[common:])
-        unmatched_predictions.extend(predicted[common:])
-    statements_by_id = {statement.id: statement for statement in document.statements}
+        resolved, ambiguous, missing_references, extra_predictions = _pair_occurrence_group(
+            references,
+            predicted,
+            reference_statement_by_id=reference_statement_by_id,
+            prediction_statement_by_id=statements_by_id,
+        )
+        resolved_pairs.extend(resolved)
+        ambiguous_groups.extend(ambiguous)
+        unmatched_references.extend(missing_references)
+        unmatched_predictions.extend(extra_predictions)
+        matched_by_kind[key[1]] += min(len(references), len(predicted))
+    matched_count = sum(matched_by_kind.values())
     kinds: dict[str, dict[str, int | float | None]] = {}
     for kind in SemanticMentionKind:
-        kind_pairs = sum(reference.kind == kind for reference, _ in pairs)
         kinds[kind.value] = _metric(
-            kind_pairs,
+            matched_by_kind[kind.value],
             sum(item.kind == kind for item in unmatched_predictions),
             sum(item.kind == kind for item in unmatched_references),
         )
-    overall = _metric(len(pairs), len(unmatched_predictions), len(unmatched_references))
-    exact_span = 0
-    for reference, prediction in pairs:
-        anchor = prediction.evidence_anchors[0]
-        statement = statements_by_id[prediction.statement_id]
-        statement_anchor = statement.evidence_anchors[0]
-        if (
-            anchor.anchor_type == "text"
-            and statement_anchor.anchor_type == "text"
-            and statement.text
-            == reference_statement_by_id[reference.reference_statement_id].exact_evidence_excerpt
-            and anchor.char_start - statement_anchor.char_start == reference.char_start
-            and anchor.char_end - statement_anchor.char_start == reference.char_end
-        ):
-            exact_span += 1
-    reference_statement_counter = Counter(
-        (item.page_index, item.exact_evidence_excerpt) for item in reference_statements
+    overall = _metric(matched_count, len(unmatched_predictions), len(unmatched_references))
+    ambiguous_occurrences = sum(group[2] for group in ambiguous_groups)
+    exact_span = sum(
+        _exact_span_outcome(
+            reference,
+            prediction,
+            reference_statement_by_id,
+            statements_by_id,
+        )
+        for reference, prediction in resolved_pairs
     )
-    prediction_statement_counter = Counter(
-        (item.evidence_anchors[0].page_index, item.text)
-        for item in document.statements
-        if item.evidence_anchors[0].page_index in audited_pages
-    )
-    statement_hits = sum((reference_statement_counter & prediction_statement_counter).values())
+    exact_span_eligible = len(resolved_pairs)
+    exact_span_excluded = 0
     normalized_pairs = [
         (reference, prediction)
-        for reference, prediction in pairs
+        for reference, prediction in resolved_pairs
         if reference.normalized_value is not None
     ]
     normalized_exact = sum(
         reference.normalized_value == prediction.normalized_value
         for reference, prediction in normalized_pairs
     )
+    normalized_eligible = len(normalized_pairs)
+    normalized_excluded = 0
     legal_pairs = [
         (reference, prediction)
-        for reference, prediction in pairs
+        for reference, prediction in resolved_pairs
         if reference.kind == SemanticMentionKind.LEGAL_REFERENCE
     ]
     legal_fields = (
@@ -559,41 +742,113 @@ def _evaluate_document(
         "point",
         "scope",
     )
+    legal_exact = sum(
+        _legal_outcome(reference, prediction) for reference, prediction in legal_pairs
+    )
+    legal_eligible = len(legal_pairs)
+    legal_excluded = 0
+    legal_field_counts: dict[str, dict[str, int]] = {
+        field: {
+            "exact": sum(
+                _legal_outcome(reference, prediction, field)
+                for reference, prediction in legal_pairs
+            ),
+            "eligible": len(legal_pairs),
+            "ambiguous_excluded": 0,
+        }
+        for field in legal_fields
+    }
+    for references, predicted, count, possible_edges in ambiguous_groups:
+        span_outcomes = {
+            _exact_span_outcome(
+                references[reference_index],
+                predicted[prediction_index],
+                reference_statement_by_id,
+                statements_by_id,
+            )
+            for reference_index, prediction_index in possible_edges
+        }
+        if len(span_outcomes) == 1:
+            exact_span_eligible += count
+            exact_span += count * int(next(iter(span_outcomes)))
+        else:
+            exact_span_excluded += count
+
+        normalized_outcomes = {
+            (
+                references[reference_index].normalized_value is not None,
+                references[reference_index].normalized_value
+                == predicted[prediction_index].normalized_value,
+            )
+            for reference_index, prediction_index in possible_edges
+        }
+        if len(normalized_outcomes) == 1:
+            normalized_is_eligible, normalized_is_exact = next(iter(normalized_outcomes))
+            if normalized_is_eligible:
+                normalized_eligible += count
+                normalized_exact += count * int(normalized_is_exact)
+        elif any(outcome[0] for outcome in normalized_outcomes):
+            normalized_excluded += count
+
+        if references[0].kind != SemanticMentionKind.LEGAL_REFERENCE:
+            continue
+        legal_outcomes = {
+            _legal_outcome(references[reference_index], predicted[prediction_index])
+            for reference_index, prediction_index in possible_edges
+        }
+        if len(legal_outcomes) == 1:
+            legal_eligible += count
+            legal_exact += count * int(next(iter(legal_outcomes)))
+        else:
+            legal_excluded += count
+        for field in legal_fields:
+            field_outcomes = {
+                _legal_outcome(references[reference_index], predicted[prediction_index], field)
+                for reference_index, prediction_index in possible_edges
+            }
+            if len(field_outcomes) == 1:
+                legal_field_counts[field]["eligible"] += count
+                legal_field_counts[field]["exact"] += count * int(next(iter(field_outcomes)))
+            else:
+                legal_field_counts[field]["ambiguous_excluded"] += count
+
     legal_field_results: dict[str, dict[str, int | float | None]] = {}
     for field in legal_fields:
-        exact = sum(
-            reference.legal_reference is not None
-            and prediction.legal_reference is not None
-            and getattr(reference.legal_reference, field)
-            == getattr(prediction.legal_reference, field)
-            for reference, prediction in legal_pairs
-        )
+        counts = legal_field_counts[field]
         legal_field_results[field] = {
-            "exact": exact,
-            "eligible": len(legal_pairs),
-            "rate": exact / len(legal_pairs) if legal_pairs else None,
+            **counts,
+            "rate": counts["exact"] / counts["eligible"] if counts["eligible"] else None,
         }
-    legal_exact = sum(
-        reference.legal_reference == prediction.legal_reference
-        for reference, prediction in legal_pairs
+    reference_statement_counter = Counter(
+        (item.page_index, item.exact_evidence_excerpt) for item in reference_statements
     )
+    prediction_statement_counter = Counter(
+        (item.evidence_anchors[0].page_index, item.text)
+        for item in document.statements
+        if item.evidence_anchors[0].page_index in audited_pages
+    )
+    statement_hits = sum((reference_statement_counter & prediction_statement_counter).values())
     return {
         "mention_metrics": overall,
         "mention_metrics_by_kind": kinds,
+        "ambiguous_occurrence_pairing_count": ambiguous_occurrences,
         "exact_evidence_span_match": {
             "exact": exact_span,
-            "eligible": len(pairs),
-            "rate": exact_span / len(pairs) if pairs else None,
+            "eligible": exact_span_eligible,
+            "ambiguous_excluded": exact_span_excluded,
+            "rate": exact_span / exact_span_eligible if exact_span_eligible else None,
         },
         "normalized_value_exact_match": {
             "exact": normalized_exact,
-            "eligible": len(normalized_pairs),
-            "rate": normalized_exact / len(normalized_pairs) if normalized_pairs else None,
+            "eligible": normalized_eligible,
+            "ambiguous_excluded": normalized_excluded,
+            "rate": normalized_exact / normalized_eligible if normalized_eligible else None,
         },
         "legal_reference_component_exact_match": {
             "exact": legal_exact,
-            "eligible": len(legal_pairs),
-            "rate": legal_exact / len(legal_pairs) if legal_pairs else None,
+            "eligible": legal_eligible,
+            "ambiguous_excluded": legal_excluded,
+            "rate": legal_exact / legal_eligible if legal_eligible else None,
             "by_component": legal_field_results,
         },
         "statement_evidence_coverage": {
@@ -646,11 +901,16 @@ def _aggregate(results: list[dict[str, Any]]) -> dict[str, Any]:
     def rate(field: str, matched_key: str, reference_key: str) -> dict[str, int | float | None]:
         matched = sum(int(item[field][matched_key]) for item in results)
         reference = sum(int(item[field][reference_key]) for item in results)
-        return {
+        value: dict[str, int | float | None] = {
             matched_key: matched,
             reference_key: reference,
             "rate": matched / reference if reference else None,
         }
+        if any("ambiguous_excluded" in item[field] for item in results):
+            value["ambiguous_excluded"] = sum(
+                int(item[field]["ambiguous_excluded"]) for item in results
+            )
+        return value
 
     legal_components: dict[str, Any] = {}
     for field in (
@@ -670,9 +930,18 @@ def _aggregate(results: list[dict[str, Any]]) -> dict[str, Any]:
             int(item["legal_reference_component_exact_match"]["by_component"][field]["eligible"])
             for item in results
         )
+        ambiguous_excluded = sum(
+            int(
+                item["legal_reference_component_exact_match"]["by_component"][field].get(
+                    "ambiguous_excluded", 0
+                )
+            )
+            for item in results
+        )
         legal_components[field] = {
             "exact": exact,
             "eligible": eligible,
+            "ambiguous_excluded": ambiguous_excluded,
             "rate": exact / eligible if eligible else None,
         }
     legal_overall: dict[str, Any] = rate(
@@ -682,6 +951,9 @@ def _aggregate(results: list[dict[str, Any]]) -> dict[str, Any]:
     return {
         "mention_metrics": overall,
         "mention_metrics_by_kind": by_kind,
+        "ambiguous_occurrence_pairing_count": sum(
+            int(item["ambiguous_occurrence_pairing_count"]) for item in results
+        ),
         "exact_evidence_span_match": rate("exact_evidence_span_match", "exact", "eligible"),
         "normalized_value_exact_match": rate("normalized_value_exact_match", "exact", "eligible"),
         "legal_reference_component_exact_match": legal_overall,
@@ -715,41 +987,30 @@ def _bbox_overlap(
 def _evaluate_selector(
     selection: VLMSelectionResult, annotation: SemanticReferenceAnnotation
 ) -> dict[str, Any]:
-    references = sorted(
-        (item for page in annotation.pages for item in page.visual_assistance),
-        key=lambda item: item.reference_id,
-    )
-    predictions = sorted(selection.requests, key=lambda item: item.request_id)
-    available = set(range(len(predictions)))
-    matched: list[dict[str, Any]] = []
-    false_negatives: list[dict[str, Any]] = []
-    for reference in references:
-        candidates: list[tuple[float, float, int]] = []
-        for index in available:
-            prediction = predictions[index]
+    references = [item for page in annotation.pages for item in page.visual_assistance]
+    predictions = list(selection.requests)
+    candidate_edges: list[tuple[int, int, float]] = []
+    overlap_by_edge: dict[tuple[int, int], tuple[float, float]] = {}
+    for reference_index, reference in enumerate(references):
+        for prediction_index, prediction in enumerate(predictions):
             if prediction.page_index != reference.page_index or _task_family(
                 prediction.task_type
             ) != _task_family(reference.task_type):
                 continue
             iou, containment = _bbox_overlap(reference.bbox_normalized_1000, prediction.bbox)
             if iou >= 0.25 or containment >= 0.50:
-                candidates.append((iou, containment, index))
-        if not candidates:
-            false_negatives.append(
-                {
-                    "reference_id": reference.reference_id,
-                    "page_index": reference.page_index,
-                    "task_family": _task_family(reference.task_type),
-                }
-            )
-            continue
-        _, _, index = max(
-            candidates,
-            key=lambda item: (item[0], item[1], predictions[item[2]].request_id),
-        )
-        available.remove(index)
-        prediction = predictions[index]
-        iou, containment = _bbox_overlap(reference.bbox_normalized_1000, prediction.bbox)
+                overlap_by_edge[(reference_index, prediction_index)] = (iou, containment)
+                candidate_edges.append((reference_index, prediction_index, iou + containment))
+    matched_indices = _find_max_cardinality_max_weight_matching(
+        len(references), len(predictions), candidate_edges
+    )
+    used_references = {reference_index for reference_index, _, _ in matched_indices}
+    used_predictions = {prediction_index for _, prediction_index, _ in matched_indices}
+    matched: list[dict[str, Any]] = []
+    for reference_index, prediction_index, _ in matched_indices:
+        reference = references[reference_index]
+        prediction = predictions[prediction_index]
+        iou, containment = overlap_by_edge[(reference_index, prediction_index)]
         matched.append(
             {
                 "reference_id": reference.reference_id,
@@ -760,14 +1021,38 @@ def _evaluate_selector(
                 "reference_containment": containment,
             }
         )
+    matched.sort(
+        key=lambda item: (
+            item["page_index"],
+            item["task_family"],
+            item["reference_id"],
+            item["request_id"],
+        )
+    )
+    false_negatives = [
+        {
+            "reference_id": reference.reference_id,
+            "page_index": reference.page_index,
+            "task_family": _task_family(reference.task_type),
+        }
+        for index, reference in enumerate(references)
+        if index not in used_references
+    ]
+    false_negatives.sort(
+        key=lambda item: (item["page_index"], item["task_family"], item["reference_id"])
+    )
     false_positives = [
         {
             "request_id": predictions[index].request_id,
             "page_index": predictions[index].page_index,
             "task_family": _task_family(predictions[index].task_type),
         }
-        for index in sorted(available)
+        for index, prediction in enumerate(predictions)
+        if index not in used_predictions
     ]
+    false_positives.sort(
+        key=lambda item: (item["page_index"], item["task_family"], item["request_id"])
+    )
     budget_exhaustion = Counter(
         item.reason.value
         for item in selection.non_selections
@@ -783,7 +1068,15 @@ def _evaluate_selector(
             "unit": "one-to-one audited region/task-family",
             "iou_threshold": 0.25,
             "reference_containment_threshold": 0.50,
+            "optimization": "maximum cardinality, then maximum sum(iou + reference containment)",
         },
+        "matched_total_iou": fsum(float(item["iou"]) for item in matched),
+        "matched_total_reference_containment": fsum(
+            float(item["reference_containment"]) for item in matched
+        ),
+        "matched_total_overlap_quality": fsum(
+            float(item["iou"]) + float(item["reference_containment"]) for item in matched
+        ),
         "matched_regions": matched,
         "false_positive_regions": false_positives,
         "false_negative_regions": false_negatives,
@@ -820,7 +1113,15 @@ def _aggregate_selector(results: list[dict[str, Any]]) -> dict[str, Any]:
             "unit": "one-to-one audited region/task-family per parser representation",
             "iou_threshold": 0.25,
             "reference_containment_threshold": 0.50,
+            "optimization": "maximum cardinality, then maximum sum(iou + reference containment)",
         },
+        "matched_total_iou": fsum(float(item["matched_total_iou"]) for item in results),
+        "matched_total_reference_containment": fsum(
+            float(item["matched_total_reference_containment"]) for item in results
+        ),
+        "matched_total_overlap_quality": fsum(
+            float(item["matched_total_overlap_quality"]) for item in results
+        ),
         "selected_requests": selected,
         "eligible_requests": eligible,
         "requests_per_parser_representation": selected / len(results) if results else None,
@@ -1133,6 +1434,7 @@ Semantic reference v2/schema 2 covers six documents and 46 fixed pages. Each occ
 - Exact evidence-span rate: {evidence["text_only"]["exact_evidence_span_match"]["rate"]!r}.
 - Normalized-value exact rate: {evidence["text_only"]["normalized_value_exact_match"]["rate"]!r}.
 - Legal-reference component exact rate: {evidence["text_only"]["legal_reference_component_exact_match"]["rate"]!r}.
+- Ambiguous occurrence pairings: {evidence["text_only"]["ambiguous_occurrence_pairing_count"]}; excluded from span/normalized/legal submetrics: {evidence["text_only"]["exact_evidence_span_match"]["ambiguous_excluded"]}/{evidence["text_only"]["normalized_value_exact_match"]["ambiguous_excluded"]}/{evidence["text_only"]["legal_reference_component_exact_match"]["ambiguous_excluded"]}.
 - Statement exact-evidence coverage: {evidence["text_only"]["statement_evidence_coverage"]["rate"]!r}.
 
 | Kind | TP | FP | FN | Precision | Recall | F1 |
@@ -1143,7 +1445,8 @@ Semantic reference v2/schema 2 covers six documents and 46 fixed pages. Each occ
 
 - Selector audited-region/task-family P/R/F1: {selector["precision"]!r} / {selector["recall"]!r} / {selector["f1"]!r}.
 - Selected requests: {selector["selected_requests"]}; eligible requests: {selector["eligible_requests"]}; requests/representation: {selector["requests_per_parser_representation"]!r}; requests/source document across retained representations: {selector["requests_per_source_document"]!r}.
-- Matching is deterministic and one-to-one, requiring the same page and task family plus IoU >= 0.25 or audited-reference containment >= 0.50.
+- Matching is deterministic and one-to-one, requiring the same page and task family plus IoU >= 0.25 or audited-reference containment >= 0.50, then maximizing cardinality before total `IoU + reference containment` quality.
+- Matched overlap totals: IoU {selector["matched_total_iou"]!r}; reference containment {selector["matched_total_reference_containment"]!r}; combined quality {selector["matched_total_overlap_quality"]!r}.
 - Eligible selection reasons: `{json.dumps(selector["selection_reason_histogram"], sort_keys=True)}`; selected reasons: `{json.dumps(selector["selected_selection_reason_histogram"], sort_keys=True)}`; non-selection reasons: `{json.dumps(selector["non_selection_reason_histogram"], sort_keys=True)}`; budget exhaustion: `{json.dumps(selector["budget_exhaustion_counts"], sort_keys=True)}`.
 - TEXT_ONLY F1: {text["f1"]!r}.
 - SELECTIVE_VLM F1: {evidence["selective_vlm"]["mention_metrics"]["f1"]!r}; executed requests: 0; F1 delta: 0.0.
@@ -1177,7 +1480,7 @@ Cross-parser mention/path/value Jaccard consistency:
 
 ## Limitations
 
-Statements are exact direct-content spans, not paraphrases. Mentions use a controlled deterministic Vietnamese taxonomy. Detection matches occurrences one-to-one by page, kind, and raw text; normalized and legal-component correctness are measured only after raw occurrence matching. Failures remain `unresolved` unless evidence establishes a cause. Parser aggregates are representation-weighted: six source documents produce ten parser representations. Selector labels are audited PDF regions with task families, but remain AI-authored diagnostic evidence. No RAG, KG, cross-document citation resolution, or entity resolution is implemented.
+Statements are exact direct-content spans, not paraphrases. Mentions use a controlled deterministic Vietnamese taxonomy. Detection matches occurrences one-to-one by page, kind, and raw text. Duplicate groups are paired by exact audited/predicted statement text and relative span without using normalized or legal target fields; indistinguishable outcomes are excluded from attribute submetrics unless the scored result is invariant across every optimal pairing. Failures remain `unresolved` unless evidence establishes a cause. Parser aggregates are representation-weighted: six source documents produce ten parser representations. Selector labels are audited PDF regions with task families, but remain AI-authored diagnostic evidence. No RAG, KG, cross-document citation resolution, or entity resolution is implemented.
 """
 
 

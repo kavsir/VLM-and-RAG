@@ -259,54 +259,65 @@
         "f1": 0.746031746031746
       }
     },
+    "ambiguous_occurrence_pairing_count": 199,
     "exact_evidence_span_match": {
       "exact": 12,
       "eligible": 484,
-      "rate": 0.024793388429752067
+      "rate": 0.024793388429752067,
+      "ambiguous_excluded": 0
     },
     "normalized_value_exact_match": {
       "exact": 451,
       "eligible": 451,
-      "rate": 1.0
+      "rate": 1.0,
+      "ambiguous_excluded": 0
     },
     "legal_reference_component_exact_match": {
       "exact": 23,
       "eligible": 23,
       "rate": 1.0,
+      "ambiguous_excluded": 0,
       "by_component": {
         "instrument_type": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_raw": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_normalized": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "article": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "clause": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "point": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "scope": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         }
       }
@@ -368,54 +379,65 @@
         "f1": 0.746031746031746
       }
     },
+    "ambiguous_occurrence_pairing_count": 199,
     "exact_evidence_span_match": {
       "exact": 12,
       "eligible": 484,
-      "rate": 0.024793388429752067
+      "rate": 0.024793388429752067,
+      "ambiguous_excluded": 0
     },
     "normalized_value_exact_match": {
       "exact": 451,
       "eligible": 451,
-      "rate": 1.0
+      "rate": 1.0,
+      "ambiguous_excluded": 0
     },
     "legal_reference_component_exact_match": {
       "exact": 23,
       "eligible": 23,
       "rate": 1.0,
+      "ambiguous_excluded": 0,
       "by_component": {
         "instrument_type": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_raw": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_normalized": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "article": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "clause": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "point": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "scope": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         }
       }
@@ -445,8 +467,12 @@
     "matching_protocol": {
       "unit": "one-to-one audited region/task-family per parser representation",
       "iou_threshold": 0.25,
-      "reference_containment_threshold": 0.5
+      "reference_containment_threshold": 0.5,
+      "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
     },
+    "matched_total_iou": 2.590079027700335,
+    "matched_total_reference_containment": 3.4089126884069065,
+    "matched_total_overlap_quality": 5.998991716107242,
     "selected_requests": 112,
     "eligible_requests": 1899,
     "requests_per_parser_representation": 11.2,
@@ -490,8 +516,12 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 0.0,
+        "matched_total_reference_containment": 0.0,
+        "matched_total_overlap_quality": 0.0,
         "matched_regions": [],
         "false_positive_regions": [
           {
@@ -500,13 +530,18 @@
             "task_family": "transcription"
           },
           {
+            "request_id": "vlm-request-30798375d9def4e775f9a54a",
+            "page_index": 1,
+            "task_family": "transcription"
+          },
+          {
             "request_id": "vlm-request-16208b4862f25a963eac11ae",
             "page_index": 2,
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-30798375d9def4e775f9a54a",
-            "page_index": 1,
+            "request_id": "vlm-request-c99a139b16e2f9b9fef48387",
+            "page_index": 2,
             "task_family": "transcription"
           },
           {
@@ -515,18 +550,8 @@
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-4cbb5ba4475afb488bcb2b72",
-            "page_index": 16,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-589bfc671bd53abd224403b4",
-            "page_index": 14,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-678d8440b1a8778c1075baca",
-            "page_index": 16,
+            "request_id": "vlm-request-99770e22b67d0ffee10f31a2",
+            "page_index": 4,
             "task_family": "transcription"
           },
           {
@@ -535,18 +560,23 @@
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-99770e22b67d0ffee10f31a2",
-            "page_index": 4,
-            "task_family": "transcription"
-          },
-          {
             "request_id": "vlm-request-a182b10a4031961522982fab",
             "page_index": 13,
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-c99a139b16e2f9b9fef48387",
-            "page_index": 2,
+            "request_id": "vlm-request-589bfc671bd53abd224403b4",
+            "page_index": 14,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-4cbb5ba4475afb488bcb2b72",
+            "page_index": 16,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-678d8440b1a8778c1075baca",
+            "page_index": 16,
             "task_family": "transcription"
           },
           {
@@ -598,48 +628,17 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 0.0,
+        "matched_total_reference_containment": 0.0,
+        "matched_total_overlap_quality": 0.0,
         "matched_regions": [],
         "false_positive_regions": [
           {
-            "request_id": "vlm-request-10b3ab27ffa9b796a8046e6d",
-            "page_index": 20,
-            "task_family": "transcription"
-          },
-          {
             "request_id": "vlm-request-49799b7c0cf3275b5695b790",
             "page_index": 4,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-6067e8b3771aa42444dedd69",
-            "page_index": 13,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-75c2bd9081d244683960e955",
-            "page_index": 32,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-86ec7240eaefe0a8d27b09d4",
-            "page_index": 12,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-897b5e639b267f43b2802bc1",
-            "page_index": 19,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-9dab08fea87f9f03a29b853b",
-            "page_index": 10,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-adb515c2c9207d6ffcc9f4df",
-            "page_index": 24,
             "task_family": "transcription"
           },
           {
@@ -650,6 +649,41 @@
           {
             "request_id": "vlm-request-c432714b16cdae49a4d35691",
             "page_index": 8,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-9dab08fea87f9f03a29b853b",
+            "page_index": 10,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-86ec7240eaefe0a8d27b09d4",
+            "page_index": 12,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-6067e8b3771aa42444dedd69",
+            "page_index": 13,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-897b5e639b267f43b2802bc1",
+            "page_index": 19,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-10b3ab27ffa9b796a8046e6d",
+            "page_index": 20,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-adb515c2c9207d6ffcc9f4df",
+            "page_index": 24,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-75c2bd9081d244683960e955",
+            "page_index": 32,
             "task_family": "transcription"
           },
           {
@@ -707,13 +741,47 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 0.0,
+        "matched_total_reference_containment": 0.0,
+        "matched_total_overlap_quality": 0.0,
         "matched_regions": [],
         "false_positive_regions": [
           {
+            "request_id": "vlm-request-59be29d31f74ea19ca03936f",
+            "page_index": 3,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-dfeacb975e8e8c0b239fa582",
+            "page_index": 3,
+            "task_family": "transcription"
+          },
+          {
             "request_id": "vlm-request-2d4e4c353b12020d5ff70a7d",
             "page_index": 11,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-904faecf1ac4a0ae81a7bbe5",
+            "page_index": 11,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-518633397e3a4ec2e4eee096",
+            "page_index": 12,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-607707115ca4d19026bf4deb",
+            "page_index": 12,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-60762510c720d0866ee3d8b6",
+            "page_index": 16,
             "task_family": "transcription"
           },
           {
@@ -727,23 +795,8 @@
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-518633397e3a4ec2e4eee096",
-            "page_index": 12,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-59be29d31f74ea19ca03936f",
-            "page_index": 3,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-60762510c720d0866ee3d8b6",
-            "page_index": 16,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-607707115ca4d19026bf4deb",
-            "page_index": 12,
+            "request_id": "vlm-request-fe0ffb069b69852af7ad4cc5",
+            "page_index": 19,
             "task_family": "transcription"
           },
           {
@@ -752,45 +805,30 @@
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-904faecf1ac4a0ae81a7bbe5",
-            "page_index": 11,
-            "task_family": "transcription"
-          },
-          {
             "request_id": "vlm-request-d3df98d67c3dcc0e9eb8e210",
             "page_index": 20,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-dfeacb975e8e8c0b239fa582",
-            "page_index": 3,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-fe0ffb069b69852af7ad4cc5",
-            "page_index": 19,
             "task_family": "transcription"
           }
         ],
         "false_negative_regions": [
-          {
-            "reference_id": "visual-ref-047b677337e945c33ac2a3f5",
-            "page_index": 51,
-            "task_family": "table"
-          },
           {
             "reference_id": "visual-ref-34cf0d9ce26c55852630e99d",
             "page_index": 50,
             "task_family": "table"
           },
           {
-            "reference_id": "visual-ref-3947ec0f545f19a914e7e255",
+            "reference_id": "visual-ref-76d1d7cfdebf910fde92587c",
+            "page_index": 50,
+            "task_family": "table"
+          },
+          {
+            "reference_id": "visual-ref-047b677337e945c33ac2a3f5",
             "page_index": 51,
             "task_family": "table"
           },
           {
-            "reference_id": "visual-ref-76d1d7cfdebf910fde92587c",
-            "page_index": 50,
+            "reference_id": "visual-ref-3947ec0f545f19a914e7e255",
+            "page_index": 51,
             "task_family": "table"
           }
         ],
@@ -832,53 +870,22 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 0.0,
+        "matched_total_reference_containment": 0.0,
+        "matched_total_overlap_quality": 0.0,
         "matched_regions": [],
         "false_positive_regions": [
-          {
-            "request_id": "vlm-request-0b3226cc9ad88ac5398eee13",
-            "page_index": 18,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-1c6b208efe4907189be2f1fa",
-            "page_index": 6,
-            "task_family": "transcription"
-          },
           {
             "request_id": "vlm-request-3a4f7bb25a5a6d786a385b47",
             "page_index": 0,
             "task_family": "figure"
           },
           {
-            "request_id": "vlm-request-627d5bbe0a95be051ced8f95",
-            "page_index": 14,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-65d15711af9aff2683b7b7e7",
-            "page_index": 12,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-896710840e1d08f12da5cba9",
-            "page_index": 7,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-900549e085324f34c031b47f",
-            "page_index": 7,
-            "task_family": "transcription"
-          },
-          {
             "request_id": "vlm-request-9a18f9feb34e88a94388acd4",
             "page_index": 1,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-ad5a7773a50b690d8bfa945c",
-            "page_index": 13,
             "task_family": "transcription"
           },
           {
@@ -892,8 +899,43 @@
             "task_family": "transcription"
           },
           {
+            "request_id": "vlm-request-1c6b208efe4907189be2f1fa",
+            "page_index": 6,
+            "task_family": "transcription"
+          },
+          {
             "request_id": "vlm-request-d6960e13dcbf528afc204e6c",
             "page_index": 6,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-896710840e1d08f12da5cba9",
+            "page_index": 7,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-900549e085324f34c031b47f",
+            "page_index": 7,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-65d15711af9aff2683b7b7e7",
+            "page_index": 12,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-ad5a7773a50b690d8bfa945c",
+            "page_index": 13,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-627d5bbe0a95be051ced8f95",
+            "page_index": 14,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-0b3226cc9ad88ac5398eee13",
+            "page_index": 18,
             "task_family": "transcription"
           }
         ],
@@ -946,8 +988,12 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 0.2532924308639834,
+        "matched_total_reference_containment": 0.3016337914622623,
+        "matched_total_overlap_quality": 0.5549262223262457,
         "matched_regions": [
           {
             "reference_id": "visual-ref-35e41d82c7d108317e0df6bf",
@@ -960,13 +1006,18 @@
         ],
         "false_positive_regions": [
           {
-            "request_id": "vlm-request-155e88c299bc7177fa230e76",
-            "page_index": 2,
+            "request_id": "vlm-request-c003fbbe48470e286ed5f83e",
+            "page_index": 0,
+            "task_family": "figure"
+          },
+          {
+            "request_id": "vlm-request-abddde069eed1702ad9ec0f8",
+            "page_index": 0,
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-29def5664159b4d173250017",
-            "page_index": 10,
+            "request_id": "vlm-request-155e88c299bc7177fa230e76",
+            "page_index": 2,
             "task_family": "transcription"
           },
           {
@@ -975,12 +1026,12 @@
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-5c26b2c1a1251ad92bf7ddb4",
-            "page_index": 11,
-            "task_family": "table"
+            "request_id": "vlm-request-9e374e2b10c46565e04e07c1",
+            "page_index": 7,
+            "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-9e374e2b10c46565e04e07c1",
+            "request_id": "vlm-request-bf2ab8d4043d3b9ee7bf1b3d",
             "page_index": 7,
             "task_family": "transcription"
           },
@@ -990,24 +1041,19 @@
             "task_family": "table"
           },
           {
-            "request_id": "vlm-request-abddde069eed1702ad9ec0f8",
-            "page_index": 0,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-bf2ab8d4043d3b9ee7bf1b3d",
-            "page_index": 7,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-c003fbbe48470e286ed5f83e",
-            "page_index": 0,
-            "task_family": "figure"
-          },
-          {
             "request_id": "vlm-request-d05bd2889be3d0943dc7940c",
             "page_index": 8,
             "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-29def5664159b4d173250017",
+            "page_index": 10,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-5c26b2c1a1251ad92bf7ddb4",
+            "page_index": 11,
+            "task_family": "table"
           },
           {
             "request_id": "vlm-request-f89fbddadd82a59a162c43ed",
@@ -1017,6 +1063,11 @@
         ],
         "false_negative_regions": [
           {
+            "reference_id": "visual-ref-550a9e1373f7cbbd93aa5e83",
+            "page_index": 5,
+            "task_family": "table"
+          },
+          {
             "reference_id": "visual-ref-106291f81d3ec03cacdc7c5e",
             "page_index": 10,
             "task_family": "table"
@@ -1024,11 +1075,6 @@
           {
             "reference_id": "visual-ref-1e92662be9982cca67ae3ae2",
             "page_index": 18,
-            "task_family": "table"
-          },
-          {
-            "reference_id": "visual-ref-550a9e1373f7cbbd93aa5e83",
-            "page_index": 5,
             "task_family": "table"
           }
         ],
@@ -1075,8 +1121,12 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 0.681804892062919,
+        "matched_total_reference_containment": 0.9144927536231884,
+        "matched_total_overlap_quality": 1.5962976456861075,
         "matched_regions": [
           {
             "reference_id": "visual-ref-550a9e1373f7cbbd93aa5e83",
@@ -1089,18 +1139,8 @@
         ],
         "false_positive_regions": [
           {
-            "request_id": "vlm-request-41486faadfb1e6199d897c20",
-            "page_index": 10,
-            "task_family": "transcription"
-          },
-          {
             "request_id": "vlm-request-4ac4590d28243d52b958db66",
             "page_index": 3,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-627514b7f9b4705257d55b1e",
-            "page_index": 8,
             "task_family": "transcription"
           },
           {
@@ -1109,23 +1149,13 @@
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-945f44946ee5c8ff09dc0c06",
-            "page_index": 9,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-958657d18b5563c34403092c",
-            "page_index": 8,
-            "task_family": "transcription"
+            "request_id": "vlm-request-dad1506a41f011df971c4e18",
+            "page_index": 6,
+            "task_family": "table"
           },
           {
             "request_id": "vlm-request-9e374e2b10c46565e04e07c1",
             "page_index": 7,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-a16dcee6a6fda4affde47440",
-            "page_index": 9,
             "task_family": "transcription"
           },
           {
@@ -1134,14 +1164,34 @@
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-c6116adc86301793b007a3e3",
+            "request_id": "vlm-request-627514b7f9b4705257d55b1e",
+            "page_index": 8,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-958657d18b5563c34403092c",
+            "page_index": 8,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-945f44946ee5c8ff09dc0c06",
+            "page_index": 9,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-a16dcee6a6fda4affde47440",
+            "page_index": 9,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-41486faadfb1e6199d897c20",
             "page_index": 10,
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-dad1506a41f011df971c4e18",
-            "page_index": 6,
-            "task_family": "table"
+            "request_id": "vlm-request-c6116adc86301793b007a3e3",
+            "page_index": 10,
+            "task_family": "transcription"
           }
         ],
         "false_negative_regions": [
@@ -1151,13 +1201,13 @@
             "task_family": "table"
           },
           {
-            "reference_id": "visual-ref-1e92662be9982cca67ae3ae2",
-            "page_index": 18,
+            "reference_id": "visual-ref-35e41d82c7d108317e0df6bf",
+            "page_index": 15,
             "task_family": "table"
           },
           {
-            "reference_id": "visual-ref-35e41d82c7d108317e0df6bf",
-            "page_index": 15,
+            "reference_id": "visual-ref-1e92662be9982cca67ae3ae2",
+            "page_index": 18,
             "task_family": "table"
           }
         ],
@@ -1204,8 +1254,12 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 1.1691399304766372,
+        "matched_total_reference_containment": 1.4376230998431951,
+        "matched_total_overlap_quality": 2.6067630303198324,
         "matched_regions": [
           {
             "reference_id": "visual-ref-475a0097b79cf7b61056d9e3",
@@ -1226,26 +1280,6 @@
         ],
         "false_positive_regions": [
           {
-            "request_id": "vlm-request-0b9c13ca3561e1dd06617ab8",
-            "page_index": 31,
-            "task_family": "table"
-          },
-          {
-            "request_id": "vlm-request-12f00b32ec342dc133ecb3ec",
-            "page_index": 40,
-            "task_family": "table"
-          },
-          {
-            "request_id": "vlm-request-3d4a475802a174988b50fef2",
-            "page_index": 42,
-            "task_family": "table"
-          },
-          {
-            "request_id": "vlm-request-477bb20db5676904c25429e8",
-            "page_index": 39,
-            "task_family": "table"
-          },
-          {
             "request_id": "vlm-request-4d4316072e9cb5fbdecce480",
             "page_index": 28,
             "task_family": "table"
@@ -1261,8 +1295,13 @@
             "task_family": "table"
           },
           {
-            "request_id": "vlm-request-aaad2f9108b6b9664d6855b4",
-            "page_index": 41,
+            "request_id": "vlm-request-0b9c13ca3561e1dd06617ab8",
+            "page_index": 31,
+            "task_family": "table"
+          },
+          {
+            "request_id": "vlm-request-d1acd729a2167e942e530164",
+            "page_index": 35,
             "task_family": "table"
           },
           {
@@ -1271,8 +1310,23 @@
             "task_family": "table"
           },
           {
-            "request_id": "vlm-request-d1acd729a2167e942e530164",
-            "page_index": 35,
+            "request_id": "vlm-request-477bb20db5676904c25429e8",
+            "page_index": 39,
+            "task_family": "table"
+          },
+          {
+            "request_id": "vlm-request-12f00b32ec342dc133ecb3ec",
+            "page_index": 40,
+            "task_family": "table"
+          },
+          {
+            "request_id": "vlm-request-aaad2f9108b6b9664d6855b4",
+            "page_index": 41,
+            "task_family": "table"
+          },
+          {
+            "request_id": "vlm-request-3d4a475802a174988b50fef2",
+            "page_index": 42,
             "task_family": "table"
           }
         ],
@@ -1332,8 +1386,12 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 0.4858417742967956,
+        "matched_total_reference_containment": 0.7551630434782609,
+        "matched_total_overlap_quality": 1.2410048177750566,
         "matched_regions": [
           {
             "reference_id": "visual-ref-5c797051a35c596a3669e080",
@@ -1346,9 +1404,24 @@
         ],
         "false_positive_regions": [
           {
-            "request_id": "vlm-request-0a238ecaccde3ced6ce6a4c5",
-            "page_index": 40,
-            "task_family": "table"
+            "request_id": "vlm-request-b07e82ef46635c9f126ece16",
+            "page_index": 4,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-a1718fc39227d77fba4d863d",
+            "page_index": 18,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-29e955222f419e3f0072ee98",
+            "page_index": 21,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-6da78504f519bb4ecf402148",
+            "page_index": 22,
+            "task_family": "transcription"
           },
           {
             "request_id": "vlm-request-0a6503e3c25b4164c026a2a0",
@@ -1356,14 +1429,24 @@
             "task_family": "transcription"
           },
           {
+            "request_id": "vlm-request-ce1947b7351bd9950ad2d181",
+            "page_index": 29,
+            "task_family": "table"
+          },
+          {
             "request_id": "vlm-request-120c1cdbf9f4ec2c7b0fb65d",
             "page_index": 36,
             "task_family": "table"
           },
           {
-            "request_id": "vlm-request-29e955222f419e3f0072ee98",
-            "page_index": 21,
-            "task_family": "transcription"
+            "request_id": "vlm-request-0a238ecaccde3ced6ce6a4c5",
+            "page_index": 40,
+            "task_family": "table"
+          },
+          {
+            "request_id": "vlm-request-d7290f6ed87c547a9c518459",
+            "page_index": 41,
+            "task_family": "table"
           },
           {
             "request_id": "vlm-request-45c0328c7cf5d600a6704472",
@@ -1373,31 +1456,6 @@
           {
             "request_id": "vlm-request-4add1dadde9d480993a3f192",
             "page_index": 43,
-            "task_family": "table"
-          },
-          {
-            "request_id": "vlm-request-6da78504f519bb4ecf402148",
-            "page_index": 22,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-a1718fc39227d77fba4d863d",
-            "page_index": 18,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-b07e82ef46635c9f126ece16",
-            "page_index": 4,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-ce1947b7351bd9950ad2d181",
-            "page_index": 29,
-            "task_family": "table"
-          },
-          {
-            "request_id": "vlm-request-d7290f6ed87c547a9c518459",
-            "page_index": 41,
             "task_family": "table"
           }
         ],
@@ -1463,28 +1521,37 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 0.0,
+        "matched_total_reference_containment": 0.0,
+        "matched_total_overlap_quality": 0.0,
         "matched_regions": [],
         "false_positive_regions": [
-          {
-            "request_id": "vlm-request-1e8cfcfaafc7c1518d022893",
-            "page_index": 1,
-            "task_family": "transcription"
-          },
           {
             "request_id": "vlm-request-31f0676c06a061a4e3cfe14d",
             "page_index": 0,
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-4ef92a155d1fe801fabe057b",
-            "page_index": 2,
+            "request_id": "vlm-request-ef20d6bd0fd35544a4f7b38f",
+            "page_index": 0,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-1e8cfcfaafc7c1518d022893",
+            "page_index": 1,
             "task_family": "transcription"
           },
           {
             "request_id": "vlm-request-5859a9818da3581615f853c3",
             "page_index": 1,
+            "task_family": "transcription"
+          },
+          {
+            "request_id": "vlm-request-4ef92a155d1fe801fabe057b",
+            "page_index": 2,
             "task_family": "transcription"
           },
           {
@@ -1498,22 +1565,12 @@
             "task_family": "figure"
           },
           {
-            "request_id": "vlm-request-ef20d6bd0fd35544a4f7b38f",
-            "page_index": 0,
-            "task_family": "transcription"
-          },
-          {
             "request_id": "vlm-request-fbb773338e4f1db88b33121a",
             "page_index": 3,
             "task_family": "transcription"
           }
         ],
         "false_negative_regions": [
-          {
-            "reference_id": "visual-ref-1d92afa8de74da53b7aceb33",
-            "page_index": 3,
-            "task_family": "transcription"
-          },
           {
             "reference_id": "visual-ref-726ab2a22b8d290f33efeafc",
             "page_index": 0,
@@ -1527,6 +1584,11 @@
           {
             "reference_id": "visual-ref-fd6917214f9e999220e4af4b",
             "page_index": 2,
+            "task_family": "transcription"
+          },
+          {
+            "reference_id": "visual-ref-1d92afa8de74da53b7aceb33",
+            "page_index": 3,
             "task_family": "transcription"
           }
         ],
@@ -1565,28 +1627,27 @@
         "matching_protocol": {
           "unit": "one-to-one audited region/task-family",
           "iou_threshold": 0.25,
-          "reference_containment_threshold": 0.5
+          "reference_containment_threshold": 0.5,
+          "optimization": "maximum cardinality, then maximum sum(iou + reference containment)"
         },
+        "matched_total_iou": 0.0,
+        "matched_total_reference_containment": 0.0,
+        "matched_total_overlap_quality": 0.0,
         "matched_regions": [],
         "false_positive_regions": [
           {
-            "request_id": "vlm-request-542189d9c2975a1e77aafcdb",
-            "page_index": 3,
+            "request_id": "vlm-request-9b1b6153e5b7e198e263923e",
+            "page_index": 0,
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-56b0841c12021f5c2b5743f8",
-            "page_index": 3,
-            "task_family": "figure"
+            "request_id": "vlm-request-dfaa58c3023942734dd8dbad",
+            "page_index": 0,
+            "task_family": "transcription"
           },
           {
             "request_id": "vlm-request-7a29eb01ca867095ccbd149b",
             "page_index": 1,
-            "task_family": "transcription"
-          },
-          {
-            "request_id": "vlm-request-9b1b6153e5b7e198e263923e",
-            "page_index": 0,
             "task_family": "transcription"
           },
           {
@@ -1600,22 +1661,22 @@
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-dfaa58c3023942734dd8dbad",
-            "page_index": 0,
+            "request_id": "vlm-request-ed8d42a0f873220d2d589f2d",
+            "page_index": 2,
             "task_family": "transcription"
           },
           {
-            "request_id": "vlm-request-ed8d42a0f873220d2d589f2d",
-            "page_index": 2,
+            "request_id": "vlm-request-56b0841c12021f5c2b5743f8",
+            "page_index": 3,
+            "task_family": "figure"
+          },
+          {
+            "request_id": "vlm-request-542189d9c2975a1e77aafcdb",
+            "page_index": 3,
             "task_family": "transcription"
           }
         ],
         "false_negative_regions": [
-          {
-            "reference_id": "visual-ref-1d92afa8de74da53b7aceb33",
-            "page_index": 3,
-            "task_family": "transcription"
-          },
           {
             "reference_id": "visual-ref-726ab2a22b8d290f33efeafc",
             "page_index": 0,
@@ -1629,6 +1690,11 @@
           {
             "reference_id": "visual-ref-fd6917214f9e999220e4af4b",
             "page_index": 2,
+            "task_family": "transcription"
+          },
+          {
+            "reference_id": "visual-ref-1d92afa8de74da53b7aceb33",
+            "page_index": 3,
             "task_family": "transcription"
           }
         ],
@@ -1712,54 +1778,65 @@
         "f1": 0.7377777777777776
       }
     },
+    "ambiguous_occurrence_pairing_count": 120,
     "exact_evidence_span_match": {
       "exact": 7,
       "eligible": 297,
-      "rate": 0.02356902356902357
+      "rate": 0.02356902356902357,
+      "ambiguous_excluded": 0
     },
     "normalized_value_exact_match": {
       "exact": 270,
       "eligible": 270,
-      "rate": 1.0
+      "rate": 1.0,
+      "ambiguous_excluded": 0
     },
     "legal_reference_component_exact_match": {
       "exact": 22,
       "eligible": 22,
       "rate": 1.0,
+      "ambiguous_excluded": 0,
       "by_component": {
         "instrument_type": {
           "exact": 22,
           "eligible": 22,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_raw": {
           "exact": 22,
           "eligible": 22,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_normalized": {
           "exact": 22,
           "eligible": 22,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "article": {
           "exact": 22,
           "eligible": 22,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "clause": {
           "exact": 22,
           "eligible": 22,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "point": {
           "exact": 22,
           "eligible": 22,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "scope": {
           "exact": 22,
           "eligible": 22,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         }
       }
@@ -1821,54 +1898,65 @@
         "f1": 0.7581699346405228
       }
     },
+    "ambiguous_occurrence_pairing_count": 79,
     "exact_evidence_span_match": {
       "exact": 5,
       "eligible": 187,
-      "rate": 0.026737967914438502
+      "rate": 0.026737967914438502,
+      "ambiguous_excluded": 0
     },
     "normalized_value_exact_match": {
       "exact": 181,
       "eligible": 181,
-      "rate": 1.0
+      "rate": 1.0,
+      "ambiguous_excluded": 0
     },
     "legal_reference_component_exact_match": {
       "exact": 1,
       "eligible": 1,
       "rate": 1.0,
+      "ambiguous_excluded": 0,
       "by_component": {
         "instrument_type": {
           "exact": 1,
           "eligible": 1,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_raw": {
           "exact": 1,
           "eligible": 1,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_normalized": {
           "exact": 1,
           "eligible": 1,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "article": {
           "exact": 1,
           "eligible": 1,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "clause": {
           "exact": 1,
           "eligible": 1,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "point": {
           "exact": 1,
           "eligible": 1,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "scope": {
           "exact": 1,
           "eligible": 1,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         }
       }
@@ -1930,54 +2018,65 @@
         "f1": 0.746031746031746
       }
     },
+    "ambiguous_occurrence_pairing_count": 199,
     "exact_evidence_span_match": {
       "exact": 12,
       "eligible": 484,
-      "rate": 0.024793388429752067
+      "rate": 0.024793388429752067,
+      "ambiguous_excluded": 0
     },
     "normalized_value_exact_match": {
       "exact": 451,
       "eligible": 451,
-      "rate": 1.0
+      "rate": 1.0,
+      "ambiguous_excluded": 0
     },
     "legal_reference_component_exact_match": {
       "exact": 23,
       "eligible": 23,
       "rate": 1.0,
+      "ambiguous_excluded": 0,
       "by_component": {
         "instrument_type": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_raw": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "instrument_number_normalized": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "article": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "clause": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "point": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         },
         "scope": {
           "exact": 23,
           "eligible": 23,
+          "ambiguous_excluded": 0,
           "rate": 1.0
         }
       }

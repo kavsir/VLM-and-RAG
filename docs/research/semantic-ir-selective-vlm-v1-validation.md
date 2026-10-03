@@ -12,6 +12,7 @@ Semantic reference v2/schema 2 covers six documents and 46 fixed pages. Each occ
 - Exact evidence-span rate: 0.024793388429752067.
 - Normalized-value exact rate: 1.0.
 - Legal-reference component exact rate: 1.0.
+- Ambiguous occurrence pairings: 199; excluded from span/normalized/legal submetrics: 0/0/0.
 - Statement exact-evidence coverage: 0.04585152838427948.
 
 | Kind | TP | FP | FN | Precision | Recall | F1 |
@@ -26,7 +27,8 @@ Semantic reference v2/schema 2 covers six documents and 46 fixed pages. Each occ
 
 - Selector audited-region/task-family P/R/F1: 0.044642857142857144 / 0.1724137931034483 / 0.07092198581560284.
 - Selected requests: 112; eligible requests: 1899; requests/representation: 11.2; requests/source document across retained representations: 18.666666666666668.
-- Matching is deterministic and one-to-one, requiring the same page and task family plus IoU >= 0.25 or audited-reference containment >= 0.50.
+- Matching is deterministic and one-to-one, requiring the same page and task family plus IoU >= 0.25 or audited-reference containment >= 0.50, then maximizing cardinality before total `IoU + reference containment` quality.
+- Matched overlap totals: IoU 2.590079027700335; reference containment 3.4089126884069065; combined quality 5.998991716107242.
 - Eligible selection reasons: `{"empty_or_text_deficient_visual_region": 6, "ocr_corruption_signal": 311, "table_missing_structure": 25, "unknown_text_extraction": 1557}`; selected reasons: `{"empty_or_text_deficient_visual_region": 6, "ocr_corruption_signal": 76, "table_missing_structure": 23, "unknown_text_extraction": 7}`; non-selection reasons: `{"document_budget_exhausted": 1406, "page_budget_exhausted": 151, "unsupported_visual_source": 230}`; budget exhaustion: `{"document_budget_exhausted": 1406, "page_budget_exhausted": 151}`.
 - TEXT_ONLY F1: 0.8454148471615721.
 - SELECTIVE_VLM F1: 0.8454148471615721; executed requests: 0; F1 delta: 0.0.
@@ -63,4 +65,4 @@ Cross-parser mention/path/value Jaccard consistency:
 
 ## Limitations
 
-Statements are exact direct-content spans, not paraphrases. Mentions use a controlled deterministic Vietnamese taxonomy. Detection matches occurrences one-to-one by page, kind, and raw text; normalized and legal-component correctness are measured only after raw occurrence matching. Failures remain `unresolved` unless evidence establishes a cause. Parser aggregates are representation-weighted: six source documents produce ten parser representations. Selector labels are audited PDF regions with task families, but remain AI-authored diagnostic evidence. No RAG, KG, cross-document citation resolution, or entity resolution is implemented.
+Statements are exact direct-content spans, not paraphrases. Mentions use a controlled deterministic Vietnamese taxonomy. Detection matches occurrences one-to-one by page, kind, and raw text. Duplicate groups are paired by exact audited/predicted statement text and relative span without using normalized or legal target fields; indistinguishable outcomes are excluded from attribute submetrics unless the scored result is invariant across every optimal pairing. Failures remain `unresolved` unless evidence establishes a cause. Parser aggregates are representation-weighted: six source documents produce ten parser representations. Selector labels are audited PDF regions with task families, but remain AI-authored diagnostic evidence. No RAG, KG, cross-document citation resolution, or entity resolution is implemented.

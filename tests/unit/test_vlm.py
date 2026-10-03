@@ -17,9 +17,21 @@ from vlm_rag.physical_ir import (
     PhysicalPageV1,
     TextExtractionEvidence,
     TextExtractionMethod,
+    physical_document_v1_to_json,
 )
-from vlm_rag.semantic_ir import SemanticMentionKind, build_semantic_document
-from vlm_rag.structural_ir import VietnameseStructuralExtractor
+from vlm_rag.semantic_ir import (
+    SemanticMentionKind,
+    SemanticProvenanceKind,
+    SemanticSourceIntegrityError,
+    VisualObservation,
+    VisualSemanticAnchor,
+    build_semantic_document,
+)
+from vlm_rag.structural_ir import (
+    StructuralDocument,
+    VietnameseStructuralExtractor,
+    structural_document_to_json,
+)
 from vlm_rag.vlm import (
     PROMPT_VERSION,
     RawVLMResponse,
@@ -139,6 +151,52 @@ def _image() -> ResolvedVisualEvidence:
         media_type="image/png",
         width=100,
         height=100,
+    )
+
+
+def _direct_observation(
+    physical: PhysicalDocumentV1,
+    structural: StructuralDocument,
+    *,
+    source_block_ids: tuple[str, ...],
+    structural_node_id: str,
+    structural_canonical_path: str,
+) -> VisualObservation:
+    block = next(
+        block for page in physical.pages for block in page.blocks if block.id == source_block_ids[0]
+    )
+    return VisualObservation(
+        id=f"direct-observation-{'-'.join(source_block_ids)}",
+        request_id=f"direct-request-{'-'.join(source_block_ids)}",
+        document_id=physical.document_id,
+        version_id=physical.version_id,
+        source_artifact_sha256=physical.source_artifact_sha256,
+        source_physical_ir_sha256=hashlib.sha256(
+            physical_document_v1_to_json(physical).encode()
+        ).hexdigest(),
+        source_structural_ir_sha256=hashlib.sha256(
+            structural_document_to_json(structural).encode()
+        ).hexdigest(),
+        structural_node_id=structural_node_id,
+        structural_canonical_path=structural_canonical_path,
+        request_record_sha256="a" * 64,
+        model_id="direct-fixture-model",
+        provider_protocol="direct-fixture-protocol",
+        prompt_version=PROMPT_VERSION,
+        raw_response_sha256="b" * 64,
+        image_sha256=IMAGE_SHA,
+        task_type="ocr_recovery",
+        source_block_ids=source_block_ids,
+        text="Quốc hội",
+        evidence_anchor=VisualSemanticAnchor(
+            source_artifact_sha256=physical.source_artifact_sha256,
+            page_index=block.page_index,
+            bbox=block.bbox,
+            render_or_asset_sha256=IMAGE_SHA,
+            byte_size=len(IMAGE_BYTES),
+            media_type="image/png",
+        ),
+        provenance=SemanticProvenanceKind.VLM_TRANSCRIPTION,
     )
 
 
@@ -349,6 +407,136 @@ def test_selector_rejects_whole_block_with_multiple_structural_owners() -> None:
     ]
 
 
+def test_builder_rejects_direct_observation_with_ambiguous_structural_owner() -> None:
+    text = "Điều 1. Tiêu đề\nNội dung thân\n1. Khoản một\nNội dung khoản"
+    base = _document()
+    physical = base.model_copy(
+        update={"pages": (base.pages[0].model_copy(update={"blocks": (_block(0, text),)}),)}
+    )
+    structural = VietnameseStructuralExtractor().extract(physical)
+    owners = [
+        node
+        for node in structural.nodes
+        if any(anchor.block_id == "b0" for anchor in node.direct_content_anchors)
+    ]
+    assert len(owners) > 1
+    observation = _direct_observation(
+        physical,
+        structural,
+        source_block_ids=("b0",),
+        structural_node_id=owners[0].id,
+        structural_canonical_path=owners[0].canonical_path,
+    )
+    with pytest.raises(SemanticSourceIntegrityError, match="ambiguous structural owner"):
+        build_semantic_document(physical, structural, visual_observations=(observation,))
+
+
+def test_builder_enforces_unique_owner_context_for_direct_multiblock_observations() -> None:
+    same_owner_base = _document(3)
+    same_owner_texts = ("Điều 1. A", "Nội dung một", "Nội dung hai")
+    same_owner_physical = same_owner_base.model_copy(
+        update={
+            "pages": (
+                same_owner_base.pages[0].model_copy(
+                    update={
+                        "blocks": tuple(
+                            _block(index, text) for index, text in enumerate(same_owner_texts)
+                        )
+                    }
+                ),
+            )
+        }
+    )
+    same_owner_structural = VietnameseStructuralExtractor().extract(same_owner_physical)
+    owner = next(
+        node
+        for node in same_owner_structural.nodes
+        if any(anchor.block_id == "b1" for anchor in node.direct_content_anchors)
+    )
+    unique = _direct_observation(
+        same_owner_physical,
+        same_owner_structural,
+        source_block_ids=("b1",),
+        structural_node_id=owner.id,
+        structural_canonical_path=owner.canonical_path,
+    )
+    build_semantic_document(
+        same_owner_physical, same_owner_structural, visual_observations=(unique,)
+    )
+    same_owner_multi = unique.model_copy(update={"source_block_ids": ("b1", "b2")})
+    build_semantic_document(
+        same_owner_physical,
+        same_owner_structural,
+        visual_observations=(same_owner_multi,),
+    )
+    root = same_owner_structural.nodes[0]
+    wrong_context = unique.model_copy(
+        update={
+            "structural_node_id": root.id,
+            "structural_canonical_path": root.canonical_path,
+        }
+    )
+    with pytest.raises(SemanticSourceIntegrityError, match="incompatible"):
+        build_semantic_document(
+            same_owner_physical,
+            same_owner_structural,
+            visual_observations=(wrong_context,),
+        )
+    no_owner = _direct_observation(
+        same_owner_physical,
+        same_owner_structural,
+        source_block_ids=("b0",),
+        structural_node_id=root.id,
+        structural_canonical_path=root.canonical_path,
+    )
+    with pytest.raises(SemanticSourceIntegrityError, match="no structural owner"):
+        build_semantic_document(
+            same_owner_physical,
+            same_owner_structural,
+            visual_observations=(no_owner,),
+        )
+
+    different_owner_base = _document(4)
+    different_owner_texts = (
+        "Điều 1. A",
+        "Nội dung một",
+        "Điều 2. B",
+        "Nội dung hai",
+    )
+    different_owner_physical = different_owner_base.model_copy(
+        update={
+            "pages": (
+                different_owner_base.pages[0].model_copy(
+                    update={
+                        "blocks": tuple(
+                            _block(index, text) for index, text in enumerate(different_owner_texts)
+                        )
+                    }
+                ),
+            )
+        }
+    )
+    different_owner_structural = VietnameseStructuralExtractor().extract(different_owner_physical)
+    first_owner = next(
+        node
+        for node in different_owner_structural.nodes
+        if any(anchor.block_id == "b1" for anchor in node.direct_content_anchors)
+    )
+    cross_owner = _direct_observation(
+        different_owner_physical,
+        different_owner_structural,
+        source_block_ids=("b1", "b3"),
+        structural_node_id=first_owner.id,
+        structural_canonical_path=first_owner.canonical_path,
+    )
+    with pytest.raises(SemanticSourceIntegrityError, match="incompatible"):
+        build_semantic_document(
+            different_owner_physical,
+            different_owner_structural,
+            visual_observations=(cross_owner,),
+        )
+
+
 def test_wrong_structural_context_and_incompatible_multiblock_fail() -> None:
     physical = _document(2)
     structural = VietnameseStructuralExtractor().extract(physical)
@@ -371,7 +559,7 @@ def test_wrong_structural_context_and_incompatible_multiblock_fail() -> None:
     with pytest.raises(ValueError, match="structural context mismatch"):
         build_semantic_document(physical, structural, visual_observations=(wrong_context,))
     incompatible = observation.model_copy(update={"source_block_ids": ("b0", "missing-block")})
-    with pytest.raises(ValueError, match="incompatible with structural context"):
+    with pytest.raises(ValueError, match="missing physical block"):
         build_semantic_document(physical, structural, visual_observations=(incompatible,))
 
 

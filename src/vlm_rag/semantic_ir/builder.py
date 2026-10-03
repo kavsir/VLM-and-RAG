@@ -40,6 +40,10 @@ def build_semantic_document(
     physical_sha = _sha256_text(physical_document_v1_to_json(physical))
     structural_sha = _sha256_text(structural_document_to_json(structural))
     blocks = {block.id: block for page in physical.pages for block in page.blocks}
+    owners_by_block: dict[str, set[tuple[str, str]]] = {}
+    for node in structural.nodes:
+        for anchor in node.direct_content_anchors:
+            owners_by_block.setdefault(anchor.block_id, set()).add((node.id, node.canonical_path))
     statements: list[SemanticStatement] = []
     mentions: list[SemanticMention] = []
     statement_index = 0
@@ -108,21 +112,33 @@ def build_semantic_document(
             or observation.source_structural_ir_sha256 != structural_sha
         ):
             raise SemanticSourceIntegrityError("VLM observation source identity mismatch")
+        owner = node_by_id.get(observation.structural_node_id)
+        if owner is None or owner.canonical_path != observation.structural_canonical_path:
+            raise SemanticSourceIntegrityError("VLM observation structural context mismatch")
+        resolved_owners: set[tuple[str, str]] = set()
+        for block_id in observation.source_block_ids:
+            if block_id not in blocks:
+                raise SemanticSourceIntegrityError(
+                    "VLM observation references missing physical block"
+                )
+            block_owners = owners_by_block.get(block_id, set())
+            if not block_owners:
+                raise SemanticSourceIntegrityError(
+                    "VLM observation source block has no structural owner"
+                )
+            if len(block_owners) > 1:
+                raise SemanticSourceIntegrityError("VLM observation has ambiguous structural owner")
+            resolved_owners.update(block_owners)
+        declared_owner = (owner.id, owner.canonical_path)
+        if resolved_owners != {declared_owner}:
+            raise SemanticSourceIntegrityError(
+                "VLM observation source blocks are incompatible with structural context"
+            )
         if (
             observation.provenance != SemanticProvenanceKind.VLM_TRANSCRIPTION
             or observation.text is None
         ):
             continue
-        owner = node_by_id.get(observation.structural_node_id)
-        if owner is None or owner.canonical_path != observation.structural_canonical_path:
-            raise SemanticSourceIntegrityError("VLM observation structural context mismatch")
-        owned_block_ids = {anchor.block_id for anchor in owner.direct_content_anchors}
-        if any(block_id not in owned_block_ids for block_id in observation.source_block_ids):
-            raise SemanticSourceIntegrityError(
-                "VLM observation source blocks are incompatible with structural context"
-            )
-        if any(block_id not in blocks for block_id in observation.source_block_ids):
-            raise SemanticSourceIntegrityError("VLM observation references missing physical block")
         statement_id = f"statement-{statement_index:08d}"
         statement_index += 1
         statement_mention_ids = []
