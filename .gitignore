@@ -8,6 +8,8 @@ __pycache__/
 .venv/
 .venv-mineru/
 .venv-marker/
+.venv-serve/
+training/.venv/
 venv/
 env/
 ENV/

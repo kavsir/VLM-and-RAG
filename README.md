@@ -14,13 +14,15 @@ The core domain model, entities, and pipelines remain decoupled from specific or
 
 ## Current Project Status
 
-- **Phase**: Domain Semantic IR v1 + Selective VLM Evidence (Issue #009)
+- **Phase**: Semantic IR foundation + VLM/RAG runtime and self-training setup
 - **Status**: The engineering foundation, golden-document registry, independent external MinerU
   and Marker adapters, frozen Physical Document IR v0 evidence, six-document reference corpus,
   ten-run parser benchmark, Physical Document IR v1, and deterministic Vietnamese legal/planning
   Structural IR v1, parser-independent Semantic IR v1, deterministic semantic mention extraction,
   and a selective provider-neutral VLM evidence boundary are implemented. No live VLM quality
-  experiment has been completed. RAG, knowledge graphs, and retrieval are not implemented.
+  experiment has been completed. A local SQLite retrieval/grounded-answer CLI, compatible model
+  transport, and an isolated LoRA/QLoRA training setup are now available. Model training and real
+  serving have not been run; knowledge graphs are not implemented.
 
 ### Current data flow
 
@@ -33,10 +35,14 @@ Parser Raw
                                       │
                                       └──→ Semantic IR v1 + Selective VLM Evidence
                                                   │
-                                                  └──→ #010 Hierarchical RAG [not implemented]
+                                                  └──→ SQLite retrieval → cited answer
 ```
 
 ## Semantic IR and selective VLM evidence
+
+For the new runtime, start with [VLM/RAG quickstart](docs/runbooks/vlm-rag.md).
+For your own VLM, use [self-training setup](training/README.md): CPU-only data validation now,
+LoRA/QLoRA on a separate GPU host later. Neither workflow changes the frozen benchmark truth.
 
 Semantic IR v1 creates exact evidence-backed statements and controlled Vietnamese legal/planning
 mentions from frozen Physical and Structural IR. It binds canonical source hashes and does not

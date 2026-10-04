@@ -1,0 +1,20 @@
+[project]
+name = "vlm-rag-training"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "vlm-rag",
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+    "transformers==4.56.2",
+    "peft==0.17.1",
+    "accelerate==1.10.1",
+    "bitsandbytes==0.47.0",
+    "pillow==12.3.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+vlm-rag = { path = "..", editable = true }

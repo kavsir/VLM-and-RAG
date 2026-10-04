@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+      - feat/semantic-ir-v1
 
 permissions:
   contents: read
@@ -79,4 +80,9 @@ jobs:
         run: uv sync --locked
 
       - name: Run Pytest
-        run: uv run pytest
+        run: uv run --locked --extra pdf pytest
+
+      - name: Validate training lock and CPU-only plan
+        run: |
+          uv lock --project training --python 3.12 --check
+          uv run python training/train.py
