@@ -1,0 +1,1028 @@
+{
+  "annotation_schema_version": 2,
+  "annotation_version": "v2",
+  "annotator_type": "ai_visual_audit",
+  "annotation_method": "visual_pdf_semantic_reaudit",
+  "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+  "version_id": "v1",
+  "source_artifact_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+  "prior_physical_ir_exposure": true,
+  "prior_structural_ir_exposure": true,
+  "prior_semantic_extractor_exposure": true,
+  "semantic_extractor_candidates_seen": true,
+  "semantic_extractor_output_used_as_reference_truth": false,
+  "independent_or_blind_ground_truth": false,
+  "pages": [
+    {
+      "page_index": 0,
+      "pdf_page_number_1_based": 1,
+      "render_sha256": "c34aefd7bdeda9635fb7b313ff5308cc0cf911e6115014d33140a25455f5deca",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-f6e2c41bc55fd7efc58ba825",
+          "page_index": 0,
+          "exact_evidence_excerpt": "ỦY BAN NHÂN DÂN THÀNH PHỐ HÀ NỘI",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-31f9cc91195a5c190b615343",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Số: 23/2008/QĐ-UBND",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-715673750ecbd32deb731c66",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Hà Nội, ngày 29 tháng 9 năm 2008",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-902be3d9a2e69cd37c2f6f85",
+          "page_index": 0,
+          "exact_evidence_excerpt": "QUYẾT ĐỊNH",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-860b4a882b1a3d3198ebcc58",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Về việc thành lập và quy định chức năng, nhiệm vụ, quyền hạn, cơ cấu tổ chức của Viện Quy hoạch xây dựng Hà Nội",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-8e1aa374497efb09a20e0d62",
+          "page_index": 0,
+          "exact_evidence_excerpt": "ỦY BAN NHÂN DÂN THÀNH PHỐ HÀ NỘI",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-38e12ab93f1ec4039080e62f",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Luật Tổ chức HĐND và UBND ngày 26 tháng 11 năm 2003;",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-9c6cde7bc135b2ba4a7d88e1",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Căn cứ Nghị quyết số 15/2008/QH12 ngày 29 tháng 5 năm 2008 của Quốc hội về điều chỉnh địa giới hành chính thành phố Hà Nội và một số tỉnh có liên quan;",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-4f2e483fd6f871e0279b73bd",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Thực hiện Thông báo số 11 TB/TU ngày 28 tháng 8 năm 2008 của Thành ủy Hà Nội về việc thành lập Viện Quy hoạch xây dựng Hà Nội trực thuộc UBND thành phố Hà Nội;",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-b9cf09a7e8447989b60d4950",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Xét đề nghị của Giám đốc Sở Nội vụ tại Tờ trình số 236/TTr-SNV ngày 24 tháng 9 năm 2008,",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-d8cda5239b6d0079e3d3d368",
+          "page_index": 0,
+          "exact_evidence_excerpt": "QUYẾT ĐỊNH:",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-da4aa8ddbad161ce56e5f9d8",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Điều 1. Thành lập Viện Quy hoạch xây dựng Hà Nội trực thuộc UBND thành phố Hà Nội trên cơ sở Viện Quy hoạch xây dựng Hà Nội trực thuộc Sở Quy hoạch - Kiến trúc thành phố Hà Nội.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-6e6ee26dc5bb98023d64cb7d",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Điều 2. Tên gọi, vị trí, chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Viện Quy hoạch xây dựng Hà Nội",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-bffabdf01e8560b3e161c226",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Tên gọi: Viện Quy hoạch xây dựng Hà Nội. Tên giao dịch quốc tế: Hanoi Urban Planning Institute (HUPI). Trụ sở chính đặt tại số 52 phố Lê Đại Hành, quận Hai Bà Trưng, thành phố Hà Nội.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-c4d19ef78ee67e1d1a97e295",
+          "page_index": 0,
+          "exact_evidence_excerpt": "Viện Quy hoạch xây dựng Hà Nội là đơn vị sự nghiệp trực thuộc UBND thành phố Hà Nội, có tư cách pháp nhân, có con dấu và tài khoản riêng để giao dịch, hoạt động theo quy định của pháp luật. Viện Quy hoạch xây dựng Hà Nội chịu sự chỉ đạo, quản lý về tổ chức, biên chế và công tác của UBND thành phố; đồng thời, chịu sự kiểm tra, hướng dẫn về chuyên môn, nghiệp vụ của Bộ Xây dựng và các Bộ, ngành có liên quan.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-d0236652ad70d36dc3fb52dc",
+          "reference_statement_id": "ref-statement-f6e2c41bc55fd7efc58ba825",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "ỦY BAN NHÂN DÂN",
+          "normalized_value": "ỦY BAN NHÂN DÂN",
+          "char_start": 0,
+          "char_end": 15,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-08a4d91c51dfb6e7669ede96",
+          "reference_statement_id": "ref-statement-31f9cc91195a5c190b615343",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "23/2008/QĐ-UBND",
+          "normalized_value": "23/2008/QĐ-UBND",
+          "char_start": 4,
+          "char_end": 19,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-b6139cb1154e9f7a07d6660a",
+          "reference_statement_id": "ref-statement-715673750ecbd32deb731c66",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 29 tháng 9 năm 2008",
+          "normalized_value": "2008-09-29",
+          "char_start": 8,
+          "char_end": 32,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-3943c88624dd7f5539f3297b",
+          "reference_statement_id": "ref-statement-860b4a882b1a3d3198ebcc58",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 81,
+          "char_end": 111,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-c2a4ffb952e07aa3ad6266f7",
+          "reference_statement_id": "ref-statement-8e1aa374497efb09a20e0d62",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "ỦY BAN NHÂN DÂN",
+          "normalized_value": "ỦY BAN NHÂN DÂN",
+          "char_start": 0,
+          "char_end": 15,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-4ab9f28a181242f645332965",
+          "reference_statement_id": "ref-statement-38e12ab93f1ec4039080e62f",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "HĐND",
+          "normalized_value": "HĐND",
+          "char_start": 20,
+          "char_end": 24,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-2294006a9a0e6a6da42dd686",
+          "reference_statement_id": "ref-statement-38e12ab93f1ec4039080e62f",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 28,
+          "char_end": 32,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-41dc958e7eafb6079b207a25",
+          "reference_statement_id": "ref-statement-38e12ab93f1ec4039080e62f",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 26 tháng 11 năm 2003",
+          "normalized_value": "2003-11-26",
+          "char_start": 33,
+          "char_end": 58,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-b5ff689ea096e78786cf9e67",
+          "reference_statement_id": "ref-statement-9c6cde7bc135b2ba4a7d88e1",
+          "page_index": 0,
+          "kind": "document_identifier",
+          "raw_text": "15/2008/QH12",
+          "normalized_value": "15/2008/QH12",
+          "char_start": 21,
+          "char_end": 33,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-7bfa17746e1f3aaf2dac2e5c",
+          "reference_statement_id": "ref-statement-9c6cde7bc135b2ba4a7d88e1",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 29 tháng 5 năm 2008",
+          "normalized_value": "2008-05-29",
+          "char_start": 34,
+          "char_end": 58,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-242f9fc9d819f768025cdfad",
+          "reference_statement_id": "ref-statement-9c6cde7bc135b2ba4a7d88e1",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Quốc hội",
+          "normalized_value": "Quốc hội",
+          "char_start": 63,
+          "char_end": 71,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-d7fe5a938f27e800b84909d8",
+          "reference_statement_id": "ref-statement-4f2e483fd6f871e0279b73bd",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 28 tháng 8 năm 2008",
+          "normalized_value": "2008-08-28",
+          "char_start": 32,
+          "char_end": 56,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-2f86cf0f7b27f77e99e24d51",
+          "reference_statement_id": "ref-statement-4f2e483fd6f871e0279b73bd",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Thành ủy Hà Nội",
+          "normalized_value": "Thành ủy Hà Nội",
+          "char_start": 61,
+          "char_end": 76,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-ee4fd68fe5737e2d205a3e0d",
+          "reference_statement_id": "ref-statement-4f2e483fd6f871e0279b73bd",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 95,
+          "char_end": 125,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-94a6ca2af223fe506880a19d",
+          "reference_statement_id": "ref-statement-4f2e483fd6f871e0279b73bd",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 137,
+          "char_end": 141,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-b832cb28495f44ed6197b6bf",
+          "reference_statement_id": "ref-statement-b9cf09a7e8447989b60d4950",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Sở Nội vụ",
+          "normalized_value": "Sở Nội vụ",
+          "char_start": 25,
+          "char_end": 34,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-4a6261b1b152b01096ec110f",
+          "reference_statement_id": "ref-statement-b9cf09a7e8447989b60d4950",
+          "page_index": 0,
+          "kind": "temporal_expression",
+          "raw_text": "ngày 24 tháng 9 năm 2008",
+          "normalized_value": "2008-09-24",
+          "char_start": 63,
+          "char_end": 87,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-7084beaf8e897a172136ec82",
+          "reference_statement_id": "ref-statement-da4aa8ddbad161ce56e5f9d8",
+          "page_index": 0,
+          "kind": "legal_reference",
+          "raw_text": "Điều 1",
+          "normalized_value": null,
+          "char_start": 0,
+          "char_end": 6,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "1",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-64cd03f953cdabb4dbc7cfc8",
+          "reference_statement_id": "ref-statement-da4aa8ddbad161ce56e5f9d8",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 18,
+          "char_end": 48,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-3ef6c99991133f2390123832",
+          "reference_statement_id": "ref-statement-da4aa8ddbad161ce56e5f9d8",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 60,
+          "char_end": 64,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-3c1a99ad4c93888f3a488ed9",
+          "reference_statement_id": "ref-statement-da4aa8ddbad161ce56e5f9d8",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 93,
+          "char_end": 123,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-42d313b74dfa06a3c68a9684",
+          "reference_statement_id": "ref-statement-da4aa8ddbad161ce56e5f9d8",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Sở Quy hoạch - Kiến trúc",
+          "normalized_value": "Sở Quy hoạch - Kiến trúc",
+          "char_start": 135,
+          "char_end": 159,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-361c959ee0a58a66664f4b63",
+          "reference_statement_id": "ref-statement-6e6ee26dc5bb98023d64cb7d",
+          "page_index": 0,
+          "kind": "legal_reference",
+          "raw_text": "Điều 2",
+          "normalized_value": null,
+          "char_start": 0,
+          "char_end": 6,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "2",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-d5cf3caf6c1ba988f042b745",
+          "reference_statement_id": "ref-statement-6e6ee26dc5bb98023d64cb7d",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 78,
+          "char_end": 108,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-22a7419d612e59345dbe7760",
+          "reference_statement_id": "ref-statement-bffabdf01e8560b3e161c226",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 9,
+          "char_end": 39,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-1e0f84a1d9b6a7df9feb2351",
+          "reference_statement_id": "ref-statement-c4d19ef78ee67e1d1a97e295",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 0,
+          "char_end": 30,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5ed0da785bb5c91f9c4ddea3",
+          "reference_statement_id": "ref-statement-c4d19ef78ee67e1d1a97e295",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 62,
+          "char_end": 66,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-46487301d3b714e6552cbc5a",
+          "reference_statement_id": "ref-statement-c4d19ef78ee67e1d1a97e295",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 190,
+          "char_end": 220,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-bfd824065896d9cf6c328a06",
+          "reference_statement_id": "ref-statement-c4d19ef78ee67e1d1a97e295",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 283,
+          "char_end": 287,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-08ccd56cf0625ec433d1181a",
+          "reference_statement_id": "ref-statement-c4d19ef78ee67e1d1a97e295",
+          "page_index": 0,
+          "kind": "organization_or_authority",
+          "raw_text": "Bộ Xây dựng",
+          "normalized_value": "Bộ Xây dựng",
+          "char_start": 367,
+          "char_end": 378,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-726ab2a22b8d290f33efeafc",
+          "page_index": 0,
+          "bbox_normalized_1000": [
+            70,
+            20,
+            940,
+            980
+          ],
+          "task_type": "ocr_recovery",
+          "need_reason": "scanned_page_text",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "pdf_page_number_1_based": 2,
+      "render_sha256": "53d13f61389d575b5381d5274d3f8921fb8953113f697d481ae50c7a23a5f84a",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-c6d43336fdc9f03a820986ff",
+          "page_index": 1,
+          "exact_evidence_excerpt": "Viện Quy hoạch xây dựng Hà Nội có chức năng:",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-8c035018784b0ee41382c4d1",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c.1) Nghiên cứu, tư vấn với UBND thành phố về hoạch định chiến lược quy hoạch xây dựng tổng thể, chi tiết về phát triển đô thị và nông thôn trên địa bàn Thủ đô Hà Nội;",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-d79c6b904a46b3419330788d",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c.2) Nghiên cứu, tham mưu, đề xuất với UBND thành phố hoặc giúp UBND thành phố trình các cơ quan Trung ương và Chính phủ những cơ chế, chính sách đặc thù phục vụ cho quy hoạch xây dựng phát triển Thủ đô Hà Nội;",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-eb50234619f442afc499b199",
+          "page_index": 1,
+          "exact_evidence_excerpt": "c.4) Tham gia và phục vụ công tác quản lý nhà nước về quy hoạch xây dựng, kiến trúc đô thị trên địa bàn thành phố Hà Nội;",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-31cd604317dfc6e89aa63f42",
+          "reference_statement_id": "ref-statement-c6d43336fdc9f03a820986ff",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 0,
+          "char_end": 30,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-38c414752b28f589dec6345f",
+          "reference_statement_id": "ref-statement-8c035018784b0ee41382c4d1",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 28,
+          "char_end": 32,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-fed0ac592c637be2942820d6",
+          "reference_statement_id": "ref-statement-d79c6b904a46b3419330788d",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 39,
+          "char_end": 43,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-2fe74c554256ef715e42fc30",
+          "reference_statement_id": "ref-statement-d79c6b904a46b3419330788d",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 64,
+          "char_end": 68,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-2adb18f910206f821bb7e1f5",
+          "reference_statement_id": "ref-statement-d79c6b904a46b3419330788d",
+          "page_index": 1,
+          "kind": "organization_or_authority",
+          "raw_text": "Chính phủ",
+          "normalized_value": "Chính phủ",
+          "char_start": 111,
+          "char_end": 120,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-a24e4442f08ff12567e10044",
+          "page_index": 1,
+          "bbox_normalized_1000": [
+            70,
+            20,
+            940,
+            980
+          ],
+          "task_type": "ocr_recovery",
+          "need_reason": "scanned_page_text",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "pdf_page_number_1_based": 3,
+      "render_sha256": "f8285036152ba8a3cb2dd39a850bc9c797c90d84315c9902c5e8906f99878c06",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-c083b8de0dd05fc43fe79f35",
+          "page_index": 2,
+          "exact_evidence_excerpt": "Viện Quy hoạch xây dựng Hà Nội có Viện trưởng và các Phó Viện trưởng.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-e85b7f4f869a2de363d7a124",
+          "page_index": 2,
+          "exact_evidence_excerpt": "Viện trưởng là người đứng đầu Viện, chịu trách nhiệm trước UBND thành phố, Chủ tịch UBND thành phố và trước pháp luật trong thực hiện chức năng, nhiệm vụ, quyền hạn của Viện.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-b8e412c655140385c77bae0e",
+          "page_index": 2,
+          "exact_evidence_excerpt": "Việc bổ nhiệm Viện trưởng, Phó Viện trưởng Viện Quy hoạch xây dựng Hà Nội do Chủ tịch UBND thành phố quyết định theo tiêu chuẩn chuyên môn, nghiệp vụ do Bộ Xây dựng ban hành và theo quy định của pháp luật.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-488143f2b6510213eda40623",
+          "page_index": 2,
+          "exact_evidence_excerpt": "b.1) Phòng Tổ chức - Hành chính; b.2) Phòng Kế hoạch - Tổng hợp; b.3) Phòng Tài chính - Kế toán; b.4) Phòng Công nghệ thông tin và cơ sở dữ liệu; b.5) Phòng Hoạch định chiến lược quy hoạch xây dựng phát triển đô thị - nông thôn; b.6) Phòng Quy hoạch xây dựng, kiến trúc đô thị, quản lý kỹ thuật và đào tạo;",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-4d0a65515bde2092fb965c09",
+          "reference_statement_id": "ref-statement-c083b8de0dd05fc43fe79f35",
+          "page_index": 2,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 0,
+          "char_end": 30,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-1e30f914c037911a2b9c9105",
+          "reference_statement_id": "ref-statement-e85b7f4f869a2de363d7a124",
+          "page_index": 2,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 59,
+          "char_end": 63,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-737ef4f97b049db74d141d46",
+          "reference_statement_id": "ref-statement-e85b7f4f869a2de363d7a124",
+          "page_index": 2,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 84,
+          "char_end": 88,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-ccac67ec2a05fb061cc6be45",
+          "reference_statement_id": "ref-statement-b8e412c655140385c77bae0e",
+          "page_index": 2,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 43,
+          "char_end": 73,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-f93f4de9c939a13a3e13f280",
+          "reference_statement_id": "ref-statement-b8e412c655140385c77bae0e",
+          "page_index": 2,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 86,
+          "char_end": 90,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-84f49e5663dfe82f7e70c07f",
+          "reference_statement_id": "ref-statement-b8e412c655140385c77bae0e",
+          "page_index": 2,
+          "kind": "organization_or_authority",
+          "raw_text": "Bộ Xây dựng",
+          "normalized_value": "Bộ Xây dựng",
+          "char_start": 153,
+          "char_end": 164,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-fd6917214f9e999220e4af4b",
+          "page_index": 2,
+          "bbox_normalized_1000": [
+            70,
+            20,
+            940,
+            980
+          ],
+          "task_type": "ocr_recovery",
+          "need_reason": "scanned_page_text",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "pdf_page_number_1_based": 4,
+      "render_sha256": "b87125ecf58e0b796810e1f0650667e2ef157232b511ff7f4505c6ce4946aada",
+      "statements": [
+        {
+          "reference_statement_id": "ref-statement-fdcb8fa748cdda89e624d167",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Viện Quy hoạch xây dựng Hà Nội có các Hội đồng tư vấn theo chuyên ngành.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-9d8dc24b971bad18838e79c9",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Điều 2. Quyết định này có hiệu lực thi hành sau 10 ngày, kể từ ngày ký. Bãi bỏ các Quyết định trước đây của UBND thành phố Hà Nội ban hành trái với Quyết định này.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-557c2d062198c305cb95146c",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Điều 3. Chánh Văn phòng UBND thành phố, Giám đốc các Sở: Nội vụ, Quy hoạch - Kiến trúc, Viện Quy hoạch xây dựng Hà Nội, Thủ trưởng các Sở, Ban, ngành, Chủ tịch UBND các quận, huyện, thành phố trực thuộc và các cơ quan, đơn vị, cá nhân có liên quan chịu trách nhiệm thi hành Quyết định này.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-451f9129c3a7f11aa6ae1359",
+          "page_index": 3,
+          "exact_evidence_excerpt": "Bộ Nội vụ; Bộ Xây dựng; Bộ Tư pháp; Thường trực Thành ủy, HĐND TP; Chủ tịch, các Phó Chủ tịch UBND TP; Đoàn ĐBQH TP; Các Ban HĐND TP.",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        },
+        {
+          "reference_statement_id": "ref-statement-554d7f5c40a5b3d5bb6c6e64",
+          "page_index": 3,
+          "exact_evidence_excerpt": "TM. ỦY BAN NHÂN DÂN - CHỦ TỊCH Nguyễn Thế Thảo",
+          "audit_note": "Manually transcribed and visually checked from the scanned PDF; parser-corrupted OCR was rejected."
+        }
+      ],
+      "mentions": [
+        {
+          "reference_mention_id": "ref-mention-704c6baf23dfbfd8c796372f",
+          "reference_statement_id": "ref-statement-fdcb8fa748cdda89e624d167",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 0,
+          "char_end": 30,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-fde7c4dbaa2a3c1865058c9e",
+          "reference_statement_id": "ref-statement-9d8dc24b971bad18838e79c9",
+          "page_index": 3,
+          "kind": "legal_reference",
+          "raw_text": "Điều 2",
+          "normalized_value": null,
+          "char_start": 0,
+          "char_end": 6,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "2",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-275debdc8f46efb73d4a2e04",
+          "reference_statement_id": "ref-statement-9d8dc24b971bad18838e79c9",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 108,
+          "char_end": 112,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-d9ab200ddecda16f8ed90861",
+          "reference_statement_id": "ref-statement-557c2d062198c305cb95146c",
+          "page_index": 3,
+          "kind": "legal_reference",
+          "raw_text": "Điều 3",
+          "normalized_value": null,
+          "char_start": 0,
+          "char_end": 6,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": {
+            "instrument_type": null,
+            "instrument_number_raw": null,
+            "instrument_number_normalized": null,
+            "article": "3",
+            "clause": null,
+            "point": null,
+            "scope": "self_document"
+          },
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5688a1e34bdbc9bc32de42a0",
+          "reference_statement_id": "ref-statement-557c2d062198c305cb95146c",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 24,
+          "char_end": 28,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-5b113145da040b9098898224",
+          "reference_statement_id": "ref-statement-557c2d062198c305cb95146c",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "Viện Quy hoạch xây dựng Hà Nội",
+          "normalized_value": "Viện Quy hoạch xây dựng Hà Nội",
+          "char_start": 88,
+          "char_end": 118,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-edffedd75954fb93528a576c",
+          "reference_statement_id": "ref-statement-557c2d062198c305cb95146c",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 160,
+          "char_end": 164,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-4de52440805f96971f34a81e",
+          "reference_statement_id": "ref-statement-451f9129c3a7f11aa6ae1359",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "Bộ Nội vụ",
+          "normalized_value": "Bộ Nội vụ",
+          "char_start": 0,
+          "char_end": 9,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-1d0464d8036aab86bb972685",
+          "reference_statement_id": "ref-statement-451f9129c3a7f11aa6ae1359",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "Bộ Xây dựng",
+          "normalized_value": "Bộ Xây dựng",
+          "char_start": 11,
+          "char_end": 22,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-aabf929648e8f5cb61b84953",
+          "reference_statement_id": "ref-statement-451f9129c3a7f11aa6ae1359",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "Bộ Tư pháp",
+          "normalized_value": "Bộ Tư pháp",
+          "char_start": 24,
+          "char_end": 34,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-4adc6b266140cd26a4c573fa",
+          "reference_statement_id": "ref-statement-451f9129c3a7f11aa6ae1359",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "HĐND",
+          "normalized_value": "HĐND",
+          "char_start": 58,
+          "char_end": 62,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-f7b8d2f902ba0bda5f60feeb",
+          "reference_statement_id": "ref-statement-451f9129c3a7f11aa6ae1359",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "UBND",
+          "normalized_value": "UBND",
+          "char_start": 94,
+          "char_end": 98,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-e270b094e406bc6032dc939e",
+          "reference_statement_id": "ref-statement-451f9129c3a7f11aa6ae1359",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "HĐND",
+          "normalized_value": "HĐND",
+          "char_start": 125,
+          "char_end": 129,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        },
+        {
+          "reference_mention_id": "ref-mention-d3a759470cdc7bffc2590bfa",
+          "reference_statement_id": "ref-statement-554d7f5c40a5b3d5bb6c6e64",
+          "page_index": 3,
+          "kind": "organization_or_authority",
+          "raw_text": "ỦY BAN NHÂN DÂN",
+          "normalized_value": "ỦY BAN NHÂN DÂN",
+          "char_start": 4,
+          "char_end": 19,
+          "audit_note": "Accepted against visible rendered PDF wording; span is relative to the audited excerpt.",
+          "legal_reference": null,
+          "quantity": null
+        }
+      ],
+      "visual_assistance": [
+        {
+          "reference_id": "visual-ref-1d92afa8de74da53b7aceb33",
+          "page_index": 3,
+          "bbox_normalized_1000": [
+            70,
+            20,
+            940,
+            980
+          ],
+          "task_type": "ocr_recovery",
+          "need_reason": "scanned_page_text",
+          "evidence_note": "Region and task were assigned from direct inspection of the rendered source PDF, independently of runtime selector output."
+        }
+      ]
+    }
+  ]
+}

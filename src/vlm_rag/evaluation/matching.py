@@ -49,15 +49,15 @@ class MatchResult:
     unmatched_predicted: tuple[PhysicalBlock, ...]
 
 
-def _find_max_cardinality_max_iou_matching(
+def _find_max_cardinality_max_weight_matching(
     m: int,
     n: int,
     candidate_edges: list[tuple[int, int, float]],
 ) -> list[tuple[int, int, float]]:
-    """Solve maximum-cardinality bipartite matching with secondary max-IoU objective.
+    """Solve maximum-cardinality bipartite matching with a secondary max-weight objective.
 
     Cardinality is computed independently. A min-cost flow of exactly that cardinality then
-    maximizes the sum of the exact IEEE-754 IoU values represented by ``Fraction.from_float``.
+    maximizes the sum of the exact IEEE-754 weights represented by ``Fraction.from_float``.
     Stable graph ordering and path tie-breaking make equal-weight solutions deterministic.
     """
     if m == 0 or n == 0 or not candidate_edges:
@@ -181,7 +181,7 @@ def match_page_regions(
             if score >= iou_threshold:
                 candidates.append((reference_index, pred_idx, score))
 
-    matched_indices = _find_max_cardinality_max_iou_matching(
+    matched_indices = _find_max_cardinality_max_weight_matching(
         len(reference_regions),
         len(predicted_blocks),
         candidates,

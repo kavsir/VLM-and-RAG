@@ -20,3 +20,4 @@ Each record should be named sequentially: `NNNN-short-title.md` (e.g. `0001-boot
 * [0005 — Add Marker Through an External Runtime Boundary](0005-marker-parser-boundary.md)
 * [0006 — Evolve Physical Document IR to v1 without rewriting v0 evidence](0006-physical-ir-v1-evolution.md)
 * [0007 — Vietnamese Legal/Planning Structural IR v1](0007-vietnamese-structural-ir-v1.md)
+* [0008 — Domain Semantic IR v1 and selective VLM evidence](0008-semantic-ir-selective-vlm-v1.md)

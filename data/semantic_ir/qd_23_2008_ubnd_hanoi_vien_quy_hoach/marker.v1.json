@@ -1,0 +1,12 @@
+{
+  "semantic_ir_version": 1,
+  "profile": "vi_legal_planning_semantic_v1",
+  "document_id": "qd-23-2008-ubnd-hanoi-vien-quy-hoach",
+  "version_id": "v1",
+  "source_artifact_sha256": "2c6276e8d611a827a220abe1106008851f4a049495f80277a62332a0c0d119fc",
+  "source_physical_ir_sha256": "5a3afaad4af491c748616d8efd37f883de905efa81d76f3873c5515e0b0cd703",
+  "source_structural_ir_sha256": "1be44c94130821198f3e224375d4a30937316cbb5f714907d0673dec407f95ee",
+  "statements": [],
+  "mentions": [],
+  "visual_observations": []
+}
